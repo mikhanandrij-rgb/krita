@@ -1,0 +1,599 @@
+ir/PerspectiveEllipseAssistant.cc.o
+[ 54%] Building CXX object plugins/dockers/presetdocker/CMakeFiles/kritapresetdocker.dir/presetdocker_dock.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/GroupLayer.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_my_paint_shade_selector.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/CloneLayer.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritapresetdocker.so
+[ 54%] Built target kritapresetdocker
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/FileLayer.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_patches.cpp.o
+[ 54%] Linking CXX static library ../../../lib/libkritaassistanttool_static.a
+[ 54%] Built target kritaassistanttool_static
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_history.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/FilterLayer.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/FillLayer.cpp.o
+[ 54%] Building CXX object plugins/dockers/historydocker/CMakeFiles/kritahistorydocker.dir/kritahistorydocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_common_colors.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/VectorLayer.cpp.o
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/kritachanneldocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/historydocker/CMakeFiles/kritahistorydocker.dir/History.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_common_colors_recalculation_runner.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/FilterMask.cpp.o
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/channelmodel.cpp.o
+[ 54%] Building CXX object plugins/dockers/historydocker/CMakeFiles/kritahistorydocker.dir/HistoryDock.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_minimal_shade_selector.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/SelectionMask.cpp.o
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp: In member function ‘virtual QVariant ChannelModel::data(const QModelIndex&, int) const’:
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp:39:32: warning: comparison of integer expressions of different signedness: ‘quint32’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
+   39 |         if (cs->channelCount() != m_channelCount) return QVariant();
+      |             ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp:45:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘quint32’ {aka ‘unsigned int’} [-Wsign-compare]
+   45 |         if (index.row() < cs->channelCount()) {
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp: In member function ‘virtual bool ChannelModel::setData(const QModelIndex&, const QVariant&, int)’:
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp:105:32: warning: comparison of integer expressions of different signedness: ‘quint32’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  105 |         if (cs->channelCount() != m_channelCount) return false;
+      |             ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp: In member function ‘void ChannelModel::rowActivated(const QModelIndex&)’:
+/home/runner/work/krita/krita/plugins/dockers/channeldocker/channelmodel.cpp:136:32: warning: comparison of integer expressions of different signedness: ‘quint32’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  136 |         if (cs->channelCount() != m_channelCount) return;
+      |             ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/channeldocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/historydocker/CMakeFiles/kritahistorydocker.dir/KisUndoView.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_shade_selector_line.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/TransparencyMask.cpp.o
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/channeldocker_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/historydocker/CMakeFiles/kritahistorydocker.dir/KisUndoModel.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/TransformMask.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_shade_selector_line_editor.cpp.o
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/ChannelDockerWidget.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritahistorydocker.so
+[ 54%] Built target kritahistorydocker
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_shade_selector_line_combo_box_popup.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/ColorizeMask.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/Shape.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_shade_selector_line_combo_box.cpp.o
+[ 54%] Building CXX object plugins/dockers/channeldocker/CMakeFiles/kritachanneldocker.dir/KisChannelsThumbnailsStrokeStrategy.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritachanneldocker.so
+[ 54%] Built target kritachanneldocker
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_shade_selector_lines_settings.cpp.o
+[ 54%] Generating ui_wdgWheelPreferencesPopup.h
+[ 54%] Generating ui_wdgARCSSettings.h
+[ 54%] Generating ui_wdgArtisticColorSelector.h
+[ 54%] Building CXX object plugins/dockers/artisticcolorselector/CMakeFiles/kritaartisticcolorselector.dir/kritaartisticcolorselector_autogen/mocs_compilation.cpp.o
+[ 54%] Generating ui_wdgtasksetdocker.h
+[ 54%] Building CXX object plugins/dockers/tasksetdocker/CMakeFiles/kritatasksetdocker.dir/kritatasksetdocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/GroupShape.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_settings.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/LibKisUtils.cpp.o
+[ 54%] Building CXX object plugins/dockers/tasksetdocker/CMakeFiles/kritatasksetdocker.dir/tasksetmodel.cpp.o
+[ 54%] Building CXX object plugins/dockers/artisticcolorselector/CMakeFiles/kritaartisticcolorselector.dir/artisticcolorselector_plugin.cpp.o
+[ 54%] Building CXX object plugins/dockers/tasksetdocker/CMakeFiles/kritatasksetdocker.dir/tasksetdocker.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/AngleSelector.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_container.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/IntParseSpinBox.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/DoubleParseSpinBox.cpp.o
+[ 54%] Building CXX object plugins/dockers/artisticcolorselector/CMakeFiles/kritaartisticcolorselector.dir/artisticcolorselector_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/tasksetdocker/CMakeFiles/kritatasksetdocker.dir/tasksetdocker_dock.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/SliderSpinBox.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_base.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/GuidesConfig.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/GridConfig.cpp.o
+[ 54%] Building CXX object plugins/dockers/tasksetdocker/CMakeFiles/kritatasksetdocker.dir/taskset_resource.cpp.o
+[ 54%] Building CXX object plugins/dockers/artisticcolorselector/CMakeFiles/kritaartisticcolorselector.dir/kis_color.cpp.o
+[ 54%] Building CXX object libs/libkis/CMakeFiles/kritalibkis.dir/FileDialog.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_component.cpp.o
+[ 54%] Linking CXX shared library ../../bin/libkritalibkis.so
+[ 54%] Linking CXX shared module ../../../bin/kritatasksetdocker.so
+[ 54%] Built target kritalibkis
+[ 54%] Generating ui_wdgcompositiondocker.h
+[ 54%] Building CXX object plugins/dockers/compositiondocker/CMakeFiles/kritacompositiondocker.dir/kritacompositiondocker_autogen/mocs_compilation.cpp.o
+[ 54%] Built target kritatasksetdocker
+[ 54%] Building CXX object plugins/dockers/compositiondocker/CMakeFiles/kritacompositiondocker.dir/compositionmodel.cpp.o
+[ 54%] Building CXX object plugins/dockers/artisticcolorselector/CMakeFiles/kritaartisticcolorselector.dir/kis_color_selector.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_ring.cpp.o
+[ 54%] Building CXX object plugins/dockers/compositiondocker/CMakeFiles/kritacompositiondocker.dir/compositiondocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/patterndocker/CMakeFiles/kritapatterndocker.dir/kritapatterndocker_autogen/mocs_compilation.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritaartisticcolorselector.so
+[ 54%] Building CXX object plugins/dockers/patterndocker/CMakeFiles/kritapatterndocker.dir/patterndocker.cpp.o
+[ 54%] Built target kritaartisticcolorselector
+[ 54%] Building CXX object plugins/dockers/patterndocker/CMakeFiles/kritapatterndocker.dir/patterndocker_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_triangle.cpp.o
+[ 54%] Building CXX object plugins/dockers/compositiondocker/CMakeFiles/kritacompositiondocker.dir/compositiondocker_dock.cpp.o
+[ 54%] Generating ui_grid_config_widget.h
+[ 54%] Building CXX object plugins/dockers/griddocker/CMakeFiles/kritagriddocker.dir/kritagriddocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/griddocker/CMakeFiles/kritagriddocker.dir/griddocker.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritapatterndocker.so
+[ 54%] Built target kritapatterndocker
+[ 54%] Generating ui_arrange_docker_widget.h
+[ 54%] Building CXX object plugins/dockers/arrangedocker/CMakeFiles/kritaarrangedocker.dir/kritaarrangedocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_simple.cpp.o
+[ 54%] Building CXX object plugins/dockers/griddocker/CMakeFiles/kritagriddocker.dir/griddocker_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/arrangedocker/CMakeFiles/kritaarrangedocker.dir/arrangedocker.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritacompositiondocker.so
+[ 54%] Built target kritacompositiondocker
+[ 54%] Building CXX object plugins/dockers/griddocker/CMakeFiles/kritagriddocker.dir/grid_config_widget.cpp.o
+[ 54%] Building CXX object plugins/dockers/arrangedocker/CMakeFiles/kritaarrangedocker.dir/arrangedocker_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_wheel.cpp.o
+[ 54%] Building CXX object plugins/dockers/arrangedocker/CMakeFiles/kritaarrangedocker.dir/arrange_docker_widget.cpp.o
+[ 54%] Generating ui_wdglut.h
+[ 54%] Building CXX object plugins/dockers/lut/CMakeFiles/kritalutdocker_static.dir/kritalutdocker_static_autogen/mocs_compilation.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritagriddocker.so
+[ 54%] Linking CXX shared module ../../../bin/kritaarrangedocker.so
+[ 54%] Built target kritaarrangedocker
+[ 54%] Building CXX object plugins/dockers/lut/CMakeFiles/kritalutdocker_static.dir/lutdocker_dock.cpp.o
+[ 54%] Built target kritagriddocker
+[ 54%] Building CXX object plugins/dockers/lut/CMakeFiles/kritalutdocker_static.dir/black_white_point_chooser.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_combo_box.cpp.o
+[ 54%] Building CXX object plugins/dockers/overview/CMakeFiles/kritaoverviewdocker.dir/kritaoverviewdocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/lut/CMakeFiles/kritalutdocker_static.dir/ocio_display_filter_vfx2021.cpp.o
+[ 54%] Building CXX object plugins/dockers/overview/CMakeFiles/kritaoverviewdocker.dir/overviewdocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/overview/CMakeFiles/kritaoverviewdocker.dir/overviewdocker_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/kis_color_selector_base_proxy.cpp.o
+[ 54%] Linking CXX static library ../../../lib/libkritalutdocker_static.a
+[ 54%] Built target kritalutdocker_static
+[ 54%] Building CXX object plugins/dockers/advancedcolorselector/CMakeFiles/kritacolorselectorng.dir/KisColorPatchesTableView.cpp.o
+[ 54%] Building CXX object plugins/dockers/overview/CMakeFiles/kritaoverviewdocker.dir/overviewwidget.cc.o
+[ 54%] Generating ui_wdgpalettedock.h
+[ 54%] Building CXX object plugins/dockers/palettedocker/CMakeFiles/kritapalettedocker.dir/kritapalettedocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/palettedocker/CMakeFiles/kritapalettedocker.dir/palettedocker.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritacolorselectorng.so
+[ 54%] Building CXX object plugins/dockers/overview/CMakeFiles/kritaoverviewdocker.dir/overviewdocker_page.cpp.o
+[ 54%] Generating ui_KisOnionSkinsDocker.h
+[ 54%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kritaanimationdocker_static_autogen/mocs_compilation.cpp.o
+[ 54%] Built target kritacolorselectorng
+[ 54%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimUtils.cpp.o
+[ 54%] Building CXX object plugins/dockers/palettedocker/CMakeFiles/kritapalettedocker.dir/palettedocker_dock.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritaoverviewdocker.so
+[ 54%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisTimeBasedItemModel.cpp.o
+[ 54%] Built target kritaoverviewdocker
+[ 54%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimationPlaybackControlsModel.cpp.o
+[ 54%] Building CXX object plugins/dockers/presethistory/CMakeFiles/kritapresethistory.dir/kritapresethistory_autogen/mocs_compilation.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritapalettedocker.so
+[ 54%] Built target kritapalettedocker
+[ 54%] Generating ui_WdgSvgCollection.h
+[ 54%] Building CXX object plugins/dockers/svgcollectiondocker/CMakeFiles/kritasvgcollectiondocker.dir/kritasvgcollectiondocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/histogram/CMakeFiles/kritahistogramdocker.dir/kritahistogramdocker_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object plugins/dockers/svgcollectiondocker/CMakeFiles/kritasvgcollectiondocker.dir/SvgSymbolCollectionDocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/presethistory/CMakeFiles/kritapresethistory.dir/presethistory.cpp.o
+[ 54%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineDocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/histogram/CMakeFiles/kritahistogramdocker.dir/histogramdocker.cpp.o
+[ 54%] Building CXX object plugins/dockers/svgcollectiondocker/CMakeFiles/kritasvgcollectiondocker.dir/Plugin.cpp.o
+[ 54%] Building CXX object plugins/dockers/presethistory/CMakeFiles/kritapresethistory.dir/presethistory_dock.cpp.o
+[ 54%] Building CXX object plugins/dockers/histogram/CMakeFiles/kritahistogramdocker.dir/histogramdocker_dock.cpp.o
+[ 54%] Linking CXX shared module ../../../bin/kritasvgcollectiondocker.so
+[ 54%] Built target kritasvgcollectiondocker
+[ 54%] Building CXX object plugins/dockers/histogram/CMakeFiles/kritahistogramdocker.dir/histogramdockerwidget.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineFramesModel.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineFramesView.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritapresethistory.so
+[ 56%] Built target kritapresethistory
+[ 56%] Generating ui_wdgGamutMaskChooser.h
+[ 56%] Building CXX object plugins/dockers/gamutmask/CMakeFiles/kritagamutmask.dir/kritagamutmask_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/histogram/CMakeFiles/kritahistogramdocker.dir/HistogramComputationStrokeStrategy.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritahistogramdocker.so
+[ 56%] Built target kritahistogramdocker
+[ 56%] Building CXX object plugins/dockers/gamutmask/CMakeFiles/kritagamutmask.dir/gamutmask_plugin.cpp.o
+[ 56%] Generating ui_recorderdocker.h
+[ 56%] Generating ui_recorder_export.h
+[ 56%] Generating ui_recorder_profile_settings.h
+[ 56%] Generating ui_recorder_snapshots_manager.h
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/kritarecorderdocker_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineFrameDelegate.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineLayersHeader.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_const.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_config.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineTimeHeader.cpp.o
+[ 56%] Building CXX object plugins/dockers/gamutmask/CMakeFiles/kritagamutmask.dir/gamutmask_dock.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimTimelineColors.cpp.o
+[ 56%] Generating ui_TouchDockerWidget.h
+[ 56%] Building CXX object plugins/dockers/touchdocker/CMakeFiles/kritatouchdocker.dir/kritatouchdocker_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_export_config.cpp.o
+In file included from /home/runner/work/krita/krita/libs/global/kis_debug.h:190,
+                 from /home/runner/work/krita/krita/libs/global/kis_shared_ptr.h:13,
+                 from /home/runner/work/krita/krita/libs/image/kis_types.h:343,
+                 from /home/runner/work/krita/krita/libs/ui/KisView.h:16,
+                 from /home/runner/work/krita/krita/libs/ui/kis_action_manager.h:15,
+                 from /home/runner/work/krita/krita/plugins/dockers/animation/KisAnimTimelineTimeHeader.h:14,
+                 from /home/runner/work/krita/krita/plugins/dockers/animation/KisAnimTimelineTimeHeader.cpp:9:
+/home/runner/work/krita/krita/plugins/dockers/animation/KisAnimTimelineTimeHeader.cpp: In member function ‘virtual void KisAnimTimelineTimeHeader::mouseMoveEvent(QMouseEvent*)’:
+/home/runner/work/krita/krita/plugins/dockers/animation/KisAnimTimelineTimeHeader.cpp:563:43: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  563 |             KIS_ASSERT(activeValue.type() == QMetaType::Bool);
+      |                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/global/kis_assert.h:33:30: note: in definition of macro ‘KIS_ASSERT’
+   33 | #define KIS_ASSERT(cond) ((!(cond)) ? kis_assert_exception(#cond,__FILE__,__LINE__) : qt_noop())
+      |                              ^~~~
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesDocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/gamutmask/CMakeFiles/kritagamutmask.dir/KisGamutMaskChooser.cpp.o
+[ 56%] Building CXX object plugins/dockers/touchdocker/CMakeFiles/kritatouchdocker.dir/TouchDocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_format.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_writer.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritagamutmask.so
+[ 56%] Building CXX object plugins/dockers/touchdocker/CMakeFiles/kritatouchdocker.dir/TouchDockerDock.cpp.o
+[ 56%] Built target kritagamutmask
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_export.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesModel.cpp.o
+[ 56%] Generating ui_WdgLogDocker.h
+[ 56%] Building CXX object plugins/dockers/logdocker/CMakeFiles/kritalogdocker.dir/kritalogdocker_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesView.cpp.o
+[ 56%] Building CXX object plugins/dockers/logdocker/CMakeFiles/kritalogdocker.dir/LogDocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/touchdocker/CMakeFiles/kritatouchdocker.dir/TouchDockerWidget.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_snapshots_manager.cpp.o
+[ 56%] Building CXX object plugins/dockers/logdocker/CMakeFiles/kritalogdocker.dir/LogDockerDock.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_snapshots_scanner.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritatouchdocker.so
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesKeyDelegate.cpp.o
+[ 56%] Built target kritatouchdocker
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesChannelsModel.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_directory_cleaner.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritalogdocker.so
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorderdocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/snapshotdocker/CMakeFiles/kritasnapshotdocker.dir/kritasnapshotdocker_autogen/mocs_compilation.cpp.o
+[ 56%] Built target kritalogdocker
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorderdocker_dock.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_export_preprocessor.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesChannelDelegate.cpp.o
+[ 56%] Building CXX object plugins/dockers/snapshotdocker/CMakeFiles/kritasnapshotdocker.dir/KisSnapshotModel.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisAnimCurvesValuesHeader.cpp.o
+[ 56%] Generating ui_wdgstoryboarddock.h
+[ 56%] Generating ui_wdgarrangemenu.h
+[ 56%] Generating ui_wdgcommentmenu.h
+[ 56%] Generating ui_wdgexportstoryboard.h
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/kritastoryboarddocker_static_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/KisOnionSkinsDocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_image_copying_job.cpp.o
+[ 56%] Building CXX object plugins/dockers/snapshotdocker/CMakeFiles/kritasnapshotdocker.dir/SnapshotDocker.cpp.o
+[ 56%] Building CXX object plugins/dockers/recorder/CMakeFiles/kritarecorderdocker.dir/recorder_profile_settings.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/CommentModel.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritarecorderdocker.so
+[ 56%] Built target kritarecorderdocker
+[ 56%] Generating ui_WdgWGShadeLineEditor.h
+[ 56%] Generating ui_WdgQuickSettings.h
+[ 56%] Generating ui_WdgWGSelectorSettings.h
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/kritawgcolorselector_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_equalizer_column.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/StoryboardUtils.cpp.o
+[ 56%] Building CXX object plugins/dockers/snapshotdocker/CMakeFiles/kritasnapshotdocker.dir/SnapshotPlugin.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/StoryboardDockerDock.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_equalizer_slider.cpp.o
+[ 56%] Building CXX object plugins/dockers/snapshotdocker/CMakeFiles/kritasnapshotdocker.dir/KisSnapshotView.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_equalizer_button.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGActionManager.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_equalizer_widget.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritasnapshotdocker.so
+[ 56%] Built target kritasnapshotdocker
+[ 56%] Generating ui_kis_dlg_brush_hud_config.h
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kritabrushhud_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/timeline_insert_keyframe_dialog.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/CommentDelegate.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGColorPatches.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/StoryboardModel.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kis_uniform_paintop_property_widget.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/timeline_frames_index_converter.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGColorPreviewToolTip.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/timeline_node_list_keeper.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kis_brush_hud.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGColorSelectorDock.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_draggable_tool_button.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/StoryboardDelegate.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_zoom_button.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kis_dlg_brush_hud_config.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGColorSelectorPlugin.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/StoryboardView.cpp.o
+[ 56%] Building CXX object plugins/dockers/animation/CMakeFiles/kritaanimationdocker_static.dir/kis_custom_modifiers_catcher.cpp.o
+[ 56%] Linking CXX static library ../../../lib/libkritaanimationdocker_static.a
+[ 56%] Built target kritaanimationdocker_static
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/KisAsyncStoryboardThumbnailRenderer.cpp.o
+[ 56%] Built target kritatextproperties_autogen_timestamp_deps
+[ 56%] Generating ui_wdg_imagesplit.h
+[ 56%] Building CXX object plugins/extensions/imagesplit/CMakeFiles/kritaimagesplit.dir/kritaimagesplit_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGColorSelectorSettings.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kis_brush_hud_properties_list.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/KisStoryboardThumbnailRenderScheduler.cpp.o
+[ 56%] Building CXX object plugins/extensions/imagesplit/CMakeFiles/kritaimagesplit.dir/imagesplit.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/kis_brush_hud_properties_config.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/DlgExportStoryboard.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGCommonColorsCalculationRunner.cpp.o
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/brushhuddocker.cpp.o
+[ 56%] Building CXX object plugins/extensions/imagesplit/CMakeFiles/kritaimagesplit.dir/dlg_imagesplit.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGCommonColorSet.cpp.o
+[ 56%] Building CXX object plugins/dockers/storyboarddocker/CMakeFiles/kritastoryboarddocker_static.dir/KisAddRemoveStoryboardCommand.cpp.o
+[ 56%] Building CXX object plugins/extensions/imagesplit/CMakeFiles/kritaimagesplit.dir/wdg_imagesplit.cpp.o
+[ 56%] Linking CXX static library ../../../lib/libkritastoryboarddocker_static.a
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGConfig.cpp.o
+[ 56%] Built target kritastoryboarddocker_static
+[ 56%] Building CXX object plugins/dockers/brushhud/CMakeFiles/kritabrushhud.dir/brushhud_dock.cpp.o
+[ 56%] Generating ui_wdg_clonesarray.h
+[ 56%] Building CXX object plugins/extensions/clonesarray/CMakeFiles/kritaclonesarray.dir/kritaclonesarray_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/extensions/clonesarray/CMakeFiles/kritaclonesarray.dir/clonesarray.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritaimagesplit.so
+[ 56%] Built target kritaimagesplit
+[ 56%] Building CXX object plugins/extensions/clonesarray/CMakeFiles/kritaclonesarray.dir/dlg_clonesarray.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGMyPaintShadeSelector.cpp.o
+[ 56%] Linking CXX shared module ../../../bin/kritabrushhud.so
+[ 56%] Generating ui_wdg_colorrange.h
+[ 56%] Building CXX object plugins/extensions/colorrange/CMakeFiles/kritacolorrange.dir/kritacolorrange_autogen/mocs_compilation.cpp.o
+[ 56%] Built target kritabrushhud
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGQuickSettingsWidget.cpp.o
+[ 56%] Building CXX object plugins/extensions/colorrange/CMakeFiles/kritacolorrange.dir/colorrange.cc.o
+[ 56%] Linking CXX shared module ../../../bin/kritaclonesarray.so
+[ 56%] Built target kritaclonesarray
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGSelectorConfigGrid.cpp.o
+[ 56%] Building CXX object plugins/extensions/colorrange/CMakeFiles/kritacolorrange.dir/dlg_colorrange.cc.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGSelectorPopup.cpp.o
+[ 56%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGSelectorWidgetBase.cpp.o
+[ 56%] Building CXX object plugins/extensions/colorspaceconversion/CMakeFiles/kritacolorspaceconversion.dir/kritacolorspaceconversion_autogen/mocs_compilation.cpp.o
+[ 56%] Generating ui_exif.h
+[ 56%] Generating ui_dublincore.h
+[ 56%] Building CXX object plugins/extensions/metadataeditor/CMakeFiles/kritametadataeditor.dir/kritametadataeditor_autogen/mocs_compilation.cpp.o
+[ 56%] Building CXX object plugins/extensions/colorspaceconversion/CMakeFiles/kritacolorspaceconversion.dir/colorspaceconversion.cc.o
+[ 56%] Building CXX object plugins/extensions/metadataeditor/CMakeFiles/kritametadataeditor.dir/metadataeditor.cc.o
+[ 57%] Linking CXX shared module ../../../bin/kritacolorrange.so
+[ 57%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGShadeLineEditor.cpp.o
+[ 57%] Built target kritacolorrange
+[ 57%] Building CXX object plugins/extensions/metadataeditor/CMakeFiles/kritametadataeditor.dir/kis_entry_editor.cc.o
+[ 57%] Building CXX object plugins/extensions/metadataeditor/CMakeFiles/kritametadataeditor.dir/kis_meta_data_editor.cc.o
+[ 57%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGShadeSelector.cpp.o
+[ 57%] Linking CXX shared module ../../../bin/kritacolorspaceconversion.so
+[ 57%] Built target kritacolorspaceconversion
+[ 57%] Generating ui_wdg_shrink_selection.h
+[ 57%] Generating ui_wdg_border_selection.h
+[ 57%] Generating ui_wdg_feather_selection.h
+[ 57%] Generating ui_wdg_grow_selection.h
+[ 57%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/kritamodifyselection_autogen/mocs_compilation.cpp.o
+[ 57%] Generating ui_wdg_offsetimage.h
+[ 57%] Building CXX object plugins/extensions/offsetimage/CMakeFiles/kritaoffsetimage.dir/kritaoffsetimage_autogen/mocs_compilation.cpp.o
+[ 57%] Building CXX object plugins/extensions/metadataeditor/CMakeFiles/kritametadataeditor.dir/kis_meta_data_model.cpp.o
+[ 57%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/WGShadeSlider.cpp.o
+[ 57%] Building CXX object plugins/extensions/offsetimage/CMakeFiles/kritaoffsetimage.dir/offsetimage.cpp.o
+[ 57%] Linking CXX shared module ../../../bin/kritametadataeditor.so
+[ 57%] Built target kritametadataeditor
+[ 57%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/dlg_grow_selection.cc.o
+[ 57%] Generating ui_wdg_rotateimage.h
+[ 59%] Building CXX object plugins/extensions/rotateimage/CMakeFiles/kritarotateimage.dir/kritarotateimage_autogen/mocs_compilation.cpp.o
+[ 59%] Building CXX object plugins/dockers/widegamutcolorselector/CMakeFiles/kritawgcolorselector.dir/KisColorSourceToggle.cpp.o
+[ 59%] Building CXX object plugins/extensions/rotateimage/CMakeFiles/kritarotateimage.dir/rotateimage.cc.o
+[ 59%] Linking CXX shared module ../../../bin/kritawgcolorselector.so
+[ 59%] Built target kritawgcolorselector
+[ 59%] Building CXX object plugins/extensions/rotateimage/CMakeFiles/kritarotateimage.dir/dlg_rotateimage.cc.o
+[ 59%] Building CXX object plugins/extensions/offsetimage/CMakeFiles/kritaoffsetimage.dir/dlg_offsetimage.cpp.o
+[ 59%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/dlg_shrink_selection.cc.o
+[ 59%] Building CXX object plugins/extensions/offsetimage/CMakeFiles/kritaoffsetimage.dir/kis_offset_processing_visitor.cpp.o
+[ 59%] Linking CXX shared module ../../../bin/kritarotateimage.so
+[ 59%] Built target kritarotateimage
+[ 59%] Generating ui_wdg_separations.h
+[ 59%] Building CXX object plugins/extensions/separate_channels/CMakeFiles/kritaseparatechannels.dir/kritaseparatechannels_autogen/mocs_compilation.cpp.o
+[ 59%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/dlg_border_selection.cc.o
+[ 59%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/dlg_feather_selection.cc.o
+[ 59%] Building CXX object plugins/extensions/separate_channels/CMakeFiles/kritaseparatechannels.dir/kis_channel_separator.cc.o
+[ 59%] Linking CXX shared module ../../../bin/kritaoffsetimage.so
+[ 59%] Built target kritaoffsetimage
+[ 59%] Building CXX object plugins/extensions/separate_channels/CMakeFiles/kritaseparatechannels.dir/dlg_separate.cc.o
+[ 59%] Building CXX object plugins/extensions/separate_channels/CMakeFiles/kritaseparatechannels.dir/kis_separate_channels_plugin.cc.o
+[ 59%] Generating ui_wdg_shearimage.h
+[ 59%] Building CXX object plugins/extensions/shearimage/CMakeFiles/kritashearimage.dir/kritashearimage_autogen/mocs_compilation.cpp.o
+[ 59%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/modify_selection.cc.o
+[ 59%] Building CXX object plugins/extensions/modify_selection/CMakeFiles/kritamodifyselection.dir/modify_selection_operations.cpp.o
+[ 59%] Building CXX object plugins/extensions/shearimage/CMakeFiles/kritashearimage.dir/shearimage.cc.o
+[ 59%] Linking CXX shared module ../../../bin/kritaseparatechannels.so
+[ 59%] Built target kritaseparatechannels
+[ 59%] Building CXX object plugins/extensions/shearimage/CMakeFiles/kritashearimage.dir/dlg_shearimage.cc.o
+[ 59%] Building CXX object plugins/extensions/layergroupswitcher/CMakeFiles/kritalayergroupswitcher.dir/kritalayergroupswitcher_autogen/mocs_compilation.cpp.o
+[ 59%] Generating ui_wdgtexturechooser.h
+[ 59%] Generating ui_SensorDistanceConfiguration.h
+[ 59%] Generating ui_SensorFadeConfiguration.h
+[ 59%] Generating ui_SensorTimeConfiguration.h
+[ 59%] Generating ui_wdgBrushSizeOptions.h
+[ 59%] Generating ui_wdgCompositeOpOption.h
+[ 59%] Generating ui_wdgairbrush.h
+[ 59%] Generating ui_wdgautobrush.h
+[ 59%] Generating ui_wdgbrushchooser.h
+[ 60%] Generating ui_wdgcoloroptions.h
+[ 60%] Generating ui_wdgcurveoption.h
+[ 60%] Generating ui_wdgcurveoption2.h
+[ 60%] Generating ui_wdgfilteroption.h
+[ 60%] Generating ui_wdgflowopacityoption.h
+[ 60%] Generating ui_wdgincremental.h
+[ 60%] Generating ui_wdgmultisensorsselector.h
+[ 60%] Generating ui_wdgpredefinedbrushchooser.h
+[ 60%] Generating ui_wdgtextbrush.h
+[ 60%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kritalibpaintop_autogen/mocs_compilation.cpp.o
+[ 60%] Linking CXX shared module ../../../bin/kritamodifyselection.so
+[ 60%] Building CXX object plugins/extensions/layergroupswitcher/CMakeFiles/kritalayergroupswitcher.dir/layergroupswitcher.cpp.o
+[ 60%] Built target kritamodifyselection
+[ 60%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_auto_brush_widget.cpp.o
+[ 60%] Linking CXX shared module ../../../bin/kritashearimage.so
+[ 60%] Built target kritashearimage
+[ 60%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_based_paintop.cpp.o
+[ 60%] Linking CXX shared module ../../../bin/kritalayergroupswitcher.so
+[ 60%] Built target kritalayergroupswitcher
+[ 60%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_predefined_brush_chooser.cpp.o
+[ 60%] Generating ui_wdg_layersplit.h
+[ 60%] Building CXX object plugins/extensions/layersplit/CMakeFiles/kritalayersplit.dir/kritalayersplit_autogen/mocs_compilation.cpp.o
+[ 60%] Generating ui_wdg_waveletdecompose.h
+[ 60%] Building CXX object plugins/extensions/waveletdecompose/CMakeFiles/kritawaveletdecompose.dir/kritawaveletdecompose_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object plugins/extensions/waveletdecompose/CMakeFiles/kritawaveletdecompose.dir/waveletdecompose.cpp.o
+[ 60%] Building CXX object plugins/extensions/layersplit/CMakeFiles/kritalayersplit.dir/layersplit.cpp.o
+[ 60%] Generating _tmp/krita/sipkritapart0.cpp, _tmp/krita/krita_complete.pyi
+Generating SIP 5+ bindings for PyKrita.krita...
+pyproject.toml: line 5: using '[tool.sip.metadata]' to specify the project metadata is deprecated and will be removed in SIP v7.0.0, use '[project]' instead
+These bindings will be built: kritamod.
+Generating the kritamod bindings...
+/home/runner/wd/krita/_install/lib/python3.13/site-packages/PyQt5/bindings/QtCore/qbytearray.sip: line 118: '%BIGetReadBufferCode' is deprecated and will be removed in SIP v7.0.0
+/home/runner/wd/krita/_install/lib/python3.13/site-packages/PyQt5/bindings/QtCore/qbytearray.sip: line 131: '%BIGetSegCountCode' is deprecated and will be removed in SIP v7.0.0
+/home/runner/wd/krita/_install/lib/python3.13/site-packages/PyQt5/bindings/QtCore/qbytearray.sip: line 138: '%BIGetCharBufferCode' is deprecated and will be removed in SIP v7.0.0
+[ 60%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisAutoBrushModel.cpp.o
+[ 61%] Building CXX object plugins/extensions/waveletdecompose/CMakeFiles/kritawaveletdecompose.dir/dlg_waveletdecompose.cpp.o
+[ 61%] Building CXX object plugins/extensions/waveletdecompose/CMakeFiles/kritawaveletdecompose.dir/kis_wavelet_kernel.cpp.o
+[ 61%] Building CXX object plugins/extensions/layersplit/CMakeFiles/kritalayersplit.dir/dlg_layersplit.cpp.o
+[ 61%] Linking CXX shared module ../../../bin/kritawaveletdecompose.so
+[ 61%] Built target kritawaveletdecompose
+[ 61%] Building CXX object plugins/extensions/layersplit/CMakeFiles/kritalayersplit.dir/wdg_layersplit.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisPredefinedBrushModel.cpp.o
+ABI v12.8 is deprecated and will be removed in SIP v7.0.0, use v12.9 or later instead
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_option_widget.cpp.o
+[ 61%] Linking CXX shared module ../../../bin/kritalayersplit.so
+[ 61%] Built target kritalayersplit
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_option.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_selection_widget.cpp.o
+[ 61%] Built target pykrita_autogen_timestamp_deps
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kritaqmicinterface_autogen/mocs_compilation.cpp.o
+[ 61%] Generating ui_wdg_buginfo.h
+[ 61%] Building CXX object plugins/extensions/buginfo/CMakeFiles/kritabuginfo.dir/kritabuginfo_autogen/mocs_compilation.cpp.o
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kis_qmic_import_tools.cpp.o
+[ 61%] Building CXX object plugins/extensions/buginfo/CMakeFiles/kritabuginfo.dir/buginfo.cpp.o
+[ 61%] Building CXX object plugins/extensions/buginfo/CMakeFiles/kritabuginfo.dir/dlg_buginfo.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorOptionData.cpp.o
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kis_qmic_interface.cpp.o
+[ 61%] Building CXX object plugins/extensions/buginfo/CMakeFiles/kritabuginfo.dir/DlgSysInfo.cpp.o
+Generating the krita .pyi file...
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorOptionModel.cpp.o
+[ 61%] Building CXX object plugins/extensions/buginfo/CMakeFiles/kritabuginfo.dir/DlgKritaLog.cpp.o
+The project bindings are ready for build.
+[ 61%] Built target python_module_PyKrita_krita_autogen_timestamp_deps
+[ 61%] Building CXX object plugins/extensions/samplescreencolor/CMakeFiles/kritasamplescreencolor.dir/kritasamplescreencolor_autogen/mocs_compilation.cpp.o
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kis_qmic_plugin_interface.cpp.o
+[ 61%] Linking CXX shared module ../../../bin/kritabuginfo.so
+[ 61%] Built target kritabuginfo
+[ 61%] Generating ui_WdgDbExplorer.h
+[ 61%] Building CXX object plugins/extensions/dbexplorer/CMakeFiles/kritadbexplorer.dir/kritadbexplorer_autogen/mocs_compilation.cpp.o
+[ 61%] Building CXX object plugins/extensions/samplescreencolor/CMakeFiles/kritasamplescreencolor.dir/KisSampleScreenColor.cpp.o
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kis_qmic_simple_convertor.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorOptionWidget.cpp.o
+[ 61%] Building CXX object plugins/extensions/dbexplorer/CMakeFiles/kritadbexplorer.dir/DbExplorer.cpp.o
+[ 61%] Building CXX object plugins/extensions/qmic/CMakeFiles/kritaqmicinterface.dir/kis_qmic_synchronize_layers_command.cpp.o
+[ 61%] Building CXX object plugins/extensions/dbexplorer/CMakeFiles/kritadbexplorer.dir/DlgDbExplorer.cpp.o
+[ 61%] Linking CXX shared module ../../../bin/kritasamplescreencolor.so
+[ 61%] Built target kritasamplescreencolor
+[ 61%] Building CXX object plugins/extensions/dbexplorer/CMakeFiles/kritadbexplorer.dir/TableModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_color_source.cpp.o
+[ 61%] Generating qrc_mobileui.cpp
+[ 61%] Building CXX object plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/kritamobileui_autogen/mocs_compilation.cpp.o
+[ 61%] Linking CXX shared module ../../../bin/kritadbexplorer.so
+[ 61%] Built target kritadbexplorer
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_color_source_option.cpp.o
+In file included from /home/runner/wd/krita/_install/include/QtCore/QPointer:1,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/extensions/mobileui/MobileChrome.h:10,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/EWIEGA46WW/moc_MobileChrome.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_install/include/QtCore/qpointer.h: In instantiation of ‘T* QPointer<T>::data() const [with T = QAction]’:
+/home/runner/wd/krita/_install/include/QtCore/qpointer.h:83:14:   required from ‘QPointer<T>::operator T*() const [with T = QAction]’
+/home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/extensions/mobileui/MobileWidgets.h:40:43:   required from here
+/home/runner/wd/krita/_install/include/QtCore/qpointer.h:77:14: error: invalid ‘static_cast’ from type ‘QObject*’ to type ‘QAction*’
+   77 |     { return static_cast<T*>(wp.internalData()); }
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/wd/krita/_install/include/QtWidgets/QWidget:1,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/extensions/mobileui/MobileChrome.h:13,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/EWIEGA46WW/moc_MobileChrome.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/extensions/mobileui/kritamobileui_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_install/include/QtWidgets/qwidget.h:68:7: note: class type ‘QAction’ is incomplete
+   68 | class QAction;
+      |       ^~~~~~~
+gmake[2]: *** [plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/build.make:141: plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/kritamobileui_autogen/mocs_compilation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:53690: plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionDataUniformProperty.cpp.o
+[ 61%] Linking CXX shared library ../../../bin/libkritaqmicinterface.so
+[ 61%] Built target kritaqmicinterface
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSensorData.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSensorPackInterface.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisKritaSensorPack.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionDataCommon.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionData.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionInputControlsStrategyInterface.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionInputControlsStrategy.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionRangeControlsStrategyInterface.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveRangeModelInterface.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveRangeModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOptionWidget.cpp.o
+/home/runner/work/krita/krita/plugins/paintops/libpaintop/KisCurveOptionInputControlsStrategy.cpp:107:40: warning: type attributes ignored after type is already defined [-Wattributes]
+  107 | template class PAINTOP_EXPORT_INSTANCE KisCurveOptionInputControlsStrategy<QSpinBox>;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/plugins/paintops/libpaintop/KisCurveOptionInputControlsStrategy.cpp:108:40: warning: type attributes ignored after type is already defined [-Wattributes]
+  108 | template class PAINTOP_EXPORT_INSTANCE KisCurveOptionInputControlsStrategy<QDoubleSpinBox>;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCurveOption.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMultiSensorsSelector.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMultiSensorsModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactory.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactoryRegistry.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSimpleDynamicSensorFactory.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSpacingOptionWidget.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSpacingOptionData.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSpacingOptionModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSpacingOption.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMirrorOptionData.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMirrorOptionModel.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMirrorOptionWidget.cpp.o
+[ 61%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMirrorOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSharpnessOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSharpnessOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSharpnessOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSharpnessOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisScatterOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisScatterOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisScatterOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisScatterOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisAirbrushOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisAirbrushOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisAirbrushOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCompositeOpOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCompositeOpOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisCompositeOpOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisPaintingModeOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisPaintingModeOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisPaintingModeOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorSourceOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorSourceOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisColorSourceOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisLightnessStrengthOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisTextureOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisEmbeddedTextureData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisTextureOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisTextureOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSizeOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSizeOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisStandardOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisStandardOptions.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisRotationOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisOpacityOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisFlowOpacityOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDarkenOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisHSVOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisFilterOptionData.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisFilterOptionModel.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisFilterOptionWidget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_custom_brush_widget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDabCacheUtils.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_dab_cache_base.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_dab_cache.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_precision_option.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_current_outline_fetcher.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_text_brush_chooser.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_based_paintop_options_widget.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_brush_based_paintop_settings.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_texture_option.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/kis_texture_chooser.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisTextureMaskInfo.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMaskingBrushOption.cpp.o
+[ 63%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisMaskingBrushOptionProperties.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensor.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensors.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensorDrawingAngle.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensorFuzzy.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensorDistance.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensorFade.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/sensors/KisDynamicSensorTime.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactoryTime.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactoryFade.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactoryDistance.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDynamicSensorFactoryDrawingAngle.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisSensorWithLengthModel.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisDrawingAngleSensorModel.cpp.o
+[ 64%] Building CXX object plugins/paintops/libpaintop/CMakeFiles/kritalibpaintop.dir/KisTextBrushModel.cpp.o
+[ 64%] Linking CXX shared library ../../../bin/libkritalibpaintop.so
+[ 64%] Built target kritalibpaintop
+gmake: *** [Makefile:146: all] Error 2
+## Failed to build the project
