@@ -1,0 +1,12 @@
+== android (run 2): failure
+status: failure
+branch: mobile-phase2
+commit: ba0c3e8d58b5e4ebc41d2f4e4bce5d66b3891cfa
+date: 2026-10-05T23:30:08Z
+signing: n/a
+apk: 
+release: https://github.com/mikhanandrij-rgb/krita/releases/tag/mobile-build-2
+disk:
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/root       146G   40G  107G  27% /
+
