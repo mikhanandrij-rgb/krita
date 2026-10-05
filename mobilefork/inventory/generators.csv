@@ -1,0 +1,6 @@
+id,title,kind,source,new_location,tested
+color,Color,generator,plugins/generators/solid/colorgenerator.h,,
+multigrid,Multigrid,generator,plugins/generators/multigridpattern/multigridpatterngenerator.h,,
+pattern,Pattern,generator,plugins/generators/pattern/patterngenerator.h,,
+seexpr,SeExpr,generator,plugins/generators/seexpr/generator.h,,
+simplex_noise,Simplex Noise,generator,plugins/generators/simplexnoise/simplexnoisegenerator.h,,

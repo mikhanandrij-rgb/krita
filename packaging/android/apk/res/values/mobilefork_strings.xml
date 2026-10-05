@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-License-Identifier: GPL-3.0-or-later
+  Krita Mobile (unofficial fork): application name. Kept in a separate file so
+  upstream string updates never conflict with it.
+-->
+<resources>
+    <string name="mobilefork_app_name" translatable="false">Krita Mobile (unofficial)</string>
+</resources>

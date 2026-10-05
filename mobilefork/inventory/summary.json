@@ -1,0 +1,13 @@
+{
+  "actions_from_action_files": 691,
+  "actions_defined_only_in_code": 9,
+  "kstandard_actions": 28,
+  "actions_placed_in_menus_or_toolbars": 255,
+  "dockers": 29,
+  "tools": 35,
+  "filters": 48,
+  "generators": 5,
+  "brush_engines": 16,
+  "file_filters": 41,
+  "layer_and_mask_classes": 18
+}

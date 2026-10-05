@@ -170,8 +170,26 @@ android {
         }
     }
 
+    // Krita Mobile (unofficial fork): sign with a key passed through the
+    // environment (see .github/workflows/mobilefork-android.yml). Keys are
+    // never stored in the repository.
+    signingConfigs {
+        mobilefork {
+            def ks = System.getenv('KRITA_MOBILEFORK_KEYSTORE')
+            if (ks) {
+                storeFile file(ks)
+                storePassword System.getenv('KRITA_MOBILEFORK_KEYSTORE_PASS')
+                keyAlias System.getenv('KRITA_MOBILEFORK_KEY_ALIAS') ?: 'kritamobile'
+                keyPassword System.getenv('KRITA_MOBILEFORK_KEYSTORE_PASS')
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (System.getenv('KRITA_MOBILEFORK_KEYSTORE')) {
+                signingConfig signingConfigs.mobilefork
+            }
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
                     'proguard-rules.pro'
@@ -210,12 +228,16 @@ android {
 
         ndkVersion "27.3.13750724"
 
+        // Krita Mobile (unofficial fork): own application id so it installs
+        // alongside the official Krita app.
+        applicationId "org.krita.mobilefork"
+
         targetSdkVersion 36
         minSdkVersion 24
         versionCode project.ext.constant * 1000000 + versionMajor * 10000 + versionMinor * 100 + versionRelease
         versionName "5.4.0-prealpha"
         def unstableSuffix = System.getenv('KRITA_UNSTABLE_PACKAGE_SUFFIX')
-        archivesBaseName = System.getenv('KRITA_BUILD_APPBUNDLE') ? "krita-$versionName$unstableSuffix" : "krita-$abi-$versionName$unstableSuffix"
+        archivesBaseName = System.getenv('KRITA_BUILD_APPBUNDLE') ? "kritamobile-$versionName$unstableSuffix" : "kritamobile-$abi-$versionName$unstableSuffix"
     }
     buildFeatures {
         renderScript true

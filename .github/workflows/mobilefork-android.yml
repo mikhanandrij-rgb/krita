@@ -1,0 +1,316 @@
+# SPDX-FileCopyrightText: 2026 Krita Mobile (unofficial fork) contributors
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Krita Mobile (unofficial fork): builds an arm64-v8a APK on GitHub's free
+# runners. It mirrors upstream's GitLab job (build-tools/ci-scripts/android.yml)
+# and reuses KDE's prebuilt Android dependencies (Qt 5 with Krita's patches,
+# KF5, FFmpeg, MLT, ...) from the invent.kde.org package registry, so only
+# Krita itself is compiled here. ccache is kept in the Actions cache.
+#
+# Outputs of every run:
+#  * a pre-release "mobile-build-N" with the APK (downloadable on the phone
+#    without logging in to GitHub),
+#  * the "KritaMobile-APK" artifact,
+#  * a summary and log tails pushed to the `ci-status` branch, so the
+#    developer can read build results with plain git.
+#
+# Signing: add the repository secrets MOBILEFORK_KEYSTORE (base64 of a
+# keystore), MOBILEFORK_KEYSTORE_PASS and MOBILEFORK_KEY_ALIAS. Without them
+# the APK is signed with a test key generated once and kept in the Actions
+# cache, so successive builds still install over each other.
+name: Krita Mobile (unofficial) Android APK
+
+on:
+  push:
+    branches:
+      - mobile
+      - mobile-*
+    paths-ignore:
+      - 'mobilefork/docs/**'
+      - 'mobilefork/report/**'
+      - '**.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mobilefork-android-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  KDECI_ANDROID_ABI: arm64-v8a
+  ANDROID_NDK_VERSION: 27.3.13750724
+  ANDROID_BUILD_TOOLS_VERSION: 36.0.0
+  ANDROID_PLATFORM_VERSION: android-36
+  DEPS_BRANCH: master
+  WD: /home/runner/wd
+
+jobs:
+  android-arm64:
+    name: Android arm64-v8a APK
+    runs-on: ubuntu-22.04
+    timeout-minutes: 345
+    steps:
+      - name: Free disk space
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /usr/local/share/boost \
+            /opt/hostedtoolcache/CodeQL /usr/local/share/powershell /usr/share/swift \
+            /usr/local/lib/node_modules /opt/microsoft /opt/google /usr/lib/jvm/java-8* \
+            /usr/local/julia* /usr/share/miniconda || true
+          sudo docker image prune --all --force >/dev/null 2>&1 || true
+          # Keep only the NDK we need
+          for d in "$ANDROID_SDK_ROOT"/ndk/*; do
+            [ "$(basename "$d")" = "$ANDROID_NDK_VERSION" ] || sudo rm -rf "$d"
+          done
+          sudo swapoff -a || true
+          sudo rm -f /mnt/swapfile /swapfile || true
+          df -h /
+
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install host tools and Android SDK packages
+        run: |
+          set -x
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends ccache ninja-build gettext \
+            gperf flex bison patchelf rsync
+          sdkmanager="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$sdkmanager" --licenses >/dev/null || true
+          "$sdkmanager" "ndk;$ANDROID_NDK_VERSION" "build-tools;$ANDROID_BUILD_TOOLS_VERSION" \
+            "platforms;$ANDROID_PLATFORM_VERSION" "platform-tools" >/dev/null
+          echo "ANDROID_HOME=$ANDROID_SDK_ROOT" >> "$GITHUB_ENV"
+          echo "KDECI_ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> "$GITHUB_ENV"
+          echo "KDECI_ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/$ANDROID_NDK_VERSION" >> "$GITHUB_ENV"
+          echo "ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/$ANDROID_NDK_VERSION" >> "$GITHUB_ENV"
+          echo "CI_COMMIT_SHORT_SHA=${GITHUB_SHA::8}" >> "$GITHUB_ENV"
+          echo "CI_COMMIT_SHA=$GITHUB_SHA" >> "$GITHUB_ENV"
+
+      - name: Fetch KDE CI tooling
+        run: |
+          mkdir -p "$WD" logs
+          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git
+          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git krita-deps-management/ci-utilities
+          git clone --depth=1 https://invent.kde.org/sysadmin/ci-utilities.git upstream-ci-utilities
+          python3 -m venv venv --upgrade-deps
+          . venv/bin/activate
+          pip install -q -r krita-deps-management/requirements.txt
+          # Toolchain file name changed upstream over time; accept both.
+          tc=krita-deps-management/tools/android-toolchain-krita.cmake
+          [ -f "$tc" ] || tc=krita-deps-management/tools/android-toolchain.cmake
+          echo "CMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/$tc" >> "$GITHUB_ENV"
+          echo "venv=$GITHUB_WORKSPACE/venv" >> "$GITHUB_ENV"
+
+      - name: Probe KDE package registry (prebuilt dependencies)
+        run: |
+          url="https://invent.kde.org/api/v4/projects/teams%2Fci-artifacts%2Fkrita-android-arm64-v8a/packages?per_page=100&order_by=created_at&sort=desc"
+          code=$(curl -sS -o logs/registry-probe.json -w '%{http_code}' "$url")
+          echo "HTTP $code" | tee logs/registry-probe.txt
+          python3 - <<'EOF' | tee -a logs/registry-probe.txt
+          import json
+          try:
+              d = json.load(open('logs/registry-probe.json'))
+              print(f"{len(d)} packages visible anonymously")
+              for p in d[:15]:
+                  print(' ', p.get('name'), p.get('version'), p.get('created_at'))
+          except Exception as e:
+              print('cannot parse registry answer:', e)
+          EOF
+          [ "$code" = "200" ] || { echo "::error::KDE package registry not reachable anonymously (HTTP $code)"; exit 1; }
+
+      - name: Restore ccache
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-android-arm64-${{ github.sha }}
+          restore-keys: ccache-android-arm64-
+
+      - name: Restore downloaded dependencies
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/kdeci-cache
+          key: kdeci-deps-android-arm64-v2-${{ github.run_id }}
+          restore-keys: kdeci-deps-android-arm64-v2-
+
+      - name: Build Krita (native libraries)
+        # Leave time inside the 6 h job limit to save ccache, so an
+        # unfinished first build still speeds up the next run.
+        timeout-minutes: 285
+        env:
+          KDECI_BUILD_TYPE: Release
+          KDECI_GITLAB_SERVER: https://invent.kde.org/
+          KDECI_PACKAGE_PROJECT: teams/ci-artifacts/krita-android-arm64-v8a
+          KDECI_CACHE_PATH: /home/runner/kdeci-cache
+          KDECI_CC_CACHE: /home/runner/ccache
+          KDECI_COMPRESS_PACKAGES_ON_DOWNLOAD: 'False'
+          KDECI_SKIP_ECM_ANDROID_TOOLCHAIN: 'True'
+          KDECI_WORKDIR_PATH: /home/runner/wd
+          KDECI_EXTRA_CMAKE_ARGS: -DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF
+        run: |
+          . "$venv/bin/activate"
+          export KDECI_REPO_METADATA_PATH="$GITHUB_WORKSPACE/krita-deps-management/repo-metadata"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          # Keep ccache within the Actions cache budget (10 GB per repository).
+          sed -i 's/ccache-large-cache: True/ccache-large-cache: False/' .kde-ci.yml
+          python3 -u krita-deps-management/tools/replace-branch-in-seed-file.py \
+            krita-deps-management/latest/krita-deps.yml -p -o branch-corrected-deps.yml -d "$DEPS_BRANCH"
+          python3 -u krita-deps-management/tools/generate-deps-file.py -s branch-corrected-deps.yml -o .kde-ci.yml
+          sed -i 's/ccache-large-cache: True/ccache-large-cache: False/' .kde-ci.yml
+          set -o pipefail
+          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master \
+            --platform Android/$KDECI_ANDROID_ABI/Qt5/Shared --only-build --skip-publishing 2>&1 | tee logs/build-krita.log
+          ccache -s -d /home/runner/ccache/krita || true
+          df -h /
+
+      - name: Save ccache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-android-arm64-${{ github.sha }}
+
+      - name: Save downloaded dependencies
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/kdeci-cache
+          key: kdeci-deps-android-arm64-v2-${{ github.run_id }}
+
+      - name: Prepare APK signing
+        env:
+          MOBILEFORK_KEYSTORE: ${{ secrets.MOBILEFORK_KEYSTORE }}
+          MOBILEFORK_KEYSTORE_PASS: ${{ secrets.MOBILEFORK_KEYSTORE_PASS }}
+          MOBILEFORK_KEY_ALIAS: ${{ secrets.MOBILEFORK_KEY_ALIAS }}
+        run: |
+          mkdir -p /home/runner/signing
+          if [ -n "$MOBILEFORK_KEYSTORE" ] && [ -n "$MOBILEFORK_KEYSTORE_PASS" ]; then
+            echo "$MOBILEFORK_KEYSTORE" | base64 -d > /home/runner/signing/release.keystore
+            echo "KRITA_MOBILEFORK_KEYSTORE=/home/runner/signing/release.keystore" >> "$GITHUB_ENV"
+            echo "KRITA_MOBILEFORK_KEYSTORE_PASS=$MOBILEFORK_KEYSTORE_PASS" >> "$GITHUB_ENV"
+            echo "KRITA_MOBILEFORK_KEY_ALIAS=${MOBILEFORK_KEY_ALIAS:-kritamobile}" >> "$GITHUB_ENV"
+            echo "SIGNING=secrets" >> "$GITHUB_ENV"
+            echo "Signing with the key from repository secrets."
+          else
+            echo "SIGNING=test-key" >> "$GITHUB_ENV"
+            echo "::warning::No MOBILEFORK_KEYSTORE secret: signing with a cached test key."
+          fi
+
+      - name: Restore test signing key
+        if: env.SIGNING == 'test-key'
+        uses: actions/cache@v4
+        with:
+          path: /home/runner/signing-test
+          key: mobilefork-test-keystore-v1
+
+      - name: Create test signing key if needed
+        if: env.SIGNING == 'test-key'
+        run: |
+          ks=/home/runner/signing-test/test.keystore
+          if [ ! -s "$ks" ]; then
+            mkdir -p /home/runner/signing-test
+            keytool -genkeypair -v -keystore "$ks" -alias kritamobile -keyalg RSA -keysize 4096 \
+              -validity 10000 -storepass android -keypass android \
+              -dname "CN=Krita Mobile unofficial fork test build"
+          fi
+          echo "KRITA_MOBILEFORK_KEYSTORE=$ks" >> "$GITHUB_ENV"
+          echo "KRITA_MOBILEFORK_KEYSTORE_PASS=android" >> "$GITHUB_ENV"
+          echo "KRITA_MOBILEFORK_KEY_ALIAS=kritamobile" >> "$GITHUB_ENV"
+
+      - name: Package APK
+        env:
+          KDECI_WORKDIR_PATH: /home/runner/wd
+          KRITACI_ANDROID_PACKAGE_TYPE: release
+        run: |
+          . "$venv/bin/activate"
+          set -o pipefail
+          python3 -u build-tools/ci-scripts/build-android-package.py 2>&1 | tee logs/build-apk.log
+          mkdir -p out
+          for f in "$WD"/krita/_packaging/*.apk; do
+            case "$f" in *debug*) continue;; esac
+            cp "$f" "out/KritaMobile-unofficial-arm64-v8a-${GITHUB_RUN_NUMBER}-${CI_COMMIT_SHORT_SHA}.apk"
+          done
+          ls -la out "$WD"/krita/_packaging
+          "$ANDROID_SDK_ROOT/build-tools/$ANDROID_BUILD_TOOLS_VERSION/apksigner" verify --print-certs out/*.apk | tee logs/apk-signature.txt
+          "$ANDROID_SDK_ROOT/build-tools/$ANDROID_BUILD_TOOLS_VERSION/aapt2" dump badging out/*.apk | head -20 | tee logs/apk-badging.txt
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KritaMobile-APK
+          path: out/*.apk
+
+      - name: Publish APK as a pre-release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          tag="mobile-build-${GITHUB_RUN_NUMBER}"
+          gh release create "$tag" --target "$GITHUB_SHA" --prerelease \
+            --title "Krita Mobile (unofficial) build ${GITHUB_RUN_NUMBER}" \
+            --notes "Unofficial personal fork of Krita for Android phones. NOT an official Krita release. Branch ${GITHUB_REF_NAME}, commit ${GITHUB_SHA}. arm64-v8a, Android 11+. Signing: ${SIGNING}." \
+            out/*.apk
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KritaMobile-logs
+          path: |
+            logs/
+            /home/runner/wd/krita/_build/CMakeCache.txt
+            /home/runner/wd/krita/_build/CMakeFiles/CMakeConfigureLog.yaml
+            /home/runner/wd/krita/_build/krita_build_apk/build.gradle
+            /home/runner/wd/krita/_build/*.json
+          if-no-files-found: ignore
+
+      # Push a short machine-readable report to the ci-status branch, so the
+      # results can be read with `git fetch origin ci-status` (no Actions API).
+      - name: Publish status to ci-status branch
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          set +e
+          st=/tmp/ci-status
+          rm -rf "$st"; mkdir -p "$st/runs"
+          git -C "$st" init -q
+          git -C "$st" remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
+          if git -C "$st" fetch -q --depth=1 origin ci-status; then git -C "$st" checkout -q FETCH_HEAD; else git -C "$st" checkout -q --orphan ci-status; fi
+          run="$st/runs/${GITHUB_RUN_NUMBER}"
+          mkdir -p "$run"
+          {
+            echo "run: ${GITHUB_RUN_NUMBER} (id ${GITHUB_RUN_ID}, attempt ${GITHUB_RUN_ATTEMPT})"
+            echo "status: ${JOB_STATUS}"
+            echo "branch: ${GITHUB_REF_NAME}"
+            echo "commit: ${GITHUB_SHA}"
+            echo "date: $(date -u +%FT%TZ)"
+            echo "signing: ${SIGNING:-n/a}"
+            echo "apk: $(ls out/*.apk 2>/dev/null | xargs -r -n1 basename)"
+            echo "release: https://github.com/${GITHUB_REPOSITORY}/releases/tag/mobile-build-${GITHUB_RUN_NUMBER}"
+            echo "disk:"; df -h / | sed 's/^/  /'
+          } > "$run/summary.txt"
+          for f in logs/*; do
+            [ -f "$f" ] || continue
+            tail -c 60000 "$f" > "$run/$(basename "$f").tail"
+          done
+          # Collect compiler errors explicitly; they are often far from the end.
+          grep -n -E "error:|Error [0-9]+|FAILED:|CMake Error|## Failed|Traceback" logs/build-krita.log 2>/dev/null | head -300 > "$run/errors.txt"
+          cp "$run/summary.txt" "$st/LATEST.txt"
+          git -C "$st" add -A
+          git -C "$st" -c user.name="ci-bot" -c user.email="ci-bot@users.noreply.github.com" commit -q -m "CI run ${GITHUB_RUN_NUMBER}: ${JOB_STATUS}"
+          git -C "$st" push -q origin HEAD:ci-status
+          exit 0
