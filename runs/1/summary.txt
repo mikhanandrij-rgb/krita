@@ -1,0 +1,11 @@
+run: 1 (id 37380782551, attempt 1)
+status: failure
+branch: mobile
+commit: 6bbeee1cfa34e9cb4c4ab3ea5cb070e5f13f83f7
+date: 2026-10-05T23:09:00Z
+signing: test-key
+apk: 
+release: https://github.com/mikhanandrij-rgb/krita/releases/tag/mobile-build-1
+disk:
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/root       146G   44G  102G  31% /
