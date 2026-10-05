@@ -283,17 +283,10 @@ jobs:
         if: always()
         env:
           JOB_STATUS: ${{ job.status }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          set +e
-          st=/tmp/ci-status
-          rm -rf "$st"; mkdir -p "$st/runs"
-          git -C "$st" init -q
-          git -C "$st" remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
-          if git -C "$st" fetch -q --depth=1 origin ci-status; then git -C "$st" checkout -q FETCH_HEAD; else git -C "$st" checkout -q --orphan ci-status; fi
-          run="$st/runs/${GITHUB_RUN_NUMBER}"
-          mkdir -p "$run"
+          mkdir -p logs status-extra
           {
-            echo "run: ${GITHUB_RUN_NUMBER} (id ${GITHUB_RUN_ID}, attempt ${GITHUB_RUN_ATTEMPT})"
             echo "status: ${JOB_STATUS}"
             echo "branch: ${GITHUB_REF_NAME}"
             echo "commit: ${GITHUB_SHA}"
@@ -302,15 +295,169 @@ jobs:
             echo "apk: $(ls out/*.apk 2>/dev/null | xargs -r -n1 basename)"
             echo "release: https://github.com/${GITHUB_REPOSITORY}/releases/tag/mobile-build-${GITHUB_RUN_NUMBER}"
             echo "disk:"; df -h / | sed 's/^/  /'
-          } > "$run/summary.txt"
+          } > status-summary.txt
           for f in logs/*; do
-            [ -f "$f" ] || continue
-            tail -c 60000 "$f" > "$run/$(basename "$f").tail"
+            [ -f "$f" ] && tail -c 60000 "$f" > "status-extra/$(basename "$f").tail"
           done
-          # Collect compiler errors explicitly; they are often far from the end.
-          grep -n -E "error:|Error [0-9]+|FAILED:|CMake Error|## Failed|Traceback" logs/build-krita.log 2>/dev/null | head -300 > "$run/errors.txt"
-          cp "$run/summary.txt" "$st/LATEST.txt"
-          git -C "$st" add -A
-          git -C "$st" -c user.name="ci-bot" -c user.email="ci-bot@users.noreply.github.com" commit -q -m "CI run ${GITHUB_RUN_NUMBER}: ${JOB_STATUS}"
-          git -C "$st" push -q origin HEAD:ci-status
+          grep -n -E "error:|Error [0-9]+|FAILED:|CMake Error|## Failed|Traceback" logs/build-krita.log 2>/dev/null | head -300 > status-extra/errors.txt || true
+          bash mobilefork/ci/publish-status.sh android "${JOB_STATUS}" status-summary.txt status-extra logs
+
+  # Builds Krita for Linux with the same phone interface and walks through it
+  # in a phone-sized window under Xvfb: screenshots of every screen in portrait
+  # and landscape plus the runtime action inventory, pushed to ci-status.
+  linux-phone-preview:
+    name: Linux build, phone-mode screenshots and inventory
+    runs-on: ubuntu-22.04
+    timeout-minutes: 345
+    steps:
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /usr/local/share/boost \
+            /opt/hostedtoolcache/CodeQL /usr/local/share/powershell /usr/share/swift \
+            /usr/local/lib/android /usr/local/lib/node_modules /opt/microsoft /opt/google \
+            /usr/local/julia* /usr/share/miniconda || true
+          sudo docker image prune --all --force >/dev/null 2>&1 || true
+          df -h /
+
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install host tools
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends ccache ninja-build gettext gperf flex bison \
+            patchelf rsync xvfb xauth mesa-utils libgl1-mesa-dri libegl1 libgl1 libglu1-mesa \
+            libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 \
+            libxcb-shape0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0 libxcb-cursor0 libxcb-util1 \
+            libfontconfig1 libxi6 libxrender1 libsm6 libice6 libdbus-1-3 fonts-dejavu-core \
+            libgl-dev libegl-dev libx11-dev libxi-dev libxext-dev libxrandr-dev libxkbcommon-dev
+          echo "CI_COMMIT_SHORT_SHA=${GITHUB_SHA::8}" >> "$GITHUB_ENV"
+          echo "CI_COMMIT_SHA=$GITHUB_SHA" >> "$GITHUB_ENV"
+
+      - name: Fetch KDE CI tooling
+        run: |
+          mkdir -p "$WD" logs
+          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git
+          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git krita-deps-management/ci-utilities
+          python3 -m venv venv --upgrade-deps
+          . venv/bin/activate
+          pip install -q -r krita-deps-management/requirements.txt
+          echo "venv=$GITHUB_WORKSPACE/venv" >> "$GITHUB_ENV"
+
+      - name: Restore ccache
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-linux-${{ github.sha }}
+          restore-keys: ccache-linux-
+
+      - name: Restore downloaded dependencies
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/kdeci-cache
+          key: kdeci-deps-linux-v1-${{ github.run_id }}
+          restore-keys: kdeci-deps-linux-v1-
+
+      - name: Build Krita for Linux
+        timeout-minutes: 285
+        env:
+          KDECI_BUILD_TYPE: Release
+          KDECI_GITLAB_SERVER: https://invent.kde.org/
+          KDECI_PACKAGE_PROJECT: teams/ci-artifacts/krita-appimage
+          KDECI_CACHE_PATH: /home/runner/kdeci-cache
+          KDECI_CC_CACHE: /home/runner/ccache
+          KDECI_COMPRESS_PACKAGES_ON_DOWNLOAD: 'False'
+          KDECI_WORKDIR_PATH: /home/runner/wd
+          KDECI_EXTRA_CMAKE_ARGS: -DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF
+        run: |
+          . "$venv/bin/activate"
+          export KDECI_REPO_METADATA_PATH="$GITHUB_WORKSPACE/krita-deps-management/repo-metadata"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          python3 -u krita-deps-management/tools/replace-branch-in-seed-file.py \
+            krita-deps-management/latest/krita-deps.yml -p -o branch-corrected-deps.yml -d "$DEPS_BRANCH"
+          python3 -u krita-deps-management/tools/generate-deps-file.py -s branch-corrected-deps.yml -o .kde-ci.yml
+          sed -i 's/ccache-large-cache: True/ccache-large-cache: False/; s/run-tests: True/run-tests: False/' .kde-ci.yml
+          set -o pipefail
+          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master \
+            --platform Linux/Qt5/Shared --only-build --skip-publishing 2>&1 | tee logs/build-krita.log
+          df -h /
+
+      - name: Save ccache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-linux-${{ github.sha }}
+
+      - name: Save downloaded dependencies
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/kdeci-cache
+          key: kdeci-deps-linux-v1-${{ github.run_id }}
+
+      - name: Phone-mode screenshots and inventory
+        timeout-minutes: 20
+        run: |
+          P="$WD/krita/_install"
+          ls "$P/bin" | head -20
+          export PATH="$P/bin:$PATH"
+          export LD_LIBRARY_PATH="$P/lib:$P/lib/x86_64-linux-gnu:$P/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          export QT_PLUGIN_PATH="$P/plugins:$P/lib/plugins:$P/lib/x86_64-linux-gnu/plugins:$P/lib/qt5/plugins"
+          export QML2_IMPORT_PATH="$P/qml:$P/lib/qml:$P/lib/x86_64-linux-gnu/qml:$P/lib/qt5/qml"
+          export XDG_DATA_DIRS="$P/share:/usr/share"
+          export KRITA_MOBILE_UI=phone
+          export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots"
+          export KRITA_NO_STYLE_OVERRIDE=1
+          export LIBGL_ALWAYS_SOFTWARE=1
+          export HOME="$GITHUB_WORKSPACE/home"
+          mkdir -p "$HOME" "$KRITA_MOBILE_SCREENSHOTS"
+          set +e
+          timeout 900 xvfb-run -a -s "-screen 0 1280x1024x24" krita --nosplash > logs/krita-run.log 2>&1
+          echo "krita exit code: $?" | tee -a logs/krita-run.log
+          ls -la "$KRITA_MOBILE_SCREENSHOTS" | tee -a logs/krita-run.log
           exit 0
+
+      - name: Compare runtime inventory with the source inventory
+        run: |
+          python3 mobilefork/tools/compare_inventory.py mobilefork/inventory/actions.csv \
+            shots/runtime-inventory.csv > logs/inventory-compare.txt 2>&1 || true
+          cat logs/inventory-compare.txt | head -80
+
+      - name: Upload screenshots and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KritaMobile-linux-preview
+          path: |
+            shots/
+            logs/
+          if-no-files-found: ignore
+
+      - name: Publish status to ci-status branch
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p logs status-extra shots
+          {
+            echo "status: ${JOB_STATUS}"
+            echo "branch: ${GITHUB_REF_NAME}"
+            echo "commit: ${GITHUB_SHA}"
+            echo "date: $(date -u +%FT%TZ)"
+            echo "screenshots: $(ls shots/*.png 2>/dev/null | wc -l)"
+            echo "disk:"; df -h / | sed 's/^/  /'
+          } > status-summary.txt
+          for f in logs/*; do
+            [ -f "$f" ] && tail -c 60000 "$f" > "status-extra/$(basename "$f").tail"
+          done
+          grep -n -E "error:|Error [0-9]+|FAILED:|CMake Error|## Failed|Traceback" logs/build-krita.log 2>/dev/null | head -300 > status-extra/errors.txt || true
+          cp shots/*.csv shots/*.log status-extra/ 2>/dev/null || true
+          bash mobilefork/ci/publish-status.sh linux "${JOB_STATUS}" status-summary.txt status-extra logs shots latest/screenshots

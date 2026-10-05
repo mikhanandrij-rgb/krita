@@ -1,0 +1,9 @@
+{
+    "Id": "Krita Mobile phone interface (unofficial fork)",
+    "Type": "Service",
+    "X-KDE-Library": "kritamobileui",
+    "X-KDE-ServiceTypes": [
+        "Krita/ViewPlugin"
+    ],
+    "X-Krita-Version": "28"
+}

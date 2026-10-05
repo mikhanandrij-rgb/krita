@@ -1,0 +1,425 @@
+# Russian translation of the Krita Mobile (unofficial fork) phone interface.
+# SPDX-License-Identifier: GPL-3.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: kritamobileui\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: mobilefork/i18n/generate_po.py\n"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Undo"
+msgstr "Отменить"
+
+msgid "Redo"
+msgstr "Повторить"
+
+msgid "Brushes"
+msgstr "Кисти"
+
+msgid "Layers"
+msgstr "Слои"
+
+msgid "Animation"
+msgstr "Анимация"
+
+msgid "Color"
+msgstr "Цвет"
+
+msgid "More"
+msgstr "Ещё"
+
+msgid "All tools"
+msgstr "Все инструменты"
+
+msgid "Brush size"
+msgstr "Размер кисти"
+
+msgid "Opacity"
+msgstr "Непрозрачность"
+
+msgctxt "brush size in pixels"
+msgid "Size %1 px"
+msgstr "Размер %1 пкс"
+
+msgctxt "opacity in percent"
+msgid "Opacity %1%"
+msgstr "Непрозрачность %1%"
+
+msgid "Eyedropper"
+msgstr "Пипетка"
+
+msgid "Search commands"
+msgstr "Поиск команд"
+
+msgctxt "action category"
+msgid "Other"
+msgstr "Прочее"
+
+msgid "All commands"
+msgstr "Все команды"
+
+msgid ""
+"Every command of Krita, including the ones that only have a keyboard "
+"shortcut on the desktop."
+msgstr ""
+"Все команды Krita, включая те, что на компьютере доступны только через "
+"сочетания клавиш."
+
+msgid "%1 command"
+msgid_plural "%1 commands"
+msgstr[0] "%1 команда"
+msgstr[1] "%1 команды"
+msgstr[2] "%1 команд"
+
+msgid "Grouped by category"
+msgstr "По категориям"
+
+msgid "No matching commands."
+msgstr "Подходящих команд нет."
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Show classic menu"
+msgstr "Показать обычное меню"
+
+msgid "Nothing here right now."
+msgstr "Сейчас здесь пусто."
+
+msgid "Phone interface · unofficial fork · %1"
+msgstr "Интерфейс для телефона · неофициальная сборка · %1"
+
+msgid "Configure Krita"
+msgstr "Настроить Krita"
+
+msgid "About Krita"
+msgstr "О Krita"
+
+msgid "About this unofficial fork"
+msgstr "Об этой неофициальной сборке"
+
+msgid "Krita manual"
+msgstr "Руководство Krita"
+
+msgid "Quit"
+msgstr "Выйти"
+
+msgid ""
+"This is an unofficial, personal build of Krita with a phone interface. It is"
+" not made or supported by the Krita project. Krita is free software by the "
+"Krita developers and contributors, licensed under the GNU GPL."
+msgstr ""
+"Это неофициальная личная сборка Krita с интерфейсом для телефона. Проект "
+"Krita её не выпускает и не поддерживает. Krita — свободная программа "
+"разработчиков и участников проекта Krita, распространяемая по лицензии GNU "
+"GPL."
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Continue drawing"
+msgstr "Продолжить рисование"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Start"
+msgstr "Начать"
+
+msgid "New canvas"
+msgstr "Новый холст"
+
+msgid "Presets and animation"
+msgstr "Шаблоны размеров и анимация"
+
+msgid "Open file"
+msgstr "Открыть файл"
+
+msgid "Krita, PSD, images…"
+msgstr "Krita, PSD, изображения…"
+
+msgid "All new document options"
+msgstr "Все параметры нового документа"
+
+msgid "Templates, color spaces, clipboard"
+msgstr "Шаблоны, цветовые пространства, буфер обмена"
+
+msgid "Recover"
+msgstr "Восстановить"
+
+msgid "Autosaved work"
+msgstr "Автосохранённая работа"
+
+msgid "There is no autosaved work to recover."
+msgstr "Нет автосохранённой работы для восстановления."
+
+msgid "Autosave from %1"
+msgstr "Автосохранение от %1"
+
+msgid "Open autosaved work. Save it under a new name afterwards."
+msgstr ""
+"Открыть автосохранённую работу. После этого сохраните её под новым именем."
+
+msgid "Recent"
+msgstr "Недавние"
+
+msgid "Files you open or save show up here."
+msgstr "Здесь появятся файлы, которые вы открываете или сохраняете."
+
+msgid "Phone portrait"
+msgstr "Телефон, вертикально"
+
+msgid "Phone landscape"
+msgstr "Телефон, горизонтально"
+
+msgid "Square"
+msgstr "Квадрат"
+
+msgid "A4, 300 dpi"
+msgstr "A4, 300 dpi"
+
+msgid "Animation 1080p"
+msgstr "Анимация 1080p"
+
+msgid "Animation 720p"
+msgstr "Анимация 720p"
+
+msgid "Presets"
+msgstr "Шаблоны"
+
+msgid "Frame rate"
+msgstr "Частота кадров"
+
+msgctxt "frames per second"
+msgid "%1 fps"
+msgstr "%1 к/с"
+
+msgid ""
+"The frame rate and the frame range can be changed later in the animation "
+"panel. The first layer gets a key frame, so drawing goes into the animation "
+"right away."
+msgstr ""
+"Частоту и диапазон кадров можно изменить позже на панели анимации. На первом"
+" слое сразу создаётся ключевой кадр, поэтому нарисованное сразу попадает в "
+"анимацию."
+
+msgid "Size in pixels"
+msgstr "Размер в пикселях"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Swap width and height"
+msgstr "Поменять ширину и высоту"
+
+msgid "Resolution"
+msgstr "Разрешение"
+
+msgctxt "pixels per inch"
+msgid " ppi"
+msgstr " ppi"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "White"
+msgstr "Белый"
+
+msgid "Transparent"
+msgstr "Прозрачный"
+
+msgid "Black"
+msgstr "Чёрный"
+
+msgid "Custom…"
+msgstr "Свой…"
+
+msgid "Background color"
+msgstr "Цвет фона"
+
+msgid "Create canvas"
+msgstr "Создать холст"
+
+msgid "More options…"
+msgstr "Другие параметры…"
+
+msgid "Untitled"
+msgstr "Без названия"
+
+msgid "unsaved changes"
+msgstr "есть несохранённые изменения"
+
+msgid "%1 autosave can be recovered"
+msgid_plural "%1 autosaves can be recovered"
+msgstr[0] "Можно восстановить %1 автосохранение"
+msgstr[1] "Можно восстановить %1 автосохранения"
+msgstr[2] "Можно восстановить %1 автосохранений"
+
+msgid "Remove from list"
+msgstr "Убрать из списка"
+
+msgid "Unnamed"
+msgstr "Без имени"
+
+msgid "%1 × %2 pixels, %3 × %4 cm at %5 ppi"
+msgstr "%1 × %2 пикселей, %3 × %4 см при %5 ppi"
+
+msgid ""
+"This is a very large canvas and may be slow or run out of memory on a phone."
+msgstr ""
+"Это очень большой холст: на телефоне он может работать медленно или не "
+"поместиться в память."
+
+msgctxt "tool group"
+msgid "Paint and shapes"
+msgstr "Рисование и фигуры"
+
+msgctxt "tool group"
+msgid "Vector and text"
+msgstr "Вектор и текст"
+
+msgctxt "tool group"
+msgid "Transform"
+msgstr "Трансформация"
+
+msgctxt "tool group"
+msgid "Fill"
+msgstr "Заливка"
+
+msgctxt "tool group"
+msgid "Selection"
+msgstr "Выделение"
+
+msgctxt "tool group"
+msgid "Assistants and reference"
+msgstr "Помощники и измерения"
+
+msgctxt "tool group"
+msgid "Navigation"
+msgstr "Навигация"
+
+msgctxt "tool group"
+msgid "Other"
+msgstr "Прочее"
+
+msgid ""
+"Tap a tool to use it. Tap the active tool in the bar again, or long-press "
+"any tool, to open its options."
+msgstr ""
+"Коснитесь инструмента, чтобы выбрать его. Чтобы открыть его параметры, ещё "
+"раз коснитесь активного инструмента на панели или удерживайте любой "
+"инструмент."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Show interface"
+msgstr "Показать интерфейс"
+
+msgid "Brushes and tool options"
+msgstr "Кисти и параметры инструмента"
+
+msgid "Navigation and history"
+msgstr "Навигация и история"
+
+msgid "Text and vector"
+msgstr "Текст и вектор"
+
+msgid "Tools"
+msgstr "Инструменты"
+
+msgid "Panels"
+msgstr "Панели"
+
+msgid "Tool options"
+msgstr "Параметры инструмента"
+
+msgid "Brush editor"
+msgstr "Редактор кисти"
+
+msgid "View"
+msgstr "Вид"
+
+msgid "Hide interface"
+msgstr "Скрыть интерфейс"
+
+msgid "Finger and stylus"
+msgstr "Палец и стилус"
+
+msgid "Finger paints until a stylus is used"
+msgstr "Палец рисует, пока не использован стилус"
+
+msgid "Finger always paints"
+msgstr "Палец всегда рисует"
+
+msgid "Stylus only, finger navigates"
+msgstr "Только стилус, пальцем — навигация"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Left-handed layout"
+msgstr "Для левши"
+
+msgid "Smaller interface"
+msgstr "Мельче"
+
+msgid "Restart Krita to apply the new interface size."
+msgstr "Перезапустите Krita, чтобы применить новый размер интерфейса."
+
+msgid "Larger interface"
+msgstr "Крупнее"
+
+msgid "Animations"
+msgstr "Анимации интерфейса"
+
+msgid "Classic Krita interface"
+msgstr "Классический интерфейс Krita"
+
+msgid "Classic interface"
+msgstr "Классический интерфейс"
+
+msgid ""
+"Switch to Krita's classic interface with menus and dockers? It is meant for "
+"tablets and large screens. You can switch back in Settings > Phone "
+"interface."
+msgstr ""
+"Переключиться на классический интерфейс Krita с меню и докерами? Он "
+"рассчитан на планшеты и большие экраны. Вернуться можно в меню «Настройка › "
+"Интерфейс для телефона»."
+
+msgid ""
+"Krita Mobile is an unofficial build of Krita with a phone interface. It is "
+"not made or supported by the Krita project. Every Krita command is in the "
+"menu, including the ones that only have keyboard shortcuts on the desktop."
+msgstr ""
+"Krita Mobile — неофициальная сборка Krita с интерфейсом для телефона. Проект"
+" Krita её не выпускает и не поддерживает. Все команды Krita есть в меню, "
+"включая те, что на компьютере доступны только через сочетания клавиш."
+
+msgid "The color sampler stays active. Tap the eyedropper again to go back."
+msgstr "Пипетка останется включённой. Коснитесь её ещё раз, чтобы вернуться."
+
+msgid "Phone interface: automatic (phones only)"
+msgstr "Интерфейс для телефона: автоматически (только на телефонах)"
+
+msgid "Phone interface: always"
+msgstr "Интерфейс для телефона: всегда"
+
+msgid "Phone interface: off (classic Krita)"
+msgstr "Интерфейс для телефона: выключен (классическая Krita)"
+
+msgid "Phone interface"
+msgstr "Интерфейс для телефона"
