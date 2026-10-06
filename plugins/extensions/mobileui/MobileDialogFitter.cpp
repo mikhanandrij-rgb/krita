@@ -30,13 +30,19 @@
 #include <QFormLayout>
 #include <QGridLayout>
 #include <QHash>
+#include <QMenu>
 #include <QMessageBox>
 #include <QPointer>
 #include <QPushButton>
 #include <QScreen>
 #include <QScrollArea>
+#include <QSplitter>
 #include <QStackedWidget>
+#include <QTabBar>
+#include <QTabWidget>
 #include <QTimer>
+
+#include <algorithm>
 
 namespace mobileui {
 
@@ -53,6 +59,16 @@ QRect availableGeometry(const QWidget *widget)
     const QWidget *top = widget && widget->parentWidget() ? widget->parentWidget()->window() : nullptr;
     if (!top || !top->isVisible()) {
         top = QApplication::activeWindow();
+    }
+    if (!top || top == widget || !top->isVisible() || !top->inherits("KisMainWindow")) {
+        // Dialogs without a parent (Layer Style) or shown while another
+        // window is active still belong to Krita's main window.
+        for (QWidget *w : QApplication::topLevelWidgets()) {
+            if (w != widget && w->isVisible() && w->inherits("KisMainWindow")) {
+                top = w;
+                break;
+            }
+        }
     }
     if (top && top != widget && top->isVisible()) {
         const QRect window = top->frameGeometry().intersected(area);
@@ -425,7 +441,306 @@ void collectPages(const QAbstractItemModel *model, const QModelIndex &parent, QL
     }
 }
 
+// ---- reflow ---------------------------------------------------------------
+// Desktop dialogs put controls side by side; on a phone that makes them wider
+// than the screen (and every scroll area scrolls sideways). Rows whose items
+// each fit the screen but not side by side are turned into columns, from the
+// innermost layouts outwards, until the whole window fits.
+
+bool layoutContains(QLayout *layout, QWidget *w)
+{
+    for (int i = 0; i < layout->count(); ++i) {
+        QLayoutItem *item = layout->itemAt(i);
+        if (item->widget() == w) {
+            return true;
+        }
+        if (item->layout() && layoutContains(item->layout(), w)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool inLayout(QWidget *w)
+{
+    QWidget *parent = w->parentWidget();
+    return parent && parent->layout() && layoutContains(parent->layout(), w);
+}
+
+int widestItem(QLayout *layout)
+{
+    int widest = 0;
+    for (int i = 0; i < layout->count(); ++i) {
+        QLayoutItem *item = layout->itemAt(i);
+        if (item->widget() && item->widget()->isHidden()) {
+            continue;
+        }
+        widest = qMax(widest, item->minimumSize().width());
+    }
+    return widest;
+}
+
 } // namespace
+
+// Puts every item of a grid into one column, in reading order. Labels end up
+// above their fields, like in phone forms. The old positions are kept so the
+// grid can be put back (Krita's dockers outlive the phone interface).
+void DialogFitter::gridToColumn(QGridLayout *grid)
+{
+    struct Entry {
+        QLayoutItem *item;
+        int row, column, rowSpan, columnSpan;
+        Qt::Alignment alignment;
+    };
+    QList<Entry> entries;
+    for (int i = grid->count() - 1; i >= 0; --i) {
+        Entry e;
+        grid->getItemPosition(i, &e.row, &e.column, &e.rowSpan, &e.columnSpan);
+        e.item = grid->takeAt(i);
+        e.alignment = e.item->alignment();
+        entries.prepend(e);
+    }
+    std::stable_sort(entries.begin(), entries.end(), [](const Entry &a, const Entry &b) {
+        return a.row != b.row ? a.row < b.row : a.column < b.column;
+    });
+    const int columns = grid->columnCount();
+    const int rows = grid->rowCount();
+    QVector<int> columnStretch, columnMinimum, rowStretch, rowMinimum;
+    for (int c = 0; c < columns; ++c) {
+        columnStretch << grid->columnStretch(c);
+        columnMinimum << grid->columnMinimumWidth(c);
+        grid->setColumnStretch(c, 0);
+        grid->setColumnMinimumWidth(c, 0);
+    }
+    for (int r = 0; r < rows; ++r) {
+        rowStretch << grid->rowStretch(r);
+        rowMinimum << grid->rowMinimumHeight(r);
+        grid->setRowStretch(r, 0);
+        grid->setRowMinimumHeight(r, 0);
+    }
+    int row = 0;
+    for (const Entry &e : entries) {
+        // Labels were right-aligned next to their fields.
+        const Qt::Alignment alignment = e.alignment & ~Qt::AlignHorizontal_Mask;
+        grid->addItem(e.item, row++, 0, 1, 1, alignment);
+    }
+    grid->setColumnStretch(0, 1);
+
+    QPointer<QGridLayout> guard(grid);
+    m_undo.append([guard, entries, columnStretch, columnMinimum, rowStretch, rowMinimum] {
+        if (!guard) {
+            return;
+        }
+        QList<QLayoutItem *> current;
+        while (guard->count() > 0) {
+            current.append(guard->takeAt(0));
+        }
+        int extraRow = rowStretch.size();
+        for (QLayoutItem *item : current) {
+            // Only pointers are compared: items Krita removed meanwhile are
+            // never touched.
+            auto it = std::find_if(entries.begin(), entries.end(), [item](const Entry &e) {
+                return e.item == item;
+            });
+            if (it != entries.end()) {
+                guard->addItem(item, it->row, it->column, it->rowSpan, it->columnSpan, it->alignment);
+            } else {
+                guard->addItem(item, extraRow++, 0);
+            }
+        }
+        guard->setColumnStretch(0, 0);
+        for (int c = 0; c < columnStretch.size(); ++c) {
+            guard->setColumnStretch(c, columnStretch[c]);
+            guard->setColumnMinimumWidth(c, columnMinimum[c]);
+        }
+        for (int r = 0; r < rowStretch.size(); ++r) {
+            guard->setRowStretch(r, rowStretch[r]);
+            guard->setRowMinimumHeight(r, rowMinimum[r]);
+        }
+    });
+}
+
+void DialogFitter::setMinimumWidthUndoable(QWidget *w, int minimum, int maximum)
+{
+    QPointer<QWidget> guard(w);
+    const int oldMinimum = w->minimumWidth();
+    const int oldMaximum = w->maximumWidth();
+    m_undo.append([guard, oldMinimum, oldMaximum] {
+        if (guard) {
+            guard->setMinimumWidth(oldMinimum);
+            guard->setMaximumWidth(oldMaximum);
+        }
+    });
+    w->setMinimumWidth(minimum);
+    w->setMaximumWidth(maximum);
+}
+
+int DialogFitter::reflowPass(QWidget *root, int limit)
+{
+    int changed = 0;
+    QList<QLayout *> layouts = root->findChildren<QLayout *>();
+    if (root->layout() && !layouts.contains(root->layout())) {
+        layouts.prepend(root->layout());
+    }
+    for (QLayout *l : layouts) {
+        l->invalidate();
+    }
+    // Single controls that are wider than the screen on their own.
+    for (QWidget *w : root->findChildren<QWidget *>()) {
+        if (w->isWindow() || !inLayout(w) || w->property("mobileChrome").toBool()) {
+            continue;
+        }
+        if (QDialogButtonBox *box = qobject_cast<QDialogButtonBox *>(w)) {
+            if (box->orientation() == Qt::Horizontal && box->minimumSizeHint().width() > limit) {
+                QPointer<QDialogButtonBox> guard(box);
+                m_undo.append([guard] {
+                    if (guard) {
+                        guard->setOrientation(Qt::Horizontal);
+                    }
+                });
+                box->setOrientation(Qt::Vertical);
+                ++changed;
+            }
+            continue;
+        }
+        if (QSplitter *splitter = qobject_cast<QSplitter *>(w)) {
+            if (splitter->orientation() == Qt::Horizontal && splitter->minimumSizeHint().width() > limit) {
+                bool fits = true;
+                for (int i = 0; i < splitter->count(); ++i) {
+                    fits = fits && splitter->widget(i)->minimumSizeHint().width() <= limit;
+                }
+                if (fits) {
+                    QPointer<QSplitter> guard(splitter);
+                    m_undo.append([guard] {
+                        if (guard) {
+                            guard->setOrientation(Qt::Horizontal);
+                        }
+                    });
+                    splitter->setOrientation(Qt::Vertical);
+                    ++changed;
+                }
+            }
+            continue;
+        }
+        if (w->layout() || qobject_cast<QTabWidget *>(w) || qobject_cast<QStackedWidget *>(w)
+            || qobject_cast<QAbstractScrollArea *>(w)) {
+            // Containers: their contents are reflowed; only a fixed desktop
+            // minimum width is lifted.
+            if (w->minimumWidth() > limit) {
+                setMinimumWidthUndoable(w, 0, QWIDGETSIZE_MAX);
+                ++changed;
+            }
+            continue;
+        }
+        const int minimum = w->minimumWidth() > 0 ? w->minimumWidth() : w->minimumSizeHint().width();
+        if (minimum <= limit) {
+            continue;
+        }
+        QLabel *label = qobject_cast<QLabel *>(w);
+        if (label && !label->wordWrap() && label->text().contains(QLatin1Char(' ')) && w->minimumWidth() <= limit) {
+            QPointer<QLabel> guard(label);
+            m_undo.append([guard] {
+                if (guard) {
+                    guard->setWordWrap(false);
+                }
+            });
+            label->setWordWrap(true);
+        } else {
+            setMinimumWidthUndoable(w, qMin(limit, dp(120)), w->maximumWidth() < QWIDGETSIZE_MAX ? qMax(dp(120), qMin(w->maximumWidth(), limit)) : QWIDGETSIZE_MAX);
+        }
+        ++changed;
+    }
+    for (QTabBar *bar : root->findChildren<QTabBar *>()) {
+        if (!bar->usesScrollButtons() || bar->expanding()) {
+            QPointer<QTabBar> guard(bar);
+            const bool scroll = bar->usesScrollButtons();
+            const bool expanding = bar->expanding();
+            m_undo.append([guard, scroll, expanding] {
+                if (guard) {
+                    guard->setUsesScrollButtons(scroll);
+                    guard->setExpanding(expanding);
+                }
+            });
+            bar->setUsesScrollButtons(true);
+            bar->setExpanding(false);
+            ++changed;
+        }
+    }
+    // Rows that only overflow because their items are side by side.
+    for (QLayout *l : layouts) {
+        if (l->minimumSize().width() <= limit || widestItem(l) > limit) {
+            continue;
+        }
+        if (QBoxLayout *box = qobject_cast<QBoxLayout *>(l)) {
+            const QBoxLayout::Direction direction = box->direction();
+            if (direction == QBoxLayout::LeftToRight || direction == QBoxLayout::RightToLeft) {
+                QPointer<QBoxLayout> guard(box);
+                m_undo.append([guard, direction] {
+                    if (guard) {
+                        guard->setDirection(direction);
+                    }
+                });
+                box->setDirection(QBoxLayout::TopToBottom);
+                ++changed;
+            }
+        } else if (QGridLayout *grid = qobject_cast<QGridLayout *>(l)) {
+            if (grid->columnCount() > 1) {
+                gridToColumn(grid);
+                ++changed;
+            }
+        } else if (QFormLayout *form = qobject_cast<QFormLayout *>(l)) {
+            const QFormLayout::RowWrapPolicy policy = form->rowWrapPolicy();
+            if (policy != QFormLayout::WrapAllRows) {
+                QPointer<QFormLayout> guard(form);
+                m_undo.append([guard, policy] {
+                    if (guard) {
+                        guard->setRowWrapPolicy(policy);
+                    }
+                });
+                form->setRowWrapPolicy(QFormLayout::WrapAllRows);
+                ++changed;
+            }
+        }
+    }
+    return changed;
+}
+
+int DialogFitter::reflow(QWidget *root, int width)
+{
+    if (!root || width < dp(200)) {
+        return 0;
+    }
+    int changes = 0;
+    // Each round leaves more room for the margins of the layouts around an
+    // item, until the whole window fits.
+    for (int margin = dp(24); margin <= dp(72); margin += dp(24)) {
+        const int limit = width - margin;
+        for (int pass = 0; pass < 8; ++pass) {
+            const int changed = reflowPass(root, limit);
+            changes += changed;
+            if (!changed) {
+                break;
+            }
+        }
+        root->updateGeometry();
+        if (root->layout()) {
+            root->layout()->activate();
+        }
+        if (root->minimumSizeHint().width() <= width) {
+            break;
+        }
+    }
+    if (root->minimumSizeHint().width() > width) {
+        // What still doesn't fit, for the next round of fixes.
+        for (QWidget *w : root->findChildren<QWidget *>()) {
+            if (!w->isWindow() && !w->isHidden() && w->minimumSizeHint().width() > width - dp(72)) {
+                qInfo() << "Krita Mobile: too wide in" << root->metaObject()->className() << w->metaObject()->className()
+                        << w->objectName() << w->minimumSizeHint() << "minimumWidth" << w->minimumWidth();
+            }
+        }
+    }
+    return changes;
+}
 
 DialogFitter::DialogFitter(QObject *parent)
     : QObject(parent)
@@ -616,6 +931,31 @@ bool DialogFitter::eventFilter(QObject *watched, QEvent *event)
         adaptControl(static_cast<QWidget *>(watched));
     }
     if (event->type() == QEvent::Show && watched->isWidgetType()) {
+        QWidget *w = static_cast<QWidget *>(watched);
+        if (w->isWindow() && w->windowType() == Qt::Popup && !qobject_cast<QMenu *>(w) && !w->inherits("QComboBoxPrivateContainer")
+            && !w->inherits("QCompleter") && !w->inherits("QCalendarWidget") && !w->property("mobileChrome").toBool()) {
+            fitPopup(w);
+        } else if (!w->isWindow() && (w->layout() || qobject_cast<QAbstractScrollArea *>(w))) {
+            // Pages and settings widgets shown later inside the sheet or a
+            // fitted dialog (another brush engine, another tab) are reflowed
+            // too.
+            for (QWidget *p = w; p; p = p->parentWidget()) {
+                if (p->property(PHONE_ROOT).toBool() && !qobject_cast<QDialog *>(p)) {
+                    scheduleReflow(w, p);
+                    break;
+                }
+                if (p->isWindow()) {
+                    if (QDialog *dialog = qobject_cast<QDialog *>(p)) {
+                        if (m_adapted.contains(dialog)) {
+                            scheduleReflow(w, dialog);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+    }
+    if (event->type() == QEvent::Show && watched->isWidgetType()) {
         QDialog *dialog = qobject_cast<QDialog *>(watched);
         // Message boxes and native file dialogs size themselves well.
         if (dialog && dialog->isWindow() && !qobject_cast<QMessageBox *>(dialog) && !qobject_cast<QFileDialog *>(dialog)) {
@@ -797,8 +1137,93 @@ void DialogFitter::stackSideLists(QWidget *root)
     }
 }
 
+void DialogFitter::scheduleReflow(QWidget *shown, QWidget *root)
+{
+    // Showing a page shows all its children too; collect them and reflow
+    // only the outermost ones once the event loop is back.
+    const bool first = m_pendingReflow.isEmpty();
+    m_pendingReflow.insert(shown, qMakePair(QPointer<QWidget>(shown), QPointer<QWidget>(root)));
+    if (!first) {
+        return;
+    }
+    QTimer::singleShot(0, this, [this] {
+        const auto pending = m_pendingReflow;
+        m_pendingReflow.clear();
+    m_popups.clear();
+        for (auto it = pending.constBegin(); it != pending.constEnd(); ++it) {
+            QWidget *w = it.value().first;
+            QWidget *root = it.value().second;
+            if (!w || !root || !w->isVisible()) {
+                continue;
+            }
+            bool nested = false;
+            for (QWidget *p = w->parentWidget(); p && !nested; p = p->parentWidget()) {
+                nested = pending.contains(p);
+                if (p == root) {
+                    break;
+                }
+            }
+            if (nested) {
+                continue;
+            }
+            const int width = root->isWindow() ? availableGeometry(root).width() : root->width();
+            if (width > dp(200)) {
+                reflow(w, width);
+            }
+        }
+    });
+}
+
+void DialogFitter::fitPopup(QWidget *popup)
+{
+    const QRect screen = availableGeometry(popup);
+    if (!m_popups.contains(popup)) {
+        m_popups.insert(popup);
+        connect(popup, &QObject::destroyed, this, [this, popup] {
+            m_popups.remove(popup);
+        });
+        // The phone look: rounded surface, finger-sized controls.
+        const QString own = popup->styleSheet();
+        QPointer<QWidget> guard(popup);
+        m_undo.append([guard, own] {
+            if (guard) {
+                guard->setStyleSheet(own);
+            }
+        });
+        popup->setProperty("mobilePopup", true);
+        popup->setStyleSheet(dialogStyleSheet() + popupStyleSheet() + own);
+        adaptControls(popup);
+    }
+    reflow(popup, screen.width() - dp(16));
+    // Keep it on screen: Krita places popups next to their buttons, which
+    // on a phone may be partly outside.
+    QPointer<QWidget> guard(popup);
+    QTimer::singleShot(0, this, [guard, screen] {
+        if (!guard || !guard->isVisible()) {
+            return;
+        }
+        QRect g = guard->geometry();
+        const QSize bounded = g.size().boundedTo(screen.size());
+        if (bounded != g.size()) {
+            guard->resize(bounded);
+            g.setSize(guard->size());
+        }
+        g.moveRight(qMin(g.right(), screen.right()));
+        g.moveBottom(qMin(g.bottom(), screen.bottom()));
+        g.moveLeft(qMax(g.left(), screen.left()));
+        g.moveTop(qMax(g.top(), screen.top()));
+        if (g.topLeft() != guard->pos()) {
+            guard->move(g.topLeft());
+        }
+    });
+}
+
 void DialogFitter::restoreWidgets()
 {
+    while (!m_undo.isEmpty()) {
+        m_undo.takeLast()();
+    }
+    m_pendingReflow.clear();
     for (const StackedLayout &stacked : qAsConst(m_stackedLayouts)) {
         if (stacked.layout) {
             stacked.layout->setDirection(QBoxLayout::LeftToRight);
@@ -835,6 +1260,21 @@ void DialogFitter::fit(QDialog *dialog)
             stackSideLists(dialog);
         }
     }
+    // Dialogs with a fixed size (color dialogs) could not be fitted at all.
+    if (QLayout *layout = dialog->layout()) {
+        if (layout->sizeConstraint() == QLayout::SetFixedSize || layout->sizeConstraint() == QLayout::SetMinimumSize) {
+            layout->setSizeConstraint(QLayout::SetDefaultConstraint);
+            dialog->setMaximumSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX);
+        }
+    }
+    if (dialog->minimumWidth() > screen.width()) {
+        dialog->setMinimumWidth(0);
+    }
+    if (dialog->minimumHeight() > screen.height()) {
+        dialog->setMinimumHeight(0);
+    }
+    // Side by side controls become columns, so nothing scrolls sideways.
+    reflow(dialog, screen.width());
     const QSize needed = dialog->minimumSizeHint().expandedTo(dialog->minimumSize());
     if (!m_wrapped.contains(dialog) && !m_fullScreen.contains(dialog)
         && (needed.width() > screen.width() || needed.height() > screen.height())) {
@@ -849,6 +1289,8 @@ void DialogFitter::fit(QDialog *dialog)
         dialog->setMinimumSize(0, 0);
         dialog->setGeometry(screen);
     } else {
+        // Small dialogs are cards of a comfortable width, not tiny boxes.
+        size.setWidth(qMax(size.width(), qMin(screen.width() - dp(32), dp(360))));
         size = size.boundedTo(screen.size());
         dialog->resize(size);
         dialog->move(screen.x() + (screen.width() - size.width()) / 2, screen.y() + (screen.height() - size.height()) / 2);

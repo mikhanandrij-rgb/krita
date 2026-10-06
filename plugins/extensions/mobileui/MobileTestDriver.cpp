@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 #include "MobileTestDriver.h"
+
+#include <KisAutoSaveRecoveryDialog.h>
 #include "MobileCommandBrowser.h"
 #include "MobileConfig.h"
 #include "MobileHub.h"
@@ -375,6 +377,26 @@ private:
                                  "clones_array", "render_animation"}) {
             addDialog(QString::fromLatin1(name));
         }
+        // The file recovery dialog Krita shows at start-up after a crash.
+        m_steps.append([this] {
+            QSet<QWidget *> before;
+            for (QWidget *w : QApplication::topLevelWidgets()) {
+                if (w->isVisible()) {
+                    before.insert(w);
+                }
+            }
+            auto *dialog = new KisAutoSaveRecoveryDialog(
+                {QStringLiteral(".krita-12345-Unnamed_illustration_with_a_long_name-autosave.kra"),
+                 QStringLiteral("krita-67890-Sketch-autosave.kra")},
+                mw());
+            dialog->setAttribute(Qt::WA_DeleteOnClose);
+            m_extraDelay = 2500;
+            QTimer::singleShot(2500, this, [this, before] {
+                grabDialog(QStringLiteral("autosave_recovery"), before);
+            });
+            log(QStringLiteral("dialog autosave_recovery: showing"));
+            dialog->open();
+        });
     }
 
     void logPerf(const QString &when)
@@ -482,6 +504,9 @@ private:
             }
         });
         if (!config::testSetting("KRITA_MOBILE_ACTION_WALK").isEmpty()) {
+            // Phones are mostly held upright: every window the walk opens
+            // is checked (and saved) in portrait.
+            m_steps.append([this] { setSize(411, 891, QStringLiteral("walk")); });
             addActionWalk();
         }
         m_steps.append([this] {

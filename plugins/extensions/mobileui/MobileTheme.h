@@ -62,6 +62,8 @@ QString chromeStyleSheet();
 QString panelStyleSheet();
 // Look of Krita's dialogs while the phone interface is active.
 QString dialogStyleSheet();
+// Krita's popup panels shown from popup buttons.
+QString popupStyleSheet();
 
 // Icons. Plain names are the fork's own SVG icons (":/mobileui/icons/<name>.svg",
 // tinted with the given color); names starting with "krita:" load Krita's

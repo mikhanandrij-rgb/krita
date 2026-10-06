@@ -328,7 +328,10 @@ QString dialogStyleSheet()
                "QAbstractItemView { background: %2; border: 1px solid %3; border-radius: %12px;"
                "  selection-background-color: %16; }"
                "QAbstractItemView::item { min-height: %9px; }"
-               "QCheckBox, QRadioButton { min-height: %13px; spacing: %12px; }")
+               "QCheckBox, QRadioButton { min-height: %13px; spacing: %12px; }"
+               "QSpinBox, QDoubleSpinBox { padding: 0 %15px; }"
+               // The angle selector sizes its spin box itself.
+               "KisAngleSelectorSpinBox { min-height: 0px; padding: 0px; }")
         .arg(css(t.surface))      // 1
         .arg(css(t.surface2))     // 2
         .arg(css(t.outline))      // 3
@@ -345,6 +348,18 @@ QString dialogStyleSheet()
         .arg(dp(18))              // 14
         .arg(dp(4))               // 15
         .arg(css(t.accentSoft)) + panelStyleSheet(); // 16
+}
+
+QString popupStyleSheet()
+{
+    const Theme &t = Theme::current();
+    // Krita's popup panels (gradients, patterns, workspaces, brush values):
+    // the sheet's surface with rounded corners instead of a desktop frame.
+    return QStringLiteral("[mobilePopup=\"true\"] { background: %1; color: %2; border: 1px solid %3; border-radius: %4px; }")
+        .arg(css(t.surface))
+        .arg(css(t.text))
+        .arg(css(t.outline))
+        .arg(dp(12));
 }
 
 QIcon icon(const QString &name)

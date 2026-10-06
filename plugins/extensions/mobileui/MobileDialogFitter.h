@@ -13,11 +13,15 @@
 
 #include <QObject>
 #include <QBoxLayout>
+#include <QHash>
 #include <QList>
 #include <QPointer>
 #include <QSet>
 
+#include <functional>
+
 class QDialog;
+class QGridLayout;
 class QRect;
 class QWidget;
 
@@ -45,6 +49,14 @@ public:
     void adaptControls(QWidget *root);
     void restoreControls(QWidget *root);
 
+    // Turns rows that are too wide for `width` into columns (box, grid and
+    // form layouts, splitters, button boxes) and lifts desktop minimum widths,
+    // so nothing scrolls sideways. Undone by restoreWidgets().
+    int reflow(QWidget *root, int width);
+    // Popups (Krita's popup buttons: gradients, patterns, workspaces...) get
+    // the phone look and are kept on screen.
+    void fitPopup(QWidget *popup);
+
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 
@@ -60,6 +72,13 @@ private:
     bool adaptOpenPane(QDialog *dialog, const QRect &screen);
 
     void stackSideLists(QWidget *root);
+    int reflowPass(QWidget *root, int limit);
+    void gridToColumn(QGridLayout *grid);
+    void setMinimumWidthUndoable(QWidget *w, int minimum, int maximum);
+    void scheduleReflow(QWidget *shown, QWidget *root);
+    QList<std::function<void()>> m_undo;
+    QHash<QWidget *, QPair<QPointer<QWidget>, QPointer<QWidget>>> m_pendingReflow;
+    QSet<QWidget *> m_popups;
     void adaptControl(QWidget *widget);
     void rewrapButton(QWidget *button);
     bool m_rewrapping = false;

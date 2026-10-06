@@ -68,7 +68,7 @@ public:
         layout->addWidget(filename);
         layout->addWidget(dateModified);
 
-        page->setFixedSize(600, 200);
+        page->setFixedSize(itemSize());
 
         return QList<QWidget*>() << page;
     }
@@ -95,9 +95,17 @@ public:
         QLabel *modified = qobject_cast<QLabel*>(layout->itemAt(3)->widget());
 
         checkBox->setChecked(fileItem->checked);
-        thumbnail->setPixmap(QPixmap::fromImage(fileItem->thumbnail));
-        filename->setText(fileItem->name);
+        // Narrow windows (phones): smaller thumbnail, file name and date
+        // below each other and elided instead of cut off.
+        const QSize size = itemSize();
+        const bool narrow = size.width() < 600;
+        const int thumbnailSize = narrow ? qMax(64, size.width() / 4) : 200;
+        thumbnail->setPixmap(QPixmap::fromImage(fileItem->thumbnail.scaled(thumbnailSize, thumbnailSize, Qt::KeepAspectRatio, Qt::SmoothTransformation)));
+        const int textWidth = narrow ? size.width() - thumbnailSize - checkBox->sizeHint().width() - 4 * layout->spacing() - layout->contentsMargins().left() - layout->contentsMargins().right() : -1;
+        filename->setText(textWidth > 0 ? filename->fontMetrics().elidedText(fileItem->name, Qt::ElideMiddle, textWidth) : fileItem->name);
+        filename->setToolTip(fileItem->name);
         modified->setText(fileItem->date);
+        page->setFixedSize(size);
 
         // move the page _up_ otherwise it will draw relative to the actual position
         page->setGeometry(option.rect.translated(0, -option.rect.y()));
@@ -112,7 +120,17 @@ public:
 
     QSize sizeHint(const QStyleOptionViewItem&, const QModelIndex&) const override
     {
-        return QSize(600, 200);
+        return itemSize();
+    }
+
+    // 600x200 on the desktop; on a narrower view (phones) as wide as the view.
+    QSize itemSize() const
+    {
+        const int available = itemView()->viewport()->width();
+        if (available >= 600 || available < 200) {
+            return QSize(600, 200);
+        }
+        return QSize(available, qMax(96, available / 4 + 16));
     }
 
 
@@ -189,6 +207,8 @@ KisAutoSaveRecoveryDialog::KisAutoSaveRecoveryDialog(const QStringList &filename
 
     m_listView = new QListView();
     m_listView->setAcceptDrops(false);
+    // Items follow the view's width on narrow screens (see itemSize()).
+    m_listView->setResizeMode(QListView::Adjust);
     KWidgetItemDelegate *delegate = new FileItemDelegate(m_listView, this);
     m_listView->setItemDelegate(delegate);
 
