@@ -484,6 +484,21 @@ int widestItem(QLayout *layout)
     return widest;
 }
 
+// Puts a taken item back into a grid. A nested layout must go back through
+// addLayout(): takeAt() released it from its parent, and addItem() would
+// leave it without one (not deleted with the widget, not found by
+// findChildren(), so never reflowed again).
+void placeInGrid(QGridLayout *grid, QLayoutItem *item, int row, int column, int rowSpan, int columnSpan, Qt::Alignment alignment)
+{
+    if (QLayout *layout = item->layout()) {
+        if (!layout->parent()) {
+            grid->addLayout(layout, row, column, rowSpan, columnSpan, alignment);
+            return;
+        }
+    }
+    grid->addItem(item, row, column, rowSpan, columnSpan, alignment);
+}
+
 } // namespace
 
 // Puts every item of a grid into one column, in reading order. Labels end up
@@ -542,7 +557,7 @@ void DialogFitter::gridToColumn(QGridLayout *grid, int transposeWidth)
     int row = 0;
     for (const Entry &e : entries) {
         if (transpose) {
-            grid->addItem(e.item, e.column, e.row, e.columnSpan, e.rowSpan, e.alignment & ~Qt::AlignHorizontal_Mask);
+            placeInGrid(grid, e.item, e.column, e.row, e.columnSpan, e.rowSpan, e.alignment & ~Qt::AlignHorizontal_Mask);
             continue;
         }
         // Labels were right-aligned next to their fields.
@@ -559,7 +574,7 @@ void DialogFitter::gridToColumn(QGridLayout *grid, int transposeWidth)
                 label->setAlignment((text & ~Qt::AlignHorizontal_Mask) | Qt::AlignLeft);
             }
         }
-        grid->addItem(e.item, row++, 0, 1, 1, alignment);
+        placeInGrid(grid, e.item, row++, 0, 1, 1, alignment);
     }
     if (!transpose) {
         grid->setColumnStretch(0, 1);
@@ -582,9 +597,9 @@ void DialogFitter::gridToColumn(QGridLayout *grid, int transposeWidth)
                 return e.item == item;
             });
             if (it != entries.end()) {
-                guard->addItem(item, it->row, it->column, it->rowSpan, it->columnSpan, it->alignment);
+                placeInGrid(guard, item, it->row, it->column, it->rowSpan, it->columnSpan, it->alignment);
             } else {
-                guard->addItem(item, extraRow++, 0);
+                placeInGrid(guard, item, extraRow++, 0, 1, 1, item->alignment());
             }
         }
         guard->setColumnStretch(0, 0);
@@ -664,6 +679,14 @@ public:
         }
         QWidget *p = w->parentWidget();
         int width = forWidget(p) - overhead(p);
+        // Contents of a scroll area that is already laid out: its viewport
+        // says exactly how much room there is (the model above misses some
+        // margins of Krita's own widgets).
+        if (QAbstractScrollArea *area = qobject_cast<QAbstractScrollArea *>(p->parentWidget())) {
+            if (area->viewport() == p && p->isVisible() && p->width() > dp(100)) {
+                width = qMin(width, p->width());
+            }
+        }
         if (p->layout()) {
             const int margins = marginsTo(p->layout(), w);
             if (margins > 0) {
