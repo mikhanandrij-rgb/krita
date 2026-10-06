@@ -9,6 +9,7 @@
 #include "MobileWidgets.h"
 
 #include <KisDocument.h>
+#include <KoDocumentInfo.h>
 #include <KisMainWindow.h>
 #include <KisPart.h>
 #include <KisRecentFilesManager.h>
@@ -883,7 +884,13 @@ void Hub::refreshContinueCard()
     }
     pixmap.setDevicePixelRatio(dpr);
     m_continueThumb->setPixmap(pixmap);
-    QString title = doc->caption();
+    QString title;
+    if (!doc->path().isEmpty()) {
+        title = QFileInfo(doc->path()).completeBaseName();
+    }
+    if (title.isEmpty() && doc->documentInfo()) {
+        title = doc->documentInfo()->aboutInfo(QStringLiteral("title"));
+    }
     if (title.isEmpty()) {
         title = i18n("Untitled");
     }

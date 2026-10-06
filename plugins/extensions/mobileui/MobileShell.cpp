@@ -35,6 +35,7 @@
 
 #include <klocalizedstring.h>
 
+#include <QAbstractButton>
 #include <QAbstractItemView>
 #include <QCoreApplication>
 #include <QFileInfo>
@@ -942,6 +943,18 @@ void Shell::adoptPopups()
                 content->show();
                 frame->installEventFilter(this);
                 m_popups.append(hp);
+                if (content->inherits("KisPaintOpPresetsEditor")) {
+                    // The editor's preset strip and scratchpad sit side by
+                    // side with the settings; on a phone the presets are in
+                    // their own tab, so collapse both. They remain one tap
+                    // away through the editor's own toggle buttons.
+                    for (const char *name : {"showPresetsButton", "showScratchpadButton"}) {
+                        QAbstractButton *toggle = content->findChild<QAbstractButton *>(QString::fromLatin1(name));
+                        if (toggle && toggle->isCheckable() && toggle->isChecked()) {
+                            toggle->click();
+                        }
+                    }
+                }
             }
         }
     }
