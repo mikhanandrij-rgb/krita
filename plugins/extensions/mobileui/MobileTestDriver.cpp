@@ -518,6 +518,12 @@ private:
             {QStringLiteral("help_report_bug"), QStringLiteral("opens a web browser")},
         };
 #ifdef Q_OS_ANDROID
+        // Opens Google Play's subscription page in another app; Krita goes
+        // to the background and the test can't bring it back.
+        if (name == QLatin1String("manage_subscriptions")) {
+            *reason = QStringLiteral("opens Google Play in another app");
+            return true;
+        }
         // The Android file picker is a separate app the test can't close.
         if (name.contains(QLatin1String("import")) || name.contains(QLatin1String("export"))
             || name.startsWith(QLatin1String("file_open")) || name.startsWith(QLatin1String("file_save"))
