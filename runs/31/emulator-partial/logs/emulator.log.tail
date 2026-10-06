@@ -117,3 +117,6 @@ WARNING      | adb command '/usr/local/lib/android/sdk/platform-tools/adb -s emu
 ERROR        | bad color buffer handle 286
 ERROR        | Failed to find ColorBuffer: 318
 ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | bad color buffer handle 420
+ERROR        | Failed to find ColorBuffer: 459
+ERROR        | Failed to bind to texture: invalid color buffer.

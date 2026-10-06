@@ -1,7 +1,12 @@
-status: running (warmup done)
+status: running (classic done)
 commit: 83e66ff0b6c8257d470cf2cb483a1f509e8bdb3e
 run classic: done after 82 s
 interface: classic (smallest side 411 dp)
 perf classic-start: interface-ready-ms=51477 first-canvas-ms=-1 rss-kb=1346932 peak-kb=1356324 uptime-ms=57211
 perf classic-canvas: interface-ready-ms=51477 first-canvas-ms=63462 rss-kb=1478600 peak-kb=1484344 uptime-ms=66698
 perf classic-end: interface-ready-ms=51477 first-canvas-ms=63462 rss-kb=1500056 peak-kb=1503308 uptime-ms=73234
+run classic: done after 41 s
+interface: classic (smallest side 411 dp)
+perf classic-start: interface-ready-ms=12872 first-canvas-ms=-1 rss-kb=1121692 peak-kb=1121756 uptime-ms=18753
+perf classic-canvas: interface-ready-ms=12872 first-canvas-ms=24756 rss-kb=1253036 peak-kb=1264732 uptime-ms=27242
+perf classic-end: interface-ready-ms=12872 first-canvas-ms=24756 rss-kb=1274136 peak-kb=1279736 uptime-ms=34222
