@@ -7,6 +7,12 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
+#ifdef Q_OS_ANDROID
+#include <QAndroidJniObject>
+#include <QtAndroid>
+#endif
+
+#include <QFile>
 #include <QGuiApplication>
 #include <QScreen>
 #include <QVariant>
@@ -86,7 +92,7 @@ int smallestScreenSideDp(const QWidget *window)
 
 bool shouldUsePhoneInterface(const QWidget *window)
 {
-    const QByteArray env = qgetenv("KRITA_MOBILE_UI");
+    const QByteArray env = testSetting("KRITA_MOBILE_UI").toLatin1();
     if (env == "phone") {
         return true;
     } else if (env == "classic") {
@@ -111,7 +117,7 @@ bool shouldUsePhoneInterface(const QWidget *window)
 
 qreal uiScale()
 {
-    const QByteArray env = qgetenv("KRITA_MOBILE_UI_SCALE");
+    const QByteArray env = testSetting("KRITA_MOBILE_UI_SCALE").toLatin1();
     if (!env.isEmpty()) {
         bool ok = false;
         const qreal value = env.toDouble(&ok);
@@ -170,6 +176,45 @@ void setQuickSizeMaximum(qreal maximum)
 {
     KConfigGroup g = group();
     g.writeEntry("QuickSizeMaximum", qBound(10.0, maximum, 10000.0));
+}
+
+QString androidTestDirectory()
+{
+#ifdef Q_OS_ANDROID
+    static const QString dir = []() -> QString {
+        QAndroidJniObject context = QtAndroid::androidContext();
+        if (!context.isValid()) {
+            return QString();
+        }
+        QAndroidJniObject file = context.callObjectMethod("getExternalFilesDir", "(Ljava/lang/String;)Ljava/io/File;", nullptr);
+        if (!file.isValid()) {
+            return QString();
+        }
+        const QString path = file.callObjectMethod("getAbsolutePath", "()Ljava/lang/String;").toString();
+        return path.isEmpty() ? QString() : path + QStringLiteral("/krita-mobile-test");
+    }();
+    return dir;
+#else
+    return QString();
+#endif
+}
+
+QString testSetting(const char *name)
+{
+    const QByteArray env = qgetenv(name);
+    if (!env.isEmpty()) {
+        return QString::fromLocal8Bit(env);
+    }
+#ifdef Q_OS_ANDROID
+    const QString dir = androidTestDirectory();
+    if (!dir.isEmpty()) {
+        QFile file(dir + QLatin1Char('/') + QString::fromLatin1(name));
+        if (file.open(QIODevice::ReadOnly)) {
+            return QString::fromUtf8(file.readAll()).trimmed();
+        }
+    }
+#endif
+    return QString();
 }
 
 bool firstRunDone()

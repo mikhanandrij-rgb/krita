@@ -4,6 +4,7 @@
  */
 #include "MobileTestDriver.h"
 #include "MobileCommandBrowser.h"
+#include "MobileConfig.h"
 #include "MobileHub.h"
 #include "MobilePerf.h"
 #include "MobileSheet.h"
@@ -31,6 +32,10 @@
 #include <QTimer>
 
 #include <functional>
+
+#ifdef Q_OS_ANDROID
+#include <QtAndroid>
+#endif
 
 namespace mobileui {
 
@@ -68,19 +73,39 @@ private:
 
     KisMainWindow *mw() const { return m_shell ? m_shell->mainWindow() : nullptr; }
 
+    // Screenshots are saved at the logical (dp) size: phone screens have a
+    // device pixel ratio of 2.5-3.5, and full-resolution images would make
+    // the CI results branch huge.
+    static bool saveGrab(QWidget *widget, const QString &path)
+    {
+        QPixmap pixmap = widget->grab();
+        const qreal ratio = pixmap.devicePixelRatio();
+        if (ratio > 1.01) {
+            pixmap = pixmap.scaled((QSizeF(pixmap.size()) / ratio).toSize(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+        }
+        return pixmap.save(path);
+    }
+
     void shot(const QString &name)
     {
         if (!mw()) {
             return;
         }
-        const QPixmap pixmap = mw()->grab();
         const QString path = QDir(m_dir).filePath(QStringLiteral("%1-%2.png").arg(m_orientation, name));
-        log(QStringLiteral("screenshot %1 %2").arg(path, pixmap.save(path) ? QStringLiteral("ok") : QStringLiteral("FAILED")));
+        log(QStringLiteral("screenshot %1 %2").arg(path, saveGrab(mw(), path) ? QStringLiteral("ok") : QStringLiteral("FAILED")));
     }
 
     void setSize(int w, int h, const QString &orientation)
     {
         m_orientation = orientation;
+#ifdef Q_OS_ANDROID
+        // Android windows fill the screen; rotate the activity instead
+        // (ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE = 0, PORTRAIT = 1).
+        QtAndroid::runOnAndroidThread([w, h] {
+            QtAndroid::androidActivity().callMethod<void>("setRequestedOrientation", "(I)V", w > h ? 0 : 1);
+        });
+        return;
+#endif
         if (mw()) {
             mw()->setMinimumSize(0, 0);
             mw()->setMaximumSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX);
@@ -246,7 +271,7 @@ private:
         QString safe = actionName;
         safe.replace(QLatin1Char(' '), QLatin1Char('_'));
         const QString path = QDir(m_dir).filePath(QStringLiteral("dialog-%1-%2.png").arg(m_orientation, safe));
-        const bool ok = found->grab().save(path);
+        const bool ok = saveGrab(found, path);
         log(QStringLiteral("dialog %1: %2 %3x%4 min %5x%6 %7")
                 .arg(actionName, QString::fromLatin1(found->metaObject()->className()))
                 .arg(found->width())
@@ -367,7 +392,7 @@ private:
                 log(QStringLiteral("inventory written"));
             }
         });
-        if (qEnvironmentVariableIsSet("KRITA_MOBILE_ACTION_WALK")) {
+        if (!config::testSetting("KRITA_MOBILE_ACTION_WALK").isEmpty()) {
             addActionWalk();
         }
         m_steps.append([this] {
@@ -404,6 +429,15 @@ private:
             {QStringLiteral("help_contents"), QStringLiteral("opens a web browser")},
             {QStringLiteral("help_report_bug"), QStringLiteral("opens a web browser")},
         };
+#ifdef Q_OS_ANDROID
+        // The Android file picker is a separate app the test can't close.
+        if (name.contains(QLatin1String("import")) || name.contains(QLatin1String("export"))
+            || name.startsWith(QLatin1String("file_open")) || name.startsWith(QLatin1String("file_save"))
+            || name.startsWith(QLatin1String("save_"))) {
+            *reason = QStringLiteral("opens the Android file picker");
+            return true;
+        }
+#endif
         if (name.startsWith(QLatin1String("mobileui_mode_"))) {
             *reason = QStringLiteral("switches the interface");
             return true;
@@ -600,11 +634,16 @@ private:
 
 void startTestDriverIfRequested(Shell *shell)
 {
-    const QByteArray dir = qgetenv("KRITA_MOBILE_SCREENSHOTS");
+    QString dir = config::testSetting("KRITA_MOBILE_SCREENSHOTS");
+    // On Android the value of the file is ignored: the output goes next to
+    // it, where "adb pull" can fetch it.
+    if (!dir.isEmpty() && qgetenv("KRITA_MOBILE_SCREENSHOTS").isEmpty() && !config::androidTestDirectory().isEmpty()) {
+        dir = config::androidTestDirectory() + QStringLiteral("/out");
+    }
     if (!shell || dir.isEmpty() || shell->findChild<QObject *>(QStringLiteral("mobileTestDriver"))) {
         return;
     }
-    TestDriver *driver = new TestDriver(shell, QString::fromLocal8Bit(dir));
+    TestDriver *driver = new TestDriver(shell, dir);
     driver->setObjectName(QStringLiteral("mobileTestDriver"));
 }
 

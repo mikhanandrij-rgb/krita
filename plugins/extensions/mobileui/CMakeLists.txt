@@ -31,4 +31,9 @@ qt_add_resources(kritamobileui_SOURCES mobileui.qrc)
 
 kis_add_library(kritamobileui MODULE ${kritamobileui_SOURCES})
 target_link_libraries(kritamobileui kritaui KF${KF_MAJOR}::WidgetsAddons Qt${QT_MAJOR_VERSION}::Svg Qt${QT_MAJOR_VERSION}::Concurrent)
+if(ANDROID)
+    # Test runs on Android read their settings from the app's external files
+    # directory (see config::testSetting).
+    target_link_libraries(kritamobileui Qt${QT_MAJOR_VERSION}::AndroidExtras)
+endif()
 install(TARGETS kritamobileui DESTINATION ${KRITA_PLUGIN_INSTALL_DIR})

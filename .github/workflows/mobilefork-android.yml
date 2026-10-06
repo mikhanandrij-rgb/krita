@@ -501,3 +501,122 @@ jobs:
           grep -n -E "error:|Error [0-9]+|FAILED:|CMake Error|## Failed|Traceback" logs/build-krita.log 2>/dev/null | head -300 > status-extra/errors.txt || true
           cp shots/*.csv shots/*.log status-extra/ 2>/dev/null || true
           bash mobilefork/ci/publish-status.sh linux "${JOB_STATUS}" status-summary.txt status-extra logs shots latest/screenshots
+
+  # Installs the APK in the Android emulator (x86_64 image with ARM
+  # translation) and runs the same automated pass as the Linux job: classic
+  # baseline, then the phone interface with screenshots, dialogs and the
+  # walk over every command. Startup time and memory come from Android
+  # itself (am start -W, dumpsys meminfo). ARM translation makes everything
+  # slower than on a phone, so the numbers are only good for comparing the
+  # two interfaces with each other.
+  android-emulator:
+    name: Android emulator run
+    needs: android-arm64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: mobilefork
+          fetch-depth: 1
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: KritaMobile-APK
+          path: apk
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          ls -la /dev/kvm
+
+      - name: Start the emulator
+        run: |
+          SDK="$ANDROID_SDK_ROOT"; [ -n "$SDK" ] || SDK="$ANDROID_HOME"
+          echo "SDK=$SDK" >> "$GITHUB_ENV"
+          IMG="system-images;android-34;google_apis;x86_64"
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --install emulator platform-tools "$IMG" > /dev/null
+          echo no | "$SDK/cmdline-tools/latest/bin/avdmanager" create avd -n phone -k "$IMG" -d pixel_6 --force
+          printf 'hw.ramSize=6144\ndisk.dataPartition.size=8G\nhw.keyboard=yes\n' >> "$HOME/.android/avd/phone.avd/config.ini"
+          nohup "$SDK/emulator/emulator" -avd phone -no-window -no-audio -no-boot-anim -no-snapshot \
+            -gpu swiftshader_indirect -cores 4 > emulator.log 2>&1 &
+          export PATH="$SDK/platform-tools:$PATH"
+          echo "$SDK/platform-tools" >> "$GITHUB_PATH"
+          adb wait-for-device
+          for i in $(seq 1 120); do
+            [ "$(adb shell getprop sys.boot_completed | tr -d '\r')" = "1" ] && break
+            sleep 5
+          done
+          adb shell getprop sys.boot_completed
+          adb shell getprop ro.product.cpu.abilist
+          adb shell wm size
+          adb shell wm density
+          adb shell settings put global window_animation_scale 0
+          adb shell settings put global transition_animation_scale 0
+          adb shell settings put global animator_duration_scale 0
+
+      - name: Install the APK
+        run: |
+          ls -la apk
+          adb install -r -g apk/*.apk
+
+      - name: Classic baseline and phone interface runs
+        timeout-minutes: 100
+        run: |
+          mkdir -p emu logs
+          bash mobilefork/ci/emulator-run.sh classic emu/warmup 600
+          bash mobilefork/ci/emulator-run.sh classic emu/classic 600
+          bash mobilefork/ci/emulator-run.sh phone emu/phone 4800 walk
+          {
+            for r in warmup classic phone; do
+              echo "== $r"; cat "emu/$r/result.txt" 2>/dev/null
+              grep -E 'TotalTime|WaitTime' "emu/$r/am-start.txt" 2>/dev/null
+              grep -m1 -E 'TOTAL( PSS)?:' "emu/$r/meminfo-final.txt" 2>/dev/null
+              grep -h '^perf' "emu/$r/testdriver.log" 2>/dev/null
+            done
+          } | tee logs/emulator-perf.txt
+          mkdir -p shots
+          cp emu/phone/*.png emu/phone/*.csv emu/phone/testdriver.log shots/ 2>/dev/null
+          for f in emu/classic/*.png; do [ -f "$f" ] && cp "$f" "shots/$(basename "$f")"; done
+          cp emu/classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
+          for r in warmup classic phone; do
+            cp "emu/$r/logcat-crash.txt" "logs/logcat-crash-$r.txt" 2>/dev/null
+            tail -c 300000 "emu/$r/logcat.txt" > "logs/logcat-$r.txt" 2>/dev/null
+          done
+          cp emulator.log logs/ 2>/dev/null
+          python3 mobilefork/tools/compare_inventory.py mobilefork/inventory/actions.csv \
+            shots/runtime-inventory.csv --walk shots/walk.csv --out shots/action-inventory.csv \
+            > logs/inventory-compare.txt 2>&1 || true
+          head -60 logs/inventory-compare.txt
+
+      - name: Upload emulator results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KritaMobile-emulator
+          path: |
+            emu/
+            logs/
+          if-no-files-found: ignore
+
+      - name: Publish status to ci-status branch
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p logs status-extra shots
+          {
+            echo "status: ${JOB_STATUS}"
+            echo "branch: ${GITHUB_REF_NAME}"
+            echo "commit: ${GITHUB_SHA}"
+            echo "date: $(date -u +%FT%TZ)"
+            echo "screenshots: $(ls shots/*.png 2>/dev/null | wc -l)"
+            echo "perf:"; sed 's/^/  /' logs/emulator-perf.txt 2>/dev/null || true
+          } > status-summary.txt
+          for f in logs/*; do
+            [ -f "$f" ] && tail -c 60000 "$f" > "status-extra/$(basename "$f").tail"
+          done
+          bash mobilefork/ci/publish-status.sh emulator "${JOB_STATUS}" status-summary.txt status-extra logs shots latest/emulator-screenshots

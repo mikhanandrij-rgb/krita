@@ -50,6 +50,15 @@ void setToolSlots(const QStringList &slotNames);
 qreal quickSizeMaximum();
 void setQuickSizeMaximum(qreal maximum);
 
+// Settings for automated test runs: the environment variable, or on Android
+// (where an app has no environment) a file of that name in the app's
+// external files directory, written with "adb push":
+//   /sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test/<NAME>
+// containing the value. Empty when not set.
+QString testSetting(const char *name);
+// The directory for test output on Android (inside the folder above).
+QString androidTestDirectory();
+
 bool firstRunDone();
 void setFirstRunDone(bool done);
 
