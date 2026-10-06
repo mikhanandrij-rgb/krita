@@ -1,5 +1,3 @@
-== emulator-partial (run 30): running
 status: running (warmup done)
 commit: bbbfba4a93e2457221b7fb13c14625d47d755856
 run classic: died after 21 s
-
