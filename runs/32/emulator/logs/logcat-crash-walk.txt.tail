@@ -1,0 +1,26 @@
+--------- beginning of crash
+10-06 15:38:42.880  7219  7242 F libc    : Fatal signal 11 (SIGSEGV), code -6 (SI_TKILL) in tid 7242 (qtMainLoopThrea), pid 7219 (rita.mobilefork)
+10-06 15:38:43.277  7888  7888 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-06 15:38:43.277  7888  7888 F DEBUG   : Build fingerprint: 'google/sdk_gphone64_x86_64/emu64xa:14/UE1A.230829.050/12077443:userdebug/dev-keys'
+10-06 15:38:43.277  7888  7888 F DEBUG   : Revision: '0'
+10-06 15:38:43.277  7888  7888 F DEBUG   : ABI: 'x86_64'
+10-06 15:38:43.277  7888  7888 F DEBUG   : Timestamp: 2026-10-06 15:38:43.050169888+0000
+10-06 15:38:43.277  7888  7888 F DEBUG   : Process uptime: 486s
+10-06 15:38:43.277  7888  7888 F DEBUG   : Cmdline: org.krita.mobilefork
+10-06 15:38:43.277  7888  7888 F DEBUG   : pid: 7219, tid: 7242, name: qtMainLoopThrea  >>> org.krita.mobilefork <<<
+10-06 15:38:43.277  7888  7888 F DEBUG   : uid: 10192
+10-06 15:38:43.277  7888  7888 F DEBUG   : signal 11 (SIGSEGV), code -6 (SI_TKILL), fault addr --------
+10-06 15:38:43.277  7888  7888 F DEBUG   :     rax 0000000000000000  rbx 00007a3f1ce02000  rcx 00007a3f14afbb98  rdx 0000000000000000
+10-06 15:38:43.277  7888  7888 F DEBUG   :     r8  00007a3f1ce02080  r9  8000000080000000  r10 0000000000000008  r11 0000000000000246
+10-06 15:38:43.277  7888  7888 F DEBUG   :     r12 00007a3c65e75840  r13 00007a3893a9d0f0  r14 00007a3c07e3e070  r15 00007a3f1ce02050
+10-06 15:38:43.277  7888  7888 F DEBUG   :     rdi 0000000000000002  rsi 00007a3c07e3e060
+10-06 15:38:43.277  7888  7888 F DEBUG   :     rbp 00007a3c65e756d8  rsp 00007a3c07e3e048  rip 00007a3f14afbb98
+10-06 15:38:43.277  7888  7888 F DEBUG   : 7 total frames
+10-06 15:38:43.277  7888  7888 F DEBUG   : backtrace:
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #00 pc 000000000005db98  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+24) (BuildId: fa337969c798946280caa45e2d71a2e7)
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #01 pc 00000000001867a7  /system/lib64/libndk_translation.so (ndk_translation::GuestThread::ProcessPendingSignalsImpl()+759) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #02 pc 000000000018692d  /system/lib64/libndk_translation.so (ndk_translation::GuestThread::ProcessPendingSignals()+29) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #03 pc 000000000018bfba  /system/lib64/libndk_translation.so (ndk_translation::ExecuteGuest(ndk_translation::ProcessState*)+106) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #04 pc 000000000018486b  /system/lib64/libndk_translation.so (ndk_translation::ExecuteGuestCall(ndk_translation::ProcessState*)+123) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 15:38:43.277  7888  7888 F DEBUG   :       #05 pc 000000000018c1fb  /system/lib64/libndk_translation.so (ndk_translation::RunGuestCall(unsigned long, ndk_translation::GuestArgumentBuffer*)+187) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 15:38:43.278  7888  7888 F DEBUG   :       #06 pc 0000000000000e6e  <anonymous:7a3c5c09a000>

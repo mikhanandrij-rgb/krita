@@ -1,0 +1,100 @@
+source actions: 700
+runtime actions: 674, listed in the phone interface: 674
+dockers hosted: 32, tools: 37
+reachable: 658
+present but not listed: 0
+not created at runtime (plugin not built on this platform, created lazily, or test fixture): 42
+  MISSING select_layout | Layouts | krita/kritamenu.action
+  MISSING delete_keyframe | Delete keyframe | krita/kritamenu.action
+  MISSING file_import_video_animation | Import video animation... | krita/kritamenu.action
+  MISSING krita_filter_bottom edge detections | Bottom Edge Detection | krita/krita.action
+  MISSING krita_filter_left edge detections | Left Edge Detection | krita/krita.action
+  MISSING krita_filter_right edge detections | Right Edge Detection | krita/krita.action
+  MISSING krita_filter_sobel | Sobel... | krita/krita.action
+  MISSING krita_filter_top edge detections | Top Edge Detection | krita/krita.action
+  MISSING color_management_report | Show color management information | krita/krita.action
+  MISSING create_bundle | Create Resource Bundle... | krita/krita.action
+  MISSING show_tool_options | Show Tool Options | krita/krita.action
+  MISSING histogram | Histogram... | krita/krita.action
+  MISSING mutate | Mutate | plugins/python/mutator/mutator.action
+  MISSING plugin_importer_file | Import Python Plugin from File... | plugins/python/plugin_importer/plugin_importer.action
+  MISSING plugin_importer_web | Import Python Plugin from Web... | plugins/python/plugin_importer/plugin_importer.action
+  MISSING svg_settings | Settings... | plugins/tools/svgtexttool/SvgTextTool.action
+  MISSING options_configure_keybinding | Configure Shortcuts... | krita/kritamenu.action
+  MISSING activate_preset_0 | Activate Brush Preset 0 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_1 | Activate Brush Preset 1 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_2 | Activate Brush Preset 2 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_3 | Activate Brush Preset 3 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_4 | Activate Brush Preset 4 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_5 | Activate Brush Preset 5 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_6 | Activate Brush Preset 6 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_7 | Activate Brush Preset 7 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_8 | Activate Brush Preset 8 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING activate_preset_9 | Activate Brush Preset 9 | plugins/python/tenbrushes/tenbrushes.action
+  MISSING ten_brushes | Ten Brushes | plugins/python/tenbrushes/tenbrushes.action
+  MISSING execute_script_0 | Execute Script 0 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_1 | Execute Script 1 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_2 | Execute Script 2 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_3 | Execute Script 3 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_4 | Execute Script 4 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_5 | Execute Script 5 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_6 | Execute Script 6 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_7 | Execute Script 7 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_8 | Execute Script 8 | plugins/python/tenscripts/tenscripts.action
+  MISSING execute_script_9 | Execute Script 9 | plugins/python/tenscripts/tenscripts.action
+  MISSING ten_scripts | Ten Scripts | plugins/python/tenscripts/tenscripts.action
+  MISSING view_detached_canvas | Detach Canvas | krita/kritamenu.action
+  MISSING view_newwindow | New Window | krita/kritamenu.action
+  MISSING format_italic |  | libs/ui/KisViewManager.cpp
+action walk: disabled 44, ok 147, skipped 20
+listed but not reached by the walk (walk stopped early?): 448
+  NOT-WALKED add_blank_frame
+  NOT-WALKED add_duplicate_frame
+  NOT-WALKED add_scalar_keyframes
+  NOT-WALKED auto_key
+  NOT-WALKED clear_animation_cache
+  NOT-WALKED copy_columns_to_clipboard
+  NOT-WALKED copy_frames
+  NOT-WALKED copy_frames_as_clones
+  NOT-WALKED cut_columns_to_clipboard
+  NOT-WALKED cut_frames
+  NOT-WALKED drop_frames
+  NOT-WALKED first_frame
+  NOT-WALKED insert_column_left
+  NOT-WALKED insert_column_right
+  NOT-WALKED insert_hold_column
+  NOT-WALKED insert_hold_frame
+  NOT-WALKED insert_keyframe_left
+  NOT-WALKED insert_keyframe_right
+  NOT-WALKED insert_multiple_columns
+  NOT-WALKED insert_multiple_hold_columns
+  NOT-WALKED insert_multiple_hold_frames
+  NOT-WALKED insert_multiple_keyframes
+  NOT-WALKED last_frame
+  NOT-WALKED make_clones_unique
+  NOT-WALKED mirror_columns
+  NOT-WALKED mirror_frames
+  NOT-WALKED next_frame
+  NOT-WALKED next_keyframe
+  NOT-WALKED next_matching_keyframe
+  NOT-WALKED next_unfiltered_keyframe
+  NOT-WALKED paste_columns_from_clipboard
+  NOT-WALKED paste_frames
+  NOT-WALKED pin_to_timeline
+  NOT-WALKED previous_frame
+  NOT-WALKED previous_keyframe
+  NOT-WALKED previous_matching_keyframe
+  NOT-WALKED previous_unfiltered_keyframe
+  NOT-WALKED remove_columns
+  NOT-WALKED remove_columns_and_pull
+  NOT-WALKED remove_frames
+  NOT-WALKED remove_frames_and_pull
+  NOT-WALKED remove_hold_column
+  NOT-WALKED remove_hold_frame
+  NOT-WALKED remove_multiple_hold_columns
+  NOT-WALKED remove_multiple_hold_frames
+  NOT-WALKED remove_scalar_keyframe
+  NOT-WALKED set_end_time
+  NOT-WALKED set_start_time
+  NOT-WALKED stop_playback
+  NOT-WALKED toggle_onion_skin

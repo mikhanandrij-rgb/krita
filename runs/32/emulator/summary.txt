@@ -1,0 +1,64 @@
+status: success
+branch: mobile
+commit: 3bc91a07c7d4e33a49088e8008fc560108d255b7
+date: 2026-10-06T16:30:52Z
+screenshots: 80
+perf:
+  == warmup
+  run classic: done after 134 s
+  TotalTime: 4199
+  WaitTime: 4224
+  perf classic-start: interface-ready-ms=99718 first-canvas-ms=-1 rss-kb=1354920 peak-kb=1354920 uptime-ms=105841
+  perf classic-canvas: interface-ready-ms=99718 first-canvas-ms=114679 rss-kb=1477648 peak-kb=1489236 uptime-ms=119509
+  perf classic-end: interface-ready-ms=99718 first-canvas-ms=114679 rss-kb=1506920 peak-kb=1518424 uptime-ms=130055
+  == classic
+  run classic: done after 61 s
+  TotalTime: 1154
+  WaitTime: 1157
+  perf classic-start: interface-ready-ms=25513 first-canvas-ms=-1 rss-kb=1116040 peak-kb=1116040 uptime-ms=31434
+  perf classic-canvas: interface-ready-ms=25513 first-canvas-ms=40525 rss-kb=1257180 peak-kb=1259532 uptime-ms=43941
+  perf classic-end: interface-ready-ms=25513 first-canvas-ms=40525 rss-kb=1282904 peak-kb=1294836 uptime-ms=53639
+  == phone
+  run auto: done after 385 s
+  TotalTime: 1088
+  WaitTime: 1091
+  perf start: interface-ready-ms=27170 first-canvas-ms=-1 rss-kb=1138108 peak-kb=1142432 uptime-ms=32816
+  perf panel tools: 421 ms
+  perf panel menu: 117 ms
+  perf panel more: 85 ms
+  perf panel brush: 338 ms
+  perf panel color: 146 ms
+  perf panel layers: 94 ms
+  perf panel animation: 123 ms
+  perf panel view: 116 ms
+  perf panel text: 92 ms
+  perf panel other:BrushHudDocker: 130 ms
+  perf panel other:LogDocker: 84 ms
+  perf panel other:RecorderDocker: 98 ms
+  perf panel other:TasksetDocker: 99 ms
+  perf panel other:ToolBox: 88 ms
+  perf panel other:TouchDocker: 132 ms
+  perf after-portrait: interface-ready-ms=27170 first-canvas-ms=47574 rss-kb=1378132 peak-kb=1415252 uptime-ms=213020
+  perf end: interface-ready-ms=27170 first-canvas-ms=47574 rss-kb=1383352 peak-kb=1439068 uptime-ms=378009
+  == walk
+  run auto: timeout after 3610 s
+  TotalTime: 1039
+  WaitTime: 1048
+             TOTAL PSS:    21209            TOTAL RSS:   116876       TOTAL SWAP PSS:     3480
+  perf start: interface-ready-ms=26895 first-canvas-ms=-1 rss-kb=1137344 peak-kb=1140656 uptime-ms=32229
+  perf panel tools: 399 ms
+  perf panel menu: 128 ms
+  perf panel more: 85 ms
+  perf panel brush: 318 ms
+  perf panel color: 160 ms
+  perf panel layers: 99 ms
+  perf panel animation: 112 ms
+  perf panel view: 101 ms
+  perf panel text: 105 ms
+  perf panel other:BrushHudDocker: 131 ms
+  perf panel other:LogDocker: 92 ms
+  perf panel other:RecorderDocker: 98 ms
+  perf panel other:TasksetDocker: 101 ms
+  perf panel other:ToolBox: 94 ms
+  perf panel other:TouchDocker: 132 ms
+  perf after-portrait: interface-ready-ms=26895 first-canvas-ms=46771 rss-kb=1381584 peak-kb=1418848 uptime-ms=210837
