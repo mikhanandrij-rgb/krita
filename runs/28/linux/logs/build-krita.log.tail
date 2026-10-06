@@ -1,4 +1,4 @@
-_staging/home/runner/wd/krita/_install/share/krita/workspaces/Minimal.kws
+/workspaces/Minimal.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeDark.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeHighContrast.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeLight.colors
@@ -479,61 +479,61 @@ _staging/home/runner/wd/krita/_install/share/krita/workspaces/Minimal.kws
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 04:44:10 2026
-Stats zeroed:                             Tue Oct  6 03:35:50 2026
-Cacheable calls:                          2828 / 2834 (99.79%)
-  Hits:                                     37 / 2828 ( 1.31%)
-    Direct:                                  0 /   37 ( 0.00%)
-    Preprocessed:                           37 /   37 (100.0%)
-  Misses:                                 2791 / 2828 (98.69%)
-Uncacheable calls:                           6 / 2834 ( 0.21%)
-  Autoconf compile/link:                     0 /    6 ( 0.00%)
-  Bad compiler arguments:                    0 /    6 ( 0.00%)
-  Called for linking:                        0 /    6 ( 0.00%)
-  Called for preprocessing:                  0 /    6 ( 0.00%)
-  Ccache disabled:                           0 /    6 ( 0.00%)
-  Compilation failed:                        5 /    6 (83.33%)
-  Compiler output file missing:              0 /    6 ( 0.00%)
-  Compiler produced empty output:            0 /    6 ( 0.00%)
-  Compiler produced stdout:                  0 /    6 ( 0.00%)
-  Could not use modules:                     0 /    6 ( 0.00%)
-  Could not use precompiled header:          0 /    6 ( 0.00%)
-  Forced recache:                            0 /    6 ( 0.00%)
-  Multiple source files:                     0 /    6 ( 0.00%)
-  No input file:                             0 /    6 ( 0.00%)
-  Output to stdout:                          0 /    6 ( 0.00%)
-  Preprocessing failed:                      1 /    6 (16.67%)
-  Unsupported code directive:                0 /    6 ( 0.00%)
-  Unsupported compiler option:               0 /    6 ( 0.00%)
-  Unsupported environment variable:          0 /    6 ( 0.00%)
-  Unsupported source language:               0 /    6 ( 0.00%)
-Errors:                                      0 / 2834 ( 0.00%)
-  Compiler check failed:                     0
-  Could not find compiler:                   0
-  Could not read or parse input file:        0
-  Could not write to output file:            0
-  Error hashing extra file:                  0
-  Input file modified during compilation:    0
-  Internal error:                            0
-  Missing cache file:                        0
+Stats updated:                            Tue Oct  6 10:00:12 2026
+Stats zeroed:                             Tue Oct  6 09:57:10 2026
+Cacheable calls:                           2829 / 2835 (99.79%)
+  Hits:                                    2756 / 2829 (97.42%)
+    Direct:                                2753 / 2756 (99.89%)
+    Preprocessed:                             3 / 2756 ( 0.11%)
+  Misses:                                    73 / 2829 ( 2.58%)
+Uncacheable calls:                            6 / 2835 ( 0.21%)
+  Autoconf compile/link:                      0 /    6 ( 0.00%)
+  Bad compiler arguments:                     0 /    6 ( 0.00%)
+  Called for linking:                         0 /    6 ( 0.00%)
+  Called for preprocessing:                   0 /    6 ( 0.00%)
+  Ccache disabled:                            0 /    6 ( 0.00%)
+  Compilation failed:                         5 /    6 (83.33%)
+  Compiler output file missing:               0 /    6 ( 0.00%)
+  Compiler produced empty output:             0 /    6 ( 0.00%)
+  Compiler produced stdout:                   0 /    6 ( 0.00%)
+  Could not use modules:                      0 /    6 ( 0.00%)
+  Could not use precompiled header:           0 /    6 ( 0.00%)
+  Forced recache:                             0 /    6 ( 0.00%)
+  Multiple source files:                      0 /    6 ( 0.00%)
+  No input file:                              0 /    6 ( 0.00%)
+  Output to stdout:                           0 /    6 ( 0.00%)
+  Preprocessing failed:                       1 /    6 (16.67%)
+  Unsupported code directive:                 0 /    6 ( 0.00%)
+  Unsupported compiler option:                0 /    6 ( 0.00%)
+  Unsupported environment variable:           0 /    6 ( 0.00%)
+  Unsupported source language:                0 /    6 ( 0.00%)
+Errors:                                       0 / 2835 ( 0.00%)
+  Compiler check failed:                      0
+  Could not find compiler:                    0
+  Could not read or parse input file:         0
+  Could not write to output file:             0
+  Error hashing extra file:                   0
+  Input file modified during compilation:     0
+  Internal error:                             0
+  Missing cache file:                         0
 Successful lookups:
-  Direct:                                    0 / 2834 ( 0.00%)
-  Preprocessed:                             37 / 2833 ( 1.31%)
+  Direct:                                  2753 / 2835 (97.11%)
+  Preprocessed:                               3 /   81 ( 3.70%)
 Local storage:
-  Cache size (GB):                         0.2 / 20.0 ( 0.90%)
-  Files:                                  5610
-  Cleanups:                                  0
-  Hits:                                     37 / 2828 ( 1.31%)
-  Misses:                                 2791 / 2828 (98.69%)
-  Reads:                                  5667
-  Writes:                                 5619
+  Cache size (GB):                          0.4 / 20.0 ( 2.04%)
+  Files:                                  12472
+  Cleanups:                                   0
+  Hits:                                    2756 / 2829 (97.42%)
+  Misses:                                    73 / 2829 ( 2.58%)
+  Reads:                                   5669
+  Writes:                                   149
 Remote storage:
-  Hits:                                      0
-  Misses:                                    0
-  Reads:                                     0
-  Writes:                                    0
-  Errors:                                    0
-  Timeouts:                                  0
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+  Errors:                                     0
+  Timeouts:                                   0
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share -> /home/runner/wd/krita/_install/share
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib -> /home/runner/wd/krita/_install/lib
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/include -> /home/runner/wd/krita/_install/include

@@ -1,0 +1,692 @@
+id,result,detail,ms
+"file_new","ok","opened KisOpenPane",600
+"file_open","ok","",601
+"no_entries","disabled","not available in this state",0
+"file_save","ok","opened KisPreviewFileDialog",600
+"file_save_as","ok","opened KisPreviewFileDialog",601
+"file_sessions","ok","",601
+"file_import_file","ok","opened KisPreviewFileDialog",600
+"file_export_file","ok","",600
+"file_export_advanced","ok","",600
+"file_import_animation","ok","opened KisDlgImportImageSequence",600
+"file_import_video_animation","ok","",600
+"render_animation","disabled","not available in this state",0
+"save_incremental_version","ok","",601
+"save_incremental_backup","ok","opened KisPreviewFileDialog",600
+"create_template","ok","opened KisTemplateCreateDia",600
+"create_copy","ok","",600
+"file_documentinfo","ok","opened KoDocumentInfoDlg",600
+"file_close","skipped","closes the test document",0
+"file_close_all","skipped","closes the test document",0
+"file_quit","skipped","quits Krita",0
+"edit_undo","ok","",601
+"edit_redo","ok","",601
+"edit_cut","ok","",600
+"edit_copy","ok","",600
+"cut_sharp","disabled","not available in this state",0
+"copy_sharp","disabled","not available in this state",0
+"copy_merged","disabled","not available in this state",0
+"copy_layer_style","ok","",601
+"edit_paste","ok","opened KisDlgMissingColorProfile",601
+"paste_at","ok","opened KisDlgMissingColorProfile",600
+"paste_into","disabled","not available in this state",0
+"paste_new","ok","",601
+"paste_as_reference","ok","opened KisDlgMissingColorProfile",600
+"paste_shape_style","disabled","not available in this state",0
+"paste_layer_style","ok","",600
+"clear","ok","",600
+"fill_selection_foreground_color","disabled","not available in this state",0
+"fill_selection_background_color","disabled","not available in this state",0
+"fill_selection_pattern","disabled","not available in this state",0
+"fill_selection_foreground_color_opacity","disabled","not available in this state",0
+"fill_selection_background_color_opacity","disabled","not available in this state",0
+"fill_selection_pattern_opacity","disabled","not available in this state",0
+"stroke_shapes","disabled","not available in this state",0
+"stroke_selection","disabled","not available in this state",0
+"sample_screen_color","ok","",600
+"sample_screen_color_real_canvas","ok","",601
+"view_show_canvas_only","ok","",103
+"fullscreen","ok","",88
+"view_detached_canvas","skipped","moves the canvas to its own window",0
+"wrap_around_mode","ok","",85
+"wrap_around_hv_axis","ok","",85
+"wrap_around_h_axis","ok","",85
+"wrap_around_v_axis","ok","",86
+"level_of_detail_mode","ok","",94
+"softProof","ok","",282
+"gamutCheck","ok","",85
+"view_zoom_in","ok","",600
+"view_zoom_out","ok","",600
+"zoom_to_100pct","ok","",600
+"zoom_to_fit","ok","",600
+"zoom_to_fit_width","ok","",600
+"zoom_to_fit_height","ok","",600
+"rotate_canvas_right","ok","",600
+"rotate_canvas_left","ok","",600
+"reset_canvas_rotation","ok","",600
+"mirror_canvas","ok","",86
+"mirror_canvas_around_cursor","ok","",87
+"mirror_canvas_around_canvas","ok","",86
+"reset_display","ok","",600
+"view_print_size","ok","",87
+"view_ruler","ok","",97
+"rulers_track_mouse","ok","",89
+"view_show_guides","ok","",85
+"view_lock_guides","ok","",86
+"showStatusBar","ok","",114
+"view_grid","ok","",88
+"view_pixel_grid","ok","",89
+"view_snap_to_guides","ok","",85
+"view_snap_to_grid","ok","",85
+"view_snap_to_pixel","ok","",89
+"view_snap_orthogonal","ok","",88
+"view_snap_node","ok","",88
+"view_snap_extension","ok","",89
+"view_snap_intersection","ok","",88
+"view_snap_bounding_box","ok","",89
+"view_snap_image_bounds","ok","",89
+"view_snap_image_center","ok","",89
+"view_toggle_painting_assistants","ok","",85
+"view_toggle_assistant_previews","ok","",86
+"view_toggle_reference_images","ok","",85
+"image_properties","ok","",601
+"image_color","ok","opened QColorDialog",600
+"imagecolorspaceconversion","ok","",600
+"trim_to_image","ok","",600
+"resizeimagetolayer","ok","",600
+"resizeimagetoselection","disabled","not available in this state",0
+"purge_unused_image_data","ok","",600
+"rotateimage","ok","",600
+"rotateImageCW90","ok","",600
+"rotateImageCCW90","ok","",600
+"rotateImage180","ok","",600
+"shearimage","ok","opened DlgShearImage",600
+"mirrorImageHorizontal","ok","",600
+"mirrorImageVertical","ok","",600
+"imagesize","ok","opened DlgImageSize",601
+"offsetimage","ok","",600
+"canvassize","ok","",600
+"imagesplit","ok","opened DlgImagesplit",601
+"waveletdecompose","disabled","not available in this state",0
+"separate","ok","",600
+"cut_layer_clipboard","ok","",600
+"copy_layer_clipboard","ok","",600
+"paste_layer_from_clipboard","ok","",600
+"add_new_paint_layer","ok","",600
+"add_new_group_layer","ok","",600
+"add_new_clone_layer","ok","",600
+"add_new_shape_layer","ok","",600
+"add_new_adjustment_layer","ok","opened KisDlgAdjustmentLayer",600
+"add_new_fill_layer","ok","",601
+"add_new_file_layer","ok","opened KisDlgFileLayer",600
+"add_new_transparency_mask","ok","",600
+"add_new_filter_mask","disabled","not available in this state",0
+"add_new_colorize_mask","disabled","not available in this state",0
+"add_new_transform_mask","disabled","not available in this state",0
+"add_new_selection_mask","disabled","not available in this state",0
+"new_from_visible","ok","",600
+"duplicatelayer","ok","",600
+"cut_selection_to_new_layer","disabled","not available in this state",0
+"copy_selection_to_new_layer","disabled","not available in this state",0
+"save_node_as_image","ok","opened KisPreviewFileDialog",601
+"save_vector_node_to_svg","disabled","not available in this state",0
+"save_groups_as_images","ok","",600
+"import_layer_from_file","ok","opened KisPreviewFileDialog",600
+"import_layer_as_paint_layer","ok","opened KisPreviewFileDialog",600
+"import_layer_as_transparency_mask","ok","",601
+"import_layer_as_filter_mask","ok","",600
+"import_layer_as_selection_mask","ok","opened KisPreviewFileDialog",601
+"convert_to_paint_layer","disabled","not available in this state",0
+"convert_to_transparency_mask","ok","",600
+"convert_to_filter_mask","ok","",630
+"convert_to_selection_mask","ok","",600
+"convert_to_file_layer","disabled","not available in this state",0
+"convert_group_to_animated","disabled","not available in this state",0
+"layercolorspaceconversion","disabled","not available in this state",0
+"select_all_layers","ok","",600
+"select_visible_layers","ok","",600
+"select_invisible_layers","ok","",600
+"select_locked_layers","ok","",600
+"select_unlocked_layers","ok","",600
+"create_quick_group","ok","",600
+"create_quick_clipping_group","ok","",600
+"quick_ungroup","ok","",601
+"mirrorNodeX","ok","",600
+"mirrorNodeY","ok","",600
+"layersize","ok","opened DlgLayerSize",600
+"rotatelayer","ok","opened DlgRotateImage",600
+"rotateLayerCW90","ok","",600
+"rotateLayerCCW90","ok","",600
+"rotateLayer180","ok","",600
+"shearlayer","ok","",600
+"offsetlayer","ok","opened DlgOffsetImage",600
+"mirrorAllNodesX","ok","",600
+"mirrorAllNodesY","ok","",600
+"scaleAllLayers","ok","opened DlgLayerSize",600
+"rotateAllLayers","ok","opened DlgRotateImage",600
+"rotateAllLayersCW90","ok","",600
+"rotateAllLayersCCW90","ok","",600
+"rotateAllLayers180","ok","",600
+"shearAllLayers","ok","",600
+"split_alpha_into_mask","ok","",600
+"split_alpha_write","ok","",600
+"split_alpha_save_merged","disabled","not available in this state",0
+"layersplit","ok","",600
+"clones_array","ok","opened DlgClonesArray",601
+"EditLayerMetaData","ok","",600
+"merge_layer","ok","",600
+"flatten_layer","ok","",600
+"flatten_image","ok","",600
+"layer_style","ok","",600
+"select_all","ok","",604
+"deselect","ok","",601
+"reselect","ok","",601
+"invert_selection","ok","",601
+"edit_selection","disabled","not available in this state",0
+"convert_to_vector_selection","disabled","not available in this state",0
+"convert_to_raster_selection","disabled","not available in this state",0
+"convert_shapes_to_vector_selection","disabled","not available in this state",0
+"convert_selection_to_shape","disabled","not available in this state",0
+"toggle_display_selection","ok","",85
+"show-global-selection-mask","ok","",89
+"selectionscale","disabled","not available in this state",0
+"colorrange","disabled","not available in this state",0
+"selectopaque","ok","",600
+"selectopaque_add","ok","",600
+"selectopaque_subtract","ok","",601
+"selectopaque_intersect","ok","",600
+"featherselection","disabled","not available in this state",0
+"growselection","disabled","not available in this state",0
+"shrinkselection","disabled","not available in this state",0
+"borderselection","disabled","not available in this state",0
+"smoothselection","disabled","not available in this state",0
+"enable_sap","ok","",111
+"filter_apply_again","disabled","not available in this state",0
+"filter_apply_reprompt","disabled","not available in this state",0
+"krita_filter_asc-cdl","disabled","not available in this state",0
+"krita_filter_autocontrast","disabled","not available in this state",0
+"krita_filter_burn","disabled","not available in this state",0
+"krita_filter_colorbalance","disabled","not available in this state",0
+"krita_filter_crosschannel","disabled","not available in this state",0
+"krita_filter_desaturate","disabled","not available in this state",0
+"krita_filter_dodge","disabled","not available in this state",0
+"krita_filter_hsvadjustment","disabled","not available in this state",0
+"krita_filter_invert","disabled","not available in this state",0
+"krita_filter_levels","disabled","not available in this state",0
+"krita_filter_perchannel","disabled","not available in this state",0
+"krita_filter_threshold","disabled","not available in this state",0
+"krita_filter_halftone","disabled","not available in this state",0
+"krita_filter_indexcolors","disabled","not available in this state",0
+"krita_filter_oilpaint","disabled","not available in this state",0
+"krita_filter_pixelize","disabled","not available in this state",0
+"krita_filter_posterize","disabled","not available in this state",0
+"krita_filter_raindrops","disabled","not available in this state",0
+"krita_filter_blur","disabled","not available in this state",0
+"krita_filter_gaussian blur","disabled","not available in this state",0
+"krita_filter_lens blur","disabled","not available in this state",0
+"krita_filter_motion blur","disabled","not available in this state",0
+"krita_filter_colortoalpha","disabled","not available in this state",0
+"krita_filter_colortransfer","disabled","not available in this state",0
+"krita_filter_fastcoloroverlay","disabled","not available in this state",0
+"krita_filter_maximize","disabled","not available in this state",0
+"krita_filter_minimize","disabled","not available in this state",0
+"krita_filter_propagatecolors","disabled","not available in this state",0
+"krita_filter_edge detection","disabled","not available in this state",0
+"krita_filter_gaussianhighpass","disabled","not available in this state",0
+"krita_filter_height to normal","disabled","not available in this state",0
+"krita_filter_emboss","disabled","not available in this state",0
+"krita_filter_emboss all directions","disabled","not available in this state",0
+"krita_filter_emboss horizontal and vertical","disabled","not available in this state",0
+"krita_filter_emboss horizontal only","disabled","not available in this state",0
+"krita_filter_emboss laplascian","disabled","not available in this state",0
+"krita_filter_emboss vertical only","disabled","not available in this state",0
+"krita_filter_gaussiannoisereducer","disabled","not available in this state",0
+"krita_filter_mean removal","disabled","not available in this state",0
+"krita_filter_sharpen","disabled","not available in this state",0
+"krita_filter_unsharp","disabled","not available in this state",0
+"krita_filter_waveletnoisereducer","disabled","not available in this state",0
+"krita_filter_gradientmap","disabled","not available in this state",0
+"krita_filter_normalize","disabled","not available in this state",0
+"krita_filter_palettize","disabled","not available in this state",0
+"krita_filter_phongbumpmap","disabled","not available in this state",0
+"krita_filter_roundcorners","disabled","not available in this state",0
+"krita_filter_smalltiles","disabled","not available in this state",0
+"krita_filter_noise","disabled","not available in this state",0
+"krita_filter_randompick","disabled","not available in this state",0
+"krita_filter_resettransparent","disabled","not available in this state",0
+"krita_filter_wave","disabled","not available in this state",0
+"QMic","disabled","not available in this state",0
+"QMicAgain","disabled","not available in this state",0
+"color_space","ok","opened ColorSpaceDialog",600
+"document_tools","ok","",600
+"export_layers","ok","",600
+"filter_manager","ok","opened FilterManagerDialog",600
+"mutate","disabled","not available in this state",0
+"plugin_importer_file","ok","",600
+"plugin_importer_web","ok","opened QInputDialog",600
+"python_scripter","ok","opened ScripterDialog",600
+"ten_brushes","ok","",600
+"ten_scripts","ok","opened TenScriptsDialog",600
+"mobileui_mode_auto","skipped","switches the interface",0
+"mobileui_mode_phone","skipped","switches the interface",0
+"mobileui_mode_classic","skipped","switches the interface",0
+"options_configure","ok","opened KisDlgPreferences",600
+"manage_bundles","ok","",601
+"manage_resources","ok","opened DlgResourceManager",600
+"options_configure_toolbars","ok","opened KisKEditToolBar",600
+"mainToolBar","ok","",84
+"editToolBar","ok","",85
+"BrushesAndStuff","ok","",86
+"customToolBar1","ok","",85
+"customToolBar2","ok","",84
+"lock_toolbars","ok","",86
+"view_toggledockers","ok","",85
+"switch_application_language","ok","",600
+"reset_configurations","skipped","resets all settings",0
+"view_newwindow","skipped","opens a second main window",0
+"windows_next","ok","",600
+"windows_previous","ok","",601
+"help_contents","skipped","opens a web browser",0
+"help_report_bug","skipped","opens a web browser",0
+"buginfo","ok","",600
+"sysinfo","ok","opened DlgSysInfo",600
+"help_about_app","ok","opened KisAboutApplication",600
+"help_about_kde","ok","",600
+"add_scalar_keyframes","ok","",600
+"auto_key","ok","",89
+"clear_animation_cache","ok","",600
+"copy_frames_as_clones","ok","",601
+"copy_columns_to_clipboard","ok","",600
+"copy_frames","ok","",601
+"add_blank_frame","ok","",600
+"add_duplicate_frame","ok","",600
+"cut_columns_to_clipboard","ok","",600
+"cut_frames","ok","",600
+"drop_frames","ok","",85
+"first_frame","ok","",600
+"insert_column_left","ok","",600
+"insert_column_right","ok","",600
+"insert_hold_column","ok","",601
+"insert_hold_frame","ok","",600
+"insert_keyframe_left","ok","",600
+"insert_keyframe_right","ok","",600
+"insert_multiple_columns","ok","opened TimelineInsertKeyframeDialog",600
+"insert_multiple_hold_columns","ok","",600
+"insert_multiple_hold_frames","ok","",600
+"insert_multiple_keyframes","ok","opened TimelineInsertKeyframeDialog",600
+"last_frame","ok","",600
+"make_clones_unique","ok","",600
+"mirror_columns","ok","",600
+"mirror_frames","disabled","not available in this state",0
+"next_frame","ok","",601
+"next_keyframe","ok","",600
+"next_matching_keyframe","ok","",600
+"next_unfiltered_keyframe","ok","",600
+"paste_columns_from_clipboard","ok","",601
+"paste_frames","ok","",600
+"pin_to_timeline","ok","",86
+"toggle_playback","ok","",601
+"previous_frame","ok","",600
+"previous_keyframe","ok","",601
+"previous_matching_keyframe","ok","",600
+"previous_unfiltered_keyframe","ok","",600
+"remove_columns","ok","",600
+"remove_columns_and_pull","ok","",600
+"remove_frames_and_pull","ok","",600
+"remove_hold_column","ok","",600
+"remove_hold_frame","ok","",600
+"remove_frames","ok","",600
+"remove_multiple_hold_columns","ok","opened QInputDialog",600
+"remove_multiple_hold_frames","ok","",601
+"remove_scalar_keyframe","ok","",600
+"set_end_time","ok","",600
+"set_start_time","ok","",600
+"stop_playback","ok","",600
+"toggle_onion_skin","ok","",600
+"update_playback_range","ok","",600
+"Next Blending Mode","ok","",600
+"Previous Blending Mode","ok","",600
+"Select Behind Blending Mode","ok","",600
+"Select Clear Blending Mode","ok","",600
+"Select Color Blending Mode","ok","",601
+"Select Color Burn Blending Mode","ok","",600
+"Select Color Dodge Blending Mode","ok","",600
+"Select Darken Blending Mode","ok","",600
+"Select Difference Blending Mode","ok","",600
+"Select Dissolve Blending Mode","ok","",600
+"Select Exclusion Blending Mode","ok","",601
+"Select Hard Light Blending Mode","ok","",600
+"Select Hard Mix Blending Mode","ok","",600
+"Select Hard Overlay Blending Mode","ok","",600
+"Select Hue Blending Mode","ok","",601
+"Select Lighten Blending Mode","ok","",601
+"Select Linear Burn Blending Mode","ok","",600
+"Select Linear Dodge Blending Mode","ok","",600
+"Select Linear Light Blending Mode","ok","",600
+"Select Luminosity Blending Mode","ok","",600
+"Select Multiply Blending Mode","ok","",600
+"Select Normal Blending Mode","ok","",600
+"Select Overlay Blending Mode","ok","",600
+"Select Pin Light Blending Mode","ok","",600
+"Select Saturation Blending Mode","ok","",600
+"Select Screen Blending Mode","ok","",601
+"Select Soft Light Blending Mode","ok","",600
+"Select Vivid Light Blending Mode","ok","",600
+"brushslider1","ok","opened QFrame",600
+"brushslider2","ok","",600
+"brushslider3","ok","",602
+"brushslider4","ok","opened QFrame",600
+"brushslider5","ok","",600
+"chooseBackgroundColor","ok","",601
+"dual","ok","",600
+"chooseForegroundColor","ok","",601
+"gradients","ok","",600
+"mirror_actions","ok","",600
+"patterns","ok","",601
+"workspaces","ok","",600
+"file_open_recent","disabled","not available in this state",0
+"render_animation_again","skipped","renders files with the last settings",0
+"adjust_filters","ok","",600
+"artistic_filters","ok","",601
+"blur_filters","ok","",600
+"color_filters","ok","",600
+"edge_filters","ok","",601
+"emboss_filters","ok","",600
+"enhance_filters","ok","",600
+"map_filters","ok","",601
+"other_filters","ok","",600
+"windows_cascade","ok","",600
+"create_snapshot","ok","",600
+"open_resources_directory","ok","",601
+"remove_snapshot","ok","",600
+"rename_composition","ok","",601
+"command_bar_open","ok","opened KateCommandBar",600
+"show_brush_editor","ok","",86
+"show_brush_presets","ok","opened QFrame",600
+"docker_box","ok","",600
+"show_mypaint_shade_selector","ok","",600
+"show_color_history","ok","opened KisColorHistory",601
+"show_color_selector","ok","",601
+"show_common_colors","ok","",600
+"show_minimal_shade_selector","ok","opened KisMinimalShadeSelector",601
+"switchto_snapshot","ok","",601
+"windows_tile","ok","",600
+"tablet_debugger","ok","opened QMessageBox",600
+"update_composition","ok","",600
+"ruler_pixel_multiple2","ok","",85
+"object_align_vertical_bottom","disabled","not available in this state",0
+"object_align_horizontal_left","disabled","not available in this state",0
+"object_align_horizontal_right","disabled","not available in this state",0
+"object_align_vertical_top","disabled","not available in this state",0
+"object_order_front","disabled","not available in this state",0
+"text_type_inline_wrap","disabled","not available in this state",0
+"text_type_pre_positioned","disabled","not available in this state",0
+"text_type_preformatted","disabled","not available in this state",0
+"object_distribute_vertical_bottom","disabled","not available in this state",0
+"object_distribute_horizontal_center","disabled","not available in this state",0
+"object_distribute_vertical_center","disabled","not available in this state",0
+"object_distribute_horizontal_gaps","disabled","not available in this state",0
+"object_distribute_horizontal_left","disabled","not available in this state",0
+"object_distribute_horizontal_right","disabled","not available in this state",0
+"object_distribute_vertical_top","disabled","not available in this state",0
+"object_distribute_vertical_gaps","disabled","not available in this state",0
+"add_shape_to_flow_area","disabled","not available in this state",0
+"object_group","disabled","not available in this state",0
+"object_align_horizontal_center","disabled","not available in this state",0
+"object_intersect","disabled","not available in this state",0
+"object_order_lower","disabled","not available in this state",0
+"object_transform_mirror_horizontally","disabled","not available in this state",0
+"object_transform_mirror_vertically","disabled","not available in this state",0
+"flow_shape_order_earlier","disabled","not available in this state",0
+"flow_shape_order_later","disabled","not available in this state",0
+"put_text_on_path","disabled","not available in this state",0
+"object_order_raise","disabled","not available in this state",0
+"remove_shapes_from_text_flow","disabled","not available in this state",0
+"object_transform_reset","disabled","not available in this state",0
+"object_transform_rotate_180","disabled","not available in this state",0
+"object_transform_rotate_90_ccw","disabled","not available in this state",0
+"object_transform_rotate_90_cw","disabled","not available in this state",0
+"object_order_back","disabled","not available in this state",0
+"flow_shape_order_back","disabled","not available in this state",0
+"flow_shape_order_front","disabled","not available in this state",0
+"object_split","disabled","not available in this state",0
+"object_subtract","disabled","not available in this state",0
+"subtract_shape_from_flow_area","disabled","not available in this state",0
+"flow_shape_type_toggle","disabled","not available in this state",0
+"object_ungroup","disabled","not available in this state",0
+"object_unite","disabled","not available in this state",0
+"object_align_vertical_center","disabled","not available in this state",0
+"activateNextLayer","ok","",601
+"activateNextSiblingLayer","ok","",600
+"activatePreviousLayer","ok","",601
+"activatePreviousSiblingLayer","ok","",601
+"switchToPreviouslyActiveNode","ok","",600
+"add_new_fast_color_overlay_mask","ok","",600
+"force_palette_colors","ok","",89
+"isolate_active_group","ok","",86
+"isolate_active_layer","ok","",85
+"move_layer_down","ok","",600
+"move_layer_up","ok","",600
+"LayerGroupSwitcher/next","ok","",600
+"LayerGroupSwitcher/previous","ok","",601
+"layer_properties","ok","",600
+"create_reference_image_from_active_layer","disabled","not available in this state",0
+"create_reference_image_from_visible_canvas","disabled","not available in this state",0
+"remove_layer","ok","",600
+"RenameCurrentLayer","ok","",600
+"set-copy-from","ok","",600
+"toggle_layer_soloing","ok","",601
+"toggle_layer_alpha_lock","ok","",600
+"toggle_layer_inherit_alpha","ok","",600
+"toggle_layer_lock","ok","",600
+"toggle_layer_visibility","ok","",601
+"unifylayerscolorspace","disabled","not available in this state",0
+"interpolation_bezier","ok","",600
+"composite_actions","ok","",601
+"dockerBox","ok","",600
+"expanding_spacer_1","ok","",601
+"expanding_spacer_0","ok","",600
+"interpolation_constant","ok","",600
+"interpolation_linear","ok","",600
+"paintops","ok","",600
+"tangents_sharp","ok","",600
+"tangents_smooth","ok","",600
+"toolbars_submenu_action","ok","",601
+"zoom_to_fit_range","ok","",600
+"zoom_to_fit_curve","ok","",601
+"set_simple_brush_smoothing","ok","",600
+"set_no_brush_smoothing","ok","",600
+"set_pixel_perfect_smoothing","ok","",601
+"set_stabilizer_brush_smoothing","ok","",600
+"set_weighted_brush_smoothing","ok","",600
+"decrease_brush_size","ok","",600
+"decrease_fade","ok","",601
+"decrease_flow","ok","",600
+"decrease_opacity","ok","",600
+"decrease_scatter","ok","",601
+"mirrorX-hideDecorations","ok","",85
+"mirrorY-hideDecorations","ok","",86
+"hmirror_action","ok","",85
+"increase_brush_size","ok","",600
+"increase_fade","ok","",600
+"increase_flow","ok","",601
+"increase_opacity","ok","",600
+"increase_scatter","ok","",600
+"mirrorX-lock","ok","",86
+"mirrorY-lock","ok","",86
+"make_brush_color_darker","ok","",600
+"make_brush_color_lighter","ok","",600
+"make_brush_color_bluer","ok","",600
+"make_brush_color_desaturated","ok","",600
+"make_brush_color_greener","ok","",600
+"make_brush_color_redder","ok","",600
+"make_brush_color_saturated","ok","",600
+"make_brush_color_yellower","ok","",600
+"mirrorX-moveToCenter","ok","",600
+"mirrorY-moveToCenter","ok","",600
+"next_favorite_preset","ok","",600
+"preserve_alpha","ok","",85
+"previous_favorite_preset","ok","",601
+"reload_preset_action","ok","",600
+"rotate_brush_tip_clockwise","ok","",600
+"rotate_brush_tip_clockwise_precise","ok","",600
+"rotate_brush_tip_counter_clockwise","ok","",600
+"rotate_brush_tip_counter_clockwise_precise","ok","",600
+"brush_select_preset_action","ok","",88
+"eraser_select_preset_action","ok","",98
+"selection_tool_mode_add","disabled","not available in this state",0
+"selection_tool_mode_intersect","disabled","not available in this state",0
+"selection_tool_mode_replace","disabled","not available in this state",0
+"selection_tool_mode_subtract","disabled","not available in this state",0
+"erase_action","ok","",87
+"shift_brush_color_clockwise","ok","",600
+"shift_brush_color_counter_clockwise","ok","",600
+"toggle_fg_bg","ok","",600
+"previous_preset","ok","",600
+"toggle_brush_outline","ok","",600
+"toggle-selection-overlay-mode","ok","",600
+"toggle_assistant","ok","",85
+"eraser_preset_action","ok","",85
+"undo_polygon_selection","disabled","not available in this state",0
+"disable_pressure","ok","",86
+"vmirror_action","ok","",85
+"reset_fg_bg","ok","",600
+"path-break-point","disabled","not available in this state",0
+"path-break-segment","disabled","not available in this state",0
+"path-break-selection","disabled","not available in this state",0
+"pathpoint-corner","disabled","not available in this state",0
+"pathpoint-insert","disabled","not available in this state",0
+"pathpoint-join","disabled","not available in this state",0
+"pathpoint-curve","disabled","not available in this state",0
+"pathpoint-line","disabled","not available in this state",0
+"pathpoint-merge","disabled","not available in this state",0
+"movetool-move-down","disabled","not available in this state",0
+"movetool-move-down-more","disabled","not available in this state",0
+"movetool-move-left","disabled","not available in this state",0
+"movetool-move-left-more","disabled","not available in this state",0
+"movetool-move-right","disabled","not available in this state",0
+"movetool-move-right-more","disabled","not available in this state",0
+"movetool-move-up","disabled","not available in this state",0
+"movetool-move-up-more","disabled","not available in this state",0
+"pathpoint-remove","disabled","not available in this state",0
+"pathsegment-curve","disabled","not available in this state",0
+"pathsegment-line","disabled","not available in this state",0
+"movetool-show-coordinates","disabled","not available in this state",0
+"pathpoint-smooth","disabled","not available in this state",0
+"pathpoint-symmetric","disabled","not available in this state",0
+"convert-to-path","disabled","not available in this state",0
+"recorder_export","ok","opened RecorderExport",601
+"recorder_record_toggle","ok","",88
+"svg_align_justified","disabled","not available in this state",0
+"svg_align_center","disabled","not available in this state",0
+"svg_align_left","disabled","not available in this state",0
+"svg_align_right","disabled","not available in this state",0
+"svg_weight_black","disabled","not available in this state",0
+"svg_weight_bold","disabled","not available in this state",0
+"svg_clear_formatting","disabled","not available in this state",0
+"svg_decrease_font_size","disabled","not available in this state",0
+"svg_weight_demi","disabled","not available in this state",0
+"svg_insert_special_character","disabled","not available in this state",0
+"svg_increase_font_size","disabled","not available in this state",0
+"svg_format_italic","disabled","not available in this state",0
+"svg_font_kerning","disabled","not available in this state",0
+"svg_weight_light","disabled","not available in this state",0
+"svg_type_setting_move_selection_start_down_1_px","disabled","not available in this state",0
+"svg_type_setting_move_selection_start_left_1_px","disabled","not available in this state",0
+"svg_type_setting_move_selection_start_right_1_px","disabled","not available in this state",0
+"svg_type_setting_move_selection_start_up_1_px","disabled","not available in this state",0
+"svg_weight_normal","disabled","not available in this state",0
+"svg_paste_plain_text","disabled","not available in this state",0
+"svg_paste_rich_text","disabled","not available in this state",0
+"svg_remove_transforms_from_range","disabled","not available in this state",0
+"svg_format_strike_through","disabled","not available in this state",0
+"svg_format_subscript","disabled","not available in this state",0
+"svg_format_superscript","disabled","not available in this state",0
+"SvgTextTool","ok","",600
+"svg_format_underline","ok","",85
+"configure_sap","disabled","not available in this state",0
+"settings_active_author","ok","",600
+"settings_dockers_menu","ok","",600
+"dbexplorer","ok","opened DlgDbExplorer",601
+"view_toggledockertitlebars","ok","",86
+"style_menu","ok","",601
+"theme_menu","ok","",601
+"window","ok","",600
+"activate_preset_0","ok","",600
+"activate_preset_1","ok","",600
+"activate_preset_2","ok","",600
+"activate_preset_3","ok","",600
+"activate_preset_4","ok","",600
+"activate_preset_5","ok","",601
+"activate_preset_6","ok","",601
+"activate_preset_7","ok","",600
+"activate_preset_8","ok","",600
+"activate_preset_9","ok","",601
+"execute_script_0","ok","",600
+"execute_script_1","ok","",600
+"execute_script_2","ok","",600
+"execute_script_3","ok","",600
+"execute_script_4","ok","",600
+"execute_script_5","ok","",600
+"execute_script_6","ok","",600
+"execute_script_7","ok","",600
+"execute_script_8","ok","",600
+"execute_script_9","ok","",600
+"KisAssistantTool","ok","",601
+"KisToolSelectPath","ok","",600
+"KisToolPath","ok","",600
+"KarbonCalligraphyTool","ok","",600
+"calligraphy_decrease_angle","ok","",600
+"calligraphy_decrease_width","ok","",600
+"calligraphy_increase_angle","ok","",600
+"calligraphy_increase_width","ok","",600
+"KritaSelected/KisToolColorSampler","ok","",600
+"KritaShape/KisToolLazyBrush","ok","",600
+"KritaShape/KisToolKnife","ok","",600
+"KisToolSelectContiguous","ok","",601
+"KisToolCrop","ok","",600
+"KritaShape/KisToolDyna","ok","",600
+"PathTool","ok","",601
+"KritaShape/KisToolEllipse","ok","",600
+"KisToolSelectElliptical","ok","",600
+"KisToolEncloseAndFill","ok","",601
+"KritaFill/KisToolFill","ok","",600
+"KritaShape/KisToolBrush","ok","",601
+"KisToolPencil","ok","",600
+"KisToolSelectOutline","ok","",600
+"KritaFill/KisToolGradient","ok","",600
+"KritaShape/KisToolLine","ok","",600
+"KisToolSelectMagnetic","ok","",600
+"KritaShape/KisToolMeasure","ok","",601
+"KritaTransform/KisToolMove","ok","",601
+"KritaShape/KisToolMultiBrush","ok","",601
+"PanTool","ok","",601
+"KisToolPolygon","ok","",600
+"KisToolSelectPolygonal","ok","",600
+"KisToolPolyline","ok","",601
+"KritaShape/KisToolRectangle","ok","",601
+"KisToolSelectRectangular","ok","",600
+"ToolReferenceImages","ok","",600
+"InteractionTool","ok","",600
+"KisToolSelectSimilar","ok","",600
+"KritaShape/KisToolSmartPatch","ok","",600
+"KisToolTransform","ok","",600
+"KisToolTransformCage","ok","",600
+"KisToolTransformFree","ok","",600
+"KisToolTransformLiquify","ok","",600
+"KisToolTransformMesh","ok","",600
+"KisToolTransformPerspective","ok","",600
+"KisToolTransformWarp","ok","",600
+"ZoomTool","ok","",600
+"show_snap_options_popup","ok","",600
+"toggle_zoom_to_fit","ok","",600
+"wgcs_decrease_saturation","ok","",600
+"wgcs_increase_saturation","ok","",600
+"wgcs_darken_color","ok","",600
+"wgcs_lighten_color","ok","",600
+"wgcs_shift_hue_clockwise","ok","",600
+"wgcs_shift_hue_counterclockwise","ok","",600
+"show_wg_mypaint_selector","ok","",601
+"show_wg_color_history","ok","",600
+"show_wg_color_selector","ok","opened WGSelectorPopup",600
+"show_wg_shade_selector","ok","",600

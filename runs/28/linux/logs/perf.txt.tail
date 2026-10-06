@@ -1,0 +1,27 @@
+perf start: interface-ready-ms=3559 first-canvas-ms=-1 rss-kb=464988 peak-kb=464988 uptime-ms=9240
+perf panel tools: 4 ms
+perf panel menu: 4 ms
+perf panel more: 2 ms
+perf panel brush: 9 ms
+perf panel color: 4 ms
+perf panel layers: 2 ms
+perf panel animation: 2 ms
+perf panel view: 2 ms
+perf panel text: 3 ms
+perf panel other:BrushHudDocker: 6 ms
+perf panel other:LogDocker: 2 ms
+perf panel other:LutDocker: 2 ms
+perf panel other:RecorderDocker: 2 ms
+perf panel other:TasksetDocker: 2 ms
+perf panel other:ToolBox: 2 ms
+perf panel other:TouchDocker: 4 ms
+perf panel other:comics_project_manager_docker: 2 ms
+perf panel other:lastdocumentsdocker: 2 ms
+perf panel other:mutatorDocker: 2 ms
+perf panel other:pykrita_workflow_buttons: 2 ms
+perf panel other:quick_settings_docker: 2 ms
+perf after-portrait: interface-ready-ms=3559 first-canvas-ms=17029 rss-kb=684224 peak-kb=684800 uptime-ms=158260
+perf end: interface-ready-ms=3559 first-canvas-ms=17029 rss-kb=990104 peak-kb=990104 uptime-ms=592060
+perf classic-start: interface-ready-ms=3430 first-canvas-ms=-1 rss-kb=450460 peak-kb=450460 uptime-ms=9120
+perf classic-canvas: interface-ready-ms=3430 first-canvas-ms=13260 rss-kb=631964 peak-kb=631964 uptime-ms=15660
+perf classic-end: interface-ready-ms=3430 first-canvas-ms=13260 rss-kb=667740 peak-kb=667740 uptime-ms=21730
