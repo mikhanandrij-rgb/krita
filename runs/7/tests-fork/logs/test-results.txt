@@ -1,0 +1,15 @@
+  2/321 Test   #1: appstreamtest .......................................................***Failed    3.47 sec
+ 53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.72 sec
+ 54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.73 sec
+ 55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    1.81 sec
+ 60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.99 sec
+ 61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   24.25 sec
+175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   20.49 sec
+196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.95 sec
+227/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................***Timeout 300.00 sec
+229/321 Test #229: libs-ui-kis_shape_layer_test ........................................***Failed    5.37 sec
+249/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.65 sec
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.05 sec
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    1.97 sec
+291/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.67 sec
+292/321 Test #293: plugins-impex-tiff-kis_tiff_test ....................................Subprocess aborted***Exception:   1.63 sec
