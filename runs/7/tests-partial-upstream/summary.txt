@@ -1,4 +1,3 @@
-== tests-partial-upstream (run 7): running
 status: running
 commit: 938db65c217bd4d487edc6710f49205ef4c30b3f
 Tue Oct  6 10:08:37 UTC 2026
@@ -13,4 +12,3 @@ Swap:           3071           0        3071
  55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    1.80 sec
  60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.65 sec
  61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   19.89 sec
-
