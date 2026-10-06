@@ -239,6 +239,31 @@ QString testSetting(const char *name)
         return QString::fromLocal8Bit(env);
     }
 #ifdef Q_OS_ANDROID
+    // 1. An extra of the intent that started Krita:
+    //    adb shell am start -n ... --es KRITA_MOBILE_SCREENSHOTS 1
+    {
+        QAndroidJniObject activity = QtAndroid::androidActivity();
+        QString value;
+        if (activity.isValid()) {
+            QAndroidJniObject intent = activity.callObjectMethod("getIntent", "()Landroid/content/Intent;");
+            if (intent.isValid()) {
+                QAndroidJniObject key = QAndroidJniObject::fromString(QString::fromLatin1(name));
+                QAndroidJniObject extra = intent.callObjectMethod("getStringExtra", "(Ljava/lang/String;)Ljava/lang/String;", key.object<jstring>());
+                if (extra.isValid()) {
+                    value = extra.toString();
+                }
+            }
+        }
+        QAndroidJniEnvironment env;
+        if (env->ExceptionCheck()) {
+            env->ExceptionClear();
+            value.clear();
+        }
+        if (!value.isEmpty()) {
+            return value;
+        }
+    }
+    // 2. A file of that name in the app's external files directory.
     const QString dir = androidTestDirectory();
     if (!dir.isEmpty()) {
         QFile file(dir + QLatin1Char('/') + QString::fromLatin1(name));

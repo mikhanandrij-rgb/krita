@@ -25,7 +25,11 @@ adb shell "echo 1 > $ctl/KRITA_MOBILE_SCREENSHOTS"
 adb logcat -c
 
 # "am start -W" waits for the first frame of the activity.
-adb shell am start -W -n "$activity" > "$out/am-start.txt" 2>&1
+extras="--es KRITA_MOBILE_SCREENSHOTS 1"
+[ "$mode" != auto ] && extras="$extras --es KRITA_MOBILE_UI $mode"
+[ -n "$walk" ] && extras="$extras --es KRITA_MOBILE_ACTION_WALK 1"
+adb shell chmod -R 777 "$ctl" 2>/dev/null
+adb shell am start -W -n "$activity" $extras > "$out/am-start.txt" 2>&1
 cat "$out/am-start.txt"
 
 start=$(date +%s)
