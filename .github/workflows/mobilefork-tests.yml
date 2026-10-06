@@ -98,28 +98,39 @@ jobs:
           exit 0
 
       # KDE's test runner needs GitLab variables; ctest is run directly.
+      # KDE's test runner needs GitLab variables; ctest is run directly, as a
+      # separate user: in the first runs a test signalled every process of
+      # the user (kill -1), which took the Actions runner down with it.
       - name: Run unit tests
         timeout-minutes: 120
         run: |
           sudo apt-get install -y -qq xvfb > /dev/null 2>&1 || true
+          sudo useradd -m tester 2>/dev/null || true
+          sudo chmod -R a+rwX "$WD" /home/runner/kdeci-cache 2>/dev/null || true
+          sudo chmod a+x /home/runner /home/runner/work 2>/dev/null || true
           P="$WD/krita/_install"
-          export LD_LIBRARY_PATH="$P/lib:$P/lib/x86_64-linux-gnu:$P/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          CTEST="$(command -v ctest || true)"; [ -n "$CTEST" ] || CTEST="$CI_TOOLS/venv/bin/ctest"
+          sudo chmod -R a+rX "$CI_TOOLS" 2>/dev/null || true
+          echo "ctest: $CTEST"
+          cat > run-tests.sh <<SCRIPT
+          #!/bin/bash
+          export LD_LIBRARY_PATH="$P/lib:$P/lib/x86_64-linux-gnu:$P/lib64"
           export QT_PLUGIN_PATH="$P/plugins:$P/lib/plugins:$P/lib/x86_64-linux-gnu/plugins:$P/lib/qt5/plugins"
           export QML2_IMPORT_PATH="$P/qml:$P/lib/qml:$P/lib/x86_64-linux-gnu/qml:$P/lib/qt5/qml"
           export XDG_DATA_DIRS="$P/share:/usr/share"
-          export KRITA_PLUGIN_PATH="$P/lib/x86_64-linux-gnu"
           export QT_QPA_PLATFORM=offscreen
-          export HOME="$GITHUB_WORKSPACE/testhome"; mkdir -p "$HOME"
+          export HOME=/home/tester
           cd "$WD/krita/_build"
+          "$CTEST" -N | tail -1
+          timeout 6600 "$CTEST" -j 4 --timeout 300 --output-on-failure --no-compress-output < /dev/null
+          echo "ctest exit: \$?"
+          SCRIPT
+          chmod a+rx run-tests.sh
           set +e
-          ctest -N | tail -1 | tee "$GITHUB_WORKSPACE/logs/ctest-count.txt"
-          # In its own session: a test that signals its process group
-          # (exit 143 in the first run) must not take the runner down.
-          trap '' TERM
-          setsid timeout 6600 ctest -j 4 --timeout 300 --output-on-failure --no-compress-output \
-            > "$GITHUB_WORKSPACE/logs/ctest.log" 2>&1 < /dev/null
-          echo "ctest exit: $?" | tee -a "$GITHUB_WORKSPACE/logs/ctest.log"
-          tail -80 "$GITHUB_WORKSPACE/logs/ctest.log"
+          sudo -u tester -H bash run-tests.sh > logs/ctest.log 2>&1
+          echo "runner: ctest finished with $?" | tee -a logs/ctest.log
+          grep -m1 'tests' logs/ctest.log > logs/ctest-count.txt
+          tail -80 logs/ctest.log
           exit 0
 
       - name: Save ccache
