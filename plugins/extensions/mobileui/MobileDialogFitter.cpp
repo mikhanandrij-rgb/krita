@@ -20,6 +20,7 @@
 #include <QFileDialog>
 #include <QFormLayout>
 #include <QGridLayout>
+#include <QHash>
 #include <QMessageBox>
 #include <QPointer>
 #include <QPushButton>
@@ -189,6 +190,31 @@ void keepDestructionOrder(QWidget *scroll)
     scroll->lower();
 }
 
+// Widgets like KoVBox add every new child to their layout themselves, so the
+// scroll area can end up in the layout twice (once by the widget, once by
+// us). Keep the entry with the larger stretch.
+void removeDuplicateItems(QBoxLayout *layout)
+{
+    QHash<QWidget *, int> seen;
+    for (int i = 0; i < layout->count(); ++i) {
+        QWidget *w = layout->itemAt(i)->widget();
+        if (!w) {
+            continue;
+        }
+        if (!seen.contains(w)) {
+            seen.insert(w, i);
+            continue;
+        }
+        const int first = seen.value(w);
+        const int drop = layout->stretch(first) >= layout->stretch(i) ? i : first;
+        delete layout->takeAt(drop);
+        if (drop == first) {
+            seen.insert(w, i - 1);
+        }
+        --i;
+    }
+}
+
 // ---- box layouts --------------------------------------------------------
 
 bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
@@ -233,6 +259,7 @@ bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
     QScrollArea *scroll = createScroll(content);
     outer->addWidget(scroll, 1);
     keepDestructionOrder(scroll);
+    removeDuplicateItems(outer);
     for (Entry e : keep) {
         if (QWidget *w = unwrapWidget(e.item)) {
             outer->addWidget(w);
