@@ -129,3 +129,6 @@ WARNING      | adb command '/usr/local/lib/android/sdk/platform-tools/adb -s emu
 WARNING      | adb command '/usr/local/lib/android/sdk/platform-tools/adb -s emulator-5554 shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb: device 'emulator-5554' not found'
 ERROR        | Failed to find ColorBuffer: 312
 ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | bad color buffer handle 411
+ERROR        | Failed to find ColorBuffer: 450
+ERROR        | Failed to bind to texture: invalid color buffer.
