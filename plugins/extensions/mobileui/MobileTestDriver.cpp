@@ -5,15 +5,22 @@
 #include "MobileTestDriver.h"
 #include "MobileCommandBrowser.h"
 #include "MobileHub.h"
+#include "MobilePerf.h"
 #include "MobileSheet.h"
 #include "MobileShell.h"
 
+#include <KisDocument.h>
 #include <KisMainWindow.h>
+#include <KisPart.h>
+#include <KoColor.h>
+#include <KoColorSpaceRegistry.h>
+#include <kis_config.h>
 
 #include <QAction>
 #include <QApplication>
 #include <QDialog>
 #include <QDir>
+#include <QElapsedTimer>
 #include <QFile>
 #include <QPixmap>
 #include <QPointer>
@@ -38,7 +45,11 @@ public:
         QDir().mkpath(m_dir);
         m_log.setFileName(QDir(m_dir).filePath(QStringLiteral("testdriver.log")));
         m_log.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text);
-        buildSteps();
+        if (shell->isActive()) {
+            buildSteps();
+        } else {
+            buildClassicSteps();
+        }
         QTimer::singleShot(6000, this, [this] {
             next();
         });
@@ -263,11 +274,80 @@ private:
         }
     }
 
+    void logPerf(const QString &when)
+    {
+        log(QStringLiteral("perf %1: interface-ready-ms=%2 first-canvas-ms=%3 rss-kb=%4 peak-kb=%5 uptime-ms=%6")
+                .arg(when)
+                .arg(perf::interfaceReadyMs())
+                .arg(perf::firstCanvasMs())
+                .arg(perf::residentKb())
+                .arg(perf::peakResidentKb())
+                .arg(perf::processUptimeMs()));
+    }
+
+    // Times opening each panel (the synchronous part: building, layout).
+    void addPanelTimings()
+    {
+        m_steps.append([this] {
+            if (!m_shell) {
+                return;
+            }
+            m_shell->hideHub();
+            for (const QString &panelId : m_shell->panelIds()) {
+                QElapsedTimer timer;
+                timer.start();
+                m_shell->openPanel(panelId);
+                QApplication::processEvents();
+                log(QStringLiteral("perf panel %1: %2 ms").arg(panelId).arg(timer.elapsed()));
+                m_shell->closePanel();
+                QApplication::processEvents();
+            }
+        });
+    }
+
+    // Baseline: Krita's own interface at phone size, for the before/after
+    // comparison (screenshots, startup time, memory).
+    void buildClassicSteps()
+    {
+        m_steps.append([this] { logPerf(QStringLiteral("classic-start")); });
+        m_steps.append([this] { setSize(411, 891, QStringLiteral("classic-portrait")); });
+        m_steps.append([this] { shot(QStringLiteral("01-start")); });
+        m_steps.append([this] {
+            if (!mw()) {
+                return;
+            }
+            const KoColorSpace *cs = KoColorSpaceRegistry::instance()->rgb8();
+            KisDocument *doc = KisPart::instance()->createDocument();
+            if (!doc->newImage(QStringLiteral("Baseline"), 1080, 1920, cs, KoColor(Qt::white, cs), KisConfig::RASTER_LAYER, 2,
+                               QString(), 300.0 / 72.0)) {
+                delete doc;
+                log(QStringLiteral("classic: canvas creation failed"));
+                return;
+            }
+            doc->setModified(false);
+            KisPart::instance()->addDocument(doc);
+            mw()->addViewAndNotifyLoadingCompleted(doc);
+        });
+        m_steps.append([this] { shot(QStringLiteral("02-canvas")); });
+        m_steps.append([this] { logPerf(QStringLiteral("classic-canvas")); });
+        m_steps.append([this] { setSize(891, 411, QStringLiteral("classic-landscape")); });
+        m_steps.append([this] { shot(QStringLiteral("02-canvas")); });
+        m_steps.append([this] {
+            logPerf(QStringLiteral("classic-end"));
+            log(QStringLiteral("done"));
+            m_log.close();
+            QApplication::exit(0);
+        });
+    }
+
     void buildSteps()
     {
+        m_steps.append([this] { logPerf(QStringLiteral("start")); });
         m_steps.append([this] { setSize(411, 891, QStringLiteral("portrait")); });
         addScreens();
         addDialogs();
+        addPanelTimings();
+        m_steps.append([this] { logPerf(QStringLiteral("after-portrait")); });
         m_steps.append([this] { setSize(891, 411, QStringLiteral("landscape")); });
         addScreens();
         addDialogs();
@@ -278,6 +358,7 @@ private:
             }
         });
         m_steps.append([this] {
+            logPerf(QStringLiteral("end"));
             log(QStringLiteral("done"));
             m_log.close();
             QApplication::exit(0);

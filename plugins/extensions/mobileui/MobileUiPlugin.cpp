@@ -4,6 +4,7 @@
  */
 #include "MobileUiPlugin.h"
 #include "MobileConfig.h"
+#include "MobilePerf.h"
 #include "MobileShell.h"
 #include "MobileTestDriver.h"
 
@@ -15,6 +16,7 @@
 #include <klocalizedstring.h>
 
 #include <QActionGroup>
+#include <QDebug>
 #include <QMenu>
 #include <QMenuBar>
 #include <QTimer>
@@ -87,9 +89,17 @@ void MobileUiPlugin::applyMode()
     m_phoneAction->setChecked(mode == InterfaceMode::Phone);
     m_classicAction->setChecked(mode == InterfaceMode::Classic);
     if (config::shouldUsePhoneInterface(mw)) {
+        const QStringList written = config::applyPhoneDefaults();
+        if (!written.isEmpty()) {
+            qInfo().noquote() << "Krita Mobile: phone defaults written (effective after restart):" << written.join(QStringLiteral(", "));
+        }
         shell->activate();
     } else {
         shell->deactivate();
+        // Same measuring point as the phone interface, for comparisons.
+        QTimer::singleShot(0, this, [] {
+            perf::markInterfaceReady();
+        });
     }
 }
 

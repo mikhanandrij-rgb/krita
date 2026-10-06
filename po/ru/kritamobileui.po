@@ -322,6 +322,30 @@ msgstr ""
 "раз коснитесь активного инструмента на панели или удерживайте любой "
 "инструмент."
 
+msgid "unknown"
+msgstr "неизвестно"
+
+msgid "%1 s"
+msgstr "%1 с"
+
+msgid "%1 MB"
+msgstr "%1 МБ"
+
+msgid "Start to phone interface: %1"
+msgstr "От запуска до интерфейса: %1"
+
+msgid "Start to first canvas: %1"
+msgstr "От запуска до первого холста: %1"
+
+msgid "Memory in use: %1"
+msgstr "Используется памяти: %1"
+
+msgid "Peak memory: %1"
+msgstr "Пик памяти: %1"
+
+msgid "Running for: %1"
+msgstr "Работает: %1"
+
 msgid "Close"
 msgstr "Закрыть"
 
@@ -385,6 +409,9 @@ msgstr "Крупнее"
 msgid "Animations"
 msgstr "Анимации интерфейса"
 
+msgid "Performance info"
+msgstr "Сведения о производительности"
+
 msgid "Classic Krita interface"
 msgstr "Классический интерфейс Krita"
 
@@ -408,6 +435,17 @@ msgstr ""
 "Krita Mobile — неофициальная сборка Krita с интерфейсом для телефона. Проект"
 " Krita её не выпускает и не поддерживает. Все команды Krita есть в меню, "
 "включая те, что на компьютере доступны только через сочетания клавиш."
+
+msgid ""
+"On phones Krita Mobile uses less memory for images (35% instead of 50% of "
+"the RAM), one animation rendering thread and smaller cached playback frames."
+" Painting results are the same. Change these in Configure Krita > "
+"Performance."
+msgstr ""
+"На телефонах Krita Mobile отводит под изображения меньше памяти (35% ОЗУ "
+"вместо 50%), использует один поток рендеринга анимации и уменьшенные кадры "
+"кэша воспроизведения. Результат рисования не меняется. Изменить это можно в "
+"«Настроить Krita» > «Производительность»."
 
 msgid "The color sampler stays active. Tap the eyedropper again to go back."
 msgstr "Пипетка останется включённой. Коснитесь её ещё раз, чтобы вернуться."

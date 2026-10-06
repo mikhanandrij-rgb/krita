@@ -53,6 +53,15 @@ void setQuickSizeMaximum(qreal maximum);
 bool firstRunDone();
 void setFirstRunDone(bool done);
 
+// Phone-friendly defaults for Krita's own memory and animation cache
+// settings, written once on a phone and only for settings the user has never
+// changed. None of them changes what painting produces; all of them stay
+// adjustable in Settings > Configure Krita > Performance. Returns the keys
+// that were written now (empty when nothing changed).
+QStringList applyPhoneDefaults();
+// The settings written by applyPhoneDefaults() over all runs, "key=value".
+QStringList appliedPhoneDefaults();
+
 } // namespace config
 } // namespace mobileui
 

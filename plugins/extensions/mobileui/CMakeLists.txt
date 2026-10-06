@@ -24,6 +24,7 @@ set(kritamobileui_SOURCES
     MobileInventory.cpp
     MobileTestDriver.cpp
     MobileDialogFitter.cpp
+    MobilePerf.cpp
 )
 
 qt_add_resources(kritamobileui_SOURCES mobileui.qrc)

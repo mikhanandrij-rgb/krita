@@ -10,6 +10,7 @@
 #include "MobileConfig.h"
 #include "MobileDialogFitter.h"
 #include "MobileHub.h"
+#include "MobilePerf.h"
 #include "MobilePanels.h"
 #include "MobileSheet.h"
 #include "MobileTheme.h"
@@ -490,6 +491,10 @@ void Shell::activate()
     if (!mw->activeView()) {
         showHub();
     }
+    // Measured once the event loop has painted the interface.
+    QTimer::singleShot(0, this, [] {
+        perf::markInterfaceReady();
+    });
 }
 
 void Shell::deactivate()
@@ -1153,6 +1158,12 @@ void Shell::buildMorePanel()
     if (QAction *prefs = action(QStringLiteral("options_configure"))) {
         ui->addActionCard(prefs, QStringLiteral("settings"));
     }
+    ActionCard *perfInfo = ui->addCard(QStringLiteral("info"), i18n("Performance info"));
+    connect(perfInfo, &ActionCard::clicked, this, [this] {
+        QMessageBox box(QMessageBox::Information, i18n("Performance info"), perf::report(), QMessageBox::Ok, m_mainWindow);
+        box.setTextInteractionFlags(Qt::TextSelectableByMouse);
+        box.exec();
+    });
     ActionCard *classic = ui->addCard(QStringLiteral("classic"), i18n("Classic Krita interface"));
     connect(classic, &ActionCard::clicked, this, [this] {
         QMessageBox box(QMessageBox::Question,
@@ -1170,6 +1181,11 @@ void Shell::buildMorePanel()
     m_more->addNote(i18n("Krita Mobile is an unofficial build of Krita with a phone interface. It is not made or supported by "
                          "the Krita project. Every Krita command is in the menu, including the ones that only have keyboard "
                          "shortcuts on the desktop."));
+    if (!config::appliedPhoneDefaults().isEmpty()) {
+        m_more->addNote(i18n("On phones Krita Mobile uses less memory for images (35% instead of 50% of the RAM), one "
+                             "animation rendering thread and smaller cached playback frames. Painting results are the same. "
+                             "Change these in Configure Krita > Performance."));
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -1223,6 +1239,11 @@ void Shell::connectKrita()
     }
 
     m_kritaConnections << connect(mw, &KisMainWindow::activeViewChanged, this, [this] {
+        if (m_mainWindow && m_mainWindow->activeView()) {
+            QTimer::singleShot(0, this, [] {
+                perf::markFirstCanvas();
+            });
+        }
         updateTitle();
         updateViewChrome();
         // The tool is switched while the view is being set up; refresh the

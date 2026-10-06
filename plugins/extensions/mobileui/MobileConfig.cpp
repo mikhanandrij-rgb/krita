@@ -9,6 +9,7 @@
 
 #include <QGuiApplication>
 #include <QScreen>
+#include <QVariant>
 #include <QWidget>
 #include <QWindow>
 
@@ -180,6 +181,59 @@ void setFirstRunDone(bool done)
 {
     KConfigGroup g = group();
     g.writeEntry("FirstRunDone", done);
+}
+
+QStringList applyPhoneDefaults()
+{
+    QStringList written;
+#ifndef Q_OS_ANDROID
+    // Desktop builds only do this for testing.
+    if (qgetenv("KRITA_MOBILE_PHONE_DEFAULTS") != "1") {
+        return written;
+    }
+#endif
+    constexpr int version = 1;
+    KConfigGroup own = group();
+    if (own.readEntry("PhoneDefaultsVersion", 0) >= version) {
+        return written;
+    }
+    // Krita keeps these in the root group of kritarc.
+    KConfigGroup krita = KSharedConfig::openConfig()->group(QString());
+    struct Default {
+        const char *key;
+        QVariant value;
+    };
+    const Default defaults[] = {
+        // Krita's default of 50% of the RAM for image tiles is a lot for a
+        // phone, where Android kills apps under memory pressure; above this
+        // Krita swaps tiles to its own swap file instead.
+        {"memoryHardLimitPercent", 35.0},
+        // Every animation rendering clone holds a full copy of the image.
+        {"frameRenderingClones", 1},
+        // Cached frames for playback are scaled down above this size; the
+        // frames themselves and exported renders keep full resolution.
+        {"animationCacheFrameSizeLimit", 1920},
+    };
+    QStringList applied = own.readEntry("PhoneDefaultsApplied", QStringList());
+    for (const Default &d : defaults) {
+        const QString key = QString::fromLatin1(d.key);
+        if (!krita.hasKey(key)) {
+            krita.writeEntry(key, d.value);
+            const QString entry = key + QLatin1Char('=') + d.value.toString();
+            written.append(entry);
+            applied.append(entry);
+        }
+    }
+    own.writeEntry("PhoneDefaultsApplied", applied);
+    own.writeEntry("PhoneDefaultsVersion", version);
+    own.sync();
+    krita.sync();
+    return written;
+}
+
+QStringList appliedPhoneDefaults()
+{
+    return group().readEntry("PhoneDefaultsApplied", QStringList());
 }
 
 } // namespace config

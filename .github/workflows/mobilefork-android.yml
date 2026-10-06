@@ -448,6 +448,19 @@ jobs:
               --args "$P/bin/krita" --nosplash > logs/krita-run.log 2>&1
           echo "krita exit code: $?" | tee -a logs/krita-run.log
           ls -la "$KRITA_MOBILE_SCREENSHOTS" | tee -a logs/krita-run.log
+          # Baseline: Krita's own interface at phone size (screenshots,
+          # startup time and memory for the before/after comparison).
+          export KRITA_MOBILE_UI=classic
+          export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots-classic"
+          mkdir -p "$KRITA_MOBILE_SCREENSHOTS"
+          timeout 600 xvfb-run -a -s "-screen 0 1280x1024x24" \
+            gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
+              -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" \
+              --args "$P/bin/krita" --nosplash > logs/krita-classic-run.log 2>&1
+          echo "krita (classic) exit code: $?" | tee -a logs/krita-classic-run.log
+          cp shots-classic/*.png shots/ 2>/dev/null
+          cp shots-classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
+          grep -h '^perf' shots/testdriver.log shots/testdriver-classic.log 2>/dev/null | tee logs/perf.txt
           exit 0
 
       - name: Compare runtime inventory with the source inventory
@@ -479,6 +492,7 @@ jobs:
             echo "commit: ${GITHUB_SHA}"
             echo "date: $(date -u +%FT%TZ)"
             echo "screenshots: $(ls shots/*.png 2>/dev/null | wc -l)"
+            echo "perf:"; sed 's/^/  /' logs/perf.txt 2>/dev/null || true
             echo "disk:"; df -h / | sed 's/^/  /'
           } > status-summary.txt
           for f in logs/*; do
