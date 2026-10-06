@@ -1,0 +1,701 @@
+Действие,Название,Где в телефонном интерфейсе,Проверка
+add_blank_frame,Create Blank Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+add_duplicate_frame,Create Duplicate Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+add_scalar_keyframes,Add scalar keyframes,Меню › Все команды › Animation,"нажато, без ошибок"
+auto_key,Auto Frame Mode,Меню › Все команды › Animation,"нажато, без ошибок"
+clear_animation_cache,Clear Cache,Меню › Все команды › Animation,"нажато, без ошибок"
+copy_columns_to_clipboard,Copy Columns,Меню › Все команды › Animation,"нажато, без ошибок"
+copy_frames,Copy Keyframes,Меню › Все команды › Animation,"нажато, без ошибок"
+copy_frames_as_clones,Clone Keyframes,Меню › Все команды › Animation,"нажато, без ошибок"
+cut_columns_to_clipboard,Cut Columns,Меню › Все команды › Animation,"нажато, без ошибок"
+cut_frames,Cut Keyframes,Меню › Все команды › Animation,"нажато, без ошибок"
+drop_frames,Drop Frames,Меню › Все команды › Animation,"нажато, без ошибок"
+first_frame,First Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_column_left,Insert Column Left,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_column_right,Insert Column Right,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_hold_column,Insert Hold Column,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_hold_frame,Insert Hold Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_keyframe_left,Insert Keyframe Left,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_keyframe_right,Insert Keyframe Right,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_multiple_columns,Insert Multiple Columns,Меню › Все команды › Animation,"нажато, без ошибок; открылось окно TimelineInsertKeyframeDialog"
+insert_multiple_hold_columns,Insert Multiple Hold Columns,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_multiple_hold_frames,Insert Multiple Hold Frames,Меню › Все команды › Animation,"нажато, без ошибок"
+insert_multiple_keyframes,Insert Multiple Keyframes,Меню › Все команды › Animation,"нажато, без ошибок; открылось окно TimelineInsertKeyframeDialog"
+last_frame,Last Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+make_clones_unique,Make Unique,Меню › Все команды › Animation,"нажато, без ошибок"
+mirror_columns,Mirror Columns,Меню › Все команды › Animation,"нажато, без ошибок"
+mirror_frames,Mirror Frames,Меню › Все команды › Animation,недоступно в состоянии теста
+next_frame,Next Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+next_keyframe,Next Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+next_matching_keyframe,Next Matching Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+next_unfiltered_keyframe,Next Unfiltered Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+paste_columns_from_clipboard,Paste Columns,Меню › Все команды › Animation,"нажато, без ошибок"
+paste_frames,Paste Keyframes,Меню › Все команды › Animation,"нажато, без ошибок"
+pin_to_timeline,Pin to Timeline,Меню › Все команды › Animation,"нажато, без ошибок"
+previous_frame,Previous Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+previous_keyframe,Previous Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+previous_matching_keyframe,Previous Matching Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+previous_unfiltered_keyframe,Previous Unfiltered Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_columns,Remove Column,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_columns_and_pull,Remove Column and Pull,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_frames,Remove Keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_frames_and_pull,Remove Frame and Pull,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_hold_column,Remove Hold Column,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_hold_frame,Remove Hold Frame,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_multiple_hold_columns,Remove Multiple Hold Columns,Меню › Все команды › Animation,"нажато, без ошибок; открылось окно QInputDialog"
+remove_multiple_hold_frames,Remove Multiple Hold Frames,Меню › Все команды › Animation,"нажато, без ошибок"
+remove_scalar_keyframe,Remove scalar keyframe,Меню › Все команды › Animation,"нажато, без ошибок"
+set_end_time,Set End Time,Меню › Все команды › Animation,"нажато, без ошибок"
+set_start_time,Set Start Time,Меню › Все команды › Animation,"нажато, без ошибок"
+stop_playback,Stop animation,Меню › Все команды › Animation,"нажато, без ошибок"
+toggle_onion_skin,Toggle onion skin,Меню › Все команды › Animation,"нажато, без ошибок"
+toggle_playback,Play / pause animation,Меню › Все команды › Animation,"нажато, без ошибок"
+update_playback_range,Update Playback Range,Меню › Все команды › Animation,"нажато, без ошибок"
+Next Blending Mode,Next Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Previous Blending Mode,Previous Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Behind Blending Mode,Select Behind Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Clear Blending Mode,Select Clear Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Color Blending Mode,Select Color Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Color Burn Blending Mode,Select Color Burn Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Color Dodge Blending Mode,Select Color Dodge Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Darken Blending Mode,Select Darken Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Difference Blending Mode,Select Difference Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Dissolve Blending Mode,Select Dissolve Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Exclusion Blending Mode,Select Exclusion Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Hard Light Blending Mode,Select Hard Light Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Hard Mix Blending Mode,Select Hard Mix Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Hard Overlay Blending Mode,Select Hard Overlay Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Hue Blending Mode,Select Hue Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Lighten Blending Mode,Select Lighten Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Linear Burn Blending Mode,Select Linear Burn Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Linear Dodge Blending Mode,Select Linear Dodge Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Linear Light Blending Mode,Select Linear Light Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Luminosity Blending Mode,Select Luminosity Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Multiply Blending Mode,Select Multiply Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Normal Blending Mode,Select Normal Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Overlay Blending Mode,Select Overlay Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Pin Light Blending Mode,Select Pin Light Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Saturation Blending Mode,Select Saturation Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Screen Blending Mode,Select Screen Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Soft Light Blending Mode,Select Soft Light Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+Select Vivid Light Blending Mode,Select Vivid Light Blending Mode,Меню › Все команды › Blending Modes,"нажато, без ошибок"
+brushslider1,Brush option slider 1,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок; открылось окно QFrame"
+brushslider2,Brush option slider 2,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+brushslider3,Brush option slider 3,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+brushslider4,Brush option slider 4,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок; открылось окно QFrame"
+brushslider5,Brush option slider 5,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+chooseBackgroundColor,Choose Background Color,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+chooseForegroundColor,Choose Foreground Color,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+dual,Color,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+gradients,Gradients,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+mirror_actions,Mirror,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+patterns,Patterns,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+select_layout,Layouts,—,не создаётся на Linux (см. примечание)
+workspaces,Workspaces,Меню › Все команды › Brushes and Stuff,"нажато, без ошибок"
+clear,Clear,Меню › Edit,"нажато, без ошибок"
+copy_layer_style,Copy Layer Style,Меню › Edit,"нажато, без ошибок"
+copy_merged,Copy merged,Меню › Edit,недоступно в состоянии теста
+copy_sharp,Copy (sharp),Меню › Edit,недоступно в состоянии теста
+cut_sharp,Cut (sharp),Меню › Edit,недоступно в состоянии теста
+delete_keyframe,Delete keyframe,—,не создаётся на Linux (см. примечание)
+edit_copy,Copy,Меню › Edit,"нажато, без ошибок"
+edit_cut,Cut,Меню › Edit,"нажато, без ошибок"
+edit_paste,Paste,Меню › Edit,"нажато, без ошибок; открылось окно KisDlgMissingColorProfile"
+edit_redo,Redo,Меню › Edit,"нажато, без ошибок"
+edit_undo,Undo,Меню › Edit,"нажато, без ошибок"
+fill_selection_background_color,Fill with Background Color,Меню › Edit,недоступно в состоянии теста
+fill_selection_foreground_color,Fill with Foreground Color,Меню › Edit,недоступно в состоянии теста
+fill_selection_pattern,Fill with Pattern,Меню › Edit,недоступно в состоянии теста
+paste_as_reference,Paste as Reference Image,Меню › Edit,"нажато, без ошибок; открылось окно KisDlgMissingColorProfile"
+paste_at,Paste at Cursor,Меню › Edit,"нажато, без ошибок; открылось окно KisDlgMissingColorProfile"
+paste_into,Paste into Active Layer,Меню › Edit,недоступно в состоянии теста
+paste_layer_style,Paste Layer Style,Меню › Edit,"нажато, без ошибок"
+paste_new,Paste into New Image,Меню › Edit,"нажато, без ошибок"
+paste_shape_style,Paste Shape Style,Меню › Edit,недоступно в состоянии теста
+stroke_selection,Stroke Selection...,Меню › Edit,недоступно в состоянии теста
+stroke_shapes,Stroke selected shapes,Меню › Edit,недоступно в состоянии теста
+create_copy,Create Copy From Current Image,Меню › File,"нажато, без ошибок"
+create_template,Create Template From Image...,Меню › File,"нажато, без ошибок; открылось окно KisTemplateCreateDia"
+file_close,Close,Меню › Window,вручную: закрывает тестовый документ
+file_close_all,Close All,Меню › Window,вручную: закрывает тестовый документ
+file_documentinfo,Document Information,Меню › File,"нажато, без ошибок; открылось окно KoDocumentInfoDlg"
+file_export_advanced,Export Advanced...,Меню › File,"нажато, без ошибок"
+file_export_file,Export...,Меню › File,"нажато, без ошибок"
+file_import_animation,Import animation frames...,Меню › File,"нажато, без ошибок; открылось окно KisDlgImportImageSequence"
+file_import_file,Open existing Document as Untitled Document...,Меню › File,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+file_import_video_animation,Import video animation...,Меню › File,"нажато, без ошибок"
+file_new,New...,Меню › File,"нажато, без ошибок; открылось окно KisOpenPane"
+file_open,Open...,Меню › File,"нажато, без ошибок"
+file_open_recent,Open Recent,Меню › Все команды › File,недоступно в состоянии теста
+file_quit,Quit,Меню › File,вручную: закрывает Krita
+file_save,Save,Меню › File,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+file_save_as,Save As...,Меню › File,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+file_sessions,Sessions...,Меню › File,"нажато, без ошибок"
+render_animation,Render Animation...,Меню › File,недоступно в состоянии теста
+render_animation_again,Render Animation Again,Меню › Все команды › File,вручную: рендерит файлы с прошлыми настройками
+save_incremental_backup,Save Incremental Backup,Меню › File,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+save_incremental_version,Save Incremental Version,Меню › File,"нажато, без ошибок"
+QMic,Start G'MIC-Qt,Меню › Filter,недоступно в состоянии теста
+QMicAgain,Re-apply the last G'MIC filter,Меню › Filter,недоступно в состоянии теста
+adjust_filters,Adjust,Меню › Все команды › Filter,"нажато, без ошибок"
+artistic_filters,Artistic,Меню › Все команды › Filter,"нажато, без ошибок"
+blur_filters,Blur,Меню › Все команды › Filter,"нажато, без ошибок"
+color_filters,Colors,Меню › Все команды › Filter,"нажато, без ошибок"
+edge_filters,Edge Detection,Меню › Все команды › Filter,"нажато, без ошибок"
+emboss_filters,Emboss,Меню › Все команды › Filter,"нажато, без ошибок"
+enhance_filters,Enhance,Меню › Все команды › Filter,"нажато, без ошибок"
+filter_apply_again,Apply Filter Again,Меню › Filter,недоступно в состоянии теста
+filter_apply_reprompt,Apply Filter Again (Reprompt),Меню › Filter,недоступно в состоянии теста
+map_filters,Map,Меню › Все команды › Filter,"нажато, без ошибок"
+other_filters,Other,Меню › Все команды › Filter,"нажато, без ошибок"
+krita_filter_asc-cdl,"Slope, Offset, Power Filter",Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_autocontrast,Auto Contrast,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_blur,Blur...,Меню › Filter › Blur,недоступно в состоянии теста
+krita_filter_bottom edge detections,Bottom Edge Detection,—,не создаётся на Linux (см. примечание)
+krita_filter_burn,Burn,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_colorbalance,Color Balance...,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_colortoalpha,Color to Alpha...,Меню › Filter › Colors,недоступно в состоянии теста
+krita_filter_colortransfer,Color Transfer...,Меню › Filter › Colors,недоступно в состоянии теста
+krita_filter_crosschannel,Cross-channel adjustment Filter,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_desaturate,Desaturate,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_dodge,Dodge,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_emboss,Emboss with Variable Depth...,Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_emboss all directions,Emboss in All Directions,Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_emboss horizontal and vertical,Emboss Horizontal Vertical,Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_emboss horizontal only,Emboss Horizontal Only,Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_emboss laplascian,Emboss (Laplacian),Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_emboss vertical only,Emboss Vertical Only,Меню › Filter › Emboss,недоступно в состоянии теста
+krita_filter_gaussian blur,Gaussian Blur...,Меню › Filter › Blur,недоступно в состоянии теста
+krita_filter_gaussianhighpass,Gaussian High Pass Filter,Меню › Filter › Edge Detection,недоступно в состоянии теста
+krita_filter_gaussiannoisereducer,Gaussian Noise Reduction...,Меню › Filter › Enhance,недоступно в состоянии теста
+krita_filter_gradientmap,gradientmap Filter,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_halftone,Halftone Filter,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_height to normal,Height to Normal Map Filter,Меню › Filter › Edge Detection,недоступно в состоянии теста
+krita_filter_hsvadjustment,HSV Adjustment...,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_indexcolors,Index Colors...,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_invert,Invert,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_left edge detections,Left Edge Detection,—,не создаётся на Linux (см. примечание)
+krita_filter_lens blur,Lens Blur...,Меню › Filter › Blur,недоступно в состоянии теста
+krita_filter_levels,Levels...,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_maximize,Maximize Channel,Меню › Filter › Colors,недоступно в состоянии теста
+krita_filter_mean removal,Mean Removal,Меню › Filter › Enhance,недоступно в состоянии теста
+krita_filter_minimize,Minimize Channel,Меню › Filter › Colors,недоступно в состоянии теста
+krita_filter_motion blur,Motion Blur...,Меню › Filter › Blur,недоступно в состоянии теста
+krita_filter_noise,Random Noise...,Меню › Filter › Other,недоступно в состоянии теста
+krita_filter_normalize,Normalize Filter,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_oilpaint,Oilpaint...,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_palettize,Palettize Filter,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_perchannel,Color Adjustment curves...,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_phongbumpmap,Phong Bumpmap...,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_pixelize,Pixelize...,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_posterize,Posterize...,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_propagatecolors,Propagate Colors Filter,Меню › Filter › Colors,недоступно в состоянии теста
+krita_filter_raindrops,Raindrops...,Меню › Filter › Artistic,недоступно в состоянии теста
+krita_filter_randompick,Random Pick...,Меню › Filter › Other,недоступно в состоянии теста
+krita_filter_right edge detections,Right Edge Detection,—,не создаётся на Linux (см. примечание)
+krita_filter_roundcorners,Round Corners...,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_sharpen,Sharpen,Меню › Filter › Enhance,недоступно в состоянии теста
+krita_filter_smalltiles,Small Tiles...,Меню › Filter › Map,недоступно в состоянии теста
+krita_filter_sobel,Sobel...,—,не создаётся на Linux (см. примечание)
+krita_filter_threshold,Threshold Filter,Меню › Filter › Adjust,недоступно в состоянии теста
+krita_filter_top edge detections,Top Edge Detection,—,не создаётся на Linux (см. примечание)
+krita_filter_unsharp,Unsharp Mask...,Меню › Filter › Enhance,недоступно в состоянии теста
+krita_filter_wave,Wave...,Меню › Filter › Other,недоступно в состоянии теста
+krita_filter_waveletnoisereducer,Wavelet Noise Reducer...,Меню › Filter › Enhance,недоступно в состоянии теста
+buginfo,Show Krita log for bug reports.,Меню › Help,"нажато, без ошибок"
+color_management_report,Show color management information,—,не создаётся на Linux (см. примечание)
+command_bar_open,Search Actions,Меню › Все команды › General,"нажато, без ошибок; открылось окно KateCommandBar"
+crashlog,Show crash log for bug reports.,—,не создаётся на Linux (см. примечание)
+create_bundle,Create Resource Bundle...,—,не создаётся на Linux (см. примечание)
+create_snapshot,Create Snapshot,Меню › Все команды › General,"нажато, без ошибок"
+docker_box,Show Docker Box,Меню › Все команды › General,"нажато, без ошибок"
+invert_selection,Invert Selection,Меню › Select,"нажато, без ошибок"
+lock_toolbars,Lock Toolbars,Меню › Settings,"нажато, без ошибок"
+logcatdump,Show Android log for bug reports.,—,не создаётся на Linux (см. примечание)
+mainToolBar,Show File Toolbar,Меню › Все команды › General,"нажато, без ошибок"
+open_resources_directory,Open Resources Folder,Меню › Все команды › General,"нажато, без ошибок"
+remove_snapshot,Remove Selected Snapshot,Меню › Все команды › General,"нажато, без ошибок"
+rename_composition,Rename Composition...,Меню › Все команды › General,"нажато, без ошибок"
+ruler_pixel_multiple2,Use multiple of 2 for pixel scale,Меню › Все команды › General,"нажато, без ошибок"
+sample_screen_color,Sample Screen Color,Меню › Edit,"нажато, без ошибок"
+sample_screen_color_real_canvas,Sample Screen Color (Sample Real Canvas),Меню › Edit,"нажато, без ошибок"
+show_brush_editor,Show Brush Editor,Меню › Все команды › General,"нажато, без ошибок"
+show_brush_presets,Show Brush Presets,Меню › Все команды › General,"нажато, без ошибок; открылось окно QFrame"
+show_color_history,Show color history,Меню › Все команды › General,"нажато, без ошибок; открылось окно KisColorHistory"
+show_color_selector,Show color selector,Меню › Все команды › General,"нажато, без ошибок"
+show_common_colors,Show common colors,Меню › Все команды › General,"нажато, без ошибок"
+show_minimal_shade_selector,Show minimal shade selector,Меню › Все команды › General,"нажато, без ошибок; открылось окно KisMinimalShadeSelector"
+show_mypaint_shade_selector,Show MyPaint shade selector,Меню › Все команды › General,"нажато, без ошибок"
+show_tool_options,Show Tool Options,—,не создаётся на Linux (см. примечание)
+switchto_snapshot,Switch to Selected Snapshot,Меню › Все команды › General,"нажато, без ошибок"
+sysinfo,Show system information for bug reports.,Меню › Help,"нажато, без ошибок; открылось окно DlgSysInfo"
+tablet_debugger,Toggle Tablet Debugger,Меню › Все команды › General,"нажато, без ошибок; открылось окно QMessageBox"
+update_composition,Update Composition,Меню › Все команды › General,"нажато, без ошибок"
+windows_cascade,Cascade,Меню › Все команды › General,"нажато, без ошибок"
+windows_tile,Tile,Меню › Все команды › General,"нажато, без ошибок"
+help_about_app,About Krita,Меню › Help,"нажато, без ошибок; открылось окно KisAboutApplication"
+help_about_kde,About KDE,Меню › Help,"нажато, без ошибок"
+help_contents,Krita Handbook,Меню › Help,вручную: открывает браузер
+help_report_bug,Report Bug...,Меню › Help,вручную: открывает браузер
+canvassize,Resize Canvas...,Меню › Image,"нажато, без ошибок"
+image_color,Image Background Color and Transparency...,Меню › Image,"нажато, без ошибок; открылось окно QColorDialog"
+image_properties,Properties...,Меню › Image,"нажато, без ошибок"
+imagecolorspaceconversion,Convert Image Color Space...,Меню › Image,"нажато, без ошибок"
+imagesize,Scale Image To New Size...,Меню › Image,"нажато, без ошибок; открылось окно DlgImageSize"
+imagesplit,Image Split,Меню › Image,"нажато, без ошибок; открылось окно DlgImagesplit"
+mirrorImageHorizontal,Mirror Image Horizontally,Меню › Image,"нажато, без ошибок"
+mirrorImageVertical,Mirror Image Vertically,Меню › Image,"нажато, без ошибок"
+offsetimage,Offset Image...,Меню › Image,"нажато, без ошибок"
+purge_unused_image_data,Purge Unused Image Data,Меню › Image,"нажато, без ошибок"
+resizeimagetolayer,Trim to Current Layer,Меню › Image,"нажато, без ошибок"
+resizeimagetoselection,Trim to Selection,Меню › Image,недоступно в состоянии теста
+rotateImage180,Rotate Image 180°,Меню › Image › Rotate,"нажато, без ошибок"
+rotateImageCCW90,Rotate Image 90° to the Left,Меню › Image › Rotate,"нажато, без ошибок"
+rotateImageCW90,Rotate Image 90° to the Right,Меню › Image › Rotate,"нажато, без ошибок"
+rotateimage,Rotate Image...,Меню › Image › Rotate,"нажато, без ошибок"
+separate,Separate Image...,Меню › Image,"нажато, без ошибок"
+shearimage,Shear Image...,Меню › Image,"нажато, без ошибок; открылось окно DlgShearImage"
+trim_to_image,Trim to Image Size,Меню › Image,"нажато, без ошибок"
+add_shape_to_flow_area,Flow Text in Shape,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+flow_shape_order_back,Set Flow Shape as Last,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+flow_shape_order_earlier,Move Shape Earlier In Chain.,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+flow_shape_order_front,Set Shape As First In Chain,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+flow_shape_order_later,Move Shape Later In Chain.,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+flow_shape_type_toggle,Toggle Flow Shape Type,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_horizontal_center,Horizontally Center,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_horizontal_left,Align Left,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_horizontal_right,Align Right,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_vertical_bottom,Align Bottom,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_vertical_center,Vertically Center,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_align_vertical_top,Align Top,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_horizontal_center,Distribute Centers Horizontally,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_horizontal_gaps,Distribute Horizontal Gap,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_horizontal_left,Distribute Left,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_horizontal_right,Distribute Right,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_vertical_bottom,Distribute Bottom,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_vertical_center,Distribute Centers Vertically,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_vertical_gaps,Distribute Vertical Gap,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_distribute_vertical_top,Distribute Top,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_group,Group shapes,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_intersect,Intersect,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_order_back,Send to Back,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_order_front,Bring to Front,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_order_lower,Lower,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_order_raise,Raise,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_split,Split,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_subtract,Subtract,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_mirror_horizontally,Mirror Horizontally,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_mirror_vertically,Mirror Vertically,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_reset,Reset Transformations,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_rotate_180,Rotate 180°,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_rotate_90_ccw,Rotate 90° CCW,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_transform_rotate_90_cw,Rotate 90° CW,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_ungroup,Ungroup shapes,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+object_unite,Unite,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+put_text_on_path,Put Text On Path,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+remove_shapes_from_text_flow,Remove Shapes from Text Chain,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+subtract_shape_from_flow_area,Subtract Shape from Text Chain,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+text_type_inline_wrap,Convert Text To Inline Wrapped,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+text_type_pre_positioned,Convert Text To Pre-positioned,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+text_type_preformatted,Convert Text To Preformatted,Меню › Все команды › Interaction Tool,недоступно в состоянии теста
+change_interface_scale,Change Interface Scale...,—,не создаётся на Linux (см. примечание)
+EditLayerMetaData,Edit metadata...,Меню › Layer,"нажато, без ошибок"
+LayerGroupSwitcher/next,Move into next group,Меню › Все команды › Layers,"нажато, без ошибок"
+LayerGroupSwitcher/previous,Move into previous group,Меню › Все команды › Layers,"нажато, без ошибок"
+RenameCurrentLayer,Rename current layer,Меню › Все команды › Layers,"нажато, без ошибок"
+activateNextLayer,Activate next layer,Меню › Все команды › Layers,"нажато, без ошибок"
+activateNextSiblingLayer,"Activate next sibling layer, skipping over groups.",Меню › Все команды › Layers,"нажато, без ошибок"
+activatePreviousLayer,Activate previous layer,Меню › Все команды › Layers,"нажато, без ошибок"
+activatePreviousSiblingLayer,"Activate previous sibling layer, skipping over groups.",Меню › Все команды › Layers,"нажато, без ошибок"
+add_new_adjustment_layer,Add Filter Layer...,Меню › Layer › New,"нажато, без ошибок; открылось окно KisDlgAdjustmentLayer"
+add_new_clone_layer,Add Clone Layer,Меню › Layer › New,"нажато, без ошибок"
+add_new_colorize_mask,Add Colorize Mask,Меню › Layer › New,недоступно в состоянии теста
+add_new_fast_color_overlay_mask,Add Color Overlay Mask,Меню › Все команды › Layers,"нажато, без ошибок"
+add_new_file_layer,Add File Layer...,Меню › Layer › New,"нажато, без ошибок; открылось окно KisDlgFileLayer"
+add_new_fill_layer,Add Fill Layer...,Меню › Layer › New,"нажато, без ошибок"
+add_new_filter_mask,Add Filter Mask...,Меню › Layer › New,недоступно в состоянии теста
+add_new_group_layer,Add Group Layer,Меню › Layer › New,"нажато, без ошибок"
+add_new_paint_layer,Add Paint Layer,Меню › Layer › New,"нажато, без ошибок"
+add_new_selection_mask,Add Local Selection,Меню › Layer › New,недоступно в состоянии теста
+add_new_shape_layer,Add Vector Layer,Меню › Layer › New,"нажато, без ошибок"
+add_new_transform_mask,Add Transform Mask,Меню › Layer › New,недоступно в состоянии теста
+add_new_transparency_mask,Add Transparency Mask,Меню › Layer › New,"нажато, без ошибок"
+clones_array,Clones Array...,Меню › Layer › Split,"нажато, без ошибок; открылось окно DlgClonesArray"
+convert_group_to_animated,Convert Group to Animated Layer,Меню › Layer › Convert,недоступно в состоянии теста
+convert_to_file_layer,Convert to File Layer...,Меню › Layer › Convert,недоступно в состоянии теста
+convert_to_filter_mask,Convert to Filter Mask...,Меню › Layer › Convert,"нажато, без ошибок"
+convert_to_paint_layer,Convert to Paint Layer,Меню › Layer › Convert,недоступно в состоянии теста
+convert_to_selection_mask,Convert to Selection Mask,Меню › Layer › Convert,"нажато, без ошибок"
+convert_to_transparency_mask,Convert to Transparency Mask,Меню › Layer › Convert,"нажато, без ошибок"
+copy_layer_clipboard,Copy Layer,Меню › Layer,"нажато, без ошибок"
+copy_selection_to_new_layer,Copy Selection to New Layer,Меню › Layer › New,недоступно в состоянии теста
+create_quick_clipping_group,Quick Clipping Group,Меню › Layer › Group,"нажато, без ошибок"
+create_quick_group,Group layers,Меню › Layer › Group,"нажато, без ошибок"
+create_reference_image_from_active_layer,Reference Image from Layer,Меню › Все команды › Layers,недоступно в состоянии теста
+create_reference_image_from_visible_canvas,Reference Image from Visible,Меню › Все команды › Layers,недоступно в состоянии теста
+cut_layer_clipboard,Cut Layer,Меню › Layer,"нажато, без ошибок"
+cut_selection_to_new_layer,Cut Selection to New Layer,Меню › Layer › New,недоступно в состоянии теста
+duplicatelayer,Duplicate Layer or Mask,Меню › Layer › New,"нажато, без ошибок"
+flatten_image,Flatten image,Меню › Layer,"нажато, без ошибок"
+flatten_layer,Flatten Layer,Меню › Layer,"нажато, без ошибок"
+force_palette_colors,Force Palette Colors,Меню › Все команды › Layers,"нажато, без ошибок"
+histogram,Histogram...,—,не создаётся на Linux (см. примечание)
+import_layer_as_filter_mask,as Filter Mask...,Меню › Layer › Import/Export › Import,"нажато, без ошибок"
+import_layer_as_paint_layer,as Paint Layer...,Меню › Layer › Import/Export › Import,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+import_layer_as_selection_mask,as Selection Mask...,Меню › Layer › Import/Export › Import,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+import_layer_as_transparency_mask,as Transparency Mask...,Меню › Layer › Import/Export › Import,"нажато, без ошибок"
+import_layer_from_file,Import Layer...,Меню › Layer › Import/Export,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+isolate_active_group,Isolate Active Group,Меню › Все команды › Layers,"нажато, без ошибок"
+isolate_active_layer,Isolate Active Layer,Меню › Все команды › Layers,"нажато, без ошибок"
+layer_properties,Properties...,Меню › Все команды › Layers,"нажато, без ошибок"
+layer_style,Layer Style...,Меню › Layer,"нажато, без ошибок"
+layercolorspaceconversion,Convert Layer Color Space...,Меню › Layer › Convert,недоступно в состоянии теста
+layersize,Scale Layers to new Size...,Меню › Layer › Transform,"нажато, без ошибок; открылось окно DlgLayerSize"
+layersplit,Split Layer...,Меню › Layer › Split,"нажато, без ошибок"
+merge_layer,Merge with Layer Below,Меню › Layer,"нажато, без ошибок"
+mirrorAllNodesX,Mirror All Layers Horizontally,Меню › Layer › Transform All Layers,"нажато, без ошибок"
+mirrorAllNodesY,Mirror All Layers Vertically,Меню › Layer › Transform All Layers,"нажато, без ошибок"
+mirrorNodeX,Mirror Layers Horizontally,Меню › Layer › Transform,"нажато, без ошибок"
+mirrorNodeY,Mirror Layers Vertically,Меню › Layer › Transform,"нажато, без ошибок"
+move_layer_down,Move Layer or Mask Down,Меню › Все команды › Layers,"нажато, без ошибок"
+move_layer_up,Move Layer or Mask Up,Меню › Все команды › Layers,"нажато, без ошибок"
+new_from_visible,New Layer From Visible,Меню › Layer › New,"нажато, без ошибок"
+offsetlayer,Offset Layers...,Меню › Layer › Transform,"нажато, без ошибок; открылось окно DlgOffsetImage"
+paste_layer_from_clipboard,Paste Layer,Меню › Layer,"нажато, без ошибок"
+quick_ungroup,Ungroup layers,Меню › Layer › Group,"нажато, без ошибок"
+remove_layer,Remove Layer,Меню › Все команды › Layers,"нажато, без ошибок"
+rotateAllLayers,Rotate All Layers...,Меню › Layer › Transform All Layers › Rotate,"нажато, без ошибок; открылось окно DlgRotateImage"
+rotateAllLayers180,Rotate All Layers 180°,Меню › Layer › Transform All Layers › Rotate,"нажато, без ошибок"
+rotateAllLayersCCW90,Rotate All Layers 90° to the Left,Меню › Layer › Transform All Layers › Rotate,"нажато, без ошибок"
+rotateAllLayersCW90,Rotate All Layers 90° to the Right,Меню › Layer › Transform All Layers › Rotate,"нажато, без ошибок"
+rotateLayer180,Rotate Layers 180°,Меню › Layer › Transform › Rotate,"нажато, без ошибок"
+rotateLayerCCW90,Rotate Layers 90° to the Left,Меню › Layer › Transform › Rotate,"нажато, без ошибок"
+rotateLayerCW90,Rotate Layers 90° to the Right,Меню › Layer › Transform › Rotate,"нажато, без ошибок"
+rotatelayer,Rotate Layers...,Меню › Layer › Transform › Rotate,"нажато, без ошибок; открылось окно DlgRotateImage"
+save_groups_as_images,Save Group Layers...,Меню › Layer › Import/Export,"нажато, без ошибок"
+save_node_as_image,Save Layer/Mask...,Меню › Layer › Import/Export,"нажато, без ошибок; открылось окно KisPreviewFileDialog"
+save_vector_node_to_svg,Save Vector Layer as SVG...,Меню › Layer › Import/Export,недоступно в состоянии теста
+scaleAllLayers,Scale All Layers to new Size...,Меню › Layer › Transform All Layers,"нажато, без ошибок; открылось окно DlgLayerSize"
+select_all_layers,All Layers,Меню › Layer › Select,"нажато, без ошибок"
+select_invisible_layers,Invisible Layers,Меню › Layer › Select,"нажато, без ошибок"
+select_locked_layers,Locked Layers,Меню › Layer › Select,"нажато, без ошибок"
+select_unlocked_layers,Unlocked Layers,Меню › Layer › Select,"нажато, без ошибок"
+select_visible_layers,Visible Layers,Меню › Layer › Select,"нажато, без ошибок"
+set-copy-from,Set Copy From...,Меню › Все команды › Layers,"нажато, без ошибок"
+shearAllLayers,Shear All Layers...,Меню › Layer › Transform All Layers,"нажато, без ошибок"
+shearlayer,Shear Layers...,Меню › Layer › Transform,"нажато, без ошибок"
+split_alpha_into_mask,Alpha into Mask,Меню › Layer › Split › Split Alpha,"нажато, без ошибок"
+split_alpha_save_merged,Save Merged...,Меню › Layer › Split › Split Alpha,недоступно в состоянии теста
+split_alpha_write,Write as Alpha,Меню › Layer › Split › Split Alpha,"нажато, без ошибок"
+switchToPreviouslyActiveNode,Activate previously selected layer,Меню › Все команды › Layers,"нажато, без ошибок"
+toggle_layer_alpha_lock,Toggle layer alpha,Меню › Все команды › Layers,"нажато, без ошибок"
+toggle_layer_inherit_alpha,Toggle layer alpha inheritance,Меню › Все команды › Layers,"нажато, без ошибок"
+toggle_layer_lock,Toggle layer lock,Меню › Все команды › Layers,"нажато, без ошибок"
+toggle_layer_soloing,Toggle Layer Soloing,Меню › Все команды › Layers,"нажато, без ошибок"
+toggle_layer_visibility,Toggle layer visibility,Меню › Все команды › Layers,"нажато, без ошибок"
+unifylayerscolorspace,Unify Layers Color Space,Меню › Все команды › Layers,недоступно в состоянии теста
+waveletdecompose,Wavelet Decompose ...,Меню › Image,недоступно в состоянии теста
+manage_donations,Manage Supporter Benefits...,—,не создаётся на Linux (см. примечание)
+manage_subscriptions,Manage Subscriptions...,—,не создаётся на Linux (см. примечание)
+mutate,Mutate,Меню › Tools › Scripts,недоступно в состоянии теста
+BrushesAndStuff,Hide Brushes and Stuff Toolbar,Меню › Все команды › Painting,"нажато, без ошибок"
+brush_select_preset_action,Select brush preset,Меню › Все команды › Painting,"нажато, без ошибок"
+convert_selection_to_shape,Convert to Shape,Меню › Select,недоступно в состоянии теста
+decrease_brush_size,Decrease Brush Size,Меню › Все команды › Painting,"нажато, без ошибок"
+decrease_fade,Decrease Fade,Меню › Все команды › Painting,"нажато, без ошибок"
+decrease_flow,Decrease Flow,Меню › Все команды › Painting,"нажато, без ошибок"
+decrease_opacity,Decrease Opacity,Меню › Все команды › Painting,"нажато, без ошибок"
+decrease_scatter,Decrease Scatter,Меню › Все команды › Painting,"нажато, без ошибок"
+disable_pressure,Use Pen Pressure,Меню › Все команды › Painting,"нажато, без ошибок"
+erase_action,Set eraser mode,Меню › Все команды › Painting,"нажато, без ошибок"
+eraser_preset_action,Toggle eraser preset,Меню › Все команды › Painting,"нажато, без ошибок"
+eraser_select_preset_action,Select eraser preset,Меню › Все команды › Painting,"нажато, без ошибок"
+fill_selection_background_color_opacity,Fill with Background Color (Opacity),Меню › Edit › Fill Special,недоступно в состоянии теста
+fill_selection_foreground_color_opacity,Fill with Foreground Color (Opacity),Меню › Edit › Fill Special,недоступно в состоянии теста
+fill_selection_pattern_opacity,Fill with Pattern (Opacity),Меню › Edit › Fill Special,недоступно в состоянии теста
+hmirror_action,Horizontal Mirror Tool,Меню › Все команды › Painting,"нажато, без ошибок"
+increase_brush_size,Increase Brush Size,Меню › Все команды › Painting,"нажато, без ошибок"
+increase_fade,Increase Fade,Меню › Все команды › Painting,"нажато, без ошибок"
+increase_flow,Increase Flow,Меню › Все команды › Painting,"нажато, без ошибок"
+increase_opacity,Increase Opacity,Меню › Все команды › Painting,"нажато, без ошибок"
+increase_scatter,Increase Scatter,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_bluer,Make brush color more blue,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_darker,Make brush color darker,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_desaturated,Make brush color more desaturated,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_greener,Make brush color more green,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_lighter,Make brush color lighter,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_redder,Make brush color more red,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_saturated,Make brush color more saturated,Меню › Все команды › Painting,"нажато, без ошибок"
+make_brush_color_yellower,Make brush color more yellow,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorX-hideDecorations,Hide Mirror X Line,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorX-lock,Lock X Line,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorX-moveToCenter,Move to Canvas Center X,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorY-hideDecorations,Hide Mirror Y Line,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorY-lock,Lock Y Line,Меню › Все команды › Painting,"нажато, без ошибок"
+mirrorY-moveToCenter,Move to Canvas Center Y,Меню › Все команды › Painting,"нажато, без ошибок"
+next_favorite_preset,Next Favourite Preset,Меню › Все команды › Painting,"нажато, без ошибок"
+preserve_alpha,Preserve Alpha,Меню › Все команды › Painting,"нажато, без ошибок"
+previous_favorite_preset,Previous Favourite Preset,Меню › Все команды › Painting,"нажато, без ошибок"
+previous_preset,Switch to Previous Preset,Меню › Все команды › Painting,"нажато, без ошибок"
+reload_preset_action,Reload Original Preset,Меню › Все команды › Painting,"нажато, без ошибок"
+reset_fg_bg,Set Foreground and Background Colors to Black and White,Меню › Все команды › Painting,"нажато, без ошибок"
+rotate_brush_tip_clockwise,Rotate brush tip clockwise,Меню › Все команды › Painting,"нажато, без ошибок"
+rotate_brush_tip_clockwise_precise,Rotate brush tip clockwise (precise),Меню › Все команды › Painting,"нажато, без ошибок"
+rotate_brush_tip_counter_clockwise,Rotate brush tip counter-clockwise,Меню › Все команды › Painting,"нажато, без ошибок"
+rotate_brush_tip_counter_clockwise_precise,Rotate brush tip counter-clockwise (precise),Меню › Все команды › Painting,"нажато, без ошибок"
+selection_tool_mode_add,Selection Mode: Add,Меню › Все команды › Painting,недоступно в состоянии теста
+selection_tool_mode_intersect,Selection Mode: Intersect,Меню › Все команды › Painting,недоступно в состоянии теста
+selection_tool_mode_replace,Selection Mode: Replace,Меню › Все команды › Painting,недоступно в состоянии теста
+selection_tool_mode_subtract,Selection Mode: Subtract,Меню › Все команды › Painting,недоступно в состоянии теста
+set_no_brush_smoothing,Brush Smoothing: Disabled,Меню › Все команды › Painting,"нажато, без ошибок"
+set_pixel_perfect_smoothing,Brush Smoothing: Pixel,Меню › Все команды › Painting,"нажато, без ошибок"
+set_simple_brush_smoothing,Brush Smoothing: Basic,Меню › Все команды › Painting,"нажато, без ошибок"
+set_stabilizer_brush_smoothing,Brush Smoothing: Stabilizer,Меню › Все команды › Painting,"нажато, без ошибок"
+set_weighted_brush_smoothing,Brush Smoothing: Weighted,Меню › Все команды › Painting,"нажато, без ошибок"
+shift_brush_color_clockwise,Shift brush color hue clockwise,Меню › Все команды › Painting,"нажато, без ошибок"
+shift_brush_color_counter_clockwise,Shift brush color hue counter-clockwise,Меню › Все команды › Painting,"нажато, без ошибок"
+show-global-selection-mask,Show Global Selection Mask,Меню › Select,"нажато, без ошибок"
+toggle-selection-overlay-mode,Toggle Selection Display Mode,Меню › Все команды › Painting,"нажато, без ошибок"
+toggle_assistant,Toggle Snap To Assistants,Меню › Все команды › Painting,"нажато, без ошибок"
+toggle_brush_outline,Toggle Brush Outline,Меню › Все команды › Painting,"нажато, без ошибок"
+toggle_fg_bg,Swap Foreground and Background Colors,Меню › Все команды › Painting,"нажато, без ошибок"
+undo_polygon_selection,Undo Polygon Selection Points,Меню › Все команды › Painting,недоступно в состоянии теста
+vmirror_action,Vertical Mirror Tool,Меню › Все команды › Painting,"нажато, без ошибок"
+convert-to-path,To Path,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-down,Move down,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-down-more,Move down more,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-left,Move left,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-left-more,Move left more,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-right,,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-right-more,Move right more,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-up,Move up,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-move-up-more,Move up more,Меню › Все команды › Path Tool,недоступно в состоянии теста
+movetool-show-coordinates,Show Coordinates,Меню › Все команды › Path Tool,недоступно в состоянии теста
+path-break-point,Break at point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+path-break-segment,Break at segment,Меню › Все команды › Path Tool,недоступно в состоянии теста
+path-break-selection,Break at selection,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-corner,Corner point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-curve,Make curve point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-insert,Insert point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-join,Join with segment,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-line,Make line point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-merge,Merge points,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-remove,Remove point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-smooth,Smooth point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathpoint-symmetric,Symmetric Point,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathsegment-curve,Segment to Curve,Меню › Все команды › Path Tool,недоступно в состоянии теста
+pathsegment-line,Segment to Line,Меню › Все команды › Path Tool,недоступно в состоянии теста
+plugin_importer_file,Import Python Plugin from File...,Меню › Tools › Scripts,"нажато, без ошибок"
+plugin_importer_web,Import Python Plugin from Web...,Меню › Tools › Scripts,"нажато, без ошибок; открылось окно QInputDialog"
+recorder_export,Export Timelapse...,Меню › Все команды › Recorder,"нажато, без ошибок; открылось окно RecorderExport"
+recorder_record_toggle,Record Timelapse,Меню › Все команды › Recorder,"нажато, без ошибок"
+manage_supporter_bundles,Get More Resources...,—,не создаётся на Linux (см. примечание)
+spen_circle_ccw,S-Pen Gesture Circle Counter-Clockwise,—,не создаётся на Linux (см. примечание)
+spen_circle_cw,S-Pen Gesture Circle Clockwise,—,не создаётся на Linux (см. примечание)
+spen_click,S-Pen Button Click,—,не создаётся на Linux (см. примечание)
+spen_double_click,S-Pen Button Double Click,—,не создаётся на Linux (см. примечание)
+spen_show_popup_palette,Toggle popup palette with S-Pen,—,не создаётся на Linux (см. примечание)
+spen_swipe_down,S-Pen Gesture Swipe Down,—,не создаётся на Linux (см. примечание)
+spen_swipe_left,S-Pen Gesture Swipe Left,—,не создаётся на Linux (см. примечание)
+spen_swipe_right,S-Pen Gesture Swipe Right,—,не создаётся на Linux (см. примечание)
+spen_swipe_up,S-Pen Gesture Swipe Up,—,не создаётся на Linux (см. примечание)
+SvgTextTool,Text Tool,Меню › Все команды › SVG Text Tool,"нажато, без ошибок"
+svg_align_center,Align Center,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_align_justified,Align Block,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_align_left,Align Left,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_align_right,Align Right,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_clear_formatting,Clear Formatting,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_decrease_font_size,Decrease Font Size,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_font_kerning,Kerning,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_format_italic,Italic,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_format_strike_through,Strikethrough,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_format_subscript,Subscript,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_format_superscript,Superscript,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_format_underline,Underline,Меню › Все команды › SVG Text Tool,"нажато, без ошибок"
+svg_increase_font_size,Increase Font Size,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_insert_special_character,Glyph Palette...,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_paste_plain_text,Paste Plain Text,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_paste_rich_text,Paste Rich Text,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_remove_transforms_from_range,Remove Character Transforms,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_settings,Settings...,—,не создаётся на Linux (см. примечание)
+svg_type_setting_move_selection_start_down_1_px,Move Text Selection Down By 1 Pixel,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_type_setting_move_selection_start_left_1_px,Move Text Selection Left By 1 Pixel,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_type_setting_move_selection_start_right_1_px,Move Text Selection Right By 1 Pixel,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_type_setting_move_selection_start_up_1_px,Move Text Selection Up By 1 Pixel,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_weight_black,Black,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_weight_bold,Bold,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_weight_demi,Demi,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_weight_light,Light,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+svg_weight_normal,Normal,Меню › Все команды › SVG Text Tool,недоступно в состоянии теста
+borderselection,Border Selection...,Меню › Select,недоступно в состоянии теста
+colorrange,Select from Color Range...,Меню › Select,недоступно в состоянии теста
+configure_sap,Configure selection actions bar,Меню › Все команды › Select,недоступно в состоянии теста
+convert_shapes_to_vector_selection,Convert Shapes to Vector Selection,Меню › Select,недоступно в состоянии теста
+convert_to_raster_selection,Convert to Raster Selection,Меню › Select,недоступно в состоянии теста
+convert_to_vector_selection,Convert to Vector Selection,Меню › Select,недоступно в состоянии теста
+deselect,Deselect,Меню › Select,"нажато, без ошибок"
+edit_selection,Edit Selection,Меню › Select,недоступно в состоянии теста
+enable_sap,Enable Selection Actions Bar,Меню › Select,"нажато, без ошибок"
+featherselection,Feather Selection...,Меню › Select,недоступно в состоянии теста
+growselection,Grow Selection...,Меню › Select,недоступно в состоянии теста
+reselect,Reselect,Меню › Select,"нажато, без ошибок"
+select_all,Select All,Меню › Select,"нажато, без ошибок"
+selectionscale,Scale...,Меню › Select,недоступно в состоянии теста
+selectopaque,Select Opaque (Replace),Меню › Select › Select Opaque,"нажато, без ошибок"
+selectopaque_add,Select Opaque (Add),Меню › Select › Select Opaque,"нажато, без ошибок"
+selectopaque_intersect,Select Opaque (Intersect),Меню › Select › Select Opaque,"нажато, без ошибок"
+selectopaque_subtract,Select Opaque (Subtract),Меню › Select › Select Opaque,"нажато, без ошибок"
+shrinkselection,Shrink Selection...,Меню › Select,недоступно в состоянии теста
+smoothselection,Smooth,Меню › Select,недоступно в состоянии теста
+toggle_display_selection,Display Selection,Меню › Select,"нажато, без ошибок"
+dbexplorer,Explore Resources Cache Database...,Меню › Все команды › Settings,"нажато, без ошибок; открылось окно DlgDbExplorer"
+manage_bundles,Manage Resource Libraries...,Меню › Settings,"нажато, без ошибок"
+manage_resources,Manage Resources...,Меню › Settings,"нажато, без ошибок; открылось окно DlgResourceManager"
+options_configure,Configure Krita...,Меню › Settings,"нажато, без ошибок; открылось окно KisDlgPreferences"
+options_configure_keybinding,Configure Shortcuts...,—,не создаётся на Linux (см. примечание)
+options_configure_toolbars,Configure Toolbars...,Меню › Settings,"нажато, без ошибок; открылось окно KisKEditToolBar"
+reset_configurations,Reset All Settings,Меню › Settings,вручную: сбрасывает все настройки
+settings_active_author,Active Author Profile,Меню › Все команды › Settings,"нажато, без ошибок"
+settings_dockers_menu,Dockers,Меню › Все команды › Settings,"нажато, без ошибок"
+style_menu,Styles,Меню › Все команды › Settings,"нажато, без ошибок"
+switch_application_language,Switch Application Language...,Меню › Settings,"нажато, без ошибок"
+theme_menu,Themes,Меню › Все команды › Settings,"нажато, без ошибок"
+view_toggledockers,Show Dockers,Меню › Settings,"нажато, без ошибок"
+view_toggledockertitlebars,Show Docker Titlebars,Меню › Все команды › Settings,"нажато, без ошибок"
+window,Window,Меню › Все команды › Settings,"нажато, без ошибок"
+activate_preset_0,Activate Brush Preset 0,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_1,Activate Brush Preset 1,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_2,Activate Brush Preset 2,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_3,Activate Brush Preset 3,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_4,Activate Brush Preset 4,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_5,Activate Brush Preset 5,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_6,Activate Brush Preset 6,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_7,Activate Brush Preset 7,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_8,Activate Brush Preset 8,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+activate_preset_9,Activate Brush Preset 9,Меню › Все команды › Ten Brushes,"нажато, без ошибок"
+ten_brushes,Ten Brushes,Меню › Tools › Scripts,"нажато, без ошибок"
+execute_script_0,Execute Script 0,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_1,Execute Script 1,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_2,Execute Script 2,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_3,Execute Script 3,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_4,Execute Script 4,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_5,Execute Script 5,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_6,Execute Script 6,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_7,Execute Script 7,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_8,Execute Script 8,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+execute_script_9,Execute Script 9,Меню › Все команды › Ten Scripts,"нажато, без ошибок"
+ten_scripts,Ten Scripts,Меню › Tools › Scripts,"нажато, без ошибок; открылось окно TenScriptsDialog"
+InteractionTool,Select Shapes Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KarbonCalligraphyTool,Calligraphy,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisAssistantTool,Assistant Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolCrop,Crop Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolEncloseAndFill,Enclose and Fill Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolPath,Bezier Curve Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolPencil,Freehand Path Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolPolygon,Polygon Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolPolyline,Polyline Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectContiguous,Contiguous Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectElliptical,Elliptical Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectMagnetic,Magnetic Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectOutline,Freehand Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectPath,Bezier Curve Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectPolygonal,,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectRectangular,Rectangular Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolSelectSimilar,Similar Color Selection Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransform,Transform Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformCage,Transform Tool (Cage Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformFree,Transform Tool (Free Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformLiquify,Transform Tool (Liquify Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformMesh,Transform Tool (Mesh Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformPerspective,Transform Tool (Perspective Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KisToolTransformWarp,Transform Tool (Warp Transform),Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaFill/KisToolFill,Fill Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaFill/KisToolGradient,Gradient Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaSelected/KisToolColorSampler,Color Sampler,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolBrush,Freehand Brush Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolDyna,Dynamic Brush Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolEllipse,Ellipse Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolKnife,Comic Panel Editing Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolLazyBrush,Colorize Mask Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolLine,Line Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolMeasure,Measurement Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolMultiBrush,Multibrush Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolRectangle,Rectangle Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaShape/KisToolSmartPatch,Smart Patch Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+KritaTransform/KisToolMove,Move Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+PanTool,Pan Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+PathTool,Edit Shapes Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+ToolReferenceImages,Reference Images Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+ZoomTool,Zoom Tool,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+calligraphy_decrease_angle,Calligraphy: decrease angle,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+calligraphy_decrease_width,Calligraphy: decrease width,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+calligraphy_increase_angle,Calligraphy: increase angle,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+calligraphy_increase_width,Calligraphy: increase width,Меню › Все команды › Tool Shortcuts,"нажато, без ошибок"
+fullscreen,Full Screen Mode,Меню › View,"нажато, без ошибок"
+gamutCheck,Out of Gamut Warnings,Меню › View,"нажато, без ошибок"
+level_of_detail_mode,Instant Preview Mode,Меню › View,"нажато, без ошибок"
+mirror_canvas,Mirror View,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+mirror_canvas_around_canvas,Mirror View Around Canvas,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+mirror_canvas_around_cursor,Mirror View Around Cursor,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+reset_canvas_rotation,Reset Canvas Rotation,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+reset_display,Reset Display,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+rotate_canvas_left,Rotate Canvas Left,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+rotate_canvas_right,Rotate Canvas Right,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+rulers_track_mouse,Rulers Track Pointer,Меню › View,"нажато, без ошибок"
+showStatusBar,Show Status Bar,Меню › View,"нажато, без ошибок"
+show_snap_options_popup,Show Snap Options Popup,Меню › Все команды › View,"нажато, без ошибок"
+softProof,Soft Proofing,Меню › View,"нажато, без ошибок"
+toggle_zoom_to_fit,Toggle Fit to View,Меню › Все команды › View,"нажато, без ошибок"
+view_detached_canvas,Detach Canvas,Меню › View,вручную: выносит холст в отдельное окно (на Android не поддерживается Krita)
+view_grid,Show Grid,Меню › View,"нажато, без ошибок"
+view_lock_guides,Lock Guides,Меню › View,"нажато, без ошибок"
+view_pixel_grid,Show Pixel Grid,Меню › View,"нажато, без ошибок"
+view_print_size,View Print Size,Меню › View,"нажато, без ошибок"
+view_ruler,Show Rulers,Меню › View,"нажато, без ошибок"
+view_show_canvas_only,Show Canvas Only,Меню › View,"нажато, без ошибок"
+view_show_guides,Show Guides,Меню › View,"нажато, без ошибок"
+view_snap_bounding_box,Snap Bounding Box,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_extension,Snap Extension,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_image_bounds,Snap Image Bounds,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_image_center,Snap Image Center,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_intersection,Snap Intersection,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_node,Snap Node,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_orthogonal,Snap Orthogonal,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_to_grid,Snap To Grid,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_to_guides,Snap to Guides,Меню › View › Snap To,"нажато, без ошибок"
+view_snap_to_pixel,Snap Pixel,Меню › View › Snap To,"нажато, без ошибок"
+view_toggle_assistant_previews,Show Assistant Previews,Меню › View,"нажато, без ошибок"
+view_toggle_painting_assistants,Show Painting Assistants,Меню › View,"нажато, без ошибок"
+view_toggle_reference_images,Show Reference Images,Меню › View,"нажато, без ошибок"
+view_zoom_in,Zoom In,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+view_zoom_out,Zoom Out,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+wrap_around_h_axis,Wrap Around Horizontally,Меню › View › Wrap Around Mode Direction,"нажато, без ошибок"
+wrap_around_hv_axis,Wrap Around Both Directions,Меню › View › Wrap Around Mode Direction,"нажато, без ошибок"
+wrap_around_mode,Wrap Around Mode,Меню › View,"нажато, без ошибок"
+wrap_around_v_axis,Wrap Around Vertically,Меню › View › Wrap Around Mode Direction,"нажато, без ошибок"
+zoom_to_100pct,Zoom to 100%,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+zoom_to_fit,Fit to View,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+zoom_to_fit_height,Fit to View Height,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+zoom_to_fit_width,Fit to View Width,"Меню › View › Zoom, Rotate, and Mirror","нажато, без ошибок"
+show_wg_color_history,Show color history,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+show_wg_color_selector,Show wide-gamut color selector,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок; открылось окно WGSelectorPopup"
+show_wg_mypaint_selector,Show MyPaint shade selector,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+show_wg_shade_selector,Show wide-gamut shade selector,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_darken_color,Make color darker,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_decrease_saturation,Decrease color saturation,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_increase_saturation,Increase color saturation,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_lighten_color,Make color lighter,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_shift_hue_clockwise,Shift hue clockwise,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+wgcs_shift_hue_counterclockwise,Shift hue counter-clockwise,Меню › Все команды › WG Color Selector Actions,"нажато, без ошибок"
+view_newwindow,New Window,Меню › Window,вручную: открывает второе главное окно
+windows_next,Next,Меню › Window,"нажато, без ошибок"
+windows_previous,Previous,Меню › Window,"нажато, без ошибок"
+composite_actions,,Меню › Все команды › Other,"нажато, без ошибок"
+format_italic,,—,не создаётся на Linux (см. примечание)
+interpolation_bezier,,Меню › Все команды › Other,"нажато, без ошибок"
+interpolation_constant,,Меню › Все команды › Other,"нажато, без ошибок"
+interpolation_linear,,Меню › Все команды › Other,"нажато, без ошибок"
+tangents_sharp,,Меню › Все команды › Other,"нажато, без ошибок"
+tangents_smooth,,Меню › Все команды › Other,"нажато, без ошибок"
+zoom_to_fit_curve,,Меню › Все команды › Other,"нажато, без ошибок"
+zoom_to_fit_range,,Меню › Все команды › Other,"нажато, без ошибок"

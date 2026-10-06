@@ -139,6 +139,9 @@ jobs:
           export XDG_DATA_DIRS="$P/share:/usr/share"
           export QT_QPA_PLATFORM=offscreen
           export HOME=/home/tester
+          # kis_jpeg_test allocates ~15 GB on this runner (also upstream);
+          # a per-process limit makes it fail instead of taking all tests down.
+          ulimit -v 8000000
           cd "$WD/krita/_build"
           "$CTEST" -N | tail -1
           timeout 6600 "$CTEST" -j 2 --timeout 300 --output-on-failure --no-compress-output < /dev/null
@@ -162,7 +165,7 @@ jobs:
           monitor=$!
           # Tests run as their own user in a memory-limited scope, so a test
           # that runs away is killed instead of the runner.
-          sudo systemd-run --scope --quiet -p MemoryMax=14G -p MemorySwapMax=0 --uid=tester --gid=tester \
+          sudo systemd-run --scope --quiet -p MemoryMax=14G -p MemorySwapMax=0 -p OOMPolicy=continue --uid=tester --gid=tester \
             env HOME=/home/tester bash "$PWD/run-tests.sh" > logs/ctest.log 2>&1
           echo "runner: ctest finished with $?" | tee -a logs/ctest.log
           kill $monitor 2>/dev/null
