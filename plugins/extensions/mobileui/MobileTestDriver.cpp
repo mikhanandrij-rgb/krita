@@ -13,6 +13,8 @@
 #include <KisDocument.h>
 #include <KisMainWindow.h>
 #include <KisPart.h>
+#include <KisViewManager.h>
+#include <kactioncollection.h>
 #include <KoColor.h>
 #include <KoColorSpaceRegistry.h>
 #include <kis_config.h>
@@ -425,6 +427,24 @@ private:
         // The desktop interface must stay exactly as upstream.
         m_steps.append([this] { setSize(1280, 960, QStringLiteral("classic-desktop")); });
         m_steps.append([this] { shot(QStringLiteral("02-canvas")); });
+        // Reproduction of a problem the command walk found, in Krita's own
+        // interface (without the phone interface): copy the background
+        // layer, then "Paste into New Image".
+        if (config::testSetting("KRITA_MOBILE_REPRO") == QLatin1String("paste_new")) {
+            for (const char *name : {"activatePreviousLayer", "edit_copy", "paste_new"}) {
+                m_steps.append([this, name] {
+                    QAction *action = mw() ? mw()->viewManager()->actionCollection()->action(QString::fromLatin1(name)) : nullptr;
+                    log(QStringLiteral("repro: %1 %2").arg(QString::fromLatin1(name),
+                                                           !action ? QStringLiteral("missing")
+                                                                   : action->isEnabled() ? QStringLiteral("triggering")
+                                                                                         : QStringLiteral("disabled")));
+                    if (action && action->isEnabled()) {
+                        action->trigger();
+                    }
+                    log(QStringLiteral("repro: %1 returned").arg(QString::fromLatin1(name)));
+                });
+            }
+        }
         m_steps.append([this] {
             logPerf(QStringLiteral("classic-end"));
             log(QStringLiteral("done"));
@@ -486,6 +506,12 @@ private:
             {QStringLiteral("render_animation_again"), QStringLiteral("renders files with the last settings")},
             {QStringLiteral("help_contents"), QStringLiteral("opens a web browser")},
             {QStringLiteral("help_report_bug"), QStringLiteral("opens a web browser")},
+#ifndef Q_OS_ANDROID
+            // Hangs in the CI's X11 session after copying a whole layer: the
+            // pasted area is enormous (tile coordinates past 0x7FFF); see the
+            // bug log. Checked separately in Krita's own interface.
+            {QStringLiteral("paste_new"), QStringLiteral("upstream hang in CI, bug log #15")},
+#endif
         };
 #ifdef Q_OS_ANDROID
         // The Android file picker is a separate app the test can't close.

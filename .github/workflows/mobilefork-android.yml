@@ -459,6 +459,10 @@ jobs:
           run_krita classic "$GITHUB_WORKSPACE/shots-classic" krita-classic-run.log 600
           # 3. Phone interface: screenshots, dialogs, inventory, action walk.
           KRITA_MOBILE_ACTION_WALK=1 run_krita phone "$GITHUB_WORKSPACE/shots" krita-run.log 2100
+          # 4. Reproduction of a problem found by the walk, in Krita's own
+          #    interface (is it upstream?).
+          KRITA_MOBILE_REPRO=paste_new run_krita classic "$GITHUB_WORKSPACE/shots-repro" krita-repro-run.log 600
+          cp shots-repro/testdriver.log shots/testdriver-repro.log 2>/dev/null
           mkdir -p shots
           cp shots-classic/*.png shots/ 2>/dev/null
           cp shots-classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
@@ -537,33 +541,43 @@ jobs:
 
       - name: Start the emulator
         run: |
-          SDK="$ANDROID_SDK_ROOT"; [ -n "$SDK" ] || SDK="$ANDROID_HOME"
+          mkdir -p logs
+          set +e +o pipefail
+          exec > >(tee -a logs/emulator-setup.log) 2>&1
+          SDK="${ANDROID_SDK_ROOT:-$ANDROID_HOME}"
           echo "SDK=$SDK" >> "$GITHUB_ENV"
           IMG="system-images;android-34;google_apis;x86_64"
-          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --install emulator platform-tools "$IMG" > /dev/null
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --install emulator platform-tools "$IMG" > logs/sdkmanager.log 2>&1
+          echo "sdkmanager exit: $?"
+          tail -5 logs/sdkmanager.log
           echo no | "$SDK/cmdline-tools/latest/bin/avdmanager" create avd -n phone -k "$IMG" -d pixel_6 --force
-          printf 'hw.ramSize=6144\ndisk.dataPartition.size=8G\nhw.keyboard=yes\n' >> "$HOME/.android/avd/phone.avd/config.ini"
+          echo "avdmanager exit: $?"
+          AVD_INI="$HOME/.android/avd/phone.avd/config.ini"
+          ls -la "$(dirname "$AVD_INI")" || true
+          printf 'hw.ramSize=6144\ndisk.dataPartition.size=8G\nhw.keyboard=yes\n' >> "$AVD_INI"
           nohup "$SDK/emulator/emulator" -avd phone -no-window -no-audio -no-boot-anim -no-snapshot \
-            -gpu swiftshader_indirect -cores 4 > emulator.log 2>&1 &
+            -gpu swiftshader_indirect -cores 4 > logs/emulator.log 2>&1 &
           export PATH="$SDK/platform-tools:$PATH"
           echo "$SDK/platform-tools" >> "$GITHUB_PATH"
-          adb wait-for-device
+          timeout 600 adb wait-for-device
+          booted=0
           for i in $(seq 1 120); do
-            [ "$(adb shell getprop sys.boot_completed | tr -d '\r')" = "1" ] && break
+            if [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; then booted=1; break; fi
             sleep 5
           done
-          adb shell getprop sys.boot_completed
+          echo "booted: $booted"
           adb shell getprop ro.product.cpu.abilist
           adb shell wm size
           adb shell wm density
           adb shell settings put global window_animation_scale 0
           adb shell settings put global transition_animation_scale 0
           adb shell settings put global animator_duration_scale 0
+          [ "$booted" = "1" ]
 
       - name: Install the APK
         run: |
           ls -la apk
-          adb install -r -g apk/*.apk
+          adb install -r -g apk/*.apk 2>&1 | tee logs/adb-install.log
 
       - name: Classic baseline and phone interface runs
         timeout-minutes: 100
@@ -588,7 +602,6 @@ jobs:
             cp "emu/$r/logcat-crash.txt" "logs/logcat-crash-$r.txt" 2>/dev/null
             tail -c 300000 "emu/$r/logcat.txt" > "logs/logcat-$r.txt" 2>/dev/null
           done
-          cp emulator.log logs/ 2>/dev/null
           python3 mobilefork/tools/compare_inventory.py mobilefork/inventory/actions.csv \
             shots/runtime-inventory.csv --walk shots/walk.csv --out shots/action-inventory.csv \
             > logs/inventory-compare.txt 2>&1 || true
