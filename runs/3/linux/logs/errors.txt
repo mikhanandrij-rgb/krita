@@ -1,0 +1,6 @@
+112:  Internal error:                      0
+5475:collect2: error: ld returned 1 exit status
+5476:gmake[2]: *** [krita/CMakeFiles/krita.dir/build.make:1988: bin/krita] Error 1
+5477:gmake[1]: *** [CMakeFiles/Makefile2:73704: krita/CMakeFiles/krita.dir/all] Error 2
+5483:gmake: *** [Makefile:146: all] Error 2
+5484:## Failed to build the project

@@ -1,0 +1,611 @@
+ing C object plugins/impex/jpeg/CMakeFiles/kritajpegimport.dir/3rdparty/lcms/iccjpeg.c.o
+cc1: warning: command-line option ‘-Wno-class-memaccess’ is valid for C++/ObjC++ but not for C
+[ 71%] Linking CXX shared module ../../../bin/kritajpegimport.so
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/libkra/kis_kra_saver.cpp:42:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 71%] Building CXX object plugins/impex/libkra/CMakeFiles/kritalibkra.dir/kis_kra_save_visitor.cpp.o
+[ 71%] Built target kritajpegimport
+[ 71%] Building CXX object plugins/impex/libkra/CMakeFiles/kritalibkra.dir/kis_kra_savexml_visitor.cpp.o
+[ 71%] Built target kritatiffpsd_autogen_timestamp_deps
+[ 71%] Building CXX object plugins/impex/libkra/CMakeFiles/kritalibkra.dir/kis_kra_utils.cpp.o
+[ 71%] Building CXX object plugins/impex/jpeg/CMakeFiles/kritajpegexport.dir/kis_jpeg_source.cpp.o
+[ 71%] Building CXX object plugins/impex/png/CMakeFiles/kritapngimport.dir/kritapngimport_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/png/CMakeFiles/kritapngimport.dir/kis_png_import.cc.o
+[ 71%] Building CXX object plugins/impex/libkra/CMakeFiles/kritalibkra.dir/kra_converter.cpp.o
+[ 71%] Building CXX object plugins/impex/jpeg/CMakeFiles/kritajpegexport.dir/kis_jpeg_destination.cpp.o
+[ 71%] Building C object plugins/impex/jpeg/CMakeFiles/kritajpegexport.dir/3rdparty/lcms/iccjpeg.c.o
+cc1: warning: command-line option ‘-Wno-class-memaccess’ is valid for C++/ObjC++ but not for C
+[ 71%] Linking CXX shared module ../../../bin/kritajpegexport.so
+[ 71%] Built target kritajpegexport
+[ 71%] Generating ui_kis_wdg_options_png.h
+[ 71%] Building CXX object plugins/impex/png/CMakeFiles/kritapngexport.dir/kritapngexport_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvimport.dir/kritacsvimport_autogen/mocs_compilation.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/png/kis_png_import.cc:18:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 71%] Linking CXX shared module ../../../bin/kritapngimport.so
+[ 71%] Built target kritapngimport
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvexport.dir/kritacsvexport_autogen/mocs_compilation.cpp.o
+[ 71%] Linking CXX shared library ../../../bin/libkritalibkra.so
+[ 71%] Built target kritalibkra
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvexport.dir/kis_csv_export.cpp.o
+[ 71%] Building CXX object plugins/impex/png/CMakeFiles/kritapngexport.dir/kis_png_export.cc.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvimport.dir/kis_csv_import.cpp.o
+[ 71%] Generating ui_pdfimportwidgetbase.h
+[ 71%] Building CXX object plugins/impex/pdf/CMakeFiles/kritapdfimport.dir/kritapdfimport_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvexport.dir/csv_saver.cpp.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvimport.dir/csv_loader.cpp.o
+[ 71%] Building CXX object plugins/impex/pdf/CMakeFiles/kritapdfimport.dir/kis_pdf_import.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/png/kis_png_export.cc:34:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 71%] Linking CXX shared module ../../../bin/kritapngexport.so
+[ 71%] Built target kritapngexport
+[ 71%] Building CXX object plugins/impex/pdf/CMakeFiles/kritapdfimport.dir/kis_pdf_import_widget.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/csv/csv_saver.cpp:32:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvexport.dir/csv_layer_record.cpp.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvimport.dir/csv_read_line.cpp.o
+[ 71%] Building CXX object plugins/impex/csv/CMakeFiles/kritacsvimport.dir/csv_layer_record.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritacsvexport.so
+[ 71%] Built target kritacsvexport
+[ 71%] Building CXX object plugins/impex/jp2/CMakeFiles/kritajp2import.dir/kritajp2import_autogen/mocs_compilation.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritapdfimport.so
+[ 71%] Built target kritapdfimport
+[ 71%] Building CXX object plugins/impex/jp2/CMakeFiles/kritajp2import.dir/jp2_import.cc.o
+[ 71%] Building CXX object plugins/impex/jp2/CMakeFiles/kritajp2import.dir/jp2_converter.cc.o
+[ 71%] Linking CXX shared module ../../../bin/kritacsvimport.so
+[ 71%] Built target kritacsvimport
+[ 71%] Generating ui_wdgrawimport.h
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/krita_raw_import_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/kis_raw_import.cpp.o
+[ 71%] Building CXX object plugins/impex/svg/CMakeFiles/kritasvgimport.dir/kritasvgimport_autogen/mocs_compilation.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritajp2import.so
+[ 71%] Generating ui_kis_wdg_options_qimageio.h
+[ 71%] Building CXX object plugins/impex/qimageio/CMakeFiles/kritaqimageioexport.dir/kritaqimageioexport_autogen/mocs_compilation.cpp.o
+[ 71%] Built target kritajp2import
+[ 71%] Building CXX object plugins/impex/qimageio/CMakeFiles/kritaqimageioexport.dir/kis_qimageio_export.cpp.o
+[ 71%] Building CXX object plugins/impex/svg/CMakeFiles/kritasvgimport.dir/kis_svg_import.cc.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/dcrawsettingswidget.cpp.o
+[ 71%] Building CXX object plugins/impex/qimageio/CMakeFiles/kritaqimageioimport.dir/kritaqimageioimport_autogen/mocs_compilation.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritaqimageioexport.so
+[ 71%] Built target kritaqimageioexport
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/kritaoraimport_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/libkdcraw_debug.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritasvgimport.so
+[ 71%] Building CXX object plugins/impex/qimageio/CMakeFiles/kritaqimageioimport.dir/kis_qimageio_import.cpp.o
+[ 71%] Built target kritasvgimport
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/rcombobox.cpp.o
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/ora_import.cc.o
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/kritaoraexport_autogen/mocs_compilation.cpp.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/rexpanderbox.cpp.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/rnuminput.cpp.o
+[ 71%] Linking CXX shared module ../../../bin/kritaqimageioimport.so
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/ora_converter.cpp.o
+[ 71%] Built target kritaqimageioimport
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/kis_open_raster_load_context.cpp.o
+[ 71%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/ora_export.cc.o
+[ 71%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/rsliderspinbox.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/kis_open_raster_load_context.cpp:16:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 71%] Built target kritapsd_static_autogen_timestamp_deps
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/ora_converter.cpp.o
+[ 73%] Building CXX object plugins/impex/raw/CMakeFiles/krita_raw_import.dir/3rdparty/libkdcraw/src/rwidgetutils.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/ora_converter.cpp:21:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/kis_open_raster_save_context.cpp.o
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/kis_open_raster_stack_load_visitor.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/krita_raw_import.so
+[ 73%] Built target krita_raw_import
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/kis_open_raster_load_context.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/ora_converter.cpp:21:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraimport.dir/kis_open_raster_stack_save_visitor.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/kis_open_raster_save_context.cpp:21:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/kis_open_raster_save_context.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/kis_open_raster_load_context.cpp:16:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/kis_open_raster_stack_load_visitor.cpp.o
+[ 73%] Building CXX object plugins/impex/ora/CMakeFiles/kritaoraexport.dir/kis_open_raster_stack_save_visitor.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/ora/kis_open_raster_save_context.cpp:21:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/qml/CMakeFiles/kritaqmlexport.dir/kritaqmlexport_autogen/mocs_compilation.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritaoraimport.so
+[ 73%] Built target kritaoraimport
+[ 73%] Building CXX object plugins/impex/qml/CMakeFiles/kritaqmlexport.dir/qml_converter.cc.o
+[ 73%] Building CXX object plugins/impex/tga/CMakeFiles/kritatgaexport.dir/kritatgaexport_autogen/mocs_compilation.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritaoraexport.so
+[ 73%] Building CXX object plugins/impex/tga/CMakeFiles/kritatgaimport.dir/kritatgaimport_autogen/mocs_compilation.cpp.o
+[ 73%] Built target kritaoraexport
+[ 73%] Building CXX object plugins/impex/tga/CMakeFiles/kritatgaexport.dir/kis_tga_export.cpp.o
+[ 73%] Building CXX object plugins/impex/qml/CMakeFiles/kritaqmlexport.dir/qml_export.cc.o
+[ 73%] Building CXX object plugins/impex/tga/CMakeFiles/kritatgaimport.dir/kis_tga_import.cpp.o
+[ 73%] Generating ui_kis_wdg_options_heightmap.h
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapimport.dir/kritaheightmapimport_autogen/mocs_compilation.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritatgaexport.so
+[ 73%] Linking CXX shared module ../../../bin/kritaqmlexport.so
+[ 73%] Built target kritatgaexport
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapexport.dir/kritaheightmapexport_autogen/mocs_compilation.cpp.o
+[ 73%] Built target kritaqmlexport
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapimport.dir/kis_heightmap_import.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritatgaimport.so
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapexport.dir/kis_heightmap_export.cpp.o
+[ 73%] Built target kritatgaimport
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapexport.dir/kis_wdg_options_heightmap.cpp.o
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapexport.dir/kis_heightmap_utils.cpp.o
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapimport.dir/kis_wdg_options_heightmap.cpp.o
+[ 73%] Built target kritabrushexport_autogen_timestamp_deps
+[ 73%] Building CXX object plugins/impex/brush/CMakeFiles/kritabrushimport.dir/kritabrushimport_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object plugins/impex/brush/CMakeFiles/kritabrushimport.dir/kis_brush_import.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritaheightmapexport.so
+[ 73%] Built target kritaheightmapexport
+[ 73%] Building CXX object plugins/impex/heightmap/CMakeFiles/kritaheightmapimport.dir/kis_heightmap_utils.cpp.o
+[ 73%] Building CXX object plugins/impex/spriter/CMakeFiles/kritaspriterexport.dir/kritaspriterexport_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object plugins/impex/spriter/CMakeFiles/kritaspriterexport.dir/kis_spriter_export.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritaheightmapimport.so
+[ 73%] Built target kritaheightmapimport
+[ 73%] Building CXX object plugins/impex/brush/CMakeFiles/kritabrushimport.dir/KisAnimatedBrushAnnotation.cpp.o
+[ 73%] Built target kritakraimport_autogen_timestamp_deps
+[ 73%] Built target kritakraexport_autogen_timestamp_deps
+[ 73%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifexport.dir/kritagifexport_autogen/mocs_compilation.cpp.o
+[ 73%] Linking CXX shared module ../../../bin/kritabrushimport.so
+[ 73%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifexport.dir/kis_gif_export.cpp.o
+[ 73%] Built target kritabrushimport
+[ 73%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifexport.dir/qgiflibhandler.cpp.o
+/home/runner/work/krita/krita/plugins/impex/gif/qgiflibhandler.cpp: In member function ‘virtual bool QGIFLibHandler::write(const QImage&)’:
+/home/runner/work/krita/krita/plugins/impex/gif/qgiflibhandler.cpp:271:25: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  271 |     if (descText.type() == QMetaType::QString)
+      |         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 73%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifimport.dir/kritagifimport_autogen/mocs_compilation.cpp.o
+In file included from /home/runner/work/krita/krita/libs/ui/kis_png_converter.h:14,
+                 from /home/runner/work/krita/krita/plugins/impex/spriter/kis_spriter_export.cpp:38:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void applyHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:78:39: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   78 |                                 float nominalPeak = 1000.0f) noexcept
+      |                                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h: In function ‘void removeHLGOOTF(float*, const double*, float, float)’:
+/home/runner/work/krita/krita/libs/pigment/KoColorTransferFunctions.h:95:40: warning: unused parameter ‘nominalPeak’ [-Wunused-parameter]
+   95 |                                  float nominalPeak = 1000.0f) noexcept
+      |                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 74%] Linking CXX shared module ../../../bin/kritaspriterexport.so
+[ 74%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifimport.dir/kis_gif_import.cpp.o
+[ 74%] Built target kritaspriterexport
+[ 74%] Building CXX object plugins/impex/gif/CMakeFiles/kritagifimport.dir/qgiflibhandler.cpp.o
+/home/runner/work/krita/krita/plugins/impex/gif/qgiflibhandler.cpp: In member function ‘virtual bool QGIFLibHandler::write(const QImage&)’:
+/home/runner/work/krita/krita/plugins/impex/gif/qgiflibhandler.cpp:271:25: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  271 |     if (descText.type() == QMetaType::QString)
+      |         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_AVX.cpp
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_AVX2+FMA.cpp
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_SSE2.cpp
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_SSE4_1.cpp
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_SSSE3.cpp
+[ 74%] Copy to /home/runner/wd/krita/_build/plugins/impex/heif/kis_heif_import_tools_Scalar.cpp
+[ 74%] Built target kritaheifimport_autogen_timestamp_deps
+[ 74%] Built target kritaheifexport_autogen_timestamp_deps
+[ 74%] Built target kritakrzexport_autogen_timestamp_deps
+[ 74%] Built target kritawebpexport_autogen_timestamp_deps
+[ 74%] Building CXX object plugins/impex/webp/CMakeFiles/kritawebpimport.dir/kritawebpimport_autogen/mocs_compilation.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritagifexport.so
+[ 74%] Built target kritagifexport
+[ 74%] Built target kritajxlimport_autogen_timestamp_deps
+[ 74%] Building CXX object plugins/impex/webp/CMakeFiles/kritawebpimport.dir/kis_webp_import.cpp.o
+[ 74%] Built target kritajxlexport_autogen_timestamp_deps
+[ 74%] Building CXX object plugins/impex/rgbe/CMakeFiles/kritargbeimport.dir/kritargbeimport_autogen/mocs_compilation.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritagifimport.so
+[ 74%] Built target kritagifimport
+[ 74%] Building CXX object plugins/impex/rgbe/CMakeFiles/kritargbeimport.dir/RGBEImport.cpp.o
+[ 74%] Built target kritargbeexport_autogen_timestamp_deps
+[ 74%] Built target kritadefaultpaintops_static_autogen_timestamp_deps
+[ 74%] Built target kritahairypaintop_autogen_timestamp_deps
+[ 74%] Built target kritadeformpaintop_autogen_timestamp_deps
+[ 74%] Built target kritacurvepaintop_autogen_timestamp_deps
+[ 74%] Built target kritaspraypaintop_autogen_timestamp_deps
+[ 74%] Built target kritafilterop_autogen_timestamp_deps
+[ 74%] Built target kritaexperimentpaintop_autogen_timestamp_deps
+[ 74%] Built target kritaparticlepaintop_autogen_timestamp_deps
+[ 74%] Built target kritagridpaintop_autogen_timestamp_deps
+[ 74%] Built target kritahatchingpaintop_autogen_timestamp_deps
+[ 74%] Built target kritasketchpaintop_autogen_timestamp_deps
+[ 74%] Built target kritacolorsmudgepaintop_autogen_timestamp_deps
+[ 74%] Built target kritaroundmarkerpaintop_autogen_timestamp_deps
+[ 74%] Built target kritatangentnormalpaintop_autogen_timestamp_deps
+[ 74%] Built target kritamypaintop_static_autogen_timestamp_deps
+[ 74%] Built target kritadefaulttools_static_autogen_timestamp_deps
+[ 74%] Generating ui_WdgToolOptions.h
+/home/runner/work/krita/krita/plugins/tools/defaulttool/referenceimagestool/WdgToolOptions.ui: Warning: The name 'line' (Line) is already in use, defaulting to 'line1'.
+/home/runner/work/krita/krita/plugins/tools/defaulttool/referenceimagestool/WdgToolOptions.ui: Warning: The name 'horizontalSpacer_2' (QSpacerItem) is already in use, defaulting to 'horizontalSpacer_21'.
+[ 74%] Generating qrc_defaulttools.cpp
+[ 74%] Generating ui_DefaultToolGeometryWidget.h
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/krita_flaketools_autogen/mocs_compilation.cpp.o
+[ 74%] Built target kritaselectiontools_autogen_timestamp_deps
+[ 74%] Generating ui_wdg_tool_crop.h
+[ 74%] Generating qrc_toolcrop.cpp
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/kritatoolcrop_autogen/mocs_compilation.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritawebpimport.so
+[ 74%] Built target kritawebpimport
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/tool_crop.cc.o
+[ 74%] Linking CXX shared module ../../../bin/kritargbeimport.so
+[ 74%] Built target kritargbeimport
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/Plugin.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/DefaultTool.cpp.o
+[ 74%] Generating qrc_tool_polygon.cpp
+[ 74%] Building CXX object plugins/tools/tool_polygon/CMakeFiles/kritatoolpolygon.dir/kritatoolpolygon_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/kis_tool_crop.cc.o
+[ 74%] Generating qrc_polyline.cpp
+[ 74%] Building CXX object plugins/tools/tool_polyline/CMakeFiles/kritatoolpolyline.dir/kritatoolpolyline_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_polygon/CMakeFiles/kritatoolpolygon.dir/tool_polygon.cc.o
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/kis_constrained_rect.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/DefaultToolFactory.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/kistoolcropconfigwidget.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_polyline/CMakeFiles/kritatoolpolyline.dir/tool_polyline.cc.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/DefaultToolTabbedWidget.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_polygon/CMakeFiles/kritatoolpolygon.dir/kis_tool_polygon.cc.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/DefaultToolGeometryWidget.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_crop/CMakeFiles/kritatoolcrop.dir/qrc_toolcrop.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritatoolcrop.so
+[ 74%] Built target kritatoolcrop
+[ 74%] Generating ui_wdg_tool_transform.h
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kritatooltransform_static_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_polyline/CMakeFiles/kritatoolpolyline.dir/kis_tool_polyline.cc.o
+[ 74%] Building CXX object plugins/tools/tool_polygon/CMakeFiles/kritatoolpolygon.dir/qrc_tool_polygon.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritatoolpolygon.so
+[ 74%] Built target kritatoolpolygon
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeMoveStrategy.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/tool_transform_args.cc.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeResizeStrategy.cpp.o
+In file included from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/moc_kis_cage_transform_strategy.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/moc_kis_cage_transform_strategy.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisWarpTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/moc_kis_cage_transform_strategy.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/moc_kis_cage_transform_strategy.cpp:10,
+                 from /home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/mocs_compilation.cpp:2:
+/home/runner/wd/krita/_build/plugins/tools/tool_transform2/kritatooltransform_static_autogen/EWIEGA46WW/../../../../../../../../work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisPerspectiveTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeRotateStrategy.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_polyline/CMakeFiles/kritatoolpolyline.dir/qrc_polyline.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritatoolpolyline.so
+[ 74%] Built target kritatoolpolyline
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeShearStrategy.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_transform_mask_adapter.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_dyna/CMakeFiles/kritatooldyna.dir/kritatooldyna_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_dyna/CMakeFiles/kritatooldyna.dir/tool_dyna.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeGradientEditStrategy.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/KisAnimatedTransformMaskParamsHolder.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/SelectionDecorator.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_tool_transform.cc.o
+[ 74%] Generating qrc_karbontools.cpp
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/krita_karbontools_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_dyna/CMakeFiles/kritatooldyna.dir/kis_tool_dyna.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/KarbonToolsPlugin.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/ShapeMeshGradientEditStrategy.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonCalligraphyTool.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/KoShapeGradientHandles.cpp.o
+[ 74%] Linking CXX shared module ../../../bin/kritatooldyna.so
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/defaulttool/KoShapeMeshGradientHandles.cpp.o
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_tool_transform.cc:67:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_tool_transform.cc:67:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisWarpTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_tool_transform.cc:67:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_tool_transform.cc:67:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisPerspectiveTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+[ 74%] Built target kritatooldyna
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_tool_transform_config_widget.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonCalligraphyOptionWidget.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/referenceimagestool/ToolReferenceImages.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonCalligraphyToolFactory.cpp.o
+[ 74%] Generating ui_kis_tool_lazy_brush_options_widget.h
+[ 74%] Building CXX object plugins/tools/tool_lazybrush/CMakeFiles/kritatoollazybrush.dir/kritatoollazybrush_autogen/mocs_compilation.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonCalligraphicShape.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonCalligraphicShapeFactory.cpp.o
+[ 74%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/referenceimagestool/ToolReferenceImagesWidget.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/CalligraphyTool/KarbonSimplifyPath.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_lazybrush/CMakeFiles/kritatoollazybrush.dir/tool_lazybrush.cpp.o
+[ 74%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_transform_strategy_base.cpp.o
+[ 74%] Building CXX object plugins/tools/karbonplugins/tools/CMakeFiles/krita_karbontools.dir/qrc_karbontools.cpp.o
+[ 76%] Linking CXX shared module ../../../../bin/krita_karbontools.so
+[ 76%] Built target krita_karbontools
+[ 76%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_warp_transform_strategy.cpp.o
+[ 76%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/referenceimagestool/KisReferenceImageCollection.cpp.o
+[ 76%] Building CXX object plugins/tools/tool_lazybrush/CMakeFiles/kritatoollazybrush.dir/kis_tool_lazy_brush.cpp.o
+[ 76%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_cage_transform_strategy.cpp.o
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.cpp:7:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.cpp:7:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisWarpTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_simplified_action_policy_strategy.cpp.o
+[ 76%] Building CXX object plugins/tools/defaulttool/CMakeFiles/krita_flaketools.dir/qrc_defaulttools.cpp.o
+[ 76%] Linking CXX shared module ../../../bin/krita_flaketools.so
+[ 76%] Built target krita_flaketools
+[ 76%] Building CXX object plugins/tools/tool_lazybrush/CMakeFiles/kritatoollazybrush.dir/kis_tool_lazy_brush_options_widget.cpp.o
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.cpp:7:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_warp_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_cage_transform_strategy.cpp:7:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisWarpTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_liquify_transform_strategy.cpp.o
+[ 76%] Generating ui_kis_tool_smart_patch_options_widget.h
+[ 76%] Building CXX object plugins/tools/tool_smart_patch/CMakeFiles/kritatoolSmartPatch.dir/kritatoolSmartPatch_autogen/mocs_compilation.cpp.o
+[ 76%] Built target krita_tool_svgtext_static_autogen_timestamp_deps
+[ 76%] Building CXX object plugins/tools/tool_smart_patch/CMakeFiles/kritatoolSmartPatch.dir/tool_smartpatch.cpp.o
+[ 76%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_liquify_paint_helper.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_liquify_paintop.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_liquify_properties.cpp.o
+[ 77%] Linking CXX shared module ../../../bin/kritatoollazybrush.so
+[ 77%] Building CXX object plugins/tools/tool_smart_patch/CMakeFiles/kritatoolSmartPatch.dir/kis_tool_smart_patch.cpp.o
+[ 77%] Built target kritatoollazybrush
+[ 77%] Built target kritatoolencloseandfill_autogen_timestamp_deps
+[ 77%] Generating ui_KisToolKnifeOptionsWidget.h
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/kritatoolKnife_static_autogen/mocs_compilation.cpp.o
+[ 77%] Building CXX object plugins/platforms/xcb/CMakeFiles/kritaplatformpluginxcb.dir/kritaplatformpluginxcb_autogen/mocs_compilation.cpp.o
+[ 77%] Building CXX object plugins/platforms/xcb/CMakeFiles/kritaplatformpluginxcb.dir/KritaPlatformPluginXcb.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_mesh_transform_strategy.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/KisToolKnife.cpp.o
+[ 77%] Building CXX object plugins/platforms/xcb/CMakeFiles/kritaplatformpluginxcb.dir/KisExtendedModifiersMapperX11.cpp.o
+[ 77%] Linking CXX shared module ../../../bin/kritaplatformpluginxcb.so
+[ 77%] Built target kritaplatformpluginxcb
+[ 77%] Building CXX object plugins/tools/tool_smart_patch/CMakeFiles/kritatoolSmartPatch.dir/kis_tool_smart_patch_options_widget.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/KisToolKnifeOptionsWidget.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_free_transform_strategy.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/CutThroughShapeStrategy.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_smart_patch/CMakeFiles/kritatoolSmartPatch.dir/kis_inpaint.cpp.o
+[ 77%] Generating qrc_tools-svg-16-icons.cpp
+[ 77%] Generating qrc_aboutdata.cpp
+[ 77%] Generating qrc_branding.cpp
+[ 77%] Generating qrc_breeze-dark-icons.cpp
+[ 77%] Generating qrc_breeze-light-icons.cpp
+[ 77%] Generating qrc_cursors.cpp
+[ 77%] Generating qrc_defaultpresets.cpp
+[ 77%] Generating qrc_flake.cpp
+[ 77%] Generating qrc_gamutmasks.cpp
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_free_transform_strategy.cpp: In member function ‘virtual void KisFreeTransformStrategy::continuePrimaryAction(const QPointF&, bool, bool)’:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_free_transform_strategy.cpp:454:69: warning: unused parameter ‘pt’ [-Wunused-parameter]
+  454 | void KisFreeTransformStrategy::continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive)
+      |                                                      ~~~~~~~~~~~~~~~^~
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_free_transform_strategy.cpp:454:78: warning: unused parameter ‘shiftModifierActive’ [-Wunused-parameter]
+  454 | void KisFreeTransformStrategy::continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive)
+      |                                                                         ~~~~~^~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_free_transform_strategy.cpp:454:104: warning: unused parameter ‘altModifierActive’ [-Wunused-parameter]
+  454 | void KisFreeTransformStrategy::continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive)
+      |                                                                                                   ~~~~~^~~~~~~~~~~~~~~~~
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_free_transform_strategy_gsl_helpers.cpp.o
+[ 77%] Generating qrc_icons.cpp
+[ 77%] Generating qrc_krita.cpp
+[ 77%] Generating qrc_kritawidgets.cpp
+[ 77%] Generating qrc_layerbox-icons.cpp
+[ 77%] Generating qrc_layers-icons.cpp
+[ 77%] Generating qrc_misc-dark-icons.cpp
+[ 77%] Generating qrc_misc-light-icons.cpp
+[ 77%] Generating qrc_paintops-icons.cpp
+[ 77%] Generating qrc_shaders.cpp
+[ 77%] Generating qrc_splash.cpp
+[ 77%] Generating qrc_sponsors.cpp
+[ 77%] Generating qrc_svg-icons.cpp
+[ 77%] Generating qrc_tool-transform-icons.cpp
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/krita_autogen/mocs_compilation.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/main.cc.o
+/home/runner/work/krita/krita/plugins/tools/tool_knife/CutThroughShapeStrategy.cpp: In member function ‘virtual void CutThroughShapeStrategy::finishInteraction(Qt::KeyboardModifiers)’:
+/home/runner/work/krita/krita/plugins/tools/tool_knife/CutThroughShapeStrategy.cpp:189:71: warning: unused parameter ‘modifiers’ [-Wunused-parameter]
+  189 | void CutThroughShapeStrategy::finishInteraction(Qt::KeyboardModifiers modifiers)
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/RemoveGutterStrategy.cpp.o
+[ 77%] Linking CXX shared module ../../../bin/kritatoolSmartPatch.so
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_perspective_transform_strategy.cpp.o
+[ 77%] Built target kritatoolSmartPatch
+[ 77%] Building CXX object plugins/tools/tool_knife/CMakeFiles/kritatoolKnife_static.dir/GutterWidthsConfig.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_krita.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/kis_transform_utils.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_breeze-dark-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_breeze-light-icons.cpp.o
+/home/runner/work/krita/krita/plugins/tools/tool_knife/RemoveGutterStrategy.cpp: In member function ‘virtual void RemoveGutterStrategy::handleMouseMove(const QPointF&, Qt::KeyboardModifiers)’:
+/home/runner/work/krita/krita/plugins/tools/tool_knife/RemoveGutterStrategy.cpp:50:96: warning: unused parameter ‘modifiers’ [-Wunused-parameter]
+   50 | void RemoveGutterStrategy::handleMouseMove(const QPointF &mouseLocation, Qt::KeyboardModifiers modifiers)
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/home/runner/work/krita/krita/plugins/tools/tool_knife/RemoveGutterStrategy.cpp: In member function ‘virtual void RemoveGutterStrategy::finishInteraction(Qt::KeyboardModifiers)’:
+/home/runner/work/krita/krita/plugins/tools/tool_knife/RemoveGutterStrategy.cpp:98:68: warning: unused parameter ‘modifiers’ [-Wunused-parameter]
+   98 | void RemoveGutterStrategy::finishInteraction(Qt::KeyboardModifiers modifiers)
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[ 77%] Linking CXX static library ../../../lib/libkritatoolKnife_static.a
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_layerbox-icons.cpp.o
+[ 77%] Built target kritatoolKnife_static
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_layers-icons.cpp.o
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/strokes/transform_stroke_strategy.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_misc-light-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_misc-dark-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_paintops-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_tools-svg-16-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_tool-transform-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_svg-icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_flake.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_kritawidgets.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_icons.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_aboutdata.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_shaders.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_cursors.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_gamutmasks.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_defaultpresets.cpp.o
+[ 77%] Built target kritaqmlcomponents_autogen_timestamp_deps
+[ 77%] Building CXX object plugins/tools/tool_transform2/CMakeFiles/kritatooltransform_static.dir/strokes/inplace_transform_stroke_strategy.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_branding.cpp.o
+[ 77%] Building CXX object krita/CMakeFiles/krita.dir/qrc_splash.cpp.o
+[ 78%] Building CXX object krita/CMakeFiles/krita.dir/qrc_sponsors.cpp.o
+[ 78%] Built target kritaassistanttool_autogen_timestamp_deps
+[ 78%] Built target kritalayerdocker_autogen_timestamp_deps
+[ 78%] Built target kritalutdocker_autogen_timestamp_deps
+[ 78%] Built target kritaanimationdocker_autogen_timestamp_deps
+[ 78%] Built target kritastoryboarddocker_autogen_timestamp_deps
+[ 78%] Automatic MOC for target kritatextproperties
+[ 78%] Built target kritatextproperties_autogen
+[ 78%] Built target kritaresourcemanager_autogen_timestamp_deps
+[ 78%] Automatic MOC for target python_module_PyKrita_krita
+[ 78%] Built target python_module_PyKrita_krita_autogen
+[ 78%] Automatic MOC for target pykrita
+[ 78%] Built target pykrita_autogen
+[ 78%] Built target kritaqmic_autogen_timestamp_deps
+[ 78%] Automatic MOC for target kritatiffpsd
+[ 78%] Built target kritatiffpsd_autogen
+[ 78%] Built target kritaexrimport_autogen_timestamp_deps
+[ 78%] Built target kritaexrexport_autogen_timestamp_deps
+[ 78%] Automatic MOC for target kritapsd_static
+[ 78%] Built target kritapsd_static_autogen
+[ 78%] Automatic MOC for target kritabrushexport
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_perspective_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_perspective_transform_strategy.cpp:8:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:50:18: warning: ‘virtual void KisSimplifiedActionPolicyStrategy::continuePrimaryAction(const QPointF&, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+   50 |     virtual void continuePrimaryAction(const QPointF &pt, bool shiftModifierActive, bool altModifierActive, bool hasOriginalModifiersSet);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_simplified_action_policy_strategy.h:12,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_perspective_transform_strategy.h:13,
+                 from /home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_perspective_transform_strategy.cpp:8:
+/home/runner/work/krita/krita/plugins/tools/tool_transform2/kis_transform_strategy_base.h:53:18: note:   by ‘KisPerspectiveTransformStrategy::continuePrimaryAction’
+   53 |     virtual void continuePrimaryAction(KoPointerEvent *event) = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+[ 78%] Automatic MOC for target kritakraimport
+[ 78%] Built target kritakraimport_autogen
+[ 78%] Automatic MOC for target kritakraexport
+[ 78%] Linking CXX executable ../bin/krita
+[ 78%] Built target kritabrushexport_autogen
+[ 80%] Automatic MOC for target kritaheifimport
+/usr/bin/ld: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libKF5CoreAddons.so.5.101.0: undefined reference to `std::ios_base_library_init()@GLIBCXX_3.4.32'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [krita/CMakeFiles/krita.dir/build.make:1988: bin/krita] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:73704: krita/CMakeFiles/krita.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 80%] Built target kritakraexport_autogen
+[ 80%] Built target kritaheifimport_autogen
+[ 80%] Linking CXX static library ../../../lib/libkritatooltransform_static.a
+[ 80%] Built target kritatooltransform_static
+gmake: *** [Makefile:146: all] Error 2
+## Failed to build the project
