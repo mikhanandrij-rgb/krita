@@ -1,0 +1,138 @@
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffef8a06c0 (LWP 31950)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31951)]
+[New Thread 0x7fffd37ff6c0 (LWP 31952)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31953)]
+[New Thread 0x7fffda9fd6c0 (LWP 31954)]
+[New Thread 0x7fffd99fc6c0 (LWP 31955)]
+[New Thread 0x7fffd27fe6c0 (LWP 31956)]
+[New Thread 0x7fffd17fd6c0 (LWP 31957)]
+[New Thread 0x7fffb3fff6c0 (LWP 31958)]
+[New Thread 0x7fffb2ffe6c0 (LWP 31959)]
+[Thread 0x7fffef8a06c0 (LWP 31950) exited]
+[Thread 0x7fffb3fff6c0 (LWP 31958) exited]
+[Thread 0x7fffd17fd6c0 (LWP 31957) exited]
+[Thread 0x7fffd27fe6c0 (LWP 31956) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31955) exited]
+[Thread 0x7fffd37ff6c0 (LWP 31952) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31951) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31954) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31953) exited]
+[Thread 0x7fffb2ffe6c0 (LWP 31959) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb2ffe6c0 (LWP 31962)]
+[New Thread 0x7fffda9fd6c0 (LWP 31963)]
+[New Thread 0x7fffef8a06c0 (LWP 31964)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31965)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31966)]
+[New Thread 0x7fffd99fc6c0 (LWP 31967)]
+[New Thread 0x7fffd3fff6c0 (LWP 31968)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31969)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31970)]
+[New Thread 0x7fffb3fff6c0 (LWP 31971)]
+[Thread 0x7fffb2ffe6c0 (LWP 31962) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31970) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31969) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31968) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31967) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31963) exited]
+[Thread 0x7fffef8a06c0 (LWP 31964) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31966) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31965) exited]
+[Thread 0x7fffb3fff6c0 (LWP 31971) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb3fff6c0 (LWP 31974)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31975)]
+[New Thread 0x7fffef8a06c0 (LWP 31976)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31977)]
+[New Thread 0x7fffda9fd6c0 (LWP 31978)]
+[New Thread 0x7fffd99fc6c0 (LWP 31979)]
+[New Thread 0x7fffd3fff6c0 (LWP 31980)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31981)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31982)]
+[New Thread 0x7fffb2ffe6c0 (LWP 31983)]
+[Thread 0x7fffb3fff6c0 (LWP 31974) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31982) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31981) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31980) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31979) exited]
+[Thread 0x7fffef8a06c0 (LWP 31976) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31975) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31978) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31977) exited]
+[Thread 0x7fffb2ffe6c0 (LWP 31983) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb2ffe6c0 (LWP 31984)]
+[New Thread 0x7fffda9fd6c0 (LWP 31987)]
+[New Thread 0x7fffef8a06c0 (LWP 31988)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31989)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31990)]
+[New Thread 0x7fffd99fc6c0 (LWP 31991)]
+[New Thread 0x7fffd3fff6c0 (LWP 31992)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31993)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31994)]
+[New Thread 0x7fffb3fff6c0 (LWP 31995)]
+[New Thread 0x7fffb1ffd6c0 (LWP 31996)]
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritapalettize.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffa96e76c0 (LWP 31997)]
+QObject::startTimer: Timers cannot have negative intervals
+[New Thread 0x7fff9ffff6c0 (LWP 31998)]
+[New Thread 0x7fff9effe6c0 (LWP 31999)]
+[Thread 0x7fff9ffff6c0 (LWP 31998) exited]
+[New Thread 0x7fff9ffff6c0 (LWP 32000)]
+[New Thread 0x7fff9dffd6c0 (LWP 32001)]
+[New Thread 0x7fff8ffff6c0 (LWP 32002)]
+[New Thread 0x7fff86dff6c0 (LWP 32003)]
+/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/krita-python-libs/krita added to PYTHONPATH
+[New Thread 0x7fff8d88b6c0 (LWP 32004)]
+[New Thread 0x7fff87fff6c0 (LWP 32005)]
+[New Thread 0x7fff85dfe6c0 (LWP 32006)]
+[New Thread 0x7fff84bbd6c0 (LWP 32009)]
+[New Thread 0x7fff6f3bf6c0 (LWP 32010)]
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+Krita Mobile: interface mode 0, smallest screen side 1024 dp (Android: -1), phone interface on
+[New Thread 0x7fff6dd7e6c0 (LWP 32011)]
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+[New Thread 0x7fff675ff6c0 (LWP 32019)]
+[New Thread 0x7fff665fe6c0 (LWP 32020)]
+[New Thread 0x7fff655fd6c0 (LWP 32021)]
+[New Thread 0x7fff5ffff6c0 (LWP 32022)]
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[New Thread 0x7fff5e7fd6c0 (LWP 32024)]
+[New Thread 0x7fff5d7fc6c0 (LWP 32025)]
+[New Thread 0x7fff4bfff6c0 (LWP 32026)]
+[New Thread 0x7fff4affe6c0 (LWP 32027)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!

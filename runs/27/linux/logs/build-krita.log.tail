@@ -479,14 +479,14 @@
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 03:37:29 2026
-Stats zeroed:                             Tue Oct  6 03:32:48 2026
-Cacheable calls:                           2828 / 2834 (99.79%)
-  Hits:                                    2741 / 2828 (96.92%)
-    Direct:                                2738 / 2741 (99.89%)
-    Preprocessed:                             3 / 2741 ( 0.11%)
-  Misses:                                    87 / 2828 ( 3.08%)
-Uncacheable calls:                            6 / 2834 ( 0.21%)
+Stats updated:                            Tue Oct  6 09:48:37 2026
+Stats zeroed:                             Tue Oct  6 09:44:19 2026
+Cacheable calls:                           2829 / 2835 (99.79%)
+  Hits:                                    2756 / 2829 (97.42%)
+    Direct:                                2753 / 2756 (99.89%)
+    Preprocessed:                             3 / 2756 ( 0.11%)
+  Misses:                                    73 / 2829 ( 2.58%)
+Uncacheable calls:                            6 / 2835 ( 0.21%)
   Autoconf compile/link:                      0 /    6 ( 0.00%)
   Bad compiler arguments:                     0 /    6 ( 0.00%)
   Called for linking:                         0 /    6 ( 0.00%)
@@ -507,7 +507,7 @@ Uncacheable calls:                            6 / 2834 ( 0.21%)
   Unsupported compiler option:                0 /    6 ( 0.00%)
   Unsupported environment variable:           0 /    6 ( 0.00%)
   Unsupported source language:                0 /    6 ( 0.00%)
-Errors:                                       0 / 2834 ( 0.00%)
+Errors:                                       0 / 2835 ( 0.00%)
   Compiler check failed:                      0
   Could not find compiler:                    0
   Could not read or parse input file:         0
@@ -517,16 +517,16 @@ Errors:                                       0 / 2834 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                  2738 / 2834 (96.61%)
-  Preprocessed:                               3 /   95 ( 3.16%)
+  Direct:                                  2753 / 2835 (97.11%)
+  Preprocessed:                               3 /   81 ( 3.70%)
 Local storage:
-  Cache size (GB):                          0.3 / 20.0 ( 1.67%)
-  Files:                                  10438
+  Cache size (GB):                          0.4 / 20.0 ( 2.02%)
+  Files:                                  12328
   Cleanups:                                   0
-  Hits:                                    2741 / 2828 (96.92%)
-  Misses:                                    87 / 2828 ( 3.08%)
-  Reads:                                   5667
-  Writes:                                   177
+  Hits:                                    2756 / 2829 (97.42%)
+  Misses:                                    73 / 2829 ( 2.58%)
+  Reads:                                   5669
+  Writes:                                   149
 Remote storage:
   Hits:                                       0
   Misses:                                     0
