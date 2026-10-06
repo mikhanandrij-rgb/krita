@@ -1,0 +1,10 @@
+qmlimportscanner: /home/runner/wd/krita/_install/bin/qmlimportscanner
+	linux-vdso.so.1 (0x00007f39ef7a1000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f39ef200000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f39ef533000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f39ef505000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f39eee00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f39ef7a3000)
+import path: /home/runner/wd/krita/_install/qml
+exit (qmlmodules): 0
+exit (source tree): 0
