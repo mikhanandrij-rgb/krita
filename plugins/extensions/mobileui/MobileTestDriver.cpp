@@ -112,6 +112,9 @@ public:
             m_hang->beat();
         });
         heartbeat->start(1000);
+        log(QStringLiteral("interface: %1 (smallest side %2 dp)")
+                .arg(shell->isActive() ? QStringLiteral("phone") : QStringLiteral("classic"))
+                .arg(config::smallestScreenSideDp(shell->mainWindow())));
         if (shell->isActive()) {
             buildSteps();
         } else {

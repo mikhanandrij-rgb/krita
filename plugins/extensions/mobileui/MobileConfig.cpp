@@ -8,8 +8,11 @@
 #include <KSharedConfig>
 
 #ifdef Q_OS_ANDROID
+#include <QAndroidJniEnvironment>
 #include <QAndroidJniObject>
 #include <QtAndroid>
+
+#include <kis_config.h>
 #endif
 
 #include <QFile>
@@ -67,26 +70,56 @@ void setInterfaceMode(InterfaceMode mode)
     g.sync();
 }
 
+int androidSmallestScreenWidthDp()
+{
+#ifdef Q_OS_ANDROID
+    // Android's own answer (Configuration.smallestScreenWidthDp), the value
+    // apps use to tell phones from tablets. Qt's physical DPI comes from the
+    // display's reported xdpi, which is wrong on many phones.
+    QAndroidJniObject context = QtAndroid::androidContext();
+    int value = -1;
+    if (context.isValid()) {
+        QAndroidJniObject resources = context.callObjectMethod("getResources", "()Landroid/content/res/Resources;");
+        if (resources.isValid()) {
+            QAndroidJniObject configuration = resources.callObjectMethod("getConfiguration", "()Landroid/content/res/Configuration;");
+            if (configuration.isValid()) {
+                value = configuration.getField<jint>("smallestScreenWidthDp");
+            }
+        }
+    }
+    QAndroidJniEnvironment env;
+    if (env->ExceptionCheck()) {
+        env->ExceptionClear();
+        value = -1;
+    }
+    return value;
+#else
+    return -1;
+#endif
+}
+
 int smallestScreenSideDp(const QWidget *window)
 {
+    const int android = androidSmallestScreenWidthDp();
+    if (android > 0) {
+        return android;
+    }
     QScreen *screen = screenFor(window);
     if (!screen) {
         return 10000;
     }
-    // Qt's logical pixels follow Android's density-independent pixels at the
-    // default interface scale. Krita's own interface scale setting changes
-    // the device pixel ratio, so compute dp from physical pixels instead.
+    // Fallback: Qt's physicalDotsPerInch() counts *logical* pixels per inch,
+    // so logical size / (dpi / 160) is the size in dp whatever Krita's
+    // interface scale is. (Multiplying by the device pixel ratio here was the
+    // bug that kept the phone interface off on real phones in builds 5-15.)
     const QSize logical = screen->size();
-    const qreal dpr = screen->devicePixelRatio();
-    const qreal physicalDpi = screen->physicalDotsPerInch();
+    const qreal logicalPerInch = screen->physicalDotsPerInch();
 #ifdef Q_OS_ANDROID
-    if (physicalDpi > 1.0) {
-        const qreal pxPerDp = physicalDpi / 160.0;
-        return qRound(qMin(logical.width(), logical.height()) * dpr / pxPerDp);
+    if (logicalPerInch > 1.0) {
+        return qRound(qMin(logical.width(), logical.height()) / (logicalPerInch / 160.0));
     }
 #endif
-    Q_UNUSED(physicalDpi);
-    Q_UNUSED(dpr);
+    Q_UNUSED(logicalPerInch);
     return qMin(logical.width(), logical.height());
 }
 
@@ -237,9 +270,31 @@ QStringList applyPhoneDefaults()
         return written;
     }
 #endif
-    constexpr int version = 1;
+    constexpr int version = 2;
     KConfigGroup own = group();
-    if (own.readEntry("PhoneDefaultsVersion", 0) >= version) {
+    const int previous = own.readEntry("PhoneDefaultsVersion", 0);
+    if (previous >= version) {
+        return written;
+    }
+#ifdef Q_OS_ANDROID
+    {
+        // Krita asks for the interface scale on every start until a scale
+        // was chosen once. The phone interface follows Android's density,
+        // so take that as the chosen scale; "Change Interface Scale" in the
+        // command list still changes it and can turn the question back on.
+        KisConfig cfg(false);
+        QScreen *screen = QGuiApplication::primaryScreen();
+        if (screen && cfg.androidScalingLastInitialScale() < 1.0 && screen->devicePixelRatio() >= 1.0) {
+            cfg.setAndroidScalingLastInitialScale(screen->devicePixelRatio());
+            cfg.setAndroidScalingTargetScale(screen->devicePixelRatio());
+            cfg.setAndroidScalingAskOnStartup(false);
+            written.append(QStringLiteral("androidScalingAskOnStartup=false"));
+        }
+    }
+#endif
+    if (previous >= 1) {
+        own.writeEntry("PhoneDefaultsVersion", version);
+        own.sync();
         return written;
     }
     // Krita keeps these in the root group of kritarc.

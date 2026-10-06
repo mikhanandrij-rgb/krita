@@ -585,7 +585,7 @@ jobs:
           mkdir -p emu logs
           bash mobilefork/ci/emulator-run.sh classic emu/warmup 600
           bash mobilefork/ci/emulator-run.sh classic emu/classic 600
-          bash mobilefork/ci/emulator-run.sh phone emu/phone 4800 walk
+          bash mobilefork/ci/emulator-run.sh auto emu/phone 4800 walk
           {
             for r in warmup classic phone; do
               echo "== $r"; cat "emu/$r/result.txt" 2>/dev/null

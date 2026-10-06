@@ -7,7 +7,7 @@
 # log, startup time and memory use. The test driver is switched on by files in
 # the app's external files directory (see config::testSetting).
 #
-# Usage: emulator-run.sh <classic|phone> <output dir> <timeout seconds> [walk]
+# Usage: emulator-run.sh <classic|phone|auto> <output dir> <timeout seconds> [walk]
 set -u
 mode="$1"; out="$2"; limit="$3"; walk="${4:-}"
 pkg=org.krita.mobilefork
@@ -19,7 +19,8 @@ adb shell am force-stop "$pkg"
 adb shell rm -rf "$ctl"
 adb shell mkdir -p "$ctl"
 adb shell "echo 1 > $ctl/KRITA_MOBILE_SCREENSHOTS"
-adb shell "echo $mode > $ctl/KRITA_MOBILE_UI"
+# "auto" leaves the decision to the app, as on a real phone.
+[ "$mode" != auto ] && adb shell "echo $mode > $ctl/KRITA_MOBILE_UI"
 [ -n "$walk" ] && adb shell "echo 1 > $ctl/KRITA_MOBILE_ACTION_WALK"
 adb logcat -c
 

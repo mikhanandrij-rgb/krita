@@ -31,6 +31,9 @@ void setInterfaceMode(InterfaceMode mode);
 // variable ("phone" / "classic", for testing) into account.
 bool shouldUsePhoneInterface(const QWidget *window);
 
+// Android's Configuration.smallestScreenWidthDp, -1 elsewhere or on error.
+int androidSmallestScreenWidthDp();
+
 // Smallest screen side in density-independent pixels.
 int smallestScreenSideDp(const QWidget *window);
 

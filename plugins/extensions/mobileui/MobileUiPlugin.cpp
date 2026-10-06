@@ -96,7 +96,14 @@ void MobileUiPlugin::applyMode()
     m_autoAction->setChecked(mode == InterfaceMode::Automatic);
     m_phoneAction->setChecked(mode == InterfaceMode::Phone);
     m_classicAction->setChecked(mode == InterfaceMode::Classic);
-    if (config::shouldUsePhoneInterface(mw)) {
+    const bool phone = config::shouldUsePhoneInterface(mw);
+    // Shows up in "adb logcat" (and Krita's log viewer) for bug reports.
+    qInfo().noquote() << QStringLiteral("Krita Mobile: interface mode %1, smallest screen side %2 dp (Android: %3), phone interface %4")
+                             .arg(int(mode))
+                             .arg(config::smallestScreenSideDp(mw))
+                             .arg(config::androidSmallestScreenWidthDp())
+                             .arg(phone ? QStringLiteral("on") : QStringLiteral("off"));
+    if (phone) {
         const QStringList written = config::applyPhoneDefaults();
         if (!written.isEmpty()) {
             qInfo().noquote() << "Krita Mobile: phone defaults written (effective after restart):" << written.join(QStringLiteral(", "));
