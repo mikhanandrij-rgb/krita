@@ -1,0 +1,5 @@
+status: success
+branch: mobile-tests
+commit: 77b2cbc4c2eec1430f9d8008f5e540557c74be05
+date: 2026-10-06T09:51:09Z
+   Loc: [/home/runner/work/krita/krita/libs/flake/tests/TestSvgParser.cpp(1121)]
