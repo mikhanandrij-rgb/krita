@@ -1,4 +1,3 @@
-== android (run 5): success
 status: success
 branch: mobile-phase2
 commit: f093cc2a5372c241f7ca4382620a1c3c8aeca8e9
@@ -9,4 +8,3 @@ release: https://github.com/mikhanandrij-rgb/krita/releases/tag/mobile-build-5
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   50G   95G  35% /
-
