@@ -1,11 +1,11 @@
 interface: phone (smallest side 411 dp)
-perf start: interface-ready-ms=27170 first-canvas-ms=-1 rss-kb=1138108 peak-kb=1142432 uptime-ms=32816
+perf start: interface-ready-ms=17311 first-canvas-ms=-1 rss-kb=1140860 peak-kb=1142408 uptime-ms=23070
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
-probe 20,816: QToolBar 'mobileToolRailHolder' 0,779 411x56 tip='' parent=KisMainWindow inLayout=1
-probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,779 411x56 tip='' parent=QToolBar inLayout=1
-probe 20,816: mobileui::ChromeButton '' 4,783 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
+probe 20,816: QToolBar 'mobileToolRailHolder' 0,810 411x56 tip='' parent=KisMainWindow inLayout=1
+probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,810 411x56 tip='' parent=QToolBar inLayout=1
+probe 20,816: mobileui::ChromeButton '' 4,814 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-04-tools.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-05-brush-presets.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-06-tool-options.png ok
@@ -30,7 +30,7 @@ dialog options_configure: triggering
 dialog options_configure: KisDlgPreferences 411x866 min 288x190 saved
 dialog options_configure: closed
 dialog imagesize: triggering
-dialog imagesize: DlgImageSize 411x866 min 133x119 saved
+dialog imagesize: DlgImageSize 411x866 min 389x799 saved
 dialog imagesize: closed
 dialog canvassize: triggering
 dialog canvassize: DlgCanvasSize 411x866 min 133x119 saved
@@ -72,28 +72,28 @@ dialog separate: triggering
 dialog separate: DlgSeparate 379x530 min 200x514 saved
 dialog separate: closed
 dialog clones_array: triggering
-dialog clones_array: DlgClonesArray 411x866 min 206x119 saved
+dialog clones_array: DlgClonesArray 379x469 min 303x468 saved
 dialog clones_array: closed
 dialog render_animation: action disabled
 dialog autosave_recovery: showing
 dialog autosave_recovery: KisAutoSaveRecoveryDialog 379x500 min 254x195 saved
 dialog autosave_recovery: closed
-perf panel tools: 421 ms
-perf panel menu: 117 ms
-perf panel more: 85 ms
-perf panel brush: 338 ms
-perf panel color: 146 ms
-perf panel layers: 94 ms
-perf panel animation: 123 ms
-perf panel view: 116 ms
-perf panel text: 92 ms
-perf panel other:BrushHudDocker: 130 ms
-perf panel other:LogDocker: 84 ms
-perf panel other:RecorderDocker: 98 ms
-perf panel other:TasksetDocker: 99 ms
-perf panel other:ToolBox: 88 ms
-perf panel other:TouchDocker: 132 ms
-perf after-portrait: interface-ready-ms=27170 first-canvas-ms=47574 rss-kb=1378132 peak-kb=1415252 uptime-ms=213020
+perf panel tools: 152 ms
+perf panel menu: 72 ms
+perf panel more: 63 ms
+perf panel brush: 159 ms
+perf panel color: 85 ms
+perf panel layers: 63 ms
+perf panel animation: 74 ms
+perf panel view: 75 ms
+perf panel text: 69 ms
+perf panel other:BrushHudDocker: 93 ms
+perf panel other:LogDocker: 80 ms
+perf panel other:RecorderDocker: 69 ms
+perf panel other:TasksetDocker: 66 ms
+perf panel other:ToolBox: 70 ms
+perf panel other:TouchDocker: 89 ms
+perf after-portrait: interface-ready-ms=17311 first-canvas-ms=33772 rss-kb=1385672 peak-kb=1421092 uptime-ms=187823
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-03-editor.png ok
@@ -180,5 +180,5 @@ dialog autosave_recovery: showing
 dialog autosave_recovery: KisAutoSaveRecoveryDialog 650x315 min 500x195 saved
 dialog autosave_recovery: closed
 inventory written
-perf end: interface-ready-ms=27170 first-canvas-ms=47574 rss-kb=1383352 peak-kb=1439068 uptime-ms=378009
+perf end: interface-ready-ms=17311 first-canvas-ms=33772 rss-kb=1390148 peak-kb=1443576 uptime-ms=345284
 done

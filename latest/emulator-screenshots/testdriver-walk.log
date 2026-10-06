@@ -1,9 +1,11 @@
 interface: phone (smallest side 411 dp)
-perf start: interface-ready-ms=26895 first-canvas-ms=-1 rss-kb=1137344 peak-kb=1140656 uptime-ms=32229
+perf start: interface-ready-ms=15213 first-canvas-ms=-1 rss-kb=1143864 peak-kb=1144152 uptime-ms=21262
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
-probe 20,816: QToolBar 'mobileToolRailHolder' 0,52 360x814 tip='' parent=KisMainWindow inLayout=1
+probe 20,816: QToolBar 'mobileToolRailHolder' 0,810 411x56 tip='' parent=KisMainWindow inLayout=1
+probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,810 411x56 tip='' parent=QToolBar inLayout=1
+probe 20,816: mobileui::ChromeButton '' 4,814 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-04-tools.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-05-brush-presets.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-06-tool-options.png ok
@@ -28,7 +30,7 @@ dialog options_configure: triggering
 dialog options_configure: KisDlgPreferences 411x866 min 288x190 saved
 dialog options_configure: closed
 dialog imagesize: triggering
-dialog imagesize: DlgImageSize 411x866 min 133x119 saved
+dialog imagesize: DlgImageSize 411x866 min 389x799 saved
 dialog imagesize: closed
 dialog canvassize: triggering
 dialog canvassize: DlgCanvasSize 411x866 min 133x119 saved
@@ -70,28 +72,28 @@ dialog separate: triggering
 dialog separate: DlgSeparate 379x530 min 200x514 saved
 dialog separate: closed
 dialog clones_array: triggering
-dialog clones_array: DlgClonesArray 411x866 min 206x119 saved
+dialog clones_array: DlgClonesArray 379x469 min 303x468 saved
 dialog clones_array: closed
 dialog render_animation: action disabled
 dialog autosave_recovery: showing
 dialog autosave_recovery: KisAutoSaveRecoveryDialog 379x500 min 254x195 saved
 dialog autosave_recovery: closed
-perf panel tools: 399 ms
-perf panel menu: 128 ms
-perf panel more: 85 ms
-perf panel brush: 318 ms
-perf panel color: 160 ms
-perf panel layers: 99 ms
-perf panel animation: 112 ms
-perf panel view: 101 ms
-perf panel text: 105 ms
-perf panel other:BrushHudDocker: 131 ms
-perf panel other:LogDocker: 92 ms
-perf panel other:RecorderDocker: 98 ms
-perf panel other:TasksetDocker: 101 ms
-perf panel other:ToolBox: 94 ms
-perf panel other:TouchDocker: 132 ms
-perf after-portrait: interface-ready-ms=26895 first-canvas-ms=46771 rss-kb=1381584 peak-kb=1418848 uptime-ms=210837
+perf panel tools: 144 ms
+perf panel menu: 71 ms
+perf panel more: 67 ms
+perf panel brush: 154 ms
+perf panel color: 84 ms
+perf panel layers: 66 ms
+perf panel animation: 66 ms
+perf panel view: 62 ms
+perf panel text: 59 ms
+perf panel other:BrushHudDocker: 79 ms
+perf panel other:LogDocker: 66 ms
+perf panel other:RecorderDocker: 65 ms
+perf panel other:TasksetDocker: 60 ms
+perf panel other:ToolBox: 71 ms
+perf panel other:TouchDocker: 84 ms
+perf after-portrait: interface-ready-ms=15213 first-canvas-ms=31992 rss-kb=1390720 peak-kb=1426200 uptime-ms=186814
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-03-editor.png ok
@@ -178,6 +180,7 @@ dialog autosave_recovery: showing
 dialog autosave_recovery: KisAutoSaveRecoveryDialog 650x315 min 500x195 saved
 dialog autosave_recovery: closed
 inventory written
+walk: small image 256x256
 walk: 673 commands
 walk 1/673: file_new
 walk 6/673: file_sessions
@@ -300,30 +303,190 @@ walk 165/673: rotateAllLayersCCW90
 walk 166/673: rotateAllLayers180
 walk 167/673: shearAllLayers
 walk 168/673: split_alpha_into_mask
+walk 169/673: split_alpha_write
 walk 171/673: layersplit
+walk 172/673: clones_array
+walk 173/673: EditLayerMetaData
+walk 174/673: merge_layer
+walk 175/673: flatten_layer
+walk 176/673: flatten_image
+walk 177/673: layer_style
 walk 178/673: select_all
+walk 179/673: deselect
+walk 180/673: reselect
+walk 181/673: invert_selection
 walk 187/673: toggle_display_selection
 walk 188/673: show-global-selection-mask
-walk 190/673: colorrange
 walk 191/673: selectopaque
 walk 192/673: selectopaque_add
 walk 193/673: selectopaque_subtract
 walk 194/673: selectopaque_intersect
-walk 195/673: featherselection
-walk 196/673: growselection
-walk 197/673: shrinkselection
-walk 198/673: borderselection
-walk 199/673: smoothselection
 walk 200/673: enable_sap
-walk 201/673: filter_apply_again
-walk 202/673: filter_apply_reprompt
-walk 203/673: krita_filter_asc-cdl
-walk 204/673: krita_filter_autocontrast
-walk 205/673: krita_filter_burn
-walk 206/673: krita_filter_colorbalance
-walk 207/673: krita_filter_crosschannel
-walk 208/673: krita_filter_desaturate
-walk 209/673: krita_filter_dodge
-walk 210/673: krita_filter_hsvadjustment
-walk 211/673: krita_filter_invert
-walk 212/673: krita_filter_levels
+walk 260/673: options_configure
+walk 261/673: change_interface_scale
+walk 262/673: manage_bundles
+walk 263/673: manage_resources
+walk 264/673: manage_supporter_bundles
+walk 265/673: manage_donations
+walk 267/673: options_configure_toolbars
+walk 268/673: mainToolBar
+walk 269/673: editToolBar
+walk 270/673: BrushesAndStuff
+walk 271/673: customToolBar1
+walk 272/673: customToolBar2
+walk 273/673: lock_toolbars
+walk 274/673: view_toggledockers
+walk 275/673: switch_application_language
+walk 277/673: windows_next
+walk 278/673: windows_previous
+walk 281/673: buginfo
+walk 282/673: sysinfo
+walk 283/673: logcatdump
+walk 284/673: crashlog
+walk 285/673: help_about_app
+walk 286/673: help_about_kde
+walk 287/673: add_scalar_keyframes
+walk 288/673: auto_key
+walk 289/673: clear_animation_cache
+walk 290/673: copy_frames_as_clones
+walk 291/673: copy_columns_to_clipboard
+walk 292/673: copy_frames
+walk 293/673: add_blank_frame
+walk 294/673: add_duplicate_frame
+walk 295/673: cut_columns_to_clipboard
+walk 296/673: cut_frames
+walk 297/673: drop_frames
+walk 298/673: first_frame
+walk 299/673: insert_column_left
+walk 300/673: insert_column_right
+walk 301/673: insert_hold_column
+walk 302/673: insert_hold_frame
+walk 303/673: insert_keyframe_left
+walk 304/673: insert_keyframe_right
+walk 305/673: insert_multiple_columns
+walk 306/673: insert_multiple_hold_columns
+walk 307/673: insert_multiple_hold_frames
+walk 308/673: insert_multiple_keyframes
+walk 309/673: last_frame
+walk 310/673: make_clones_unique
+walk 311/673: mirror_columns
+walk 313/673: next_frame
+walk 314/673: next_keyframe
+walk 315/673: next_matching_keyframe
+walk 316/673: next_unfiltered_keyframe
+walk 317/673: paste_columns_from_clipboard
+walk 318/673: paste_frames
+walk 319/673: pin_to_timeline
+walk 320/673: toggle_playback
+walk 321/673: previous_frame
+walk 322/673: previous_keyframe
+walk 323/673: previous_matching_keyframe
+walk 324/673: previous_unfiltered_keyframe
+walk 325/673: remove_columns
+walk 326/673: remove_columns_and_pull
+walk 327/673: remove_frames_and_pull
+walk 328/673: remove_hold_column
+walk 329/673: remove_hold_frame
+walk 330/673: remove_frames
+walk 331/673: remove_multiple_hold_columns
+walk 332/673: remove_multiple_hold_frames
+walk 333/673: remove_scalar_keyframe
+walk 334/673: set_end_time
+walk 335/673: set_start_time
+walk 336/673: stop_playback
+walk 337/673: toggle_onion_skin
+walk 338/673: update_playback_range
+walk 339/673: Next Blending Mode
+walk 340/673: Previous Blending Mode
+walk 341/673: Select Behind Blending Mode
+walk 342/673: Select Clear Blending Mode
+walk 343/673: Select Color Blending Mode
+walk 344/673: Select Color Burn Blending Mode
+walk 345/673: Select Color Dodge Blending Mode
+walk 346/673: Select Darken Blending Mode
+walk 347/673: Select Difference Blending Mode
+walk 348/673: Select Dissolve Blending Mode
+walk 349/673: Select Exclusion Blending Mode
+walk 350/673: Select Hard Light Blending Mode
+walk 351/673: Select Hard Mix Blending Mode
+walk 352/673: Select Hard Overlay Blending Mode
+walk 353/673: Select Hue Blending Mode
+walk 354/673: Select Lighten Blending Mode
+walk 355/673: Select Linear Burn Blending Mode
+walk 356/673: Select Linear Dodge Blending Mode
+walk 357/673: Select Linear Light Blending Mode
+walk 358/673: Select Luminosity Blending Mode
+walk 359/673: Select Multiply Blending Mode
+walk 360/673: Select Normal Blending Mode
+walk 361/673: Select Overlay Blending Mode
+walk 362/673: Select Pin Light Blending Mode
+walk 363/673: Select Saturation Blending Mode
+walk 364/673: Select Screen Blending Mode
+walk 365/673: Select Soft Light Blending Mode
+walk 366/673: Select Vivid Light Blending Mode
+walk 367/673: brushslider1
+walk 368/673: brushslider2
+walk 369/673: brushslider3
+walk 370/673: brushslider4
+walk 371/673: brushslider5
+walk 372/673: chooseBackgroundColor
+walk 373/673: dual
+walk 374/673: chooseForegroundColor
+walk 375/673: gradients
+walk 376/673: mirror_actions
+walk 377/673: patterns
+walk 378/673: workspaces
+walk 381/673: adjust_filters
+walk 382/673: artistic_filters
+walk 383/673: blur_filters
+walk 384/673: color_filters
+walk 385/673: edge_filters
+walk 386/673: emboss_filters
+walk 387/673: enhance_filters
+walk 388/673: map_filters
+walk 389/673: other_filters
+walk 390/673: windows_cascade
+walk 391/673: create_snapshot
+walk 392/673: open_resources_directory
+walk 393/673: remove_snapshot
+walk 394/673: rename_composition
+walk 395/673: command_bar_open
+walk 396/673: show_brush_editor
+walk 397/673: show_brush_presets
+walk 398/673: show_color_history
+walk 399/673: show_color_selector
+walk 400/673: show_common_colors
+walk 401/673: docker_box
+walk 402/673: show_minimal_shade_selector
+walk 403/673: show_mypaint_shade_selector
+walk 404/673: switchto_snapshot
+walk 405/673: windows_tile
+walk 406/673: tablet_debugger
+walk 407/673: update_composition
+walk 408/673: ruler_pixel_multiple2
+walk 451/673: activateNextLayer
+walk 452/673: activateNextSiblingLayer
+walk 453/673: activatePreviousLayer
+walk 454/673: activatePreviousSiblingLayer
+walk 455/673: switchToPreviouslyActiveNode
+walk 456/673: add_new_fast_color_overlay_mask
+walk 457/673: force_palette_colors
+walk 458/673: isolate_active_group
+walk 459/673: isolate_active_layer
+walk 460/673: LayerGroupSwitcher/next
+walk 461/673: LayerGroupSwitcher/previous
+walk 462/673: move_layer_down
+walk 463/673: move_layer_up
+walk 464/673: layer_properties
+walk 465/673: create_reference_image_from_active_layer
+walk 466/673: create_reference_image_from_visible_canvas
+walk 467/673: remove_layer
+walk 468/673: RenameCurrentLayer
+walk 469/673: set-copy-from
+walk 470/673: toggle_layer_alpha_lock
+walk 471/673: toggle_layer_inherit_alpha
+walk 472/673: toggle_layer_lock
+walk 473/673: toggle_layer_soloing
+walk 474/673: toggle_layer_visibility
+walk 475/673: unifylayerscolorspace
+walk 476/673: interpolation_bezier
