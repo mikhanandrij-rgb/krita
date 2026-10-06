@@ -1,0 +1,671 @@
+interface: phone (smallest side 1024 dp)
+perf start: interface-ready-ms=5509 first-canvas-ms=-1 rss-kb=465784 peak-kb=465784 uptime-ms=11639
+screenshot /home/runner/work/krita/krita/shots/portrait-01-hub.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-02-new-canvas.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-03-editor.png ok
+probe 20,841: QToolBar 'mobileToolRailHolder' 0,835 411x56 tip='' parent=KisMainWindow inLayout=1
+probe 20,841: mobileui::ToolRail 'mobileToolRail' 0,835 411x56 tip='' parent=QToolBar inLayout=1
+probe 20,841: mobileui::ChromeButton '' 4,839 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
+screenshot /home/runner/work/krita/krita/shots/portrait-04-tools.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-05-brush-presets.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-06-tool-options.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-07-brush-editor.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-08-color-advanced.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-09-color-widegamut.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-10-color-palette.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-11-layers.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-12-timeline.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-13-onion-skins.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-14-curves.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-15-overview.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-16-history.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-17-text.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-18-menu.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-18b-all-commands.png ok
+screenshot /home/runner/work/krita/krita/shots/portrait-19-more.png ok
+dialog file_new: triggering
+dialog file_new: KisOpenPane 411x853 min 227x566 saved
+dialog file_new: closed
+dialog options_configure: triggering
+dialog options_configure: KisDlgPreferences 411x853 min 372x204 saved
+dialog options_configure: closed
+dialog imagesize: triggering
+dialog imagesize: DlgImageSize 411x853 min 180x121 saved
+dialog imagesize: closed
+dialog canvassize: triggering
+dialog canvassize: DlgCanvasSize 411x853 min 180x121 saved
+dialog canvassize: closed
+dialog image_properties: triggering
+dialog image_properties: KisDlgImageProperties 411x853 min 180x121 saved
+dialog image_properties: closed
+dialog layer_properties: triggering
+dialog layer_properties: KisDlgLayerProperties 411x853 min 325x847 saved
+dialog layer_properties: closed
+dialog layer_style: triggering
+dialog layer_style: KisDlgLayerStyle 411x853 min 180x121 saved
+dialog layer_style: closed
+dialog krita_filter_gaussian blur: triggering
+dialog krita_filter_gaussian blur: KisDlgFilter 379x641 min 294x391 saved
+dialog krita_filter_gaussian blur: closed
+dialog krita_filter_hsvadjustment: triggering
+dialog krita_filter_hsvadjustment: KisDlgFilter 411x853 min 234x487 saved
+dialog krita_filter_hsvadjustment: closed
+dialog krita_filter_perchannel: triggering
+dialog krita_filter_perchannel: KisDlgFilter 411x853 min 234x692 saved
+dialog krita_filter_perchannel: closed
+dialog krita_filter_levels: triggering
+dialog krita_filter_levels: KisDlgFilter 411x853 min 317x640 saved
+dialog krita_filter_levels: closed
+dialog rotateimage: triggering
+dialog rotateimage: DlgRotateImage 379x480 min 361x389 saved
+dialog rotateimage: closed
+dialog offsetimage: triggering
+dialog offsetimage: DlgOffsetImage 379x262 min 207x261 saved
+dialog offsetimage: closed
+dialog imagesplit: triggering
+dialog imagesplit: DlgImagesplit 379x668 min 299x655 saved
+dialog imagesplit: closed
+dialog layersplit: triggering
+dialog layersplit: DlgLayerSplit 379x623 min 220x562 saved
+dialog layersplit: closed
+dialog separate: triggering
+dialog separate: DlgSeparate 379x579 min 227x547 saved
+dialog separate: closed
+dialog clones_array: triggering
+dialog clones_array: DlgClonesArray 379x487 min 332x486 saved
+dialog clones_array: closed
+dialog render_animation: action disabled
+dialog autosave_recovery: showing
+dialog autosave_recovery: KisAutoSaveRecoveryDialog 379x500 min 336x201 saved
+dialog autosave_recovery: closed
+perf panel tools: 25 ms
+perf panel menu: 7 ms
+perf panel more: 5 ms
+perf panel brush: 23 ms
+perf panel color: 11 ms
+perf panel layers: 5 ms
+perf panel animation: 6 ms
+perf panel view: 6 ms
+perf panel text: 7 ms
+perf panel other:BrushHudDocker: 10 ms
+perf panel other:LogDocker: 6 ms
+perf panel other:LutDocker: 5 ms
+perf panel other:RecorderDocker: 5 ms
+perf panel other:TasksetDocker: 6 ms
+perf panel other:ToolBox: 5 ms
+perf panel other:TouchDocker: 10 ms
+perf panel other:comics_project_manager_docker: 5 ms
+perf panel other:lastdocumentsdocker: 4 ms
+perf panel other:mutatorDocker: 4 ms
+perf panel other:pykrita_workflow_buttons: 5 ms
+perf panel other:quick_settings_docker: 5 ms
+perf after-portrait: interface-ready-ms=5509 first-canvas-ms=19809 rss-kb=684972 peak-kb=685140 uptime-ms=165799
+screenshot /home/runner/work/krita/krita/shots/landscape-01-hub.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-02-new-canvas.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-03-editor.png ok
+probe 70,361: QStackedWidget '' 56,52 835x359 tip='' parent=KisMainWindow inLayout=1
+probe 70,361: QMdiArea '' 56,52 835x359 tip='' parent=QStackedWidget inLayout=1
+probe 70,361: QWidget '' 56,52 835x359 tip='' parent=QMdiArea inLayout=0
+probe 70,361: QMdiSubWindow '' 56,52 835x359 tip='' parent=QWidget inLayout=0
+probe 70,361: KisView 'view_0' 56,52 835x359 tip='' parent=QMdiSubWindow inLayout=1
+probe 70,361: KisCanvasController '' 56,52 835x359 tip='' parent=KisView inLayout=1
+probe 70,361: Viewport '' 56,52 835x359 tip='' parent=KisCanvasController inLayout=0
+probe 70,361: KisOpenGLCanvas2 '' 56,52 835x359 tip='' parent=Viewport inLayout=0
+probe 70,361: mobileui::QuickSliders 'mobileQuickSliders' 62,64 44x334 tip='' parent=KisMainWindow inLayout=0
+probe 70,361: mobileui::QuickSlider '' 62,259 44x139 tip='Opacity' parent=mobileui::QuickSliders inLayout=1
+screenshot /home/runner/work/krita/krita/shots/landscape-04-tools.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-05-brush-presets.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-06-tool-options.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-07-brush-editor.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-08-color-advanced.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-09-color-widegamut.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-10-color-palette.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-11-layers.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-12-timeline.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-13-onion-skins.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-14-curves.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-15-overview.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-16-history.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-17-text.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-18-menu.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-18b-all-commands.png ok
+screenshot /home/runner/work/krita/krita/shots/landscape-19-more.png ok
+dialog file_new: triggering
+dialog file_new: KisOpenPane 891x411 min 70x70 saved
+dialog file_new: closed
+dialog options_configure: triggering
+dialog options_configure: KisDlgPreferences 891x411 min 372x204 saved
+dialog options_configure: closed
+dialog imagesize: triggering
+dialog imagesize: DlgImageSize 891x411 min 180x121 saved
+dialog imagesize: closed
+dialog canvassize: triggering
+dialog canvassize: DlgCanvasSize 891x411 min 180x121 saved
+dialog canvassize: closed
+dialog image_properties: triggering
+dialog image_properties: KisDlgImageProperties 891x411 min 180x121 saved
+dialog image_properties: closed
+dialog layer_properties: triggering
+dialog layer_properties: KisDlgLayerProperties 891x411 min 653x355 saved
+dialog layer_properties: closed
+dialog layer_style: triggering
+dialog layer_style: KisDlgLayerStyle 891x411 min 180x121 saved
+dialog layer_style: closed
+dialog krita_filter_gaussian blur: triggering
+dialog krita_filter_gaussian blur: KisDlgFilter 597x211 min 596x187 saved
+dialog krita_filter_gaussian blur: closed
+dialog krita_filter_hsvadjustment: triggering
+dialog krita_filter_hsvadjustment: KisDlgFilter 597x307 min 596x283 saved
+dialog krita_filter_hsvadjustment: closed
+dialog krita_filter_perchannel: triggering
+dialog krita_filter_perchannel: KisDlgFilter 891x411 min 574x128 saved
+dialog krita_filter_perchannel: closed
+dialog krita_filter_levels: triggering
+dialog krita_filter_levels: KisDlgFilter 891x411 min 574x128 saved
+dialog krita_filter_levels: closed
+dialog rotateimage: triggering
+dialog rotateimage: DlgRotateImage 891x411 min 361x389 saved
+dialog rotateimage: closed
+dialog offsetimage: triggering
+dialog offsetimage: DlgOffsetImage 360x262 min 207x261 saved
+dialog offsetimage: closed
+dialog imagesplit: triggering
+dialog imagesplit: DlgImagesplit 891x411 min 190x121 saved
+dialog imagesplit: closed
+dialog layersplit: triggering
+dialog layersplit: DlgLayerSplit 891x411 min 198x121 saved
+dialog layersplit: closed
+dialog separate: triggering
+dialog separate: DlgSeparate 891x411 min 180x121 saved
+dialog separate: closed
+dialog clones_array: triggering
+dialog clones_array: DlgClonesArray 714x258 min 713x257 saved
+dialog clones_array: closed
+dialog render_animation: action disabled
+dialog autosave_recovery: showing
+dialog autosave_recovery: KisAutoSaveRecoveryDialog 650x321 min 565x201 saved
+dialog autosave_recovery: closed
+inventory written
+walk: 691 commands
+walk 1/691: file_new
+walk 2/691: file_open
+walk 4/691: file_save
+walk 5/691: file_save_as
+walk 6/691: file_sessions
+walk 7/691: file_import_file
+walk 8/691: file_export_file
+walk 9/691: file_export_advanced
+walk 10/691: file_import_animation
+walk 11/691: file_import_video_animation
+walk 13/691: save_incremental_version
+walk 14/691: save_incremental_backup
+walk 15/691: create_template
+walk 16/691: create_copy
+walk 17/691: file_documentinfo
+walk 21/691: edit_undo
+walk 22/691: edit_redo
+walk 23/691: edit_cut
+walk 24/691: edit_copy
+walk 28/691: copy_layer_style
+walk 29/691: edit_paste
+walk 30/691: paste_at
+walk 32/691: paste_new
+walk 33/691: paste_as_reference
+walk 35/691: paste_layer_style
+walk 36/691: clear
+walk 45/691: sample_screen_color
+walk 46/691: sample_screen_color_real_canvas
+walk 47/691: view_show_canvas_only
+walk 48/691: fullscreen
+walk 50/691: wrap_around_mode
+walk 51/691: wrap_around_hv_axis
+walk 52/691: wrap_around_h_axis
+walk 53/691: wrap_around_v_axis
+walk 54/691: level_of_detail_mode
+walk 55/691: softProof
+walk 56/691: gamutCheck
+walk 57/691: view_zoom_in
+walk 58/691: view_zoom_out
+walk 59/691: zoom_to_100pct
+walk 60/691: zoom_to_fit
+walk 61/691: zoom_to_fit_width
+walk 62/691: zoom_to_fit_height
+walk 63/691: rotate_canvas_right
+walk 64/691: rotate_canvas_left
+walk 65/691: reset_canvas_rotation
+walk 66/691: mirror_canvas
+walk 67/691: mirror_canvas_around_cursor
+walk 68/691: mirror_canvas_around_canvas
+walk 69/691: reset_display
+walk 70/691: view_print_size
+walk 71/691: view_ruler
+walk 72/691: rulers_track_mouse
+walk 73/691: view_show_guides
+walk 74/691: view_lock_guides
+walk 75/691: showStatusBar
+walk 76/691: view_grid
+walk 77/691: view_pixel_grid
+walk 78/691: view_snap_to_guides
+walk 79/691: view_snap_to_grid
+walk 80/691: view_snap_to_pixel
+walk 81/691: view_snap_orthogonal
+walk 82/691: view_snap_node
+walk 83/691: view_snap_extension
+walk 84/691: view_snap_intersection
+walk 85/691: view_snap_bounding_box
+walk 86/691: view_snap_image_bounds
+walk 87/691: view_snap_image_center
+walk 88/691: view_toggle_painting_assistants
+walk 89/691: view_toggle_assistant_previews
+walk 90/691: view_toggle_reference_images
+walk 91/691: image_properties
+walk 92/691: image_color
+walk 93/691: imagecolorspaceconversion
+walk 94/691: trim_to_image
+walk 95/691: resizeimagetolayer
+walk 97/691: purge_unused_image_data
+walk 98/691: rotateimage
+walk 99/691: rotateImageCW90
+walk 100/691: rotateImageCCW90
+walk 101/691: rotateImage180
+walk 102/691: shearimage
+walk 103/691: mirrorImageHorizontal
+walk 104/691: mirrorImageVertical
+walk 105/691: imagesize
+walk 106/691: offsetimage
+walk 107/691: canvassize
+walk 108/691: imagesplit
+walk 110/691: separate
+walk 111/691: cut_layer_clipboard
+walk 112/691: copy_layer_clipboard
+walk 113/691: paste_layer_from_clipboard
+walk 114/691: add_new_paint_layer
+walk 115/691: add_new_group_layer
+walk 116/691: add_new_clone_layer
+walk 117/691: add_new_shape_layer
+walk 118/691: add_new_adjustment_layer
+walk 119/691: add_new_fill_layer
+walk 120/691: add_new_file_layer
+walk 121/691: add_new_transparency_mask
+walk 126/691: new_from_visible
+walk 127/691: duplicatelayer
+walk 130/691: save_node_as_image
+walk 132/691: save_groups_as_images
+walk 133/691: import_layer_from_file
+walk 134/691: import_layer_as_paint_layer
+walk 135/691: import_layer_as_transparency_mask
+walk 136/691: import_layer_as_filter_mask
+walk 137/691: import_layer_as_selection_mask
+walk 139/691: convert_to_transparency_mask
+walk 140/691: convert_to_filter_mask
+walk 141/691: convert_to_selection_mask
+walk 145/691: select_all_layers
+walk 146/691: select_visible_layers
+walk 147/691: select_invisible_layers
+walk 148/691: select_locked_layers
+walk 149/691: select_unlocked_layers
+walk 150/691: create_quick_group
+walk 151/691: create_quick_clipping_group
+walk 152/691: quick_ungroup
+walk 153/691: mirrorNodeX
+walk 154/691: mirrorNodeY
+walk 155/691: layersize
+walk 156/691: rotatelayer
+walk 157/691: rotateLayerCW90
+walk 158/691: rotateLayerCCW90
+walk 159/691: rotateLayer180
+walk 160/691: shearlayer
+walk 161/691: offsetlayer
+walk 162/691: mirrorAllNodesX
+walk 163/691: mirrorAllNodesY
+walk 164/691: scaleAllLayers
+walk 165/691: rotateAllLayers
+walk 166/691: rotateAllLayersCW90
+walk 167/691: rotateAllLayersCCW90
+walk 168/691: rotateAllLayers180
+walk 169/691: shearAllLayers
+walk 170/691: split_alpha_into_mask
+walk 171/691: split_alpha_write
+walk 173/691: layersplit
+walk 174/691: clones_array
+walk 175/691: EditLayerMetaData
+walk 176/691: merge_layer
+walk 177/691: flatten_layer
+walk 178/691: flatten_image
+walk 179/691: layer_style
+walk 180/691: select_all
+walk 181/691: deselect
+walk 182/691: reselect
+walk 183/691: invert_selection
+walk 189/691: toggle_display_selection
+walk 190/691: show-global-selection-mask
+walk 193/691: selectopaque
+walk 194/691: selectopaque_add
+walk 195/691: selectopaque_subtract
+walk 196/691: selectopaque_intersect
+walk 202/691: enable_sap
+walk 259/691: color_space
+walk 260/691: document_tools
+walk 261/691: export_layers
+walk 262/691: filter_manager
+walk 264/691: plugin_importer_file
+walk 265/691: plugin_importer_web
+walk 266/691: python_scripter
+walk 267/691: ten_brushes
+walk 268/691: ten_scripts
+walk 272/691: options_configure
+walk 273/691: manage_bundles
+walk 274/691: manage_resources
+walk 275/691: options_configure_toolbars
+walk 276/691: mainToolBar
+walk 277/691: editToolBar
+walk 278/691: BrushesAndStuff
+walk 279/691: customToolBar1
+walk 280/691: customToolBar2
+walk 281/691: lock_toolbars
+walk 282/691: view_toggledockers
+walk 283/691: switch_application_language
+walk 286/691: windows_next
+walk 287/691: windows_previous
+walk 290/691: buginfo
+walk 291/691: sysinfo
+walk 292/691: help_about_app
+walk 293/691: help_about_kde
+walk 294/691: add_scalar_keyframes
+walk 295/691: auto_key
+walk 296/691: clear_animation_cache
+walk 297/691: copy_frames_as_clones
+walk 298/691: copy_columns_to_clipboard
+walk 299/691: copy_frames
+walk 300/691: add_blank_frame
+walk 301/691: add_duplicate_frame
+walk 302/691: cut_columns_to_clipboard
+walk 303/691: cut_frames
+walk 304/691: drop_frames
+walk 305/691: first_frame
+walk 306/691: insert_column_left
+walk 307/691: insert_column_right
+walk 308/691: insert_hold_column
+walk 309/691: insert_hold_frame
+walk 310/691: insert_keyframe_left
+walk 311/691: insert_keyframe_right
+walk 312/691: insert_multiple_columns
+walk 313/691: insert_multiple_hold_columns
+walk 314/691: insert_multiple_hold_frames
+walk 315/691: insert_multiple_keyframes
+walk 316/691: last_frame
+walk 317/691: make_clones_unique
+walk 318/691: mirror_columns
+walk 320/691: next_frame
+walk 321/691: next_keyframe
+walk 322/691: next_matching_keyframe
+walk 323/691: next_unfiltered_keyframe
+walk 324/691: paste_columns_from_clipboard
+walk 325/691: paste_frames
+walk 326/691: pin_to_timeline
+walk 327/691: toggle_playback
+walk 328/691: previous_frame
+walk 329/691: previous_keyframe
+walk 330/691: previous_matching_keyframe
+walk 331/691: previous_unfiltered_keyframe
+walk 332/691: remove_columns
+walk 333/691: remove_columns_and_pull
+walk 334/691: remove_frames_and_pull
+walk 335/691: remove_hold_column
+walk 336/691: remove_hold_frame
+walk 337/691: remove_frames
+walk 338/691: remove_multiple_hold_columns
+walk 339/691: remove_multiple_hold_frames
+walk 340/691: remove_scalar_keyframe
+walk 341/691: set_end_time
+walk 342/691: set_start_time
+walk 343/691: stop_playback
+walk 344/691: toggle_onion_skin
+walk 345/691: update_playback_range
+walk 346/691: Next Blending Mode
+walk 347/691: Previous Blending Mode
+walk 348/691: Select Behind Blending Mode
+walk 349/691: Select Clear Blending Mode
+walk 350/691: Select Color Blending Mode
+walk 351/691: Select Color Burn Blending Mode
+walk 352/691: Select Color Dodge Blending Mode
+walk 353/691: Select Darken Blending Mode
+walk 354/691: Select Difference Blending Mode
+walk 355/691: Select Dissolve Blending Mode
+walk 356/691: Select Exclusion Blending Mode
+walk 357/691: Select Hard Light Blending Mode
+walk 358/691: Select Hard Mix Blending Mode
+walk 359/691: Select Hard Overlay Blending Mode
+walk 360/691: Select Hue Blending Mode
+walk 361/691: Select Lighten Blending Mode
+walk 362/691: Select Linear Burn Blending Mode
+walk 363/691: Select Linear Dodge Blending Mode
+walk 364/691: Select Linear Light Blending Mode
+walk 365/691: Select Luminosity Blending Mode
+walk 366/691: Select Multiply Blending Mode
+walk 367/691: Select Normal Blending Mode
+walk 368/691: Select Overlay Blending Mode
+walk 369/691: Select Pin Light Blending Mode
+walk 370/691: Select Saturation Blending Mode
+walk 371/691: Select Screen Blending Mode
+walk 372/691: Select Soft Light Blending Mode
+walk 373/691: Select Vivid Light Blending Mode
+walk 374/691: brushslider1
+walk 375/691: brushslider2
+walk 376/691: brushslider3
+walk 377/691: brushslider4
+walk 378/691: brushslider5
+walk 379/691: chooseBackgroundColor
+walk 380/691: dual
+walk 381/691: chooseForegroundColor
+walk 382/691: gradients
+walk 383/691: mirror_actions
+walk 384/691: patterns
+walk 385/691: workspaces
+walk 388/691: adjust_filters
+walk 389/691: artistic_filters
+walk 390/691: blur_filters
+walk 391/691: color_filters
+walk 392/691: edge_filters
+walk 393/691: emboss_filters
+walk 394/691: enhance_filters
+walk 395/691: map_filters
+walk 396/691: other_filters
+walk 397/691: windows_cascade
+walk 398/691: create_snapshot
+walk 399/691: open_resources_directory
+walk 400/691: remove_snapshot
+walk 401/691: rename_composition
+walk 402/691: command_bar_open
+walk 403/691: show_brush_editor
+walk 404/691: show_brush_presets
+walk 405/691: docker_box
+walk 406/691: show_mypaint_shade_selector
+walk 407/691: show_color_history
+walk 408/691: show_color_selector
+walk 409/691: show_common_colors
+walk 410/691: show_minimal_shade_selector
+walk 411/691: switchto_snapshot
+walk 412/691: windows_tile
+walk 413/691: tablet_debugger
+walk 414/691: update_composition
+walk 415/691: ruler_pixel_multiple2
+walk 458/691: activateNextLayer
+walk 459/691: activateNextSiblingLayer
+walk 460/691: activatePreviousLayer
+walk 461/691: activatePreviousSiblingLayer
+walk 462/691: switchToPreviouslyActiveNode
+walk 463/691: add_new_fast_color_overlay_mask
+walk 464/691: force_palette_colors
+walk 465/691: isolate_active_group
+walk 466/691: isolate_active_layer
+walk 467/691: move_layer_down
+walk 468/691: move_layer_up
+walk 469/691: LayerGroupSwitcher/next
+walk 470/691: LayerGroupSwitcher/previous
+walk 471/691: layer_properties
+walk 474/691: remove_layer
+walk 475/691: RenameCurrentLayer
+walk 476/691: set-copy-from
+walk 477/691: toggle_layer_soloing
+walk 478/691: toggle_layer_alpha_lock
+walk 479/691: toggle_layer_inherit_alpha
+walk 480/691: toggle_layer_lock
+walk 481/691: toggle_layer_visibility
+walk 483/691: interpolation_bezier
+walk 484/691: composite_actions
+walk 485/691: dockerBox
+walk 486/691: expanding_spacer_1
+walk 487/691: expanding_spacer_0
+walk 488/691: interpolation_constant
+walk 489/691: interpolation_linear
+walk 490/691: paintops
+walk 491/691: tangents_sharp
+walk 492/691: tangents_smooth
+walk 493/691: toolbars_submenu_action
+walk 494/691: zoom_to_fit_range
+walk 495/691: zoom_to_fit_curve
+walk 496/691: set_simple_brush_smoothing
+walk 497/691: set_no_brush_smoothing
+walk 498/691: set_pixel_perfect_smoothing
+walk 499/691: set_stabilizer_brush_smoothing
+walk 500/691: set_weighted_brush_smoothing
+walk 501/691: decrease_brush_size
+walk 502/691: decrease_fade
+walk 503/691: decrease_flow
+walk 504/691: decrease_opacity
+walk 505/691: decrease_scatter
+walk 506/691: mirrorX-hideDecorations
+walk 507/691: mirrorY-hideDecorations
+walk 508/691: hmirror_action
+walk 509/691: increase_brush_size
+walk 510/691: increase_fade
+walk 511/691: increase_flow
+walk 512/691: increase_opacity
+walk 513/691: increase_scatter
+walk 514/691: mirrorX-lock
+walk 515/691: mirrorY-lock
+walk 516/691: make_brush_color_darker
+walk 517/691: make_brush_color_lighter
+walk 518/691: make_brush_color_bluer
+walk 519/691: make_brush_color_desaturated
+walk 520/691: make_brush_color_greener
+walk 521/691: make_brush_color_redder
+walk 522/691: make_brush_color_saturated
+walk 523/691: make_brush_color_yellower
+walk 524/691: mirrorX-moveToCenter
+walk 525/691: mirrorY-moveToCenter
+walk 526/691: next_favorite_preset
+walk 527/691: preserve_alpha
+walk 528/691: previous_favorite_preset
+walk 529/691: reload_preset_action
+walk 530/691: rotate_brush_tip_clockwise
+walk 531/691: rotate_brush_tip_clockwise_precise
+walk 532/691: rotate_brush_tip_counter_clockwise
+walk 533/691: rotate_brush_tip_counter_clockwise_precise
+walk 534/691: brush_select_preset_action
+walk 535/691: eraser_select_preset_action
+walk 540/691: erase_action
+walk 541/691: shift_brush_color_clockwise
+walk 542/691: shift_brush_color_counter_clockwise
+walk 543/691: toggle_fg_bg
+walk 544/691: previous_preset
+walk 545/691: toggle_brush_outline
+walk 546/691: toggle-selection-overlay-mode
+walk 547/691: toggle_assistant
+walk 548/691: eraser_preset_action
+walk 550/691: disable_pressure
+walk 551/691: vmirror_action
+walk 552/691: reset_fg_bg
+walk 577/691: recorder_export
+walk 578/691: recorder_record_toggle
+walk 604/691: SvgTextTool
+walk 605/691: svg_format_underline
+walk 607/691: settings_active_author
+walk 608/691: settings_dockers_menu
+walk 609/691: dbexplorer
+walk 610/691: view_toggledockertitlebars
+walk 611/691: style_menu
+walk 612/691: theme_menu
+walk 613/691: window
+walk 614/691: activate_preset_0
+walk 615/691: activate_preset_1
+walk 616/691: activate_preset_2
+walk 617/691: activate_preset_3
+walk 618/691: activate_preset_4
+walk 619/691: activate_preset_5
+walk 620/691: activate_preset_6
+walk 621/691: activate_preset_7
+walk 622/691: activate_preset_8
+walk 623/691: activate_preset_9
+walk 624/691: execute_script_0
+walk 625/691: execute_script_1
+walk 626/691: execute_script_2
+walk 627/691: execute_script_3
+walk 628/691: execute_script_4
+walk 629/691: execute_script_5
+walk 630/691: execute_script_6
+walk 631/691: execute_script_7
+walk 632/691: execute_script_8
+walk 633/691: execute_script_9
+walk 634/691: KisAssistantTool
+walk 635/691: KisToolSelectPath
+walk 636/691: KisToolPath
+walk 637/691: KarbonCalligraphyTool
+walk 638/691: calligraphy_decrease_angle
+walk 639/691: calligraphy_decrease_width
+walk 640/691: calligraphy_increase_angle
+walk 641/691: calligraphy_increase_width
+walk 642/691: KritaSelected/KisToolColorSampler
+walk 643/691: KritaShape/KisToolLazyBrush
+walk 644/691: KritaShape/KisToolKnife
+walk 645/691: KisToolSelectContiguous
+walk 646/691: KisToolCrop
+walk 647/691: KritaShape/KisToolDyna
+walk 648/691: PathTool
+walk 649/691: KritaShape/KisToolEllipse
+walk 650/691: KisToolSelectElliptical
+walk 651/691: KisToolEncloseAndFill
+walk 652/691: KritaFill/KisToolFill
+walk 653/691: KritaShape/KisToolBrush
+walk 654/691: KisToolPencil
+walk 655/691: KisToolSelectOutline
+walk 656/691: KritaFill/KisToolGradient
+walk 657/691: KritaShape/KisToolLine
+walk 658/691: KisToolSelectMagnetic
+walk 659/691: KritaShape/KisToolMeasure
+walk 660/691: KritaTransform/KisToolMove
+walk 661/691: KritaShape/KisToolMultiBrush
+walk 662/691: PanTool
+walk 663/691: KisToolPolygon
+walk 664/691: KisToolSelectPolygonal
+walk 665/691: KisToolPolyline
+walk 666/691: KritaShape/KisToolRectangle
+walk 667/691: KisToolSelectRectangular
+walk 668/691: ToolReferenceImages
+walk 669/691: InteractionTool
+walk 670/691: KisToolSelectSimilar
+walk 671/691: KritaShape/KisToolSmartPatch
+walk 672/691: KisToolTransform
+walk 673/691: KisToolTransformCage
+walk 674/691: KisToolTransformFree
+walk 675/691: KisToolTransformLiquify
+walk 676/691: KisToolTransformMesh
+walk 677/691: KisToolTransformPerspective
+walk 678/691: KisToolTransformWarp
+walk 679/691: ZoomTool
+walk 680/691: show_snap_options_popup
+walk 681/691: toggle_zoom_to_fit
+walk 682/691: wgcs_decrease_saturation
+walk 683/691: wgcs_increase_saturation
+walk 684/691: wgcs_darken_color
+walk 685/691: wgcs_lighten_color
+walk 686/691: wgcs_shift_hue_clockwise
+walk 687/691: wgcs_shift_hue_counterclockwise
+walk 688/691: show_wg_mypaint_selector
+walk 689/691: show_wg_color_history
+walk 690/691: show_wg_color_selector
+walk 691/691: show_wg_shade_selector
+walk: done
+perf end: interface-ready-ms=5509 first-canvas-ms=19809 rss-kb=995624 peak-kb=995624 uptime-ms=605290
+done

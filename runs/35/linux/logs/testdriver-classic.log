@@ -1,0 +1,10 @@
+interface: classic (smallest side 1024 dp)
+perf classic-start: interface-ready-ms=5250 first-canvas-ms=-1 rss-kb=449832 peak-kb=449832 uptime-ms=11529
+screenshot /home/runner/work/krita/krita/shots-classic/classic-portrait-01-start.png ok
+OVERFLOW 01-start: KisWelcomePageWidget in QStackedWidget (617 > 409)
+screenshot /home/runner/work/krita/krita/shots-classic/classic-portrait-02-canvas.png ok
+perf classic-canvas: interface-ready-ms=5250 first-canvas-ms=16039 rss-kb=631428 peak-kb=631428 uptime-ms=18429
+screenshot /home/runner/work/krita/krita/shots-classic/classic-landscape-02-canvas.png ok
+screenshot /home/runner/work/krita/krita/shots-classic/classic-desktop-02-canvas.png ok
+perf classic-end: interface-ready-ms=5250 first-canvas-ms=16039 rss-kb=667216 peak-kb=667216 uptime-ms=24549
+done

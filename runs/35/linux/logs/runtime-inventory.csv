@@ -1,0 +1,840 @@
+kind,id,text,location,reachable
+action,"file_new","New...","Menu › File",yes
+action,"file_open","Open...","Menu › File",yes
+action,"no_entries","No Entries","Menu › File › Open Recent",yes
+action,"file_save","Save","Menu › File",yes
+action,"file_save_as","Save As...","Menu › File",yes
+action,"file_sessions","Sessions...","Menu › File",yes
+action,"file_import_file","Open existing Document as Untitled Document...","Menu › File",yes
+action,"file_export_file","Export...","Menu › File",yes
+action,"file_export_advanced","Export Advanced...","Menu › File",yes
+action,"file_import_animation","Import animation frames...","Menu › File",yes
+action,"file_import_video_animation","Import video animation...","Menu › File",yes
+action,"render_animation","Render Animation...","Menu › File",yes
+action,"save_incremental_version","Save Incremental Version","Menu › File",yes
+action,"save_incremental_backup","Save Incremental Backup","Menu › File",yes
+action,"create_template","Create Template From Image...","Menu › File",yes
+action,"create_copy","Create Copy From Current Image","Menu › File",yes
+action,"file_documentinfo","Document Information","Menu › File",yes
+action,"file_close","Close","Menu › File",yes
+action,"file_close_all","Close All","Menu › File",yes
+action,"file_quit","Quit","Menu › File",yes
+action,"edit_undo","Undo","Menu › Edit",yes
+action,"edit_redo","Redo","Menu › Edit",yes
+action,"edit_cut","Cut","Menu › Edit",yes
+action,"edit_copy","Copy","Menu › Edit",yes
+action,"cut_sharp","Cut (sharp)","Menu › Edit",yes
+action,"copy_sharp","Copy (sharp)","Menu › Edit",yes
+action,"copy_merged","Copy merged","Menu › Edit",yes
+action,"copy_layer_style","Copy Layer Style","Menu › Edit",yes
+action,"edit_paste","Paste","Menu › Edit",yes
+action,"paste_at","Paste at Cursor","Menu › Edit",yes
+action,"paste_into","Paste into Active Layer","Menu › Edit",yes
+action,"paste_new","Paste into New Image","Menu › Edit",yes
+action,"paste_as_reference","Paste as Reference Image","Menu › Edit",yes
+action,"paste_shape_style","Paste Shape Style","Menu › Edit",yes
+action,"paste_layer_style","Paste Layer Style","Menu › Edit",yes
+action,"clear","Clear","Menu › Edit",yes
+action,"fill_selection_foreground_color","Fill with Foreground Color","Menu › Edit",yes
+action,"fill_selection_background_color","Fill with Background Color","Menu › Edit",yes
+action,"fill_selection_pattern","Fill with Pattern","Menu › Edit",yes
+action,"fill_selection_foreground_color_opacity","Fill with Foreground Color (Opacity)","Menu › Edit › Fill Special",yes
+action,"fill_selection_background_color_opacity","Fill with Background Color (Opacity)","Menu › Edit › Fill Special",yes
+action,"fill_selection_pattern_opacity","Fill with Pattern (Opacity)","Menu › Edit › Fill Special",yes
+action,"stroke_shapes","Stroke selected shapes","Menu › Edit",yes
+action,"stroke_selection","Stroke Selection...","Menu › Edit",yes
+action,"sample_screen_color","Sample Screen Color","Menu › Edit",yes
+action,"sample_screen_color_real_canvas","Sample Screen Color (Sample Real Canvas)","Menu › Edit",yes
+action,"view_show_canvas_only","Show Canvas Only","Menu › View",yes
+action,"fullscreen","Full Screen Mode","Menu › View",yes
+action,"view_detached_canvas","Detach Canvas","Menu › View",yes
+action,"wrap_around_mode","Wrap Around Mode","Menu › View",yes
+action,"wrap_around_hv_axis","Wrap Around Both Directions","Menu › View › Wrap Around Mode Direction",yes
+action,"wrap_around_h_axis","Wrap Around Horizontally","Menu › View › Wrap Around Mode Direction",yes
+action,"wrap_around_v_axis","Wrap Around Vertically","Menu › View › Wrap Around Mode Direction",yes
+action,"level_of_detail_mode","Instant Preview Mode","Menu › View",yes
+action,"softProof","Soft Proofing","Menu › View",yes
+action,"gamutCheck","Out of Gamut Warnings","Menu › View",yes
+action,"view_zoom_in","Zoom In","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"view_zoom_out","Zoom Out","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"zoom_to_100pct","Zoom to 100%","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"zoom_to_fit","Fit to View","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"zoom_to_fit_width","Fit to View Width","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"zoom_to_fit_height","Fit to View Height","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"rotate_canvas_right","Rotate Canvas Right","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"rotate_canvas_left","Rotate Canvas Left","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"reset_canvas_rotation","Reset Canvas Rotation","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"mirror_canvas","Mirror View","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"mirror_canvas_around_cursor","Mirror View Around Cursor","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"mirror_canvas_around_canvas","Mirror View Around Canvas","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"reset_display","Reset Display","Menu › View › Zoom, Rotate, and Mirror",yes
+action,"view_print_size","View Print Size","Menu › View",yes
+action,"view_ruler","Show Rulers","Menu › View",yes
+action,"rulers_track_mouse","Rulers Track Pointer","Menu › View",yes
+action,"view_show_guides","Show Guides","Menu › View",yes
+action,"view_lock_guides","Lock Guides","Menu › View",yes
+action,"showStatusBar","Show Status Bar","Menu › View",yes
+action,"view_grid","Show Grid","Menu › View",yes
+action,"view_pixel_grid","Show Pixel Grid","Menu › View",yes
+action,"view_snap_to_guides","Snap to Guides","Menu › View › Snap To",yes
+action,"view_snap_to_grid","Snap To Grid","Menu › View › Snap To",yes
+action,"view_snap_to_pixel","Snap Pixel","Menu › View › Snap To",yes
+action,"view_snap_orthogonal","Snap Orthogonal","Menu › View › Snap To",yes
+action,"view_snap_node","Snap Node","Menu › View › Snap To",yes
+action,"view_snap_extension","Snap Extension","Menu › View › Snap To",yes
+action,"view_snap_intersection","Snap Intersection","Menu › View › Snap To",yes
+action,"view_snap_bounding_box","Snap Bounding Box","Menu › View › Snap To",yes
+action,"view_snap_image_bounds","Snap Image Bounds","Menu › View › Snap To",yes
+action,"view_snap_image_center","Snap Image Center","Menu › View › Snap To",yes
+action,"view_toggle_painting_assistants","Show Painting Assistants","Menu › View",yes
+action,"view_toggle_assistant_previews","Show Assistant Previews","Menu › View",yes
+action,"view_toggle_reference_images","Show Reference Images","Menu › View",yes
+action,"image_properties","Properties...","Menu › Image",yes
+action,"image_color","Image Background Color and Transparency...","Menu › Image",yes
+action,"imagecolorspaceconversion","Convert Image Color Space...","Menu › Image",yes
+action,"trim_to_image","Trim to Image Size","Menu › Image",yes
+action,"resizeimagetolayer","Trim to Current Layer","Menu › Image",yes
+action,"resizeimagetoselection","Trim to Selection","Menu › Image",yes
+action,"purge_unused_image_data","Purge Unused Image Data","Menu › Image",yes
+action,"rotateimage","Rotate Image...","Menu › Image › Rotate",yes
+action,"rotateImageCW90","Rotate Image 90° to the Right","Menu › Image › Rotate",yes
+action,"rotateImageCCW90","Rotate Image 90° to the Left","Menu › Image › Rotate",yes
+action,"rotateImage180","Rotate Image 180°","Menu › Image › Rotate",yes
+action,"shearimage","Shear Image...","Menu › Image",yes
+action,"mirrorImageHorizontal","Mirror Image Horizontally","Menu › Image",yes
+action,"mirrorImageVertical","Mirror Image Vertically","Menu › Image",yes
+action,"imagesize","Scale Image To New Size...","Menu › Image",yes
+action,"offsetimage","Offset Image...","Menu › Image",yes
+action,"canvassize","Resize Canvas...","Menu › Image",yes
+action,"imagesplit","Image Split","Menu › Image",yes
+action,"waveletdecompose","Wavelet Decompose ...","Menu › Image",yes
+action,"separate","Separate Image...","Menu › Image",yes
+action,"cut_layer_clipboard","Cut Layer","Menu › Layer",yes
+action,"copy_layer_clipboard","Copy Layer","Menu › Layer",yes
+action,"paste_layer_from_clipboard","Paste Layer","Menu › Layer",yes
+action,"add_new_paint_layer","Add Paint Layer","Menu › Layer › New",yes
+action,"add_new_group_layer","Add Group Layer","Menu › Layer › New",yes
+action,"add_new_clone_layer","Add Clone Layer","Menu › Layer › New",yes
+action,"add_new_shape_layer","Add Vector Layer","Menu › Layer › New",yes
+action,"add_new_adjustment_layer","Add Filter Layer...","Menu › Layer › New",yes
+action,"add_new_fill_layer","Add Fill Layer...","Menu › Layer › New",yes
+action,"add_new_file_layer","Add File Layer...","Menu › Layer › New",yes
+action,"add_new_transparency_mask","Add Transparency Mask","Menu › Layer › New",yes
+action,"add_new_filter_mask","Add Filter Mask...","Menu › Layer › New",yes
+action,"add_new_colorize_mask","Add Colorize Mask","Menu › Layer › New",yes
+action,"add_new_transform_mask","Add Transform Mask","Menu › Layer › New",yes
+action,"add_new_selection_mask","Add Local Selection","Menu › Layer › New",yes
+action,"new_from_visible","New Layer From Visible","Menu › Layer › New",yes
+action,"duplicatelayer","Duplicate Layer or Mask","Menu › Layer › New",yes
+action,"cut_selection_to_new_layer","Cut Selection to New Layer","Menu › Layer › New",yes
+action,"copy_selection_to_new_layer","Copy Selection to New Layer","Menu › Layer › New",yes
+action,"save_node_as_image","Save Layer/Mask...","Menu › Layer › Import/Export",yes
+action,"save_vector_node_to_svg","Save Vector Layer as SVG...","Menu › Layer › Import/Export",yes
+action,"save_groups_as_images","Save Group Layers...","Menu › Layer › Import/Export",yes
+action,"import_layer_from_file","Import Layer...","Menu › Layer › Import/Export",yes
+action,"import_layer_as_paint_layer","as Paint Layer...","Menu › Layer › Import/Export › Import",yes
+action,"import_layer_as_transparency_mask","as Transparency Mask...","Menu › Layer › Import/Export › Import",yes
+action,"import_layer_as_filter_mask","as Filter Mask...","Menu › Layer › Import/Export › Import",yes
+action,"import_layer_as_selection_mask","as Selection Mask...","Menu › Layer › Import/Export › Import",yes
+action,"convert_to_paint_layer","Convert to Paint Layer","Menu › Layer › Convert",yes
+action,"convert_to_transparency_mask","Convert to Transparency Mask","Menu › Layer › Convert",yes
+action,"convert_to_filter_mask","Convert to Filter Mask...","Menu › Layer › Convert",yes
+action,"convert_to_selection_mask","Convert to Selection Mask","Menu › Layer › Convert",yes
+action,"convert_to_file_layer","Convert to File Layer...","Menu › Layer › Convert",yes
+action,"convert_group_to_animated","Convert Group to Animated Layer","Menu › Layer › Convert",yes
+action,"layercolorspaceconversion","Convert Layer Color Space...","Menu › Layer › Convert",yes
+action,"select_all_layers","All Layers","Menu › Layer › Select",yes
+action,"select_visible_layers","Visible Layers","Menu › Layer › Select",yes
+action,"select_invisible_layers","Invisible Layers","Menu › Layer › Select",yes
+action,"select_locked_layers","Locked Layers","Menu › Layer › Select",yes
+action,"select_unlocked_layers","Unlocked Layers","Menu › Layer › Select",yes
+action,"create_quick_group","Group layers","Menu › Layer › Group",yes
+action,"create_quick_clipping_group","Quick Clipping Group","Menu › Layer › Group",yes
+action,"quick_ungroup","Ungroup layers","Menu › Layer › Group",yes
+action,"mirrorNodeX","Mirror Layers Horizontally","Menu › Layer › Transform",yes
+action,"mirrorNodeY","Mirror Layers Vertically","Menu › Layer › Transform",yes
+action,"layersize","Scale Layers to new Size...","Menu › Layer › Transform",yes
+action,"rotatelayer","Rotate Layers...","Menu › Layer › Transform › Rotate",yes
+action,"rotateLayerCW90","Rotate Layers 90° to the Right","Menu › Layer › Transform › Rotate",yes
+action,"rotateLayerCCW90","Rotate Layers 90° to the Left","Menu › Layer › Transform › Rotate",yes
+action,"rotateLayer180","Rotate Layers 180°","Menu › Layer › Transform › Rotate",yes
+action,"shearlayer","Shear Layers...","Menu › Layer › Transform",yes
+action,"offsetlayer","Offset Layers...","Menu › Layer › Transform",yes
+action,"mirrorAllNodesX","Mirror All Layers Horizontally","Menu › Layer › Transform All Layers",yes
+action,"mirrorAllNodesY","Mirror All Layers Vertically","Menu › Layer › Transform All Layers",yes
+action,"scaleAllLayers","Scale All Layers to new Size...","Menu › Layer › Transform All Layers",yes
+action,"rotateAllLayers","Rotate All Layers...","Menu › Layer › Transform All Layers › Rotate",yes
+action,"rotateAllLayersCW90","Rotate All Layers 90° to the Right","Menu › Layer › Transform All Layers › Rotate",yes
+action,"rotateAllLayersCCW90","Rotate All Layers 90° to the Left","Menu › Layer › Transform All Layers › Rotate",yes
+action,"rotateAllLayers180","Rotate All Layers 180°","Menu › Layer › Transform All Layers › Rotate",yes
+action,"shearAllLayers","Shear All Layers...","Menu › Layer › Transform All Layers",yes
+action,"split_alpha_into_mask","Alpha into Mask","Menu › Layer › Split › Split Alpha",yes
+action,"split_alpha_write","Write as Alpha","Menu › Layer › Split › Split Alpha",yes
+action,"split_alpha_save_merged","Save Merged...","Menu › Layer › Split › Split Alpha",yes
+action,"layersplit","Split Layer...","Menu › Layer › Split",yes
+action,"clones_array","Clones Array...","Menu › Layer › Split",yes
+action,"EditLayerMetaData","Edit metadata...","Menu › Layer",yes
+action,"merge_layer","Merge with Layer Below","Menu › Layer",yes
+action,"flatten_layer","Flatten Layer","Menu › Layer",yes
+action,"flatten_image","Flatten image","Menu › Layer",yes
+action,"layer_style","Layer Style...","Menu › Layer",yes
+action,"select_all","Select All","Menu › Select",yes
+action,"deselect","Deselect","Menu › Select",yes
+action,"reselect","Reselect","Menu › Select",yes
+action,"invert_selection","Invert Selection","Menu › Select",yes
+action,"edit_selection","Edit Selection","Menu › Select",yes
+action,"convert_to_vector_selection","Convert to Vector Selection","Menu › Select",yes
+action,"convert_to_raster_selection","Convert to Raster Selection","Menu › Select",yes
+action,"convert_shapes_to_vector_selection","Convert Shapes to Vector Selection","Menu › Select",yes
+action,"convert_selection_to_shape","Convert to Shape","Menu › Select",yes
+action,"toggle_display_selection","Display Selection","Menu › Select",yes
+action,"show-global-selection-mask","Show Global Selection Mask","Menu › Select",yes
+action,"selectionscale","Scale...","Menu › Select",yes
+action,"colorrange","Select from Color Range...","Menu › Select",yes
+action,"selectopaque","Select Opaque (Replace)","Menu › Select › Select Opaque",yes
+action,"selectopaque_add","Select Opaque (Add)","Menu › Select › Select Opaque",yes
+action,"selectopaque_subtract","Select Opaque (Subtract)","Menu › Select › Select Opaque",yes
+action,"selectopaque_intersect","Select Opaque (Intersect)","Menu › Select › Select Opaque",yes
+action,"featherselection","Feather Selection...","Menu › Select",yes
+action,"growselection","Grow Selection...","Menu › Select",yes
+action,"shrinkselection","Shrink Selection...","Menu › Select",yes
+action,"borderselection","Border Selection...","Menu › Select",yes
+action,"smoothselection","Smooth","Menu › Select",yes
+action,"enable_sap","Enable Selection Actions Bar","Menu › Select",yes
+action,"filter_apply_again","Apply Filter Again","Menu › Filter",yes
+action,"filter_apply_reprompt","Apply Filter Again (Reprompt)","Menu › Filter",yes
+action,"krita_filter_asc-cdl","Slope, Offset, Power...","Menu › Filter › Adjust",yes
+action,"krita_filter_autocontrast","Auto Contrast","Menu › Filter › Adjust",yes
+action,"krita_filter_burn","Burn...","Menu › Filter › Adjust",yes
+action,"krita_filter_colorbalance","Color Balance...","Menu › Filter › Adjust",yes
+action,"krita_filter_crosschannel","Cross-channel adjustment curves...","Menu › Filter › Adjust",yes
+action,"krita_filter_desaturate","Desaturate...","Menu › Filter › Adjust",yes
+action,"krita_filter_dodge","Dodge...","Menu › Filter › Adjust",yes
+action,"krita_filter_hsvadjustment","HSV Adjustment...","Menu › Filter › Adjust",yes
+action,"krita_filter_invert","Invert","Menu › Filter › Adjust",yes
+action,"krita_filter_levels","Levels...","Menu › Filter › Adjust",yes
+action,"krita_filter_perchannel","Color Adjustment curves...","Menu › Filter › Adjust",yes
+action,"krita_filter_threshold","Threshold...","Menu › Filter › Adjust",yes
+action,"krita_filter_halftone","Halftone...","Menu › Filter › Artistic",yes
+action,"krita_filter_indexcolors","Index Colors...","Menu › Filter › Artistic",yes
+action,"krita_filter_oilpaint","Oilpaint...","Menu › Filter › Artistic",yes
+action,"krita_filter_pixelize","Pixelize...","Menu › Filter › Artistic",yes
+action,"krita_filter_posterize","Posterize...","Menu › Filter › Artistic",yes
+action,"krita_filter_raindrops","Raindrops...","Menu › Filter › Artistic",yes
+action,"krita_filter_blur","Blur...","Menu › Filter › Blur",yes
+action,"krita_filter_gaussian blur","Gaussian Blur...","Menu › Filter › Blur",yes
+action,"krita_filter_lens blur","Lens Blur...","Menu › Filter › Blur",yes
+action,"krita_filter_motion blur","Motion Blur...","Menu › Filter › Blur",yes
+action,"krita_filter_colortoalpha","Color to Alpha...","Menu › Filter › Colors",yes
+action,"krita_filter_colortransfer","Color Transfer...","Menu › Filter › Colors",yes
+action,"krita_filter_fastcoloroverlay","Fast Color Overlay...","Menu › Filter › Colors",yes
+action,"krita_filter_maximize","Maximize Channel","Menu › Filter › Colors",yes
+action,"krita_filter_minimize","Minimize Channel","Menu › Filter › Colors",yes
+action,"krita_filter_propagatecolors","Propagate Colors...","Menu › Filter › Colors",yes
+action,"krita_filter_edge detection","Edge Detection...","Menu › Filter › Edge Detection",yes
+action,"krita_filter_gaussianhighpass","Gaussian High Pass...","Menu › Filter › Edge Detection",yes
+action,"krita_filter_height to normal","Height to Normal Map...","Menu › Filter › Edge Detection",yes
+action,"krita_filter_emboss","Emboss with Variable Depth...","Menu › Filter › Emboss",yes
+action,"krita_filter_emboss all directions","Emboss in All Directions","Menu › Filter › Emboss",yes
+action,"krita_filter_emboss horizontal and vertical","Emboss Horizontal & Vertical","Menu › Filter › Emboss",yes
+action,"krita_filter_emboss horizontal only","Emboss Horizontal Only","Menu › Filter › Emboss",yes
+action,"krita_filter_emboss laplascian","Emboss (Laplacian)","Menu › Filter › Emboss",yes
+action,"krita_filter_emboss vertical only","Emboss Vertical Only","Menu › Filter › Emboss",yes
+action,"krita_filter_gaussiannoisereducer","Gaussian Noise Reduction...","Menu › Filter › Enhance",yes
+action,"krita_filter_mean removal","Mean Removal","Menu › Filter › Enhance",yes
+action,"krita_filter_sharpen","Sharpen","Menu › Filter › Enhance",yes
+action,"krita_filter_unsharp","Unsharp Mask...","Menu › Filter › Enhance",yes
+action,"krita_filter_waveletnoisereducer","Wavelet Noise Reducer...","Menu › Filter › Enhance",yes
+action,"krita_filter_gradientmap","Gradient Map...","Menu › Filter › Map",yes
+action,"krita_filter_normalize","Normalize","Menu › Filter › Map",yes
+action,"krita_filter_palettize","Palettize...","Menu › Filter › Map",yes
+action,"krita_filter_phongbumpmap","Phong Bumpmap...","Menu › Filter › Map",yes
+action,"krita_filter_roundcorners","Round Corners...","Menu › Filter › Map",yes
+action,"krita_filter_smalltiles","Small Tiles...","Menu › Filter › Map",yes
+action,"krita_filter_noise","Random Noise...","Menu › Filter › Other",yes
+action,"krita_filter_randompick","Random Pick...","Menu › Filter › Other",yes
+action,"krita_filter_resettransparent","Reset Transparent","Menu › Filter › Other",yes
+action,"krita_filter_wave","Wave...","Menu › Filter › Other",yes
+action,"QMic","Start G'MIC-Qt","Menu › Filter",yes
+action,"QMicAgain","Re-apply the last G'MIC filter","Menu › Filter",yes
+action,"color_space","Color Space","Menu › Tools › Scripts",yes
+action,"document_tools","Document Tools","Menu › Tools › Scripts",yes
+action,"export_layers","Export Layers","Menu › Tools › Scripts",yes
+action,"filter_manager","Filter Manager","Menu › Tools › Scripts",yes
+action,"mutate","Mutate","Menu › Tools › Scripts",yes
+action,"plugin_importer_file","Import Python Plugin from File...","Menu › Tools › Scripts",yes
+action,"plugin_importer_web","Import Python Plugin from Web...","Menu › Tools › Scripts",yes
+action,"python_scripter","Scripter","Menu › Tools › Scripts",yes
+action,"ten_brushes","Ten Brushes","Menu › Tools › Scripts",yes
+action,"ten_scripts","Ten Scripts","Menu › Tools › Scripts",yes
+action,"mobileui_mode_auto","Phone interface: automatic (phones only)","Menu › Settings › Phone interface",yes
+action,"mobileui_mode_phone","Phone interface: always","Menu › Settings › Phone interface",yes
+action,"mobileui_mode_classic","Phone interface: off (classic Krita)","Menu › Settings › Phone interface",yes
+action,"options_configure","Configure Krita...","Menu › Settings",yes
+action,"manage_bundles","Manage Resource Libraries...","Menu › Settings",yes
+action,"manage_resources","Manage Resources...","Menu › Settings",yes
+action,"options_configure_toolbars","Configure Toolbars...","Menu › Settings",yes
+action,"mainToolBar","File","Menu › Settings › Toolbars Shown",yes
+action,"editToolBar","Edit","Menu › Settings › Toolbars Shown",yes
+action,"BrushesAndStuff","Brushes and Stuff","Menu › Settings › Toolbars Shown",yes
+action,"customToolBar1","Custom toolbar 1","Menu › Settings › Toolbars Shown",yes
+action,"customToolBar2","Custom toolbar 2","Menu › Settings › Toolbars Shown",yes
+action,"lock_toolbars","Lock Toolbars","Menu › Settings",yes
+action,"view_toggledockers","Show Dockers","Menu › Settings",yes
+action,"","Advanced Color Selector","Menu › Settings › Dockers",yes
+action,"","Animation Curves","Menu › Settings › Dockers",yes
+action,"","Animation Timeline","Menu › Settings › Dockers",yes
+action,"","Arrange","Menu › Settings › Dockers",yes
+action,"","Artistic Color Selector","Menu › Settings › Dockers",yes
+action,"","Brush Preset History","Menu › Settings › Dockers",yes
+action,"","Brush Presets","Menu › Settings › Dockers",yes
+action,"","Channels","Menu › Settings › Dockers",yes
+action,"","Comics Manager","Menu › Settings › Dockers",yes
+action,"","Compositions","Menu › Settings › Dockers",yes
+action,"","Digital Colors Mixer","Menu › Settings › Dockers",yes
+action,"","Gamut Masks","Menu › Settings › Dockers",yes
+action,"","Grid and Guides","Menu › Settings › Dockers",yes
+action,"","Histogram","Menu › Settings › Dockers",yes
+action,"","LUT Management","Menu › Settings › Dockers",yes
+action,"","Last Documents Docker","Menu › Settings › Dockers",yes
+action,"","Layers","Menu › Settings › Dockers",yes
+action,"","Log Viewer","Menu › Settings › Dockers",yes
+action,"","Mutator","Menu › Settings › Dockers",yes
+action,"","On-Canvas Brush Editor","Menu › Settings › Dockers",yes
+action,"","Onion Skins","Menu › Settings › Dockers",yes
+action,"","Overview","Menu › Settings › Dockers",yes
+action,"","Palette","Menu › Settings › Dockers",yes
+action,"","Patterns","Menu › Settings › Dockers",yes
+action,"","Quick Settings Docker","Menu › Settings › Dockers",yes
+action,"","Recorder","Menu › Settings › Dockers",yes
+action,"","Small Color Selector","Menu › Settings › Dockers",yes
+action,"","Snapshot Docker","Menu › Settings › Dockers",yes
+action,"","Specific Color Selector","Menu › Settings › Dockers",yes
+action,"","Storyboard","Menu › Settings › Dockers",yes
+action,"","Symbol Libraries","Menu › Settings › Dockers",yes
+action,"","Task Sets","Menu › Settings › Dockers",yes
+action,"","Text Properties","Menu › Settings › Dockers",yes
+action,"","Tool Options","Menu › Settings › Dockers",yes
+action,"","Toolbox","Menu › Settings › Dockers",yes
+action,"","Touch Docker","Menu › Settings › Dockers",yes
+action,"","Undo History","Menu › Settings › Dockers",yes
+action,"","Wide Gamut Color Selector","Menu › Settings › Dockers",yes
+action,"","Workflow Buttons","Menu › Settings › Dockers",yes
+action,"","Breeze Dark","Menu › Settings › Themes",yes
+action,"","Breeze High Contrast","Menu › Settings › Themes",yes
+action,"","Breeze Light","Menu › Settings › Themes",yes
+action,"","Krita blender","Menu › Settings › Themes",yes
+action,"","Krita bright","Menu › Settings › Themes",yes
+action,"","Krita dark","Menu › Settings › Themes",yes
+action,"","Krita dark orange","Menu › Settings › Themes",yes
+action,"","Krita darker","Menu › Settings › Themes",yes
+action,"","Krita neutral","Menu › Settings › Themes",yes
+action,"","Windows","Menu › Settings › Styles",yes
+action,"","Fusion","Menu › Settings › Styles",yes
+action,"switch_application_language","Switch Application Language...","Menu › Settings",yes
+action,"","Anonymous","Menu › Settings › Active Author Profile",yes
+action,"reset_configurations","Reset All Settings","Menu › Settings",yes
+action,"view_newwindow","New Window","Menu › Window",yes
+action,"","Unnamed","Menu › Window › New View",yes
+action,"","Animation","Menu › Window › Workspace",yes
+action,"","Big_Paint_2","Menu › Window › Workspace",yes
+action,"","Big_Paint","Menu › Window › Workspace",yes
+action,"","Big_Vector","Menu › Window › Workspace",yes
+action,"","Default","Menu › Window › Workspace",yes
+action,"","Minimal","Menu › Window › Workspace",yes
+action,"","Small_Vector","Menu › Window › Workspace",yes
+action,"","Storyboarding","Menu › Window › Workspace",yes
+action,"","VFX_Paint","Menu › Window › Workspace",yes
+action,"","Import Workspace...","Menu › Window › Workspace",yes
+action,"","New Workspace...","Menu › Window › Workspace",yes
+action,"file_close","Close","Menu › Window",yes
+action,"file_close_all","Close All","Menu › Window",yes
+action,"windows_next","Next","Menu › Window",yes
+action,"windows_previous","Previous","Menu › Window",yes
+action,"","1","Menu › Window",yes
+action,"help_contents","Krita Handbook","Menu › Help",yes
+action,"help_report_bug","Report Bug...","Menu › Help",yes
+action,"buginfo","Show Krita log for bug reports.","Menu › Help",yes
+action,"sysinfo","Show system information for bug reports.","Menu › Help",yes
+action,"help_about_app","About Krita","Menu › Help",yes
+action,"help_about_kde","About KDE","Menu › Help",yes
+action,"add_scalar_keyframes","Add scalar keyframes","Menu › All commands › Animation",yes
+action,"auto_key","Auto Frame Mode","Menu › All commands › Animation",yes
+action,"clear_animation_cache","Clear Cache","Menu › All commands › Animation",yes
+action,"copy_frames_as_clones","Clone Keyframes","Menu › All commands › Animation",yes
+action,"copy_columns_to_clipboard","Copy Columns","Menu › All commands › Animation",yes
+action,"copy_frames","Copy Keyframes","Menu › All commands › Animation",yes
+action,"add_blank_frame","Create Blank Frame","Menu › All commands › Animation",yes
+action,"add_duplicate_frame","Create Duplicate Frame","Menu › All commands › Animation",yes
+action,"cut_columns_to_clipboard","Cut Columns","Menu › All commands › Animation",yes
+action,"cut_frames","Cut Keyframes","Menu › All commands › Animation",yes
+action,"drop_frames","Drop Frames","Menu › All commands › Animation",yes
+action,"first_frame","First Frame","Menu › All commands › Animation",yes
+action,"insert_column_left","Insert Column Left","Menu › All commands › Animation",yes
+action,"insert_column_right","Insert Column Right","Menu › All commands › Animation",yes
+action,"insert_hold_column","Insert Hold Column","Menu › All commands › Animation",yes
+action,"insert_hold_frame","Insert Hold Frame","Menu › All commands › Animation",yes
+action,"insert_keyframe_left","Insert Keyframe Left","Menu › All commands › Animation",yes
+action,"insert_keyframe_right","Insert Keyframe Right","Menu › All commands › Animation",yes
+action,"insert_multiple_columns","Insert Multiple Columns","Menu › All commands › Animation",yes
+action,"insert_multiple_hold_columns","Insert Multiple Hold Columns","Menu › All commands › Animation",yes
+action,"insert_multiple_hold_frames","Insert Multiple Hold Frames","Menu › All commands › Animation",yes
+action,"insert_multiple_keyframes","Insert Multiple Keyframes","Menu › All commands › Animation",yes
+action,"last_frame","Last Frame","Menu › All commands › Animation",yes
+action,"make_clones_unique","Make Unique","Menu › All commands › Animation",yes
+action,"mirror_columns","Mirror Columns","Menu › All commands › Animation",yes
+action,"mirror_frames","Mirror Frames","Menu › All commands › Animation",yes
+action,"next_frame","Next Frame","Menu › All commands › Animation",yes
+action,"next_keyframe","Next Keyframe","Menu › All commands › Animation",yes
+action,"next_matching_keyframe","Next Matching Keyframe","Menu › All commands › Animation",yes
+action,"next_unfiltered_keyframe","Next Unfiltered Keyframe","Menu › All commands › Animation",yes
+action,"paste_columns_from_clipboard","Paste Columns","Menu › All commands › Animation",yes
+action,"paste_frames","Paste Keyframes","Menu › All commands › Animation",yes
+action,"pin_to_timeline","Pin to Timeline","Menu › All commands › Animation",yes
+action,"toggle_playback","Play / pause animation","Menu › All commands › Animation",yes
+action,"previous_frame","Previous Frame","Menu › All commands › Animation",yes
+action,"previous_keyframe","Previous Keyframe","Menu › All commands › Animation",yes
+action,"previous_matching_keyframe","Previous Matching Keyframe","Menu › All commands › Animation",yes
+action,"previous_unfiltered_keyframe","Previous Unfiltered Keyframe","Menu › All commands › Animation",yes
+action,"remove_columns","Remove Column","Menu › All commands › Animation",yes
+action,"remove_columns_and_pull","Remove Column and Pull","Menu › All commands › Animation",yes
+action,"remove_frames_and_pull","Remove Frame and Pull","Menu › All commands › Animation",yes
+action,"remove_hold_column","Remove Hold Column","Menu › All commands › Animation",yes
+action,"remove_hold_frame","Remove Hold Frame","Menu › All commands › Animation",yes
+action,"remove_frames","Remove Keyframe","Menu › All commands › Animation",yes
+action,"remove_multiple_hold_columns","Remove Multiple Hold Columns","Menu › All commands › Animation",yes
+action,"remove_multiple_hold_frames","Remove Multiple Hold Frames","Menu › All commands › Animation",yes
+action,"remove_scalar_keyframe","Remove scalar keyframe","Menu › All commands › Animation",yes
+action,"set_end_time","Set End Time","Menu › All commands › Animation",yes
+action,"set_start_time","Set Start Time","Menu › All commands › Animation",yes
+action,"stop_playback","Stop animation","Menu › All commands › Animation",yes
+action,"toggle_onion_skin","Toggle onion skin","Menu › All commands › Animation",yes
+action,"update_playback_range","Update Playback Range","Menu › All commands › Animation",yes
+action,"Next Blending Mode","Next Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Previous Blending Mode","Previous Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Behind Blending Mode","Select Behind Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Clear Blending Mode","Select Clear Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Color Blending Mode","Select Color Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Color Burn Blending Mode","Select Color Burn Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Color Dodge Blending Mode","Select Color Dodge Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Darken Blending Mode","Select Darken Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Difference Blending Mode","Select Difference Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Dissolve Blending Mode","Select Dissolve Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Exclusion Blending Mode","Select Exclusion Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Hard Light Blending Mode","Select Hard Light Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Hard Mix Blending Mode","Select Hard Mix Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Hard Overlay Blending Mode","Select Hard Overlay Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Hue Blending Mode","Select Hue Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Lighten Blending Mode","Select Lighten Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Linear Burn Blending Mode","Select Linear Burn Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Linear Dodge Blending Mode","Select Linear Dodge Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Linear Light Blending Mode","Select Linear Light Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Luminosity Blending Mode","Select Luminosity Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Multiply Blending Mode","Select Multiply Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Normal Blending Mode","Select Normal Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Overlay Blending Mode","Select Overlay Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Pin Light Blending Mode","Select Pin Light Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Saturation Blending Mode","Select Saturation Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Screen Blending Mode","Select Screen Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Soft Light Blending Mode","Select Soft Light Blending Mode","Menu › All commands › Blending Modes",yes
+action,"Select Vivid Light Blending Mode","Select Vivid Light Blending Mode","Menu › All commands › Blending Modes",yes
+action,"brushslider1","Brush option slider 1","Menu › All commands › Brushes and Stuff",yes
+action,"brushslider2","Brush option slider 2","Menu › All commands › Brushes and Stuff",yes
+action,"brushslider3","Brush option slider 3","Menu › All commands › Brushes and Stuff",yes
+action,"brushslider4","Brush option slider 4","Menu › All commands › Brushes and Stuff",yes
+action,"brushslider5","Brush option slider 5","Menu › All commands › Brushes and Stuff",yes
+action,"chooseBackgroundColor","Choose background colour","Menu › All commands › Brushes and Stuff",yes
+action,"dual","Choose foreground and background colors","Menu › All commands › Brushes and Stuff",yes
+action,"chooseForegroundColor","Choose foreground colour","Menu › All commands › Brushes and Stuff",yes
+action,"gradients","Gradients","Menu › All commands › Brushes and Stuff",yes
+action,"mirror_actions","Mirror","Menu › All commands › Brushes and Stuff",yes
+action,"patterns","Patterns","Menu › All commands › Brushes and Stuff",yes
+action,"workspaces","Workspaces","Menu › All commands › Brushes and Stuff",yes
+action,"file_open_recent","Open Recent","Menu › All commands › File",yes
+action,"render_animation_again","Render Animation Again","Menu › All commands › File",yes
+action,"adjust_filters","Adjust","Menu › All commands › Filter",yes
+action,"artistic_filters","Artistic","Menu › All commands › Filter",yes
+action,"blur_filters","Blur","Menu › All commands › Filter",yes
+action,"color_filters","Colors","Menu › All commands › Filter",yes
+action,"edge_filters","Edge Detection","Menu › All commands › Filter",yes
+action,"emboss_filters","Emboss","Menu › All commands › Filter",yes
+action,"enhance_filters","Enhance","Menu › All commands › Filter",yes
+action,"map_filters","Map","Menu › All commands › Filter",yes
+action,"other_filters","Other","Menu › All commands › Filter",yes
+action,"windows_cascade","Cascade","Menu › All commands › General",yes
+action,"create_snapshot","Create Snapshot","Menu › All commands › General",yes
+action,"mainToolBar","Hide File Toolbar","Menu › All commands › General",yes
+action,"open_resources_directory","Open Resources Folder","Menu › All commands › General",yes
+action,"remove_snapshot","Remove Selected Snapshot","Menu › All commands › General",yes
+action,"rename_composition","Rename Composition...","Menu › All commands › General",yes
+action,"command_bar_open","Search Actions","Menu › All commands › General",yes
+action,"show_brush_editor","Show Brush Editor","Menu › All commands › General",yes
+action,"show_brush_presets","Show Brush Presets","Menu › All commands › General",yes
+action,"docker_box","Show Docker Box","Menu › All commands › General",yes
+action,"show_mypaint_shade_selector","Show MyPaint shade selector","Menu › All commands › General",yes
+action,"show_color_history","Show color history","Menu › All commands › General",yes
+action,"show_color_selector","Show color selector","Menu › All commands › General",yes
+action,"show_common_colors","Show common colors","Menu › All commands › General",yes
+action,"show_minimal_shade_selector","Show minimal shade selector","Menu › All commands › General",yes
+action,"switchto_snapshot","Switch to Selected Snapshot","Menu › All commands › General",yes
+action,"windows_tile","Tile","Menu › All commands › General",yes
+action,"tablet_debugger","Toggle Tablet Debugger","Menu › All commands › General",yes
+action,"update_composition","Update Composition","Menu › All commands › General",yes
+action,"ruler_pixel_multiple2","Use multiple of 2 for pixel scale","Menu › All commands › General",yes
+action,"object_align_vertical_bottom","Align Bottom","Menu › All commands › Interaction Tool",yes
+action,"object_align_horizontal_left","Align Left","Menu › All commands › Interaction Tool",yes
+action,"object_align_horizontal_right","Align Right","Menu › All commands › Interaction Tool",yes
+action,"object_align_vertical_top","Align Top","Menu › All commands › Interaction Tool",yes
+action,"object_order_front","Bring to Front","Menu › All commands › Interaction Tool",yes
+action,"text_type_inline_wrap","Convert Text To Inline Wrapped","Menu › All commands › Interaction Tool",yes
+action,"text_type_pre_positioned","Convert Text To Pre-positioned","Menu › All commands › Interaction Tool",yes
+action,"text_type_preformatted","Convert Text To Preformatted","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_vertical_bottom","Distribute Bottom","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_horizontal_center","Distribute Centers Horizontally","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_vertical_center","Distribute Centers Vertically","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_horizontal_gaps","Distribute Horizontal Gap","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_horizontal_left","Distribute Left","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_horizontal_right","Distribute Right","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_vertical_top","Distribute Top","Menu › All commands › Interaction Tool",yes
+action,"object_distribute_vertical_gaps","Distribute Vertical Gap","Menu › All commands › Interaction Tool",yes
+action,"add_shape_to_flow_area","Flow Text in Shape","Menu › All commands › Interaction Tool",yes
+action,"object_group","Group shapes","Menu › All commands › Interaction Tool",yes
+action,"object_align_horizontal_center","Horizontally Center","Menu › All commands › Interaction Tool",yes
+action,"object_intersect","Intersect","Menu › All commands › Interaction Tool",yes
+action,"object_order_lower","Lower","Menu › All commands › Interaction Tool",yes
+action,"object_transform_mirror_horizontally","Mirror Horizontally","Menu › All commands › Interaction Tool",yes
+action,"object_transform_mirror_vertically","Mirror Vertically","Menu › All commands › Interaction Tool",yes
+action,"flow_shape_order_earlier","Move Shape Earlier In Chain.","Menu › All commands › Interaction Tool",yes
+action,"flow_shape_order_later","Move Shape Later In Chain.","Menu › All commands › Interaction Tool",yes
+action,"put_text_on_path","Put Text On Path","Menu › All commands › Interaction Tool",yes
+action,"object_order_raise","Raise","Menu › All commands › Interaction Tool",yes
+action,"remove_shapes_from_text_flow","Remove Shapes from Text Chain","Menu › All commands › Interaction Tool",yes
+action,"object_transform_reset","Reset Transformations","Menu › All commands › Interaction Tool",yes
+action,"object_transform_rotate_180","Rotate 180°","Menu › All commands › Interaction Tool",yes
+action,"object_transform_rotate_90_ccw","Rotate 90° CCW","Menu › All commands › Interaction Tool",yes
+action,"object_transform_rotate_90_cw","Rotate 90° CW","Menu › All commands › Interaction Tool",yes
+action,"object_order_back","Send to Back","Menu › All commands › Interaction Tool",yes
+action,"flow_shape_order_back","Set Flow Shape as Last","Menu › All commands › Interaction Tool",yes
+action,"flow_shape_order_front","Set Shape As First In Chain","Menu › All commands › Interaction Tool",yes
+action,"object_split","Split","Menu › All commands › Interaction Tool",yes
+action,"object_subtract","Subtract","Menu › All commands › Interaction Tool",yes
+action,"subtract_shape_from_flow_area","Subtract Shape from Text Chain","Menu › All commands › Interaction Tool",yes
+action,"flow_shape_type_toggle","Toggle Flow Shape Type","Menu › All commands › Interaction Tool",yes
+action,"object_ungroup","Ungroup shapes","Menu › All commands › Interaction Tool",yes
+action,"object_unite","Unite","Menu › All commands › Interaction Tool",yes
+action,"object_align_vertical_center","Vertically Center","Menu › All commands › Interaction Tool",yes
+action,"activateNextLayer","Activate next layer","Menu › All commands › Layers",yes
+action,"activateNextSiblingLayer","Activate next sibling layer, skipping over groups.","Menu › All commands › Layers",yes
+action,"activatePreviousLayer","Activate previous layer","Menu › All commands › Layers",yes
+action,"activatePreviousSiblingLayer","Activate previous sibling layer, skipping over groups.","Menu › All commands › Layers",yes
+action,"switchToPreviouslyActiveNode","Activate previously selected layer","Menu › All commands › Layers",yes
+action,"add_new_fast_color_overlay_mask","Add Color Overlay Mask","Menu › All commands › Layers",yes
+action,"force_palette_colors","Force Palette Colors","Menu › All commands › Layers",yes
+action,"isolate_active_group","Isolate Active Group","Menu › All commands › Layers",yes
+action,"isolate_active_layer","Isolate Active Layer","Menu › All commands › Layers",yes
+action,"move_layer_down","Move Layer or Mask Down","Menu › All commands › Layers",yes
+action,"move_layer_up","Move Layer or Mask Up","Menu › All commands › Layers",yes
+action,"LayerGroupSwitcher/next","Move into next group","Menu › All commands › Layers",yes
+action,"LayerGroupSwitcher/previous","Move into previous group","Menu › All commands › Layers",yes
+action,"layer_properties","Properties...","Menu › All commands › Layers",yes
+action,"create_reference_image_from_active_layer","Reference Image from Layer","Menu › All commands › Layers",yes
+action,"create_reference_image_from_visible_canvas","Reference Image from Visible","Menu › All commands › Layers",yes
+action,"remove_layer","Remove Layer","Menu › All commands › Layers",yes
+action,"RenameCurrentLayer","Rename current layer","Menu › All commands › Layers",yes
+action,"set-copy-from","Set Copy From...","Menu › All commands › Layers",yes
+action,"toggle_layer_soloing","Toggle Layer Soloing","Menu › All commands › Layers",yes
+action,"toggle_layer_alpha_lock","Toggle layer alpha","Menu › All commands › Layers",yes
+action,"toggle_layer_inherit_alpha","Toggle layer alpha inheritance","Menu › All commands › Layers",yes
+action,"toggle_layer_lock","Toggle layer lock","Menu › All commands › Layers",yes
+action,"toggle_layer_visibility","Toggle layer visibility","Menu › All commands › Layers",yes
+action,"unifylayerscolorspace","Unify Layers Color Space","Menu › All commands › Layers",yes
+action,"interpolation_bezier","Bezier curve interpolation.","Menu › All commands › Other",yes
+action,"composite_actions","Brush composite","Menu › All commands › Other",yes
+action,"dockerBox","Docker Box","Menu › All commands › Other",yes
+action,"expanding_spacer_1","Expanding Spacer","Menu › All commands › Other",yes
+action,"expanding_spacer_0","Expanding Spacer","Menu › All commands › Other",yes
+action,"customToolBar1","Hide Custom toolbar 1 Toolbar","Menu › All commands › Other",yes
+action,"customToolBar2","Hide Custom toolbar 2 Toolbar","Menu › All commands › Other",yes
+action,"editToolBar","Hide Edit Toolbar","Menu › All commands › Other",yes
+action,"interpolation_constant","Hold constant value. No interpolation.","Menu › All commands › Other",yes
+action,"interpolation_linear","Linear interpolation.","Menu › All commands › Other",yes
+action,"paintops","Painter's Tools","Menu › All commands › Other",yes
+action,"tangents_sharp","Sharp interpolation tangents.","Menu › All commands › Other",yes
+action,"tangents_smooth","Smooth interpolation tangents.","Menu › All commands › Other",yes
+action,"toolbars_submenu_action","Toolbars Shown","Menu › All commands › Other",yes
+action,"zoom_to_fit_range","Zoom view to fit channel range.","Menu › All commands › Other",yes
+action,"zoom_to_fit_curve","Zoom view to fit curve.","Menu › All commands › Other",yes
+action,"set_simple_brush_smoothing","Brush Smoothing: Basic","Menu › All commands › Painting",yes
+action,"set_no_brush_smoothing","Brush Smoothing: Disabled","Menu › All commands › Painting",yes
+action,"set_pixel_perfect_smoothing","Brush Smoothing: Pixel","Menu › All commands › Painting",yes
+action,"set_stabilizer_brush_smoothing","Brush Smoothing: Stabilizer","Menu › All commands › Painting",yes
+action,"set_weighted_brush_smoothing","Brush Smoothing: Weighted","Menu › All commands › Painting",yes
+action,"decrease_brush_size","Decrease Brush Size","Menu › All commands › Painting",yes
+action,"decrease_fade","Decrease Fade","Menu › All commands › Painting",yes
+action,"decrease_flow","Decrease Flow","Menu › All commands › Painting",yes
+action,"decrease_opacity","Decrease Opacity","Menu › All commands › Painting",yes
+action,"decrease_scatter","Decrease Scatter","Menu › All commands › Painting",yes
+action,"BrushesAndStuff","Hide Brushes and Stuff Toolbar","Menu › All commands › Painting",yes
+action,"mirrorX-hideDecorations","Hide Mirror X Line","Menu › All commands › Painting",yes
+action,"mirrorY-hideDecorations","Hide Mirror Y Line","Menu › All commands › Painting",yes
+action,"hmirror_action","Horizontal Mirror Tool","Menu › All commands › Painting",yes
+action,"increase_brush_size","Increase Brush Size","Menu › All commands › Painting",yes
+action,"increase_fade","Increase Fade","Menu › All commands › Painting",yes
+action,"increase_flow","Increase Flow","Menu › All commands › Painting",yes
+action,"increase_opacity","Increase Opacity","Menu › All commands › Painting",yes
+action,"increase_scatter","Increase Scatter","Menu › All commands › Painting",yes
+action,"mirrorX-lock","Lock X Line","Menu › All commands › Painting",yes
+action,"mirrorY-lock","Lock Y Line","Menu › All commands › Painting",yes
+action,"make_brush_color_darker","Make brush color darker","Menu › All commands › Painting",yes
+action,"make_brush_color_lighter","Make brush color lighter","Menu › All commands › Painting",yes
+action,"make_brush_color_bluer","Make brush color more blue","Menu › All commands › Painting",yes
+action,"make_brush_color_desaturated","Make brush color more desaturated","Menu › All commands › Painting",yes
+action,"make_brush_color_greener","Make brush color more green","Menu › All commands › Painting",yes
+action,"make_brush_color_redder","Make brush color more red","Menu › All commands › Painting",yes
+action,"make_brush_color_saturated","Make brush color more saturated","Menu › All commands › Painting",yes
+action,"make_brush_color_yellower","Make brush color more yellow","Menu › All commands › Painting",yes
+action,"mirrorX-moveToCenter","Move to Canvas Center X","Menu › All commands › Painting",yes
+action,"mirrorY-moveToCenter","Move to Canvas Center Y","Menu › All commands › Painting",yes
+action,"next_favorite_preset","Next Favourite Preset","Menu › All commands › Painting",yes
+action,"preserve_alpha","Preserve Alpha","Menu › All commands › Painting",yes
+action,"previous_favorite_preset","Previous Favourite Preset","Menu › All commands › Painting",yes
+action,"reload_preset_action","Reload Original Preset","Menu › All commands › Painting",yes
+action,"rotate_brush_tip_clockwise","Rotate brush tip clockwise","Menu › All commands › Painting",yes
+action,"rotate_brush_tip_clockwise_precise","Rotate brush tip clockwise (precise)","Menu › All commands › Painting",yes
+action,"rotate_brush_tip_counter_clockwise","Rotate brush tip counter-clockwise","Menu › All commands › Painting",yes
+action,"rotate_brush_tip_counter_clockwise_precise","Rotate brush tip counter-clockwise (precise)","Menu › All commands › Painting",yes
+action,"brush_select_preset_action","Select brush preset","Menu › All commands › Painting",yes
+action,"eraser_select_preset_action","Select eraser preset","Menu › All commands › Painting",yes
+action,"selection_tool_mode_add","Selection Mode: Add","Menu › All commands › Painting",yes
+action,"selection_tool_mode_intersect","Selection Mode: Intersect","Menu › All commands › Painting",yes
+action,"selection_tool_mode_replace","Selection Mode: Replace","Menu › All commands › Painting",yes
+action,"selection_tool_mode_subtract","Selection Mode: Subtract","Menu › All commands › Painting",yes
+action,"erase_action","Set eraser mode","Menu › All commands › Painting",yes
+action,"shift_brush_color_clockwise","Shift brush color hue clockwise","Menu › All commands › Painting",yes
+action,"shift_brush_color_counter_clockwise","Shift brush color hue counter-clockwise","Menu › All commands › Painting",yes
+action,"toggle_fg_bg","Swap Foreground and Background Colors","Menu › All commands › Painting",yes
+action,"previous_preset","Switch to Previous Preset","Menu › All commands › Painting",yes
+action,"toggle_brush_outline","Toggle Brush Outline","Menu › All commands › Painting",yes
+action,"toggle-selection-overlay-mode","Toggle Selection Display Mode","Menu › All commands › Painting",yes
+action,"toggle_assistant","Toggle Snap To Assistants","Menu › All commands › Painting",yes
+action,"eraser_preset_action","Toggle eraser preset","Menu › All commands › Painting",yes
+action,"undo_polygon_selection","Undo Polygon Selection Points","Menu › All commands › Painting",yes
+action,"disable_pressure","Use Pen Pressure","Menu › All commands › Painting",yes
+action,"vmirror_action","Vertical Mirror Tool","Menu › All commands › Painting",yes
+action,"reset_fg_bg","reset Foreground and Background Colors","Menu › All commands › Painting",yes
+action,"path-break-point","Break at point","Menu › All commands › Path Tool",yes
+action,"path-break-segment","Break at segment","Menu › All commands › Path Tool",yes
+action,"path-break-selection","Break at selection","Menu › All commands › Path Tool",yes
+action,"pathpoint-corner","Corner point","Menu › All commands › Path Tool",yes
+action,"pathpoint-insert","Insert point","Menu › All commands › Path Tool",yes
+action,"pathpoint-join","Join with segment","Menu › All commands › Path Tool",yes
+action,"pathpoint-curve","Make curve point","Menu › All commands › Path Tool",yes
+action,"pathpoint-line","Make line point","Menu › All commands › Path Tool",yes
+action,"pathpoint-merge","Merge points","Menu › All commands › Path Tool",yes
+action,"movetool-move-down","Move down","Menu › All commands › Path Tool",yes
+action,"movetool-move-down-more","Move down more","Menu › All commands › Path Tool",yes
+action,"movetool-move-left","Move left","Menu › All commands › Path Tool",yes
+action,"movetool-move-left-more","Move left more","Menu › All commands › Path Tool",yes
+action,"movetool-move-right","Move right","Menu › All commands › Path Tool",yes
+action,"movetool-move-right-more","Move right more","Menu › All commands › Path Tool",yes
+action,"movetool-move-up","Move up","Menu › All commands › Path Tool",yes
+action,"movetool-move-up-more","Move up more","Menu › All commands › Path Tool",yes
+action,"pathpoint-remove","Remove point","Menu › All commands › Path Tool",yes
+action,"pathsegment-curve","Segment to Curve","Menu › All commands › Path Tool",yes
+action,"pathsegment-line","Segment to Line","Menu › All commands › Path Tool",yes
+action,"movetool-show-coordinates","Show Coordinates","Menu › All commands › Path Tool",yes
+action,"pathpoint-smooth","Smooth point","Menu › All commands › Path Tool",yes
+action,"pathpoint-symmetric","Symmetric Point","Menu › All commands › Path Tool",yes
+action,"convert-to-path","To Path","Menu › All commands › Path Tool",yes
+action,"recorder_export","Export Timelapse...","Menu › All commands › Recorder",yes
+action,"recorder_record_toggle","Record Timelapse","Menu › All commands › Recorder",yes
+action,"svg_align_justified","Align Block","Menu › All commands › SVG Text Tool",yes
+action,"svg_align_center","Align Center","Menu › All commands › SVG Text Tool",yes
+action,"svg_align_left","Align Left","Menu › All commands › SVG Text Tool",yes
+action,"svg_align_right","Align Right","Menu › All commands › SVG Text Tool",yes
+action,"svg_weight_black","Black","Menu › All commands › SVG Text Tool",yes
+action,"svg_weight_bold","Bold","Menu › All commands › SVG Text Tool",yes
+action,"svg_clear_formatting","Clear Formatting","Menu › All commands › SVG Text Tool",yes
+action,"svg_decrease_font_size","Decrease Font Size","Menu › All commands › SVG Text Tool",yes
+action,"svg_weight_demi","Demi","Menu › All commands › SVG Text Tool",yes
+action,"svg_insert_special_character","Glyph Palette...","Menu › All commands › SVG Text Tool",yes
+action,"svg_increase_font_size","Increase Font Size","Menu › All commands › SVG Text Tool",yes
+action,"svg_format_italic","Italic","Menu › All commands › SVG Text Tool",yes
+action,"svg_font_kerning","Kerning","Menu › All commands › SVG Text Tool",yes
+action,"svg_weight_light","Light","Menu › All commands › SVG Text Tool",yes
+action,"svg_type_setting_move_selection_start_down_1_px","Move Text Selection Down By 1 Pixel","Menu › All commands › SVG Text Tool",yes
+action,"svg_type_setting_move_selection_start_left_1_px","Move Text Selection Left By 1 Pixel","Menu › All commands › SVG Text Tool",yes
+action,"svg_type_setting_move_selection_start_right_1_px","Move Text Selection Right By 1 Pixel","Menu › All commands › SVG Text Tool",yes
+action,"svg_type_setting_move_selection_start_up_1_px","Move Text Selection Up By 1 Pixel","Menu › All commands › SVG Text Tool",yes
+action,"svg_weight_normal","Normal","Menu › All commands › SVG Text Tool",yes
+action,"svg_paste_plain_text","Paste Plain Text","Menu › All commands › SVG Text Tool",yes
+action,"svg_paste_rich_text","Paste Rich Text","Menu › All commands › SVG Text Tool",yes
+action,"svg_remove_transforms_from_range","Remove Character Transforms","Menu › All commands › SVG Text Tool",yes
+action,"svg_format_strike_through","Strikethrough","Menu › All commands › SVG Text Tool",yes
+action,"svg_format_subscript","Subscript","Menu › All commands › SVG Text Tool",yes
+action,"svg_format_superscript","Superscript","Menu › All commands › SVG Text Tool",yes
+action,"SvgTextTool","Text Tool","Menu › All commands › SVG Text Tool",yes
+action,"svg_format_underline","Underline","Menu › All commands › SVG Text Tool",yes
+action,"configure_sap","Configure selection actions bar","Menu › All commands › Select",yes
+action,"settings_active_author","Active Author Profile","Menu › All commands › Settings",yes
+action,"settings_dockers_menu","Dockers","Menu › All commands › Settings",yes
+action,"dbexplorer","Explore Resources Cache Database...","Menu › All commands › Settings",yes
+action,"view_toggledockertitlebars","Show Docker Titlebars","Menu › All commands › Settings",yes
+action,"style_menu","Styles","Menu › All commands › Settings",yes
+action,"theme_menu","Themes","Menu › All commands › Settings",yes
+action,"window","Window","Menu › All commands › Settings",yes
+action,"activate_preset_0","Activate Brush Preset 0","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_1","Activate Brush Preset 1","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_2","Activate Brush Preset 2","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_3","Activate Brush Preset 3","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_4","Activate Brush Preset 4","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_5","Activate Brush Preset 5","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_6","Activate Brush Preset 6","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_7","Activate Brush Preset 7","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_8","Activate Brush Preset 8","Menu › All commands › Ten Brushes",yes
+action,"activate_preset_9","Activate Brush Preset 9","Menu › All commands › Ten Brushes",yes
+action,"execute_script_0","Execute Script 0","Menu › All commands › Ten Scripts",yes
+action,"execute_script_1","Execute Script 1","Menu › All commands › Ten Scripts",yes
+action,"execute_script_2","Execute Script 2","Menu › All commands › Ten Scripts",yes
+action,"execute_script_3","Execute Script 3","Menu › All commands › Ten Scripts",yes
+action,"execute_script_4","Execute Script 4","Menu › All commands › Ten Scripts",yes
+action,"execute_script_5","Execute Script 5","Menu › All commands › Ten Scripts",yes
+action,"execute_script_6","Execute Script 6","Menu › All commands › Ten Scripts",yes
+action,"execute_script_7","Execute Script 7","Menu › All commands › Ten Scripts",yes
+action,"execute_script_8","Execute Script 8","Menu › All commands › Ten Scripts",yes
+action,"execute_script_9","Execute Script 9","Menu › All commands › Ten Scripts",yes
+action,"KisAssistantTool","Assistant Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectPath","Bezier Curve Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolPath","Bezier Curve Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KarbonCalligraphyTool","Calligraphy","Menu › All commands › Tool Shortcuts",yes
+action,"calligraphy_decrease_angle","Calligraphy: decrease angle","Menu › All commands › Tool Shortcuts",yes
+action,"calligraphy_decrease_width","Calligraphy: decrease width","Menu › All commands › Tool Shortcuts",yes
+action,"calligraphy_increase_angle","Calligraphy: increase angle","Menu › All commands › Tool Shortcuts",yes
+action,"calligraphy_increase_width","Calligraphy: increase width","Menu › All commands › Tool Shortcuts",yes
+action,"KritaSelected/KisToolColorSampler","Color Sampler","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolLazyBrush","Colorize Mask Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolKnife","Comic Panel Editing Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectContiguous","Contiguous Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolCrop","Crop Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolDyna","Dynamic Brush Tool","Menu › All commands › Tool Shortcuts",yes
+action,"PathTool","Edit Shapes Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolEllipse","Ellipse Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectElliptical","Elliptical Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolEncloseAndFill","Enclose and Fill Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaFill/KisToolFill","Fill Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolBrush","Freehand Brush Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolPencil","Freehand Path Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectOutline","Freehand Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaFill/KisToolGradient","Gradient Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolLine","Line Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectMagnetic","Magnetic Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolMeasure","Measurement Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaTransform/KisToolMove","Move Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolMultiBrush","Multibrush Tool","Menu › All commands › Tool Shortcuts",yes
+action,"PanTool","Pan Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolPolygon","Polygon Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectPolygonal","Polygonal Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolPolyline","Polyline Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolRectangle","Rectangle Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectRectangular","Rectangular Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"ToolReferenceImages","Reference Images Tool","Menu › All commands › Tool Shortcuts",yes
+action,"InteractionTool","Select Shapes Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolSelectSimilar","Similar Color Selection Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KritaShape/KisToolSmartPatch","Smart Patch Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransform","Transform Tool","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformCage","Transform Tool (Cage Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformFree","Transform Tool (Free Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformLiquify","Transform Tool (Liquify Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformMesh","Transform Tool (Mesh Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformPerspective","Transform Tool (Perspective Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"KisToolTransformWarp","Transform Tool (Warp Transform)","Menu › All commands › Tool Shortcuts",yes
+action,"ZoomTool","Zoom Tool","Menu › All commands › Tool Shortcuts",yes
+action,"show_snap_options_popup","Show Snap Options Popup","Menu › All commands › View",yes
+action,"toggle_zoom_to_fit","Toggle Fit to View","Menu › All commands › View",yes
+action,"wgcs_decrease_saturation","Decrease color saturation","Menu › All commands › WG Color Selector Actions",yes
+action,"wgcs_increase_saturation","Increase color saturation","Menu › All commands › WG Color Selector Actions",yes
+action,"wgcs_darken_color","Make color darker","Menu › All commands › WG Color Selector Actions",yes
+action,"wgcs_lighten_color","Make color lighter","Menu › All commands › WG Color Selector Actions",yes
+action,"wgcs_shift_hue_clockwise","Shift hue clockwise","Menu › All commands › WG Color Selector Actions",yes
+action,"wgcs_shift_hue_counterclockwise","Shift hue counter-clockwise","Menu › All commands › WG Color Selector Actions",yes
+action,"show_wg_mypaint_selector","Show MyPaint shade selector","Menu › All commands › WG Color Selector Actions",yes
+action,"show_wg_color_history","Show color history","Menu › All commands › WG Color Selector Actions",yes
+action,"show_wg_color_selector","Show wide-gamut color selector","Menu › All commands › WG Color Selector Actions",yes
+action,"show_wg_shade_selector","Show wide-gamut shade selector","Menu › All commands › WG Color Selector Actions",yes
+docker,"PresetDocker","Brush Presets","Sheet brush / tab presets",yes
+docker,"sharedtooldocker","Tool Options","Sheet brush / tab tool",yes
+docker,"PresetHistory","Brush Preset History","Sheet brush / tab history",yes
+docker,"PatternDocker","Patterns","Sheet brush / tab patterns",yes
+docker,"ColorSelectorNg","Advanced Color Selector","Sheet color / tab advanced",yes
+docker,"WideGamutColorSelector","Wide Gamut Color Selector","Sheet color / tab widegamut",yes
+docker,"PaletteDocker","Palette","Sheet color / tab palette",yes
+docker,"SpecificColorSelector","Specific Color Selector","Sheet color / tab specific",yes
+docker,"ArtisticColorSelector","Artistic Color Selector","Sheet color / tab artistic",yes
+docker,"DigitalMixer","Digital Colors Mixer","Sheet color / tab mixer",yes
+docker,"SmallColorSelector","Small Color Selector","Sheet color / tab small",yes
+docker,"GamutMask","Gamut Masks","Sheet color / tab gamut",yes
+docker,"KisLayerBox","Layers","Sheet layers / tab layers",yes
+docker,"ChannelDocker","Channels","Sheet layers / tab channels",yes
+docker,"CompositionDocker","Compositions","Sheet layers / tab compositions",yes
+docker,"TimelineDocker","Animation Timeline","Sheet animation / tab timeline",yes
+docker,"OnionSkinsDocker","Onion Skins","Sheet animation / tab onion",yes
+docker,"AnimationCurvesDocker","Animation Curves","Sheet animation / tab curves",yes
+docker,"StoryboardDocker","Storyboard","Sheet animation / tab storyboard",yes
+docker,"OverviewDocker","Overview","Sheet view / tab overview",yes
+docker,"History","Undo History","Sheet view / tab history",yes
+docker,"Snapshot","Snapshot Docker","Sheet view / tab snapshots",yes
+docker,"GridDocker","Grid and Guides","Sheet view / tab grid",yes
+docker,"HistogramDocker","Histogram","Sheet view / tab histogram",yes
+docker,"TextProperties","Text Properties","Sheet text / tab text",yes
+docker,"SvgSymbolCollectionDocker","Symbol Libraries","Sheet text / tab symbols",yes
+docker,"ArrangeDocker","Arrange","Sheet text / tab arrange",yes
+docker,"BrushHudDocker","On-Canvas Brush Editor","Sheet other:BrushHudDocker / tab BrushHudDocker",yes
+docker,"LogDocker","Log Viewer","Sheet other:LogDocker / tab LogDocker",yes
+docker,"LutDocker","LUT Management","Sheet other:LutDocker / tab LutDocker",yes
+docker,"RecorderDocker","Recorder","Sheet other:RecorderDocker / tab RecorderDocker",yes
+docker,"TasksetDocker","Task Sets","Sheet other:TasksetDocker / tab TasksetDocker",yes
+docker,"ToolBox","Toolbox","Sheet other:ToolBox / tab ToolBox",yes
+docker,"TouchDocker","Touch Docker","Sheet other:TouchDocker / tab TouchDocker",yes
+docker,"comics_project_manager_docker","Comics Manager","Sheet other:comics_project_manager_docker / tab comics_project_manager_docker",yes
+docker,"lastdocumentsdocker","Last Documents Docker","Sheet other:lastdocumentsdocker / tab lastdocumentsdocker",yes
+docker,"mutatorDocker","Mutator","Sheet other:mutatorDocker / tab mutatorDocker",yes
+docker,"pykrita_workflow_buttons","Workflow Buttons","Sheet other:pykrita_workflow_buttons / tab pykrita_workflow_buttons",yes
+docker,"quick_settings_docker","Quick Settings Docker","Sheet other:quick_settings_docker / tab quick_settings_docker",yes
+popup,"KisPaintOpPresetsEditor","Brush Editor","Sheet brush / tab editor",yes
+tool,"KisAssistantTool","Assistant Tool","Tool drawer (and tool rail)",yes
+tool,"SvgTextTool","Text Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectOutline","Freehand Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaSelected/KisToolColorSampler","Color Sampler","Tool drawer (and tool rail)",yes
+tool,"KisToolPath","Bezier Curve Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolLazyBrush","Colorize Mask Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolSmartPatch","Smart Patch Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectRectangular","Rectangular Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPolyline","Polyline Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolTransform","Transform Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolLine","Line Tool","Tool drawer (and tool rail)",yes
+tool,"KritaFill/KisToolGradient","Gradient Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolMeasure","Measurement Tool","Tool drawer (and tool rail)",yes
+tool,"PanTool","Pan Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolDyna","Dynamic Brush Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectMagnetic","Magnetic Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolMultiBrush","Multibrush Tool","Tool drawer (and tool rail)",yes
+tool,"KritaFill/KisToolFill","Fill Tool","Tool drawer (and tool rail)",yes
+tool,"PathTool","Edit Shapes Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolEncloseAndFill","Enclose and Fill Tool","Tool drawer (and tool rail)",yes
+tool,"KarbonCalligraphyTool","Calligraphy","Tool drawer (and tool rail)",yes
+tool,"ZoomTool","Zoom Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolRectangle","Rectangle Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectElliptical","Elliptical Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectSimilar","Similar Color Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectPolygonal","Polygonal Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolCrop","Crop Tool","Tool drawer (and tool rail)",yes
+tool,"ToolReferenceImages","Reference Images Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolEllipse","Ellipse Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolKnife","Comic Panel Editing Tool","Tool drawer (and tool rail)",yes
+tool,"KritaTransform/KisToolMove","Move Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPencil","Freehand Path Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectPath","Bezier Curve Selection Tool","Tool drawer (and tool rail)",yes
+tool,"InteractionTool","Select Shapes Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolBrush","Freehand Brush Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPolygon","Polygon Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectContiguous","Contiguous Selection Tool","Tool drawer (and tool rail)",yes
