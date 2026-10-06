@@ -798,12 +798,15 @@ int DialogFitter::reflowStructure(QWidget *root, int width, QWidget *budgetRoot)
 {
     int changed = 0;
     WidthBudget budget(budgetRoot ? budgetRoot : root, width);
-    QList<QLayout *> layouts = root->findChildren<QLayout *>();
-    if (root->layout() && !layouts.contains(root->layout())) {
-        layouts.prepend(root->layout());
-    }
+    // Guarded: changing a widget can replace its layout (a button box
+    // recreates its layout when its orientation changes).
+    QList<QPointer<QWidget>> widgets;
     for (QWidget *w : root->findChildren<QWidget *>()) {
-        if (w->isWindow() || w->property("mobileChrome").toBool()) {
+        widgets.append(w);
+    }
+    for (const QPointer<QWidget> &guarded : widgets) {
+        QWidget *w = guarded.data();
+        if (!w || w->isWindow() || w->property("mobileChrome").toBool()) {
             continue;
         }
         const int limit = budget.forWidget(w);
@@ -876,7 +879,21 @@ int DialogFitter::reflowStructure(QWidget *root, int width, QWidget *budgetRoot)
         }
     }
     // Rows that only overflow because their items are side by side.
-    for (QLayout *l : layouts) {
+    // Collected now, after the widget changes above.
+    QList<QPointer<QLayout>> layouts;
+    if (root->layout()) {
+        layouts.append(root->layout());
+    }
+    for (QLayout *l : root->findChildren<QLayout *>()) {
+        if (l != root->layout()) {
+            layouts.append(l);
+        }
+    }
+    for (const QPointer<QLayout> &guardedLayout : layouts) {
+        QLayout *l = guardedLayout.data();
+        if (!l) {
+            continue;
+        }
         const int limit = budget.forLayout(l);
         if (l->minimumSize().width() <= limit || widestItem(l) > limit - horizontalMargins(l)) {
             continue;
