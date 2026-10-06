@@ -481,8 +481,8 @@ home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspac
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 08:32:56 2026
-Stats zeroed:                             Tue Oct  6 08:27:11 2026
+Stats updated:                            Tue Oct  6 23:32:45 2026
+Stats zeroed:                             Tue Oct  6 23:28:09 2026
 Cacheable calls:                           2761 / 2764 (99.89%)
   Hits:                                    2694 / 2761 (97.57%)
     Direct:                                2691 / 2694 (99.89%)
@@ -522,8 +522,8 @@ Successful lookups:
   Direct:                                  2691 / 2764 (97.36%)
   Preprocessed:                               3 /   72 ( 4.17%)
 Local storage:
-  Cache size (GB):                          1.2 /  2.0 (60.68%)
-  Files:                                  12420
+  Cache size (GB):                          1.8 /  2.0 (92.33%)
+  Files:                                  19755
   Cleanups:                                   0
   Hits:                                    2694 / 2761 (97.57%)
   Misses:                                    67 / 2761 ( 2.43%)
