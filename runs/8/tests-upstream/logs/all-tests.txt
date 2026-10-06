@@ -1,0 +1,321 @@
+  1/321 Test   #2: libs-global-KisSignalAutoConnectionTest .............................   Passed    0.54 sec
+  2/321 Test   #1: appstreamtest .......................................................***Failed    3.28 sec
+  3/321 Test   #4: libs-global-KisForestTest ...........................................   Passed    0.01 sec
+  4/321 Test   #5: libs-global-KisMplTest ..............................................   Passed    0.01 sec
+  5/321 Test   #6: libs-global-KisLagerTest ............................................   Passed    0.01 sec
+  6/321 Test   #7: libs-global-KisRectsGridTest ........................................   Passed    0.01 sec
+  7/321 Test   #8: libs-global-KisLazyStorageTest ......................................   Passed    0.01 sec
+  8/321 Test   #9: libs-global-KisValueCacheTest .......................................   Passed    0.01 sec
+  9/321 Test  #10: libs-global-KisHistoryListTest ......................................   Passed    0.01 sec
+ 10/321 Test  #11: libs-global-KisAdaptedLockTest ......................................   Passed    0.01 sec
+ 11/321 Test  #12: libs-global-KisGlobalTest ...........................................   Passed    0.03 sec
+ 12/321 Test  #13: libs-koplugin-KoPluginLoaderTest ....................................   Passed    0.01 sec
+ 13/321 Test  #14: libs-widgetutils-KisActionsSnapshotTest .............................   Passed    0.01 sec
+ 14/321 Test  #15: libs-widgetutils-KoPropertiesTest ...................................   Passed    0.01 sec
+ 15/321 Test  #16: libs-widgetutils-kis_simple_math_parser_test ........................   Passed    0.01 sec
+ 16/321 Test  #17: libs-widgetutils-TestKoProgressUpdater ..............................   Passed    0.61 sec
+ 17/321 Test  #18: libs-widgetutils-TestSqueezedComboBox ...............................   Passed    0.01 sec
+ 18/321 Test  #19: libs-widgetutils-kis_parse_spin_boxes_test ..........................   Passed    0.02 sec
+ 19/321 Test  #20: libs-widgetutils-KisDialogStateSaverTest ............................   Passed    0.02 sec
+ 20/321 Test  #21: libs-widgets-zoomhandler_test .......................................   Passed    0.01 sec
+ 21/321 Test  #22: libs-widgets-KoAnchorSelectionWidgetTest ............................   Passed    0.02 sec
+ 22/321 Test  #23: libs-widgets-TestKoZoomAction .......................................   Passed    0.02 sec
+ 23/321 Test  #24: libs-widgets-TestKisTagSelectionWidget ..............................   Passed    0.02 sec
+ 24/321 Test  #25: libs-widgets-TestKisPaletteModel ....................................   Passed    0.85 sec
+ 25/321 Test  #26: libs-flake-TestPosition .............................................   Passed    0.01 sec
+ 26/321 Test  #27: libs-flake-TestSelection ............................................   Passed    0.01 sec
+ 27/321 Test  #28: libs-flake-TestPathTool .............................................   Passed    0.83 sec
+ 28/321 Test  #29: libs-flake-TestShapeAt ..............................................   Passed    0.82 sec
+ 29/321 Test  #30: libs-flake-TestShapePainting ........................................   Passed    1.32 sec
+ 30/321 Test  #31: libs-flake-TestKoShapeFactory .......................................   Passed    0.01 sec
+ 31/321 Test  #32: libs-flake-TestShapeContainer .......................................   Passed    0.02 sec
+ 32/321 Test  #33: libs-flake-TestShapeGroupCommand ....................................   Passed    0.02 sec
+ 33/321 Test  #34: libs-flake-TestShapeReorderCommand ..................................   Passed    0.82 sec
+ 34/321 Test  #35: libs-flake-TestResourceManager ......................................   Passed    0.82 sec
+ 35/321 Test  #36: libs-flake-TestShapeBackgroundCommand ...............................   Passed    0.02 sec
+ 36/321 Test  #37: libs-flake-TestShapeStrokeCommand ...................................   Passed    0.01 sec
+ 37/321 Test  #38: libs-flake-TestInputDevice ..........................................   Passed    0.01 sec
+ 38/321 Test  #39: libs-flake-TestSnapStrategy .........................................   Passed    1.16 sec
+ 39/321 Test  #40: libs-flake-TestPathShape ............................................   Passed    0.02 sec
+ 40/321 Test  #41: libs-flake-TestControlPointMoveCommand ..............................   Passed    0.01 sec
+ 41/321 Test  #42: libs-flake-TestPointTypeCommand .....................................   Passed    0.01 sec
+ 42/321 Test  #43: libs-flake-TestPointRemoveCommand ...................................   Passed    1.17 sec
+ 43/321 Test  #44: libs-flake-TestRemoveSubpathCommand .................................   Passed    0.02 sec
+ 44/321 Test  #45: libs-flake-TestPathSegment ..........................................   Passed    0.01 sec
+ 45/321 Test  #46: libs-flake-TestSegmentTypeCommand ...................................   Passed    0.01 sec
+ 46/321 Test  #47: libs-flake-TestKoDrag ...............................................   Passed    0.87 sec
+ 47/321 Test  #48: libs-flake-TestKoMarkerCollection ...................................   Passed    1.20 sec
+ 48/321 Test  #49: libs-flake-TestSvgSavingContext .....................................   Passed    1.16 sec
+ 49/321 Test  #50: libs-flake-TestXsimdPainting ........................................   Passed    0.02 sec
+ 50/321 Test  #51: libs-flake-TestFontLibraryResourceUtils .............................   Passed    0.01 sec
+ 51/321 Test  #52: libs-flake-TestSvgTextShape .........................................   Passed    9.81 sec
+ 52/321 Test  #53: libs-flake-TestDependentShapes ......................................   Passed    1.16 sec
+ 53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.75 sec
+ 54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.70 sec
+ 55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    1.81 sec
+ 56/321 Test  #57: libs-flake-TestPointMergeCommand ....................................   Passed    1.17 sec
+ 57/321 Test  #58: libs-flake-resources-KoGamutMaskTest ................................   Passed    0.88 sec
+ 58/321 Test  #59: libs-pigment-TestKoColorSet .........................................   Passed    0.96 sec
+ 59/321 Test  #60: libs-pigment-TestKoColorSpaceRegistry ...............................   Passed    0.84 sec
+ 60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.99 sec
+ 61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   24.36 sec
+ 62/321 Test  #63: libs-pigment-TestKoColor ............................................   Passed    1.35 sec
+ 63/321 Test  #64: libs-pigment-TestKoIntegerMaths .....................................   Passed    0.00 sec
+ 64/321 Test  #65: libs-pigment-TestConvolutionOpImpl ..................................   Passed    0.01 sec
+ 65/321 Test  #66: libs-pigment-KoRgbU8ColorSpaceTester ................................   Passed    0.83 sec
+ 66/321 Test  #67: libs-pigment-TestKoColorSpaceSanity .................................   Passed    1.12 sec
+ 67/321 Test  #68: libs-pigment-TestFallBackColorTransformation ........................   Passed    0.01 sec
+ 68/321 Test  #69: libs-pigment-TestKoChannelInfo ......................................   Passed    0.00 sec
+ 69/321 Test   #3: libs-global-KisSignalCompressorTest .................................   Passed   92.65 sec
+ 70/321 Test  #71: libs-pigment-TestColorConversion ....................................   Passed    0.01 sec
+ 71/321 Test  #72: libs-pigment-TestKoColorSpaceMaths ..................................   Passed    0.01 sec
+ 72/321 Test  #73: libs-pigment-TestKisSwatchGroup .....................................   Passed    0.01 sec
+ 73/321 Test  #74: libs-pigment-TestKoStopGradient .....................................   Passed    1.05 sec
+ 74/321 Test  #75: libs-command-TestKUndo2Stack ........................................   Passed    0.02 sec
+ 75/321 Test  #76: libs-brush-kis_auto_brush_test ......................................   Passed    0.87 sec
+ 76/321 Test  #77: libs-brush-kis_auto_brush_factory_test ..............................   Passed    0.83 sec
+ 77/321 Test  #78: libs-brush-kis_gbr_brush_test .......................................   Passed    3.14 sec
+ 78/321 Test  #79: libs-brush-kis_png_brush_test .......................................   Passed    0.03 sec
+ 79/321 Test  #80: libs-brush-kis_boundary_test ........................................   Passed    0.83 sec
+ 80/321 Test  #81: libs-brush-kis_imagepipe_brush_test .................................   Passed    1.43 sec
+ 81/321 Test  #82: libs-brush-TestAbrStorage ...........................................   Passed    2.09 sec
+ 82/321 Test  #83: libs-brush-KisBrushModelTest ........................................   Passed    1.31 sec
+ 83/321 Test  #84: libs-psdutils-psd_utils_test ........................................   Passed    0.01 sec
+ 84/321 Test  #85: libs-psdutils-compression_test ......................................   Passed    0.02 sec
+ 85/321 Test  #86: libs-psdutils-psd_cos_parser_test ...................................   Passed    0.02 sec
+ 86/321 Test  #87: libs-image-kis_base_node_test .......................................   Passed    0.85 sec
+ 87/321 Test  #88: libs-image-kis_fast_math_test .......................................   Passed    0.06 sec
+ 88/321 Test  #89: libs-image-kis_node_test ............................................   Passed    1.22 sec
+ 89/321 Test  #90: libs-image-kis_node_facade_test .....................................   Passed    0.02 sec
+ 90/321 Test  #91: libs-image-kis_fixed_paint_device_test ..............................   Passed    0.93 sec
+ 91/321 Test  #92: libs-image-kis_layer_test ...........................................   Passed    3.81 sec
+ 92/321 Test  #93: libs-image-kis_effect_mask_test .....................................   Passed    0.01 sec
+ 93/321 Test  #94: libs-image-kis_iterator_test ........................................   Passed    1.55 sec
+ 94/321 Test  #95: libs-image-kis_painter_test .........................................   Passed    2.38 sec
+ 95/321 Test  #96: libs-image-kis_count_visitor_test ...................................   Passed    0.02 sec
+ 96/321 Test  #97: libs-image-kis_projection_test ......................................   Passed    3.19 sec
+ 97/321 Test  #98: libs-image-kis_properties_configuration_test ........................   Passed    0.84 sec
+ 98/321 Test  #99: libs-image-kis_transaction_test .....................................   Passed    1.54 sec
+ 99/321 Test #100: libs-image-kis_pixel_selection_test .................................   Passed    1.98 sec
+100/321 Test #101: libs-image-kis_group_layer_test .....................................   Passed    0.85 sec
+101/321 Test #102: libs-image-kis_paint_layer_test .....................................   Passed    1.06 sec
+102/321 Test #103: libs-image-kis_adjustment_layer_test ................................   Passed    0.89 sec
+103/321 Test #104: libs-image-kis_annotation_test ......................................   Passed    0.01 sec
+104/321 Test #105: libs-image-kis_convolution_painter_test .............................   Passed   10.66 sec
+105/321 Test #106: libs-image-kis_crop_processing_visitor_test .........................   Passed    1.54 sec
+106/321 Test #107: libs-image-kis_processing_applicator_test ...........................   Passed    1.56 sec
+107/321 Test #108: libs-image-kis_datamanager_test .....................................   Passed    0.02 sec
+108/321 Test #109: libs-image-kis_fill_painter_test ....................................   Passed   12.30 sec
+109/321 Test #110: libs-image-kis_filter_configuration_test ............................   Passed    0.02 sec
+110/321 Test #111: libs-image-kis_filter_test ..........................................   Passed    1.61 sec
+111/321 Test #112: libs-image-kis_filter_processing_information_test ...................   Passed    0.84 sec
+112/321 Test #113: libs-image-kis_filter_registry_test .................................   Passed    0.06 sec
+113/321 Test #114: libs-image-kis_filter_strategy_test .................................   Passed    0.02 sec
+114/321 Test #115: libs-image-kis_gradient_painter_test ................................   Passed    0.97 sec
+115/321 Test #116: libs-image-kis_image_commands_test ..................................   Passed    0.01 sec
+116/321 Test #117: libs-image-kis_image_test ...........................................   Passed    3.85 sec
+117/321 Test #118: libs-image-kis_image_signal_router_test .............................   Passed    0.86 sec
+118/321 Test #119: libs-image-kis_iterators_ng_test ....................................   Passed    1.79 sec
+119/321 Test #120: libs-image-kis_iterator_benchmark ...................................   Passed    2.44 sec
+120/321 Test #121: libs-image-kis_updater_context_test .................................   Passed    1.02 sec
+121/321 Test #122: libs-image-kis_simple_update_queue_test .............................   Passed    0.86 sec
+122/321 Test #123: libs-image-kis_stroke_test ..........................................   Passed    0.02 sec
+123/321 Test #124: libs-image-kis_simple_stroke_strategy_test ..........................   Passed    1.34 sec
+124/321 Test #125: libs-image-kis_stroke_strategy_undo_command_based_test ..............   Passed   22.05 sec
+125/321 Test #126: libs-image-kis_strokes_queue_test ...................................   Passed    0.02 sec
+126/321 Test #127: libs-image-kis_mask_test ............................................   Passed    0.86 sec
+127/321 Test #128: libs-image-kis_math_toolbox_test ....................................   Passed    0.01 sec
+128/321 Test #129: libs-image-kis_name_server_test .....................................   Passed    0.02 sec
+129/321 Test #130: libs-image-kis_node_commands_test ...................................   Passed    0.01 sec
+130/321 Test #131: libs-image-kis_node_graph_listener_test .............................   Passed    0.02 sec
+131/321 Test #132: libs-image-kis_node_visitor_test ....................................   Passed    0.01 sec
+132/321 Test #133: libs-image-kis_paint_information_test ...............................   Passed    0.40 sec
+133/321 Test #134: libs-image-kis_distance_information_test ............................   Passed    0.02 sec
+134/321 Test #135: libs-image-kis_paintop_test .........................................   Passed    0.81 sec
+135/321 Test #136: libs-image-kis_pattern_test .........................................   Passed    0.04 sec
+136/321 Test #137: libs-image-kis_selection_mask_test ..................................   Passed    0.84 sec
+137/321 Test #138: libs-image-kis_shared_ptr_test ......................................   Passed    0.01 sec
+138/321 Test #139: libs-image-kis_bsplines_test ........................................   Passed    0.19 sec
+139/321 Test #140: libs-image-kis_warp_transform_worker_test ...........................   Passed    1.45 sec
+140/321 Test #141: libs-image-kis_transparency_mask_test ...............................   Passed    0.88 sec
+141/321 Test #142: libs-image-kis_types_test ...........................................   Passed    0.01 sec
+142/321 Test #143: libs-image-kis_vec_test .............................................   Passed    0.01 sec
+143/321 Test #144: libs-image-kis_filter_config_widget_test ............................   Passed    0.02 sec
+144/321 Test #145: libs-image-kis_mask_generator_test ..................................   Passed    0.03 sec
+145/321 Test #146: libs-image-kis_cubic_curve_test .....................................   Passed    0.02 sec
+146/321 Test #147: libs-image-kis_cubic_spline_test ....................................   Passed    0.02 sec
+147/321 Test #148: libs-image-kis_fixed_point_maths_test ...............................   Passed    0.01 sec
+148/321 Test #149: libs-image-kis_node_query_path_test .................................   Passed    0.84 sec
+149/321 Test #150: libs-image-kis_filter_weights_buffer_test ...........................   Passed    0.02 sec
+150/321 Test #151: libs-image-kis_filter_weights_applicator_test .......................   Passed    2.07 sec
+151/321 Test #152: libs-image-kis_fill_interval_test ...................................   Passed    0.01 sec
+152/321 Test #153: libs-image-kis_fill_interval_map_test ...............................   Passed    0.02 sec
+153/321 Test #154: libs-image-kis_scanline_fill_test ...................................   Passed    1.00 sec
+154/321 Test #155: libs-image-kis_psd_layer_style_test .................................   Passed    0.83 sec
+155/321 Test #156: libs-image-kis_layer_style_projection_plane_test ....................   Passed    3.33 sec
+156/321 Test #157: libs-image-kis_lod_capable_layer_offset_test ........................   Passed    0.02 sec
+157/321 Test #158: libs-image-kis_algebra_2d_test ......................................   Passed    0.38 sec
+158/321 Test #159: libs-image-kis_marker_painter_test ..................................   Passed    0.85 sec
+159/321 Test #160: libs-image-kis_lazy_brush_test ......................................   Passed    6.06 sec
+160/321 Test #161: libs-image-kis_mask_similarity_test .................................   Passed    0.89 sec
+161/321 Test #162: libs-image-KisMaskGeneratorBenchmark ................................   Passed    4.38 sec
+162/321 Test #163: libs-image-kis_layer_style_filter_environment_test ..................   Passed    1.38 sec
+163/321 Test #164: libs-image-kis_asl_parser_test ......................................   Passed    1.23 sec
+164/321 Test #165: libs-image-KisPerStrokeRandomSourceTest .............................   Passed    0.02 sec
+165/321 Test #166: libs-image-KisWatershedWorkerTest ...................................   Passed    0.86 sec
+166/321 Test #167: libs-image-kis_dom_utils_test .......................................   Passed    0.02 sec
+167/321 Test #168: libs-image-kis_transform_worker_test ................................   Passed   13.15 sec
+168/321 Test #169: libs-image-kis_cs_conversion_test ...................................   Passed    3.40 sec
+169/321 Test #170: libs-image-kis_projection_leaf_test .................................   Passed    0.94 sec
+170/321 Test #171: libs-image-kis_histogram_test .......................................   Passed    1.37 sec
+171/321 Test #172: libs-image-kis_onion_skin_compositor_test ...........................   Passed    0.91 sec
+172/321 Test #173: libs-image-kis_queues_progress_updater_test .........................   Passed    1.69 sec
+173/321 Test #174: libs-image-kis_image_animation_interface_test .......................   Passed    4.89 sec
+174/321 Test #175: libs-image-kis_walkers_test .........................................   Passed    1.27 sec
+175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   20.58 sec
+176/321 Test #177: libs-image-KisRandomGenerator2DTest .................................   Passed    0.27 sec
+177/321 Test #178: libs-image-kis_keyframing_test ......................................   Passed    1.55 sec
+178/321 Test #179: libs-image-kis_time_span_test .......................................   Passed    0.01 sec
+179/321 Test #180: libs-image-kis_filter_mask_test .....................................   Passed    1.60 sec
+180/321 Test #181: libs-image-kis_asl_layer_style_serializer_test ......................   Passed    1.29 sec
+181/321 Test #182: libs-image-TestAslStorage ...........................................   Passed    0.99 sec
+182/321 Test #183: libs-image-kis_async_merger_test ....................................   Passed    1.59 sec
+183/321 Test #184: libs-image-kis_selection_test .......................................   Passed    1.22 sec
+184/321 Test #185: libs-image-kis_update_scheduler_test ................................   Passed    3.69 sec
+185/321 Test #186: libs-image-kis_colorize_mask_test ...................................   Passed    1.54 sec
+186/321 Test #187: libs-image-kis_processings_test .....................................   Passed    2.30 sec
+187/321 Test #188: libs-image-kis_paint_device_test ....................................   Passed    6.10 sec
+188/321 Test #189: libs-image-kis_layer_styles_test ....................................   Passed    1.43 sec
+189/321 Test #190: libs-image-kis_mesh_transform_worker_test ...........................   Passed    1.72 sec
+190/321 Test #191: libs-image-KisKeyframeAnimationInterfaceSignalTest ..................   Passed    0.83 sec
+191/321 Test #192: libs-image-KisOverlayPaintDeviceWrapperTest .........................   Passed    1.34 sec
+192/321 Test #193: libs-image-KisPaintOpPresetTest .....................................   Passed    1.24 sec
+193/321 Test #194: libs-image-KisFourPointInterpolatorTest .............................   Passed    0.01 sec
+194/321 Test #195: libs-image-KisSpatialContainerTest ..................................   Passed    0.60 sec
+195/321 Test #196: libs-image-KisGridInterpolationToolsTest ............................   Passed    0.02 sec
+196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.93 sec
+197/321 Test #198: libs-image-kis_clone_layer_test .....................................   Passed    2.19 sec
+198/321 Test #199: libs-image-kis_transform_mask_test ..................................   Passed    0.84 sec
+199/321 Test #200: libs-image-kis_liquify_transform_worker_test ........................   Passed   13.29 sec
+200/321 Test #201: libs-image-tiles3-kis_tiled_data_manager_test .......................   Passed   12.63 sec
+201/321 Test #202: libs-image-tiles3-kis_low_memory_tests ..............................   Passed    8.80 sec
+202/321 Test #203: libs-image-tiles3-kis_lockless_stack_test ...........................   Passed    3.31 sec
+203/321 Test #204: libs-image-tiles3-kis_chunk_allocator_test ..........................   Passed    0.79 sec
+204/321 Test #205: libs-image-tiles3-kis_memory_window_test ............................   Passed    0.02 sec
+205/321 Test #206: libs-image-tiles3-kis_store_limits_test .............................   Passed    0.02 sec
+206/321 Test #207: libs-image-tiles3-kis_swapped_data_store_test .......................   Passed    1.17 sec
+207/321 Test #208: libs-image-tiles3-kis_tile_data_store_test ..........................   Passed    0.03 sec
+208/321 Test #209: libs-image-tiles3-kis_tile_data_pooler_test .........................   Passed    0.52 sec
+209/321 Test #210: libs-ui-kis_image_view_converter_test ...............................   Passed    0.84 sec
+210/321 Test #211: libs-ui-kis_shape_selection_test ....................................   Passed    5.48 sec
+211/321 Test #212: libs-ui-kis_coordinates_converter_test ..............................   Passed    1.92 sec
+212/321 Test #213: libs-ui-kis_grid_config_test ........................................   Passed    0.03 sec
+213/321 Test #214: libs-ui-kis_temporary_paint_constraint_test .........................   Passed    0.03 sec
+214/321 Test #215: libs-ui-kis_stabilized_events_sampler_test ..........................   Passed    0.15 sec
+215/321 Test #216: libs-ui-kis_shape_commands_test .....................................   Passed    1.26 sec
+216/321 Test #217: libs-ui-kis_stop_gradient_editor_test ...............................   Passed    0.85 sec
+217/321 Test #218: libs-ui-kis_multinode_property_test .................................   Passed    0.85 sec
+218/321 Test #219: libs-ui-KisFrameSerializerTest ......................................   Passed    0.10 sec
+219/321 Test #220: libs-ui-KisFrameCacheStoreTest ......................................   Passed    1.35 sec
+220/321 Test #221: libs-ui-kis_animation_exporter_test .................................   Passed    2.32 sec
+221/321 Test #222: libs-ui-kis_prescaled_projection_test ...............................   Passed    1.90 sec
+222/321 Test #223: libs-ui-kis_animation_importer_test .................................   Passed    1.29 sec
+223/321 Test #224: libs-ui-KisSpinBoxSplineUnitConverterTest ...........................   Passed    1.21 sec
+224/321 Test #225: libs-ui-KisDocumentReplaceTest ......................................   Passed    1.36 sec
+225/321 Test #226: libs-ui-KisRssReaderTest ............................................   Passed    0.03 sec
+226/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................***Timeout 300.01 sec
+227/321 Test #227: libs-ui-kis_derived_resources_test ..................................   Passed    1.51 sec
+228/321 Test #228: libs-ui-kis_animation_frame_cache_test ..............................   Passed    0.86 sec
+229/321 Test #229: libs-ui-kis_shape_layer_test ........................................***Failed    5.30 sec
+230/321 Test #231: libs-ui-KisSurfaceColorSpaceWrapperTest .............................   Passed    0.01 sec
+231/321 Test #232: libs-ui-KisInputProfileManagerTest ..................................   Passed    0.04 sec
+232/321 Test #233: libs-ui-kis_doc2_test ...............................................   Passed    1.96 sec
+233/321 Test #234: libs-ui-kis_file_layer_test .........................................   Passed    2.98 sec
+234/321 Test #235: libs-ui-KisAppimageUpdaterTest ......................................   Passed    7.05 sec
+235/321 Test #230: libs-ui-KisSafeDocumentLoaderTest ...................................   Passed   19.30 sec
+236/321 Test #237: libs-ui-KisMultiFeedRssModelTest ....................................   Passed    0.04 sec
+237/321 Test #236: libs-ui-KisManualUpdaterTest ........................................   Passed    3.19 sec
+238/321 Test #239: libs-ui-KisNodeDummiesGraphTest .....................................   Passed    0.03 sec
+239/321 Test #240: libs-ui-KisNodeShapesGraphTest ......................................   Passed    0.03 sec
+240/321 Test #241: libs-ui-KisModelIndexConverterTest ..................................   Passed    0.91 sec
+241/321 Test #242: libs-ui-KisCategorizedListModelTest .................................   Passed    0.03 sec
+242/321 Test #238: libs-ui-KisSelectionDecorationTest ..................................   Passed    5.48 sec
+243/321 Test #243: libs-ui-KisNodeJugglerCompressedTest ................................   Passed    5.24 sec
+244/321 Test #244: libs-ui-KisInputManagerTest .........................................   Passed    1.68 sec
+245/321 Test #245: libs-ui-kis_node_model_test .........................................   Passed    1.33 sec
+246/321 Test #246: libs-ui-kis_shape_controller_test ...................................   Passed    6.14 sec
+247/321 Test #247: libs-ui-kis_dummies_facade_test .....................................   Passed    5.60 sec
+248/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.65 sec
+249/321 Test #249: libs-libkis-TestChannel .............................................   Passed    1.28 sec
+250/321 Test #251: libs-libkis-TestNode ................................................   Passed    2.43 sec
+251/321 Test #250: libs-libkis-TestDocument ............................................   Passed    3.68 sec
+252/321 Test #252: libs-libkis-TestVectorLayer .........................................   Passed    1.27 sec
+253/321 Test #253: libs-libkis-TestShape ...............................................   Passed    1.28 sec
+254/321 Test #254: libs-libkis-TestFilter ..............................................   Passed    1.98 sec
+255/321 Test #255: libs-libkis-TestManagedColor ........................................   Passed    1.24 sec
+256/321 Test #257: libs-resources-TestResourceCacheDb ..................................   Passed    0.03 sec
+257/321 Test #258: libs-resources-TestResourceLoaderRegistry ...........................   Passed    0.01 sec
+258/321 Test #256: libs-libkis-TestNotifier ............................................   Passed    1.30 sec
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.04 sec
+260/321 Test #261: libs-resources-TestFolderStorage ....................................   Passed    0.15 sec
+261/321 Test #262: libs-resources-TestMemoryStorage ....................................   Passed    0.03 sec
+262/321 Test #263: libs-resources-TestTag ..............................................   Passed    0.01 sec
+263/321 Test #264: libs-resources-TestBundleStorage ....................................   Passed    0.36 sec
+264/321 Test #265: libs-resources-TestResourceModel ....................................   Passed    0.27 sec
+265/321 Test #266: libs-resources-TestTagFilterResourceProxyModel ......................   Passed    0.19 sec
+266/321 Test #267: libs-resources-TestTagModel .........................................   Passed    0.20 sec
+267/321 Test #268: libs-resources-TestResourceTypeModel ................................   Passed    0.14 sec
+268/321 Test #269: libs-resources-TestStorageModel .....................................   Passed    0.18 sec
+269/321 Test #270: libs-resources-TestResourceSearchBoxFilter ..........................   Passed    0.01 sec
+270/321 Test #271: libs-resources-TestStorageFilterProxyModel ..........................   Passed    0.14 sec
+271/321 Test #272: libs-resources-TestTagResourceModel .................................   Passed    0.21 sec
+272/321 Test #273: libs-metadata-kis_meta_data_test ....................................   Passed    0.01 sec
+273/321 Test #259: libs-resources-TestResourceLocator ..................................   Passed    3.82 sec
+274/321 Test #274: plugins-assistants-Assistants-TestPerspectiveBasedAssistantHelper ...   Passed    1.29 sec
+275/321 Test #275: plugins-assistants-Assistants-TestAssistants ........................   Passed    1.21 sec
+276/321 Test #276: plugins-color-lcms2engine-TestKoLcmsColorProfile ....................   Passed    0.95 sec
+277/321 Test #277: plugins-color-lcms2engine-TestColorSpaceRegistry ....................   Passed    0.87 sec
+278/321 Test #279: plugins-color-lcms2engine-TestProfileGeneration .....................   Passed    1.59 sec
+279/321 Test #278: plugins-color-lcms2engine-TestLcmsRGBP2020PQColorSpace ..............   Passed    3.17 sec
+280/321 Test #280: plugins-dockers-layerdocker-TestNodeView ............................   Passed    0.93 sec
+281/321 Test #281: plugins-dockers-lut-KisOcioDisplayFilterTest ........................   Passed    0.93 sec
+282/321 Test #282: plugins-dockers-animation-kis_animation_utils_test ..................   Passed    0.86 sec
+283/321 Test #284: plugins-dockers-storyboarddocker-StoryboardModelTest ................   Passed    0.03 sec
+284/321 Test #285: plugins-dockers-storyboarddocker-StoryboardTimelineSyncTest .........   Passed    0.86 sec
+285/321 Test #283: plugins-dockers-animation-timeline_model_test .......................   Passed    1.55 sec
+286/321 Test #287: plugins-filters-unsharp-kis_unsharp_mask_test .......................   Passed    1.58 sec
+287/321 Test #288: plugins-generators-screentone-KisScreentoneGeneratorTest ............   Passed    1.26 sec
+288/321 Test #289: plugins-generators-seexpr-kis_seexpr_generator_test .................   Passed    1.47 sec
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    2.00 sec
+290/321 Test #286: plugins-extensions-qmic-kis_qmic_tests ..............................   Passed    7.11 sec
+291/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.75 sec
+292/321 Test #293: plugins-impex-tiff-kis_tiff_test ....................................Subprocess aborted***Exception:   1.63 sec
+293/321 Test #294: plugins-impex-exr-kis_exr_test ......................................   Passed    1.97 sec
+294/321 Test #295: plugins-impex-pdf-KisPdfTest ........................................   Passed    1.31 sec
+295/321 Test #296: plugins-impex-jp2-KisJP2Test ........................................   Passed    1.35 sec
+296/321 Test #297: plugins-impex-raw-KisRawTest ........................................   Passed    1.33 sec
+297/321 Test #298: plugins-impex-qimageio-KisQImageIOTest ..............................   Passed    1.30 sec
+298/321 Test #299: plugins-impex-ora-KisOraTest ........................................   Passed    1.29 sec
+299/321 Test #300: plugins-impex-psd-psd_header_test ...................................   Passed    0.03 sec
+300/321 Test #301: plugins-impex-psd-psd_colormode_block_test ..........................   Passed    0.03 sec
+301/321 Test #302: plugins-impex-psd-kis_psd_test ......................................   Passed   21.22 sec
+302/321 Test #303: plugins-impex-qml-KisQmlTest ........................................   Passed    1.41 sec
+303/321 Test #304: plugins-impex-tga-KisTgaTest ........................................   Passed    1.41 sec
+304/321 Test #305: plugins-impex-heightmap-kis_heightmap_test ..........................   Passed    1.61 sec
+305/321 Test #306: plugins-impex-brush-KisBrushTest ....................................   Passed    1.40 sec
+306/321 Test #307: plugins-impex-gif-KisGifTest ........................................   Passed    1.41 sec
+307/321 Test #308: plugins-impex-heif-KisHeifTest ......................................***Failed    3.82 sec
+308/321 Test #309: plugins-impex-webp-kis_webp_test ....................................   Passed    2.03 sec
+309/321 Test #292: plugins-impex-jpeg-kis_jpeg_test ....................................Subprocess aborted***Exception:  53.09 sec
+310/321 Test #311: plugins-impex-rgbe-kis_rgbe_test ....................................   Passed    2.16 sec
+311/321 Test #312: plugins-paintops-libpaintop-KisCurveOptionDataTest ..................   Passed    0.04 sec
+312/321 Test #313: plugins-paintops-libpaintop-KisCurveOptionModelTest .................   Passed    0.01 sec
+313/321 Test #314: plugins-paintops-libpaintop-kis_linked_pattern_manager_test .........   Passed    1.26 sec
+314/321 Test #310: plugins-impex-jxl-kis_jpegxl_test ...................................   Passed    9.21 sec
+315/321 Test #315: plugins-paintops-defaultpaintops-brush-KisDabRenderingQueueTest .....   Passed    0.86 sec
+316/321 Test #317: plugins-paintops-mypaint-KisMyPaintOpTest ...........................   Passed    0.90 sec
+317/321 Test #316: plugins-paintops-colorsmudge-KisColorsmudgeOpTest ...................   Passed    1.18 sec
+318/321 Test #319: plugins-tools-tool_transform2-test_animated_transform_parameters ....   Passed    0.93 sec
+319/321 Test #318: plugins-tools-basictools-MoveSelectionStrokeTest ....................   Passed    1.99 sec
+320/321 Test #320: plugins-tools-svgtexttool-SvgTextCursorTest .........................***Failed    1.28 sec
+321/321 Test #321: plugins-tools-tool_knife-CutThroughShapeStrategyTest ................   Passed    0.87 sec

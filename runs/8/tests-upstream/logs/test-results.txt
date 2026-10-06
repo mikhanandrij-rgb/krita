@@ -1,0 +1,41 @@
+  2/321 Test   #1: appstreamtest .......................................................***Failed    3.28 sec
+ 53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.75 sec
+ 54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.70 sec
+ 55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    1.81 sec
+ 60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.99 sec
+ 61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   24.36 sec
+175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   20.58 sec
+196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.93 sec
+226/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................***Timeout 300.01 sec
+229/321 Test #229: libs-ui-kis_shape_layer_test ........................................***Failed    5.30 sec
+248/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.65 sec
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.04 sec
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    2.00 sec
+291/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.75 sec
+292/321 Test #293: plugins-impex-tiff-kis_tiff_test ....................................Subprocess aborted***Exception:   1.63 sec
+307/321 Test #308: plugins-impex-heif-KisHeifTest ......................................***Failed    3.82 sec
+309/321 Test #292: plugins-impex-jpeg-kis_jpeg_test ....................................Subprocess aborted***Exception:  53.09 sec
+320/321 Test #320: plugins-tools-svgtexttool-SvgTextCursorTest .........................***Failed    1.28 sec
+94% tests passed, 18 tests failed out of 321
+The following tests FAILED:
+	  1 - appstreamtest (Failed)
+	 54 - libs-flake-TestSvgParser (Failed)
+	 55 - libs-flake-TestSvgParserCloned (Failed)
+	 56 - libs-flake-TestSvgParserRoundTrip (Failed)
+	 61 - libs-pigment-TestKoColorSpaceAbstract (Failed)
+	 62 - libs-pigment-TestColorConversionSystem (Failed)
+	 70 - libs-pigment-TestCompositeOpInversion (Timeout)
+	176 - libs-image-kis_cage_transform_worker_test (Failed)
+	197 - libs-image-KisContentLightLevelProcessingVisitorTest (Failed)
+	229 - libs-ui-kis_shape_layer_test (Failed)
+	248 - libs-ui-kis_view_signals_test (Subprocess aborted)
+	260 - libs-resources-TestResourceStorage (Failed)
+	290 - plugins-impex-libkra-kis_kra_loader_test (Failed)
+	291 - plugins-impex-libkra-kis_kra_saver_test (Subprocess aborted)
+	292 - plugins-impex-jpeg-kis_jpeg_test (Subprocess aborted)
+	293 - plugins-impex-tiff-kis_tiff_test (Subprocess aborted)
+	308 - plugins-impex-heif-KisHeifTest (Failed)
+	320 - plugins-tools-svgtexttool-SvgTextCursorTest (Failed)
+Errors while running CTest
+ctest exit: 8
+runner: ctest finished with 0
