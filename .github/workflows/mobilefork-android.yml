@@ -572,6 +572,9 @@ jobs:
             sleep 5
           done
           echo "booted: $booted"
+          # Root adb (google_apis images allow it): files the app writes in its
+          # own directory are not readable by the shell user otherwise.
+          adb root; sleep 3; adb wait-for-device; adb shell id
           adb shell getprop ro.product.cpu.abilist
           adb shell wm size
           adb shell wm density

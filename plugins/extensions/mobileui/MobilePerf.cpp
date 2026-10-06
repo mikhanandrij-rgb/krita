@@ -14,6 +14,11 @@
 #include <unistd.h>
 #endif
 
+#ifdef Q_OS_ANDROID
+#include <QAndroidJniEnvironment>
+#include <QAndroidJniObject>
+#endif
+
 namespace mobileui {
 namespace perf {
 
@@ -59,6 +64,19 @@ QString formatKb(qint64 kb)
 
 qint64 processUptimeMs()
 {
+#ifdef Q_OS_ANDROID
+    // Apps can't read /proc/uptime on Android; ask the system instead.
+    {
+        const jlong now = QAndroidJniObject::callStaticMethod<jlong>("android/os/SystemClock", "elapsedRealtime");
+        const jlong start = QAndroidJniObject::callStaticMethod<jlong>("android/os/Process", "getStartElapsedRealtime");
+        QAndroidJniEnvironment env;
+        if (env->ExceptionCheck()) {
+            env->ExceptionClear();
+        } else if (now > 0 && start > 0 && now >= start) {
+            return qint64(now - start);
+        }
+    }
+#endif
 #if defined(Q_OS_LINUX) || defined(Q_OS_ANDROID)
     // Field 22 of /proc/self/stat is the start time in clock ticks after
     // boot; /proc/uptime has the seconds since boot.
