@@ -1,14 +1,4 @@
-ta/_staging/home/runner/wd/krita/_install/share/krita/templates/texture/Texture8k32bitscalar.desktop
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/templates/texture/Texture8k8bitsrgb.desktop
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/storyboard_templates/storyboard_extemp_default.svg
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Animation.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Big_Paint.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Big_Paint_2.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Big_Vector.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Default.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Small_Vector.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Storyboarding.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/VFX_Paint.kws
+home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/VFX_Paint.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Minimal.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeDark.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeHighContrast.colors
@@ -259,286 +249,294 @@ ta/_staging/home/runner/wd/krita/_install/share/krita/templates/texture/Texture8
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/metainfo/org.kde.krita.appdata.xml
 -- Up-to-date: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/kritamobileui.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/kritamobileui.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES/krita.mo
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES/krita.mo
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES/krita.mo
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/kritamobileui.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/kritamobileui.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES/krita.mo
 ## RUNNING POST-INSTALL SCRIPT "krita-plugins": /home/runner/ci/venv/bin/python3 /home/runner/work/krita/krita/build-tools/ci-scripts/build-plugins.py
 ## Skip building GMic plugin for Android...
-Summary:
-  Cache directory:                  /home/runner/ccache/krita
-  Primary config:                   /home/runner/ccache/krita/ccache.conf
-  Secondary config:                 /etc/ccache.conf
-  Stats updated:                    Tue Oct  6 00:41:04 2026
-  Stats zeroed:                     Tue Oct  6 00:25:25 2026
-  Hits:                             1964 / 2759 (71.19 %)
-    Direct:                         1930 / 2762 (69.88 %)
-    Preprocessed:                     34 /  831 (4.09 %)
-  Misses:                            795
-    Direct:                          832
-    Preprocessed:                    797
-  Errors:                              0
-  Uncacheable:                         3
-Primary storage:
-  Hits:                             3897 / 5523 (70.56 %)
-  Misses:                           1626
-  Cache size (GB):                  0.60 / 2.00 (30.23 %)
-  Files:                            5509
-Secondary storage:
-  Hits:                                0 /    0 (0.00 %)
-  Misses:                              0
-  Errors:                              0
-  Timeouts:                            0
-Errors:
-  Compiler check failed:               0
-  Could not find compiler:             0
-  Could not write to output file:      0
-  Error hashing extra file:            0
-  Internal error:                      0
-  Missing cache file:                  0
-Uncacheable:
-  Autoconf compile/link:               0
-  Bad compiler arguments:              0
-  Called for linking:                  0
-  Called for preprocessing:            0
-  Compilation failed:                  2
-  Compiler produced empty output:      0
-  Compiler produced no output:         0
-  Compiler produced stdout:            0
-  Could not use modules:               0
-  Could not use precompiled header:    0
-  Forced recache:                      0
-  Multiple source files:               0
-  No input file:                       0
-  Output to stdout:                    0
-  Preprocessing failed:                1
-  Unsupported code directive:          0
-  Unsupported compiler option:         0
-  Unsupported source language:         0
-Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/include -> /home/runner/wd/krita/_install/include
-Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib -> /home/runner/wd/krita/_install/lib
-Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/qml -> /home/runner/wd/krita/_install/qml
+Cache directory:                          /home/runner/ccache/krita
+Config file:                              /home/runner/ccache/krita/ccache.conf
+System config file:                       /etc/ccache.conf
+Stats updated:                            Tue Oct  6 06:08:35 2026
+Stats zeroed:                             Tue Oct  6 06:02:47 2026
+Cacheable calls:                           2761 / 2764 (99.89%)
+  Hits:                                    2686 / 2761 (97.28%)
+    Direct:                                2683 / 2686 (99.89%)
+    Preprocessed:                             3 / 2686 ( 0.11%)
+  Misses:                                    75 / 2761 ( 2.72%)
+Uncacheable calls:                            3 / 2764 ( 0.11%)
+  Autoconf compile/link:                      0 /    3 ( 0.00%)
+  Bad compiler arguments:                     0 /    3 ( 0.00%)
+  Called for linking:                         0 /    3 ( 0.00%)
+  Called for preprocessing:                   0 /    3 ( 0.00%)
+  Ccache disabled:                            0 /    3 ( 0.00%)
+  Compilation failed:                         2 /    3 (66.67%)
+  Compiler output file missing:               0 /    3 ( 0.00%)
+  Compiler produced empty output:             0 /    3 ( 0.00%)
+  Compiler produced stdout:                   0 /    3 ( 0.00%)
+  Could not use modules:                      0 /    3 ( 0.00%)
+  Could not use precompiled header:           0 /    3 ( 0.00%)
+  Forced recache:                             0 /    3 ( 0.00%)
+  Multiple source files:                      0 /    3 ( 0.00%)
+  No input file:                              0 /    3 ( 0.00%)
+  Output to stdout:                           0 /    3 ( 0.00%)
+  Preprocessing failed:                       1 /    3 (33.33%)
+  Unsupported code directive:                 0 /    3 ( 0.00%)
+  Unsupported compiler option:                0 /    3 ( 0.00%)
+  Unsupported environment variable:           0 /    3 ( 0.00%)
+  Unsupported source language:                0 /    3 ( 0.00%)
+Errors:                                       0 / 2764 ( 0.00%)
+  Compiler check failed:                      0
+  Could not find compiler:                    0
+  Could not read or parse input file:         0
+  Could not write to output file:             0
+  Error hashing extra file:                   0
+  Input file modified during compilation:     0
+  Internal error:                             0
+  Missing cache file:                         0
+Successful lookups:
+  Direct:                                  2683 / 2764 (97.07%)
+  Preprocessed:                               3 /   80 ( 3.75%)
+Local storage:
+  Cache size (GB):                          1.2 /  2.0 (60.25%)
+  Files:                                  12156
+  Cleanups:                                   0
+  Hits:                                    2686 / 2761 (97.28%)
+  Misses:                                    75 / 2761 ( 2.72%)
+  Reads:                                   5527
+  Writes:                                   153
+Remote storage:
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+  Errors:                                     0
+  Timeouts:                                   0
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share -> /home/runner/wd/krita/_install/share
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib -> /home/runner/wd/krita/_install/lib
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/include -> /home/runner/wd/krita/_install/include
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/qml -> /home/runner/wd/krita/_install/qml
