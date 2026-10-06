@@ -1,5 +1,10 @@
 == emulator-partial (run 30): running
-status: running (warmup done)
+status: running (classic done)
 commit: bbbfba4a93e2457221b7fb13c14625d47d755856
 run classic: died after 21 s
+run classic: done after 102 s
+interface: classic (smallest side 411 dp)
+perf classic-start: interface-ready-ms=67681 first-canvas-ms=-1 rss-kb=1341500 peak-kb=1352848 uptime-ms=73191
+perf classic-canvas: interface-ready-ms=67681 first-canvas-ms=80210 rss-kb=1482716 peak-kb=1483052 uptime-ms=85875
+perf classic-end: interface-ready-ms=67681 first-canvas-ms=80210 rss-kb=1509644 peak-kb=1521164 uptime-ms=95655
 
