@@ -481,14 +481,14 @@ home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspac
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 03:36:22 2026
-Stats zeroed:                             Tue Oct  6 03:31:33 2026
-Cacheable calls:                           2760 / 2763 (99.89%)
-  Hits:                                    2680 / 2760 (97.10%)
-    Direct:                                2677 / 2680 (99.89%)
-    Preprocessed:                             3 / 2680 ( 0.11%)
-  Misses:                                    80 / 2760 ( 2.90%)
-Uncacheable calls:                            3 / 2763 ( 0.11%)
+Stats updated:                            Tue Oct  6 09:50:00 2026
+Stats zeroed:                             Tue Oct  6 09:44:20 2026
+Cacheable calls:                           2761 / 2764 (99.89%)
+  Hits:                                    2695 / 2761 (97.61%)
+    Direct:                                2692 / 2695 (99.89%)
+    Preprocessed:                             3 / 2695 ( 0.11%)
+  Misses:                                    66 / 2761 ( 2.39%)
+Uncacheable calls:                            3 / 2764 ( 0.11%)
   Autoconf compile/link:                      0 /    3 ( 0.00%)
   Bad compiler arguments:                     0 /    3 ( 0.00%)
   Called for linking:                         0 /    3 ( 0.00%)
@@ -509,7 +509,7 @@ Uncacheable calls:                            3 / 2763 ( 0.11%)
   Unsupported compiler option:                0 /    3 ( 0.00%)
   Unsupported environment variable:           0 /    3 ( 0.00%)
   Unsupported source language:                0 /    3 ( 0.00%)
-Errors:                                       0 / 2763 ( 0.00%)
+Errors:                                       0 / 2764 ( 0.00%)
   Compiler check failed:                      0
   Could not find compiler:                    0
   Could not read or parse input file:         0
@@ -519,16 +519,16 @@ Errors:                                       0 / 2763 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                  2677 / 2763 (96.89%)
-  Preprocessed:                               3 /   85 ( 3.53%)
+  Direct:                                  2692 / 2764 (97.40%)
+  Preprocessed:                               3 /   71 ( 4.23%)
 Local storage:
-  Cache size (GB):                          1.2 /  2.0 (58.21%)
-  Files:                                  11168
+  Cache size (GB):                          1.2 /  2.0 (61.69%)
+  Files:                                  12967
   Cleanups:                                   0
-  Hits:                                    2680 / 2760 (97.10%)
-  Misses:                                    80 / 2760 ( 2.90%)
-  Reads:                                   5525
-  Writes:                                   163
+  Hits:                                    2695 / 2761 (97.61%)
+  Misses:                                    66 / 2761 ( 2.39%)
+  Reads:                                   5527
+  Writes:                                   135
 Remote storage:
   Hits:                                       0
   Misses:                                     0
