@@ -438,7 +438,10 @@ void KoDialog::keyPressEvent(QKeyEvent *event)
 void KoDialog::showEvent(QShowEvent *e)
 {
     QDialog::showEvent(e);
-    QTimer::singleShot(5, Qt::CoarseTimer, [&]() {
+    // The dialog is the context object: a dialog closed within these 5 ms
+    // (a progress dialog whose operation finished) must not be used after
+    // it was destroyed.
+    QTimer::singleShot(5, Qt::CoarseTimer, this, [this]() {
         adjustPosition(parentWidget());
     });
 }
