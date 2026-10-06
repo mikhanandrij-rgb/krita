@@ -1,0 +1,6 @@
+ls: /sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test/out: No such file or directory
+total 32
+drwxrws---  2 shell   ext_data_rw 4096 2026-10-06 08:50 .
+drwxrws--- 26 u0_a192 ext_data_rw 4096 2026-10-06 08:51 ..
+-rw-rw----  1 shell   ext_data_rw    2 2026-10-06 08:50 KRITA_MOBILE_SCREENSHOTS
+-rw-rw----  1 shell   ext_data_rw    8 2026-10-06 08:50 KRITA_MOBILE_UI

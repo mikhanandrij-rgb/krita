@@ -1,8 +1,6 @@
-== emulator (run 24): failure
 status: failure
 branch: mobile
 commit: 968fec224322921decaaae464ccd9d17f973ef26
 date: 2026-10-06T08:55:18Z
 screenshots: 0
 perf:
-

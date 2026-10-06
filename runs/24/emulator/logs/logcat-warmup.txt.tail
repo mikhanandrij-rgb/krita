@@ -1,0 +1,384 @@
+13  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+10-06 08:50:27.504  4413  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: sessions"
+10-06 08:50:27.505  4413  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: symbols"
+10-06 08:50:27.505  4413  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+10-06 08:50:27.505  4413  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+10-06 08:50:27.505  4413  4593 I krita   : krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+10-06 08:50:27.507  4413  4593 I krita   : krita.db.migration: Filled version table
+10-06 08:50:27.534  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:36): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F627275736865732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57365 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:27.538  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:37): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57366 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:27.538  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:38): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57367 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:27.542  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:39): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57368 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:27.542  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:40): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57369 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:27.546  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:41): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=57370 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:29.810  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:240): avc:  denied  { link } for  name="CACHEDIR.TAG.TMP-wda0m9" dev="dm-40" ino=164364 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:29.810  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:241): avc:  denied  { link } for  name="3336a65c52528c9c368e942d3dd307f8-le64.cache-9.TMP-UYnZkn" dev="dm-40" ino=164365 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:29.818  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:242): avc:  denied  { link } for  name="6b2d726176ccfb13550f478e03d9d362-le64.cache-9.TMP-Kg3RVK" dev="dm-40" ino=164366 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:50:30.329  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 4419(272KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2639KB/5278KB, paused 77us,10us total 13.552ms
+10-06 08:50:30.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:50:30.858  4936  4936 E BugleRcsEngine: [2] JibeService.onDestroy: JibeService: onDestroy() unregister factory exception: java.lang.IllegalArgumentException: Receiver not registered: com.google.android.ims.receiver.sip.DebugOptionsReceiver@721ebad
+10-06 08:50:30.858  4936  4936 E BugleRcsEngine: 	at com.google.android.ims.receiver.sip.DebugOptionsReceiver.b(PG:1)
+10-06 08:50:31.191  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.217  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.231  4474  4958 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging
+10-06 08:50:31.600  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.628  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.667  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.714  1137  1485 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkMobileProviderController
+10-06 08:50:31.753  1137  1167 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkMobileProviderController
+10-06 08:50:31.757  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.780  5184  5184 E equicksearchbox: Not starting debugger since process cannot load the jdwp agent.
+10-06 08:50:31.836  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.837  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.839  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.840  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.885  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.890  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.891  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.905  1137  1167 V SettingsSearchProvider: com.android.settings.development.WirelessDebuggingFragment$2@3fbc49d tried to add an empty non-indexable key
+10-06 08:50:31.915  1137  1485 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkSwitchController
+10-06 08:50:31.915  1137  1485 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileDataPreferenceController
+10-06 08:50:31.915  1137  1485 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.network.telephony.MobileDataPreferenceController
+10-06 08:50:31.923  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.934  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.938  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.940  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:31.940  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:31.942  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.947  5184  5184 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 08:50:31.948  5184  5184 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 08:50:31.954  1137  1485 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.applications.specialaccess.DebuggingDataPreferenceController
+10-06 08:50:31.984  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:31.997  1137  1167 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkSwitchController
+10-06 08:50:31.997  1137  1167 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileDataPreferenceController
+10-06 08:50:31.997  1137  1167 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.network.telephony.MobileDataPreferenceController
+10-06 08:50:32.015  1137  1485 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.165  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.165  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.190  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.191  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.217  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.217  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.234  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.235  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.326  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.327  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.471  1137  1167 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-4716942 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 08:50:32.472  1137  1167 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-4716942 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 08:50:32.549  1137  3044 W MobileNetworkUtils: EuiccManager is not enabled.
+10-06 08:50:32.554  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.555  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.559  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.561  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.565  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.578  1137  1167 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.applications.specialaccess.DebuggingDataPreferenceController
+10-06 08:50:32.604  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.628  1570  5136 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:32.629  1570  5136 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:32.637  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.640  1137  1167 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-06 08:50:32.776  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:33.611  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:35.044  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:35.517  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:35.600  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:35.977   546   902 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=7, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3431055 ] accessLevel:3
+10-06 08:50:35.978   546   823 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=8, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3427820 ] accessLevel:3
+10-06 08:50:36.781  1177  1177 I ContentCaptureHelper: Setting logging level to DEBUG
+10-06 08:50:37.129  1570  5146 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:37.206   546   902 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=8, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3427820 ] accessLevel:3
+10-06 08:50:37.206   546   823 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=9, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3424587 ] accessLevel:3
+10-06 08:50:37.367  1570  5146 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:37.368  1570  5146 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:37.395  1570  5146 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:37.457  1570  5146 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:37.463  1570  5146 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:38.871  4474  4959 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging
+10-06 08:50:38.966  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:39.189  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:39.320  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:39.567  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:39.692  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:39.861  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:50:40.651  2991  4868 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:50:40.652  2991  4868 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:50:40.827   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:50:40.860  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 10895(555KB) AllocSpace objects, 3(60KB) LOS objects, 49% free, 2789KB/5578KB, paused 57us,11us total 14.700ms
+10-06 08:50:41.764  1754  1754 D AugmentedAutofillService: handleOnConnected(): debug=true, verbose=false
+10-06 08:50:42.237  1570  5146 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:42.244  1570  5146 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:42.849  5457  5457 E gs.intelligence: Not starting debugger since process cannot load the jdwp agent.
+10-06 08:50:42.893  5457  5457 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 08:50:42.893  5457  5457 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 08:50:43.100  1570  5146 I ModuleSetMgr: Download of container feature multipackage_debug is disabled.
+10-06 08:50:43.100  1570  5146 I ModuleSetMgr: Download of container feature permissions_debug is disabled.
+10-06 08:50:43.100  1570  5146 I ModuleSetMgr: Download of container feature semanticlocation_debug is disabled.
+10-06 08:50:43.577  1570  5146 I GmsDebugLogger: [46] container:2318189190800
+10-06 08:50:43.667  5505  5505 E .gms.persistent: Not starting debugger since process cannot load the jdwp agent.
+10-06 08:50:43.670  5511  5511 E gle.android.gms: Not starting debugger since process cannot load the jdwp agent.
+10-06 08:50:43.710  5511  5511 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 08:50:43.711  5511  5511 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 08:50:43.711  5505  5505 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 08:50:43.712  5505  5505 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 08:50:43.897  5505  5574 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z (max-target-p, reflection, denied)
+10-06 08:50:44.158  5511  5601 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+10-06 08:50:44.238  5511  5613 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.245  5511  5613 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800],[MapsCoreDynamite.integ:231112103100800],[MlkitBarcodeUi.optional:231818100000]
+10-06 08:50:44.279  5511  5602 W libc    : Access denied finding property "ro.hardware.chipname"
+10-06 08:50:44.691  5511  5613 I GmsDebugLogger: [46] container:2318189190800
+10-06 08:50:44.695  5511  5613 I GmsDebugLogger: [83] 1 [maps_core, mlkit.barcode.ui, mlkit.ocr.common, tflite_dynamite, vision.ocr]
+10-06 08:50:44.748  5511  5614 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.754  5511  5614 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-06 08:50:44.760  5511  5614 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-06 08:50:44.820  5511  5614 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.822  5511  5614 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
+10-06 08:50:44.830  5511  5614 I GmsDebugLogger: [83] 1 [maps_core]
+10-06 08:50:44.865  5511  5610 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.867  5511  5610 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitBarcodeUi.optional:231818100000]
+10-06 08:50:44.870  5511  5610 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+10-06 08:50:44.925  5511  5610 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.929  5511  5610 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:50:44.933  5511  5610 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:50:44.975  5511  5602 I GmsDebugLogger: [73] 1801
+10-06 08:50:44.983  5511  5602 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-06 08:50:44.999  5511  5602 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-06 08:50:45.059  5511  5613 I GmsDebugLogger: [73] 1801
+10-06 08:50:45.060  5511  5613 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:50:45.063  5511  5613 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:45.539  5505  5574 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:45.554  5505  5574 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:50:45.577  5511  5613 I GmsDebugLogger: [73] 1801
+10-06 08:50:45.580  5511  5613 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-06 08:50:45.585  5511  5613 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-06 08:50:48.539  5511  5605 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+10-06 08:50:48.710   546   617 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:50:48.710   546   617 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-06 08:50:48.710   546   617 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:48.710   546   617 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:50:48.710   546   617 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:50:48.982  5511  5613 W gle.android.gms: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z (max-target-p, reflection, denied)
+10-06 08:50:49.036  5511  5613 I MobileDataHub: Scheduling periodic tasks
+10-06 08:50:49.044  5511  5613 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-06 08:50:49.159  2991  3066 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:50:49.159  2991  3066 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:50:49.271  5511  5602 I GmsDebugLogger: [73] 1801
+10-06 08:50:49.275  5511  5602 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
+10-06 08:50:49.281  5511  5602 I GmsDebugLogger: [83] 1 [maps_core]
+10-06 08:50:49.375  5511  5606 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+10-06 08:50:49.465  5511  5602 W libc    : Access denied finding property "ro.hardware.chipname"
+10-06 08:50:49.818  5511  5626 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:49.891  5511  5602 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+10-06 08:50:50.021  5511  5613 I GmsDebugLogger: [73] 1801
+10-06 08:50:50.069  5511  5613 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitBarcodeUi.optional:231818100000]
+10-06 08:50:50.095  5511  5613 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+10-06 08:50:50.251  2991  3066 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:50:50.258  2991  3066 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:50:50.352  5511  5650 I GmsDebugLogger: [73] 1801
+10-06 08:50:50.356  5511  5650 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:50:50.360  5511  5650 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:50.368  5505  5855 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:50:50.446   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:50:50.450  5505  5855 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:50:50.465  5511  5606 I GmsDebugLogger: [73] 1801
+10-06 08:50:50.471  5511  5606 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-06 08:50:50.476  5511  5606 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-06 08:50:50.527  5511  5626 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:50:51.124  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 3348(141KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2775KB/5551KB, paused 71us,11us total 8.511ms
+10-06 08:50:51.199  2991  5501 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:50:51.199  2991  5501 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:50:54.369  5511  5627 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:50:54.372  5511  5627 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:00.237  5511  5964 I MobileDataHub: Scheduling periodic tasks
+10-06 08:51:00.237  5511  5964 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-06 08:51:00.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:00.516  2991  3488 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:51:00.516  2991  3488 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:51:00.668  5511  5951 I GmsDebugLogger: [73] 1801
+10-06 08:51:00.692  5511  5951 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:00.705  5511  5951 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:51:01.457  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 2940(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2775KB/5550KB, paused 221us,10us total 6.691ms
+10-06 08:51:02.817  5505  5661 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.chimera_debug [CONTEXT service_id=204 ]
+10-06 08:51:02.817  5505  5661 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.chimera_debug
+10-06 08:51:03.093  5511  5628 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:51:03.378   546   823 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=10, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3421354 ] accessLevel:3
+10-06 08:51:03.378   546   902 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=9, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3424587 ] accessLevel:3
+10-06 08:51:03.413  5511  5628 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:03.476  5505  5655 I PTCommittedOperation: Receive new configuration for com.google.android.gms.mobile_data_plan
+10-06 08:51:03.484  5511  5964 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.mobile_data_plan [CONTEXT service_id=340 ]
+10-06 08:51:03.486  5505  6032 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.mobile_data_plan [CONTEXT service_id=204 ]
+10-06 08:51:03.486  5505  6032 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.mobile_data_plan
+10-06 08:51:07.245  5511  5952 I GmsDebugLogger: [73] 1801
+10-06 08:51:07.248  5511  5952 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:07.263  5511  5952 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:51:07.357  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:51:07.477  5184  5184 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-06 08:51:08.670  5511  5627 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:51:08.673  5511  5627 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:10.454   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:11.387  4413  4593 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 08:51:11.404  4413  4593 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 08:51:11.616  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 2936(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2775KB/5550KB, paused 64us,27us total 9.975ms
+10-06 08:51:11.791  5511  5790 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:51:11.794  5511  5790 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:14.669  6107  6107 E .android.gms.ui: Not starting debugger since process cannot load the jdwp agent.
+10-06 08:51:14.729  6107  6107 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 08:51:14.729  6107  6107 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 08:51:17.296  5511  6146 I GmsDebugLogger: [73] 1801
+10-06 08:51:17.297  5511  6146 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:17.300  5511  6146 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:51:20.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:21.552  5511  5626 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:51:21.554  5511  5626 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:21.776  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 2937(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2775KB/5551KB, paused 50us,11us total 6.967ms
+10-06 08:51:27.603  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:27.627  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:27.659  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:27.687  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:27.711  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:28.004  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:28.009  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:29.194  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:29.512  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:29.772  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:29.883  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:29.983  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:30.226  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:30.442   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:31.924  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 3138(190KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2777KB/5555KB, paused 58us,7us total 5.328ms
+10-06 08:51:40.216  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 08:51:40.228  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 08:51:40.239  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 08:51:40.251  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 08:51:40.262  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 08:51:40.274  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 08:51:40.276  4413  4593 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 08:51:40.442   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:41.403  4413  4593 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface on
+10-06 08:51:41.404  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:41.409  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:41.414  4413  4593 I krita   : Krita Mobile: phone defaults written (effective after restart): memoryHardLimitPercent=35, frameRenderingClones=1, animationCacheFrameSizeLimit=1920
+10-06 08:51:42.087  4413  4909 I rita.mobilefork: Explicit concurrent copying GC freed 3035(142KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2779KB/5558KB, paused 62us,12us total 7.248ms
+10-06 08:51:43.481  4413  4593 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test no test run requested
+10-06 08:51:43.854  4413  4413 W qtMainLoopThrea: type=1400 audit(0.0:253): avc:  denied  { getattr } for  path="/proc/uptime" dev="proc" ino=4026532031 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:proc_uptime:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 08:51:44.034   546   892 W InputManager-JNI: Input channel object 'c2b5ac0 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 08:51:44.094  4413  4593 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 08:51:44.175  4413  4593 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 08:51:44.176  4413  4593 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 08:51:44.879  5511  6231 I GmsDebugLogger: [73] 1801
+10-06 08:51:44.882  5511  6231 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
+10-06 08:51:44.902  5511  6231 I GmsDebugLogger: [83] 1 [maps_core]
+10-06 08:51:44.911  5511  6214 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+10-06 08:51:44.933  5511  6214 W libc    : Access denied finding property "ro.hardware.chipname"
+10-06 08:51:44.959  5511  5790 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-06 08:51:44.963  5511  5790 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-06 08:51:44.987  5511  5627 I GmsDebugLogger: [73] 1801
+10-06 08:51:44.990  5511  5627 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800],[MapsCoreDynamite.integ:231112103100800],[MlkitBarcodeUi.optional:231818100000]
+10-06 08:51:45.056  5511  6234 I GmsDebugLogger: [73] 1801
+10-06 08:51:45.057  5511  6234 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:45.060  5511  6234 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:51:45.167  5511  6232 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+10-06 08:51:45.226  5511  5612 I GmsDebugLogger: [73] 1801
+10-06 08:51:45.228  5511  5612 I GmsDebugLogger: [30] [VisionBarcode.optional:231818100800],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitBarcodeUi.optional:231818100000]
+10-06 08:51:45.233  5511  5612 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:51:45.286  5505  6225 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-06 08:51:45.301  5505  6225 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-06 08:51:45.343  5511  5612 I GmsDebugLogger: [73] 1801
+10-06 08:51:45.348  2991  6218 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:51:45.349  5511  5612 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-06 08:51:45.349  2991  6218 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:51:45.350  5511  5612 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-06 08:51:45.427  5511  5612 I GmsDebugLogger: [73] 1801
+10-06 08:51:45.429  5511  5612 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:45.431  5511  5612 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:51:50.442   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:51:52.251  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 3420(207KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2779KB/5559KB, paused 16us,9us total 5.227ms
+10-06 08:51:55.462  5511  6299 I GmsDebugLogger: [73] 1801
+10-06 08:51:55.464  5511  6299 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:51:55.466  5511  6299 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:52:00.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:02.649  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 6014(293KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2614KB/5228KB, paused 22us,41us total 9.432ms
+10-06 08:52:02.952   546   902 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=10, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3421354 ] accessLevel:3
+10-06 08:52:02.952   546   823 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:546/1000(android) for DataUsageRequest [ requestId=11, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3418120 ] accessLevel:3
+10-06 08:52:10.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:12.838  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 3298(139KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 16us,10us total 4.662ms
+10-06 08:52:20.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:22.999  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 18us,10us total 5.104ms
+10-06 08:52:24.051  5511  6366 I GmsDebugLogger: [73] 1801
+10-06 08:52:24.052  5511  6366 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:52:24.056  5511  6366 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:52:30.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:33.154  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 20us,10us total 5.436ms
+10-06 08:52:40.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:43.314  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 20us,9us total 5.436ms
+10-06 08:52:45.598  2991  6336 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:52:45.598  2991  6336 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:52:45.846  2991  6392 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:52:45.846  2991  6392 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:52:50.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:52:53.479  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 81us,9us total 5.766ms
+10-06 08:53:00.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:03.641  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 18us,9us total 5.008ms
+10-06 08:53:10.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:13.797  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 93us,28us total 5.897ms
+10-06 08:53:20.453   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:23.960  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 330us,25us total 6.051ms
+10-06 08:53:30.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:34.088  5511  6450 I GmsDebugLogger: [73] 1801
+10-06 08:53:34.089  5511  6450 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:262730502100800],[MlkitOcrCommon.optional:231818100800]
+10-06 08:53:34.091  5511  6450 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-06 08:53:34.130  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 17us,9us total 4.796ms
+10-06 08:53:40.443   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:44.288  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 18us,9us total 4.981ms
+10-06 08:53:50.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:53:54.445  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 18us,10us total 5.092ms
+10-06 08:54:00.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:04.603  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 16us,10us total 4.965ms
+10-06 08:54:10.444   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:14.760  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 77us,32us total 6.306ms
+10-06 08:54:20.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:24.923  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 152us,10us total 5.889ms
+10-06 08:54:30.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:35.085  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 259us,32us total 6.308ms
+10-06 08:54:40.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:45.246  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 299us,32us total 6.102ms
+10-06 08:54:50.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:54:53.093  2991  6168 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 08:54:53.093  2991  6168 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 08:54:53.330  1754  1754 D AugmentedAutofillService: handleOnConnected(): debug=true, verbose=false
+10-06 08:54:53.591  1177  1177 I ContentCaptureHelper: Setting logging level to DEBUG
+10-06 08:54:55.405  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 20us,9us total 4.797ms
+10-06 08:55:00.447   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:55:05.566  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 80us,32us total 6.104ms
+10-06 08:55:10.445   903   903 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 08:55:15.725  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 23us,9us total 5.018ms
+10-06 08:55:15.856  4413  4473 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 75us,36us total 6.020ms
