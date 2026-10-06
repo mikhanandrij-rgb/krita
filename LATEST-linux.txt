@@ -1,37 +1,37 @@
-== linux (run 29): success
+== linux (run 30): success
 status: success
 branch: mobile
-commit: a7303deea17471f02c13b9f2edf9971b064755d8
-date: 2026-10-06T10:53:16Z
+commit: bbbfba4a93e2457221b7fb13c14625d47d755856
+date: 2026-10-06T11:55:50Z
 screenshots: 78
 perf:
-  perf start: interface-ready-ms=5100 first-canvas-ms=-1 rss-kb=465024 peak-kb=465024 uptime-ms=10779
+  perf start: interface-ready-ms=5219 first-canvas-ms=-1 rss-kb=465808 peak-kb=465808 uptime-ms=11500
   perf panel tools: 6 ms
-  perf panel menu: 6 ms
+  perf panel menu: 7 ms
   perf panel more: 4 ms
-  perf panel brush: 13 ms
-  perf panel color: 6 ms
-  perf panel layers: 4 ms
-  perf panel animation: 4 ms
-  perf panel view: 4 ms
-  perf panel text: 6 ms
-  perf panel other:BrushHudDocker: 9 ms
-  perf panel other:LogDocker: 4 ms
-  perf panel other:LutDocker: 4 ms
-  perf panel other:RecorderDocker: 4 ms
-  perf panel other:TasksetDocker: 4 ms
-  perf panel other:ToolBox: 4 ms
-  perf panel other:TouchDocker: 7 ms
-  perf panel other:comics_project_manager_docker: 4 ms
-  perf panel other:lastdocumentsdocker: 4 ms
-  perf panel other:mutatorDocker: 4 ms
-  perf panel other:pykrita_workflow_buttons: 4 ms
-  perf panel other:quick_settings_docker: 4 ms
-  perf after-portrait: interface-ready-ms=5100 first-canvas-ms=18879 rss-kb=689292 peak-kb=689852 uptime-ms=160320
-  perf end: interface-ready-ms=5100 first-canvas-ms=18879 rss-kb=962408 peak-kb=962408 uptime-ms=593880
-  perf classic-start: interface-ready-ms=4919 first-canvas-ms=-1 rss-kb=450688 peak-kb=450688 uptime-ms=10679
-  perf classic-canvas: interface-ready-ms=4919 first-canvas-ms=15120 rss-kb=633552 peak-kb=633552 uptime-ms=17519
-  perf classic-end: interface-ready-ms=4919 first-canvas-ms=15120 rss-kb=669340 peak-kb=669340 uptime-ms=23620
+  perf panel brush: 16 ms
+  perf panel color: 8 ms
+  perf panel layers: 5 ms
+  perf panel animation: 5 ms
+  perf panel view: 5 ms
+  perf panel text: 7 ms
+  perf panel other:BrushHudDocker: 10 ms
+  perf panel other:LogDocker: 5 ms
+  perf panel other:LutDocker: 5 ms
+  perf panel other:RecorderDocker: 5 ms
+  perf panel other:TasksetDocker: 5 ms
+  perf panel other:ToolBox: 5 ms
+  perf panel other:TouchDocker: 8 ms
+  perf panel other:comics_project_manager_docker: 5 ms
+  perf panel other:lastdocumentsdocker: 5 ms
+  perf panel other:mutatorDocker: 5 ms
+  perf panel other:pykrita_workflow_buttons: 5 ms
+  perf panel other:quick_settings_docker: 5 ms
+  perf after-portrait: interface-ready-ms=5219 first-canvas-ms=19639 rss-kb=688140 peak-kb=688776 uptime-ms=161000
+  perf end: interface-ready-ms=5219 first-canvas-ms=19639 rss-kb=992536 peak-kb=992536 uptime-ms=595350
+  perf classic-start: interface-ready-ms=4980 first-canvas-ms=-1 rss-kb=450244 peak-kb=450244 uptime-ms=10899
+  perf classic-canvas: interface-ready-ms=4980 first-canvas-ms=15370 rss-kb=632404 peak-kb=632404 uptime-ms=17759
+  perf classic-end: interface-ready-ms=4980 first-canvas-ms=15370 rss-kb=668184 peak-kb=668184 uptime-ms=23870
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   36G  109G  25% /
