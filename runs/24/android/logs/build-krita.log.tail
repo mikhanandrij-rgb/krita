@@ -1,6 +1,4 @@
-alling: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Small_Vector.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Storyboarding.kws
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/VFX_Paint.kws
+home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/VFX_Paint.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Minimal.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeDark.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeHighContrast.colors
@@ -338,6 +336,7 @@ alling: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/kritamobileui.mo
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES/krita.mo
@@ -380,6 +379,7 @@ alling: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/kritamobileui.mo
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES/krita.mo
@@ -481,14 +481,14 @@ alling: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 02:02:02 2026
-Stats zeroed:                             Tue Oct  6 01:28:50 2026
-Cacheable calls:                           2745 / 2748 (99.89%)
-  Hits:                                      38 / 2745 ( 1.38%)
-    Direct:                                   0 /   38 ( 0.00%)
-    Preprocessed:                            38 /   38 (100.0%)
-  Misses:                                  2707 / 2745 (98.62%)
-Uncacheable calls:                            3 / 2748 ( 0.11%)
+Stats updated:                            Tue Oct  6 08:44:43 2026
+Stats zeroed:                             Tue Oct  6 08:41:05 2026
+Cacheable calls:                           2761 / 2764 (99.89%)
+  Hits:                                    2681 / 2761 (97.10%)
+    Direct:                                2678 / 2681 (99.89%)
+    Preprocessed:                             3 / 2681 ( 0.11%)
+  Misses:                                    80 / 2761 ( 2.90%)
+Uncacheable calls:                            3 / 2764 ( 0.11%)
   Autoconf compile/link:                      0 /    3 ( 0.00%)
   Bad compiler arguments:                     0 /    3 ( 0.00%)
   Called for linking:                         0 /    3 ( 0.00%)
@@ -509,7 +509,7 @@ Uncacheable calls:                            3 / 2748 ( 0.11%)
   Unsupported compiler option:                0 /    3 ( 0.00%)
   Unsupported environment variable:           0 /    3 ( 0.00%)
   Unsupported source language:                0 /    3 ( 0.00%)
-Errors:                                       0 / 2748 ( 0.00%)
+Errors:                                       0 / 2764 ( 0.00%)
   Compiler check failed:                      0
   Could not find compiler:                    0
   Could not read or parse input file:         0
@@ -519,16 +519,16 @@ Errors:                                       0 / 2748 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                     0 / 2748 ( 0.00%)
-  Preprocessed:                              38 / 2747 ( 1.38%)
+  Direct:                                  2678 / 2764 (96.89%)
+  Preprocessed:                               3 /   85 ( 3.53%)
 Local storage:
-  Cache size (GB):                          1.2 /  2.0 (57.83%)
-  Files:                                  11001
+  Cache size (GB):                          1.2 /  2.0 (61.07%)
+  Files:                                  12570
   Cleanups:                                   0
-  Hits:                                      38 / 2745 ( 1.38%)
-  Misses:                                  2707 / 2745 (98.62%)
-  Reads:                                   5495
-  Writes:                                  5452
+  Hits:                                    2681 / 2761 (97.10%)
+  Misses:                                    80 / 2761 ( 2.90%)
+  Reads:                                   5527
+  Writes:                                   163
 Remote storage:
   Hits:                                       0
   Misses:                                     0

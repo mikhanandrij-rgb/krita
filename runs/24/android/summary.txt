@@ -1,4 +1,3 @@
-== android (run 24): success
 status: success
 branch: mobile
 commit: 968fec224322921decaaae464ccd9d17f973ef26
@@ -9,4 +8,3 @@ release: https://github.com/mikhanandrij-rgb/krita/releases/tag/mobile-build-24
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   50G   95G  35% /
-

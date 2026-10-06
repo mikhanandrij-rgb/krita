@@ -1,8 +1,0 @@
-status: success
-branch: mobile
-commit: 934da92c9580a256d7ce6e82ac699ef70d5e9169
-date: 2026-10-06T02:49:07Z
-screenshots: 0
-disk:
-  Filesystem      Size  Used Avail Use% Mounted on
-  /dev/root       145G   35G  110G  24% /
