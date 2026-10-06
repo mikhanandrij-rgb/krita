@@ -1,6 +1,0 @@
-158:  Internal error:                      0
-5697:/home/runner/wd/krita/_install/include/QtCore/qpointer.h:77:14: error: static_cast from 'QObject *' to 'QAction *', which are not related by inheritance, is not allowed
-5710:gmake[2]: *** [plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/build.make:141: plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/kritamobileui_autogen/mocs_compilation.cpp.o] Error 1
-5711:gmake[1]: *** [CMakeFiles/Makefile2:52594: plugins/extensions/mobileui/CMakeFiles/kritamobileui.dir/all] Error 2
-5818:gmake: *** [Makefile:146: all] Error 2
-5819:## Failed to build the project

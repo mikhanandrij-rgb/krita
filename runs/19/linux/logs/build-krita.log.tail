@@ -1,0 +1,518 @@
+## Unpacking dependency: ext_appimagetool (FromCache)
+## Unpacking dependency: ext_python (FromCache)
+## Unpacking dependency: ext_vpl (FromCache)
+## Unpacking dependency: ext_libx265_10bit (FromCache)
+## Unpacking dependency: ext_libde265 (FromCache)
+## Unpacking dependency: ext_lzma (FromCache)
+## Unpacking dependency: ext_libaom (FromCache)
+## Unpacking dependency: ext_vpx (FromCache)
+## Unpacking dependency: ext_sdl2 (FromCache)
+## Unpacking dependency: ext_opus (FromCache)
+## Unpacking dependency: ext_openh264 (FromCache)
+## Unpacking dependency: ext_libogg (FromCache)
+## Unpacking dependency: ext_lame (FromCache)
+## Unpacking dependency: ext_zug (FromCache)
+## Unpacking dependency: ext_xsimd (FromCache)
+## Unpacking dependency: ext_unibreak (FromCache)
+## Unpacking dependency: ext_png (FromCache)
+## Unpacking dependency: ext_lcms2 (FromCache)
+## Unpacking dependency: ext_json_c (FromCache)
+## Unpacking dependency: ext_jpeg (FromCache)
+## Unpacking dependency: ext_immer (FromCache)
+## Unpacking dependency: ext_imath (FromCache)
+## Unpacking dependency: ext_icu (FromCache)
+## Unpacking dependency: ext_highway (FromCache)
+## Unpacking dependency: ext_gsl (FromCache)
+## Unpacking dependency: ext_giflib (FromCache)
+## Unpacking dependency: ext_fribidi (FromCache)
+## Unpacking dependency: ext_fftw3 (FromCache)
+## Unpacking dependency: ext_extra_cmake_modules (FromCache)
+## Unpacking dependency: ext_expat (FromCache)
+## Unpacking dependency: ext_eigen3 (FromCache)
+## Unpacking dependency: ext_brotli (FromCache)
+## Unpacking dependency: ext_boost (FromCache)
+## Unpacking dependency: ext_python-modules (FromCache)
+## Unpacking dependency: ext_libraw (FromCache)
+## Unpacking dependency: ext_libx265_12bit (FromCache)
+## Unpacking dependency: ext_libvorbis (FromCache)
+## Unpacking dependency: ext_flac (FromCache)
+## Unpacking dependency: ext_tiff (FromCache)
+## Unpacking dependency: ext_openjpeg (FromCache)
+## Unpacking dependency: ext_openexr (FromCache)
+## Unpacking dependency: ext_mypaint (FromCache)
+## Unpacking dependency: ext_lager (FromCache)
+## Unpacking dependency: ext_jpegxl (FromCache)
+## Unpacking dependency: ext_freetype (FromCache)
+## Unpacking dependency: ext_exiv2 (FromCache)
+## Unpacking dependency: ext_sip (FromCache)
+## Unpacking dependency: ext_libx265 (FromCache)
+## Unpacking dependency: ext_ocio (FromCache)
+## Unpacking dependency: ext_libtheora (FromCache)
+## Unpacking dependency: ext_webp (FromCache)
+## Unpacking dependency: ext_qt (FromCache)
+## Unpacking dependency: ext_fontconfig (FromCache)
+## Unpacking dependency: ext_linuxdeployqt (FromCache)
+## Unpacking dependency: ext_fcitx-qt (FromCache)
+## Unpacking dependency: ext_pyqt-builder (FromCache)
+## Unpacking dependency: ext_poppler (FromCache)
+## Unpacking dependency: ext_kdcraw (FromCache)
+## Unpacking dependency: ext_libheif (FromCache)
+## Unpacking dependency: ext_ffmpeg (FromCache)
+## Unpacking dependency: ext_quazip (FromCache)
+## Unpacking dependency: ext_kwindowsystem (FromCache)
+## Unpacking dependency: ext_kwidgetsaddons (FromCache)
+## Unpacking dependency: ext_kitemviews (FromCache)
+## Unpacking dependency: ext_kitemmodels (FromCache)
+## Unpacking dependency: ext_ki18n (FromCache)
+## Unpacking dependency: ext_kguiaddons (FromCache)
+## Unpacking dependency: ext_kcoreaddons (FromCache)
+## Unpacking dependency: ext_kconfig (FromCache)
+## Unpacking dependency: ext_karchive (FromCache)
+## Unpacking dependency: ext_kcrash (FromCache)
+## Unpacking dependency: ext_pyqt5 (FromCache)
+## Unpacking dependency: ext_seexpr (FromCache)
+## Unpacking dependency: ext_mlt (FromCache)
+## Unpacking dependency: ext_kimageformats (FromCache)
+## Unpacking dependency: ext_kcompletion (FromCache)
+## Unpacking dependency: ext_pyqt5-sip (FromCache)
+## Test if ccache supports verbose ('-vvv') option
+## RUNNING: ccache -vvvs
+## ccache supports verbose output: True
+Set cache size limit to 20.0 GB
+Statistics zeroed
+Cache directory:                          /home/runner/ccache/krita
+Config file:                              /home/runner/ccache/krita/ccache.conf
+System config file:                       /etc/ccache.conf
+Stats updated:                            Tue Oct  6 05:59:30 2026
+Stats zeroed:                             Tue Oct  6 05:59:30 2026
+Cacheable calls:                              0
+  Hits:                                       0
+    Direct:                                   0
+    Preprocessed:                             0
+  Misses:                                     0
+Uncacheable calls:                            0
+  Autoconf compile/link:                      0
+  Bad compiler arguments:                     0
+  Called for linking:                         0
+  Called for preprocessing:                   0
+  Ccache disabled:                            0
+  Compilation failed:                         0
+  Compiler output file missing:               0
+  Compiler produced empty output:             0
+  Compiler produced stdout:                   0
+  Could not use modules:                      0
+  Could not use precompiled header:           0
+  Forced recache:                             0
+  Multiple source files:                      0
+  No input file:                              0
+  Output to stdout:                           0
+  Preprocessing failed:                       0
+  Unsupported code directive:                 0
+  Unsupported compiler option:                0
+  Unsupported environment variable:           0
+  Unsupported source language:                0
+Errors:                                       0
+  Compiler check failed:                      0
+  Could not find compiler:                    0
+  Could not read or parse input file:         0
+  Could not write to output file:             0
+  Error hashing extra file:                   0
+  Input file modified during compilation:     0
+  Internal error:                             0
+  Missing cache file:                         0
+Local storage:
+  Cache size (GB):                          0.4 / 20.0 ( 1.82%)
+  Files:                                  11281
+  Cleanups:                                   0
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+Remote storage:
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+  Errors:                                     0
+  Timeouts:                                   0
+## KDE Continuous Integration System
+##
+## Starting build for krita on master
+##
+## Installing project to /home/runner/wd/krita/_install
+## Building project in /home/runner/wd/krita/_build
+## Staging project directory /home/runner/wd/krita/_staging
+##
+## Project build target: all
+## Project install target: install
+##
+## Project CI configuration as follows:
+##    in-source-build: False
+##    use-ccache: True
+##    ccache-large-cache: True
+##    cmake-options: -DKRITA_ENABLE_PCH=OFF -DFOUNDATION_BUILD=ON
+##    force-ninja-on-windows: True
+##    release-build: False
+##    test-before-installing: False
+##    run-tests: True
+##    build-tests: True
+##    tests-load-sensitive: False
+##    tests-run-in-parallel: True
+##    per-test-timeout: 240
+##    setup-x-environment: True
+##    setup-dbus-session: True
+##    force-inject-asan: False
+##    ctest-arguments: 
+##    require-passing-tests-on: []
+##    run-cppcheck: True
+##    cppcheck-arguments: --enable=warning,style,performance
+##    cppcheck-ignore-files: ['libs/pigment/KoAlphaMaskApplicatorFactory.cpp']
+##    run-gcovr: False
+##    gcovr-arguments: 
+##    use-asan: False
+##    pkg-config-sanity-check: none
+##    force-build-target: all
+##    force-install-target: install
+##
+## Providing the following dependencies:
+##    ext_linuxdeployqt - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_appimagetool - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kcrash - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_fcitx-qt - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_python-modules - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_sip - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_python - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_pyqt5-sip - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_pyqt5 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_pyqt-builder - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_poppler - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libraw - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kdcraw - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_vpl - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libx265_12bit - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libx265_10bit - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libx265 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libde265 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libheif - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_ocio - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_lzma - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libaom - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_vpx - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_sdl2 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_opus - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_openh264 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libvorbis - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libtheora - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_libogg - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_lame - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_flac - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_ffmpeg - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_zug - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_xsimd - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_webp - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_unibreak - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_tiff - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_seexpr - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_quazip - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_qt - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_png - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_openjpeg - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_openexr - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_mypaint - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_mlt - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_lcms2 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_lager - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kwindowsystem - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kwidgetsaddons - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kitemviews - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kitemmodels - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kimageformats - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_ki18n - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kguiaddons - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kcoreaddons - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kconfig - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_kcompletion - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_karchive - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_json_c - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_jpegxl - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_jpeg - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_immer - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_imath - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_icu - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_highway - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_gsl - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_giflib - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_fribidi - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_freetype - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_fontconfig - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_fftw3 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_extra_cmake_modules - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_expat - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_exiv2 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_eigen3 - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_brotli - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##    ext_boost - master (0fd95c4efca2e5b5024121bb0ccae5b353956cd9)
+##
+##
+## Building with the following environment variables:
+##    ACCEPT_EULA=Y
+##    ACTIONS_ORCHESTRATION_ID=eb88cf91-c264-876f-aefc-631aa00733e6.linux-phone-preview.__default
+##    ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE=/opt/actionarchivecache
+##    ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED=1
+##    AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
+##    ANDROID_BUILD_TOOLS_VERSION=36.0.0
+##    ANDROID_HOME=/usr/local/lib/android/sdk
+##    ANDROID_NDK=/usr/local/lib/android/sdk/ndk/27.3.13750724
+##    ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/27.3.13750724
+##    ANDROID_NDK_LATEST_HOME=/usr/local/lib/android/sdk/ndk/29.0.14206865
+##    ANDROID_NDK_ROOT=/usr/local/lib/android/sdk/ndk/27.3.13750724
+##    ANDROID_NDK_VERSION=27.3.13750724
+##    ANDROID_PLATFORM_VERSION=android-36
+##    ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+##    ANT_HOME=/usr/share/ant
+##    ASAN_OPTIONS=detect_leaks=0:new_delete_type_mismatch=0:detect_odr_violation=0:stack-use-after-scope=0:alloc_dealloc_mismatch=0
+##    AZURE_EXTENSION_DIR=/opt/az/azcliextensions
+##    BOOTSTRAP_HASKELL_NONINTERACTIVE=1
+##    CCACHE_DIR=/home/runner/ccache/krita
+##    CHROMEWEBDRIVER=/usr/local/share/chromedriver-linux64
+##    CHROME_BIN=/usr/bin/google-chrome
+##    CI=true
+##    CI_COMMIT_SHA=ae9a18220af080d7f8343f544dc93bf1d7e7d788
+##    CI_COMMIT_SHORT_SHA=ae9a1822
+##    CI_TOOLS=/home/runner/ci
+##    CMAKE_CXX_COMPILER_LAUNCHER=ccache
+##    CMAKE_C_COMPILER_LAUNCHER=ccache
+##    CMAKE_PREFIX_PATH=/home/runner/wd/krita/_install
+##    CONDA=/usr/share/miniconda
+##    DEBIAN_FRONTEND=noninteractive
+##    DEPS_BRANCH=master
+##    DOTNET_MULTILEVEL_LOOKUP=0
+##    DOTNET_NOLOGO=1
+##    DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+##    EDGEWEBDRIVER=/usr/local/share/edge_driver
+##    ENABLE_RUNNER_TRACING=true
+##    GECKOWEBDRIVER=/usr/local/share/gecko_driver
+##    GHCUP_INSTALL_BASE_PREFIX=/usr/local
+##    GITHUB_ACTION=__run_4
+##    GITHUB_ACTIONS=true
+##    GITHUB_ACTION_REF=
+##    GITHUB_ACTION_REPOSITORY=
+##    GITHUB_ACTOR=mikhanandrij-rgb
+##    GITHUB_ACTOR_ID=260949335
+##    GITHUB_API_URL=https://api.github.com
+##    GITHUB_ARTIFACTS=/home/runner/work/_temp/_runner_file_commands/artifacts_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_ARTIFACTS_LIST=/home/runner/work/_temp/_runner_file_commands/artifacts_list_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_BASE_REF=
+##    GITHUB_ENV=/home/runner/work/_temp/_runner_file_commands/set_env_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_EVENT_NAME=push
+##    GITHUB_EVENT_PATH=/home/runner/work/_temp/_github_workflow/event.json
+##    GITHUB_GRAPHQL_URL=https://api.github.com/graphql
+##    GITHUB_HEAD_REF=
+##    GITHUB_JOB=linux-phone-preview
+##    GITHUB_OUTPUT=/home/runner/work/_temp/_runner_file_commands/set_output_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_REF=refs/heads/mobile
+##    GITHUB_REF_NAME=mobile
+##    GITHUB_REF_PROTECTED=false
+##    GITHUB_REF_TYPE=branch
+##    GITHUB_REPOSITORY=mikhanandrij-rgb/krita
+##    GITHUB_REPOSITORY_ID=1406414766
+##    GITHUB_REPOSITORY_OWNER=mikhanandrij-rgb
+##    GITHUB_REPOSITORY_OWNER_ID=260949335
+##    GITHUB_RETENTION_DAYS=90
+##    GITHUB_RUN_ATTEMPT=1
+##    GITHUB_RUN_ID=37420833368
+##    GITHUB_RUN_NUMBER=19
+##    GITHUB_SERVER_URL=https://github.com
+##    GITHUB_SHA=ae9a18220af080d7f8343f544dc93bf1d7e7d788
+##    GITHUB_STATE=/home/runner/work/_temp/_runner_file_commands/save_state_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_STEP_SUMMARY=/home/runner/work/_temp/_runner_file_commands/step_summary_e046432c-5ad9-4d3b-9613-8eab9b14a212
+##    GITHUB_TRIGGERING_ACTOR=mikhanandrij-rgb
+##    GITHUB_WORKFLOW=Krita Mobile (unofficial) Android APK
+##    GITHUB_WORKFLOW_REF=mikhanandrij-rgb/krita/.github/workflows/mobilefork-android.yml@refs/heads/mobile
+##    GITHUB_WORKFLOW_SHA=ae9a18220af080d7f8343f544dc93bf1d7e7d788
+##    GITHUB_WORKSPACE=/home/runner/work/krita/krita
+##    GOROOT_1_24_X64=/opt/hostedtoolcache/go/1.24.13/x64
+##    GOROOT_1_25_X64=/opt/hostedtoolcache/go/1.25.14/x64
+##    GOROOT_1_26_X64=/opt/hostedtoolcache/go/1.26.8/x64
+##    GRADLE_HOME=/usr/share/gradle-9.8.0
+##    HCA_CLOUD_PROVIDER=azure
+##    HOME=/home/runner
+##    HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS=3650
+##    HOMEBREW_NO_AUTO_UPDATE=1
+##    INVOCATION_ID=b9a76321130d4293aefaef809a2892b7
+##    ImageOS=ubuntu24
+##    ImageVersion=20260927.320.1
+##    JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+##    JAVA_HOME_11_X64=/usr/lib/jvm/temurin-11-jdk-amd64
+##    JAVA_HOME_17_X64=/usr/lib/jvm/temurin-17-jdk-amd64
+##    JAVA_HOME_21_X64=/usr/lib/jvm/temurin-21-jdk-amd64
+##    JAVA_HOME_25_X64=/usr/lib/jvm/temurin-25-jdk-amd64
+##    JAVA_HOME_8_X64=/usr/lib/jvm/temurin-8-jdk-amd64
+##    JOURNAL_STREAM=9:11977
+##    KDECI_ANDROID_ABI=arm64-v8a
+##    KDECI_BUILD=TRUE
+##    KDECI_BUILD_TYPE=Release
+##    KDECI_CC_CACHE=/home/runner/ccache
+##    KDECI_COMPRESS_PACKAGES_ON_DOWNLOAD=False
+##    KDECI_EXTRA_CMAKE_ARGS=-DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF
+##    KDECI_REPO_METADATA_PATH=/home/runner/ci/krita-deps-management/repo-metadata
+##    KDECI_WORKDIR_PATH=/home/runner/wd
+##    LANG=en_US.UTF-8
+##    LD_LIBRARY_PATH=/home/runner/wd/krita/_install/lib:/home/runner/wd/krita/_install/lib/x86_64-linux-gnu:/opt/hostedtoolcache/Python/3.10.21/x64/lib
+##    LOGNAME=runner
+##    MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/system.slice/hosted-compute-agent.service/memory.pressure
+##    MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+##    NVM_DIR=/home/runner/.nvm
+##    PATH=/home/runner/wd/krita/_install/bin:/home/runner/ci/venv/bin:/opt/hostedtoolcache/Python/3.10.21/x64/bin:/opt/hostedtoolcache/Python/3.10.21/x64:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+##    PIPX_BIN_DIR=/opt/pipx_bin
+##    PIPX_HOME=/opt/pipx
+##    PKG_CONFIG_PATH=/home/runner/wd/krita/_install/lib/pkgconfig:/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/pkgconfig:/home/runner/wd/krita/_install/share/pkgconfig:/opt/hostedtoolcache/Python/3.10.21/x64/lib/pkgconfig
+##    POWERSHELL_DISTRIBUTION_CHANNEL=GitHub-Actions-Linux
+##    PS1=(venv) 
+##    PSModulePath=/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/7/Modules:/usr/share/az_15.6.1
+##    PWD=/home/runner/work/krita/krita
+##    PYTHONDONTWRITEBYTECODE=1
+##    Python2_ROOT_DIR=/opt/hostedtoolcache/Python/3.10.21/x64
+##    Python3_ROOT_DIR=/opt/hostedtoolcache/Python/3.10.21/x64
+##    Python_ROOT_DIR=/opt/hostedtoolcache/Python/3.10.21/x64
+##    QMAKEFEATURES=/home/runner/wd/krita/_install/mkspecs/features
+##    QT_SELECT=qt5
+##    RUNNER_ARCH=X64
+##    RUNNER_ENVIRONMENT=github-hosted
+##    RUNNER_NAME=GitHub Actions 1000000045
+##    RUNNER_OS=Linux
+##    RUNNER_TEMP=/home/runner/work/_temp
+##    RUNNER_TOOL_CACHE=/opt/hostedtoolcache
+##    RUNNER_TRACKING_ID=github_e56752ac-ec45-486e-92b2-619a31fa87b0
+##    RUNNER_WORKSPACE=/home/runner/work/krita
+##    SELENIUM_JAR_PATH=/usr/share/java/selenium-server.jar
+##    SGX_AESM_ADDR=1
+##    SHELL=/bin/bash
+##    SHLVL=1
+##    SWIFT_PATH=/usr/share/swift/usr/bin
+##    SYSTEMD_EXEC_PID=2085
+##    USER=runner
+##    USE_BAZEL_FALLBACK_VERSION=silent:
+##    VCPKG_INSTALLATION_ROOT=/usr/local/share/vcpkg
+##    VIRTUAL_ENV=/home/runner/ci/venv
+##    VIRTUAL_ENV_PROMPT=(venv) 
+##    WD=/home/runner/wd
+##    XDG_CONFIG_HOME=/home/runner/.config
+##    XDG_CURRENT_DESKTOP=KDE
+##    XDG_DATA_DIRS=/home/runner/wd/krita/_install/share
+##    XDG_RUNTIME_DIR=/run/user/1001
+##    _=/home/runner/ci/venv/bin/python3
+##    pythonLocation=/opt/hostedtoolcache/Python/3.10.21/x64
+##    venv=/home/runner/ci/venv
+##
+## Starting build process...
+## RUNNING: cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX="/home/runner/wd/krita/_install" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DKRITA_ENABLE_PCH=OFF -DFOUNDATION_BUILD=ON -DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF "/home/runner/work/krita/krita"
+-- The CXX compiler identification is GNU 13.3.0
+-- The C compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Using CMake version: 3.31.6
+-- Krita version: 5.4.0-prealpha
+-- Branding selected: Next
+CMake Warning at CMakeLists.txt:439 (message):
+  VIRTUAL_ENV environment variable is set! It may cause clashes with our own
+  Python version.  Instructing CMake to ignore the virtual environment...
+
+
+-- Found Python: /home/runner/wd/krita/_install/bin/python3.13 (found suitable version "3.13.5", minimum required is "3.8") found components: Interpreter Development Development.Module Development.Embed
+-- FindPythonLibrary: TRUE
+-- Python system site-packages directory: /home/runner/wd/krita/_install/lib/python3.13/site-packages
+CMake Warning at cmake/modules/FindPythonLibrary.cmake:68 (message):
+  CMAKE_PREFIX_PATH variable is not set, we might NOT be able to detect SIP
+  modules
+Call Stack (most recent call first):
+  CMakeLists.txt:457 (find_package)
+
+
+-- Krita site-packages directories for SIP v4: /home/runner/wd/krita/_install/lib/krita-python-libs
+-- Krita site-packages directories for SIP v5+: /home/runner/wd/krita/_install/lib/python3.13/site-packages
+-- Found PythonLibrary: /home/runner/wd/krita/_install/lib/libpython3.13.so (Required is at least version "3.8")
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found KF5Config: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5Config/KF5ConfigConfig.cmake (found version "5.101.0")
+-- Found KF5WidgetsAddons: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5WidgetsAddons/KF5WidgetsAddonsConfig.cmake (found version "5.101.0")
+-- Found KF5Completion: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5Completion/KF5CompletionConfig.cmake (found version "5.101.0")
+-- Found KF5CoreAddons: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5CoreAddons/KF5CoreAddonsConfig.cmake (found version "5.101.0")
+-- Found KF5GuiAddons: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5GuiAddons/KF5GuiAddonsConfig.cmake (found version "5.101.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found KF5I18n: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5I18n/KF5I18nConfig.cmake (found version "5.101.0")
+-- Found KF5ItemViews: /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/cmake/KF5ItemViews/KF5ItemViewsConfig.cmake (found version "5.101.0")
+-- Found KF5: success (found suitable version "5.101.0", minimum required is "5.44.0") found components: Config WidgetsAddons Completion CoreAddons GuiAddons I18n ItemViews
+-- Looking for QT_HAS_ENTER_LEAVE_PATCH
+-- Looking for QT_HAS_ENTER_LEAVE_PATCH - found
+-- Performing Test HAVE_HIGH_DPI_SCALE_FACTOR_ROUNDING_POLICY
+-- Performing Test HAVE_HIGH_DPI_SCALE_FACTOR_ROUNDING_POLICY - Success
+-- Performing Test HAVE_QMDIAREA_ALWAYS_SHOW_SUBWINDOW_TITLE
+-- Performing Test HAVE_QMDIAREA_ALWAYS_SHOW_SUBWINDOW_TITLE - Success
+-- Performing Test KRITA_QT_HAS_ANDROID_EMULATE_MOUSE_BUTTONS_FOR_PAGE_UP_DOWN
+-- Performing Test KRITA_QT_HAS_ANDROID_EMULATE_MOUSE_BUTTONS_FOR_PAGE_UP_DOWN - Failed
+-- Performing Test KRITA_QT_HAS_ANDROID_IGNORE_HISTORIC_TABLET_EVENTS
+-- Performing Test KRITA_QT_HAS_ANDROID_IGNORE_HISTORIC_TABLET_EVENTS - Failed
+-- Performing Test KRITA_QT_HAS_ANDROID_EMULATE_MOUSE_BUTTONS_FOR_HIGH_FUNCTION_KEYS
+-- Performing Test KRITA_QT_HAS_ANDROID_EMULATE_MOUSE_BUTTONS_FOR_HIGH_FUNCTION_KEYS - Failed
+-- Performing Test KRITA_QT_HAS_QSCROLLER_FILTER
+-- Performing Test KRITA_QT_HAS_QSCROLLER_FILTER - Success
+-- Performing Test KRITA_QT_HAS_ANDROID_INPUT_PLATFORM_DATA_SOFT_INPUT_ADJUST_NOTHING
+-- Performing Test KRITA_QT_HAS_ANDROID_INPUT_PLATFORM_DATA_SOFT_INPUT_ADJUST_NOTHING - Failed
+-- Performing Test KRITA_QT_HAS_ANDROID_QPLATFORMSCREEN_DENSITY_ADJUSTMENT
+-- Performing Test KRITA_QT_HAS_ANDROID_QPLATFORMSCREEN_DENSITY_ADJUSTMENT - Failed
+-- Performing Test KRITA_QT_HEADER_VIEW_MEMORY_MODE_INITIALIZATION_FIX
+-- Performing Test KRITA_QT_HEADER_VIEW_MEMORY_MODE_INITIALIZATION_FIX - Failed
+-- Found X11: /usr/include  found components: Xinput
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")
+-- Found PNG: /home/runner/wd/krita/_install/lib/libpng.so (found version "1.6.58")
+-- Found Boost: /home/runner/wd/krita/_install/lib/cmake/Boost-1.90.0/BoostConfig.cmake (found suitable version "1.90.0", minimum required is "1.69")
+-- Found GSL: /home/runner/wd/krita/_install/include (found version "2.8")
+-- Found WebP: /home/runner/wd/krita/_install/include (found suitable version "1.6.0", minimum required is "1.2.0") found components: demux mux
+-- Found OpenEXR: /home/runner/wd/krita/_install/lib/cmake/OpenEXR/OpenEXRConfig.cmake (found version "3.4.10")
+-- Found TIFF: /home/runner/wd/krita/_install/lib/cmake/tiff (found version "4.7.1")
+-- Performing Test TIFF_HAS_PSD_TAGS
+-- Performing Test TIFF_HAS_PSD_TAGS - Success
+-- Performing Test TIFF_CAN_WRITE_PSD_TAGS
+-- Performing Test TIFF_CAN_WRITE_PSD_TAGS - Success
+-- Found JPEG: /home/runner/wd/krita/_install/lib/libjpeg.so (found version "62")
+-- Found libjpeg-turbo: /home/runner/wd/krita/_install/include (found suitable version "3.1.4.1", minimum required is "2.1.3") found components: turbojpeg
+-- Found GIF: /home/runner/wd/krita/_install/lib/libgif.so (found version "5.2.1")
+-- Found HEIF: /home/runner/wd/krita/_install/include (found suitable version "1.21.2", minimum required is "1.11.0")
+-- Found OpenJPEG: /home/runner/wd/krita/_install/include/openjpeg-2.5 (found suitable version "2.5.4", minimum required is "2.3.0")
+-- Found JPEGXL: /home/runner/wd/krita/_install/lib/libjxl.so (found suitable version "0.11.2", minimum required is "0.7.0")
+-- Found FFTW3: /home/runner/wd/krita/_install/include (found version "3.3.9")
+-- Found OpenColorIO: /home/runner/wd/krita/_install/include/OpenColorIO (found suitable version "2.5.1", minimum required is "2.0.0")
+-- Found SIP version: 6.10.0
+-- Found PyQt5 version: 5.15.11
+-- Warning: Property DESCRIPTION for package SDL2 already set to "low level access to audio, keyboard, mouse, joystick, and graphics hardware", overriding it with "Simple DirectMedia Layer 2"
+-- Found LibMyPaint: /home/runner/wd/krita/_install/include (found suitable version "1.6.1", minimum required is "1.4.0")
+-- Found QtGui OpenGL support
+-- Found LibExiv2: /home/runner/wd/krita/_install/lib/libexiv2.so (found suitable version "0.28.8", minimum required is "0.16")
+-- Found LCMS2: /home/runner/wd/krita/_install/lib/liblcms2.so (found suitable version "2.19.0", minimum required is "2.4")
+-- Detected Compiler: GCC 13.3.0
+-- Performing Test check_cxx_compiler_flag__Wabi
