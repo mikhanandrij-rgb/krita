@@ -1,0 +1,7 @@
+perf classic-start: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=450064 peak-kb=450064 uptime-ms=10500
+screenshot /home/runner/work/krita/krita/shots-classic/classic-portrait-01-start.png ok
+screenshot /home/runner/work/krita/krita/shots-classic/classic-portrait-02-canvas.png ok
+perf classic-canvas: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=632864 peak-kb=632864 uptime-ms=17440
+screenshot /home/runner/work/krita/krita/shots-classic/classic-landscape-02-canvas.png ok
+perf classic-end: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=634224 peak-kb=634224 uptime-ms=21070
+done

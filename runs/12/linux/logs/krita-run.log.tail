@@ -1,0 +1,246 @@
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffef8a06c0 (LWP 31662)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31663)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31664)]
+[New Thread 0x7fffda9fd6c0 (LWP 31665)]
+[New Thread 0x7fffd99fc6c0 (LWP 31666)]
+[New Thread 0x7fffcbfff6c0 (LWP 31667)]
+[New Thread 0x7fffcaffe6c0 (LWP 31668)]
+[New Thread 0x7fffc9ffd6c0 (LWP 31669)]
+[New Thread 0x7fffb7fff6c0 (LWP 31670)]
+[New Thread 0x7fffb6ffe6c0 (LWP 31671)]
+[Thread 0x7fffef8a06c0 (LWP 31662) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 31669) exited]
+[Thread 0x7fffb7fff6c0 (LWP 31670) exited]
+[Thread 0x7fffcaffe6c0 (LWP 31668) exited]
+[Thread 0x7fffcbfff6c0 (LWP 31667) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31666) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31665) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31664) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31663) exited]
+[Thread 0x7fffb6ffe6c0 (LWP 31671) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb6ffe6c0 (LWP 31674)]
+[New Thread 0x7fffd99fc6c0 (LWP 31675)]
+[New Thread 0x7fffef8a06c0 (LWP 31676)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31677)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31678)]
+[New Thread 0x7fffda9fd6c0 (LWP 31679)]
+[New Thread 0x7fffcbfff6c0 (LWP 31680)]
+[New Thread 0x7fffcaffe6c0 (LWP 31681)]
+[New Thread 0x7fffc9ffd6c0 (LWP 31682)]
+[New Thread 0x7fffb7fff6c0 (LWP 31683)]
+[Thread 0x7fffb6ffe6c0 (LWP 31674) exited]
+[Thread 0x7fffcaffe6c0 (LWP 31681) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 31682) exited]
+[Thread 0x7fffcbfff6c0 (LWP 31680) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31679) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31678) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31677) exited]
+[Thread 0x7fffef8a06c0 (LWP 31676) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31675) exited]
+[Thread 0x7fffb7fff6c0 (LWP 31683) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb7fff6c0 (LWP 31686)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31687)]
+[New Thread 0x7fffef8a06c0 (LWP 31688)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31689)]
+[New Thread 0x7fffda9fd6c0 (LWP 31690)]
+[New Thread 0x7fffd99fc6c0 (LWP 31691)]
+[New Thread 0x7fffcbfff6c0 (LWP 31692)]
+[New Thread 0x7fffcaffe6c0 (LWP 31693)]
+[New Thread 0x7fffc9ffd6c0 (LWP 31694)]
+[New Thread 0x7fffb6ffe6c0 (LWP 31695)]
+[Thread 0x7fffb7fff6c0 (LWP 31686) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 31694) exited]
+[Thread 0x7fffcaffe6c0 (LWP 31693) exited]
+[Thread 0x7fffcbfff6c0 (LWP 31692) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31691) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31690) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31689) exited]
+[Thread 0x7fffef8a06c0 (LWP 31688) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31687) exited]
+[Thread 0x7fffb6ffe6c0 (LWP 31695) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb6ffe6c0 (LWP 31696)]
+[New Thread 0x7fffda9fd6c0 (LWP 31700)]
+[New Thread 0x7fffef8a06c0 (LWP 31701)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31702)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31703)]
+[New Thread 0x7fffd99fc6c0 (LWP 31704)]
+[New Thread 0x7fffcbfff6c0 (LWP 31705)]
+[New Thread 0x7fffcaffe6c0 (LWP 31706)]
+[New Thread 0x7fffc9ffd6c0 (LWP 31707)]
+[New Thread 0x7fffb7fff6c0 (LWP 31708)]
+[New Thread 0x7fffb5ffd6c0 (LWP 31709)]
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritapalettize.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+Fontconfig error: Cannot load default config file: No such file: (null)
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: css_styles"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+[New Thread 0x7fffa56e76c0 (LWP 31710)]
+[New Thread 0x7fffa46e66c0 (LWP 31711)]
+[New Thread 0x7fffa36e56c0 (LWP 31712)]
+[New Thread 0x7fffa26e46c0 (LWP 31713)]
+[New Thread 0x7fff933ff6c0 (LWP 31718)]
+QObject::startTimer: Timers cannot have negative intervals
+[New Thread 0x7fff923fe6c0 (LWP 31719)]
+[New Thread 0x7fff913fd6c0 (LWP 31720)]
+[Thread 0x7fff923fe6c0 (LWP 31719) exited]
+/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/krita-python-libs/krita added to PYTHONPATH
+[New Thread 0x7fff923fe6c0 (LWP 31721)]
+[New Thread 0x7fff84ed16c0 (LWP 31722)]
+[New Thread 0x7fff7bbff6c0 (LWP 31723)]
+[New Thread 0x7fff7a96a6c0 (LWP 31724)]
+[New Thread 0x7fff792e66c0 (LWP 31725)]
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+[New Thread 0x7fff66dff6c0 (LWP 31732)]
+[New Thread 0x7fff5dbff6c0 (LWP 31733)]
+[New Thread 0x7fff65dfe6c0 (LWP 31734)]
+[New Thread 0x7fff5ffff6c0 (LWP 31735)]
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+
+Thread 1 "krita" received signal SIGSEGV, Segmentation fault.
+0x00007ffff79a47bc in KisPaintOpPresetsEditor::showEvent(QShowEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+
+=== crash backtrace ===
+#0  0x00007ffff79a47bc in KisPaintOpPresetsEditor::showEvent(QShowEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#1  0x00007ffff61afd98 in QWidget::event(QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#2  0x00007ffff616cd52 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#3  0x00007ffff7b5f11e in KisApplication::notify(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#4  0x00007ffff54dbfb8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#5  0x00007ffff61ac8a7 in QWidgetPrivate::show_helper() () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#6  0x00007ffff61ac809 in QWidgetPrivate::showChildren(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#7  0x00007ffff61ac883 in QWidgetPrivate::show_helper() () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#8  0x00007ffff61af843 in QWidgetPrivate::setVisible(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#9  0x00007ffff61ac7e9 in QWidgetPrivate::showChildren(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#10 0x00007ffff61ac883 in QWidgetPrivate::show_helper() () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#11 0x00007ffff61af843 in QWidgetPrivate::setVisible(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#12 0x00007ffff6193b40 in QStackedLayout::setCurrentIndex(int) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#13 0x00007fffa007dd51 in mobileui::Sheet::activatePanel(mobileui::Sheet::Panel*, QString const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#14 0x00007fffa007dea1 in mobileui::Sheet::open(QString const&, QString const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#15 0x00007fffa00acc18 in mobileui::Shell::openPanel(QString const&, QString const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#16 0x00007fffa00c3529 in QtPrivate::QFunctorSlotObject<mobileui::(anonymous namespace)::TestDriver::next()::{lambda()#1}, 0, QtPrivate::List<>, void>::impl(int, QtPrivate::QSlotObjectBase*, QObject*, void**, bool*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#17 0x00007ffff551a576 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#18 0x00007ffff550972b in QObject::event(QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#19 0x00007ffff616cd52 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#20 0x00007ffff7b5f11e in KisApplication::notify(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#21 0x00007ffff54dbfb8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#22 0x00007ffff5537149 in QTimerInfoList::activateTimers() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#23 0x00007ffff5537a94 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#24 0x00007ffff2719635 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#25 0x00007ffff2778bf7 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#26 0x00007ffff2718ad3 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#27 0x00007ffff5537dca in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#28 0x00007ffff54da8fb in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#29 0x00007ffff54e3114 in QCoreApplication::exec() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#30 0x000055555555e0f5 in main ()
+  Id   Target Id                                           Frame 
+* 1    Thread 0x7ffff4384540 (LWP 31659) "krita"           0x00007ffff79a47bc in KisPaintOpPresetsEditor::showEvent(QShowEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+  32   Thread 0x7fffb6ffe6c0 (LWP 31696) "QDBusConnection" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa8002e80, nfds=3, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  33   Thread 0x7fffda9fd6c0 (LWP 31700) "QXcbEventQueue"  0x00007ffff4b1b79d in __GI___poll (fds=0x7fffda9fcbf8, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  34   Thread 0x7fffef8a06c0 (LWP 31701) "llvmpipe-0"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557786468) at ./nptl/futex-internal.c:57
+  35   Thread 0x7fffdc9ff6c0 (LWP 31702) "llvmpipe-1"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x5555577865c8) at ./nptl/futex-internal.c:57
+  36   Thread 0x7fffdb9fe6c0 (LWP 31703) "llvmpipe-2"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555778672c) at ./nptl/futex-internal.c:57
+  37   Thread 0x7fffd99fc6c0 (LWP 31704) "llvmpipe-3"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=-1, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557786888) at ./nptl/futex-internal.c:57
+  38   Thread 0x7fffcbfff6c0 (LWP 31705) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555777d2e0) at ./nptl/futex-internal.c:57
+  39   Thread 0x7fffcaffe6c0 (LWP 31706) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555777d2e0) at ./nptl/futex-internal.c:57
+  40   Thread 0x7fffc9ffd6c0 (LWP 31707) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555777d2e0) at ./nptl/futex-internal.c:57
+  41   Thread 0x7fffb7fff6c0 (LWP 31708) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555777d2e0) at ./nptl/futex-internal.c:57
+  42   Thread 0x7fffb5ffd6c0 (LWP 31709) "krita:disk$0"    0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557b66afc) at ./nptl/futex-internal.c:57
+  43   Thread 0x7fffa56e76c0 (LWP 31710) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x7fffa56e6c40, op=137, expected=0, futex_word=0x555558b0a574) at ./nptl/futex-internal.c:57
+  44   Thread 0x7fffa46e66c0 (LWP 31711) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x7fffa46e5c40, op=137, expected=0, futex_word=0x555558b0a030) at ./nptl/futex-internal.c:57
+  45   Thread 0x7fffa36e56c0 (LWP 31712) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x7fffa36e4c40, op=137, expected=0, futex_word=0x55555934da20) at ./nptl/futex-internal.c:57
+  46   Thread 0x7fffa26e46c0 (LWP 31713) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x7fffa26e3c40, op=137, expected=0, futex_word=0x555558b08780) at ./nptl/futex-internal.c:57
+  47   Thread 0x7fff933ff6c0 (LWP 31718) "Qt bearer threa" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fff880013b0, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  49   Thread 0x7fff913fd6c0 (LWP 31720) "KisTileDataSwap" syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+  50   Thread 0x7fff923fe6c0 (LWP 31721) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff7c001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  51   Thread 0x7fff84ed16c0 (LWP 31722) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff74001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  52   Thread 0x7fff7bbff6c0 (LWP 31723) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff70001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  53   Thread 0x7fff7a96a6c0 (LWP 31724) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff68001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  54   Thread 0x7fff792e66c0 (LWP 31725) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff6c001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  55   Thread 0x7fff66dff6c0 (LWP 31732) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x7fff66dfec40, op=137, expected=0, futex_word=0x55555d74ad74) at ./nptl/futex-internal.c:57
+  56   Thread 0x7fff5dbff6c0 (LWP 31733) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x7fff5dbfec40, op=137, expected=0, futex_word=0x55556d82b504) at ./nptl/futex-internal.c:57
+  57   Thread 0x7fff65dfe6c0 (LWP 31734) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x7fff65dfdc40, op=137, expected=0, futex_word=0x55555a37dc94) at ./nptl/futex-internal.c:57
+  58   Thread 0x7fff5ffff6c0 (LWP 31735) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x7fff5fffec40, op=137, expected=0, futex_word=0x55555a395014) at ./nptl/futex-internal.c:57
+krita exit code: 255
+total 268
+drwxr-xr-x  2 runner runner  4096 Oct  6 04:20 .
+drwxr-xr-x 27 runner runner  4096 Oct  6 04:20 ..
+-rw-r--r--  1 runner runner 35867 Oct  6 04:20 portrait-01-hub.png
+-rw-r--r--  1 runner runner 56479 Oct  6 04:20 portrait-02-new-canvas.png
+-rw-r--r--  1 runner runner 16133 Oct  6 04:20 portrait-03-editor.png
+-rw-r--r--  1 runner runner 40464 Oct  6 04:20 portrait-04-tools.png
+-rw-r--r--  1 runner runner 80818 Oct  6 04:20 portrait-05-brush-presets.png
+-rw-r--r--  1 runner runner 28292 Oct  6 04:20 portrait-06-tool-options.png
+-rw-r--r--  1 runner runner   862 Oct  6 04:20 testdriver.log

@@ -1,0 +1,4 @@
+perf start: interface-ready-ms=17209 first-canvas-ms=-1 rss-kb=485764 peak-kb=485764 uptime-ms=23409
+perf classic-start: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=450064 peak-kb=450064 uptime-ms=10500
+perf classic-canvas: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=632864 peak-kb=632864 uptime-ms=17440
+perf classic-end: interface-ready-ms=4799 first-canvas-ms=-1 rss-kb=634224 peak-kb=634224 uptime-ms=21070
