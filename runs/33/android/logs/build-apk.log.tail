@@ -537,19 +537,19 @@ Recommendation: remove package="org.krita" from the source AndroidManifest.xml: 
 > Task :compileDebugShaders NO-SOURCE
 > Task :generateDebugAssets UP-TO-DATE
 > Task :mergeDebugAssets
-> Task :processDebugJavaRes
 > Task :processDebugManifestForPackage
 > Task :compressDebugAssets
-> Task :mergeDebugJavaResource
+> Task :processDebugJavaRes
 > Task :processDebugResources
-> Task :checkDebugDuplicateClasses
-
+> Task :mergeDebugJavaResource
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
+
 > Task :compileDebugJavaWithJavac
 
-> Task :mergeLibDexDebug
+> Task :checkDebugDuplicateClasses
 > Task :dexBuilderDebug
+> Task :mergeLibDexDebug
 > Task :desugarDebugFileDependencies
 > Task :mergeProjectDexDebug
 > Task :mergeDebugJniLibFolders
@@ -574,9 +574,9 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 1m 38s
+BUILD SUCCESSFUL in 1m 43s
 46 actionable tasks: 46 executed
-Android package built successfully in 109.564 ms.
+Android package built successfully in 110.381 ms.
   -- File: /home/runner/wd/krita/_build/krita_build_apk//build/outputs/apk/debug/krita_build_apk-debug.apk
 [100%] Built target create-apk-krita
 [100%] Built target create-apk
@@ -648,16 +648,16 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :generateReleaseAssets UP-TO-DATE
 > Task :mergeReleaseJavaResource
 > Task :mergeReleaseAssets
-> Task :compressReleaseAssets
-> Task :extractReleaseVersionControlInfo
 > Task :mergeReleaseNativeLibs
-> Task :generateReleaseLintVitalReportModel
 
 > Task :stripReleaseDebugSymbols
 Unable to strip the following libraries, packaging them as they are: capi.so, kimg_ani_arm64-v8a.so, kimg_eps_arm64-v8a.so, kimg_hdr_arm64-v8a.so, kimg_kra_arm64-v8a.so, kimg_ora_arm64-v8a.so, kimg_pcx_arm64-v8a.so, kimg_pic_arm64-v8a.so, kimg_psd_arm64-v8a.so, kimg_ras_arm64-v8a.so, kimg_rgb_arm64-v8a.so, kimg_tga_arm64-v8a.so, kimg_xcf_arm64-v8a.so, ktranscript_arm64-v8a.so, libplugins_bearer_qandroidbearer_arm64-v8a.so, libplugins_iconengines_qsvgicon_arm64-v8a.so, libplugins_imageformats_qgif_arm64-v8a.so, libplugins_imageformats_qicns_arm64-v8a.so, libplugins_imageformats_qico_arm64-v8a.so, libplugins_imageformats_qjpeg_arm64-v8a.so, libplugins_imageformats_qsvg_arm64-v8a.so, libplugins_imageformats_qtga_arm64-v8a.so, libplugins_imageformats_qtiff_arm64-v8a.so, libplugins_imageformats_qwbmp_arm64-v8a.so, libplugins_imageformats_qwebp_arm64-v8a.so, libplugins_platforms_qtforandroid_arm64-v8a.so, libplugins_qmltooling_qmldbg_debugger_arm64-v8a.so, libplugins_qmltooling_qmldbg_inspector_arm64-v8a.so, libplugins_qmltooling_qmldbg_local_arm64-v8a.so, libplugins_qmltooling_qmldbg_messages_arm64-v8a.so, libplugins_qmltooling_qmldbg_native_arm64-v8a.so, libplugins_qmltooling_qmldbg_nativedebugger_arm64-v8a.so, libplugins_qmltooling_qmldbg_preview_arm64-v8a.so, libplugins_qmltooling_qmldbg_profiler_arm64-v8a.so, libplugins_qmltooling_qmldbg_quickprofiler_arm64-v8a.so, libplugins_qmltooling_qmldbg_server_arm64-v8a.so, libplugins_qmltooling_qmldbg_tcp_arm64-v8a.so, libplugins_sqldrivers_qsqlite_arm64-v8a.so, padlock.so. Run with --info option to learn more.
 
-> Task :minifyReleaseWithR8
+> Task :compressReleaseAssets
+> Task :extractReleaseVersionControlInfo
+> Task :generateReleaseLintVitalReportModel
 > Task :extractReleaseNativeSymbolTables
+> Task :minifyReleaseWithR8
 > Task :compileReleaseArtProfile
 > Task :optimizeReleaseResources
 > Task :collectReleaseDependencies
@@ -668,9 +668,9 @@ Unable to strip the following libraries, packaging them as they are: capi.so, ki
 > Task :lintVitalAnalyzeRelease
 > Task :lintVitalReportRelease
 > Task :lintVitalRelease
+> Task :mergeReleaseNativeDebugMetadata
 > Task :packageRelease
 > Task :createReleaseApkListingFileRedirect
-> Task :mergeReleaseNativeDebugMetadata
 > Task :assembleRelease
 
 [Incubating] Problems report is available at: file:///home/runner/wd/krita/_build/krita_build_apk/build/reports/problems/problems-report.html
@@ -681,6 +681,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 56s
+BUILD SUCCESSFUL in 59s
 58 actionable tasks: 50 executed, 8 up-to-date
 ## Found a package file: /home/runner/wd/krita/_build/krita_build_apk/build/outputs/apk/release/kritamobile-arm64-v8a-5.4.0-prealpha-release.apk
