@@ -413,6 +413,13 @@ private:
             if (area->objectName() == QLatin1String("mobileTitleScroll")) {
                 continue; // the docker title bars scroll on purpose
             }
+            // A picture at full size (the pattern preview) is meant to be
+            // scrolled around.
+            if (QLabel *label = qobject_cast<QLabel *>(content)) {
+                if (!label->pixmap(Qt::ReturnByValue).isNull()) {
+                    continue;
+                }
+            }
             const int need = content->minimumSizeHint().width();
             const int have = area->viewport()->width();
             if (need > have + 2) {
