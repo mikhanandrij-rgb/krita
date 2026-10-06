@@ -58,6 +58,7 @@
 #include <QScopedValueRollback>
 #include <QStatusBar>
 #include <QTabBar>
+#include <QDebug>
 #include <QTimer>
 #include <QWidgetAction>
 #include <QToolBar>
@@ -379,23 +380,7 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
     // and the tool rail. They always come back while the phone interface is
     // active and the user hasn't hidden the interface.
     if ((watched == m_topHolder.data() || watched == m_railHolder.data()) && type == QEvent::Hide && !m_internalChange) {
-        QTimer::singleShot(0, this, [this] {
-            if (m_active && !m_interfaceHidden) {
-                QScopedValueRollback<bool> rollback(m_internalChange, true);
-                if (m_topHolder && m_mainWindow->toolBarArea(m_topHolder) != Qt::TopToolBarArea) {
-                    m_mainWindow->addToolBar(Qt::TopToolBarArea, m_topHolder);
-                }
-                if (m_railHolder && m_mainWindow->toolBarArea(m_railHolder) != m_railArea) {
-                    m_mainWindow->addToolBar(m_railArea, m_railHolder);
-                }
-                for (QToolBar *holder : {m_topHolder.data(), m_railHolder.data()}) {
-                    if (holder && holder->isHidden()) {
-                        holder->show();
-                    }
-                }
-                updateLayout();
-            }
-        });
+        QTimer::singleShot(0, this, &Shell::ensureChrome);
         return false;
     }
 
@@ -520,6 +505,11 @@ void Shell::activate()
     QTimer::singleShot(0, this, [] {
         perf::markInterfaceReady();
     });
+    // Krita restores the saved window layout after start-up; make sure the
+    // bars survived it.
+    for (int delay : {500, 2000, 5000}) {
+        QTimer::singleShot(delay, this, &Shell::ensureChrome);
+    }
 }
 
 void Shell::deactivate()
@@ -1312,6 +1302,33 @@ void Shell::connectKrita()
     }
     if (m_drawer) {
         m_drawer->setActiveTool(m_activeTool);
+    }
+}
+
+void Shell::ensureChrome()
+{
+    if (!m_active || m_interfaceHidden || !m_mainWindow) {
+        return;
+    }
+    QScopedValueRollback<bool> rollback(m_internalChange, true);
+    bool changed = false;
+    if (m_topHolder && (m_topHolder->isFloating() || m_mainWindow->toolBarArea(m_topHolder) != Qt::TopToolBarArea)) {
+        m_mainWindow->addToolBar(Qt::TopToolBarArea, m_topHolder);
+        changed = true;
+    }
+    if (m_railHolder && (m_railHolder->isFloating() || m_mainWindow->toolBarArea(m_railHolder) != m_railArea)) {
+        m_mainWindow->addToolBar(m_railArea, m_railHolder);
+        changed = true;
+    }
+    for (QToolBar *holder : {m_topHolder.data(), m_railHolder.data()}) {
+        if (holder && holder->isHidden()) {
+            holder->show();
+            changed = true;
+        }
+    }
+    if (changed) {
+        qInfo() << "Krita Mobile: restored the phone interface bars";
+        updateLayout();
     }
 }
 

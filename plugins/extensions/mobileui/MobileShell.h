@@ -125,6 +125,8 @@ private:
     void updateQuickSliderTargets();
     void updatePanelButtons();
     void updateViewChrome();
+    // Shows the top bar and the tool rail again if Krita hid or moved them.
+    void ensureChrome();
     void setInterfaceHidden(bool hidden);
     void scheduleDockVisibilityCheck();
     void checkDockVisibility();
