@@ -166,6 +166,8 @@ private:
     QPointer<Hub> m_hub;
     QPointer<DialogFitter> m_dialogFitter;
     QPointer<QStatusBar> m_statusBar;
+    QPointer<QWidget> m_menuBarWidget;
+    QPointer<QWidget> m_centralWidget;
     QPointer<QWidget> m_statusPage;
 
     Qt::ToolBarArea m_railArea = Qt::BottomToolBarArea;

@@ -582,8 +582,23 @@ private:
             logPerf(QStringLiteral("classic-end"));
             log(QStringLiteral("done"));
             m_log.close();
-            QApplication::exit(0);
+            quitKrita();
         });
+    }
+
+    // Quits the way a user does (windows and documents closed while the
+    // application still exists), not by leaving the documents to be
+    // destroyed after it, which crashes in Krita's shutdown code.
+    static void quitKrita()
+    {
+        // The test modified the documents; nothing must ask to save them.
+        for (QPointer<KisDocument> doc : KisPart::instance()->documents()) {
+            if (doc) {
+                doc->setModified(false);
+            }
+        }
+        KisPart::instance()->closeSession(false);
+        QApplication::exit(0);
     }
 
     void buildSteps()
@@ -633,16 +648,10 @@ private:
             addActionWalk();
         }
         m_steps.append([this] {
-            // The walk modified the documents; nothing must ask to save them.
-            for (QPointer<KisDocument> doc : KisPart::instance()->documents()) {
-                if (doc) {
-                    doc->setModified(false);
-                }
-            }
             logPerf(QStringLiteral("end"));
             log(QStringLiteral("done"));
             m_log.close();
-            QApplication::exit(0);
+            quitKrita();
         });
     }
 

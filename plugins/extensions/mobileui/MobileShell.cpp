@@ -368,7 +368,7 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
         return false;
     }
 
-    if (watched == m_mainWindow->centralWidget()) {
+    if (watched == m_centralWidget.data() && m_centralWidget) {
         if (type == QEvent::Resize || type == QEvent::Move) {
             updateOverlays();
         }
@@ -387,7 +387,7 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
     // Krita shows the menu bar and the status bar again in various places
     // (welcome page, canvas-only mode, configuration changes). Keep them
     // hidden while the phone interface is active.
-    if ((watched == m_mainWindow->menuBar() || watched == m_statusBar.data()) && type == QEvent::Show && !m_internalChange) {
+    if ((watched == m_menuBarWidget.data() || watched == m_statusBar.data()) && watched && type == QEvent::Show && !m_internalChange) {
         QPointer<QWidget> w = qobject_cast<QWidget *>(watched);
         QTimer::singleShot(0, this, [this, w] {
             if (m_active && w) {
@@ -469,6 +469,10 @@ void Shell::activate()
         }
     }
     mw->menuBar()->installEventFilter(this);
+    // Compared by pointer in eventFilter(): asking the main window for them
+    // while it is being destroyed (quitting) would crash.
+    m_menuBarWidget = mw->menuBar();
+    m_centralWidget = mw->centralWidget();
     if (m_statusBar) {
         m_statusBar->installEventFilter(this);
     }
