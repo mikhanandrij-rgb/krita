@@ -25,6 +25,8 @@ on:
     branches:
       - mobile
       - mobile-*
+      # The unit test branch only runs the unit test workflow.
+      - '!mobile-tests'
     paths-ignore:
       - 'mobilefork/docs/**'
       - 'mobilefork/report/**'

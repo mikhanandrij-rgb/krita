@@ -1,0 +1,156 @@
+# SPDX-FileCopyrightText: 2026 Krita Mobile (unofficial fork) contributors
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Krita Mobile (unofficial fork): upstream unit tests on Linux, with the
+# phone interface plugin built in. Runs when the branch `mobile-tests` is
+# pushed (runs are started by pushing the current `mobile` there). Results go
+# to the ci-status branch (job "tests").
+name: Krita Mobile (unofficial) upstream unit tests
+
+on:
+  push:
+    branches:
+      - mobile-tests
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  DEPS_BRANCH: master
+  WD: /home/runner/wd
+  CI_TOOLS: /home/runner/ci
+
+jobs:
+  linux-tests:
+    name: Linux build with unit tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /usr/local/share/boost \
+            /opt/hostedtoolcache/CodeQL /usr/local/share/powershell /usr/share/swift \
+            /usr/local/lib/android /usr/local/lib/node_modules /opt/microsoft /opt/google || true
+          df -h /
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install host tools
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends ccache ninja-build gettext gperf flex bison \
+            patchelf rsync xvfb xauth libgl1-mesa-dri libegl1 libgl1 libglu1-mesa libxkbcommon-x11-0 \
+            libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 \
+            libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0 libxcb-cursor0 libxcb-util1 libfontconfig1 \
+            libxi6 libxrender1 libsm6 libice6 libdbus-1-3 fonts-dejavu-core libgl-dev libegl-dev \
+            libx11-dev libxi-dev libxext-dev libxrandr-dev libxkbcommon-dev dbus-x11
+          echo "CI_COMMIT_SHORT_SHA=${GITHUB_SHA::8}" >> "$GITHUB_ENV"
+          echo "CI_COMMIT_SHA=$GITHUB_SHA" >> "$GITHUB_ENV"
+
+      - name: Fetch KDE CI tooling
+        run: |
+          mkdir -p "$WD" "$CI_TOOLS" logs
+          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git "$CI_TOOLS/krita-deps-management"
+          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git "$CI_TOOLS/krita-deps-management/ci-utilities"
+          python3 -m venv "$CI_TOOLS/venv" --upgrade-deps
+          . "$CI_TOOLS/venv/bin/activate"
+          pip install -q -r "$CI_TOOLS/krita-deps-management/requirements.txt"
+
+      - name: Restore ccache
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-linux-tests-${{ github.sha }}
+          restore-keys: |
+            ccache-linux-tests-
+            ccache-linux-
+
+      - name: Build and run unit tests
+        timeout-minutes: 320
+        env:
+          KDECI_BUILD_TYPE: Release
+          KDECI_GITLAB_SERVER: https://invent.kde.org/
+          KDECI_PACKAGE_PROJECT: teams/ci-artifacts/krita-appimage
+          KDECI_CACHE_PATH: /home/runner/kdeci-cache
+          KDECI_CC_CACHE: /home/runner/ccache
+          KDECI_COMPRESS_PACKAGES_ON_DOWNLOAD: 'False'
+          KDECI_WORKDIR_PATH: /home/runner/wd
+          KDECI_EXTRA_CMAKE_ARGS: -DHIDE_SAFE_ASSERTS=OFF -DBUILD_TESTING=ON
+        run: |
+          . "$CI_TOOLS/venv/bin/activate"
+          export KDECI_REPO_METADATA_PATH="$CI_TOOLS/krita-deps-management/repo-metadata"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/replace-branch-in-seed-file.py" \
+            "$CI_TOOLS/krita-deps-management/latest/krita-deps.yml" -p -o "$CI_TOOLS/branch-corrected-deps.yml" -d "$DEPS_BRANCH"
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/generate-deps-file.py" -s "$CI_TOOLS/branch-corrected-deps.yml" -o .kde-ci.yml
+          sed -i 's/ccache-large-cache: True/ccache-large-cache: False/' .kde-ci.yml
+          set +e
+          python3 -u "$CI_TOOLS/krita-deps-management/ci-utilities/run-ci-build.py" --project krita --branch master \
+            --platform Linux/Qt5/Shared --only-build --skip-publishing > logs/build-and-test.log 2>&1
+          echo "run-ci-build exit: $?" | tee -a logs/build-and-test.log
+          exit 0
+
+      # KDE's test runner needs GitLab variables; ctest is run directly.
+      - name: Run unit tests
+        timeout-minutes: 120
+        run: |
+          sudo apt-get install -y -qq xvfb > /dev/null 2>&1 || true
+          P="$WD/krita/_install"
+          export LD_LIBRARY_PATH="$P/lib:$P/lib/x86_64-linux-gnu:$P/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          export QT_PLUGIN_PATH="$P/plugins:$P/lib/plugins:$P/lib/x86_64-linux-gnu/plugins:$P/lib/qt5/plugins"
+          export QML2_IMPORT_PATH="$P/qml:$P/lib/qml:$P/lib/x86_64-linux-gnu/qml:$P/lib/qt5/qml"
+          export XDG_DATA_DIRS="$P/share:/usr/share"
+          export KRITA_PLUGIN_PATH="$P/lib/x86_64-linux-gnu"
+          export QT_QPA_PLATFORM=offscreen
+          export HOME="$GITHUB_WORKSPACE/testhome"; mkdir -p "$HOME"
+          cd "$WD/krita/_build"
+          set +e
+          ctest -N | tail -1 | tee "$GITHUB_WORKSPACE/logs/ctest-count.txt"
+          timeout 6600 ctest -j 4 --timeout 300 --output-on-failure --no-compress-output \
+            > "$GITHUB_WORKSPACE/logs/ctest.log" 2>&1
+          echo "ctest exit: $?" | tee -a "$GITHUB_WORKSPACE/logs/ctest.log"
+          tail -80 "$GITHUB_WORKSPACE/logs/ctest.log"
+          exit 0
+
+      - name: Save ccache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-linux-tests-${{ github.sha }}
+
+      - name: Summarize test results
+        if: always()
+        run: |
+          mkdir -p status-extra
+          grep -E "tests passed|tests failed|\*\*\*Failed|\*\*\*Timeout|Not Run|\*\*\*Exception|Failed  |Timeout  |Exception  " logs/ctest.log \
+            > status-extra/test-results.txt 2>/dev/null || true
+          sed -n '/The following tests FAILED/,$p' logs/ctest.log >> status-extra/test-results.txt 2>/dev/null || true
+          find "$WD/krita/_build" -name "LastTest.log" -exec cp {} status-extra/ \; 2>/dev/null || true
+          find "$WD/krita/_build" -name "JUnitTestResults.xml" -exec cp {} status-extra/ \; 2>/dev/null || true
+          tail -c 60000 logs/build-and-test.log > status-extra/build-and-test.log.tail
+          head -c 200000 status-extra/LastTest.log > status-extra/LastTest.head 2>/dev/null || true
+          rm -f status-extra/LastTest.log
+
+      - name: Publish status to ci-status branch
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "status: ${JOB_STATUS}"
+            echo "branch: ${GITHUB_REF_NAME}"
+            echo "commit: ${GITHUB_SHA}"
+            echo "date: $(date -u +%FT%TZ)"
+            grep -E "tests passed|tests failed" logs/ctest.log | tail -3
+            cat logs/ctest-count.txt 2>/dev/null
+          } > status-summary.txt
+          bash mobilefork/ci/publish-status.sh tests "${JOB_STATUS}" status-summary.txt status-extra logs
