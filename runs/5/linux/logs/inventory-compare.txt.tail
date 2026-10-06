@@ -1,0 +1,235 @@
+source actions: 700
+runtime actions: 692, listed in the phone interface: 172
+dockers hosted: 39, tools: 37
+reachable: 167
+present but not listed: 504
+  UNLISTED add_blank_frame | Create Blank Frame | krita/krita.action
+  UNLISTED add_duplicate_frame | Create Duplicate Frame | krita/krita.action
+  UNLISTED add_scalar_keyframes | Add scalar keyframes | krita/krita.action
+  UNLISTED auto_key | Auto Frame Mode | krita/krita.action
+  UNLISTED clear_animation_cache | Clear Cache | krita/krita.action
+  UNLISTED copy_columns_to_clipboard | Copy Columns | krita/krita.action
+  UNLISTED copy_frames | Copy Keyframes | krita/krita.action
+  UNLISTED copy_frames_as_clones | Clone Keyframes | krita/krita.action
+  UNLISTED cut_columns_to_clipboard | Cut Columns | krita/krita.action
+  UNLISTED cut_frames | Cut Keyframes | krita/krita.action
+  UNLISTED drop_frames | Drop Frames | krita/krita.action
+  UNLISTED first_frame | First Frame | krita/krita.action
+  UNLISTED insert_column_left | Insert Column Left | krita/krita.action
+  UNLISTED insert_column_right | Insert Column Right | krita/krita.action
+  UNLISTED insert_hold_column | Insert Hold Column | krita/krita.action
+  UNLISTED insert_hold_frame | Insert Hold Frame | krita/krita.action
+  UNLISTED insert_keyframe_left | Insert Keyframe Left | krita/krita.action
+  UNLISTED insert_keyframe_right | Insert Keyframe Right | krita/krita.action
+  UNLISTED insert_multiple_columns | Insert Multiple Columns | krita/krita.action
+  UNLISTED insert_multiple_hold_columns | Insert Multiple Hold Columns | krita/krita.action
+  UNLISTED insert_multiple_hold_frames | Insert Multiple Hold Frames | krita/krita.action
+  UNLISTED insert_multiple_keyframes | Insert Multiple Keyframes | krita/krita.action
+  UNLISTED last_frame | Last Frame | krita/krita.action
+  UNLISTED make_clones_unique | Make Unique | krita/krita.action
+  UNLISTED mirror_columns | Mirror Columns | krita/krita.action
+  UNLISTED mirror_frames | Mirror Frames | krita/krita.action
+  UNLISTED next_frame | Next Frame | krita/krita.action
+  UNLISTED next_keyframe | Next Keyframe | krita/krita.action
+  UNLISTED next_matching_keyframe | Next Matching Keyframe | krita/krita.action
+  UNLISTED next_unfiltered_keyframe | Next Unfiltered Keyframe | krita/krita.action
+  UNLISTED paste_columns_from_clipboard | Paste Columns | krita/krita.action
+  UNLISTED paste_frames | Paste Keyframes | krita/krita.action
+  UNLISTED pin_to_timeline | Pin to Timeline | krita/krita.action
+  UNLISTED previous_frame | Previous Frame | krita/krita.action
+  UNLISTED previous_keyframe | Previous Keyframe | krita/krita.action
+  UNLISTED previous_matching_keyframe | Previous Matching Keyframe | krita/krita.action
+  UNLISTED previous_unfiltered_keyframe | Previous Unfiltered Keyframe | krita/krita.action
+  UNLISTED remove_columns | Remove Column | krita/krita.action
+  UNLISTED remove_columns_and_pull | Remove Column and Pull | krita/krita.action
+  UNLISTED remove_frames | Remove Keyframe | krita/krita.action
+  UNLISTED remove_frames_and_pull | Remove Frame and Pull | krita/krita.action
+  UNLISTED remove_hold_column | Remove Hold Column | krita/krita.action
+  UNLISTED remove_hold_frame | Remove Hold Frame | krita/krita.action
+  UNLISTED remove_multiple_hold_columns | Remove Multiple Hold Columns | krita/krita.action
+  UNLISTED remove_multiple_hold_frames | Remove Multiple Hold Frames | krita/krita.action
+  UNLISTED remove_scalar_keyframe | Remove scalar keyframe | krita/krita.action
+  UNLISTED set_end_time | Set End Time | krita/krita.action
+  UNLISTED set_start_time | Set Start Time | krita/krita.action
+  UNLISTED stop_playback | Stop animation | krita/krita.action
+  UNLISTED toggle_onion_skin | Toggle onion skin | krita/krita.action
+  UNLISTED toggle_playback | Play / pause animation | krita/krita.action
+  UNLISTED update_playback_range | Update Playback Range | krita/krita.action
+  UNLISTED Next Blending Mode | Next Blending Mode | krita/krita.action
+  UNLISTED Previous Blending Mode | Previous Blending Mode | krita/krita.action
+  UNLISTED Select Behind Blending Mode | Select Behind Blending Mode | krita/krita.action
+  UNLISTED Select Clear Blending Mode | Select Clear Blending Mode | krita/krita.action
+  UNLISTED Select Color Blending Mode | Select Color Blending Mode | krita/krita.action
+  UNLISTED Select Color Burn Blending Mode | Select Color Burn Blending Mode | krita/krita.action
+  UNLISTED Select Color Dodge Blending Mode | Select Color Dodge Blending Mode | krita/krita.action
+  UNLISTED Select Darken Blending Mode | Select Darken Blending Mode | krita/krita.action
+  UNLISTED Select Difference Blending Mode | Select Difference Blending Mode | krita/krita.action
+  UNLISTED Select Dissolve Blending Mode | Select Dissolve Blending Mode | krita/krita.action
+  UNLISTED Select Exclusion Blending Mode | Select Exclusion Blending Mode | krita/krita.action
+  UNLISTED Select Hard Light Blending Mode | Select Hard Light Blending Mode | krita/krita.action
+  UNLISTED Select Hard Mix Blending Mode | Select Hard Mix Blending Mode | krita/krita.action
+  UNLISTED Select Hard Overlay Blending Mode | Select Hard Overlay Blending Mode | krita/krita.action
+  UNLISTED Select Hue Blending Mode | Select Hue Blending Mode | krita/krita.action
+  UNLISTED Select Lighten Blending Mode | Select Lighten Blending Mode | krita/krita.action
+  UNLISTED Select Linear Burn Blending Mode | Select Linear Burn Blending Mode | krita/krita.action
+  UNLISTED Select Linear Dodge Blending Mode | Select Linear Dodge Blending Mode | krita/krita.action
+  UNLISTED Select Linear Light Blending Mode | Select Linear Light Blending Mode | krita/krita.action
+  UNLISTED Select Luminosity Blending Mode | Select Luminosity Blending Mode | krita/krita.action
+  UNLISTED Select Multiply Blending Mode | Select Multiply Blending Mode | krita/krita.action
+  UNLISTED Select Normal Blending Mode | Select Normal Blending Mode | krita/krita.action
+  UNLISTED Select Overlay Blending Mode | Select Overlay Blending Mode | krita/krita.action
+  UNLISTED Select Pin Light Blending Mode | Select Pin Light Blending Mode | krita/krita.action
+  UNLISTED Select Saturation Blending Mode | Select Saturation Blending Mode | krita/krita.action
+  UNLISTED Select Screen Blending Mode | Select Screen Blending Mode | krita/krita.action
+  UNLISTED Select Soft Light Blending Mode | Select Soft Light Blending Mode | krita/krita.action
+  UNLISTED Select Vivid Light Blending Mode | Select Vivid Light Blending Mode | krita/krita.action
+  UNLISTED brushslider1 | Brush option slider 1 | krita/kritamenu.action
+  UNLISTED brushslider2 | Brush option slider 2 | krita/kritamenu.action
+  UNLISTED brushslider3 | Brush option slider 3 | krita/kritamenu.action
+  UNLISTED brushslider4 | Brush option slider 4 | krita/kritamenu.action
+  UNLISTED brushslider5 | Brush option slider 5 | krita/kritamenu.action
+  UNLISTED chooseBackgroundColor | Choose Background Color | krita/kritamenu.action
+  UNLISTED chooseForegroundColor | Choose Foreground Color | krita/kritamenu.action
+  UNLISTED dual | Color | krita/kritamenu.action
+  UNLISTED gradients | Gradients | krita/kritamenu.action
+  UNLISTED mirror_actions | Mirror | krita/kritamenu.action
+  UNLISTED patterns | Patterns | krita/kritamenu.action
+  UNLISTED workspaces | Workspaces | krita/kritamenu.action
+  UNLISTED clear | Clear | krita/kritamenu.action
+  UNLISTED copy_layer_style | Copy Layer Style | krita/kritamenu.action
+  UNLISTED copy_merged | Copy merged | krita/kritamenu.action
+  UNLISTED copy_sharp | Copy (sharp) | krita/kritamenu.action
+  UNLISTED cut_sharp | Cut (sharp) | krita/kritamenu.action
+  UNLISTED edit_copy | Copy | krita/kritamenu.action
+  UNLISTED edit_cut | Cut | krita/kritamenu.action
+  UNLISTED edit_paste | Paste | krita/kritamenu.action
+  UNLISTED edit_redo | Redo | krita/kritamenu.action
+  UNLISTED edit_undo | Undo | krita/kritamenu.action
+  UNLISTED fill_selection_background_color | Fill with Background Color | krita/kritamenu.action
+  UNLISTED fill_selection_foreground_color | Fill with Foreground Color | krita/kritamenu.action
+  UNLISTED fill_selection_pattern | Fill with Pattern | krita/kritamenu.action
+  UNLISTED paste_as_reference | Paste as Reference Image | krita/kritamenu.action
+  UNLISTED paste_at | Paste at Cursor | krita/kritamenu.action
+  UNLISTED paste_into | Paste into Active Layer | krita/kritamenu.action
+  UNLISTED paste_layer_style | Paste Layer Style | krita/kritamenu.action
+  UNLISTED paste_new | Paste into New Image | krita/kritamenu.action
+  UNLISTED paste_shape_style | Paste Shape Style | krita/kritamenu.action
+  UNLISTED stroke_selection | Stroke Selection... | krita/kritamenu.action
+  UNLISTED stroke_shapes | Stroke selected shapes | krita/kritamenu.action
+  UNLISTED create_copy | Create Copy From Current Image | krita/kritamenu.action
+  UNLISTED create_template | Create Template From Image... | krita/kritamenu.action
+  UNLISTED file_close | Close | krita/kritamenu.action
+  UNLISTED file_close_all | Close All | krita/kritamenu.action
+  UNLISTED file_documentinfo | Document Information | krita/kritamenu.action
+  UNLISTED file_export_advanced | Export Advanced... | krita/kritamenu.action
+  UNLISTED file_export_file | Export... | krita/kritamenu.action
+  UNLISTED file_import_animation | Import animation frames... | krita/kritamenu.action
+  UNLISTED file_import_file | Open existing Document as Untitled Document... | krita/kritamenu.action
+  UNLISTED file_import_video_animation | Import video animation... | krita/kritamenu.action
+  UNLISTED file_new | New... | krita/kritamenu.action
+  UNLISTED file_open | Open... | krita/kritamenu.action
+  UNLISTED file_open_recent | Open Recent | krita/kritamenu.action
+  UNLISTED file_quit | Quit | krita/kritamenu.action
+  UNLISTED file_save | Save | krita/kritamenu.action
+  UNLISTED file_save_as | Save As... | krita/kritamenu.action
+  UNLISTED file_sessions | Sessions... | krita/kritamenu.action
+  UNLISTED render_animation | Render Animation... | krita/kritamenu.action
+  UNLISTED render_animation_again | Render Animation Again | krita/kritamenu.action
+  UNLISTED save_incremental_backup | Save Incremental Backup | krita/kritamenu.action
+  UNLISTED save_incremental_version | Save Incremental Version | krita/kritamenu.action
+  UNLISTED QMic | Start G'MIC-Qt | krita/kritamenu.action
+  UNLISTED QMicAgain | Re-apply the last G'MIC filter | krita/kritamenu.action
+  UNLISTED adjust_filters | Adjust | krita/kritamenu.action
+  UNLISTED artistic_filters | Artistic | krita/kritamenu.action
+  UNLISTED blur_filters | Blur | krita/kritamenu.action
+  UNLISTED color_filters | Colors | krita/kritamenu.action
+  UNLISTED edge_filters | Edge Detection | krita/kritamenu.action
+  UNLISTED emboss_filters | Emboss | krita/kritamenu.action
+  UNLISTED enhance_filters | Enhance | krita/kritamenu.action
+  UNLISTED filter_apply_again | Apply Filter Again | krita/kritamenu.action
+  UNLISTED filter_apply_reprompt | Apply Filter Again (Reprompt) | krita/kritamenu.action
+  UNLISTED map_filters | Map | krita/kritamenu.action
+  UNLISTED other_filters | Other | krita/kritamenu.action
+  UNLISTED krita_filter_asc-cdl | Slope, Offset, Power Filter | plugins/filters/asccdl/asccdl.action
+  UNLISTED krita_filter_autocontrast | Auto Contrast | krita/krita.action
+  UNLISTED krita_filter_blur | Blur... | krita/krita.action
+  UNLISTED krita_filter_burn | Burn | krita/krita.action
+  UNLISTED krita_filter_colorbalance | Color Balance... | krita/krita.action
+  UNLISTED krita_filter_colortoalpha | Color to Alpha... | krita/krita.action
+  UNLISTED krita_filter_colortransfer | Color Transfer... | krita/krita.action
+  UNLISTED krita_filter_crosschannel | Cross-channel adjustment Filter | plugins/filters/colorsfilters/colorsfilters.action
+  UNLISTED krita_filter_desaturate | Desaturate | krita/krita.action
+  UNLISTED krita_filter_dodge | Dodge | krita/krita.action
+  UNLISTED krita_filter_emboss | Emboss with Variable Depth... | krita/krita.action
+  UNLISTED krita_filter_emboss all directions | Emboss in All Directions | krita/krita.action
+  UNLISTED krita_filter_emboss horizontal and vertical | Emboss Horizontal Vertical | krita/krita.action
+  UNLISTED krita_filter_emboss horizontal only | Emboss Horizontal Only | krita/krita.action
+  UNLISTED krita_filter_emboss laplascian | Emboss (Laplacian) | krita/krita.action
+  UNLISTED krita_filter_emboss vertical only | Emboss Vertical Only | krita/krita.action
+  UNLISTED krita_filter_gaussian blur | Gaussian Blur... | krita/krita.action
+  UNLISTED krita_filter_gaussianhighpass | Gaussian High Pass Filter | plugins/filters/gaussianhighpass/gaussianhighpass.action
+  UNLISTED krita_filter_gaussiannoisereducer | Gaussian Noise Reduction... | krita/krita.action
+  UNLISTED krita_filter_gradientmap | gradientmap Filter | plugins/filters/gradientmap/gradientmap.action
+  UNLISTED krita_filter_halftone | Halftone Filter | plugins/filters/halftone/halftone.action
+  UNLISTED krita_filter_height to normal | Height to Normal Map Filter | plugins/filters/convertheightnormalmap/convertheightnormalmap.action
+  UNLISTED krita_filter_hsvadjustment | HSV Adjustment... | krita/krita.action
+  UNLISTED krita_filter_indexcolors | Index Colors... | krita/krita.action
+  UNLISTED krita_filter_invert | Invert | krita/krita.action
+  UNLISTED krita_filter_lens blur | Lens Blur... | krita/krita.action
+  UNLISTED krita_filter_levels | Levels... | krita/krita.action
+  UNLISTED krita_filter_maximize | Maximize Channel | krita/krita.action
+  UNLISTED krita_filter_mean removal | Mean Removal | krita/krita.action
+  UNLISTED krita_filter_minimize | Minimize Channel | krita/krita.action
+  UNLISTED krita_filter_motion blur | Motion Blur... | krita/krita.action
+  UNLISTED krita_filter_noise | Random Noise... | krita/krita.action
+  UNLISTED krita_filter_normalize | Normalize Filter | plugins/filters/normalize/normalize.action
+  UNLISTED krita_filter_oilpaint | Oilpaint... | krita/krita.action
+  UNLISTED krita_filter_palettize | Palettize Filter | plugins/filters/palettize/palettize.action
+  UNLISTED krita_filter_perchannel | Color Adjustment curves... | krita/krita.action
+  UNLISTED krita_filter_phongbumpmap | Phong Bumpmap... | krita/krita.action
+  UNLISTED krita_filter_pixelize | Pixelize... | krita/krita.action
+  UNLISTED krita_filter_posterize | Posterize... | krita/krita.action
+  UNLISTED krita_filter_propagatecolors | Propagate Colors Filter | plugins/filters/propagatecolors/propagatecolors.action
+  UNLISTED krita_filter_raindrops | Raindrops... | krita/krita.action
+  UNLISTED krita_filter_randompick | Random Pick... | krita/krita.action
+  UNLISTED krita_filter_roundcorners | Round Corners... | krita/krita.action
+  UNLISTED krita_filter_sharpen | Sharpen | krita/krita.action
+  UNLISTED krita_filter_smalltiles | Small Tiles... | krita/krita.action
+  UNLISTED krita_filter_threshold | Threshold Filter | plugins/filters/threshold/threshold.action
+  UNLISTED krita_filter_unsharp | Unsharp Mask... | krita/krita.action
+  UNLISTED krita_filter_wave | Wave... | krita/krita.action
+  UNLISTED krita_filter_waveletnoisereducer | Wavelet Noise Reducer... | krita/krita.action
+  UNLISTED buginfo | Show Krita log for bug reports. | krita/krita.action
+  UNLISTED command_bar_open | Search Actions | krita/krita.action
+  UNLISTED create_snapshot | Create Snapshot | krita/krita.action
+  UNLISTED docker_box | Show Docker Box | krita/krita.action
+not created at runtime (plugin not built on this platform, created lazily, or test fixture): 29
+  MISSING select_layout | Layouts | krita/kritamenu.action
+  MISSING delete_keyframe | Delete keyframe | krita/kritamenu.action
+  MISSING krita_filter_bottom edge detections | Bottom Edge Detection | krita/krita.action
+  MISSING krita_filter_left edge detections | Left Edge Detection | krita/krita.action
+  MISSING krita_filter_right edge detections | Right Edge Detection | krita/krita.action
+  MISSING krita_filter_sobel | Sobel... | krita/krita.action
+  MISSING krita_filter_top edge detections | Top Edge Detection | krita/krita.action
+  MISSING color_management_report | Show color management information | krita/krita.action
+  MISSING crashlog | Show crash log for bug reports. | krita/krita.action
+  MISSING create_bundle | Create Resource Bundle... | krita/krita.action
+  MISSING logcatdump | Show Android log for bug reports. | krita/krita.action
+  MISSING show_tool_options | Show Tool Options | krita/krita.action
+  MISSING change_interface_scale | Change Interface Scale... | krita/kritamenu_android.action
+  MISSING histogram | Histogram... | krita/krita.action
+  MISSING manage_donations | Manage Supporter Benefits... | krita/kritamenu_android.action
+  MISSING manage_subscriptions | Manage Subscriptions... | krita/kritamenu_android.action
+  MISSING manage_supporter_bundles | Get More Resources... | krita/kritamenu_android.action
+  MISSING spen_circle_ccw | S-Pen Gesture Circle Counter-Clockwise | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_circle_cw | S-Pen Gesture Circle Clockwise | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_click | S-Pen Button Click | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_double_click | S-Pen Button Double Click | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_show_popup_palette | Toggle popup palette with S-Pen | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_swipe_down | S-Pen Gesture Swipe Down | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_swipe_left | S-Pen Gesture Swipe Left | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_swipe_right | S-Pen Gesture Swipe Right | plugins/extensions/spensettings/SPenSettings.action
+  MISSING spen_swipe_up | S-Pen Gesture Swipe Up | plugins/extensions/spensettings/SPenSettings.action
+  MISSING svg_settings | Settings... | plugins/tools/svgtexttool/SvgTextTool.action
+  MISSING options_configure_keybinding | Configure Shortcuts... | krita/kritamenu.action
+  MISSING format_italic |  | libs/ui/KisViewManager.cpp

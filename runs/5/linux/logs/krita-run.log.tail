@@ -1,0 +1,155 @@
+Fontconfig error: Cannot load default config file: No such file: (null)
+Fontconfig error: Cannot load default config file: No such file: (null)
+Fontconfig error: Cannot load default config file: No such file: (null)
+Fontconfig error: Cannot load default config file: No such file: (null)
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: css_styles"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+QObject::startTimer: Timers cannot have negative intervals
+/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/krita-python-libs/krita added to PYTHONPATH
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+Krita Mobile UI: missing icon ''
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+QBasicTimer::start: QBasicTimer can only be used with threads started with QThread
+krita.general: Warning: some tiles have leaked:
+krita.general: 	Tiles in memory: 356 
+ 	Total tiles: 356
+QBasicTimer::start: QBasicTimer can only be used with threads started with QThread
+QBasicTimer::start: QBasicTimer can only be used with threads started with QThread
+QBasicTimer::start: QBasicTimer can only be used with threads started with QThread
+Segmentation fault (core dumped)
+krita exit code: 139
+total 1476
+drwxr-xr-x  2 runner runner  4096 Oct  6 02:19 .
+drwxr-xr-x 27 runner runner  4096 Oct  6 02:17 ..
+-rw-r--r--  1 runner runner 42776 Oct  6 02:18 landscape-01-hub.png
+-rw-r--r--  1 runner runner 38084 Oct  6 02:18 landscape-02-new-canvas.png
+-rw-r--r--  1 runner runner 14039 Oct  6 02:18 landscape-03-editor.png
+-rw-r--r--  1 runner runner 36508 Oct  6 02:19 landscape-04-tools.png
+-rw-r--r--  1 runner runner 67336 Oct  6 02:19 landscape-05-brush-presets.png
+-rw-r--r--  1 runner runner 28383 Oct  6 02:19 landscape-06-tool-options.png
+-rw-r--r--  1 runner runner 43830 Oct  6 02:19 landscape-07-brush-editor.png
+-rw-r--r--  1 runner runner 33954 Oct  6 02:19 landscape-08-color-advanced.png
+-rw-r--r--  1 runner runner 26982 Oct  6 02:19 landscape-09-color-widegamut.png
+-rw-r--r--  1 runner runner 26666 Oct  6 02:19 landscape-10-color-palette.png
+-rw-r--r--  1 runner runner 34303 Oct  6 02:19 landscape-11-layers.png
+-rw-r--r--  1 runner runner 27885 Oct  6 02:19 landscape-12-timeline.png
+-rw-r--r--  1 runner runner 35166 Oct  6 02:19 landscape-13-onion-skins.png
+-rw-r--r--  1 runner runner 25468 Oct  6 02:19 landscape-14-curves.png
+-rw-r--r--  1 runner runner 28898 Oct  6 02:19 landscape-15-overview.png
+-rw-r--r--  1 runner runner 25688 Oct  6 02:19 landscape-16-history.png
+-rw-r--r--  1 runner runner 35750 Oct  6 02:19 landscape-17-text.png
+-rw-r--r--  1 runner runner 35281 Oct  6 02:19 landscape-18-menu.png
+-rw-r--r--  1 runner runner 44097 Oct  6 02:19 landscape-19-more.png
+-rw-r--r--  1 runner runner 35867 Oct  6 02:18 portrait-01-hub.png
+-rw-r--r--  1 runner runner 56479 Oct  6 02:18 portrait-02-new-canvas.png
+-rw-r--r--  1 runner runner 13069 Oct  6 02:18 portrait-03-editor.png
+-rw-r--r--  1 runner runner 39301 Oct  6 02:18 portrait-04-tools.png
+-rw-r--r--  1 runner runner 79631 Oct  6 02:18 portrait-05-brush-presets.png
+-rw-r--r--  1 runner runner 27169 Oct  6 02:18 portrait-06-tool-options.png
+-rw-r--r--  1 runner runner 45997 Oct  6 02:18 portrait-07-brush-editor.png
+-rw-r--r--  1 runner runner 36592 Oct  6 02:18 portrait-08-color-advanced.png
+-rw-r--r--  1 runner runner 28247 Oct  6 02:18 portrait-09-color-widegamut.png
+-rw-r--r--  1 runner runner 25944 Oct  6 02:18 portrait-10-color-palette.png
+-rw-r--r--  1 runner runner 33445 Oct  6 02:18 portrait-11-layers.png
+-rw-r--r--  1 runner runner 25847 Oct  6 02:18 portrait-12-timeline.png
+-rw-r--r--  1 runner runner 32858 Oct  6 02:18 portrait-13-onion-skins.png
+-rw-r--r--  1 runner runner 24379 Oct  6 02:18 portrait-14-curves.png
+-rw-r--r--  1 runner runner 28828 Oct  6 02:18 portrait-15-overview.png
+-rw-r--r--  1 runner runner 26356 Oct  6 02:18 portrait-16-history.png
+-rw-r--r--  1 runner runner 65837 Oct  6 02:18 portrait-17-text.png
+-rw-r--r--  1 runner runner 35448 Oct  6 02:18 portrait-18-menu.png
+-rw-r--r--  1 runner runner 42600 Oct  6 02:18 portrait-19-more.png
+-rw-r--r--  1 runner runner 63382 Oct  6 02:19 runtime-inventory.csv
+-rw-r--r--  1 runner runner  2910 Oct  6 02:19 testdriver.log
