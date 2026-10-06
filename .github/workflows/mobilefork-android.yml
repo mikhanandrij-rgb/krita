@@ -53,7 +53,7 @@ env:
 jobs:
   android-arm64:
     name: Android arm64-v8a APK
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 345
     steps:
       - name: Free disk space
@@ -232,6 +232,24 @@ jobs:
           echo "KRITA_MOBILEFORK_KEYSTORE_PASS=android" >> "$GITHUB_ENV"
           echo "KRITA_MOBILEFORK_KEY_ALIAS=kritamobile" >> "$GITHUB_ENV"
 
+      # KDE's prebuilt dependencies were built with a newer libstdc++ than
+      # the one of Ubuntu 22.04 (GLIBCXX_3.4.32), hence the 24.04 runner.
+      # Diagnostics for androiddeployqt's QML scanner, which crashed before.
+      - name: Check qmlimportscanner
+        continue-on-error: true
+        run: |
+          qis=$(find "$WD/krita/_install" -name qmlimportscanner -type f | head -1)
+          echo "qmlimportscanner: $qis" | tee logs/qmlimportscanner.txt
+          [ -n "$qis" ] || exit 0
+          ldd "$qis" 2>&1 | tee -a logs/qmlimportscanner.txt
+          qmldir=$(find "$WD/krita/_install" -maxdepth 3 -type d -name qml | head -1)
+          echo "import path: $qmldir" | tee -a logs/qmlimportscanner.txt
+          "$qis" -rootPath "$GITHUB_WORKSPACE/qmlmodules" -importPath "$qmldir" > logs/qis-qmlmodules.json 2>> logs/qmlimportscanner.txt
+          echo "exit (qmlmodules): $?" | tee -a logs/qmlimportscanner.txt
+          "$qis" -rootPath "$GITHUB_WORKSPACE" -importPath "$qmldir" > logs/qis-source.json 2>> logs/qmlimportscanner.txt
+          echo "exit (source tree): $?" | tee -a logs/qmlimportscanner.txt
+          head -c 3000 logs/qis-source.json
+
       - name: Package APK
         env:
           KDECI_WORKDIR_PATH: /home/runner/wd
@@ -310,7 +328,7 @@ jobs:
   # and landscape plus the runtime action inventory, pushed to ci-status.
   linux-phone-preview:
     name: Linux build, phone-mode screenshots and inventory
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 345
     steps:
       - name: Free disk space
