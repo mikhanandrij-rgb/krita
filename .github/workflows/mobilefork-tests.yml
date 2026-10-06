@@ -113,8 +113,11 @@ jobs:
           cd "$WD/krita/_build"
           set +e
           ctest -N | tail -1 | tee "$GITHUB_WORKSPACE/logs/ctest-count.txt"
-          timeout 6600 ctest -j 4 --timeout 300 --output-on-failure --no-compress-output \
-            > "$GITHUB_WORKSPACE/logs/ctest.log" 2>&1
+          # In its own session: a test that signals its process group
+          # (exit 143 in the first run) must not take the runner down.
+          trap '' TERM
+          setsid timeout 6600 ctest -j 4 --timeout 300 --output-on-failure --no-compress-output \
+            > "$GITHUB_WORKSPACE/logs/ctest.log" 2>&1 < /dev/null
           echo "ctest exit: $?" | tee -a "$GITHUB_WORKSPACE/logs/ctest.log"
           tail -80 "$GITHUB_WORKSPACE/logs/ctest.log"
           exit 0
