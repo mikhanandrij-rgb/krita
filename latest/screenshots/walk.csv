@@ -1,0 +1,32 @@
+id,result,detail,ms
+"file_new","ok","opened KisOpenPane",600
+"file_open","ok","",600
+"no_entries","disabled","not available in this state",0
+"file_save","ok","opened KisPreviewFileDialog",600
+"file_save_as","ok","",600
+"file_sessions","ok","",600
+"file_import_file","ok","opened KisPreviewFileDialog",600
+"file_export_file","ok","",601
+"file_export_advanced","ok","",600
+"file_import_animation","ok","opened KisDlgImportImageSequence",600
+"file_import_video_animation","ok","",600
+"render_animation","disabled","not available in this state",0
+"save_incremental_version","ok","",600
+"save_incremental_backup","ok","opened KisPreviewFileDialog",601
+"create_template","ok","",600
+"create_copy","ok","",600
+"file_documentinfo","ok","opened KoDocumentInfoDlg",600
+"file_close","skipped","closes the test document",0
+"file_close_all","skipped","closes the test document",0
+"file_quit","skipped","quits Krita",0
+"edit_undo","ok","",600
+"edit_redo","ok","",601
+"edit_cut","ok","",600
+"edit_copy","ok","",601
+"cut_sharp","disabled","not available in this state",0
+"copy_sharp","disabled","not available in this state",0
+"copy_merged","disabled","not available in this state",0
+"copy_layer_style","ok","",600
+"edit_paste","ok","",600
+"paste_at","ok","",600
+"paste_into","disabled","not available in this state",0
