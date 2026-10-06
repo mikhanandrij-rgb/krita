@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      1956  0.7  0.9 274560676 148032 ?    Sl   10:24   0:05 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        1901  0.3  0.8 1431384 135636 ?      Sl   10:24   0:02 /tmp/provjobd313533656
-runner      1937  0.1  0.6 274346432 109492 ?    Sl   10:24   0:01 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
-tester     54917 76.1  0.5 406556 88108 ?        Sl   10:37   0:00 /home/runner/wd/krita/_build/bin/kis_pixel_selection_test
+runner      1956  0.6  0.9 274560680 148044 ?    Sl   10:24   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        1901  0.3  0.8 1431384 135704 ?      Sl   10:24   0:02 /tmp/provjobd313533656
+runner      1937  0.1  0.6 274346436 109736 ?    Sl   10:24   0:01 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+tester     55710  100  0.6 424744 104132 ?       Rl   10:39   0:12 /home/runner/wd/krita/_build/bin/kis_cage_transform_worker_test
 root        1097  0.0  0.4 2045168 72348 ?       Ssl  10:23   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     54746 99.1  0.3 223576 63680 ?        Rl   10:36   1:03 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
+tester     54746 99.7  0.3 223576 63872 ?        Rl   10:36   3:07 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
 root         826  0.0  0.3 295288 51800 ?        Ss   10:23   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
