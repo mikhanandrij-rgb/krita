@@ -599,7 +599,7 @@ void DialogFitter::stackSideLists(QWidget *root)
         for (QAbstractItemView *view : views) {
             stacked.views.append({view, view->minimumWidth(), view->minimumHeight(), view->maximumHeight()});
             view->setMinimumWidth(0);
-            view->setMinimumHeight(qMin(dp(140), view->sizeHint().height()));
+            view->setMinimumHeight(dp(150));
             view->setMaximumHeight(dp(200));
         }
         m_stackedLayouts.append(stacked);

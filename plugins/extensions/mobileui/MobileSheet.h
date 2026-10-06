@@ -144,6 +144,8 @@ private:
     bool m_animationsEnabled = true;
     qreal m_fraction = 0.5;
     QSet<QString> m_fullHeightTabs;
+    bool m_autoExpanded = false;
+    qreal m_fractionBeforeExpand = 0.5;
     QVariantAnimation *m_animation;
 
     bool m_dragging = false;

@@ -383,6 +383,10 @@ void Sheet::close()
         m_animation->stop();
         hide();
     }
+    if(m_autoExpanded) {
+        m_autoExpanded = false;
+        m_fraction = m_fractionBeforeExpand;
+    }
     Q_EMIT closed(panelId);
     Q_EMIT coveredRectChanged();
 }
@@ -408,10 +412,28 @@ void Sheet::expandForTab(const QString &panelId, const QString &tabId)
         }
         return;
     }
-    if(m_fraction >= FULL_FRACTION ||
-       !m_fullHeightTabs.contains(panelId + QLatin1Char('/') + tabId)) {
+    const bool wantsFull = m_fullHeightTabs.contains(panelId + QLatin1Char('/') + tabId);
+    if(!wantsFull) {
+        // Back to the height the user had before a big editor expanded it.
+        if(m_autoExpanded) {
+            m_autoExpanded = false;
+            m_fraction = m_fractionBeforeExpand;
+            if(m_open && !m_dragging) {
+                if(m_animationsEnabled) {
+                    animateTo(openGeometry(), false);
+                } else {
+                    setGeometry(openGeometry());
+                }
+                Q_EMIT coveredRectChanged();
+            }
+        }
         return;
     }
+    if(m_fraction >= FULL_FRACTION) {
+        return;
+    }
+    m_autoExpanded = true;
+    m_fractionBeforeExpand = m_fraction;
     m_fraction = FULL_FRACTION;
     if(m_open) {
         if(m_animationsEnabled) {
@@ -712,6 +734,8 @@ void Sheet::dragEnd(const QPoint &globalPos)
         } else {
             m_fraction = HALF_FRACTION;
         }
+        // The user picked this height; keep it.
+        m_autoExpanded = false;
         animateTo(openGeometry(), false);
     } else {
         int offset = qAbs(geometry().x() - m_dragStartGeometry.x());
