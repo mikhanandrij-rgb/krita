@@ -801,40 +801,40 @@ docker,"mutatorDocker","Mutator","Sheet other:mutatorDocker / tab mutatorDocker"
 docker,"pykrita_workflow_buttons","Workflow Buttons","Sheet other:pykrita_workflow_buttons / tab pykrita_workflow_buttons",yes
 docker,"quick_settings_docker","Quick Settings Docker","Sheet other:quick_settings_docker / tab quick_settings_docker",yes
 popup,"KisPaintOpPresetsEditor","Brush Editor","Sheet brush / tab editor",yes
-tool,"KisToolSelectPath","Bezier Curve Selection Tool","Tool drawer (and tool rail)",yes
-tool,"SvgTextTool","Text Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolMeasure","Measurement Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolPencil","Freehand Path Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolTransform","Transform Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolSmartPatch","Smart Patch Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectSimilar","Similar Color Selection Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolRectangle","Rectangle Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectContiguous","Contiguous Selection Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolEncloseAndFill","Enclose and Fill Tool","Tool drawer (and tool rail)",yes
-tool,"KarbonCalligraphyTool","Calligraphy","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectElliptical","Elliptical Selection Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolBrush","Freehand Brush Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolPolyline","Polyline Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolKnife","Comic Panel Editing Tool","Tool drawer (and tool rail)",yes
-tool,"ZoomTool","Zoom Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectPolygonal","Polygonal Selection Tool","Tool drawer (and tool rail)",yes
-tool,"KritaTransform/KisToolMove","Move Tool","Tool drawer (and tool rail)",yes
-tool,"KritaFill/KisToolFill","Fill Tool","Tool drawer (and tool rail)",yes
-tool,"InteractionTool","Select Shapes Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolEllipse","Ellipse Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolPath","Bezier Curve Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolPolygon","Polygon Tool","Tool drawer (and tool rail)",yes
-tool,"PathTool","Edit Shapes Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolDyna","Dynamic Brush Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolCrop","Crop Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolMultiBrush","Multibrush Tool","Tool drawer (and tool rail)",yes
 tool,"PanTool","Pan Tool","Tool drawer (and tool rail)",yes
-tool,"KisAssistantTool","Assistant Tool","Tool drawer (and tool rail)",yes
-tool,"KritaFill/KisToolGradient","Gradient Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectMagnetic","Magnetic Selection Tool","Tool drawer (and tool rail)",yes
-tool,"KisToolSelectRectangular","Rectangular Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolMeasure","Measurement Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPolyline","Polyline Tool","Tool drawer (and tool rail)",yes
+tool,"SvgTextTool","Text Tool","Tool drawer (and tool rail)",yes
 tool,"ToolReferenceImages","Reference Images Tool","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolLine","Line Tool","Tool drawer (and tool rail)",yes
+tool,"KritaFill/KisToolGradient","Gradient Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectSimilar","Similar Color Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KarbonCalligraphyTool","Calligraphy","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolMultiBrush","Multibrush Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectPath","Bezier Curve Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolBrush","Freehand Brush Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPolygon","Polygon Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectPolygonal","Polygonal Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectContiguous","Contiguous Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaTransform/KisToolMove","Move Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolEncloseAndFill","Enclose and Fill Tool","Tool drawer (and tool rail)",yes
+tool,"InteractionTool","Select Shapes Tool","Tool drawer (and tool rail)",yes
 tool,"KritaSelected/KisToolColorSampler","Color Sampler","Tool drawer (and tool rail)",yes
-tool,"KritaShape/KisToolLazyBrush","Colorize Mask Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolKnife","Comic Panel Editing Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolLine","Line Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPencil","Freehand Path Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectElliptical","Elliptical Selection Tool","Tool drawer (and tool rail)",yes
+tool,"ZoomTool","Zoom Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolCrop","Crop Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectRectangular","Rectangular Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolEllipse","Ellipse Tool","Tool drawer (and tool rail)",yes
+tool,"KritaFill/KisToolFill","Fill Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolTransform","Transform Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolSelectMagnetic","Magnetic Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisAssistantTool","Assistant Tool","Tool drawer (and tool rail)",yes
 tool,"KisToolSelectOutline","Freehand Selection Tool","Tool drawer (and tool rail)",yes
+tool,"KisToolPath","Bezier Curve Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolRectangle","Rectangle Tool","Tool drawer (and tool rail)",yes
+tool,"PathTool","Edit Shapes Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolLazyBrush","Colorize Mask Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolDyna","Dynamic Brush Tool","Tool drawer (and tool rail)",yes
+tool,"KritaShape/KisToolSmartPatch","Smart Patch Tool","Tool drawer (and tool rail)",yes

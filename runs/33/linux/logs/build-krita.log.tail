@@ -479,13 +479,13 @@
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 05:35:16 2026
-Stats zeroed:                             Tue Oct  6 05:30:40 2026
+Stats updated:                            Tue Oct  6 16:41:29 2026
+Stats zeroed:                             Tue Oct  6 16:36:58 2026
 Cacheable calls:                           2829 / 2835 (99.79%)
-  Hits:                                    2749 / 2829 (97.17%)
-    Direct:                                2746 / 2749 (99.89%)
-    Preprocessed:                             3 / 2749 ( 0.11%)
-  Misses:                                    80 / 2829 ( 2.83%)
+  Hits:                                    2752 / 2829 (97.28%)
+    Direct:                                2749 / 2752 (99.89%)
+    Preprocessed:                             3 / 2752 ( 0.11%)
+  Misses:                                    77 / 2829 ( 2.72%)
 Uncacheable calls:                            6 / 2835 ( 0.21%)
   Autoconf compile/link:                      0 /    6 ( 0.00%)
   Bad compiler arguments:                     0 /    6 ( 0.00%)
@@ -517,16 +517,16 @@ Errors:                                       0 / 2835 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                  2746 / 2835 (96.86%)
-  Preprocessed:                               3 /   88 ( 3.41%)
+  Direct:                                  2749 / 2835 (96.97%)
+  Preprocessed:                               3 /   85 ( 3.53%)
 Local storage:
-  Cache size (GB):                          0.4 / 20.0 ( 1.82%)
-  Files:                                  11209
+  Cache size (GB):                          0.4 / 20.0 ( 2.20%)
+  Files:                                  13245
   Cleanups:                                   0
-  Hits:                                    2749 / 2829 (97.17%)
-  Misses:                                    80 / 2829 ( 2.83%)
+  Hits:                                    2752 / 2829 (97.28%)
+  Misses:                                    77 / 2829 ( 2.72%)
   Reads:                                   5669
-  Writes:                                   163
+  Writes:                                   157
 Remote storage:
   Hits:                                       0
   Misses:                                     0

@@ -1,4 +1,41 @@
-kis_tile_hash_table2.h, line 151
+) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
+SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
 SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
 SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
 SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
@@ -287,7 +324,7 @@ SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/ru
 SAFE ASSERT (krita): "qAbs(row) < 0x7FFF && qAbs(col) < 0x7FFF" in file /home/runner/work/krita/krita/libs/image/tiles3/kis_tile_hash_table2.h, line 151
 
 Thread 55 "krita" received signal SIGABRT, Aborted.
-[Switching to Thread 0x7fff6df046c0 (LWP 31989)]
+[Switching to Thread 0x7fff6df046c0 (LWP 32248)]
 __pthread_kill_implementation (no_tid=0, signo=6, threadid=<optimized out>) at ./nptl/pthread_kill.c:44
 warning: 44	./nptl/pthread_kill.c: No such file or directory
 
@@ -297,149 +334,72 @@ warning: 44	./nptl/pthread_kill.c: No such file or directory
 #2  __GI___pthread_kill (threadid=<optimized out>, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
 #3  0x00007ffff4a4527e in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
 #4  0x00007ffff4a288ff in __GI_abort () at ./stdlib/abort.c:79
-#5  0x00007fff9cf5eb91 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<mobileui::(anonymous namespace)::HangDetector::HangDetector(QString const&)::{lambda()#1}> > >::_M_run() [clone .cold] () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#5  0x00007fff9cf436f5 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<mobileui::(anonymous namespace)::HangDetector::HangDetector(QString const&)::{lambda()#1}> > >::_M_run() [clone .cold] () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
 #6  0x00007ffff4eecdb4 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
 #7  0x00007ffff4a9cb84 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:447
 #8  0x00007ffff4b29ecc in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
 
 === GUI thread ===
-[Switching to thread 1 (Thread 0x7ffff4384540 (LWP 31927))]
-#0  0x00007ffff4aad8c4 in tcache_get_n (ep=<optimized out>, tc_idx=<optimized out>) at ./malloc/malloc.c:3186
-warning: 3186	./malloc/malloc.c: No such file or directory
-#0  0x00007ffff4aad8c4 in tcache_get_n (ep=<optimized out>, tc_idx=<optimized out>) at ./malloc/malloc.c:3186
-#1  tcache_get (tc_idx=<optimized out>) at ./malloc/malloc.c:3199
-#2  __GI___libc_malloc (bytes=402) at ./malloc/malloc.c:3320
-#3  0x00007ffff52e7452 in QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#4  0x00007ffff536e3e7 in QString::QString(int, Qt::Initialization) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#5  0x00007ffff553b9f1 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#6  0x00007ffff5372c46 in QString::fromUtf8_helper(char const*, int) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#7  0x00007ffff5372cba in QString::fromAscii_helper(char const*, int) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#8  0x00007ffff682e8fc in kis_assert_common(char const*, char const*, int, bool, bool) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaglobal.so.20
-#9  0x00007ffff6c05266 in KisTileHashTableTraits2<KisTile>::getTileLazy(int, int, bool&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#10 0x00007ffff6c18659 in KisRandomAccessor2::fetchTileData(int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#11 0x00007ffff6c18ac2 in KisRandomAccessor2::moveTo(int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#12 0x00007ffff6c37008 in void KisPainter::bitBltImpl<false>(int, int, KisSharedPtr<KisPaintDevice>, int, int, int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#13 0x00007ffff6c27b97 in KisPainter::bitBlt(int, int, KisSharedPtr<KisPaintDevice>, int, int, int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#14 0x00007ffff6c27c5d in KisPainter::bitBlt(QPoint const&, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#15 0x00007ffff6c39646 in void copyAreaOptimizedImpl<false>(QPoint const&, KisSharedPtr<KisPaintDevice>, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#16 0x00007ffff6c34f60 in KisPainter::copyAreaOptimized(QPoint const&, KisSharedPtr<KisPaintDevice>, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
-#17 0x00007ffff7acc1d5 in KisPasteNewActionFactory::run(KisViewManager*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
-#18 0x00007ffff7813c32 in KisSelectionManager::pasteNew() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
-#19 0x00007ffff55161e3 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#20 0x00007ffff61662d6 in QAction::triggered(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
-#21 0x00007ffff6169037 in QAction::activate(QAction::ActionEvent) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
-#22 0x00007ffff5509820 in QObject::event(QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#23 0x00007ffff616cd52 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
-#24 0x00007ffff7b5f11e in KisApplication::notify(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
-#25 0x00007ffff54dbfb8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#26 0x00007ffff54df6c9 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#27 0x00007ffff5538717 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#28 0x00007ffff2719635 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
-#29 0x00007ffff2778bf7 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
-#30 0x00007ffff2718ad3 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
-#31 0x00007ffff5537dca in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#32 0x00007ffff54da8fb in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#33 0x00007ffff54e3114 in QCoreApplication::exec() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
-#34 0x000055555555e0f5 in main ()
+[Switching to thread 1 (Thread 0x7ffff4384540 (LWP 32186))]
+#0  0x00007ffff544fa58 in QProcessEnvironment::systemEnvironment() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#0  0x00007ffff544fa58 in QProcessEnvironment::systemEnvironment() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#1  0x00007ffff682e94b in kis_assert_common(char const*, char const*, int, bool, bool) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaglobal.so.20
+#2  0x00007ffff6c02688 in KisTileHashTableTraits2<KisTile>::getReadOnlyTileLazy(int, int, bool&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#3  0x00007ffff6c187e4 in KisRandomAccessor2::fetchTileData(int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#4  0x00007ffff6c18ac2 in KisRandomAccessor2::moveTo(int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#5  0x00007ffff6c36fd7 in void KisPainter::bitBltImpl<false>(int, int, KisSharedPtr<KisPaintDevice>, int, int, int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#6  0x00007ffff6c27b97 in KisPainter::bitBlt(int, int, KisSharedPtr<KisPaintDevice>, int, int, int, int) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#7  0x00007ffff6c27c5d in KisPainter::bitBlt(QPoint const&, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#8  0x00007ffff6c39646 in void copyAreaOptimizedImpl<false>(QPoint const&, KisSharedPtr<KisPaintDevice>, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#9  0x00007ffff6c34f60 in KisPainter::copyAreaOptimized(QPoint const&, KisSharedPtr<KisPaintDevice>, KisSharedPtr<KisPaintDevice>, QRect const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#10 0x00007ffff7acc2b5 in KisPasteNewActionFactory::run(KisViewManager*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#11 0x00007ffff7813d12 in KisSelectionManager::pasteNew() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#12 0x00007ffff55161e3 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#13 0x00007ffff61662d6 in QAction::triggered(bool) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#14 0x00007ffff6169037 in QAction::activate(QAction::ActionEvent) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#15 0x00007fff9cfaf08a in std::_Function_handler<void (), mobileui::(anonymous namespace)::TestDriver::buildClassicSteps()::{lambda()#11}>::_M_invoke(std::_Any_data const&) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#16 0x00007fff9cfa7b8d in QtPrivate::QFunctorSlotObject<mobileui::(anonymous namespace)::TestDriver::next()::{lambda()#1}, 0, QtPrivate::List<>, void>::impl(int, QtPrivate::QSlotObjectBase*, QObject*, void**, bool*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritamobileui.so
+#17 0x00007ffff551a576 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#18 0x00007ffff550972b in QObject::event(QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#19 0x00007ffff616cd52 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Widgets.so.5
+#20 0x00007ffff7b5f1fe in KisApplication::notify(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#21 0x00007ffff54dbfb8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#22 0x00007ffff5537149 in QTimerInfoList::activateTimers() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#23 0x00007ffff5537a94 in ?? () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#24 0x00007ffff2719635 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#25 0x00007ffff2778bf7 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#26 0x00007ffff2718ad3 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#27 0x00007ffff5537dca in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#28 0x00007ffff54da8fb in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#29 0x00007ffff54e3114 in QCoreApplication::exec() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#30 0x000055555555e0f5 in main ()
   Id   Target Id                                           Frame 
-* 1    Thread 0x7ffff4384540 (LWP 31927) "krita"           0x00007ffff4aad8c4 in tcache_get_n (ep=<optimized out>, tc_idx=<optimized out>) at ./malloc/malloc.c:3186
-  32   Thread 0x7fffbaffe6c0 (LWP 31964) "QDBusConnection" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa8002f60, nfds=3, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  33   Thread 0x7fffda9fd6c0 (LWP 31967) "QXcbEventQueue"  0x00007ffff4b1b79d in __GI___poll (fds=0x7fffda9fcbf8, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  34   Thread 0x7fffef8a06c0 (LWP 31968) "llvmpipe-0"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555630cb88) at ./nptl/futex-internal.c:57
-  35   Thread 0x7fffdc9ff6c0 (LWP 31969) "llvmpipe-1"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=-1, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555630ccec) at ./nptl/futex-internal.c:57
-  36   Thread 0x7fffdb9fe6c0 (LWP 31970) "llvmpipe-2"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=-1, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555630ce4c) at ./nptl/futex-internal.c:57
-  37   Thread 0x7fffd99fc6c0 (LWP 31971) "llvmpipe-3"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555630cfac) at ./nptl/futex-internal.c:57
-  38   Thread 0x7fffd3fff6c0 (LWP 31972) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556060cd0) at ./nptl/futex-internal.c:57
-  39   Thread 0x7fffd2ffe6c0 (LWP 31973) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556060cd0) at ./nptl/futex-internal.c:57
-  40   Thread 0x7fffd1ffd6c0 (LWP 31974) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556060cd0) at ./nptl/futex-internal.c:57
-  41   Thread 0x7fffbbfff6c0 (LWP 31975) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556060cd0) at ./nptl/futex-internal.c:57
-  42   Thread 0x7fffb9ffd6c0 (LWP 31976) "krita:disk$0"    0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55555606b2e8) at ./nptl/futex-internal.c:57
-  43   Thread 0x7fffa56e76c0 (LWP 31977) "Qt bearer threa" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa00013b0, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  45   Thread 0x7fff9effe6c0 (LWP 31979) "KisTileDataSwap" syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
-  50   Thread 0x7fff9488b6c0 (LWP 31984) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff7c001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  51   Thread 0x7fff833de6c0 (LWP 31985) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff78001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  52   Thread 0x7fff8217e6c0 (LWP 31986) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff70001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  53   Thread 0x7fff80dbd6c0 (LWP 31987) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff74001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  54   Thread 0x7fff6f5ff6c0 (LWP 31988) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff68001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
-  55   Thread 0x7fff6df046c0 (LWP 31989) "krita"           __pthread_kill_implementation (no_tid=0, signo=6, threadid=<optimized out>) at ./nptl/pthread_kill.c:44
-krita (phone) exit code: 255
-total 2560
-drwxr-xr-x  2 runner runner  4096 Oct  6 05:42 .
-drwxr-xr-x 29 runner runner  4096 Oct  6 05:37 ..
--rw-r--r--  1 runner runner 20426 Oct  6 05:41 dialog-landscape-canvassize.png
--rw-r--r--  1 runner runner 14397 Oct  6 05:42 dialog-landscape-clones_array.png
--rw-r--r--  1 runner runner 46150 Oct  6 05:40 dialog-landscape-file_new.png
--rw-r--r--  1 runner runner 21130 Oct  6 05:41 dialog-landscape-image_properties.png
--rw-r--r--  1 runner runner 25037 Oct  6 05:41 dialog-landscape-imagesize.png
--rw-r--r--  1 runner runner 21632 Oct  6 05:41 dialog-landscape-imagesplit.png
--rw-r--r--  1 runner runner 17227 Oct  6 05:41 dialog-landscape-krita_filter_gaussian_blur.png
--rw-r--r--  1 runner runner 23785 Oct  6 05:41 dialog-landscape-krita_filter_hsvadjustment.png
--rw-r--r--  1 runner runner 21926 Oct  6 05:41 dialog-landscape-krita_filter_levels.png
--rw-r--r--  1 runner runner 23831 Oct  6 05:41 dialog-landscape-krita_filter_perchannel.png
--rw-r--r--  1 runner runner 27257 Oct  6 05:41 dialog-landscape-layer_properties.png
--rw-r--r--  1 runner runner 27908 Oct  6 05:41 dialog-landscape-layer_style.png
--rw-r--r--  1 runner runner 23581 Oct  6 05:42 dialog-landscape-layersplit.png
--rw-r--r--  1 runner runner  7657 Oct  6 05:41 dialog-landscape-offsetimage.png
--rw-r--r--  1 runner runner 20272 Oct  6 05:40 dialog-landscape-options_configure.png
--rw-r--r--  1 runner runner 12843 Oct  6 05:41 dialog-landscape-rotateimage.png
--rw-r--r--  1 runner runner 26846 Oct  6 05:42 dialog-landscape-separate.png
--rw-r--r--  1 runner runner 20774 Oct  6 05:38 dialog-portrait-canvassize.png
--rw-r--r--  1 runner runner 13762 Oct  6 05:39 dialog-portrait-clones_array.png
--rw-r--r--  1 runner runner 48792 Oct  6 05:38 dialog-portrait-file_new.png
--rw-r--r--  1 runner runner 19343 Oct  6 05:38 dialog-portrait-image_properties.png
--rw-r--r--  1 runner runner 25576 Oct  6 05:38 dialog-portrait-imagesize.png
--rw-r--r--  1 runner runner 23221 Oct  6 05:39 dialog-portrait-imagesplit.png
--rw-r--r--  1 runner runner 17966 Oct  6 05:39 dialog-portrait-krita_filter_gaussian_blur.png
--rw-r--r--  1 runner runner 22283 Oct  6 05:39 dialog-portrait-krita_filter_hsvadjustment.png
--rw-r--r--  1 runner runner 21458 Oct  6 05:39 dialog-portrait-krita_filter_levels.png
--rw-r--r--  1 runner runner 27012 Oct  6 05:39 dialog-portrait-krita_filter_perchannel.png
--rw-r--r--  1 runner runner 22289 Oct  6 05:38 dialog-portrait-layer_properties.png
--rw-r--r--  1 runner runner 27908 Oct  6 05:38 dialog-portrait-layer_style.png
--rw-r--r--  1 runner runner 23581 Oct  6 05:39 dialog-portrait-layersplit.png
--rw-r--r--  1 runner runner  7657 Oct  6 05:39 dialog-portrait-offsetimage.png
--rw-r--r--  1 runner runner 20850 Oct  6 05:38 dialog-portrait-options_configure.png
--rw-r--r--  1 runner runner 12843 Oct  6 05:39 dialog-portrait-rotateimage.png
--rw-r--r--  1 runner runner 23886 Oct  6 05:39 dialog-portrait-separate.png
--rw-r--r--  1 runner runner 42243 Oct  6 05:39 landscape-01-hub.png
--rw-r--r--  1 runner runner 38084 Oct  6 05:39 landscape-02-new-canvas.png
--rw-r--r--  1 runner runner 17226 Oct  6 05:40 landscape-03-editor.png
--rw-r--r--  1 runner runner 40050 Oct  6 05:40 landscape-04-tools.png
--rw-r--r--  1 runner runner 70407 Oct  6 05:40 landscape-05-brush-presets.png
--rw-r--r--  1 runner runner 31655 Oct  6 05:40 landscape-06-tool-options.png
--rw-r--r--  1 runner runner 48235 Oct  6 05:40 landscape-07-brush-editor.png
--rw-r--r--  1 runner runner 38433 Oct  6 05:40 landscape-08-color-advanced.png
--rw-r--r--  1 runner runner 30451 Oct  6 05:40 landscape-09-color-widegamut.png
--rw-r--r--  1 runner runner 30199 Oct  6 05:40 landscape-10-color-palette.png
--rw-r--r--  1 runner runner 35136 Oct  6 05:40 landscape-11-layers.png
--rw-r--r--  1 runner runner 33557 Oct  6 05:40 landscape-12-timeline.png
--rw-r--r--  1 runner runner 38020 Oct  6 05:40 landscape-13-onion-skins.png
--rw-r--r--  1 runner runner 29402 Oct  6 05:40 landscape-14-curves.png
--rw-r--r--  1 runner runner 30673 Oct  6 05:40 landscape-15-overview.png
--rw-r--r--  1 runner runner 27698 Oct  6 05:40 landscape-16-history.png
--rw-r--r--  1 runner runner 56546 Oct  6 05:40 landscape-17-text.png
--rw-r--r--  1 runner runner 38696 Oct  6 05:40 landscape-18-menu.png
--rw-r--r--  1 runner runner 42658 Oct  6 05:40 landscape-18b-all-commands.png
--rw-r--r--  1 runner runner 47440 Oct  6 05:40 landscape-19-more.png
--rw-r--r--  1 runner runner 35867 Oct  6 05:37 portrait-01-hub.png
--rw-r--r--  1 runner runner 56479 Oct  6 05:37 portrait-02-new-canvas.png
--rw-r--r--  1 runner runner 16133 Oct  6 05:37 portrait-03-editor.png
--rw-r--r--  1 runner runner 42223 Oct  6 05:37 portrait-04-tools.png
--rw-r--r--  1 runner runner 82760 Oct  6 05:37 portrait-05-brush-presets.png
--rw-r--r--  1 runner runner 30075 Oct  6 05:37 portrait-06-tool-options.png
--rw-r--r--  1 runner runner 50585 Oct  6 05:37 portrait-07-brush-editor.png
--rw-r--r--  1 runner runner 48795 Oct  6 05:37 portrait-08-color-advanced.png
--rw-r--r--  1 runner runner 39888 Oct  6 05:37 portrait-09-color-widegamut.png
--rw-r--r--  1 runner runner 24699 Oct  6 05:37 portrait-10-color-palette.png
--rw-r--r--  1 runner runner 29004 Oct  6 05:37 portrait-11-layers.png
--rw-r--r--  1 runner runner 26948 Oct  6 05:37 portrait-12-timeline.png
--rw-r--r--  1 runner runner 31629 Oct  6 05:37 portrait-13-onion-skins.png
--rw-r--r--  1 runner runner 27341 Oct  6 05:38 portrait-14-curves.png
--rw-r--r--  1 runner runner 24951 Oct  6 05:38 portrait-15-overview.png
--rw-r--r--  1 runner runner 22444 Oct  6 05:38 portrait-16-history.png
--rw-r--r--  1 runner runner 92933 Oct  6 05:38 portrait-17-text.png
--rw-r--r--  1 runner runner 45885 Oct  6 05:38 portrait-18-menu.png
--rw-r--r--  1 runner runner 49999 Oct  6 05:38 portrait-18b-all-commands.png
--rw-r--r--  1 runner runner 65007 Oct  6 05:38 portrait-19-more.png
--rw-r--r--  1 runner runner 72743 Oct  6 05:42 runtime-inventory.csv
--rw-r--r--  1 runner runner 10301 Oct  6 05:44 testdriver.log
--rw-r--r--  1 runner runner  1280 Oct  6 05:42 walk.csv
+* 1    Thread 0x7ffff4384540 (LWP 32186) "krita"           0x00007ffff544fa58 in QProcessEnvironment::systemEnvironment() () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+  32   Thread 0x7fffb6ffe6c0 (LWP 32223) "QDBusConnection" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa8002fa0, nfds=3, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  33   Thread 0x7fffda9fd6c0 (LWP 32226) "QXcbEventQueue"  0x00007ffff4b1b79d in __GI___poll (fds=0x7fffda9fcbf8, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  34   Thread 0x7fffef8a06c0 (LWP 32227) "llvmpipe-0"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557b3bf7c) at ./nptl/futex-internal.c:57
+  35   Thread 0x7fffdc9ff6c0 (LWP 32228) "llvmpipe-1"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557b3c0dc) at ./nptl/futex-internal.c:57
+  36   Thread 0x7fffdb9fe6c0 (LWP 32229) "llvmpipe-2"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=-1, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557b3c23c) at ./nptl/futex-internal.c:57
+  37   Thread 0x7fffd99fc6c0 (LWP 32230) "llvmpipe-3"      0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555557b3c398) at ./nptl/futex-internal.c:57
+  38   Thread 0x7fffcbfff6c0 (LWP 32231) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556107b00) at ./nptl/futex-internal.c:57
+  39   Thread 0x7fffcaffe6c0 (LWP 32232) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556107b00) at ./nptl/futex-internal.c:57
+  40   Thread 0x7fffc9ffd6c0 (LWP 32233) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556107b00) at ./nptl/futex-internal.c:57
+  41   Thread 0x7fffb7fff6c0 (LWP 32234) "krita"           0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556107b00) at ./nptl/futex-internal.c:57
+  42   Thread 0x7fffb5ffd6c0 (LWP 32235) "krita:disk$0"    0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555556e11d38) at ./nptl/futex-internal.c:57
+  43   Thread 0x7fffa56e76c0 (LWP 32236) "Qt bearer threa" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa00013b0, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  45   Thread 0x7fff9effe6c0 (LWP 32238) "KisTileDataSwap" syscall () at ../sysdeps/unix/sysv/linux/x86_64/syscall.S:38
+  50   Thread 0x7fff9488b6c0 (LWP 32243) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff7c001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  51   Thread 0x7fff833c06c0 (LWP 32244) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff78001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  52   Thread 0x7fff821606c0 (LWP 32245) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff70001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  53   Thread 0x7fff80d9f6c0 (LWP 32246) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff74001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  54   Thread 0x7fff6f5ff6c0 (LWP 32247) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff68001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  55   Thread 0x7fff6df046c0 (LWP 32248) "krita"           __pthread_kill_implementation (no_tid=0, signo=6, threadid=<optimized out>) at ./nptl/pthread_kill.c:44
+krita (classic) exit code: 255
+total 252
+drwxr-xr-x  2 runner runner  4096 Oct  6 16:50 .
+drwxr-xr-x 30 runner runner  4096 Oct  6 16:49 ..
+-rw-r--r--  1 runner runner 82266 Oct  6 16:50 classic-desktop-02-canvas.png
+-rw-r--r--  1 runner runner 46346 Oct  6 16:50 classic-landscape-02-canvas.png
+-rw-r--r--  1 runner runner 43934 Oct  6 16:50 classic-portrait-01-start.png
+-rw-r--r--  1 runner runner 64208 Oct  6 16:50 classic-portrait-02-canvas.png
+-rw-r--r--  1 runner runner   894 Oct  6 16:52 testdriver.log

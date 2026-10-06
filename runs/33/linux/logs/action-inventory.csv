@@ -92,7 +92,7 @@ mirror_actions,Mirror,Brushes and Stuff,Toolbar: BrushesAndStuff,Menu › All co
 patterns,Patterns,Brushes and Stuff,Toolbar: BrushesAndStuff,Menu › All commands › Brushes and Stuff,reachable,
 select_layout,Layouts,Brushes and Stuff,Toolbar: BrushesAndStuff,,not created at runtime,
 workspaces,Workspaces,Brushes and Stuff,Toolbar: BrushesAndStuff,Menu › All commands › Brushes and Stuff,reachable,
-clear,Clear,Edit,Edit,Menu › Edit,reachable,
+clear,Clear,Edit,Edit,Menu › Edit,reachable,ok
 copy_layer_style,Copy Layer Style,Edit,Edit,Menu › Edit,reachable,ok
 copy_merged,Copy merged,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 copy_sharp,Copy (sharp),Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
@@ -103,17 +103,17 @@ edit_cut,Cut,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › E
 edit_paste,Paste,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
 edit_redo,Redo,Edit,Edit | Toolbar: Main Toolbar | Toolbar: editToolBar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
 edit_undo,Undo,Edit,Edit | Toolbar: Main Toolbar | Toolbar: editToolBar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
-fill_selection_background_color,Fill with Background Color,Edit,Edit,Menu › Edit,reachable,
-fill_selection_foreground_color,Fill with Foreground Color,Edit,Edit,Menu › Edit,reachable,
-fill_selection_pattern,Fill with Pattern,Edit,Edit,Menu › Edit,reachable,
-paste_as_reference,Paste as Reference Image,Edit,Edit,Menu › Edit,reachable,
-paste_at,Paste at Cursor,Edit,Edit,Menu › Edit,reachable,ok
+fill_selection_background_color,Fill with Background Color,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
+fill_selection_foreground_color,Fill with Foreground Color,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
+fill_selection_pattern,Fill with Pattern,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
+paste_as_reference,Paste as Reference Image,Edit,Edit,Menu › Edit,reachable,ok
+paste_at,Paste at Cursor,Edit,Edit,Menu › Edit,reachable,ok (opened KisDlgMissingColorProfile)
 paste_into,Paste into Active Layer,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
-paste_layer_style,Paste Layer Style,Edit,Edit,Menu › Edit,reachable,
-paste_new,Paste into New Image,Edit,Edit,Menu › Edit,reachable,
-paste_shape_style,Paste Shape Style,Edit,Edit,Menu › Edit,reachable,
-stroke_selection,Stroke Selection...,Edit,Edit,Menu › Edit,reachable,
-stroke_shapes,Stroke selected shapes,Edit,Edit,Menu › Edit,reachable,
+paste_layer_style,Paste Layer Style,Edit,Edit,Menu › Edit,reachable,ok
+paste_new,Paste into New Image,Edit,Edit,Menu › Edit,reachable,ok
+paste_shape_style,Paste Shape Style,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
+stroke_selection,Stroke Selection...,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
+stroke_shapes,Stroke selected shapes,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 create_copy,Create Copy From Current Image,File,File,Menu › File,reachable,ok
 create_template,Create Template From Image...,File,File,Menu › File,reachable,ok (opened KisTemplateCreateDia)
 file_close,Close,File,File,Menu › Window,reachable,skipped (closes the test document)
@@ -122,13 +122,13 @@ file_documentinfo,Document Information,File,File,Menu › File,reachable,ok
 file_export_advanced,Export Advanced...,File,File,Menu › File,reachable,ok
 file_export_file,Export...,File,File,Menu › File,reachable,ok (opened KisPreviewFileDialog)
 file_import_animation,Import animation frames...,File,File,Menu › File,reachable,ok
-file_import_file,Open existing Document as Untitled Document...,File,File,Menu › File,reachable,ok
+file_import_file,Open existing Document as Untitled Document...,File,File,Menu › File,reachable,ok (opened KisPreviewFileDialog)
 file_import_video_animation,Import video animation...,File,File,Menu › File,reachable,ok (opened KisDlgImportVideoAnimation)
 file_new,New...,File,File | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › File,reachable,ok (opened KisOpenPane)
 file_open,Open...,File,File | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › File,reachable,ok
 file_open_recent,Open Recent,File,File,Menu › All commands › File,reachable,
 file_quit,Quit,File,File,Menu › File,reachable,skipped (quits Krita)
-file_save,Save,File,File | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › File,reachable,ok
+file_save,Save,File,File | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › File,reachable,ok (opened KisPreviewFileDialog)
 file_save_as,Save As...,File,File,Menu › File,reachable,ok (opened KisPreviewFileDialog)
 file_sessions,Sessions...,File,File,Menu › File,reachable,ok
 render_animation,Render Animation...,File,File,Menu › File,reachable,disabled (not available in this state)
@@ -217,8 +217,8 @@ open_resources_directory,Open Resources Folder,General,,Menu › All commands �
 remove_snapshot,Remove Selected Snapshot,General,,Menu › All commands › General,reachable,
 rename_composition,Rename Composition...,General,,Menu › All commands › General,reachable,
 ruler_pixel_multiple2,Use multiple of 2 for pixel scale,General,,Menu › All commands › General,reachable,
-sample_screen_color,Sample Screen Color,General,Edit,Menu › Edit,reachable,
-sample_screen_color_real_canvas,Sample Screen Color (Sample Real Canvas),General,Edit,Menu › Edit,reachable,
+sample_screen_color,Sample Screen Color,General,Edit,Menu › Edit,reachable,ok
+sample_screen_color_real_canvas,Sample Screen Color (Sample Real Canvas),General,Edit,Menu › Edit,reachable,ok
 show_brush_editor,Show Brush Editor,General,,Menu › All commands › General,reachable,
 show_brush_presets,Show Brush Presets,General,,Menu › All commands › General,reachable,
 show_color_history,Show color history,General,,Menu › All commands › General,reachable,
@@ -237,25 +237,25 @@ help_about_app,About Krita,Help,Help,Menu › Help,reachable,
 help_about_kde,About KDE,Help,Help,Menu › Help,reachable,
 help_contents,Krita Handbook,Help,Help,Menu › Help,reachable,
 help_report_bug,Report Bug...,Help,Help,Menu › Help,reachable,
-canvassize,Resize Canvas...,Image,Image,Menu › Image,reachable,
-image_color,Image Background Color and Transparency...,Image,Image,Menu › Image,reachable,
-image_properties,Properties...,Image,Image,Menu › Image,reachable,
-imagecolorspaceconversion,Convert Image Color Space...,Image,Image,Menu › Image,reachable,
-imagesize,Scale Image To New Size...,Image,Image,Menu › Image,reachable,
-imagesplit,Image Split,Image,Image,Menu › Image,reachable,
-mirrorImageHorizontal,Mirror Image Horizontally,Image,Image | Image > Rotate,Menu › Image,reachable,
-mirrorImageVertical,Mirror Image Vertically,Image,Image | Image > Rotate,Menu › Image,reachable,
-offsetimage,Offset Image...,Image,Image,Menu › Image,reachable,
-purge_unused_image_data,Purge Unused Image Data,Image,Image,Menu › Image,reachable,
-resizeimagetolayer,Trim to Current Layer,Image,Image,Menu › Image,reachable,
-resizeimagetoselection,Trim to Selection,Image,Image,Menu › Image,reachable,
-rotateImage180,Rotate Image 180°,Image,Image > Rotate,Menu › Image › Rotate,reachable,
-rotateImageCCW90,Rotate Image 90° to the Left,Image,Image > Rotate,Menu › Image › Rotate,reachable,
-rotateImageCW90,Rotate Image 90° to the Right,Image,Image > Rotate,Menu › Image › Rotate,reachable,
-rotateimage,Rotate Image...,Image,Image > Rotate,Menu › Image › Rotate,reachable,
-separate,Separate Image...,Image,Image,Menu › Image,reachable,
-shearimage,Shear Image...,Image,Image,Menu › Image,reachable,
-trim_to_image,Trim to Image Size,Image,Image,Menu › Image,reachable,
+canvassize,Resize Canvas...,Image,Image,Menu › Image,reachable,ok
+image_color,Image Background Color and Transparency...,Image,Image,Menu › Image,reachable,ok (opened QColorDialog)
+image_properties,Properties...,Image,Image,Menu › Image,reachable,ok
+imagecolorspaceconversion,Convert Image Color Space...,Image,Image,Menu › Image,reachable,ok (opened KisColorSpaceConversionDialog)
+imagesize,Scale Image To New Size...,Image,Image,Menu › Image,reachable,ok (opened DlgImageSize)
+imagesplit,Image Split,Image,Image,Menu › Image,reachable,ok (opened DlgImagesplit)
+mirrorImageHorizontal,Mirror Image Horizontally,Image,Image | Image > Rotate,Menu › Image,reachable,ok
+mirrorImageVertical,Mirror Image Vertically,Image,Image | Image > Rotate,Menu › Image,reachable,ok
+offsetimage,Offset Image...,Image,Image,Menu › Image,reachable,ok (opened DlgOffsetImage)
+purge_unused_image_data,Purge Unused Image Data,Image,Image,Menu › Image,reachable,ok
+resizeimagetolayer,Trim to Current Layer,Image,Image,Menu › Image,reachable,ok
+resizeimagetoselection,Trim to Selection,Image,Image,Menu › Image,reachable,disabled (not available in this state)
+rotateImage180,Rotate Image 180°,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
+rotateImageCCW90,Rotate Image 90° to the Left,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
+rotateImageCW90,Rotate Image 90° to the Right,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
+rotateimage,Rotate Image...,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
+separate,Separate Image...,Image,Image,Menu › Image,reachable,ok (opened DlgSeparate)
+shearimage,Shear Image...,Image,Image,Menu › Image,reachable,ok (opened DlgShearImage)
+trim_to_image,Trim to Image Size,Image,Image,Menu › Image,reachable,ok
 add_shape_to_flow_area,Flow Text in Shape,Interaction Tool,,Menu › All commands › Interaction Tool,reachable,
 flow_shape_order_back,Set Flow Shape as Last,Interaction Tool,,Menu › All commands › Interaction Tool,reachable,
 flow_shape_order_earlier,Move Shape Earlier In Chain.,Interaction Tool,,Menu › All commands › Interaction Tool,reachable,
@@ -307,83 +307,83 @@ activateNextLayer,Activate next layer,Layers,,Menu › All commands › Layers,r
 activateNextSiblingLayer,"Activate next sibling layer, skipping over groups.",Layers,,Menu › All commands › Layers,reachable,
 activatePreviousLayer,Activate previous layer,Layers,,Menu › All commands › Layers,reachable,
 activatePreviousSiblingLayer,"Activate previous sibling layer, skipping over groups.",Layers,,Menu › All commands › Layers,reachable,
-add_new_adjustment_layer,Add Filter Layer...,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_clone_layer,Add Clone Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_colorize_mask,Add Colorize Mask,Layers,Layer > New,Menu › Layer › New,reachable,
+add_new_adjustment_layer,Add Filter Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok (opened KisDlgAdjustmentLayer)
+add_new_clone_layer,Add Clone Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
+add_new_colorize_mask,Add Colorize Mask,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
 add_new_fast_color_overlay_mask,Add Color Overlay Mask,Layers,,Menu › All commands › Layers,reachable,
-add_new_file_layer,Add File Layer...,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_fill_layer,Add Fill Layer...,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_filter_mask,Add Filter Mask...,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_group_layer,Add Group Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_paint_layer,Add Paint Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_selection_mask,Add Local Selection,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_shape_layer,Add Vector Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_transform_mask,Add Transform Mask,Layers,Layer > New,Menu › Layer › New,reachable,
-add_new_transparency_mask,Add Transparency Mask,Layers,Layer > New,Menu › Layer › New,reachable,
+add_new_file_layer,Add File Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok
+add_new_fill_layer,Add Fill Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok (opened KisDlgGeneratorLayer)
+add_new_filter_mask,Add Filter Mask...,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
+add_new_group_layer,Add Group Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
+add_new_paint_layer,Add Paint Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
+add_new_selection_mask,Add Local Selection,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
+add_new_shape_layer,Add Vector Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
+add_new_transform_mask,Add Transform Mask,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
+add_new_transparency_mask,Add Transparency Mask,Layers,Layer > New,Menu › Layer › New,reachable,ok
 clones_array,Clones Array...,Layers,Layer | Layer > Split,Menu › Layer › Split,reachable,
-convert_group_to_animated,Convert Group to Animated Layer,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-convert_to_file_layer,Convert to File Layer...,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-convert_to_filter_mask,Convert to Filter Mask...,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-convert_to_paint_layer,Convert to Paint Layer,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-convert_to_selection_mask,Convert to Selection Mask,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-convert_to_transparency_mask,Convert to Transparency Mask,Layers,Layer > Convert,Menu › Layer › Convert,reachable,
-copy_layer_clipboard,Copy Layer,Layers,Layer,Menu › Layer,reachable,
-copy_selection_to_new_layer,Copy Selection to New Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-create_quick_clipping_group,Quick Clipping Group,Layers,Layer > Group,Menu › Layer › Group,reachable,
-create_quick_group,Group layers,Layers,Layer > Group,Menu › Layer › Group,reachable,
+convert_group_to_animated,Convert Group to Animated Layer,Layers,Layer > Convert,Menu › Layer › Convert,reachable,disabled (not available in this state)
+convert_to_file_layer,Convert to File Layer...,Layers,Layer > Convert,Menu › Layer › Convert,reachable,disabled (not available in this state)
+convert_to_filter_mask,Convert to Filter Mask...,Layers,Layer > Convert,Menu › Layer › Convert,reachable,ok
+convert_to_paint_layer,Convert to Paint Layer,Layers,Layer > Convert,Menu › Layer › Convert,reachable,disabled (not available in this state)
+convert_to_selection_mask,Convert to Selection Mask,Layers,Layer > Convert,Menu › Layer › Convert,reachable,ok
+convert_to_transparency_mask,Convert to Transparency Mask,Layers,Layer > Convert,Menu › Layer › Convert,reachable,ok
+copy_layer_clipboard,Copy Layer,Layers,Layer,Menu › Layer,reachable,ok
+copy_selection_to_new_layer,Copy Selection to New Layer,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
+create_quick_clipping_group,Quick Clipping Group,Layers,Layer > Group,Menu › Layer › Group,reachable,ok
+create_quick_group,Group layers,Layers,Layer > Group,Menu › Layer › Group,reachable,ok
 create_reference_image_from_active_layer,Reference Image from Layer,Layers,,Menu › All commands › Layers,reachable,
 create_reference_image_from_visible_canvas,Reference Image from Visible,Layers,,Menu › All commands › Layers,reachable,
-cut_layer_clipboard,Cut Layer,Layers,Layer,Menu › Layer,reachable,
-cut_selection_to_new_layer,Cut Selection to New Layer,Layers,Layer > New,Menu › Layer › New,reachable,
-duplicatelayer,Duplicate Layer or Mask,Layers,Layer > New,Menu › Layer › New,reachable,
+cut_layer_clipboard,Cut Layer,Layers,Layer,Menu › Layer,reachable,ok
+cut_selection_to_new_layer,Cut Selection to New Layer,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
+duplicatelayer,Duplicate Layer or Mask,Layers,Layer > New,Menu › Layer › New,reachable,ok
 flatten_image,Flatten image,Layers,Layer,Menu › Layer,reachable,
 flatten_layer,Flatten Layer,Layers,Layer,Menu › Layer,reachable,
 force_palette_colors,Force Palette Colors,Layers,,Menu › All commands › Layers,reachable,
 histogram,Histogram...,Layers,Layer,,not created at runtime,
-import_layer_as_filter_mask,as Filter Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,
-import_layer_as_paint_layer,as Paint Layer...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,
-import_layer_as_selection_mask,as Selection Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,
-import_layer_as_transparency_mask,as Transparency Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,
-import_layer_from_file,Import Layer...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,
+import_layer_as_filter_mask,as Filter Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,ok
+import_layer_as_paint_layer,as Paint Layer...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,ok
+import_layer_as_selection_mask,as Selection Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,ok
+import_layer_as_transparency_mask,as Transparency Mask...,Layers,Layer > Import/Export > Import,Menu › Layer › Import/Export › Import,reachable,ok (opened KisPreviewFileDialog)
+import_layer_from_file,Import Layer...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,ok
 isolate_active_group,Isolate Active Group,Layers,,Menu › All commands › Layers,reachable,
 isolate_active_layer,Isolate Active Layer,Layers,,Menu › All commands › Layers,reachable,
 layer_properties,Properties...,Layers,,Menu › All commands › Layers,reachable,
 layer_style,Layer Style...,Layers,Layer,Menu › Layer,reachable,
-layercolorspaceconversion,Convert Layer Color Space...,Layers,Layer | Layer > Convert,Menu › Layer › Convert,reachable,
-layersize,Scale Layers to new Size...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,
+layercolorspaceconversion,Convert Layer Color Space...,Layers,Layer | Layer > Convert,Menu › Layer › Convert,reachable,disabled (not available in this state)
+layersize,Scale Layers to new Size...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,ok
 layersplit,Split Layer...,Layers,Layer | Layer > Split,Menu › Layer › Split,reachable,
 merge_layer,Merge with Layer Below,Layers,Layer,Menu › Layer,reachable,
-mirrorAllNodesX,Mirror All Layers Horizontally,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,
-mirrorAllNodesY,Mirror All Layers Vertically,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,
-mirrorNodeX,Mirror Layers Horizontally,Layers,Layer > Transform,Menu › Layer › Transform,reachable,
-mirrorNodeY,Mirror Layers Vertically,Layers,Layer > Transform,Menu › Layer › Transform,reachable,
+mirrorAllNodesX,Mirror All Layers Horizontally,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,ok
+mirrorAllNodesY,Mirror All Layers Vertically,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,ok
+mirrorNodeX,Mirror Layers Horizontally,Layers,Layer > Transform,Menu › Layer › Transform,reachable,ok
+mirrorNodeY,Mirror Layers Vertically,Layers,Layer > Transform,Menu › Layer › Transform,reachable,ok
 move_layer_down,Move Layer or Mask Down,Layers,,Menu › All commands › Layers,reachable,
 move_layer_up,Move Layer or Mask Up,Layers,,Menu › All commands › Layers,reachable,
-new_from_visible,New Layer From Visible,Layers,Layer > New,Menu › Layer › New,reachable,
-offsetlayer,Offset Layers...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,
-paste_layer_from_clipboard,Paste Layer,Layers,Layer,Menu › Layer,reachable,
-quick_ungroup,Ungroup layers,Layers,Layer > Group,Menu › Layer › Group,reachable,
+new_from_visible,New Layer From Visible,Layers,Layer > New,Menu › Layer › New,reachable,ok
+offsetlayer,Offset Layers...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,ok
+paste_layer_from_clipboard,Paste Layer,Layers,Layer,Menu › Layer,reachable,ok
+quick_ungroup,Ungroup layers,Layers,Layer > Group,Menu › Layer › Group,reachable,ok
 remove_layer,Remove Layer,Layers,,Menu › All commands › Layers,reachable,
-rotateAllLayers,Rotate All Layers...,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,
-rotateAllLayers180,Rotate All Layers 180°,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,
-rotateAllLayersCCW90,Rotate All Layers 90° to the Left,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,
-rotateAllLayersCW90,Rotate All Layers 90° to the Right,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,
-rotateLayer180,Rotate Layers 180°,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,
-rotateLayerCCW90,Rotate Layers 90° to the Left,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,
-rotateLayerCW90,Rotate Layers 90° to the Right,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,
-rotatelayer,Rotate Layers...,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,
-save_groups_as_images,Save Group Layers...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,
-save_node_as_image,Save Layer/Mask...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,
-save_vector_node_to_svg,Save Vector Layer as SVG...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,
-scaleAllLayers,Scale All Layers to new Size...,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,
-select_all_layers,All Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,
-select_invisible_layers,Invisible Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,
-select_locked_layers,Locked Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,
-select_unlocked_layers,Unlocked Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,
-select_visible_layers,Visible Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,
+rotateAllLayers,Rotate All Layers...,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,ok (opened DlgRotateImage)
+rotateAllLayers180,Rotate All Layers 180°,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,ok
+rotateAllLayersCCW90,Rotate All Layers 90° to the Left,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,ok
+rotateAllLayersCW90,Rotate All Layers 90° to the Right,Layers,Layer > Transform All Layers > Rotate,Menu › Layer › Transform All Layers › Rotate,reachable,ok
+rotateLayer180,Rotate Layers 180°,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,ok
+rotateLayerCCW90,Rotate Layers 90° to the Left,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,ok
+rotateLayerCW90,Rotate Layers 90° to the Right,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,ok
+rotatelayer,Rotate Layers...,Layers,Layer > Rotate | Layer > Transform > Rotate,Menu › Layer › Transform › Rotate,reachable,ok (opened DlgRotateImage)
+save_groups_as_images,Save Group Layers...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,ok (opened KoDialog)
+save_node_as_image,Save Layer/Mask...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,ok
+save_vector_node_to_svg,Save Vector Layer as SVG...,Layers,Layer > Import/Export,Menu › Layer › Import/Export,reachable,disabled (not available in this state)
+scaleAllLayers,Scale All Layers to new Size...,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,ok
+select_all_layers,All Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,ok
+select_invisible_layers,Invisible Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,ok
+select_locked_layers,Locked Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,ok
+select_unlocked_layers,Unlocked Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,ok
+select_visible_layers,Visible Layers,Layers,Layer > Select,Menu › Layer › Select,reachable,ok
 set-copy-from,Set Copy From...,Layers,,Menu › All commands › Layers,reachable,
 shearAllLayers,Shear All Layers...,Layers,Layer > Transform All Layers,Menu › Layer › Transform All Layers,reachable,
-shearlayer,Shear Layers...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,
+shearlayer,Shear Layers...,Layers,Layer | Layer > Transform,Menu › Layer › Transform,reachable,ok (opened DlgShearImage)
 split_alpha_into_mask,Alpha into Mask,Layers,Layer > Split > Split Alpha,Menu › Layer › Split › Split Alpha,reachable,
 split_alpha_save_merged,Save Merged...,Layers,Layer > Split > Split Alpha,Menu › Layer › Split › Split Alpha,reachable,
 split_alpha_write,Write as Alpha,Layers,Layer > Split > Split Alpha,Menu › Layer › Split › Split Alpha,reachable,
@@ -394,7 +394,7 @@ toggle_layer_lock,Toggle layer lock,Layers,,Menu › All commands › Layers,rea
 toggle_layer_soloing,Toggle Layer Soloing,Layers,,Menu › All commands › Layers,reachable,
 toggle_layer_visibility,Toggle layer visibility,Layers,,Menu › All commands › Layers,reachable,
 unifylayerscolorspace,Unify Layers Color Space,Layers,,Menu › All commands › Layers,reachable,
-waveletdecompose,Wavelet Decompose ...,Layers,Image | Layer,Menu › Image,reachable,
+waveletdecompose,Wavelet Decompose ...,Layers,Image | Layer,Menu › Image,reachable,disabled (not available in this state)
 manage_donations,Manage Supporter Benefits...,Management,Settings,,not created at runtime,
 manage_subscriptions,Manage Subscriptions...,Management,Settings,,not created at runtime,
 mutate,Mutate,Mutator,,Menu › Tools › Scripts,reachable,
@@ -410,9 +410,9 @@ disable_pressure,Use Pen Pressure,Painting,,Menu › All commands › Painting,r
 erase_action,Set eraser mode,Painting,,Menu › All commands › Painting,reachable,
 eraser_preset_action,Toggle eraser preset,Painting,,Menu › All commands › Painting,reachable,
 eraser_select_preset_action,Select eraser preset,Painting,,Menu › All commands › Painting,reachable,
-fill_selection_background_color_opacity,Fill with Background Color (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,
-fill_selection_foreground_color_opacity,Fill with Foreground Color (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,
-fill_selection_pattern_opacity,Fill with Pattern (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,
+fill_selection_background_color_opacity,Fill with Background Color (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,disabled (not available in this state)
+fill_selection_foreground_color_opacity,Fill with Foreground Color (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,disabled (not available in this state)
+fill_selection_pattern_opacity,Fill with Pattern (Opacity),Painting,Edit > Fill Special,Menu › Edit › Fill Special,reachable,disabled (not available in this state)
 hmirror_action,Horizontal Mirror Tool,Painting,,Menu › All commands › Painting,reachable,
 increase_brush_size,Increase Brush Size,Painting,,Menu › All commands › Painting,reachable,
 increase_fade,Increase Fade,Painting,,Menu › All commands › Painting,reachable,
@@ -631,52 +631,52 @@ calligraphy_decrease_angle,Calligraphy: decrease angle,Tool Shortcuts,,Menu › 
 calligraphy_decrease_width,Calligraphy: decrease width,Tool Shortcuts,,Menu › All commands › Tool Shortcuts,reachable,
 calligraphy_increase_angle,Calligraphy: increase angle,Tool Shortcuts,,Menu › All commands › Tool Shortcuts,reachable,
 calligraphy_increase_width,Calligraphy: increase width,Tool Shortcuts,,Menu › All commands › Tool Shortcuts,reachable,
-fullscreen,Full Screen Mode,View,Settings | View,Menu › View,reachable,
-gamutCheck,Out of Gamut Warnings,View,View,Menu › View,reachable,
-level_of_detail_mode,Instant Preview Mode,View,View,Menu › View,reachable,
-mirror_canvas,Mirror View,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-mirror_canvas_around_canvas,Mirror View Around Canvas,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-mirror_canvas_around_cursor,Mirror View Around Cursor,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-reset_canvas_rotation,Reset Canvas Rotation,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-reset_display,Reset Display,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-rotate_canvas_left,Rotate Canvas Left,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-rotate_canvas_right,Rotate Canvas Right,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-rulers_track_mouse,Rulers Track Pointer,View,View,Menu › View,reachable,
-showStatusBar,Show Status Bar,View,View,Menu › View,reachable,
+fullscreen,Full Screen Mode,View,Settings | View,Menu › View,reachable,ok
+gamutCheck,Out of Gamut Warnings,View,View,Menu › View,reachable,ok
+level_of_detail_mode,Instant Preview Mode,View,View,Menu › View,reachable,ok
+mirror_canvas,Mirror View,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+mirror_canvas_around_canvas,Mirror View Around Canvas,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+mirror_canvas_around_cursor,Mirror View Around Cursor,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+reset_canvas_rotation,Reset Canvas Rotation,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+reset_display,Reset Display,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+rotate_canvas_left,Rotate Canvas Left,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+rotate_canvas_right,Rotate Canvas Right,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+rulers_track_mouse,Rulers Track Pointer,View,View,Menu › View,reachable,ok
+showStatusBar,Show Status Bar,View,View,Menu › View,reachable,ok
 show_snap_options_popup,Show Snap Options Popup,View,,Menu › All commands › View,reachable,
-softProof,Soft Proofing,View,View,Menu › View,reachable,
+softProof,Soft Proofing,View,View,Menu › View,reachable,ok
 toggle_zoom_to_fit,Toggle Fit to View,View,,Menu › All commands › View,reachable,
-view_detached_canvas,Detach Canvas,View,View,Menu › View,reachable,
-view_grid,Show Grid,View,View,Menu › View,reachable,
-view_lock_guides,Lock Guides,View,View,Menu › View,reachable,
-view_pixel_grid,Show Pixel Grid,View,View,Menu › View,reachable,
-view_print_size,View Print Size,View,View,Menu › View,reachable,
-view_ruler,Show Rulers,View,View,Menu › View,reachable,
-view_show_canvas_only,Show Canvas Only,View,View,Menu › View,reachable,
-view_show_guides,Show Guides,View,View,Menu › View,reachable,
-view_snap_bounding_box,Snap Bounding Box,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_extension,Snap Extension,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_image_bounds,Snap Image Bounds,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_image_center,Snap Image Center,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_intersection,Snap Intersection,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_node,Snap Node,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_orthogonal,Snap Orthogonal,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_to_grid,Snap To Grid,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_to_guides,Snap to Guides,View,View > Snap To,Menu › View › Snap To,reachable,
-view_snap_to_pixel,Snap Pixel,View,View > Snap To,Menu › View › Snap To,reachable,
-view_toggle_assistant_previews,Show Assistant Previews,View,View,Menu › View,reachable,
-view_toggle_painting_assistants,Show Painting Assistants,View,View,Menu › View,reachable,
-view_toggle_reference_images,Show Reference Images,View,View,Menu › View,reachable,
-view_zoom_in,Zoom In,View,"View | View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-view_zoom_out,Zoom Out,View,"View | View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-wrap_around_h_axis,Wrap Around Horizontally,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,
-wrap_around_hv_axis,Wrap Around Both Directions,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,
-wrap_around_mode,Wrap Around Mode,View,View,Menu › View,reachable,
-wrap_around_v_axis,Wrap Around Vertically,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,
-zoom_to_100pct,Zoom to 100%,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-zoom_to_fit,Fit to View,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-zoom_to_fit_height,Fit to View Height,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
-zoom_to_fit_width,Fit to View Width,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,
+view_detached_canvas,Detach Canvas,View,View,Menu › View,reachable,skipped (moves the canvas to its own window)
+view_grid,Show Grid,View,View,Menu › View,reachable,ok
+view_lock_guides,Lock Guides,View,View,Menu › View,reachable,ok
+view_pixel_grid,Show Pixel Grid,View,View,Menu › View,reachable,ok
+view_print_size,View Print Size,View,View,Menu › View,reachable,ok
+view_ruler,Show Rulers,View,View,Menu › View,reachable,ok
+view_show_canvas_only,Show Canvas Only,View,View,Menu › View,reachable,ok
+view_show_guides,Show Guides,View,View,Menu › View,reachable,ok
+view_snap_bounding_box,Snap Bounding Box,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_extension,Snap Extension,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_image_bounds,Snap Image Bounds,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_image_center,Snap Image Center,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_intersection,Snap Intersection,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_node,Snap Node,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_orthogonal,Snap Orthogonal,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_to_grid,Snap To Grid,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_to_guides,Snap to Guides,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_snap_to_pixel,Snap Pixel,View,View > Snap To,Menu › View › Snap To,reachable,ok
+view_toggle_assistant_previews,Show Assistant Previews,View,View,Menu › View,reachable,ok
+view_toggle_painting_assistants,Show Painting Assistants,View,View,Menu › View,reachable,ok
+view_toggle_reference_images,Show Reference Images,View,View,Menu › View,reachable,ok
+view_zoom_in,Zoom In,View,"View | View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+view_zoom_out,Zoom Out,View,"View | View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+wrap_around_h_axis,Wrap Around Horizontally,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,ok
+wrap_around_hv_axis,Wrap Around Both Directions,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,ok
+wrap_around_mode,Wrap Around Mode,View,View,Menu › View,reachable,ok
+wrap_around_v_axis,Wrap Around Vertically,View,View > Wrap Around Mode Direction,Menu › View › Wrap Around Mode Direction,reachable,ok
+zoom_to_100pct,Zoom to 100%,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+zoom_to_fit,Fit to View,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+zoom_to_fit_height,Fit to View Height,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
+zoom_to_fit_width,Fit to View Width,View,"View > Zoom, Rotate, and Mirror","Menu › View › Zoom, Rotate, and Mirror",reachable,ok
 show_wg_color_history,Show color history,WG Color Selector Actions,,Menu › All commands › WG Color Selector Actions,reachable,
 show_wg_color_selector,Show wide-gamut color selector,WG Color Selector Actions,,Menu › All commands › WG Color Selector Actions,reachable,
 show_wg_mypaint_selector,Show MyPaint shade selector,WG Color Selector Actions,,Menu › All commands › WG Color Selector Actions,reachable,

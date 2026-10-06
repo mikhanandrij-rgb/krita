@@ -33,8 +33,8 @@ not created at runtime (plugin not built on this platform, created lazily, or te
   MISSING svg_settings | Settings... | plugins/tools/svgtexttool/SvgTextTool.action
   MISSING options_configure_keybinding | Configure Shortcuts... | krita/kritamenu.action
   MISSING format_italic |  | libs/ui/KisViewManager.cpp
-action walk: disabled 6, ok 22, skipped 3
-listed but not reached by the walk (walk stopped early?): 641
+action walk: disabled 28, ok 136, skipped 4
+listed but not reached by the walk (walk stopped early?): 504
   NOT-WALKED add_blank_frame
   NOT-WALKED add_duplicate_frame
   NOT-WALKED add_scalar_keyframes
