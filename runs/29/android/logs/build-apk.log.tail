@@ -520,8 +520,8 @@ RenderScript APIs are deprecated starting in Android 12. RenderScript support wi
 > Task :checkDebugAarMetadata
 > Task :mapDebugSourceSetPaths
 > Task :generateDebugResources
-> Task :packageDebugResources
 > Task :compileDebugAidl
+> Task :packageDebugResources
 > Task :mergeDebugResources
 > Task :createDebugCompatibleScreenManifests
 > Task :extractDeepLinksDebug
@@ -537,21 +537,21 @@ Recommendation: remove package="org.krita" from the source AndroidManifest.xml: 
 > Task :compileDebugShaders NO-SOURCE
 > Task :generateDebugAssets UP-TO-DATE
 > Task :mergeDebugAssets
-> Task :processDebugManifestForPackage
-> Task :compressDebugAssets
 > Task :processDebugJavaRes
-> Task :processDebugResources
+> Task :processDebugManifestForPackage
 > Task :mergeDebugJavaResource
-Note: Some input files use or override a deprecated API.
+> Task :compressDebugAssets
+> Task :processDebugResources
+> Task :checkDebugDuplicateClasses
 
+Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 > Task :compileDebugJavaWithJavac
 
-> Task :checkDebugDuplicateClasses
 > Task :dexBuilderDebug
 > Task :mergeLibDexDebug
-> Task :desugarDebugFileDependencies
 > Task :mergeProjectDexDebug
+> Task :desugarDebugFileDependencies
 > Task :mergeDebugJniLibFolders
 > Task :validateSigningDebug
 > Task :writeDebugAppMetadata
@@ -574,9 +574,9 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 1m 34s
+BUILD SUCCESSFUL in 1m 31s
 46 actionable tasks: 46 executed
-Android package built successfully in 115.775 ms.
+Android package built successfully in 105.426 ms.
   -- File: /home/runner/wd/krita/_build/krita_build_apk//build/outputs/apk/debug/krita_build_apk-debug.apk
 [100%] Built target create-apk-krita
 [100%] Built target create-apk
@@ -591,7 +591,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 4s
+BUILD SUCCESSFUL in 2s
 1 actionable task: 1 executed
 ## RUNNING: ./gradlew assembleRelease
 > Task :configure
@@ -619,10 +619,9 @@ RenderScript APIs are deprecated starting in Android 12. RenderScript support wi
 > Task :generateReleaseResources
 > Task :compileReleaseAidl
 > Task :packageReleaseResources
-> Task :mergeReleaseResources
+> Task :parseReleaseLocalResources
 > Task :createReleaseCompatibleScreenManifests
 > Task :extractDeepLinksRelease
-> Task :parseReleaseLocalResources
 
 > Task :processReleaseMainManifest
 package="org.krita" found in source AndroidManifest.xml: /home/runner/wd/krita/_build/krita_build_apk/AndroidManifest.xml.
@@ -631,30 +630,31 @@ Recommendation: remove package="org.krita" from the source AndroidManifest.xml: 
 
 > Task :processReleaseManifest
 > Task :processReleaseManifestForPackage
-> Task :processReleaseResources
+> Task :mergeReleaseResources
 > Task :mergeReleaseArtProfile
+> Task :extractProguardFiles
+> Task :processReleaseJavaRes
+> Task :processReleaseResources
 
 > Task :compileReleaseJavaWithJavac
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
-> Task :extractProguardFiles
-> Task :mergeReleaseGeneratedProguardFiles
-> Task :processReleaseJavaRes
 > Task :expandReleaseArtProfileWildcards
+> Task :mergeReleaseJavaResource
+> Task :mergeReleaseGeneratedProguardFiles
 > Task :mergeReleaseStartupProfile
 > Task :mergeReleaseShaders
 > Task :compileReleaseShaders NO-SOURCE
 > Task :generateReleaseAssets UP-TO-DATE
-> Task :mergeReleaseJavaResource
 > Task :mergeReleaseAssets
 > Task :mergeReleaseNativeLibs
+> Task :compressReleaseAssets
+> Task :extractReleaseVersionControlInfo
 
 > Task :stripReleaseDebugSymbols
 Unable to strip the following libraries, packaging them as they are: capi.so, kimg_ani_arm64-v8a.so, kimg_eps_arm64-v8a.so, kimg_hdr_arm64-v8a.so, kimg_kra_arm64-v8a.so, kimg_ora_arm64-v8a.so, kimg_pcx_arm64-v8a.so, kimg_pic_arm64-v8a.so, kimg_psd_arm64-v8a.so, kimg_ras_arm64-v8a.so, kimg_rgb_arm64-v8a.so, kimg_tga_arm64-v8a.so, kimg_xcf_arm64-v8a.so, ktranscript_arm64-v8a.so, libplugins_bearer_qandroidbearer_arm64-v8a.so, libplugins_iconengines_qsvgicon_arm64-v8a.so, libplugins_imageformats_qgif_arm64-v8a.so, libplugins_imageformats_qicns_arm64-v8a.so, libplugins_imageformats_qico_arm64-v8a.so, libplugins_imageformats_qjpeg_arm64-v8a.so, libplugins_imageformats_qsvg_arm64-v8a.so, libplugins_imageformats_qtga_arm64-v8a.so, libplugins_imageformats_qtiff_arm64-v8a.so, libplugins_imageformats_qwbmp_arm64-v8a.so, libplugins_imageformats_qwebp_arm64-v8a.so, libplugins_platforms_qtforandroid_arm64-v8a.so, libplugins_qmltooling_qmldbg_debugger_arm64-v8a.so, libplugins_qmltooling_qmldbg_inspector_arm64-v8a.so, libplugins_qmltooling_qmldbg_local_arm64-v8a.so, libplugins_qmltooling_qmldbg_messages_arm64-v8a.so, libplugins_qmltooling_qmldbg_native_arm64-v8a.so, libplugins_qmltooling_qmldbg_nativedebugger_arm64-v8a.so, libplugins_qmltooling_qmldbg_preview_arm64-v8a.so, libplugins_qmltooling_qmldbg_profiler_arm64-v8a.so, libplugins_qmltooling_qmldbg_quickprofiler_arm64-v8a.so, libplugins_qmltooling_qmldbg_server_arm64-v8a.so, libplugins_qmltooling_qmldbg_tcp_arm64-v8a.so, libplugins_sqldrivers_qsqlite_arm64-v8a.so, padlock.so. Run with --info option to learn more.
 
-> Task :compressReleaseAssets
-> Task :extractReleaseVersionControlInfo
 > Task :generateReleaseLintVitalReportModel
 > Task :extractReleaseNativeSymbolTables
 > Task :minifyReleaseWithR8
