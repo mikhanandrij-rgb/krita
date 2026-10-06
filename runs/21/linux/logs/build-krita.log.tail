@@ -1,0 +1,541 @@
+/workspaces/Minimal.kws
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeDark.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeHighContrast.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeLight.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaNeutral.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaBlender.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaBright.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaDark.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaDarkOrange.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/KritaDarker.colors
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A1__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A1__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A2__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A2__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A3__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A3__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A4__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A4__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A5__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A5__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A6__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/A6__600_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Texture_1024x1024.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Texture_2048x2048.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Texture_256x256.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Texture_4096x4096.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Texture_512x512.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/US_Legal__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/US_Letter__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/US_Tabloid__300_ppi_.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Pixel_240x256.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Film_16_9_4K.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Film_64_27_4K_Wide.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/predefined_image_sizes/Film_4_3_4K.predefinedimage
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/input/clipstudiopaintcompatible.profile
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/input/kritadefault.profile
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/input/painttoolsaicompatible.profile
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/input/photoshopcompatible.profile
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts/clip_studio_paint_compatible.shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts/krita_default.shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts/paint_tool_sai_compatible.shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts/photoshop_compatible.shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts/tablet_pro.shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/a)_Eraser_Circle.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/b)_Basic-5_Size_default.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Lines-Dry.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Lines-Wet.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Lines-Wet-Pattern.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Round-Fringe_02.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Round-Grain.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Basic_Round-Grunge.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Flat_Big-Grain_Tilt.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Flat_Decay_Tilt.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Special_Blobs.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Special_Splats.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Spread.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Spread-Pattern.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Spread_WideArea.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/j)_WaterC_Water-Pattern.kpp
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Favorites.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Pixel_Art.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Digital.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Erasers.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/FX.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Ink.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Paint.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Sketch.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/paintoppresets/Textures.tag
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/concept-cookie.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/pixelart-16.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/pixelart-32.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/default.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/gradient.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/marker.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/ps.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/swatch-cmyk.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/swatch-colored-grey.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/swatche.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/swatch-rgb.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/web.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/palettes/animation-color-set.gpl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/symbols/BalloonSymbols.svg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/symbols/pepper_carrot_speech_bubbles.svg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/symbols/preset_icons.svg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/00_01_eraser-mechanical.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/00_02_eraser-large.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/00_03_eraser-hard.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/00_04_eraser-kneaded.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/01_01_mechanical-pencil.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/01_01_pencil-black-stone.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/01_02_pencil-double-ring.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/01_04_graphite.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/02_01_charcoal-pencil-thin.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/02_02_charcoal-pencil-medium.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/02_03_charcoal-pencil-large.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/02_04_charcoal-block.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/03_01colored-pencil.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/03_02_chalk-square.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/03_03_pastel.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_01_technical-pen.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_02_gel-pen.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_03_inking_fine-line_tiny.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_04_inking_fine-line_medium.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_05_ink-pen-atom.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_06_ink-G-pen.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_07_inking_dynamic_pen.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_08_inking_dynamic_pen_though.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_09_inking_pen_bumpy.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_10_inking_pen_bumpy_though.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_11_inking_pen_calligraphic.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_12_rigger-brush.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_13_inking_brush.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_14_inking_brush_blurry.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_15_ink-brush.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_16_large-rounded-cut.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/04_17_ink-pen-glass.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_01_airbrush.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_02_thin-stylus-tablet.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_03_stylus-white.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_04_stylus.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_05_stylus-colored-ring.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_06_stylus-colored.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/05_07_stylus-experimental.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_01_marker.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_02_marker-old.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_03_marker-large.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_04_round_marker_detail.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_05_sketching_wide_47.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/06_06_sketching_wide_bristles.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_01_synthetic-thin.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_02_synthetic-medium.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_03_synthetic-filbert.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_04_synthetic-large-bright.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_05_synthetic-large-bright-used.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_06_oil-filbert.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_07_oil-flat-large.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_08_acrylic-rounded-used.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_09_acrylic-angled.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_10_acrylic-flat.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_11_acrylic-mop.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_12_wide_dull_round.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_13_wide_brush_blurry.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_14_watercolor-flat.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_15_acrylic-fan-used.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_16_acrylic-flat-old.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_17_synthetic-very-old.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/07_18_special-effect-used-brush.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/08_01_watercolor-brush-medium.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/08_02_oil-round-hard.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/08_03_sumi-e.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/08_04_wide_brush_big.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/09_01_blending-stump.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/09_02_blur_soft.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/09_03_knife.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/09_04_knife-rake.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/09_05_paint-roller.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_01_color-effect.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_02_adjustment-contrast.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_03_adjustment-dark.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_04_filter.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_05_deform.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/10_06_clone.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_01_wand.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_02_shape.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_03_experimental.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_03stamp.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_04_texture-indicator.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_05_screentone-indicator.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/11_06_grid.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_01_Mechanical_Pencil.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_02_Fineliner.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_03_Marker_Permanent.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_04_PenBrush_01.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_05_Pen_01.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_06_Pen_02.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_07_Pen_03.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_08_Graphite_stick.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_09_Pastel_Bar_01.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_10_Pastel_Bar_04.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/tool_icons/12_11_Pastel_Bar_02.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/addition.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/color.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/comic.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_tilt.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/edit-pen.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_rotation.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_10.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_15.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_30.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_45.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_60.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_75.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/emblem_angle_90.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/experimental.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/favorite.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/love.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/mechanical.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/mouse.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/multidirection.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/question.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/sketch.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/wet.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/emblem_icons/whirlpool.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/preset_icons/background.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/dc.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/exif.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/tiff.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/mkn.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/xmp.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/xmpmm.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/metadata/schemas/xmprights.schema
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Atmosphere_With_Accent.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Atmospheric_Triad.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Complementary.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Dominant_Hue_With_Accent.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Shifted_Triad.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Split_Complementary.kgm
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/seexpr_scripts/Disney_noisecolor2.kse
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/windowlayouts/Cockpit (laptop mode).kwl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/windowlayouts/Dual screen editing.kwl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/1024x1024/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/128x128/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/16x16/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/22x22/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/256x256/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/32x32/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/48x48/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/512x512/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/64x64/apps/krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/scalable/apps/krita.svgz
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/16x16/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/22x22/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/32x32/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/48x48/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/64x64/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/128x128/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/256x256/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/512x512/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/1024x1024/mimetypes/application-x-krita.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita_version
+-- Set non-toolchain portion of runtime path of "/home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita_version" to "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu:/home/runner/wd/krita/_install/lib"
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita
+-- Set non-toolchain portion of runtime path of "/home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita" to "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu:/home/runner/wd/krita/_install/lib"
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/applications/org.kde.krita.desktop
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/actions/krita.action
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/actions/kritamenu.action
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/metainfo/org.kde.krita.appdata.xml
+-- Up-to-date: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nds/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/el/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/af/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/vi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eo/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nb/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nn/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ka/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hne/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ta/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca@valencia/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/be/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/eu/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ar/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/se/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/th/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lt/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ja/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/km/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt_BR/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/es/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bs/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ug/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ru/LC_MESSAGES/kritamobileui.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ms/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/is/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/xh/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ga/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fy/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sq/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_CN/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/id/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/de/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fi/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ko/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uk/LC_MESSAGES/kritamobileui.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fr/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/br/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/pt/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/he/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/lv/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/hu/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/et/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cs/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/zh_TW/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/bg/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mai/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sv/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ca/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/wa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/mk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ne/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tg/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/oc/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/gl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/cy/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/sk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ro/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/da/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/nl/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/uz@cyrillic/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/ia/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/tok/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/it/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/fa/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/kk/LC_MESSAGES/krita.mo
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale/en_GB/LC_MESSAGES/krita.mo
+## RUNNING POST-INSTALL SCRIPT "krita-plugins": /home/runner/ci/venv/bin/python3 /home/runner/work/krita/krita/build-tools/ci-scripts/build-plugins.py
+## Skip building GMic plugin for Android...
+Cache directory:                          /home/runner/ccache/krita
+Config file:                              /home/runner/ccache/krita/ccache.conf
+System config file:                       /etc/ccache.conf
+Stats updated:                            Tue Oct  6 06:44:42 2026
+Stats zeroed:                             Tue Oct  6 06:40:09 2026
+Cacheable calls:                           2829 / 2835 (99.79%)
+  Hits:                                    2756 / 2829 (97.42%)
+    Direct:                                2753 / 2756 (99.89%)
+    Preprocessed:                             3 / 2756 ( 0.11%)
+  Misses:                                    73 / 2829 ( 2.58%)
+Uncacheable calls:                            6 / 2835 ( 0.21%)
+  Autoconf compile/link:                      0 /    6 ( 0.00%)
+  Bad compiler arguments:                     0 /    6 ( 0.00%)
+  Called for linking:                         0 /    6 ( 0.00%)
+  Called for preprocessing:                   0 /    6 ( 0.00%)
+  Ccache disabled:                            0 /    6 ( 0.00%)
+  Compilation failed:                         5 /    6 (83.33%)
+  Compiler output file missing:               0 /    6 ( 0.00%)
+  Compiler produced empty output:             0 /    6 ( 0.00%)
+  Compiler produced stdout:                   0 /    6 ( 0.00%)
+  Could not use modules:                      0 /    6 ( 0.00%)
+  Could not use precompiled header:           0 /    6 ( 0.00%)
+  Forced recache:                             0 /    6 ( 0.00%)
+  Multiple source files:                      0 /    6 ( 0.00%)
+  No input file:                              0 /    6 ( 0.00%)
+  Output to stdout:                           0 /    6 ( 0.00%)
+  Preprocessing failed:                       1 /    6 (16.67%)
+  Unsupported code directive:                 0 /    6 ( 0.00%)
+  Unsupported compiler option:                0 /    6 ( 0.00%)
+  Unsupported environment variable:           0 /    6 ( 0.00%)
+  Unsupported source language:                0 /    6 ( 0.00%)
+Errors:                                       0 / 2835 ( 0.00%)
+  Compiler check failed:                      0
+  Could not find compiler:                    0
+  Could not read or parse input file:         0
+  Could not write to output file:             0
+  Error hashing extra file:                   0
+  Input file modified during compilation:     0
+  Internal error:                             0
+  Missing cache file:                         0
+Successful lookups:
+  Direct:                                  2753 / 2835 (97.11%)
+  Preprocessed:                               3 /   81 ( 3.70%)
+Local storage:
+  Cache size (GB):                          0.4 / 20.0 ( 1.87%)
+  Files:                                  11583
+  Cleanups:                                   0
+  Hits:                                    2756 / 2829 (97.42%)
+  Misses:                                    73 / 2829 ( 2.58%)
+  Reads:                                   5669
+  Writes:                                   149
+Remote storage:
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+  Errors:                                     0
+  Timeouts:                                   0
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share -> /home/runner/wd/krita/_install/share
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib -> /home/runner/wd/krita/_install/lib
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/include -> /home/runner/wd/krita/_install/include
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/qml -> /home/runner/wd/krita/_install/qml
+Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin -> /home/runner/wd/krita/_install/bin
