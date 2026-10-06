@@ -1,0 +1,17 @@
+/sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test:
+total 40
+drwxrwxrwx  3 root    ext_data_rw 4096 2026-10-06 20:44 .
+drwxrws--- 26 u0_a192 ext_data_rw 4096 2026-10-06 20:44 ..
+-rwxrwxrwx  1 root    ext_data_rw    2 2026-10-06 20:43 KRITA_MOBILE_SCREENSHOTS
+-rwxrwxrwx  1 root    ext_data_rw    8 2026-10-06 20:43 KRITA_MOBILE_UI
+drwxrwx---  2 u0_a192 u0_a192     4096 2026-10-06 20:44 out
+
+/sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test/out:
+total 344
+drwxrwx--- 2 u0_a192 u0_a192      4096 2026-10-06 20:44 .
+drwxrwxrwx 3 root    ext_data_rw  4096 2026-10-06 20:44 ..
+-rw-rw---- 1 u0_a192 u0_a192     70749 2026-10-06 20:44 classic-desktop-02-canvas.png
+-rw-rw---- 1 u0_a192 u0_a192     70832 2026-10-06 20:44 classic-landscape-02-canvas.png
+-rw-rw---- 1 u0_a192 u0_a192     59263 2026-10-06 20:44 classic-portrait-01-start.png
+-rw-rw---- 1 u0_a192 u0_a192     99071 2026-10-06 20:44 classic-portrait-02-canvas.png
+-rw-rw---- 1 u0_a192 u0_a192       962 2026-10-06 20:44 testdriver.log
