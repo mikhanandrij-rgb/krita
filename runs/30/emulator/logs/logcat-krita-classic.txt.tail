@@ -1,0 +1,405 @@
+10-06 11:49:07.134   899   958 V WindowManagerShell: Transition requested: android.os.BinderProxy@d8b55bc TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=74416 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@3daf945} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{c8d589a org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 11:49:07.135   546  1908 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 11:49:07.153   546   576 I ActivityManager: Start proc 5745:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 11:49:07.196   546  1185 D CoreBackPreview: Window{7a3ff03 u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@7dd885f, mPriority=0, mIsAnimationCallback=false}
+10-06 11:49:07.232  5745  5745 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 11:49:07.233  5745  5745 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 11:49:07.233  5745  5745 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 11:49:07.406   546   564 V WindowManager: Sent Transition #10 createdAt=10-06 11:49:07.122 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=74416 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{9df542d Task{3775b26 #9 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{78abd62 org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 11:49:07.406   546   564 V WindowManager:     info={id=10 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{9df542d Task{3775b26 #9 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=9)/@0x9509f1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{a0a53c2 Task{a6ecb83 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x3f2561f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 11:49:07.486  5745  5745 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 11:49:07.538  5745  5745 D nativeloader: Configuring clns-6 for other apk /data/app/~~XLatnOwogeWrUP95ctxcDA==/org.krita.mobilefork-grghmpPdJYShkaKH0skV_g==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~XLatnOwogeWrUP95ctxcDA==/org.krita.mobilefork-grghmpPdJYShkaKH0skV_g==/lib/arm64:/data/app/~~XLatnOwogeWrUP95ctxcDA==/org.krita.mobilefork-grghmpPdJYShkaKH0skV_g==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 11:49:07.568  5745  5745 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 11:49:07.568  5745  5745 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 11:49:07.577   546   561 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 5745
+10-06 11:49:07.743  5745  5745 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 11:49:07.737  5745  5745 W rita.mobilefork: type=1400 audit(0.0:29): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=488 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 11:49:08.365   546   635 D ActivityManager: freezing 3972 com.google.android.projection.gearhead:shared
+10-06 11:49:08.381   546   635 D ActivityManager: freezing 4629 com.google.android.marvin.talkback
+10-06 11:49:08.460  5745  5745 I krita.MainActivity: TouchSlop: 21
+10-06 11:49:08.460  5745  5745 I krita.MainActivity: LibsLoaded
+10-06 11:49:08.478   546  1956 D CoreBackPreview: Window{f5e6d0d u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c35ce10, mPriority=0, mIsAnimationCallback=false}
+10-06 11:49:08.603   546   635 D ActivityManager: freezing 2837 com.android.chrome
+10-06 11:49:08.644  5745  5770 I krita.ConfigsManager: storage dir: /data/user/0/org.krita.mobilefork/files
+10-06 11:49:08.660   546   564 W system_server: Failed to determine oat file name for dex location /data/app/~~XLatnOwogeWrUP95ctxcDA==/org.krita.mobilefork-grghmpPdJYShkaKH0skV_g==/base.apk: Dalvik cache directory does not exist
+10-06 11:49:08.660   546   564 W ziparchive: Unable to open '/data/app/~~XLatnOwogeWrUP95ctxcDA==/org.krita.mobilefork-grghmpPdJYShkaKH0skV_g==/base.dm': No such file or directory
+10-06 11:49:08.661   546   564 I ActivityTaskManager: Displayed org.krita.mobilefork/org.krita.android.MainActivity for user 0: +1s544ms
+10-06 11:49:08.701   546  1956 D CoreBackPreview: Window{7a3ff03 u0 Splash Screen org.krita.mobilefork EXITING}: Setting back callback null
+10-06 11:49:08.704   546  1000 W InputManager-JNI: Input channel object '7a3ff03 Splash Screen org.krita.mobilefork (client)' was disposed without first being removed with the input manager!
+10-06 11:49:08.749   546   635 D ActivityManager: freezing 2305 com.google.android.partnersetup
+10-06 11:49:08.763   546  1956 I ImeTracker: org.krita.mobilefork:86584b2e: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 11:49:08.763   546  1956 I ImeTracker: org.krita.mobilefork:86584b2e: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 11:49:08.825  1663  1663 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 11:49:08.826   546   635 D ActivityManager: freezing 2623 com.google.android.apps.wallpaper
+10-06 11:49:08.869   546  1956 D CoreBackPreview: Window{8022c1f u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a9b75ed, mPriority=0, mIsAnimationCallback=false}
+10-06 11:49:08.871   546   635 D ActivityManager: freezing 2904 com.google.android.tts
+10-06 11:49:09.433   546   635 D ActivityManager: freezing 1988 com.google.android.youtube
+10-06 11:49:14.017   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:14.019   546   635 D ActivityManager: freezing 1221 com.android.bluetooth
+10-06 11:49:14.020   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:14.020   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:14.022   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:14.022   546   635 D ActivityManager: freezing 3348 com.android.traceur
+10-06 11:49:14.023   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:14.027   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:14.027   546   635 D ActivityManager: freezing 3457 com.google.android.onetimeinitializer
+10-06 11:49:14.028   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:14.028   546   635 D ActivityManager: freezing 4607 com.android.emergency
+10-06 11:49:14.030   546   635 D ActivityManager: freezing 4640 com.google.android.healthconnect.controller
+10-06 11:49:14.038   546   635 D ActivityManager: freezing 2384 com.google.android.documentsui
+10-06 11:49:14.077   546   635 D ActivityManager: freezing 5667 com.android.externalstorage
+10-06 11:49:14.230   546  1069 D CoreBackPreview: Window{8022c1f u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 11:49:14.236   546  1069 W InputManager-JNI: Input channel object '8022c1f org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 11:49:14.318   899   958 V WindowManagerShell: Transition requested: android.os.BinderProxy@7e83a95 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=81600 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@3f887aa} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{1a3bf9b com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 11:49:14.322   546  2091 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 11:49:14.329   546  1928 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 11:49:14.685   546   564 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +370ms
+10-06 11:49:14.689   546   564 V WindowManager: Sent Transition #11 createdAt=10-06 11:49:14.289 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=81600 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{9df542d Task{3775b26 #9 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{f35cfd7 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 11:49:16.677   546   635 D ActivityManager: freezing 1683 com.google.android.ext.services
+10-06 11:49:16.793  5745  5770 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 11:49:16.959   546   616 D CoreBackPreview: Window{855b79c u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a3e5b41, mPriority=0, mIsAnimationCallback=false}
+10-06 11:49:18.453   546   575 D ActivityManager: sync unfroze 2904 com.google.android.tts for 3
+10-06 11:49:18.473   546   575 D ActivityManager: sync unfroze 1922 com.google.android.apps.youtube.music for 3
+10-06 11:49:18.680   546   546 D ActivityManager: sync unfroze 1683 com.google.android.ext.services for 6
+10-06 11:49:18.787   546   616 D ActivityManager: freezer override set to true
+10-06 11:49:18.794   546   616 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:18.794   546   616 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:18.810   546   616 D ActivityManager: sync unfroze 1958 com.android.keychain for 19
+10-06 11:49:18.810   546   616 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:18.811   546   616 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:18.811   546   616 D ActivityManager: sync unfroze 2657 com.android.localtransport for 19
+10-06 11:49:18.812   546   616 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:18.812   546   616 D ActivityManager: sync unfroze 3348 com.android.traceur for 19
+10-06 11:49:18.812   546   616 D ActivityManager: sync unfroze 2878 com.google.android.webview:webview_service for 19
+10-06 11:49:18.812   546   616 D ActivityManager: sync unfroze 2490 com.android.carrierdefaultapp for 19
+10-06 11:49:18.813   546   616 D ActivityManager: sync unfroze 3457 com.google.android.onetimeinitializer for 19
+10-06 11:49:18.813   546   616 D ActivityManager: sync unfroze 3652 com.android.camera2 for 19
+10-06 11:49:18.813   546   616 D ActivityManager: sync unfroze 3710 com.android.dynsystem for 19
+10-06 11:49:18.813   546   616 D ActivityManager: sync unfroze 1335 com.google.android.cellbroadcastreceiver for 19
+10-06 11:49:18.814   546   616 D ActivityManager: sync unfroze 3732 com.android.dynsystem:dynsystem for 19
+10-06 11:49:18.814   546   616 D ActivityManager: sync unfroze 3087 com.android.imsserviceentitlement for 19
+10-06 11:49:18.814   546   616 D ActivityManager: sync unfroze 2623 com.google.android.apps.wallpaper for 19
+10-06 11:49:18.815   546   616 D ActivityManager: sync unfroze 2141 com.android.providers.calendar for 19
+10-06 11:49:18.815   546   616 D ActivityManager: sync unfroze 4607 com.android.emergency for 19
+10-06 11:49:18.815   546   616 D ActivityManager: sync unfroze 4640 com.google.android.healthconnect.controller for 19
+10-06 11:49:18.817   546   616 D ActivityManager: sync unfroze 5097 com.google.android.webview for 19
+10-06 11:49:18.818   546   616 D ActivityManager: sync unfroze 4629 com.google.android.marvin.talkback for 19
+10-06 11:49:18.818   546   616 D ActivityManager: sync unfroze 3972 com.google.android.projection.gearhead:shared for 19
+10-06 11:49:18.818   546   616 D ActivityManager: sync unfroze 2837 com.android.chrome for 19
+10-06 11:49:18.818   546   616 D ActivityManager: sync unfroze 2305 com.google.android.partnersetup for 19
+10-06 11:49:18.820   546   616 D ActivityManager: sync unfroze 1988 com.google.android.youtube for 19
+10-06 11:49:18.820   546   616 D ActivityManager: sync unfroze 2384 com.google.android.documentsui for 19
+10-06 11:49:18.820   546   616 D ActivityManager: sync unfroze 5667 com.android.externalstorage for 19
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.wm.ActivityTaskManagerService.hasSystemAlertWindowPermission(ActivityTaskManagerService.java:1076)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.wm.ActivityTaskManagerService$LocalService.hasSystemAlertWindowPermission(ActivityTaskManagerService.java:7006)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13404)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13404)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13404)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13404)
+10-06 11:49:18.824   546  1908 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 11:49:18.950  5745  5762 W rita.mobilefork: Cleared Reference was only reachable from finalizer (only reported once)
+10-06 11:49:18.955  5745  5762 I rita.mobilefork: Explicit concurrent copying GC freed 191988(29MB) AllocSpace objects, 10(1548KB) LOS objects, 49% free, 4359KB/8718KB, paused 94us,8us total 26.921ms
+10-06 11:49:18.955  5745  5756 I rita.mobilefork: WaitForGcToComplete blocked Background on Explicit for 21.908ms
+10-06 11:49:18.986   546   616 D ActivityManager: freezer override set to false
+10-06 11:49:19.286   546  1069 I ActivityTaskManager: Activity reported stop, but no longer stopping: ActivityRecord{6b52604 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7} STOPPED
+10-06 11:49:20.412   153   153 I lowmemorykiller: lmkd data connection established
+10-06 11:49:20.461   153   153 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-06 11:49:20.461   153   153 I lowmemorykiller: Properties reinitilized
+10-06 11:49:20.462  6019  6019 I lowmemorykiller: lmkd updated properties successfully
+10-06 11:49:20.462   153   153 I lowmemorykiller: lmkd data connection dropped
+10-06 11:49:20.462   153   153 I lowmemorykiller: closing lmkd data connection
+10-06 11:49:21.596  5745  5770 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 11:49:21.738  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table version_information"
+10-06 11:49:21.740  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table storage_types"
+10-06 11:49:21.744  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table resource_types"
+10-06 11:49:21.746  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table storages"
+10-06 11:49:21.749  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table tags"
+10-06 11:49:21.751  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table resources"
+10-06 11:49:21.752  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table versioned_resources"
+10-06 11:49:21.754  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table resource_tags"
+10-06 11:49:21.755  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table metadata"
+10-06 11:49:21.758  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table tags_storages"
+10-06 11:49:21.760  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create table tag_translations"
+10-06 11:49:21.776  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Update metadata table constraints"
+10-06 11:49:21.779  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for storages"
+10-06 11:49:21.780  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+10-06 11:49:21.782  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for tags"
+10-06 11:49:21.783  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for resources"
+10-06 11:49:21.785  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for tag_translations"
+10-06 11:49:21.786  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for resource_tags"
+10-06 11:49:21.787  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for resources_signature"
+10-06 11:49:21.788  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Create index for metadata_key"
+10-06 11:49:21.790  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+10-06 11:49:21.790  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Folder"
+10-06 11:49:21.791  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+10-06 11:49:21.791  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+10-06 11:49:21.791  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+10-06 11:49:21.791  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Memory"
+10-06 11:49:21.791  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+10-06 11:49:21.793  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: brushes"
+10-06 11:49:21.794  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: css_styles"
+10-06 11:49:21.794  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+10-06 11:49:21.794  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+10-06 11:49:21.795  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: gradients"
+10-06 11:49:21.795  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+10-06 11:49:21.795  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+10-06 11:49:21.795  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: palettes"
+10-06 11:49:21.796  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: patterns"
+10-06 11:49:21.796  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+10-06 11:49:21.796  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: sessions"
+10-06 11:49:21.796  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: symbols"
+10-06 11:49:21.797  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+10-06 11:49:21.797  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+10-06 11:49:21.797  5745  5770 I krita   : krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+10-06 11:49:21.798  5745  5770 I krita   : krita.db.migration: Filled version table
+10-06 11:49:21.825  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:34): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F627275736865732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81961 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.833  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:35): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81962 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.837  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:36): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81963 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.837  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:37): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81964 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.841  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:38): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81965 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.841  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:39): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81966 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.845  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:40): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F67616D75746D61736B732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81967 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:21.845  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:41): avc:  denied  { ioctl } for  path=2F73746F726167652F656D756C617465642F302F416E64726F69642F646174612F6F72672E6B726974612E6D6F62696C65666F726B2F66696C65732F6772616469656E74732F71745F74656D702E585858585858202864656C6574656429 dev="fuse" ino=81968 ioctlcmd=0x9409 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:fuse:s0 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:23.205   546   635 D ActivityManager: freezing 4013 com.google.android.rkpdapp
+10-06 11:49:23.549  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:238): avc:  denied  { link } for  name="CACHEDIR.TAG.TMP-hd93EA" dev="dm-40" ino=149702 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:23.549  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:239): avc:  denied  { link } for  name="3336a65c52528c9c368e942d3dd307f8-le64.cache-9.TMP-b4UhhO" dev="dm-40" ino=149703 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:23.553  5745  5745 W qtMainLoopThrea: type=1400 audit(0.0:240): avc:  denied  { link } for  name="6b2d726176ccfb13550f478e03d9d362-le64.cache-9.TMP-u72Oec" dev="dm-40" ino=149704 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c192,c256,c512,c768 tclass=file permissive=0 app=org.krita.mobilefork
+10-06 11:49:27.857   546   635 D ActivityManager: freezing 3543 com.google.android.gms.unstable
+10-06 11:49:28.581   546  1908 D ActivityManager: sync unfroze 3543 com.google.android.gms.unstable for 6
+10-06 11:49:28.766   546   888 D ActivityManager: sync unfroze 4013 com.google.android.rkpdapp for 6
+10-06 11:49:28.822   546   635 D ActivityManager: freezing 2305 com.google.android.partnersetup
+10-06 11:49:28.823   546   635 D ActivityManager: freezing 2837 com.android.chrome
+10-06 11:49:28.842   546   635 D ActivityManager: freezing 5667 com.android.externalstorage
+10-06 11:49:28.987   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:28.987   546   635 D ActivityManager: freezing 1221 com.android.bluetooth
+10-06 11:49:28.988   546   635 D ActivityManager: freezing 1958 com.android.keychain
+10-06 11:49:28.988   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:28.988   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:28.988   546   635 D ActivityManager: freezing 2657 com.android.localtransport
+10-06 11:49:28.989   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:28.989   546   635 D ActivityManager: freezing 3348 com.android.traceur
+10-06 11:49:28.989   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:28.989   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:28.990   546   635 D ActivityManager: freezing 3457 com.google.android.onetimeinitializer
+10-06 11:49:28.990   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:28.990   546   635 D ActivityManager: freezing 3710 com.android.dynsystem
+10-06 11:49:28.990   546   635 D ActivityManager: freezing 1335 com.google.android.cellbroadcastreceiver
+10-06 11:49:28.990   546   635 D ActivityManager: freezing 3732 com.android.dynsystem:dynsystem
+10-06 11:49:28.995   546   635 D ActivityManager: freezing 3087 com.android.imsserviceentitlement
+10-06 11:49:28.998   546   635 D ActivityManager: freezing 2623 com.google.android.apps.wallpaper
+10-06 11:49:29.004   546   635 D ActivityManager: freezing 2141 com.android.providers.calendar
+10-06 11:49:29.004   546   635 D ActivityManager: freezing 4607 com.android.emergency
+10-06 11:49:29.004   546   635 D ActivityManager: freezing 4640 com.google.android.healthconnect.controller
+10-06 11:49:29.005   546   635 D ActivityManager: freezing 5097 com.google.android.webview
+10-06 11:49:29.005   546   635 D ActivityManager: freezing 2384 com.google.android.documentsui
+10-06 11:49:29.114   546   561 D ActivityManager: freezer override set to true
+10-06 11:49:29.115   546   561 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:29.116   546   561 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:29.116   546   561 D ActivityManager: sync unfroze 1958 com.android.keychain for 19
+10-06 11:49:29.116   546   561 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:29.117   546   561 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:29.117   546   561 D ActivityManager: sync unfroze 2657 com.android.localtransport for 19
+10-06 11:49:29.117   546   561 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 3348 com.android.traceur for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 2878 com.google.android.webview:webview_service for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 2490 com.android.carrierdefaultapp for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 3457 com.google.android.onetimeinitializer for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 3652 com.android.camera2 for 19
+10-06 11:49:29.118   546   561 D ActivityManager: sync unfroze 3710 com.android.dynsystem for 19
+10-06 11:49:29.119   546   561 D ActivityManager: sync unfroze 1335 com.google.android.cellbroadcastreceiver for 19
+10-06 11:49:29.119   546   561 D ActivityManager: sync unfroze 3732 com.android.dynsystem:dynsystem for 19
+10-06 11:49:29.119   546   561 D ActivityManager: sync unfroze 3087 com.android.imsserviceentitlement for 19
+10-06 11:49:29.119   546   561 D ActivityManager: sync unfroze 2623 com.google.android.apps.wallpaper for 19
+10-06 11:49:29.119   546   561 D ActivityManager: sync unfroze 2141 com.android.providers.calendar for 19
+10-06 11:49:29.120   546   561 D ActivityManager: sync unfroze 4607 com.android.emergency for 19
+10-06 11:49:29.120   546   561 D ActivityManager: sync unfroze 4640 com.google.android.healthconnect.controller for 19
+10-06 11:49:29.120   546   561 D ActivityManager: sync unfroze 5097 com.google.android.webview for 19
+10-06 11:49:29.120   546   561 D ActivityManager: sync unfroze 2837 com.android.chrome for 19
+10-06 11:49:29.121   546   561 D ActivityManager: sync unfroze 2305 com.google.android.partnersetup for 19
+10-06 11:49:29.121   546   561 D ActivityManager: sync unfroze 5667 com.android.externalstorage for 19
+10-06 11:49:29.122   546   561 D ActivityManager: sync unfroze 2384 com.google.android.documentsui for 19
+10-06 11:49:29.244  5745  5762 I rita.mobilefork: Explicit concurrent copying GC freed 53958(1910KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2608KB/5217KB, paused 14us,10us total 5.171ms
+10-06 11:49:29.254   546   561 D ActivityManager: freezer override set to false
+10-06 11:49:29.977   546   635 D ActivityManager: freezing 4629 com.google.android.marvin.talkback
+10-06 11:49:30.258   546   635 D ActivityManager: freezing 1988 com.google.android.youtube
+10-06 11:49:30.435   546   635 D ActivityManager: freezing 5126 com.google.android.settings.intelligence
+10-06 11:49:31.081   546   635 D ActivityManager: freezing 5467 com.google.android.gms.ui
+10-06 11:49:31.341   546   575 D ActivityManager: sync unfroze 5126 com.google.android.settings.intelligence for 3
+10-06 11:49:31.836   546   575 D ActivityManager: sync unfroze 4629 com.google.android.marvin.talkback for 3
+10-06 11:49:31.910   546   575 D ActivityManager: sync unfroze 1988 com.google.android.youtube for 3
+10-06 11:49:39.160   546   635 D ActivityManager: freezing 2837 com.android.chrome
+10-06 11:49:39.257   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:39.257   546   635 D ActivityManager: freezing 1221 com.android.bluetooth
+10-06 11:49:39.257   546   635 D ActivityManager: freezing 1958 com.android.keychain
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 2657 com.android.localtransport
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 3348 com.android.traceur
+10-06 11:49:39.258   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 3457 com.google.android.onetimeinitializer
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 3710 com.android.dynsystem
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 1335 com.google.android.cellbroadcastreceiver
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 3732 com.android.dynsystem:dynsystem
+10-06 11:49:39.259   546   635 D ActivityManager: freezing 3087 com.android.imsserviceentitlement
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 2623 com.google.android.apps.wallpaper
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 2141 com.android.providers.calendar
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 4607 com.android.emergency
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 4640 com.google.android.healthconnect.controller
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 5097 com.google.android.webview
+10-06 11:49:39.260   546   635 D ActivityManager: freezing 2305 com.google.android.partnersetup
+10-06 11:49:39.261   546   635 D ActivityManager: freezing 5667 com.android.externalstorage
+10-06 11:49:39.261   546   635 D ActivityManager: freezing 2384 com.google.android.documentsui
+10-06 11:49:39.305   546   635 D ActivityManager: freezing 4013 com.google.android.rkpdapp
+10-06 11:49:39.324   546  2771 D ActivityManager: freezer override set to true
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1958 com.android.keychain for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 2657 com.android.localtransport for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 3348 com.android.traceur for 19
+10-06 11:49:39.325   546  2771 D ActivityManager: sync unfroze 2878 com.google.android.webview:webview_service for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 2490 com.android.carrierdefaultapp for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 3457 com.google.android.onetimeinitializer for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 3652 com.android.camera2 for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 3710 com.android.dynsystem for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 1335 com.google.android.cellbroadcastreceiver for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 3732 com.android.dynsystem:dynsystem for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 3087 com.android.imsserviceentitlement for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 2623 com.google.android.apps.wallpaper for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 2141 com.android.providers.calendar for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 4607 com.android.emergency for 19
+10-06 11:49:39.326   546  2771 D ActivityManager: sync unfroze 4640 com.google.android.healthconnect.controller for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 5097 com.google.android.webview for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 2305 com.google.android.partnersetup for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 5667 com.android.externalstorage for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 5467 com.google.android.gms.ui for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 2837 com.android.chrome for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 2384 com.google.android.documentsui for 19
+10-06 11:49:39.327   546  2771 D ActivityManager: sync unfroze 4013 com.google.android.rkpdapp for 19
+10-06 11:49:39.381  5745  5762 I rita.mobilefork: Explicit concurrent copying GC freed 3097(133KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2603KB/5206KB, paused 14us,17us total 6.123ms
+10-06 11:49:39.391   546  2771 D ActivityManager: freezer override set to false
+10-06 11:49:41.230   546   635 D ActivityManager: freezing 1922 com.google.android.apps.youtube.music
+10-06 11:49:41.273   546   635 D ActivityManager: freezing 2904 com.google.android.tts
+10-06 11:49:41.425   546   635 D ActivityManager: freezing 5126 com.google.android.settings.intelligence
+10-06 11:49:41.757   546   635 D ActivityManager: freezing 4488 com.google.android.googlequicksearchbox
+10-06 11:49:41.892   546   635 D ActivityManager: freezing 4629 com.google.android.marvin.talkback
+10-06 11:49:42.029   546   635 D ActivityManager: freezing 3972 com.google.android.projection.gearhead:shared
+10-06 11:49:42.042   546   635 D ActivityManager: freezing 1988 com.google.android.youtube
+10-06 11:49:44.922   546   635 D ActivityManager: freezing 3543 com.google.android.gms.unstable
+10-06 11:49:49.331  5745  5770 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 11:49:49.346  5745  5770 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 11:49:49.406   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:49.409   546   635 D ActivityManager: freezing 1221 com.android.bluetooth
+10-06 11:49:49.409   546   635 D ActivityManager: freezing 1958 com.android.keychain
+10-06 11:49:49.409   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:49.409   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:49.409   546   635 D ActivityManager: freezing 2657 com.android.localtransport
+10-06 11:49:49.410   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:49.410   546   635 D ActivityManager: freezing 3348 com.android.traceur
+10-06 11:49:49.410   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:49.410   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:49.410   546   635 D ActivityManager: freezing 3457 com.google.android.onetimeinitializer
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 3710 com.android.dynsystem
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 1335 com.google.android.cellbroadcastreceiver
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 3732 com.android.dynsystem:dynsystem
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 3087 com.android.imsserviceentitlement
+10-06 11:49:49.411   546   635 D ActivityManager: freezing 2141 com.android.providers.calendar
+10-06 11:49:49.413   546   635 D ActivityManager: freezing 4607 com.android.emergency
+10-06 11:49:49.414   546   635 D ActivityManager: freezing 4640 com.google.android.healthconnect.controller
+10-06 11:49:49.414   546   635 D ActivityManager: freezing 5097 com.google.android.webview
+10-06 11:49:49.415   546   635 D ActivityManager: freezing 2305 com.google.android.partnersetup
+10-06 11:49:49.415   546   635 D ActivityManager: freezing 5667 com.android.externalstorage
+10-06 11:49:49.415   546   635 D ActivityManager: freezing 2837 com.android.chrome
+10-06 11:49:49.415   546   635 D ActivityManager: freezing 4013 com.google.android.rkpdapp
+10-06 11:49:49.416   546   635 D ActivityManager: freezing 5467 com.google.android.gms.ui
+10-06 11:49:49.416   546   635 D ActivityManager: freezing 2384 com.google.android.documentsui
+10-06 11:49:49.455   546  1000 D ActivityManager: freezer override set to true
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1958 com.android.keychain for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 2657 com.android.localtransport for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 3348 com.android.traceur for 19
+10-06 11:49:49.456   546  1000 D ActivityManager: sync unfroze 2878 com.google.android.webview:webview_service for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 2490 com.android.carrierdefaultapp for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 3457 com.google.android.onetimeinitializer for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 3652 com.android.camera2 for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 3710 com.android.dynsystem for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 1335 com.google.android.cellbroadcastreceiver for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 3732 com.android.dynsystem:dynsystem for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 3087 com.android.imsserviceentitlement for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 2141 com.android.providers.calendar for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 4607 com.android.emergency for 19
+10-06 11:49:49.457   546  1000 D ActivityManager: sync unfroze 4640 com.google.android.healthconnect.controller for 19
+10-06 11:49:49.458   546  1000 D ActivityManager: sync unfroze 5097 com.google.android.webview for 19
+10-06 11:49:49.458   546  1000 D ActivityManager: sync unfroze 2305 com.google.android.partnersetup for 19
+10-06 11:49:49.458   546  1000 D ActivityManager: sync unfroze 5667 com.android.externalstorage for 19
+10-06 11:49:49.459   546  1000 D ActivityManager: sync unfroze 2837 com.android.chrome for 19
+10-06 11:49:49.459   546  1000 D ActivityManager: sync unfroze 4013 com.google.android.rkpdapp for 19
+10-06 11:49:49.459   546  1000 D ActivityManager: sync unfroze 2904 com.google.android.tts for 19
+10-06 11:49:49.459   546  1000 D ActivityManager: sync unfroze 1922 com.google.android.apps.youtube.music for 19
+10-06 11:49:49.459   546  1000 D ActivityManager: sync unfroze 5126 com.google.android.settings.intelligence for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 4488 com.google.android.googlequicksearchbox for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 4629 com.google.android.marvin.talkback for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 3972 com.google.android.projection.gearhead:shared for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 1988 com.google.android.youtube for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 3543 com.google.android.gms.unstable for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 5467 com.google.android.gms.ui for 19
+10-06 11:49:49.460   546  1000 D ActivityManager: sync unfroze 2384 com.google.android.documentsui for 19
+10-06 11:49:49.523  5745  5773 I rita.mobilefork: Explicit concurrent copying GC freed 10767(530KB) AllocSpace objects, 3(60KB) LOS objects, 49% free, 2761KB/5523KB, paused 18us,8us total 7.220ms
+10-06 11:49:49.536   546  1000 D ActivityManager: freezer override set to false
+10-06 11:49:49.539   546   635 D ActivityManager: freezing 2623 com.google.android.apps.wallpaper
+10-06 11:49:51.103   546   635 D ActivityManager: freezing 3899 com.google.android.gm
+10-06 11:49:59.502   546   635 D ActivityManager: freezing 3543 com.google.android.gms.unstable
+10-06 11:49:59.502   546   635 D ActivityManager: freezing 1988 com.google.android.youtube
+10-06 11:49:59.503   546   635 D ActivityManager: freezing 3972 com.google.android.projection.gearhead:shared
+10-06 11:49:59.503   546   635 D ActivityManager: freezing 4629 com.google.android.marvin.talkback
+10-06 11:49:59.503   546   635 D ActivityManager: freezing 4488 com.google.android.googlequicksearchbox
+10-06 11:49:59.503   546   635 D ActivityManager: freezing 1922 com.google.android.apps.youtube.music
+10-06 11:49:59.504   546   635 D ActivityManager: freezing 2904 com.google.android.tts
+10-06 11:49:59.504   546   635 D ActivityManager: freezing 5667 com.android.externalstorage
+10-06 11:49:59.538   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:59.538   546   635 D ActivityManager: freezing 1221 com.android.bluetooth
+10-06 11:49:59.538   546   635 D ActivityManager: freezing 1958 com.android.keychain
+10-06 11:49:59.538   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:59.539   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:59.539   546   635 D ActivityManager: freezing 2657 com.android.localtransport
+10-06 11:49:59.539   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:59.539   546   635 D ActivityManager: freezing 3348 com.android.traceur
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 3457 com.google.android.onetimeinitializer
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 3710 com.android.dynsystem
+10-06 11:49:59.540   546   635 D ActivityManager: freezing 1335 com.google.android.cellbroadcastreceiver
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 3732 com.android.dynsystem:dynsystem
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 3087 com.android.imsserviceentitlement
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 2141 com.android.providers.calendar
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 4607 com.android.emergency
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 4640 com.google.android.healthconnect.controller
+10-06 11:49:59.541   546   635 D ActivityManager: freezing 5097 com.google.android.webview
+10-06 11:49:59.542   546   635 D ActivityManager: freezing 2305 com.google.android.partnersetup
+10-06 11:49:59.542   546   635 D ActivityManager: freezing 2837 com.android.chrome
+10-06 11:49:59.542   546   635 D ActivityManager: freezing 4013 com.google.android.rkpdapp
+10-06 11:49:59.542   546   635 D ActivityManager: freezing 5467 com.google.android.gms.ui
+10-06 11:49:59.542   546   635 D ActivityManager: freezing 2384 com.google.android.documentsui
+10-06 11:49:59.590   546  1861 D ActivityManager: freezer override set to true
+10-06 11:49:59.590   546  1861 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:59.590   546  1861 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:59.591   546  1861 D ActivityManager: sync unfroze 1958 com.android.keychain for 19
+10-06 11:49:59.591   546  1861 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:59.591   546  1861 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:59.591   546  1861 D ActivityManager: sync unfroze 2657 com.android.localtransport for 19
+10-06 11:49:59.591   546  1861 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:59.591  

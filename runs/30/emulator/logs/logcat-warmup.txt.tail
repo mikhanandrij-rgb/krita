@@ -1,0 +1,448 @@
+_lookup: FOUND IN CACHE entry=0x78e78966b2d0
+10-06 11:49:02.756   356  5598 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-06 11:49:02.756   356  5599 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78e78966bd50
+10-06 11:49:02.756   356  5599 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-06 11:49:02.757  2299  5596 D TrafficStats: tagSocket(80) with statsTag=0xffffff01, statsUid=10129
+10-06 11:49:02.763  5207  5249 E bwel    : Phenotype registration failed [CONTEXT service_id=51 ]
+10-06 11:49:02.763  5207  5249 E bwel    : java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-06 11:49:02.763  5207  5249 E bwel    : 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at bwel.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 11:49:02.763  5207  5249 E bwel    : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 11:49:02.773  2299  5601 D DownloadManager: [10] Starting
+10-06 11:49:02.782  2299  5601 D TrafficStats: tagSocket(77) with statsTag=0xffffff01, statsUid=10129
+10-06 11:49:02.796  4623  5607 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+10-06 11:49:02.798  4623  5607 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+10-06 11:49:02.800  4623  4766 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+10-06 11:49:02.800  4623  4766 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+10-06 11:49:02.806  3543  3560 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+10-06 11:49:02.806  3543  3560 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+10-06 11:49:02.812  3543  3560 W DG      : [flow tachyon_registration] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-06 11:49:02.816  3543  3760 D TrafficStats: tagSocket(105) with statsTag=0x1803, statsUid=10131
+10-06 11:49:02.861  2299  5596 D DownloadManager: [9] Finished with status SUCCESS
+10-06 11:49:02.890  5207  5207 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-06 11:49:02.890  5207  5207 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-06 11:49:02.910  2299  5601 D DownloadManager: [10] Finished with status SUCCESS
+10-06 11:49:02.930  2299  5609 D DownloadManager: [11] Starting
+10-06 11:49:02.939   546  3007 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+10-06 11:49:02.941   546   546 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-06 11:49:02.944   546   561 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-06 11:49:02.945   546  3007 I RemoteProvisionSysSvc: Fetching key 10128 for client 221863035
+10-06 11:49:02.945   546  3007 I RegistrationProxy: getKeyAsync operation started with callback 230427288
+10-06 11:49:02.945  4013  4138 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10128, callback: 130539032
+10-06 11:49:02.946  4013  4138 I RkpdRegistrationBinder: Key successfully assigned to client
+10-06 11:49:02.946   546   546 I RemoteProvisionSysSvc: Successfully fetched key for client 221863035
+10-06 11:49:02.950  2299  5609 D TrafficStats: tagSocket(77) with statsTag=0xffffff01, statsUid=10129
+10-06 11:49:02.981  3543  3560 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+10-06 11:49:02.986  3543  3560 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+10-06 11:49:02.986  3543  3560 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+10-06 11:49:02.989  2299  5611 D DownloadManager: [12] Starting
+10-06 11:49:02.996  2299  5611 D TrafficStats: tagSocket(82) with statsTag=0xffffff01, statsUid=10129
+10-06 11:49:03.019  3543  3560 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-06 11:49:03.020  3543  3560 W libc    : Access denied finding property "service.adb.tls.port"
+10-06 11:49:03.013  3543  3543 W binder:3543_2: type=1400 audit(0.0:27): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=292 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-06 11:49:03.017  3543  3543 W binder:3543_2: type=1400 audit(0.0:28): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=60 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-06 11:49:03.036  4623  5607 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+10-06 11:49:03.037  4623  5607 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+10-06 11:49:03.038  4623  4766 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+10-06 11:49:03.038  4623  4766 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+10-06 11:49:03.087  2299  5609 D DownloadManager: [11] Finished with status SUCCESS
+10-06 11:49:03.124  3846  5340 I ConfigUpdater: Update downloaded, starting installation
+10-06 11:49:03.132  3846  5340 I ConfigUpdater: doneInstall
+10-06 11:49:03.134   546  5613 I ConfigUpdateInstallReceiver: Couldn't find current metadata, assuming first update
+10-06 11:49:03.134   546  5613 I ConfigUpdateInstallReceiver: Failed to read current content, assuming first update!
+10-06 11:49:03.134   546  5613 I ConfigUpdateInstallReceiver: Found new update, installing...
+10-06 11:49:03.134  2299  5611 D DownloadManager: [12] Finished with status SUCCESS
+10-06 11:49:03.139  2299  2344 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+10-06 11:49:03.141   546  5613 I ConfigUpdateInstallReceiver: Installation successful
+10-06 11:49:03.142  1820  1837 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-metadata.txt
+10-06 11:49:03.142  1820  1837 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-06 11:49:03.153  2299  2344 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-pins.txt via provider delete
+10-06 11:49:03.154  1820  1837 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-pins.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-pins.txt
+10-06 11:49:03.158  1820  1837 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 0 deletes
+10-06 11:49:03.196   546   627 D OomAdjuster: Not killing cached processes
+10-06 11:49:03.235  3846  5340 I ConfigUpdater: Update downloaded, starting installation
+10-06 11:49:03.237   546  1956 W JobScheduler: Job didn't exist in JobStore: 48790af #u0a153/7 com.google.android.contacts/com.google.android.apps.contacts.shortcut.ShortcutJobService
+10-06 11:49:03.246  3846  5340 I ConfigUpdater: doneInstall
+10-06 11:49:03.247  2299  2344 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt via provider delete
+10-06 11:49:03.248  3543  3560 W SystemServiceRegistry: No service published for: persistent_data_block
+10-06 11:49:03.249  1820  1837 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt
+10-06 11:49:03.250  1820  1837 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-06 11:49:03.255   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10139
+10-06 11:49:03.255  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.youtube
+10-06 11:49:03.255  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.257   546   636 I RoleService: Granting default roles...
+10-06 11:49:03.258   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.258  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.258  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.259  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.260  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.260  1100  1100 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 11:49:03.267   546   627 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10131; state: ENABLED
+10-06 11:49:03.267   546   627 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10131; state: ENABLED
+10-06 11:49:03.268   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10131
+10-06 11:49:03.271   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.276  4623  5179 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+10-06 11:49:03.278   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.279   899   981 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+10-06 11:49:03.280   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.281   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.286   546   574 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-06 11:49:03.287  2299  2344 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt via provider delete
+10-06 11:49:03.291  1820  1837 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt
+10-06 11:49:03.294   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.300   899   981 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+10-06 11:49:03.300  1820  1837 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 9ms, 0 inserts 0 updates 0 deletes
+10-06 11:49:03.303   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.303   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.307   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10134
+10-06 11:49:03.313   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.313   899   899 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 11:49:03.313   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.317  4623  5179 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f0806ce.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f140b31.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f0806cc.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f140af3.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f0806d0.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f140c3f.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f0806ca.
+10-06 11:49:03.323   546   574 E system_server: No package ID 7f found for resource ID 0x7f140422.
+10-06 11:49:03.327   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10125
+10-06 11:49:03.328   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10152
+10-06 11:49:03.331   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.336   546   646 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 11:49:03.338   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmm.widget.SearchWidgetProvider} won't be persisted.
+10-06 11:49:03.338   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmm.widget.traffic.TrafficWidgetProvider} won't be persisted.
+10-06 11:49:03.338   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtQuickActionsWidgetProvider} won't be persisted.
+10-06 11:49:03.338   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtSearchWidgetProvider} won't be persisted.
+10-06 11:49:03.339  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.youtube.
+10-06 11:49:03.340   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10153
+10-06 11:49:03.340  1841  3200 I AiAiEcho: AppIndexer Package:[com.google.android.youtube] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.340  1841  3200 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.youtube], userId:[0], reason:[package is updated.].
+10-06 11:49:03.341   546   546 V NotificationListeners: enabling notification listener for 0: ComponentInfo{com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener}
+10-06 11:49:03.341   546   546 V NotificationListeners: Not registering ComponentInfo{com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener} is already bound
+10-06 11:49:03.341   546   546 V NotificationListeners: enabling notification listener for 0: ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService}
+10-06 11:49:03.342   546   546 V NotificationListeners: Not registering ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService} is already bound
+10-06 11:49:03.342   546   546 V NotificationAssistants: enabling notification assistant for 0: ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService}
+10-06 11:49:03.343   546   546 V NotificationAssistants: Not registering ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService} is already bound
+10-06 11:49:03.347   546  5614 I ConfigUpdateInstallReceiver: Couldn't find current metadata, assuming first update
+10-06 11:49:03.347   546  5614 I ConfigUpdateInstallReceiver: Failed to read current content, assuming first update!
+10-06 11:49:03.347   546  5614 I ConfigUpdateInstallReceiver: Found new update, installing...
+10-06 11:49:03.349   900   926 I PermissionControllerServiceImpl: Updating user sensitive for uid 10128
+10-06 11:49:03.352   899   981 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+10-06 11:49:03.353   899   981 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+10-06 11:49:03.359   900  1090 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-06 11:49:03.361  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-06 11:49:03.361  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.youtube
+10-06 11:49:03.361  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.361   899   981 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+10-06 11:49:03.362   900  1090 I Role    : com.google.android.gms not qualified for android.app.role.SYSTEM_CALL_STREAMING due to missing RequiredComponent{mIntentFilterData=IntentFilterData{mAction='android.telecom.CallStreamingService', mCategories='[]', mDataScheme='null', mDataType='null'}, mMinTargetSdkVersion=1, mFlags='0', mPermission='android.permission.BIND_CALL_STREAMING_SERVICE', mQueryFlags=0, mMetaData=[]}
+10-06 11:49:03.362   900  1090 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+10-06 11:49:03.363   900  1090 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-06 11:49:03.367  4623  5519 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.dm': No such file or directory
+10-06 11:49:03.367  4623  5519 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.dm': No such file or directory
+10-06 11:49:03.370  4623  5519 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-06 11:49:03.370  4623  5519 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-06 11:49:03.370  4623  5519 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-06 11:49:03.374   546  5614 I ConfigUpdateInstallReceiver: Installation successful
+10-06 11:49:03.375   899   981 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+10-06 11:49:03.385  5207  5215 I .gms.persistent: Background concurrent copying GC freed 289878(15MB) AllocSpace objects, 8(196KB) LOS objects, 49% free, 11MB/23MB, paused 21us,26us total 143.477ms
+10-06 11:49:03.386   899   981 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+10-06 11:49:03.388   899   981 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+10-06 11:49:03.388   899   981 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+10-06 11:49:03.388   899   981 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+10-06 11:49:03.390  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.android.vending
+10-06 11:49:03.391  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.395  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-06 11:49:03.397   546   635 D ActivityManager: freezing 3652 com.android.camera2
+10-06 11:49:03.398  4623  5519 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-06 11:49:03.398  4623  5519 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-06 11:49:03.399  4623  5519 I .apps.messaging: Waiting for a blocking GC ClassLinker
+10-06 11:49:03.401   899   981 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+10-06 11:49:03.405  4623  5179 D PhFileGroupPop: Added file groups scripted_reply
+10-06 11:49:03.413  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.as
+10-06 11:49:03.413  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.android.vending
+10-06 11:49:03.419  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.422  4623  5519 I .apps.messaging: WaitForGcToComplete blocked ClassLinker on Background for 23.368ms
+10-06 11:49:03.425  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.maps
+10-06 11:49:03.425  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.425  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.as
+10-06 11:49:03.427  5207  5415 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.428  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.contacts
+10-06 11:49:03.428  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.maps
+10-06 11:49:03.428  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.429   546  1908 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10128; state: DISABLED
+10-06 11:49:03.429   546  1908 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10131; state: ENABLED
+10-06 11:49:03.429   546  1908 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10119; state: ENABLED
+10-06 11:49:03.432  1128  1128 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-06 11:49:03.432  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.contacts
+10-06 11:49:03.433  5207  5416 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.436  1128  1128 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 11:49:03.440   899   981 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+10-06 11:49:03.440   899   981 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+10-06 11:49:03.441   899   981 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+10-06 11:49:03.442   546   574 E system_server: No package ID 7f found for resource ID 0x7f08038b.
+10-06 11:49:03.443   546   574 E system_server: No package ID 7f found for resource ID 0x7f150be5.
+10-06 11:49:03.443   546   574 E system_server: No package ID 7f found for resource ID 0x7f150be5.
+10-06 11:49:03.443   546   574 E system_server: No package ID 7f found for resource ID 0x7f150be4.
+10-06 11:49:03.454  1176  2085 D EGL_emulation: app_time_stats: avg=4745.55ms min=201.09ms max=9290.01ms count=2
+10-06 11:49:03.466  4623  5179 D PhFileGroupPop: Added file groups multitask_experiment
+10-06 11:49:03.498  1128  1145 W System  : A resource failed to call AbstractCursor.close. 
+10-06 11:49:03.498  1128  1145 W System  : A resource failed to call AbstractCursor.close. 
+10-06 11:49:03.498  1128  1145 W System  : A resource failed to call AbstractCursor.close. 
+10-06 11:49:03.498  1128  1145 W System  : A resource failed to call AbstractCursor.close. 
+10-06 11:49:03.505   546   574 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-06 11:49:03.507  4623  5179 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+10-06 11:49:03.508  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.messaging.
+10-06 11:49:03.510   546   556 I system_server: Background young concurrent copying GC freed 1006383(21MB) AllocSpace objects, 7(140KB) LOS objects, 26% free, 37MB/50MB, paused 483us,48us total 255.624ms
+10-06 11:49:03.511  1841  3072 I AiAiEcho: AppIndexer Package:[com.google.android.apps.messaging] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.511  1841  3072 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.messaging], userId:[0], reason:[package is updated.].
+10-06 11:49:03.513  4623  5519 D nativeloader: Configuring clns-11 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+10-06 11:49:03.515  4919  4919 I BugleRcsEngine: [2] SystemBindingService.onCreate: SystemBindingService onCreate
+10-06 11:49:03.518   546   574 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-06 11:49:03.523  4919  5011 I BugleRcsEngine: [61] bptx.run: SystemBindingService: Starting JibeService
+10-06 11:49:03.529   546  1741 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10128; state: ENABLED
+10-06 11:49:03.529   546  1741 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10128; state: DISABLED
+10-06 11:49:03.529  4623  5519 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-06 11:49:03.530   546  1908 D ConnectivityService: requestNetwork for uid/pid:10131/4919 activeRequest: null callbackRequest: 138 [NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 11:49:03.531   546   831 D ConnectivityService: NetReassign [139 : null → 100] [c 0] [a 0] [i 1]
+10-06 11:49:03.531   546   824 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.531   546   824 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.531   546   824 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.531   546   824 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=139, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.534  1128  1437 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-06 11:49:03.535  4919  4999 W BugleRcsEngine: [54] bpxc.w: Unable to send diagnostic log
+10-06 11:49:03.535  4919  5011 I BugleRcsEngine: [61] bsgz.b: EngineBroadcaster: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE
+10-06 11:49:03.536   546  1185 D ConnectivityService: requestNetwork for uid/pid:10130/2700 activeRequest: null callbackRequest: 140 [NetworkRequest [ REQUEST id=141, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 11:49:03.539   546  1924 D ConnectivityService: requestNetwork for uid/pid:10131/4623 activeRequest: null callbackRequest: 142 [NetworkRequest [ REQUEST id=143, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 11:49:03.539   546   824 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=141, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 11:49:03.539   546   831 D ConnectivityService: NetReassign [141 : null → 100] [c 0] [a 0] [i 2]
+10-06 11:49:03.541  4623  5179 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+10-06 11:49:03.541   546   824 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=141, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 11:49:03.541   546   824 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=141, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 11:49:03.541   546   824 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=141, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10130 RequestorUid: 10130 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 11:49:03.542  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.android.vending.
+10-06 11:49:03.543  2700  2700 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+10-06 11:49:03.543  2700  3094 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+10-06 11:49:03.543   546   831 D ConnectivityService: NetReassign [143 : null → 100] [c 0] [a 3] [i 1]
+10-06 11:49:03.544  2700  3094 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+10-06 11:49:03.545   546   574 D AmbientContextManagerService: onServiceRemoved
+10-06 11:49:03.545   546   574 D AmbientContextManagerPerUserService: Trying to cancel the remote request. Reason: Service destroyed.
+10-06 11:49:03.545   546   574 I AmbientContextManagerService: Incorrect number of services provided for testing.
+10-06 11:49:03.545   546   574 D AmbientContextManagerService: newServicesListLocked with service name: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService
+10-06 11:49:03.545   546   574 D DefaultAmbientContextManagerPerUserService: Created DefaultAmbientContextManagerPerUserServiceand service type: DEFAULT and service name: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService
+10-06 11:49:03.546   546   824 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=143, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.546   546   824 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=143, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.546   546   824 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=143, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.546   546   824 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=143, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10131 RequestorUid: 10131 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-06 11:49:03.548  4623  4741 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@4052ef4
+10-06 11:49:03.549  4623  4741 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@4052ef4
+10-06 11:49:03.554   546   574 W WindowMagnificationMgr: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-06 11:49:03.556   546   831 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 0]
+10-06 11:49:03.558  4623  5519 I BugleNetwork: Creating gRPC Managed channel with Cronet: instantmessaging-pa.googleapis.com:443
+10-06 11:49:03.559  4623  4741 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@4052ef4
+10-06 11:49:03.559  4623  4726 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule provisioning on system binding.
+10-06 11:49:03.559  4623  4726 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-06 11:49:03.560  4623  4726 W BugleRcsEngine: [46] brcu.d: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+10-06 11:49:03.560  4623  4726 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-06 11:49:03.561   546   574 E system_server: No package ID 7f found for resource ID 0x7f080577.
+10-06 11:49:03.561   546   574 E system_server: No package ID 7f found for resource ID 0x7f140ba2.
+10-06 11:49:03.561   546   574 E system_server: No package ID 7f found for resource ID 0x7f080606.
+10-06 11:49:03.561   546   574 E system_server: No package ID 7f found for resource ID 0x7f141fd7.
+10-06 11:49:03.562  4623  4766 W BugleRcsEngine: [60] brcu.d: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+10-06 11:49:03.564  4623  4741 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@8b2b2e9
+10-06 11:49:03.564  4623  4766 I BugleRcsEngine: [60] zzm.run: Skipping provisioning scheduling since RCS is disabled
+10-06 11:49:03.566  5279  5366 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+10-06 11:49:03.566  5279  5366 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+10-06 11:49:03.568  4623  5179 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+10-06 11:49:03.569  1841  3344 I AiAiEcho: AppIndexer Package:[com.android.vending] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.569  4623  5179 D PhFileGroupPop: Added file groups scripted_reply
+10-06 11:49:03.569  1841  3344 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.android.vending], userId:[0], reason:[package is updated.].
+10-06 11:49:03.571  4623  5179 D PhFileGroupPop: Added file groups multitask_experiment
+10-06 11:49:03.571  5279  5366 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-06 11:49:03.571  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.as.
+10-06 11:49:03.571  5279  5366 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+10-06 11:49:03.572  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.maps.
+10-06 11:49:03.572  1841  2745 I AiAiEcho: AppIndexer Package:[com.google.android.as] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.572  1841  2745 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.as], userId:[0], reason:[package is updated.].
+10-06 11:49:03.572  1841  3072 I AiAiEcho: AppIndexer Package:[com.google.android.apps.maps] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.572  5279  5366 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+10-06 11:49:03.573  1841  3072 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.maps], userId:[0], reason:[package is updated.].
+10-06 11:49:03.574  4623  5179 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+10-06 11:49:03.575  5279  5366 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+10-06 11:49:03.575  5279  5366 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-06 11:49:03.588  5207  5242 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.606   546   574 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-06 11:49:03.606   546   574 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-06 11:49:03.610  5207  5242 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.612   356  5632 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10131 0}
+10-06 11:49:03.612   356  5634 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 11:49:03.614   356  5633 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 11:49:03.615  5207  5242 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.627  5207  5416 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.628   546  1000 W OverlayManager: service 'idmap' died
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: nkq: 5005: 
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+10-06 11:49:03.630  2700  3146 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1275)
+10-06 11:49:03.632  4623  5179 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+10-06 11:49:03.635  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.contacts.
+10-06 11:49:03.635  2700  3146 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5005
+10-06 11:49:03.638  2700  3095 I WM-WorkerWrapper: Worker result RETRY for Work [ id=d44e7057-b925-4fd8-af7a-62bb946c0946, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
+10-06 11:49:03.639   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmm.widget.SearchWidgetProvider} won't be persisted.
+10-06 11:49:03.639   546   574 D AppWidgetServiceImpl: Provider info from ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmm.widget.traffic.TrafficWidgetProvider} won't be persisted.
+10-06 11:49:03.641   356  5633 I resolv  : res_nsend: used send_dg 276 terrno: 0
+10-06 11:49:03.641   356  5633 I resolv  : doQuery: rcode=0, ancount=8, return value=276
+10-06 11:49:03.642  1841  3200 I AiAiEcho: AppIndexer Package:[com.google.android.contacts] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.642  1841  3200 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.contacts], userId:[0], reason:[package is updated.].
+10-06 11:49:03.646  5279  5366 I NamespaceManager: Package 1 name not found! Using module version.
+10-06 11:49:03.654   356  5634 I resolv  : res_nsend: used send_dg 180 terrno: 0
+10-06 11:49:03.654   356  5634 I resolv  : doQuery: rcode=0, ancount=8, return value=180
+10-06 11:49:03.658   546   574 I CredManSysServiceImpl: CredentialManagerServiceImpl constructed for: com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService
+10-06 11:49:03.658   546   574 I CredManSysServiceImpl: newServiceInfoLocked, mInfo null, com.google.android.gms/com.google.android.gms.auth.api.credentials.credman.service.PasswordAndPasskeyService
+10-06 11:49:03.663  5207  5417 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.666  1841  1841 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-06 11:49:03.666  1841  3344 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-06 11:49:03.666  1841  3344 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-06 11:49:03.672  5207  5416 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.678  5279  5322 I GmscoreIpa: Using regular flags by method 2 [CONTEXT service_id=255 ]
+10-06 11:49:03.691   546   574 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-06 11:49:03.711  5207  5416 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.712  4623  5179 D PhFileGroupPop: Added file groups supersort_us_grammars
+10-06 11:49:03.742  5207  5405 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.745  5207  5405 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.770  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.771  5207  5405 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.775  4623  5179 D PhFileGroupPop: Added file groups nudge
+10-06 11:49:03.782  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.788  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:03.790  5207  5414 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.790  5207  5414 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.819  5279  5279 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mobstore.service.START pkg=com.google.android.gms }
+10-06 11:49:03.834  4623  5179 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+10-06 11:49:03.836  4623  5179 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+10-06 11:49:03.836  4623  5179 D PhFileGroupPop: Added file groups supersort_us_grammars
+10-06 11:49:03.837  4623  5179 D PhFileGroupPop: Added file groups nudge
+10-06 11:49:03.837  4623  5179 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+10-06 11:49:03.858   546   635 D ActivityManager: freezing 1408 com.android.cellbroadcastreceiver
+10-06 11:49:03.858   546   635 D ActivityManager: freezing 1541 com.android.carrierconfig
+10-06 11:49:03.858   546   635 D ActivityManager: freezing 1930 com.google.android.googlesdksetup
+10-06 11:49:03.858   546   635 D ActivityManager: freezing 1781 com.android.printspooler
+10-06 11:49:03.858   546   635 D ActivityManager: freezing 2878 com.google.android.webview:webview_service
+10-06 11:49:03.859   546   635 D ActivityManager: freezing 2490 com.android.carrierdefaultapp
+10-06 11:49:03.877  4623  5179 D PhFileGroupPop: Added file groups birthday_suggestion
+10-06 11:49:03.884  4623  5625 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@58a3ad5
+10-06 11:49:03.920  4623  5519 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+10-06 11:49:03.921  1967  1967 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_LOCATION_REPORTING_STATE.
+10-06 11:49:03.921  5279  5279 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-06 11:49:03.922  5279  5279 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-06 11:49:03.930   546   561 W JobScheduler: Job didn't exist in JobStore: 2be7936 #u0a132/-45 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+10-06 11:49:03.936  5279  5279 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-06 11:49:03.936  5279  5279 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-06 11:49:03.945  4623  4715 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+10-06 11:49:03.945  4623  4715 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+10-06 11:49:03.946  4623  4765 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+10-06 11:49:03.962  5207  5207 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+10-06 11:49:03.962  5207  5207 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms }
+10-06 11:49:03.964  5207  5414 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:03.973  4623  5179 D PhFileGroupPop: Added file groups birthday_grammars
+10-06 11:49:03.974  4623  5179 D PhFileGroupPop: Added file groups birthday_suggestion
+10-06 11:49:03.974  4623  5179 D PhFileGroupPop: Added file groups birthday_grammars
+10-06 11:49:03.985  5279  5296 I PeopleGalProvider: Gal directories started.
+10-06 11:49:03.986  5207  5207 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-06 11:49:03.990  5207  5414 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:03.992  5279  5296 I PeopleGalProvider: Method 1 completed.
+10-06 11:49:03.992  5279  5296 I PeopleGalProvider: Method 1 finished successfully.
+10-06 11:49:03.993   356  5651 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10131 0}
+10-06 11:49:03.995   546  1069 D ActivityManager: freezer override set to true
+10-06 11:49:03.995   546  1069 D ActivityManager: sync unfroze 1408 com.android.cellbroadcastreceiver for 19
+10-06 11:49:03.995   546  1069 D ActivityManager: sync unfroze 1221 com.android.bluetooth for 19
+10-06 11:49:03.995   546  1069 D ActivityManager: sync unfroze 1541 com.android.carrierconfig for 19
+10-06 11:49:03.996   546  1069 D ActivityManager: sync unfroze 1930 com.google.android.googlesdksetup for 19
+10-06 11:49:03.996   546  1069 D ActivityManager: sync unfroze 1781 com.android.printspooler for 19
+10-06 11:49:03.996   546  1069 D ActivityManager: sync unfroze 3348 com.android.traceur for 19
+10-06 11:49:03.996   546  1069 D ActivityManager: sync unfroze 2878 com.google.android.webview:webview_service for 19
+10-06 11:49:03.997   546  1069 D ActivityManager: sync unfroze 2490 com.android.carrierdefaultapp for 19
+10-06 11:49:03.997   546  1069 D ActivityManager: sync unfroze 3457 com.google.android.onetimeinitializer for 19
+10-06 11:49:03.997   546  1069 D ActivityManager: sync unfroze 3652 com.android.camera2 for 19
+10-06 11:49:03.998   546  1069 D ActivityManager: sync unfroze 2384 com.google.android.documentsui for 19
+10-06 11:49:03.998   546  1069 D ActivityManager: sync unfroze 4607 com.android.emergency for 19
+10-06 11:49:03.999   546  1069 D ActivityManager: sync unfroze 4640 com.google.android.healthconnect.controller for 19
+10-06 11:49:03.999  2384  2384 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-06 11:49:04.000   356  5652 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 11:49:04.000   356  5652 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78e78966b2d0
+10-06 11:49:04.000   356  5652 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-06 11:49:04.001   356  5653 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 11:49:04.001   356  5653 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78e78966bd50
+10-06 11:49:04.001   356  5653 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-06 11:49:04.003  4623  5650 D TrafficStats: tagSocket(130) with statsTag=0xffffffff, statsUid=-1
+10-06 11:49:04.006  5207  5414 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:04.010  5207  5417 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:04.010   546  1069 D ActivityManager: freezer override set to false
+10-06 11:49:04.010  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.013  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.014  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.017   546  1069 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10085; state: DISABLED
+10-06 11:49:04.017   546  1069 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10085; state: DISABLED
+10-06 11:49:04.017   546  1069 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10085; state: DISABLED
+10-06 11:49:04.017   546  1069 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10085; state: ENABLED
+10-06 11:49:04.018   546   576 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10085; state: ENABLED
+10-06 11:49:04.027   357   357 D Zygote  : Forked child process 5667
+10-06 11:49:04.030  5207  5417 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:04.030   546   576 I ActivityManager: Start proc 5667:com.android.externalstorage/u0a85 for content provider {com.android.externalstorage/com.android.externalstorage.ExternalStorageProvider}
+10-06 11:49:04.032  5207  5417 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:04.043  5207  5415 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:04.052  5667  5667 I externalstorage: Using CollectorTypeCC GC.
+10-06 11:49:04.052  5667  5667 W externalstorage: Unexpected CPU variant for x86: x86_64.
+10-06 11:49:04.052  5667  5667 W externalstorage: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 11:49:04.057  5207  5415 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 11:49:04.063  5207  5415 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 11:49:04.063  5667  5667 E externalstorage: Not starting debugger since process cannot load the jdwp agent.
+10-06 11:49:04.067  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.074   546  3006 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10085; state: DISABLED
+10-06 11:49:04.074   546  3006 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10085; state: DISABLED
+10-06 11:49:04.077   546   627 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10085; state: ENABLED
+10-06 11:49:04.078  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.079  5207  5235 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.112   546   635 D ActivityManager: freezing 1335 com.google.android.cellbroadcastreceiver
+10-06 11:49:04.126  5667  5667 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10085; state: ENABLED
+10-06 11:49:04.126  5667  5667 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10085; state: ENABLED
+10-06 11:49:04.128   546  3006 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10085; state: ENABLED
+10-06 11:49:04.128  5207  5243 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.129  5667  5667 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10085; state: ENABLED
+10-06 11:49:04.131  5207  5243 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.132  5667  5667 D nativeloader: Configuring clns-shared-6 for other apk /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk. target_sdk_version=34, uses_libraries=, library_path=/system/priv-app/ExternalStorageProvider/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.externalstorage:/system/priv-app/ExternalStorageProvider:/system/lib64:/system_ext/lib64
+10-06 11:49:04.134  5207  5243 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 11:49:04.136  5667  5667 V GraphicsEnvironment: Currently set values for:
+10-06 11:49:04.136  5667  5667 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-06 11:49:04.136  5667  5667 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-06 11:49:04.136  5667  5667 V GraphicsEnvironment: ANGLE GameManagerService for com.android.externalstorage: false
+10-06 11:49:04.137  5667  5667 V GraphicsEnvironment: com.android.externalstorage is not listed in per-application setting
+10-06 11:49:04.138  5667  5667 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-06 11:49:04.145  5667  5667 D ExternalStorage: After updating volumes, found 1 active roots
+10-06 11:49:04.148   546  1924 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10085. pid: 5667
+10-06 11:49:04.158   546   635 D ActivityManager: freezing 3087 com.android.imsserviceentitlement
+10-06 11:49:04.162  2384  5662 W oid.documentsui: Long monitor contention with owner pool-20-thread-1 (5656) at void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId)(ProvidersCache.java:645) waiters=1 in void com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(android.content.pm.ProviderInfo, com.android.documentsui.base.UserId) for 138ms

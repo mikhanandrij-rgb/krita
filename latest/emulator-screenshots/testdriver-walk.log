@@ -1,0 +1,374 @@
+interface: phone (smallest side 411 dp)
+perf start: interface-ready-ms=21927 first-canvas-ms=-1 rss-kb=1144752 peak-kb=1144752 uptime-ms=28034
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
+probe 20,816: QToolBar 'mobileToolRailHolder' 0,810 411x56 tip='' parent=KisMainWindow inLayout=1
+probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,810 411x56 tip='' parent=QToolBar inLayout=1
+probe 20,816: mobileui::ChromeButton '' 4,814 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-04-tools.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-05-brush-presets.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-06-tool-options.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-07-brush-editor.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-08-color-advanced.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-09-color-widegamut.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-10-color-palette.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-11-layers.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-12-timeline.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-13-onion-skins.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-14-curves.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-15-overview.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-16-history.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-17-text.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-18-menu.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-18b-all-commands.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-19-more.png ok
+dialog file_new: triggering
+dialog file_new: KisOpenPane 411x866 min 172x628 saved
+dialog file_new: closed
+dialog options_configure: triggering
+dialog options_configure: KisDlgPreferences 411x866 min 288x190 saved
+dialog options_configure: closed
+dialog imagesize: triggering
+dialog imagesize: DlgImageSize 461x552 min 460x551 saved
+dialog imagesize: closed
+dialog canvassize: triggering
+dialog canvassize: DlgCanvasSize 439x566 min 438x565 saved
+dialog canvassize: closed
+dialog image_properties: triggering
+dialog image_properties: KisDlgImageProperties 411x866 min 133x119 saved
+dialog image_properties: closed
+dialog layer_properties: triggering
+dialog layer_properties: KisDlgLayerProperties 411x866 min 133x119 saved
+dialog layer_properties: closed
+dialog layer_style: triggering
+dialog layer_style: KisDlgLayerStyle 411x866 min 133x119 saved
+dialog layer_style: closed
+dialog krita_filter_gaussian blur: triggering
+dialog krita_filter_gaussian blur: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_gaussian blur: closed
+dialog krita_filter_hsvadjustment: triggering
+dialog krita_filter_hsvadjustment: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_hsvadjustment: closed
+dialog krita_filter_perchannel: triggering
+dialog krita_filter_perchannel: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_perchannel: closed
+dialog krita_filter_levels: triggering
+dialog krita_filter_levels: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_levels: closed
+dialog rotateimage: triggering
+dialog rotateimage: DlgRotateImage 340x362 min 339x361 saved
+dialog rotateimage: closed
+dialog offsetimage: triggering
+dialog offsetimage: DlgOffsetImage 219x244 min 197x243 saved
+dialog offsetimage: closed
+dialog imagesplit: triggering
+dialog imagesplit: DlgImagesplit 411x866 min 142x119 saved
+dialog imagesplit: closed
+dialog layersplit: triggering
+dialog layersplit: DlgLayerSplit 329x540 min 178x539 saved
+dialog layersplit: closed
+dialog separate: triggering
+dialog separate: DlgSeparate 411x866 min 200x514 saved
+dialog separate: closed
+dialog clones_array: triggering
+dialog clones_array: DlgClonesArray 411x866 min 206x119 saved
+dialog clones_array: closed
+dialog render_animation: action disabled
+perf panel tools: 61 ms
+perf panel menu: 116 ms
+perf panel more: 79 ms
+perf panel brush: 124 ms
+perf panel color: 112 ms
+perf panel layers: 104 ms
+perf panel animation: 84 ms
+perf panel view: 92 ms
+perf panel text: 80 ms
+perf panel other:BrushHudDocker: 119 ms
+perf panel other:LogDocker: 79 ms
+perf panel other:RecorderDocker: 96 ms
+perf panel other:TasksetDocker: 82 ms
+perf panel other:ToolBox: 83 ms
+perf panel other:TouchDocker: 100 ms
+perf after-portrait: interface-ready-ms=21927 first-canvas-ms=40343 rss-kb=1385328 peak-kb=1423508 uptime-ms=196488
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-01-hub.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-02-new-canvas.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-03-editor.png ok
+probe 70,361: QStackedWidget '' 56,52 810x359 tip='' parent=KisMainWindow inLayout=1
+probe 70,361: QMdiArea '' 56,52 810x359 tip='' parent=QStackedWidget inLayout=1
+probe 70,361: QWidget '' 56,52 810x359 tip='' parent=QMdiArea inLayout=0
+probe 70,361: QMdiSubWindow '' 56,52 810x359 tip='' parent=QWidget inLayout=0
+probe 70,361: KisView 'view_0' 56,52 810x359 tip='' parent=QMdiSubWindow inLayout=1
+probe 70,361: KisCanvasController '' 56,52 810x359 tip='' parent=KisView inLayout=1
+probe 70,361: Viewport '' 56,52 810x359 tip='' parent=KisCanvasController inLayout=0
+probe 70,361: KisOpenGLCanvas2 '' 56,52 810x359 tip='' parent=Viewport inLayout=0
+probe 70,361: mobileui::QuickSliders 'mobileQuickSliders' 62,64 44x334 tip='' parent=KisMainWindow inLayout=0
+probe 70,361: mobileui::QuickSlider '' 62,259 44x139 tip='Opacity' parent=mobileui::QuickSliders inLayout=1
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-04-tools.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-05-brush-presets.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-06-tool-options.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-07-brush-editor.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-08-color-advanced.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-09-color-widegamut.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-10-color-palette.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-11-layers.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-12-timeline.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-13-onion-skins.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-14-curves.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-15-overview.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-16-history.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-17-text.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-18-menu.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-18b-all-commands.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-19-more.png ok
+dialog file_new: triggering
+dialog file_new: KisOpenPane 866x411 min 70x70 saved
+dialog file_new: closed
+dialog options_configure: triggering
+dialog options_configure: KisDlgPreferences 866x411 min 288x190 saved
+dialog options_configure: closed
+dialog imagesize: triggering
+dialog imagesize: DlgImageSize 866x411 min 133x119 saved
+dialog imagesize: closed
+dialog canvassize: triggering
+dialog canvassize: DlgCanvasSize 866x411 min 133x119 saved
+dialog canvassize: closed
+dialog image_properties: triggering
+dialog image_properties: KisDlgImageProperties 866x411 min 133x119 saved
+dialog image_properties: closed
+dialog layer_properties: triggering
+dialog layer_properties: KisDlgLayerProperties 620x345 min 603x344 saved
+dialog layer_properties: closed
+dialog layer_style: triggering
+dialog layer_style: KisDlgLayerStyle 866x411 min 133x119 saved
+dialog layer_style: closed
+dialog krita_filter_gaussian blur: triggering
+dialog krita_filter_gaussian blur: KisDlgFilter 557x184 min 520x184 saved
+dialog krita_filter_gaussian blur: closed
+dialog krita_filter_hsvadjustment: triggering
+dialog krita_filter_hsvadjustment: KisDlgFilter 557x278 min 520x278 saved
+dialog krita_filter_hsvadjustment: closed
+dialog krita_filter_perchannel: triggering
+dialog krita_filter_perchannel: KisDlgFilter 866x411 min 504x128 saved
+dialog krita_filter_perchannel: closed
+dialog krita_filter_levels: triggering
+dialog krita_filter_levels: KisDlgFilter 866x411 min 504x128 saved
+dialog krita_filter_levels: closed
+dialog rotateimage: triggering
+dialog rotateimage: DlgRotateImage 866x411 min 339x361 saved
+dialog rotateimage: closed
+dialog offsetimage: triggering
+dialog offsetimage: DlgOffsetImage 219x244 min 197x243 saved
+dialog offsetimage: closed
+dialog imagesplit: triggering
+dialog imagesplit: DlgImagesplit 866x411 min 142x119 saved
+dialog imagesplit: closed
+dialog layersplit: triggering
+dialog layersplit: DlgLayerSplit 866x411 min 149x119 saved
+dialog layersplit: closed
+dialog separate: triggering
+dialog separate: DlgSeparate 866x411 min 133x119 saved
+dialog separate: closed
+dialog clones_array: triggering
+dialog clones_array: DlgClonesArray 686x247 min 685x246 saved
+dialog clones_array: closed
+dialog render_animation: action disabled
+inventory written
+walk: 673 commands
+walk 1/673: file_new
+walk 6/673: file_sessions
+walk 14/673: create_template
+walk 15/673: create_copy
+walk 16/673: file_documentinfo
+walk 20/673: edit_undo
+walk 21/673: edit_redo
+walk 22/673: edit_cut
+walk 23/673: edit_copy
+walk 27/673: copy_layer_style
+walk 28/673: edit_paste
+walk 29/673: paste_at
+walk 31/673: paste_new
+walk 32/673: paste_as_reference
+walk 34/673: paste_layer_style
+walk 35/673: clear
+walk 44/673: sample_screen_color
+walk 45/673: sample_screen_color_real_canvas
+walk 46/673: view_show_canvas_only
+walk 47/673: fullscreen
+walk 48/673: wrap_around_mode
+walk 49/673: wrap_around_hv_axis
+walk 50/673: wrap_around_h_axis
+walk 51/673: wrap_around_v_axis
+walk 52/673: level_of_detail_mode
+walk 53/673: softProof
+walk 54/673: gamutCheck
+walk 55/673: view_zoom_in
+walk 56/673: view_zoom_out
+walk 57/673: zoom_to_100pct
+walk 58/673: zoom_to_fit
+walk 59/673: zoom_to_fit_width
+walk 60/673: zoom_to_fit_height
+walk 61/673: rotate_canvas_right
+walk 62/673: rotate_canvas_left
+walk 63/673: reset_canvas_rotation
+walk 64/673: mirror_canvas
+walk 65/673: mirror_canvas_around_cursor
+walk 66/673: mirror_canvas_around_canvas
+walk 67/673: reset_display
+walk 68/673: view_print_size
+walk 69/673: view_ruler
+walk 70/673: rulers_track_mouse
+walk 71/673: view_show_guides
+walk 72/673: view_lock_guides
+walk 73/673: showStatusBar
+walk 74/673: view_grid
+walk 75/673: view_pixel_grid
+walk 76/673: view_snap_to_guides
+walk 77/673: view_snap_to_grid
+walk 78/673: view_snap_to_pixel
+walk 79/673: view_snap_orthogonal
+walk 80/673: view_snap_node
+walk 81/673: view_snap_extension
+walk 82/673: view_snap_intersection
+walk 83/673: view_snap_bounding_box
+walk 84/673: view_snap_image_bounds
+walk 85/673: view_snap_image_center
+walk 86/673: view_toggle_painting_assistants
+walk 87/673: view_toggle_assistant_previews
+walk 88/673: view_toggle_reference_images
+walk 89/673: image_properties
+walk 90/673: image_color
+walk 91/673: imagecolorspaceconversion
+walk 92/673: trim_to_image
+walk 93/673: resizeimagetolayer
+walk 95/673: purge_unused_image_data
+walk 96/673: rotateimage
+walk 97/673: rotateImageCW90
+walk 98/673: rotateImageCCW90
+walk 99/673: rotateImage180
+walk 100/673: shearimage
+walk 101/673: mirrorImageHorizontal
+walk 102/673: mirrorImageVertical
+walk 103/673: imagesize
+walk 104/673: offsetimage
+walk 105/673: canvassize
+walk 106/673: imagesplit
+walk 108/673: separate
+walk 109/673: cut_layer_clipboard
+walk 110/673: copy_layer_clipboard
+walk 111/673: paste_layer_from_clipboard
+walk 112/673: add_new_paint_layer
+walk 113/673: add_new_group_layer
+walk 114/673: add_new_clone_layer
+walk 115/673: add_new_shape_layer
+walk 116/673: add_new_adjustment_layer
+walk 117/673: add_new_fill_layer
+walk 118/673: add_new_file_layer
+walk 119/673: add_new_transparency_mask
+walk 124/673: new_from_visible
+walk 125/673: duplicatelayer
+walk 137/673: convert_to_transparency_mask
+walk 138/673: convert_to_filter_mask
+walk 139/673: convert_to_selection_mask
+walk 178/673: select_all
+walk 188/673: show-global-selection-mask
+walk 189/673: selectionscale
+walk 190/673: colorrange
+walk 191/673: selectopaque
+walk 192/673: selectopaque_add
+walk 193/673: selectopaque_subtract
+walk 194/673: selectopaque_intersect
+walk 200/673: enable_sap
+walk 201/673: filter_apply_again
+walk 202/673: filter_apply_reprompt
+walk 203/673: krita_filter_asc-cdl
+walk 204/673: krita_filter_autocontrast
+walk 205/673: krita_filter_burn
+walk 206/673: krita_filter_colorbalance
+walk 207/673: krita_filter_crosschannel
+walk 208/673: krita_filter_desaturate
+walk 209/673: krita_filter_dodge
+walk 210/673: krita_filter_hsvadjustment
+walk 211/673: krita_filter_invert
+walk 212/673: krita_filter_levels
+walk 213/673: krita_filter_perchannel
+walk 214/673: krita_filter_threshold
+walk 215/673: krita_filter_halftone
+walk 216/673: krita_filter_indexcolors
+walk 217/673: krita_filter_oilpaint
+walk 218/673: krita_filter_pixelize
+walk 219/673: krita_filter_posterize
+walk 220/673: krita_filter_raindrops
+walk 221/673: krita_filter_blur
+walk 222/673: krita_filter_gaussian blur
+walk 223/673: krita_filter_lens blur
+walk 224/673: krita_filter_motion blur
+walk 225/673: krita_filter_colortoalpha
+walk 226/673: krita_filter_colortransfer
+walk 227/673: krita_filter_fastcoloroverlay
+walk 228/673: krita_filter_maximize
+walk 229/673: krita_filter_minimize
+walk 230/673: krita_filter_propagatecolors
+walk 231/673: krita_filter_edge detection
+walk 232/673: krita_filter_gaussianhighpass
+walk 233/673: krita_filter_height to normal
+walk 234/673: krita_filter_emboss
+walk 235/673: krita_filter_emboss all directions
+walk 236/673: krita_filter_emboss horizontal and vertical
+walk 237/673: krita_filter_emboss horizontal only
+walk 238/673: krita_filter_emboss laplascian
+walk 239/673: krita_filter_emboss vertical only
+walk 240/673: krita_filter_gaussiannoisereducer
+walk 241/673: krita_filter_mean removal
+walk 242/673: krita_filter_sharpen
+walk 243/673: krita_filter_unsharp
+walk 244/673: krita_filter_waveletnoisereducer
+walk 245/673: krita_filter_gradientmap
+walk 246/673: krita_filter_normalize
+walk 247/673: krita_filter_palettize
+walk 248/673: krita_filter_phongbumpmap
+walk 249/673: krita_filter_roundcorners
+walk 250/673: krita_filter_smalltiles
+walk 251/673: krita_filter_noise
+walk 252/673: krita_filter_randompick
+walk 253/673: krita_filter_resettransparent
+walk 254/673: krita_filter_wave
+walk 255/673: QMic
+walk 260/673: options_configure
+walk 261/673: change_interface_scale
+walk 262/673: manage_bundles
+walk 263/673: manage_resources
+walk 264/673: manage_supporter_bundles
+walk 265/673: manage_donations
+walk 267/673: options_configure_toolbars
+walk 268/673: mainToolBar
+walk 269/673: editToolBar
+walk 270/673: BrushesAndStuff
+walk 271/673: customToolBar1
+walk 272/673: customToolBar2
+walk 273/673: lock_toolbars
+walk 274/673: view_toggledockers
+walk 275/673: switch_application_language
+walk 277/673: windows_next
+walk 278/673: windows_previous
+walk 281/673: buginfo
+walk 282/673: sysinfo
+walk 283/673: logcatdump
+walk 284/673: crashlog
+walk 285/673: help_about_app
+walk 286/673: help_about_kde
+walk 287/673: add_scalar_keyframes
+walk 288/673: auto_key
+walk 289/673: clear_animation_cache
+walk 290/673: copy_frames_as_clones
+walk 291/673: copy_columns_to_clipboard
+walk 292/673: copy_frames
+walk 293/673: add_blank_frame
+walk 294/673: add_duplicate_frame
+walk 295/673: cut_columns_to_clipboard
+walk 296/673: cut_frames
+walk 297/673: drop_frames
+walk 298/673: first_frame
+walk 299/673: insert_column_left
+walk 300/673: insert_column_right
+HANG: no progress for 120 s, aborting for a backtrace
