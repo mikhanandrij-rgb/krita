@@ -162,7 +162,7 @@ jobs:
           monitor=$!
           # Tests run as their own user in a memory-limited scope, so a test
           # that runs away is killed instead of the runner.
-          sudo systemd-run --scope --quiet -p MemoryMax=10G -p MemorySwapMax=0 --uid=tester --gid=tester \
+          sudo systemd-run --scope --quiet -p MemoryMax=14G -p MemorySwapMax=0 --uid=tester --gid=tester \
             env HOME=/home/tester bash "$PWD/run-tests.sh" > logs/ctest.log 2>&1
           echo "runner: ctest finished with $?" | tee -a logs/ctest.log
           kill $monitor 2>/dev/null
@@ -187,6 +187,9 @@ jobs:
           find "$WD/krita/_build" -name "LastTest.log" -exec cp {} status-extra/ \; 2>/dev/null || true
           find "$WD/krita/_build" -name "JUnitTestResults.xml" -exec cp {} status-extra/ \; 2>/dev/null || true
           tail -c 60000 logs/build-and-test.log > status-extra/build-and-test.log.tail
+          tail -c 40000 logs/ctest.log > status-extra/ctest.log.tail 2>/dev/null || true
+          grep -E '^ *[0-9]+/[0-9]+ Test' logs/ctest.log > status-extra/all-tests.txt 2>/dev/null || true
+          sudo journalctl -k --no-pager 2>/dev/null | grep -i -E 'oom|killed process' | tail -20 > status-extra/oom.txt || true
           head -c 200000 status-extra/LastTest.log > status-extra/LastTest.head 2>/dev/null || true
           rm -f status-extra/LastTest.log
 
