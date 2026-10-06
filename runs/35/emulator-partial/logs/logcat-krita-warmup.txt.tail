@@ -1,0 +1,290 @@
+10-06 20:41:23.513   546   978 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 20:41:23.525   905   944 V WindowManagerShell: Transition requested: android.os.BinderProxy@9b5fa20 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=71470 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@9716fd9} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{36ed9e org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 20:41:23.589   546   566 W ActivityManager: Slow operation: 70ms so far, now at startProcess: done starting proc!
+10-06 20:41:23.614   546   576 W ActivityManager: Slow operation: 95ms so far, now at startProcess: asking zygote to start proc
+10-06 20:41:23.635   546   576 W ActivityManager: Slow operation: 116ms so far, now at startProcess: returned from zygote!
+10-06 20:41:23.636   546   576 W ActivityManager: Slow operation: 116ms so far, now at startProcess: done updating battery stats
+10-06 20:41:23.636   546   576 W ActivityManager: Slow operation: 117ms so far, now at startProcess: building log message
+10-06 20:41:23.636   546   576 I ActivityManager: Start proc 4707:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 20:41:23.636   546   576 W ActivityManager: Slow operation: 117ms so far, now at startProcess: starting to update pids map
+10-06 20:41:23.662  4707  4707 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 20:41:23.663  4707  4707 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 20:41:23.663  4707  4707 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 20:41:23.677   546   576 W ActivityManager: Slow operation: 158ms so far, now at startProcess: done updating pids map
+10-06 20:41:24.057   546   559 D CoreBackPreview: Window{9990055 u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4ac1ec3, mPriority=0, mIsAnimationCallback=false}
+10-06 20:41:24.059   546   617 W ActivityTaskManager: takeTaskSnapshot: taskId=8 not found or not visible
+10-06 20:41:24.484  4707  4707 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 20:41:24.508   546   563 V WindowManager: Sent Transition #7 createdAt=10-06 20:41:23.504 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=71470 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{c597529 Task{b00967f #8 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{a7f90ae org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 20:41:24.509   546   563 V WindowManager:     info={id=7 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{c597529 Task{b00967f #8 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0xe82c5f3 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{af9ce4f Task{b59293b #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xf780bea sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 20:41:24.609  1769  1769 I AiAiEcho: AppFetcherImplV2 updateApps package:[org.krita.mobilefork], userId:[0], reason:[package is added.].
+10-06 20:41:24.630  4707  4707 D nativeloader: Configuring clns-6 for other apk /data/app/~~VCXqj3BXEkDgjnseelFuTQ==/org.krita.mobilefork-F8dTTlUvN7vFh-zqbf_KbA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~VCXqj3BXEkDgjnseelFuTQ==/org.krita.mobilefork-F8dTTlUvN7vFh-zqbf_KbA==/lib/arm64:/data/app/~~VCXqj3BXEkDgjnseelFuTQ==/org.krita.mobilefork-F8dTTlUvN7vFh-zqbf_KbA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 20:41:24.657  4707  4707 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 20:41:24.657  4707  4707 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 20:41:24.674   546   559 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 4707
+10-06 20:41:24.734  1557  3409 I BlockstoreStorage: Clearing Blockstore Data for package org.krita.mobilefork [CONTEXT service_id=258 ]
+10-06 20:41:25.017  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:25.001  4707  4707 W rita.mobilefork: type=1400 audit(0.0:22): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=488 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 20:41:25.489  1769  1769 I AiAiEcho: AppFetcherImpl onPackageChanged org.krita.mobilefork.
+10-06 20:41:25.494  1769  3186 I AiAiEcho: AppIndexer Package:[org.krita.mobilefork] UserProfile:[0] Enabled:[true].
+10-06 20:41:25.494  1769  3186 I AiAiEcho: AppFetcherImplV2 updateApps package:[org.krita.mobilefork], userId:[0], reason:[package is updated.].
+10-06 20:41:26.603  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.604  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.611  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.613  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/RippleDrawable;->mMask:Landroid/graphics/drawable/Drawable; (max-target-o, reflection, denied)
+10-06 20:41:26.615  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.617  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.618  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.618  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.619  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.620  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.621  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.625  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.627  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.631  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.640  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.644  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.647  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/RippleDrawable;->mMask:Landroid/graphics/drawable/Drawable; (max-target-o, reflection, denied)
+10-06 20:41:26.648  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.649  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.649  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/VectorDrawable;->mVectorState:Landroid/graphics/drawable/VectorDrawable$VectorDrawableState; (max-target-o, reflection, denied)
+10-06 20:41:26.650  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.652  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.653  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.655  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.658  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.658  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.660  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.660  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.662  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.663  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.669  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.672  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.674  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.675  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.675  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.676  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.676  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.677  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.678  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.679  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.682  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.731  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.732  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.732  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.734  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.735  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.736  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.736  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.746  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.747  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.749  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.749  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.750  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.750  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.752  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.753  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.756  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.758  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.770  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.770  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.770  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.771  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.771  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/InsetDrawable;->mState:Landroid/graphics/drawable/InsetDrawable$InsetState; (max-target-r, reflection, denied)
+10-06 20:41:26.771  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.772  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.775  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.780  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.782  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.787  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, reflection, denied)
+10-06 20:41:26.787  4707  4707 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 20:41:26.787  4707  4707 W rita.mobilefork: Accessing hidden field Landroid/graphics/drawable/GradientDrawable$GradientState;->mShape:I (max-target-p, ref
+[...]
+indServiceInstance(ActivityManagerService.java:13404)
+10-06 20:41:53.431   546  2212 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 20:41:53.431   546  2212 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13404)
+10-06 20:41:53.431   546  2212 E AppOps  : 	at com.android.server.am.ActivityManagerService.bindServiceInstance(ActivityManagerService.java:13368)
+10-06 20:41:55.082   546   576 I ActivityManager: Start proc 5307:com.google.android.settings.intelligence/u0a118 for broadcast {com.google.android.settings.intelligence/com.google.android.settings.intelligence.libs.experiment.PhenotypeBroadcastReceiver}
+10-06 20:41:55.315   546   978 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10118. pid: 5307
+10-06 20:41:56.396   546  2601 I ActivityTaskManager: Activity reported stop, but no longer stopping: ActivityRecord{3daa150 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7} STOPPED
+10-06 20:41:59.161  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 11135(527KB) AllocSpace objects, 3(60KB) LOS objects, 49% free, 2770KB/5540KB, paused 27us,23us total 15.669ms
+10-06 20:42:00.055   153   153 I lowmemorykiller: lmkd data connection established
+10-06 20:42:00.113   153   153 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-06 20:42:00.113   153   153 I lowmemorykiller: Properties reinitilized
+10-06 20:42:00.114  5456  5456 I lowmemorykiller: lmkd updated properties successfully
+10-06 20:42:00.114   153   153 I lowmemorykiller: lmkd data connection dropped
+10-06 20:42:00.114   153   153 I lowmemorykiller: closing lmkd data connection
+10-06 20:42:09.405  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 3382(142KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2755KB/5511KB, paused 62us,11us total 7.913ms
+10-06 20:42:11.459   546  2602 I ActivityManager: Process com.google.android.gms.persistent (pid 1498) has died: fg  BFGS
+10-06 20:42:11.478   546  2602 W ActivityManager: Exception when unbinding service com.google.android.gms/.chimera.GmsBoundBrokerService
+10-06 20:42:11.478   546  2602 W ActivityManager: android.os.DeadObjectException
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at android.app.IApplicationThread$Stub$Proxy.scheduleUnbindService(IApplicationThread.java:1419)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActiveServices.removeConnectionLocked(ActiveServices.java:5896)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActiveServices.killServicesLocked(ActiveServices.java:6432)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked(ActivityManagerService.java:12989)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:3338)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActivityManagerService.appDiedLocked(ActivityManagerService.java:3453)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at com.android.server.am.ActivityManagerService$AppDeathRecipient.binderDied(ActivityManagerService.java:1583)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:319)
+10-06 20:42:11.478   546  2602 W ActivityManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:704)
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.location.network.NetworkLocationService in 1000ms for connection
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService in 11000ms for start-requested
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.fido.fido2.pollux.CableAuthenticatorService in 21000ms for start-requested
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.lockbox.service.LockboxBrokerService in 31000ms for connection
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.gcm.GcmService in 41000ms for start-requested
+10-06 20:42:11.480   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.location.persistent.LocationPersistentService in 51000ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.thunderbird.EmergencyPersistentService in 61000ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService in 70999ms for connection
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService in 80999ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.nearby.exposurenotification.service.ExposureMatchingService in 90999ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.PersistentDirectBootAwareApiService in 100999ms for connection
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.nearby.messages.service.NearbyMessagesService in 110999ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.location.fused.FusedLocationService in 120999ms for connection
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.gcm.http.GoogleHttpService in 130999ms for connection
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.nearby.sharing.ReceiveSurfaceService in 140999ms for start-requested
+10-06 20:42:11.481   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.gcm.nts.SchedulerService in 150999ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.common.stats.GmsCoreStatsService in 160999ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService in 170999ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.auth.setup.devicesignals.LockScreenService in 180998ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.PersistentApiService in 190998ms for connection
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService in 200998ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService in 210998ms for connection
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.PersistentBoundBrokerService in 220998ms for connection
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.location.geocode.GeocodeService in 230998ms for connection
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.PersistentIntentOperationService in 240998ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.deviceconnection.service.DeviceConnectionWatcherService in 250998ms for start-requested
+10-06 20:42:11.482   546  2602 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.geotimezone.GeoTimeZoneService in 260998ms for connection
+10-06 20:42:11.484   546  2601 I ActivityManager: Process com.google.android.gms (pid 1557) has died: fg  BFGS
+10-06 20:42:11.484   546  2601 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.container.ExternalFileApkService in 270996ms for start-requested
+10-06 20:42:11.484   546  2601 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.GmsIntentOperationService in 280996ms for start-requested
+10-06 20:42:11.936   546   576 I ActivityManager: Start proc 5580:com.google.android.gms.persistent/u0a128 for content provider {com.google.android.gms/com.google.android.gms.chimera.container.GmsModuleProvider}
+10-06 20:42:11.969   546   575 W ActivityManager: Rescheduling restart of crashed service com.google.android.gms/.chimera.container.ExternalFileApkService in 515ms for other
+10-06 20:42:11.970   546   575 W ActivityManager: Rescheduling restart of crashed service com.google.android.gms/.chimera.GmsIntentOperationService in 10515ms for other
+10-06 20:42:12.068   546  2601 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10128. pid: 5580
+10-06 20:42:12.352   546   576 I ActivityManager: Start proc 5648:com.google.android.gms/u0a128 for service {com.google.android.gms/com.google.android.gms.checkin.CheckinApiService}
+10-06 20:42:12.520   546   621 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10128. pid: 5648
+10-06 20:42:12.892   546   559 I ActivityManager: Process com.google.android.gms.ui (pid 4458) has died: fg  SVC 
+10-06 20:42:12.892   546   559 W ActivityManager: Scheduling restart of crashed service com.google.android.gms/.chimera.UiIntentOperationService in 1000ms for start-requested
+10-06 20:42:12.978   546  1767 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.home.service.START pkg=com.google.android.gms } U=0: not found
+10-06 20:42:12.978   546  1767 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@546dc82
+10-06 20:42:13.903   546   576 I ActivityManager: Start proc 5796:com.google.android.gms.ui/u0a128 for service {com.google.android.gms/com.google.android.gms.chimera.UiIntentOperationService}
+10-06 20:42:14.180   546  2598 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10128. pid: 5796
+10-06 20:42:19.589  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 2938(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2755KB/5511KB, paused 24us,37us total 9.801ms
+10-06 20:42:21.275   546   639 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+10-06 20:42:29.831  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 2936(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2755KB/5511KB, paused 46us,13us total 6.766ms
+10-06 20:42:32.226   546   556 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.am.ActivityManagerService$14
+10-06 20:42:32.228   546   556 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.am.ActivityManagerService$14
+10-06 20:42:35.312   546   639 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+10-06 20:42:39.787  4707  4773 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 20:42:39.818  4707  4773 W krita   : KoRTree::insert boundingBox isNull setting size to QSizeF(0, 0)
+10-06 20:42:40.072  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 2939(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2755KB/5511KB, paused 14us,13us total 7.127ms
+10-06 20:42:50.257  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 2942(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2755KB/5510KB, paused 41us,8us total 5.800ms
+10-06 20:42:59.619  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:42:59.646  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:42:59.680  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:42:59.708  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:42:59.738  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:00.153  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:00.160  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:00.451  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 3124(189KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2757KB/5514KB, paused 41us,17us total 7.807ms
+10-06 20:43:01.581  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:01.914  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:02.189  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:02.317  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:02.417  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:02.708  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:10.631  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 2968(144KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2757KB/5514KB, paused 50us,9us total 6.349ms
+10-06 20:43:15.246  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 20:43:15.281  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 20:43:15.315  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 20:43:15.348  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 20:43:15.387  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 20:43:15.421  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 20:43:15.428  4707  4773 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 20:43:17.035  4707  4773 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface off
+10-06 20:43:17.037  4707  4773 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test test run requested
+10-06 20:43:17.039  4707  4773 I krita   : Krita Mobile test: interface: classic (smallest side 411 dp)
+10-06 20:43:17.479   546   890 D CoreBackPreview: Window{af43bc7 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 20:43:17.488   546   890 W InputManager-JNI: Input channel object 'af43bc7 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 20:43:17.542  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:17.581  4707  4773 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 20:43:17.582  4707  4773 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 20:43:17.965   546   621 D CoreBackPreview: Window{300032f u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@285aac5, mPriority=0, mIsAnimationCallback=false}
+10-06 20:43:20.810  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 6335(375KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 2816KB/5633KB, paused 52us,11us total 7.111ms
+10-06 20:43:23.284  4707  4773 I krita   : Krita Mobile test: perf classic-start: interface-ready-ms=112702 first-canvas-ms=-1 rss-kb=1347080 peak-kb=1355200 uptime-ms=118663
+10-06 20:43:26.501  4707  4773 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-01-start.png ok
+10-06 20:43:26.505  4707  4773 I krita   : Krita Mobile test: OVERFLOW 01-start: KisWelcomePageWidget in QStackedWidget (474 > 409)
+10-06 20:43:28.483  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:28.570  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:28.708  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:29.157  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:29.201  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:29.991  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:30.052  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:30.244  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:30.971  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:31.012  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:31.051  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 3393(158KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2802KB/5604KB, paused 50us,14us total 8.622ms
+10-06 20:43:31.065  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:31.571  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:33.835  4707  4773 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 20:43:34.313  4707  4773 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-02-canvas.png ok
+10-06 20:43:35.117  4707  4707 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#6(BLAST Consumer)6](id:126300000006,api:0,p:-1,c:4707) disconnect: not connected (req=2)
+10-06 20:43:36.746  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:36.754  4707  4773 I krita   : Krita Mobile test: perf classic-canvas: interface-ready-ms=112702 first-canvas-ms=128350 rss-kb=1480752 peak-kb=1483684 uptime-ms=132134
+10-06 20:43:41.251  4707  4743 I rita.mobilefork: Explicit concurrent copying GC freed 3234(205KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2804KB/5609KB, paused 64us,9us total 6.441ms
+10-06 20:43:41.450   546  1083 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.4 s.190 fontWeightAdjustment=0}
+10-06 20:43:41.461   546  1083 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.190 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-06 20:43:41.618   546  1083 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.4 s.258 fontWeightAdjustment=0}
+10-06 20:43:41.640   546   566 W system_server: Long monitor contention with owner binder:546_B (1083) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=2 in void com.android.server.wm.WindowManagerService$LocalService.requestTraversalFromDisplayManager() for 203ms
+10-06 20:43:41.849   546  1083 I WindowManager: finishDrawing of orientation change: Window{f6f042d u0 org.krita.mobilefork/org.krita.android.MainActivity} 220ms
+10-06 20:43:41.998   546  2508 I WindowManager: finishDrawing of orientation change: Window{300032f u0 org.krita.mobilefork/org.krita.android.MainActivity} 369ms
+10-06 20:43:42.013   546   563 V WindowManager:     info={id=9 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{c597529 Task{b00967f #8 type=standard A=10192:org.krita.mobilefork}}} m=CHANGE f=NONE p=WCT{RemoteToken{772ff8d DefaultTaskDisplayArea@154403136}} leash=Surface(name=Task=8)/@0xe82c5f3 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 2400, 1080) d=0 r=0->1:0},{WCT{RemoteToken{772ff8d DefaultTaskDisplayArea@154403136}} m=CHANGE f=NONE p=WCT{RemoteToken{9e1f542 Display{#0 state=ON size=2400x1080 ROTATION_90}}} leash=Surface(name=DefaultTaskDisplayArea)/@0x1de27d5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 2400, 1080) d=0 r=0->1:-1},{WCT{RemoteToken{9e1f542 Display{#0 state=ON size=2400x1080 ROTATION_90}}} m=CHANGE f=IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x35bef47 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 2400, 1080) d=0 r=0->1:-1}]}
+10-06 20:43:44.232  4707  4773 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 20:43:44.428  4707  4773 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-landscape-02-canvas.png ok
+10-06 20:43:45.438  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.002  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:46.151  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.193  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.233  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.273  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.312  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.353  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.393  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.473  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.513  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.553  4707  4773 W krita   : This plugin does not support setting window opacity
+10-06 20:43:46.556  4707  4707 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#9(BLAST Consumer)9](id:126300000009,api:0,p:-1,c:4707) disconnect: not connected (req=2)
+10-06 20:43:46.916  4707  4773 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 20:43:47.113  4707  4773 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-desktop-02-canvas.png ok
+10-06 20:43:48.320  4707  4773 I krita   : Krita Mobile test: perf classic-end: interface-ready-ms=112702 first-canvas-ms=128350 rss-kb=1504368 peak-kb=1515336 uptime-ms=143700
+10-06 20:43:48.320  4707  4773 I krita   : Krita Mobile test: done
+10-06 20:43:48.325  4707  4773 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:48.508  4707  4773 W krita   : exit app 0
+10-06 20:43:48.511   905   944 V WindowManagerShell: Transition requested: android.os.BinderProxy@c3e621b TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=84859 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@4562fb8} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 20:43:48.514   546   560 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:1; bindFromPackage:null: isBindService:false]
+10-06 20:43:48.549  4707  6374 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 20:43:49.397   546   563 V WindowManager: Sent Transition #10 createdAt=10-06 20:43:48.510 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=84859 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{c597529 Task{b00967f #8 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 20:43:49.397   546   563 V WindowManager:     info={id=10 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{af9ce4f Task{b59293b #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xf780bea sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0 endFixedRotation=0},{WCT{RemoteToken{c597529 Task{b00967f #8 type=standard A=10192:org.krita.mobilefork}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0xe82c5f3 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=Surface(name=WallpaperWindowToken{b9ffe4d token=android.os.Binder@caca9e4})/@0xd328868 - rotation-leash)/@0x60121b2 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1}]}
+10-06 20:43:49.432   546   567 W system_server: Long monitor contention with owner binder:546_B (1083) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=2 in void com.android.server.wm.WindowSurfacePlacer$Traverser.run() for 239ms
+10-06 20:43:49.690   546  2515 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.262 fontWeightAdjustment=0}
+10-06 20:43:49.704   546  2515 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.4 s.262 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-06 20:43:49.706   546  2515 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.330 fontWeightAdjustment=0}
+10-06 20:43:50.397  4707  4707 I krita.MainActivity: [onDestroy]
+10-06 20:43:50.398   546  1767 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: SVC ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:2; bindFromPackage:null: isBindService:false]
+10-06 20:43:50.442   546  1767 D CoreBackPreview: Window{f6f042d u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 20:43:50.524   546   560 W InputManager-JNI: Input channel object 'f6f042d org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 20:43:50.551  4707  4707 E WindowManager: android.view.WindowLeaked: Activity org.krita.android.MainActivity has leaked window DecorView@39566ed[MainActivity] that was originally added here
+10-06 20:43:50.551  4707  4707 E WindowManager: 	at org.krita.android.ScalingDialog.show(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:3)
+10-06 20:43:50.551  4707  4707 E WindowManager: 	at org.krita.android.MainActivity.lambda$showScalingDialog$9(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:11)
+10-06 20:43:50.551  4707  4707 E WindowManager: 	at org.krita.android.MainActivity.$r8$lambda$h2wn4dJzwh-QkRksvLR40-ZpkS4(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:1)
+10-06 20:43:50.551  4707  4707 E WindowManager: 	at org.krita.android.MainActivity$$ExternalSyntheticLambda4.run(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:11)
+10-06 20:43:50.569   546  2515 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{1a09b9e u0 org.krita.mobilefork/org.krita.android.MainActivity t8} (client)' was disposed without first being removed with the input manager!
+10-06 20:43:50.569   546  2515 W InputManager-JNI: Input channel object '300032f org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 20:43:50.584   546  2515 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{c5598fe u0 org.krita.mobilefork/org.krita.android.DocumentSaverService}
+10-06 20:43:50.622   546  1083 I WindowManager: setOnBackInvokedCallback(): No window state for package:org.krita.mobilefork
+10-06 20:43:50.623  4707  4707 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@211b61 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 20:43:50.623  4707  4707 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@211b61 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 20:43:51.218   546   559 I ActivityManager: Process org.krita.mobilefork (pid 4707) has died: fg  SVC 
+10-06 20:43:51.235   546   566 W ActivityManager: setHasOverlayUi called on unknown pid: 4707
