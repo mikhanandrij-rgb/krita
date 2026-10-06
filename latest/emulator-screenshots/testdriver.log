@@ -1,5 +1,5 @@
 interface: phone (smallest side 411 dp)
-perf start: interface-ready-ms=22362 first-canvas-ms=-1 rss-kb=1143508 peak-kb=1143676 uptime-ms=28283
+perf start: interface-ready-ms=13402 first-canvas-ms=-1 rss-kb=1143032 peak-kb=1143032 uptime-ms=19517
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
@@ -30,10 +30,10 @@ dialog options_configure: triggering
 dialog options_configure: KisDlgPreferences 411x866 min 288x190 saved
 dialog options_configure: closed
 dialog imagesize: triggering
-dialog imagesize: DlgImageSize 461x552 min 460x551 saved
+dialog imagesize: DlgImageSize 453x866 min 452x551 saved
 dialog imagesize: closed
 dialog canvassize: triggering
-dialog canvassize: DlgCanvasSize 439x566 min 438x565 saved
+dialog canvassize: DlgCanvasSize 431x866 min 430x565 saved
 dialog canvassize: closed
 dialog image_properties: triggering
 dialog image_properties: KisDlgImageProperties 411x866 min 133x119 saved
@@ -45,28 +45,28 @@ dialog layer_style: triggering
 dialog layer_style: KisDlgLayerStyle 411x866 min 133x119 saved
 dialog layer_style: closed
 dialog krita_filter_gaussian blur: triggering
-dialog krita_filter_gaussian blur: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_gaussian blur: KisDlgFilter 411x866 min 401x388 saved
 dialog krita_filter_gaussian blur: closed
 dialog krita_filter_hsvadjustment: triggering
-dialog krita_filter_hsvadjustment: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_hsvadjustment: KisDlgFilter 411x866 min 149x332 saved
 dialog krita_filter_hsvadjustment: closed
 dialog krita_filter_perchannel: triggering
-dialog krita_filter_perchannel: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_perchannel: KisDlgFilter 411x866 min 401x694 saved
 dialog krita_filter_perchannel: closed
 dialog krita_filter_levels: triggering
-dialog krita_filter_levels: KisDlgFilter 411x866 min 394x186 saved
+dialog krita_filter_levels: KisDlgFilter 411x866 min 401x633 saved
 dialog krita_filter_levels: closed
 dialog rotateimage: triggering
-dialog rotateimage: DlgRotateImage 340x362 min 339x361 saved
+dialog rotateimage: DlgRotateImage 411x866 min 339x361 saved
 dialog rotateimage: closed
 dialog offsetimage: triggering
-dialog offsetimage: DlgOffsetImage 219x244 min 197x243 saved
+dialog offsetimage: DlgOffsetImage 411x866 min 189x243 saved
 dialog offsetimage: closed
 dialog imagesplit: triggering
-dialog imagesplit: DlgImagesplit 411x866 min 142x119 saved
+dialog imagesplit: DlgImagesplit 411x866 min 271x625 saved
 dialog imagesplit: closed
 dialog layersplit: triggering
-dialog layersplit: DlgLayerSplit 329x540 min 178x539 saved
+dialog layersplit: DlgLayerSplit 411x866 min 170x539 saved
 dialog layersplit: closed
 dialog separate: triggering
 dialog separate: DlgSeparate 411x866 min 200x514 saved
@@ -75,22 +75,25 @@ dialog clones_array: triggering
 dialog clones_array: DlgClonesArray 411x866 min 206x119 saved
 dialog clones_array: closed
 dialog render_animation: action disabled
-perf panel tools: 62 ms
-perf panel menu: 111 ms
-perf panel more: 82 ms
-perf panel brush: 172 ms
-perf panel color: 123 ms
-perf panel layers: 100 ms
-perf panel animation: 123 ms
-perf panel view: 79 ms
-perf panel text: 94 ms
-perf panel other:BrushHudDocker: 153 ms
-perf panel other:LogDocker: 113 ms
-perf panel other:RecorderDocker: 154 ms
-perf panel other:TasksetDocker: 101 ms
-perf panel other:ToolBox: 98 ms
-perf panel other:TouchDocker: 147 ms
-perf after-portrait: interface-ready-ms=22362 first-canvas-ms=40436 rss-kb=1399156 peak-kb=1437604 uptime-ms=198181
+dialog autosave_recovery: showing
+dialog autosave_recovery: KisAutoSaveRecoveryDialog 411x866 min 254x195 saved
+dialog autosave_recovery: closed
+perf panel tools: 51 ms
+perf panel menu: 66 ms
+perf panel more: 67 ms
+perf panel brush: 107 ms
+perf panel color: 62 ms
+perf panel layers: 58 ms
+perf panel animation: 59 ms
+perf panel view: 64 ms
+perf panel text: 60 ms
+perf panel other:BrushHudDocker: 71 ms
+perf panel other:LogDocker: 58 ms
+perf panel other:RecorderDocker: 65 ms
+perf panel other:TasksetDocker: 55 ms
+perf panel other:ToolBox: 61 ms
+perf panel other:TouchDocker: 71 ms
+perf after-portrait: interface-ready-ms=13402 first-canvas-ms=29650 rss-kb=1380552 peak-kb=1418404 uptime-ms=180653
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-01-hub.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-02-new-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/landscape-03-editor.png ok
@@ -158,7 +161,7 @@ dialog rotateimage: triggering
 dialog rotateimage: DlgRotateImage 866x411 min 339x361 saved
 dialog rotateimage: closed
 dialog offsetimage: triggering
-dialog offsetimage: DlgOffsetImage 219x244 min 197x243 saved
+dialog offsetimage: DlgOffsetImage 360x244 min 189x243 saved
 dialog offsetimage: closed
 dialog imagesplit: triggering
 dialog imagesplit: DlgImagesplit 866x411 min 142x119 saved
@@ -170,9 +173,12 @@ dialog separate: triggering
 dialog separate: DlgSeparate 866x411 min 133x119 saved
 dialog separate: closed
 dialog clones_array: triggering
-dialog clones_array: DlgClonesArray 686x247 min 685x246 saved
+dialog clones_array: DlgClonesArray 662x247 min 661x246 saved
 dialog clones_array: closed
 dialog render_animation: action disabled
+dialog autosave_recovery: showing
+dialog autosave_recovery: KisAutoSaveRecoveryDialog 866x411 min 500x195 saved
+dialog autosave_recovery: closed
 inventory written
-perf end: interface-ready-ms=22362 first-canvas-ms=40436 rss-kb=1404256 peak-kb=1457224 uptime-ms=355007
+perf end: interface-ready-ms=13402 first-canvas-ms=29650 rss-kb=1389076 peak-kb=1440728 uptime-ms=336767
 done

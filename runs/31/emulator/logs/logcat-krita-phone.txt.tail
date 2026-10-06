@@ -1,0 +1,323 @@
+10-06 12:27:18.992   555  1007 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 12:27:18.996   908   950 V WindowManagerShell: Transition requested: android.os.BinderProxy@48c97eb TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=173211 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@e87948} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{d9fc3e1 org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 12:27:19.005   555   585 I ActivityManager: Start proc 6657:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 12:27:19.018   555  2125 D CoreBackPreview: Window{da02e93 u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@94009ce, mPriority=0, mIsAnimationCallback=false}
+10-06 12:27:19.042  6657  6657 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 12:27:19.042  6657  6657 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 12:27:19.042  6657  6657 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 12:27:19.098   555   572 V WindowManager: Sent Transition #20 createdAt=10-06 12:27:18.989 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=173211 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{2145e85 Task{50e9f7 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{756f4da org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 12:27:19.098   555   572 V WindowManager:     info={id=20 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{2145e85 Task{50e9f7 #10 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=10)/@0x69520ef sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{e060a75 Task{a2c483 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x88fa26c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 12:27:19.167  6657  6657 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 12:27:19.235  6657  6657 D nativeloader: Configuring clns-6 for other apk /data/app/~~Pw9qhAWBZXrRE4bsQc-8Qw==/org.krita.mobilefork-Q0ivaHvWl_0c6ht9FhS30g==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~Pw9qhAWBZXrRE4bsQc-8Qw==/org.krita.mobilefork-Q0ivaHvWl_0c6ht9FhS30g==/lib/arm64:/data/app/~~Pw9qhAWBZXrRE4bsQc-8Qw==/org.krita.mobilefork-Q0ivaHvWl_0c6ht9FhS30g==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 12:27:19.250  6657  6657 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 12:27:19.250  6657  6657 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 12:27:19.252   555  2655 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 6657
+10-06 12:27:19.314   555   645 D ActivityManager: freezing 1643 android.process.acore
+10-06 12:27:19.348  6657  6657 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 12:27:19.345  6657  6657 W rita.mobilefork: type=1400 audit(0.0:247): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=439 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 12:27:19.634  6657  6657 I krita.MainActivity: TouchSlop: 21
+10-06 12:27:19.634  6657  6657 I krita.MainActivity: LibsLoaded
+10-06 12:27:19.645   555  2655 D CoreBackPreview: Window{8ba90c4 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@77f5ee2, mPriority=0, mIsAnimationCallback=false}
+10-06 12:27:19.758   555   572 W system_server: Failed to determine oat file name for dex location /data/app/~~Pw9qhAWBZXrRE4bsQc-8Qw==/org.krita.mobilefork-Q0ivaHvWl_0c6ht9FhS30g==/base.apk: Dalvik cache directory does not exist
+10-06 12:27:19.758   555   572 W ziparchive: Unable to open '/data/app/~~Pw9qhAWBZXrRE4bsQc-8Qw==/org.krita.mobilefork-Q0ivaHvWl_0c6ht9FhS30g==/base.dm': No such file or directory
+10-06 12:27:19.760   555   572 I ActivityTaskManager: Displayed org.krita.mobilefork/org.krita.android.MainActivity for user 0: +769ms
+10-06 12:27:19.767   555  1007 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 12:27:19.772   908   950 V WindowManagerShell: Transition requested: android.os.BinderProxy@a52bb45 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=173986 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@6a6f29a} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{1c67cb com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 12:27:19.773   555  2438 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 12:27:19.777   555  2438 D ActivityManager: quick sync unfreeze 910 for 1
+10-06 12:27:19.785   555  2655 W InputManager-JNI: Input channel object 'da02e93 Splash Screen org.krita.mobilefork (client)' was disposed without first being removed with the input manager!
+10-06 12:27:19.787   555  2438 D CoreBackPreview: Window{da02e93 u0 Splash Screen org.krita.mobilefork EXITING}: Setting back callback null
+10-06 12:27:19.787   555  1007 I ImeTracker: org.krita.mobilefork:38691541: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 12:27:19.787   555  1007 I ImeTracker: org.krita.mobilefork:38691541: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 12:27:19.793  1683  1683 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 12:27:19.797   555   575 D ActivityManager: sync unfroze 910 com.google.android.permissioncontroller for 1
+10-06 12:27:19.954   555   572 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +183ms
+10-06 12:27:19.954   555   572 V WindowManager: Sent Transition #21 createdAt=10-06 12:27:19.764 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=173986 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{2145e85 Task{50e9f7 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{7b95fd8 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 12:27:19.993   555  2640 I ImeTracker: org.krita.mobilefork:6bdda961: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 12:27:19.993   555  2640 I ImeTracker: org.krita.mobilefork:6bdda961: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 12:27:19.997  1683  1683 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 12:27:20.450   555   568 D ActivityManager: sync unfroze 1643 android.process.acore for 7
+10-06 12:27:21.061   555  1007 D CoreBackPreview: Window{77b76e5 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1ef9c6b, mPriority=0, mIsAnimationCallback=false}
+10-06 12:27:22.519   555  2655 D ActivityManager: sync unfroze 2813 com.google.android.gms.unstable for 6
+10-06 12:27:24.938   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:24.938   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:24.938   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:24.938   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:24.939   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:24.939   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.600   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.600   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.601   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.612   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.612   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.612   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.643   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.643   555  2060 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.643   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.725   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.725   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.726   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.736   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.736   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.737   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.745   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.745   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.745   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.814   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.814   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.814   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.819   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.820   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.820   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.826   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.826   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.826   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.872   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.872   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.872   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.879   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.879   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.879   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.891   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.891   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.891   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.941   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.942   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.942   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.970   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.970   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.971   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.976   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.977   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.977   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.999   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.999   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:27.999   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.061   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.062   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.062   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.069   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.069   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.069   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.076   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.076   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.076   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.105   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.105   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.105   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.110   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.111   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.111   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.117   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.117   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.117   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.164   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.164   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.164   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.171   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.172   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.172   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.183   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.183   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.183   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.227   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.227   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:28.227   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.502   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.502   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.502   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.626   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.627   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.627   555  2648 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:29.804   555  2648 D ActivityManager: freezer override set to true
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 2077 com.android.keychain for 19
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 1949 com.google.android.googlesdksetup for 19
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 1444 com.android.cellbroadcastreceiver for 19
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 1250 com.android.bluetooth for 19
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 1961 com.android.printspooler for 19
+10-06 12:27:29.804   555  2648 D ActivityManager: sync unfroze 2824 com.android.localtransport for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 1565 com.android.carrierconfig for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3504 com.android.traceur for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3434 com.google.android.webview:webview_service for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3636 com.google.android.onetimeinitializer for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 2240 com.android.carrierdefaultapp for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3851 com.android.camera2 for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 1393 com.google.android.cellbroadcastreceiver for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3893 com.android.dynsystem for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3359 com.android.imsserviceentitlement for 19
+10-06 12:27:29.805   555  2648 D ActivityManager: sync unfroze 3927 com.android.dynsystem:dynsystem for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 4490 com.android.emergency for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 4497 com.google.android.healthconnect.controller for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 2138 com.android.providers.calendar for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 5125 com.google.android.webview for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 2469 com.google.android.partnersetup for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 4005 com.google.android.configupdater for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 1149 com.android.settings for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 2721 com.google.android.tts for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 4503 com.google.android.marvin.talkback for 19
+10-06 12:27:29.806   555  2648 D ActivityManager: sync unfroze 4112 com.google.android.projection.gearhead:shared for 19
+10-06 12:27:29.808   555  2648 D ActivityManager: sync unfroze 1931 com.google.android.youtube for 19
+10-06 12:27:29.808   555  2648 D ActivityManager: sync unfroze 4147 com.google.android.gm for 19
+10-06 12:27:29.808   555  2648 D ActivityManager: sync unfroze 5802 com.google.android.gms.ui for 19
+10-06 12:27:29.808   555  2648 D ActivityManager: sync unfroze 2963 com.google.android.apps.wallpaper for 19
+10-06 12:27:29.808   555  2648 D ActivityManager: sync unfroze 2322 android.process.media for 19
+10-06 12:27:29.809   555  2648 D ActivityManager: sync unfroze 2337 com.google.android.as.oss for 19
+10-06 12:27:29.809   555  2648 D ActivityManager: sync unfroze 5172 com.google.android.settings.intelligence for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 3749 com.google.android.rkpdapp for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 4808 com.google.android.googlequicksearchbox for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 2053 com.google.process.gapps for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 2439 com.google.android.contacts for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 3040 com.google.android.documentsui for 19
+10-06 12:27:29.810   555  2648 D ActivityManager: sync unfroze 6520 com.android.externalstorage for 19
+10-06 12:27:29.811   555  2648 D ActivityManager: sync unfroze 2912 com.android.chrome for 19
+10-06 12:27:29.811   555  2648 D ActivityManager: sync unfroze 1692 com.google.android.apps.wellbeing for 19
+10-06 12:27:29.812   555  2648 D ActivityManager: sync unfroze 1858 com.google.android.apps.youtube.music for 19
+10-06 12:27:29.862  6657  6694 W rita.mobilefork: Cleared Reference was only reachable from finalizer (only reported once)
+10-06 12:27:29.871  6657  6694 I rita.mobilefork: Explicit concurrent copying GC freed 55854(2697KB) AllocSpace objects, 10(1484KB) LOS objects, 49% free, 2527KB/5054KB, paused 365us,5us total 24.007ms
+10-06 12:27:29.879   555  2648 D ActivityManager: freezer override set to false
+10-06 12:27:29.975   555   645 D ActivityManager: freezing 910 com.google.android.permissioncontroller
+10-06 12:27:30.142  6657  6657 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@org.krita.mobilefork>
+10-06 12:27:31.224  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 12:27:31.230  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 12:27:31.235  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 12:27:31.240  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 12:27:31.245  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 12:27:31.250  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 12:27:31.252  6657  6682 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 12:27:31.715   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.715   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.715   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.715   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.715   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.731  6657  6682 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface on
+10-06 12:27:31.732  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:31.739  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:31.742  6657  6682 I krita   : Krita Mobile: phone defaults written (effective after restart): memoryHardLimitPercent=35, frameRenderingClones=1, animationCacheFrameSizeLimit=1920
+10-06 12:27:31.789   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.790   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.792   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.794   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.796   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.798   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.798   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:31.798   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.398   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.398   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.398   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.402   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.407   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.407   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.407   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.407   555  2640 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:32.441  6657  6682 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test test run requested
+10-06 12:27:32.442  6657  6682 I krita   : Krita Mobile test: interface: phone (smallest side 411 dp)
+10-06 12:27:32.724   555  2640 D CoreBackPreview: Window{77b76e5 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 12:27:32.732   555  2640 W InputManager-JNI: Input channel object '77b76e5 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 12:27:32.747  6657  6682 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 12:27:32.747  6657  6682 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 12:27:37.486   555  2648 W ActivityManager: stopServiceToken startId 1451 is last, but have 104 remaining args
+10-06 12:27:38.743  6657  6682 I krita   : Krita Mobile test: perf start: interface-ready-ms=13402 first-canvas-ms=-1 rss-kb=1143032 peak-kb=1143032 uptime-ms=19517
+10-06 12:27:39.919   555  1006 D ActivityManager: freezer override set to true
+10-06 12:27:39.919   555  1006 D ActivityManager: sync unfroze 910 com.google.android.permissioncontroller for 19
+10-06 12:27:39.921   555   645 D ActivityManager: Skipping freeze for process 2077 com.android.keychain curAdj = 999(override)
+10-06 12:27:39.921   555   645 D ActivityManager: Skipping freeze for process 1949 com.google.android.googlesdksetup curAdj = 999(override)
+10-06 12:27:39.921   555   645 D ActivityManager: Skipping freeze for process 1444 com.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 12:27:39.921   555   645 D ActivityManager: Skipping freeze for process 1250 com.android.bluetooth curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 1961 com.android.printspooler curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 2824 com.android.localtransport curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 1565 com.android.carrierconfig curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3504 com.android.traceur curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3434 com.google.android.webview:webview_service curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3636 com.google.android.onetimeinitializer curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 2240 com.android.carrierdefaultapp curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3851 com.android.camera2 curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 1393 com.google.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3893 com.android.dynsystem curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3359 com.android.imsserviceentitlement curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 3927 com.android.dynsystem:dynsystem curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 4490 com.android.emergency curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 4497 com.google.android.healthconnect.controller curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 2138 com.android.providers.calendar curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 5125 com.google.android.webview curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 2469 com.google.android.partnersetup curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 4005 com.google.android.configupdater curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 1149 com.android.settings curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 2721 com.google.android.tts curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 4503 com.google.android.marvin.talkback curAdj = 999(override)
+10-06 12:27:39.922   555   645 D ActivityManager: Skipping freeze for process 4112 com.google.android.projection.gearhead:shared curAdj = 995(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 1931 com.google.android.youtube curAdj = 995(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 4147 com.google.android.gm curAdj = 985(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 5802 com.google.android.gms.ui curAdj = 985(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2963 com.google.android.apps.wallpaper curAdj = 975(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2322 android.process.media curAdj = 975(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2337 com.google.android.as.oss curAdj = 965(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 5172 com.google.android.settings.intelligence curAdj = 965(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 4808 com.google.android.googlequicksearchbox curAdj = 955(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2053 com.google.process.gapps curAdj = 945(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2439 com.google.android.contacts curAdj = 945(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 3040 com.google.android.documentsui curAdj = 935(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 6520 com.android.externalstorage curAdj = 935(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 2912 com.android.chrome curAdj = 915(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 1692 com.google.android.apps.wellbeing curAdj = 915(override)
+10-06 12:27:39.923   555   645 D ActivityManager: Skipping freeze for process 1858 com.google.android.apps.youtube.music curAdj = 905(override)
+10-06 12:27:39.951  6657  6694 I rita.mobilefork: Explicit concurrent copying GC freed 6927(356KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2474KB/4949KB, paused 15us,4us total 2.806ms
+10-06 12:27:39.957   555  1006 D ActivityManager: freezer override set to false
+10-06 12:27:40.674   555   645 D ActivityManager: freezing 3749 com.google.android.rkpdapp
+10-06 12:27:40.967   555   645 D ActivityManager: freezing 2813 com.google.android.gms.unstable
+10-06 12:27:42.737  6657  6682 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
+10-06 12:27:45.240  6657  6682 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
+10-06 12:27:46.842  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:46.871   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.877   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.877   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.879   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.879   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.885   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.885   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.885   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.886   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:46.890  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:47.201  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:47.495   555   645 D ActivityManager: freezing 5593 com.google.android.gms
+10-06 12:27:47.540  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:47.682  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:48.020  6657  6682 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 12:27:48.243   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.244   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.249   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.267   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.289   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.306   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.314   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.314   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.315   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.316   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.344   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.363   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.363   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.379   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.394   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.411   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.412   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.430   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.878   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.878   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.878   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.878   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.879   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.879   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.879   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.881   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.881   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.881   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.882   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.882   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.882   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.952   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.952   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.952   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.952   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.952   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:48.953   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:49.061   555  1006 E ClipboardService: Denying clipboard access to org.krita.mobilefork, application is not in focus nor is it a system service for user 0
+10-06 12:27:49.061   555  1006 E ClipboardService: Denying

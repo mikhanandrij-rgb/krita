@@ -1,0 +1,22 @@
+--------- beginning of crash
+10-06 12:42:41.881  7230  7293 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 7293 (qtMainLoopThrea), pid 7230 (rita.mobilefork)
+10-06 12:42:42.141  8032  8032 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-06 12:42:42.141  8032  8032 F DEBUG   : Build fingerprint: 'google/sdk_gphone64_x86_64/emu64xa:14/UE1A.230829.050/12077443:userdebug/dev-keys'
+10-06 12:42:42.141  8032  8032 F DEBUG   : Revision: '0'
+10-06 12:42:42.141  8032  8032 F DEBUG   : ABI: 'x86_64'
+10-06 12:42:42.141  8032  8032 F DEBUG   : Timestamp: 2026-10-06 12:42:41.980982509+0000
+10-06 12:42:42.141  8032  8032 F DEBUG   : Process uptime: 577s
+10-06 12:42:42.141  8032  8032 F DEBUG   : Cmdline: org.krita.mobilefork
+10-06 12:42:42.141  8032  8032 F DEBUG   : pid: 7230, tid: 7293, name: qtMainLoopThrea  >>> org.krita.mobilefork <<<
+10-06 12:42:42.141  8032  8032 F DEBUG   : uid: 10192
+10-06 12:42:42.141  8032  8032 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+10-06 12:42:42.141  8032  8032 F DEBUG   :     rax 0000000000000000  rbx 000072e21f872000  rcx 000072e94b8d0b98  rdx 0000000000000006
+10-06 12:42:42.141  8032  8032 F DEBUG   :     r8  6f6e203a474e4148  r9  6f6e203a474e4148  r10 000072e20e4a1ec0  r11 0000000000000206
+10-06 12:42:42.141  8032  8032 F DEBUG   :     r12 0000000000000000  r13 00000000002ec310  r14 000072e21f872050  r15 000072e20d3a4ff0
+10-06 12:42:42.141  8032  8032 F DEBUG   :     rdi 0000000000001c3e  rsi 0000000000001c7d
+10-06 12:42:42.141  8032  8032 F DEBUG   :     rbp 00000000352ec301  rsp 000072e20d3a49c8  rip 000072e94b8d0b98
+10-06 12:42:42.141  8032  8032 F DEBUG   : 3 total frames
+10-06 12:42:42.141  8032  8032 F DEBUG   : backtrace:
+10-06 12:42:42.141  8032  8032 F DEBUG   :       #00 pc 000000000005db98  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+24) (BuildId: fa337969c798946280caa45e2d71a2e7)
+10-06 12:42:42.141  8032  8032 F DEBUG   :       #01 pc 00000000001fdeae  /system/lib64/libndk_translation.so (ndk_translation::RunKernelSyscall(ndk_translation::ProcessState*)+78) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 12:42:42.141  8032  8032 F DEBUG   :       #02 pc 0000000000222644  <anonymous:72e200aa2000>

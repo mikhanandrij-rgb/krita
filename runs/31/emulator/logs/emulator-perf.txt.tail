@@ -1,0 +1,57 @@
+== warmup
+run classic: done after 82 s
+TotalTime: 1756
+WaitTime: 1764
+perf classic-start: interface-ready-ms=51477 first-canvas-ms=-1 rss-kb=1346932 peak-kb=1356324 uptime-ms=57211
+perf classic-canvas: interface-ready-ms=51477 first-canvas-ms=63462 rss-kb=1478600 peak-kb=1484344 uptime-ms=66698
+perf classic-end: interface-ready-ms=51477 first-canvas-ms=63462 rss-kb=1500056 peak-kb=1503308 uptime-ms=73234
+== classic
+run classic: done after 41 s
+TotalTime: 705
+WaitTime: 708
+perf classic-start: interface-ready-ms=12872 first-canvas-ms=-1 rss-kb=1121692 peak-kb=1121756 uptime-ms=18753
+perf classic-canvas: interface-ready-ms=12872 first-canvas-ms=24756 rss-kb=1253036 peak-kb=1264732 uptime-ms=27242
+perf classic-end: interface-ready-ms=12872 first-canvas-ms=24756 rss-kb=1274136 peak-kb=1279736 uptime-ms=34222
+== phone
+run auto: done after 344 s
+TotalTime: 769
+WaitTime: 772
+perf start: interface-ready-ms=13402 first-canvas-ms=-1 rss-kb=1143032 peak-kb=1143032 uptime-ms=19517
+perf panel tools: 51 ms
+perf panel menu: 66 ms
+perf panel more: 67 ms
+perf panel brush: 107 ms
+perf panel color: 62 ms
+perf panel layers: 58 ms
+perf panel animation: 59 ms
+perf panel view: 64 ms
+perf panel text: 60 ms
+perf panel other:BrushHudDocker: 71 ms
+perf panel other:LogDocker: 58 ms
+perf panel other:RecorderDocker: 65 ms
+perf panel other:TasksetDocker: 55 ms
+perf panel other:ToolBox: 61 ms
+perf panel other:TouchDocker: 71 ms
+perf after-portrait: interface-ready-ms=13402 first-canvas-ms=29650 rss-kb=1380552 peak-kb=1418404 uptime-ms=180653
+perf end: interface-ready-ms=13402 first-canvas-ms=29650 rss-kb=1389076 peak-kb=1440728 uptime-ms=336767
+== walk
+run auto: died after 585 s
+TotalTime: 671
+WaitTime: 673
+perf start: interface-ready-ms=13194 first-canvas-ms=-1 rss-kb=1141276 peak-kb=1141860 uptime-ms=19006
+perf panel tools: 51 ms
+perf panel menu: 69 ms
+perf panel more: 68 ms
+perf panel brush: 104 ms
+perf panel color: 75 ms
+perf panel layers: 61 ms
+perf panel animation: 55 ms
+perf panel view: 62 ms
+perf panel text: 60 ms
+perf panel other:BrushHudDocker: 65 ms
+perf panel other:LogDocker: 59 ms
+perf panel other:RecorderDocker: 57 ms
+perf panel other:TasksetDocker: 60 ms
+perf panel other:ToolBox: 58 ms
+perf panel other:TouchDocker: 72 ms
+perf after-portrait: interface-ready-ms=13194 first-canvas-ms=28867 rss-kb=1381864 peak-kb=1419552 uptime-ms=180094

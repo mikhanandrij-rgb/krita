@@ -100,21 +100,21 @@ cut_sharp,Cut (sharp),Edit,Edit,Menu › Edit,reachable,disabled (not available 
 delete_keyframe,Delete keyframe,Edit,,,not created at runtime,
 edit_copy,Copy,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
 edit_cut,Cut,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
-edit_paste,Paste,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
+edit_paste,Paste,Edit,Edit | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › Edit,reachable,ok (opened KisDlgMissingColorProfile)
 edit_redo,Redo,Edit,Edit | Toolbar: Main Toolbar | Toolbar: editToolBar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
 edit_undo,Undo,Edit,Edit | Toolbar: Main Toolbar | Toolbar: editToolBar | Toolbar: mainToolBar,Menu › Edit,reachable,ok
 fill_selection_background_color,Fill with Background Color,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 fill_selection_foreground_color,Fill with Foreground Color,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 fill_selection_pattern,Fill with Pattern,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
-paste_as_reference,Paste as Reference Image,Edit,Edit,Menu › Edit,reachable,ok (opened KisDlgMissingColorProfile)
-paste_at,Paste at Cursor,Edit,Edit,Menu › Edit,reachable,ok
+paste_as_reference,Paste as Reference Image,Edit,Edit,Menu › Edit,reachable,ok
+paste_at,Paste at Cursor,Edit,Edit,Menu › Edit,reachable,ok (opened KisDlgMissingColorProfile)
 paste_into,Paste into Active Layer,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 paste_layer_style,Paste Layer Style,Edit,Edit,Menu › Edit,reachable,ok
-paste_new,Paste into New Image,Edit,Edit,Menu › Edit,reachable,ok (opened KisDlgMissingColorProfile)
+paste_new,Paste into New Image,Edit,Edit,Menu › Edit,reachable,ok
 paste_shape_style,Paste Shape Style,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 stroke_selection,Stroke Selection...,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
 stroke_shapes,Stroke selected shapes,Edit,Edit,Menu › Edit,reachable,disabled (not available in this state)
-create_copy,Create Copy From Current Image,File,File,Menu › File,reachable,ok
+create_copy,Create Copy From Current Image,File,File,Menu › File,reachable,ok (opened QProgressDialog)
 create_template,Create Template From Image...,File,File,Menu › File,reachable,ok
 file_close,Close,File,File,Menu › Window,reachable,skipped (closes the test document)
 file_close_all,Close All,File,File,Menu › Window,reachable,skipped (closes the test document)
@@ -130,7 +130,7 @@ file_open_recent,Open Recent,File,File,Menu › All commands › File,reachable,
 file_quit,Quit,File,File,Menu › File,reachable,skipped (quits Krita)
 file_save,Save,File,File | Toolbar: Main Toolbar | Toolbar: mainToolBar,Menu › File,reachable,skipped (opens the Android file picker)
 file_save_as,Save As...,File,File,Menu › File,reachable,skipped (opens the Android file picker)
-file_sessions,Sessions...,File,File,Menu › File,reachable,ok (opened KisSessionManagerDialog)
+file_sessions,Sessions...,File,File,Menu › File,reachable,ok
 render_animation,Render Animation...,File,File,Menu › File,reachable,disabled (not available in this state)
 render_animation_again,Render Animation Again,File,,Menu › All commands › File,reachable,
 save_incremental_backup,Save Incremental Backup,File,File,Menu › File,reachable,skipped (opens the Android file picker)
@@ -148,17 +148,17 @@ filter_apply_again,Apply Filter Again,Filter,Filter,Menu › Filter,reachable,ok
 filter_apply_reprompt,Apply Filter Again (Reprompt),Filter,Filter,Menu › Filter,reachable,ok
 map_filters,Map,Filter,Filter,Menu › All commands › Filter,reachable,
 other_filters,Other,Filter,Filter,Menu › All commands › Filter,reachable,
-krita_filter_asc-cdl,"Slope, Offset, Power Filter",Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
+krita_filter_asc-cdl,"Slope, Offset, Power Filter",Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_autocontrast,Auto Contrast,Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_blur,Blur...,Filters,,Menu › Filter › Blur,reachable,ok
 krita_filter_bottom edge detections,Bottom Edge Detection,Filters,,,not created at runtime,
 krita_filter_burn,Burn,Filters,,Menu › Filter › Adjust,reachable,ok
-krita_filter_colorbalance,Color Balance...,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
+krita_filter_colorbalance,Color Balance...,Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_colortoalpha,Color to Alpha...,Filters,,Menu › Filter › Colors,reachable,ok
 krita_filter_colortransfer,Color Transfer...,Filters,,Menu › Filter › Colors,reachable,ok
 krita_filter_crosschannel,Cross-channel adjustment Filter,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
-krita_filter_desaturate,Desaturate,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
-krita_filter_dodge,Dodge,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
+krita_filter_desaturate,Desaturate,Filters,,Menu › Filter › Adjust,reachable,ok
+krita_filter_dodge,Dodge,Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_emboss,Emboss with Variable Depth...,Filters,,Menu › Filter › Emboss,reachable,ok
 krita_filter_emboss all directions,Emboss in All Directions,Filters,,Menu › Filter › Emboss,reachable,ok
 krita_filter_emboss horizontal and vertical,Emboss Horizontal Vertical,Filters,,Menu › Filter › Emboss,reachable,ok
@@ -169,14 +169,14 @@ krita_filter_gaussian blur,Gaussian Blur...,Filters,,Menu › Filter › Blur,re
 krita_filter_gaussianhighpass,Gaussian High Pass Filter,Filters,,Menu › Filter › Edge Detection,reachable,ok
 krita_filter_gaussiannoisereducer,Gaussian Noise Reduction...,Filters,,Menu › Filter › Enhance,reachable,ok
 krita_filter_gradientmap,gradientmap Filter,Filters,,Menu › Filter › Map,reachable,ok
-krita_filter_halftone,Halftone Filter,Filters,,Menu › Filter › Artistic,reachable,ok (opened KisDlgFilter)
+krita_filter_halftone,Halftone Filter,Filters,,Menu › Filter › Artistic,reachable,ok
 krita_filter_height to normal,Height to Normal Map Filter,Filters,,Menu › Filter › Edge Detection,reachable,ok
-krita_filter_hsvadjustment,HSV Adjustment...,Filters,,Menu › Filter › Adjust,reachable,ok
+krita_filter_hsvadjustment,HSV Adjustment...,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
 krita_filter_indexcolors,Index Colors...,Filters,,Menu › Filter › Artistic,reachable,ok
 krita_filter_invert,Invert,Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_left edge detections,Left Edge Detection,Filters,,,not created at runtime,
 krita_filter_lens blur,Lens Blur...,Filters,,Menu › Filter › Blur,reachable,ok
-krita_filter_levels,Levels...,Filters,,Menu › Filter › Adjust,reachable,ok (opened KisDlgFilter)
+krita_filter_levels,Levels...,Filters,,Menu › Filter › Adjust,reachable,ok
 krita_filter_maximize,Maximize Channel,Filters,,Menu › Filter › Colors,reachable,ok
 krita_filter_mean removal,Mean Removal,Filters,,Menu › Filter › Enhance,reachable,ok
 krita_filter_minimize,Minimize Channel,Filters,,Menu › Filter › Colors,reachable,ok
@@ -211,7 +211,7 @@ create_snapshot,Create Snapshot,General,,Menu › All commands › General,reach
 docker_box,Show Docker Box,General,,Menu › All commands › General,reachable,
 invert_selection,Invert Selection,General,Select,Menu › Select,reachable,disabled (not available in this state)
 lock_toolbars,Lock Toolbars,General,Settings,Menu › Settings,reachable,ok
-logcatdump,Show Android log for bug reports.,General,Help,Menu › Help,reachable,ok
+logcatdump,Show Android log for bug reports.,General,Help,Menu › Help,reachable,ok (opened DlgAndroidLogcatDumper)
 mainToolBar,Show File Toolbar,General,,Menu › All commands › General,reachable,ok
 open_resources_directory,Open Resources Folder,General,,Menu › All commands › General,reachable,
 remove_snapshot,Remove Selected Snapshot,General,,Menu › All commands › General,reachable,
@@ -233,15 +233,15 @@ tablet_debugger,Toggle Tablet Debugger,General,,Menu › All commands › Genera
 update_composition,Update Composition,General,,Menu › All commands › General,reachable,
 windows_cascade,Cascade,General,,Menu › All commands › General,reachable,
 windows_tile,Tile,General,,Menu › All commands › General,reachable,
-help_about_app,About Krita,Help,Help,Menu › Help,reachable,ok (opened KisAboutApplication)
+help_about_app,About Krita,Help,Help,Menu › Help,reachable,ok
 help_about_kde,About KDE,Help,Help,Menu › Help,reachable,ok
 help_contents,Krita Handbook,Help,Help,Menu › Help,reachable,skipped (opens a web browser)
 help_report_bug,Report Bug...,Help,Help,Menu › Help,reachable,skipped (opens a web browser)
 canvassize,Resize Canvas...,Image,Image,Menu › Image,reachable,ok
-image_color,Image Background Color and Transparency...,Image,Image,Menu › Image,reachable,ok
+image_color,Image Background Color and Transparency...,Image,Image,Menu › Image,reachable,ok (opened QColorDialog)
 image_properties,Properties...,Image,Image,Menu › Image,reachable,ok
 imagecolorspaceconversion,Convert Image Color Space...,Image,Image,Menu › Image,reachable,ok (opened KisColorSpaceConversionDialog)
-imagesize,Scale Image To New Size...,Image,Image,Menu › Image,reachable,ok (opened DlgImageSize)
+imagesize,Scale Image To New Size...,Image,Image,Menu › Image,reachable,ok
 imagesplit,Image Split,Image,Image,Menu › Image,reachable,ok
 mirrorImageHorizontal,Mirror Image Horizontally,Image,Image | Image > Rotate,Menu › Image,reachable,ok
 mirrorImageVertical,Mirror Image Vertically,Image,Image | Image > Rotate,Menu › Image,reachable,ok
@@ -252,9 +252,9 @@ resizeimagetoselection,Trim to Selection,Image,Image,Menu › Image,reachable,di
 rotateImage180,Rotate Image 180°,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
 rotateImageCCW90,Rotate Image 90° to the Left,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
 rotateImageCW90,Rotate Image 90° to the Right,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
-rotateimage,Rotate Image...,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok (opened DlgRotateImage)
+rotateimage,Rotate Image...,Image,Image > Rotate,Menu › Image › Rotate,reachable,ok
 separate,Separate Image...,Image,Image,Menu › Image,reachable,ok (opened DlgSeparate)
-shearimage,Shear Image...,Image,Image,Menu › Image,reachable,ok (opened DlgShearImage)
+shearimage,Shear Image...,Image,Image,Menu › Image,reachable,ok
 trim_to_image,Trim to Image Size,Image,Image,Menu › Image,reachable,ok
 add_shape_to_flow_area,Flow Text in Shape,Interaction Tool,,Menu › All commands › Interaction Tool,reachable,
 flow_shape_order_back,Set Flow Shape as Last,Interaction Tool,,Menu › All commands › Interaction Tool,reachable,
@@ -307,12 +307,12 @@ activateNextLayer,Activate next layer,Layers,,Menu › All commands › Layers,r
 activateNextSiblingLayer,"Activate next sibling layer, skipping over groups.",Layers,,Menu › All commands › Layers,reachable,
 activatePreviousLayer,Activate previous layer,Layers,,Menu › All commands › Layers,reachable,
 activatePreviousSiblingLayer,"Activate previous sibling layer, skipping over groups.",Layers,,Menu › All commands › Layers,reachable,
-add_new_adjustment_layer,Add Filter Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok (opened KisDlgAdjustmentLayer)
+add_new_adjustment_layer,Add Filter Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok
 add_new_clone_layer,Add Clone Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
 add_new_colorize_mask,Add Colorize Mask,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
 add_new_fast_color_overlay_mask,Add Color Overlay Mask,Layers,,Menu › All commands › Layers,reachable,
 add_new_file_layer,Add File Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok (opened KisDlgFileLayer)
-add_new_fill_layer,Add Fill Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok (opened KisDlgGeneratorLayer)
+add_new_fill_layer,Add Fill Layer...,Layers,Layer > New,Menu › Layer › New,reachable,ok
 add_new_filter_mask,Add Filter Mask...,Layers,Layer > New,Menu › Layer › New,reachable,disabled (not available in this state)
 add_new_group_layer,Add Group Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
 add_new_paint_layer,Add Paint Layer,Layers,Layer > New,Menu › Layer › New,reachable,ok
@@ -489,7 +489,7 @@ plugin_importer_file,Import Python Plugin from File...,Python Plugin Importer,,,
 plugin_importer_web,Import Python Plugin from Web...,Python Plugin Importer,,,not created at runtime,
 recorder_export,Export Timelapse...,Recorder,,Menu › All commands › Recorder,reachable,
 recorder_record_toggle,Record Timelapse,Recorder,,Menu › All commands › Recorder,reachable,
-manage_supporter_bundles,Get More Resources...,Resources,Settings,Menu › Settings,reachable,ok (opened KisSupporterBundlesDialog)
+manage_supporter_bundles,Get More Resources...,Resources,Settings,Menu › Settings,reachable,ok
 spen_circle_ccw,S-Pen Gesture Circle Counter-Clockwise,S-Pen Actions,,Menu › All commands › S-Pen Actions,reachable,
 spen_circle_cw,S-Pen Gesture Circle Clockwise,S-Pen Actions,,Menu › All commands › S-Pen Actions,reachable,
 spen_click,S-Pen Button Click,S-Pen Actions,,Menu › All commands › S-Pen Actions,reachable,
@@ -528,7 +528,7 @@ svg_weight_demi,Demi,SVG Text Tool,,Menu › All commands › SVG Text Tool,reac
 svg_weight_light,Light,SVG Text Tool,,Menu › All commands › SVG Text Tool,reachable,
 svg_weight_normal,Normal,SVG Text Tool,,Menu › All commands › SVG Text Tool,reachable,
 borderselection,Border Selection...,Select,Select,Menu › Select,reachable,disabled (not available in this state)
-colorrange,Select from Color Range...,Select,Select,Menu › Select,reachable,ok
+colorrange,Select from Color Range...,Select,Select,Menu › Select,reachable,ok (opened DlgColorRange)
 configure_sap,Configure selection actions bar,Select,Select,Menu › All commands › Select,reachable,
 convert_shapes_to_vector_selection,Convert Shapes to Vector Selection,Select,Select,Menu › Select,reachable,disabled (not available in this state)
 convert_to_raster_selection,Convert to Raster Selection,Select,Select,Menu › Select,reachable,disabled (not available in this state)
@@ -540,7 +540,7 @@ featherselection,Feather Selection...,Select,Select,Menu › Select,reachable,di
 growselection,Grow Selection...,Select,Select,Menu › Select,reachable,disabled (not available in this state)
 reselect,Reselect,Select,Select,Menu › Select,reachable,disabled (not available in this state)
 select_all,Select All,Select,Select,Menu › Select,reachable,ok
-selectionscale,Scale...,Select,Select,Menu › Select,reachable,ok
+selectionscale,Scale...,Select,Select,Menu › Select,reachable,ok (opened DlgLayerSize)
 selectopaque,Select Opaque (Replace),Select,Select | Select > Select Opaque,Menu › Select › Select Opaque,reachable,ok
 selectopaque_add,Select Opaque (Add),Select,Select > Select Opaque,Menu › Select › Select Opaque,reachable,ok
 selectopaque_intersect,Select Opaque (Intersect),Select,Select > Select Opaque,Menu › Select › Select Opaque,reachable,ok
@@ -549,8 +549,8 @@ shrinkselection,Shrink Selection...,Select,Select,Menu › Select,reachable,disa
 smoothselection,Smooth,Select,Select,Menu › Select,reachable,disabled (not available in this state)
 toggle_display_selection,Display Selection,Select,Select,Menu › Select,reachable,disabled (not available in this state)
 dbexplorer,Explore Resources Cache Database...,Settings,Tools,Menu › All commands › Settings,reachable,
-manage_bundles,Manage Resource Libraries...,Settings,Settings,Menu › Settings,reachable,ok
-manage_resources,Manage Resources...,Settings,Settings,Menu › Settings,reachable,ok (opened DlgResourceManager)
+manage_bundles,Manage Resource Libraries...,Settings,Settings,Menu › Settings,reachable,ok (opened DlgBundleManager)
+manage_resources,Manage Resources...,Settings,Settings,Menu › Settings,reachable,ok
 options_configure,Configure Krita...,Settings,Settings,Menu › Settings,reachable,ok (opened KisDlgPreferences)
 options_configure_keybinding,Configure Shortcuts...,Settings,Settings,,not created at runtime,
 options_configure_toolbars,Configure Toolbars...,Settings,Settings,Menu › Settings,reachable,ok (opened KisKEditToolBar)
