@@ -1,4 +1,3 @@
-== linux (run 22): cancelled
 status: cancelled
 branch: mobile
 commit: eefbff2a52f50b65ca403f8baaff90d28d52dcdc
@@ -8,4 +7,3 @@ perf:
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   35G  110G  24% /
-
