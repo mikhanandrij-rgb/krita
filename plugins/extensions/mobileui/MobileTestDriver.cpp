@@ -10,7 +10,9 @@
 
 #include <KisMainWindow.h>
 
+#include <QAction>
 #include <QApplication>
+#include <QDialog>
 #include <QDir>
 #include <QFile>
 #include <QPixmap>
@@ -131,6 +133,13 @@ private:
         openPanelAndShoot(QStringLiteral("view"), QStringLiteral("history"), QStringLiteral("16-history"));
         openPanelAndShoot(QStringLiteral("text"), QStringLiteral("text"), QStringLiteral("17-text"));
         openPanelAndShoot(QStringLiteral("menu"), QString(), QStringLiteral("18-menu"));
+        m_steps.append([this] {
+            if (m_shell && m_shell->commandBrowser()) {
+                m_shell->openPanel(QStringLiteral("menu"));
+                m_shell->commandBrowser()->showAllCommands();
+            }
+        });
+        m_steps.append([this] { shot(QStringLiteral("18b-all-commands")); });
         openPanelAndShoot(QStringLiteral("more"), QString(), QStringLiteral("19-more"));
         m_steps.append([this] {
             if (m_shell) {
@@ -139,10 +148,62 @@ private:
         });
     }
 
+    // Opens one of Krita's dialogs through its action, screenshots it and
+    // closes it again. Modal dialogs run a nested event loop, so the grab is
+    // scheduled before triggering.
+    void addDialog(const QString &actionName)
+    {
+        m_steps.append([this, actionName] {
+            if (!m_shell) {
+                return;
+            }
+            m_shell->closePanel();
+            QAction *action = m_shell->findAction(actionName);
+            if (!action) {
+                log(QStringLiteral("dialog %1: action not found").arg(actionName));
+                return;
+            }
+            QTimer::singleShot(3000, this, [this, actionName] {
+                QWidget *w = QApplication::activeModalWidget();
+                if (!w) {
+                    QWidget *active = QApplication::activeWindow();
+                    if (active && active != mw()) {
+                        w = active;
+                    }
+                }
+                if (!w) {
+                    log(QStringLiteral("dialog %1: no window appeared").arg(actionName));
+                    return;
+                }
+                QString safe = actionName;
+                safe.replace(QLatin1Char(' '), QLatin1Char('_'));
+                const QString path = QDir(m_dir).filePath(QStringLiteral("dialog-%1.png").arg(safe));
+                const bool ok = w->grab().save(path);
+                log(QStringLiteral("dialog %1: %2 %3x%4 min %5x%6 %7")
+                        .arg(actionName, QString::fromLatin1(w->metaObject()->className()))
+                        .arg(w->width())
+                        .arg(w->height())
+                        .arg(w->minimumSizeHint().width())
+                        .arg(w->minimumSizeHint().height())
+                        .arg(ok ? QStringLiteral("saved") : QStringLiteral("FAILED")));
+                if (QDialog *dialog = qobject_cast<QDialog *>(w)) {
+                    dialog->reject();
+                } else {
+                    w->close();
+                }
+            });
+            action->trigger();
+        });
+    }
+
     void buildSteps()
     {
         m_steps.append([this] { setSize(411, 891, QStringLiteral("portrait")); });
         addScreens();
+        for (const char *name : {"file_new", "options_configure", "imagesize", "canvassize", "image_properties",
+                                 "layer_properties", "layer_style", "krita_filter_gaussian blur", "render_animation"}) {
+            addDialog(QString::fromLatin1(name));
+        }
         m_steps.append([this] { setSize(891, 411, QStringLiteral("landscape")); });
         addScreens();
         m_steps.append([this] {

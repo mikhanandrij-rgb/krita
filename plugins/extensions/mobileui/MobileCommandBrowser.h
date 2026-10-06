@@ -58,6 +58,8 @@ public:
     // Activates an action exactly like tapping its row does. Used by the
     // automated smoke test.
     void activateForTest(QAction *action) { activate(action); }
+    // Opens the "All commands" page (used by the screenshot run).
+    void showAllCommands() { reset(); pushCategories(); }
 
 public Q_SLOTS:
     void reset();

@@ -8,6 +8,7 @@
 #include "MobileShell.h"
 #include "MobileCommandBrowser.h"
 #include "MobileConfig.h"
+#include "MobileDialogFitter.h"
 #include "MobileHub.h"
 #include "MobilePanels.h"
 #include "MobileSheet.h"
@@ -36,6 +37,7 @@
 #include <klocalizedstring.h>
 
 #include <QAbstractButton>
+#include <QPalette>
 #include <QAbstractItemView>
 #include <QCoreApplication>
 #include <QFileInfo>
@@ -143,6 +145,20 @@ bool usesOpacity(const QString &toolId)
 }
 
 const QString SAMPLER_TOOL = QStringLiteral("KritaSelected/KisToolColorSampler");
+
+// Krita's panels inside the sheets get the sheet's surface colors, so they
+// read as part of the phone interface. Only background roles change; text
+// and highlight colors stay Krita's.
+void applyPanelPalette(QWidget *panel)
+{
+    const Theme &t = Theme::current();
+    QPalette p = panel->palette();
+    p.setColor(QPalette::Window, t.surface);
+    p.setColor(QPalette::Base, t.surface2);
+    p.setColor(QPalette::AlternateBase, t.surface3);
+    p.setColor(QPalette::Button, t.surface2);
+    panel->setPalette(p);
+}
 
 // QToolBar shows an overflow button when its content is squeezed; the phone
 // bars lay themselves out to fit, so it would only show up as a glitch.
@@ -458,6 +474,10 @@ void Shell::activate()
         mw->centralWidget()->installEventFilter(this);
     }
     qApp->installEventFilter(this);
+    if (!m_dialogFitter) {
+        m_dialogFitter = new DialogFitter(this);
+    }
+    qApp->installEventFilter(m_dialogFitter);
 
     updateLayout();
     updateTitle();
@@ -478,6 +498,9 @@ void Shell::deactivate()
     }
     KisMainWindow *mw = m_mainWindow;
     qApp->removeEventFilter(this);
+    if (m_dialogFitter) {
+        qApp->removeEventFilter(m_dialogFitter);
+    }
     mw->removeEventFilter(this);
     if (mw->centralWidget()) {
         mw->centralWidget()->removeEventFilter(this);
@@ -771,6 +794,7 @@ void Shell::adoptDocks()
             m_sheet->addPanel(panelId, dock->windowTitle());
         }
         m_sheet->addTab(panelId, tabId, stripMnemonic(dock->windowTitle()), tabIcon, dock, true);
+        applyPanelPalette(dock);
         dock->show();
         dock->installEventFilter(this);
     };
@@ -882,6 +906,7 @@ void Shell::releaseDocks()
                 m_sheet->takeTabContent(hd.panelId, hd.tabId);
             }
             unwrapTitleBar(hd);
+            dock->setPalette(QPalette());
             if (dock->titleBarWidget()) {
                 dock->titleBarWidget()->setVisible(hd.titleBarWasVisible);
             }
@@ -940,6 +965,7 @@ void Shell::adoptPopups()
                 hp.tabId = tabId;
                 const QString title = content->windowTitle().isEmpty() ? frame->windowTitle() : content->windowTitle();
                 m_sheet->addTab(panelId, tabId, stripMnemonic(title), mobileui::icon(QString::fromLatin1(p.iconName)), content, true);
+                applyPanelPalette(content);
                 content->show();
                 frame->installEventFilter(this);
                 m_popups.append(hp);
@@ -969,6 +995,7 @@ void Shell::releasePopups()
         }
         QWidget *content = m_sheet ? m_sheet->takeTabContent(hp.panelId, hp.tabId) : hp.widget.data();
         if (content && hp.frame && hp.frame->layout()) {
+            content->setPalette(QPalette());
             content->setParent(hp.frame);
             hp.frame->layout()->addWidget(content);
         }
@@ -1282,6 +1309,16 @@ void Shell::reapplyTheme()
     }
     if (m_sheet) {
         m_sheet->refreshTheme();
+    }
+    for (const HostedDock &hd : qAsConst(m_docks)) {
+        if (hd.dock) {
+            applyPanelPalette(hd.dock);
+        }
+    }
+    for (const HostedPopup &hp : qAsConst(m_popups)) {
+        if (hp.widget) {
+            applyPanelPalette(hp.widget);
+        }
     }
 }
 

@@ -30,6 +30,7 @@ class QWidget;
 namespace mobileui {
 
 class CommandBrowser;
+class DialogFitter;
 class Hub;
 class MorePanel;
 class QuickSliders;
@@ -61,6 +62,7 @@ public:
     CommandBrowser *commandBrowser() const;
     KisMainWindow *mainWindow() const;
     QStringList panelIds() const;
+    QAction *findAction(const QString &name) const { return action(name); }
     QStringList hostedDockIds() const;
     QString panelOfDock(const QString &dockId) const;
     void dumpInventory(const QString &path);
@@ -160,6 +162,7 @@ private:
     QPointer<ToolDrawer> m_drawer;
     QPointer<MorePanel> m_more;
     QPointer<Hub> m_hub;
+    QPointer<DialogFitter> m_dialogFitter;
     QPointer<QStatusBar> m_statusBar;
     QPointer<QWidget> m_statusPage;
 
