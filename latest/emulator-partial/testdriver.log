@@ -1,0 +1,9 @@
+interface: classic (smallest side 411 dp)
+perf classic-start: interface-ready-ms=100958 first-canvas-ms=-1 rss-kb=1345360 peak-kb=1354880 uptime-ms=106694
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-01-start.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-02-canvas.png ok
+perf classic-canvas: interface-ready-ms=100958 first-canvas-ms=115519 rss-kb=1485632 peak-kb=1485632 uptime-ms=119368
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-landscape-02-canvas.png ok
+screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-desktop-02-canvas.png ok
+perf classic-end: interface-ready-ms=100958 first-canvas-ms=115519 rss-kb=1504704 peak-kb=1515948 uptime-ms=130153
+done
