@@ -647,5 +647,3 @@ walk 675/691: KisToolTransformLiquify
 walk 676/691: KisToolTransformMesh
 walk 677/691: KisToolTransformPerspective
 walk 678/691: KisToolTransformWarp
-walk 679/691: ZoomTool
-walk 680/691: show_snap_options_popup
