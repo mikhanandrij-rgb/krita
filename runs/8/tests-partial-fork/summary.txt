@@ -1,4 +1,3 @@
-== tests-partial-fork (run 8): running
 status: running
 commit: 9cff990a44873789205b37fb7142253bcc3258b3
 Tue Oct  6 10:38:00 UTC 2026
@@ -13,4 +12,3 @@ Swap:           3071           0        3071
  55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    2.05 sec
  60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.82 sec
  61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   18.07 sec
-
