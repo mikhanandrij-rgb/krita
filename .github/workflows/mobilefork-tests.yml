@@ -22,10 +22,17 @@ env:
   CI_TOOLS: /home/runner/ci
 
 jobs:
+  # The same tests for the fork and for upstream Krita (the master commit
+  # the fork is based on), so failures can be told apart: a test failing in
+  # both is not caused by the fork.
   linux-tests:
-    name: Linux build with unit tests
+    name: Linux unit tests (${{ matrix.source }})
     runs-on: ubuntu-24.04
     timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        source: [fork, upstream]
     steps:
       - name: Free disk space
         run: |
@@ -37,6 +44,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
+      - name: Use upstream sources (upstream variant)
+        if: matrix.source == 'upstream'
+        run: |
+          base=$(cat mobilefork/ci/upstream-base.txt)
+          git fetch --depth=1 origin "$base"
+          # Upstream's tree, but this repository's CI scripts.
+          git checkout FETCH_HEAD -- . ':!.github' ':!mobilefork'
+          rm -rf plugins/extensions/mobileui po/*/kritamobileui.po
+          git status --short | head -20
+          grep -n mobileui plugins/extensions/CMakeLists.txt || echo "no phone interface in this tree"
 
       - uses: actions/setup-python@v5
         with:
@@ -67,8 +85,9 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: /home/runner/ccache
-          key: ccache-linux-tests-${{ github.sha }}
+          key: ccache-linux-tests-${{ matrix.source }}-${{ github.sha }}
           restore-keys: |
+            ccache-linux-tests-${{ matrix.source }}-
             ccache-linux-tests-
             ccache-linux-
 
@@ -137,7 +156,7 @@ jobs:
                 grep -c 'Test *#' logs/ctest.log; grep -E 'Failed|Timeout|Exception' logs/ctest.log | tail -20; } > tests-partial.txt 2>&1
               mkdir -p tests-partial; tail -c 50000 logs/ctest.log > tests-partial/ctest.log.tail
               ps aux --sort=-rss | head -8 > tests-partial/top-memory.txt
-              bash mobilefork/ci/publish-status.sh tests-partial running tests-partial.txt tests-partial logs > /dev/null 2>&1
+              bash mobilefork/ci/publish-status.sh "tests-partial-${{ matrix.source }}" running tests-partial.txt tests-partial logs > /dev/null 2>&1
             done
           ) &
           monitor=$!
@@ -156,7 +175,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: /home/runner/ccache
-          key: ccache-linux-tests-${{ github.sha }}
+          key: ccache-linux-tests-${{ matrix.source }}-${{ github.sha }}
 
       - name: Summarize test results
         if: always()
@@ -185,4 +204,4 @@ jobs:
             grep -E "tests passed|tests failed" logs/ctest.log | tail -3
             cat logs/ctest-count.txt 2>/dev/null
           } > status-summary.txt
-          bash mobilefork/ci/publish-status.sh tests "${JOB_STATUS}" status-summary.txt status-extra logs
+          bash mobilefork/ci/publish-status.sh "tests-${{ matrix.source }}" "${JOB_STATUS}" status-summary.txt status-extra logs

@@ -46,9 +46,14 @@ for attempt in 1 2 3 4 5; do
         fi
     done
 
-    # Keep the branch small: only the last 15 runs.
+    # Keep the branch small: the last 15 runs of this job. (Run numbers are
+    # per workflow, so other jobs' runs are left alone.)
     if [ -d "$st/runs" ]; then
-        ls -1 "$st/runs" | sort -n | head -n -15 | while read -r old; do rm -rf "$st/runs/$old"; done
+        for d in "$st"/runs/*/"$job"; do [ -d "$d" ] && basename "$(dirname "$d")"; done | sort -n | head -n -15 |
+            while read -r old; do
+                rm -rf "$st/runs/$old/$job"
+                rmdir "$st/runs/$old" 2>/dev/null || true
+            done
     fi
 
     git -C "$st" add -A
