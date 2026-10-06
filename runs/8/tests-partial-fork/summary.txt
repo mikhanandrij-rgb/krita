@@ -1,11 +1,11 @@
 status: running
 commit: 9cff990a44873789205b37fb7142253bcc3258b3
-Tue Oct  6 10:42:07 UTC 2026
+Tue Oct  6 10:44:10 UTC 2026
                total        used        free      shared  buff/cache   available
-Mem:           15989        1151        1393          56       13847       14838
+Mem:           15989        8007         236          56        8148        7982
 Swap:           3071           0        3071
-/dev/root       145G   40G  106G  28% /
-228
+/dev/root       145G   46G   99G  32% /
+290
   2/321 Test   #1: appstreamtest .......................................................***Failed    3.72 sec
  53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.85 sec
  54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.48 sec
@@ -14,3 +14,8 @@ Swap:           3071           0        3071
  61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   18.07 sec
 175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   19.88 sec
 196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.77 sec
+247/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.29 sec
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.03 sec
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    1.87 sec
+QWARN  : KisKraLoaderTest::testLoading() krita.general: Failed to load a proofing profile!
+290/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.02 sec

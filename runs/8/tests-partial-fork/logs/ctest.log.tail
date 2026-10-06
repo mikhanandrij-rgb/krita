@@ -1,262 +1,4 @@
-NING: One grid point has been removed from consideration QPointF(0,192)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
-QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
-PASS   : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage()
-RESULT : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage():
-     9 msecs per iteration (total: 9, iterations: 1)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
-PASS   : KisCageTransformWorkerTest::testCageCounterclockwise()
-RESULT : KisCageTransformWorkerTest::testCageCounterclockwise():
-     19 msecs per iteration (total: 19, iterations: 1)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
-QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
-QDEBUG : KisCageTransformWorkerTest::testCageClockwiseUnity()  Different at QPoint(299,151) source 0 0 0 0 dest 255 255 255 255 fuzzy 1 fuzzyAlpha 1 ( 1 of 0 allowed )
-QDEBUG : KisCageTransformWorkerTest::testCageClockwiseUnity() --- Wrong image: "clk_unity"
-FAIL!  : KisCageTransformWorkerTest::testCageClockwiseUnity() 'TestUtil::checkQImage(result, "cage_transform_test", "cage", testName, 1, 1)' returned FALSE. ()
-   Loc: [/home/runner/work/krita/krita/libs/image/tests/kis_cage_transform_worker_test.cpp(114)]
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
-QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
-QDEBUG : KisCageTransformWorkerTest::testCageCounterclockwiseUnity()  Different at QPoint(299,152) source 0 0 0 0 dest 255 255 255 255 fuzzy 1 fuzzyAlpha 1 ( 1 of 0 allowed )
-QDEBUG : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() --- Wrong image: "cclk_unity"
-FAIL!  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() 'TestUtil::checkQImage(result, "cage_transform_test", "cage", testName, 1, 1)' returned FALSE. ()
-   Loc: [/home/runner/work/krita/krita/libs/image/tests/kis_cage_transform_worker_test.cpp(114)]
-PASS   : KisCageTransformWorkerTest::stressTestRandomCages()
-PASS   : KisCageTransformWorkerTest::testUnityGreenCoordinates()
+ityGreenCoordinates()
 PASS   : KisCageTransformWorkerTest::testTransformAsBase()
 PASS   : KisCageTransformWorkerTest::testAngleBetweenVectors()
 PASS   : KisCageTransformWorkerTest::cleanupTestCase()
@@ -388,3 +130,431 @@ Fontconfig error: Cannot load default config file: No such file: (null)
         Start 229: libs-ui-kis_shape_layer_test
 228/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................   Passed  291.95 sec
         Start 230: libs-ui-KisSafeDocumentLoaderTest
+229/321 Test #230: libs-ui-KisSafeDocumentLoaderTest ...................................   Passed   19.50 sec
+        Start 231: libs-ui-KisSurfaceColorSpaceWrapperTest
+230/321 Test #231: libs-ui-KisSurfaceColorSpaceWrapperTest .............................   Passed    0.01 sec
+        Start 232: libs-ui-KisInputProfileManagerTest
+231/321 Test #232: libs-ui-KisInputProfileManagerTest ..................................   Passed    0.09 sec
+        Start 233: libs-ui-kis_doc2_test
+232/321 Test #233: libs-ui-kis_doc2_test ...............................................   Passed    2.00 sec
+        Start 234: libs-ui-kis_file_layer_test
+233/321 Test #234: libs-ui-kis_file_layer_test .........................................   Passed    2.55 sec
+        Start 235: libs-ui-KisAppimageUpdaterTest
+234/321 Test #235: libs-ui-KisAppimageUpdaterTest ......................................   Passed    7.04 sec
+        Start 236: libs-ui-KisManualUpdaterTest
+235/321 Test #236: libs-ui-KisManualUpdaterTest ........................................   Passed    2.99 sec
+        Start 237: libs-ui-KisMultiFeedRssModelTest
+236/321 Test #237: libs-ui-KisMultiFeedRssModelTest ....................................   Passed    0.03 sec
+        Start 238: libs-ui-KisSelectionDecorationTest
+237/321 Test #238: libs-ui-KisSelectionDecorationTest ..................................   Passed    4.02 sec
+        Start 239: libs-ui-KisNodeDummiesGraphTest
+238/321 Test #239: libs-ui-KisNodeDummiesGraphTest .....................................   Passed    0.03 sec
+        Start 240: libs-ui-KisNodeShapesGraphTest
+239/321 Test #240: libs-ui-KisNodeShapesGraphTest ......................................   Passed    0.03 sec
+        Start 241: libs-ui-KisModelIndexConverterTest
+240/321 Test #241: libs-ui-KisModelIndexConverterTest ..................................   Passed    0.74 sec
+        Start 242: libs-ui-KisCategorizedListModelTest
+241/321 Test #242: libs-ui-KisCategorizedListModelTest .................................   Passed    0.03 sec
+        Start 243: libs-ui-KisNodeJugglerCompressedTest
+242/321 Test #243: libs-ui-KisNodeJugglerCompressedTest ................................   Passed    5.14 sec
+        Start 244: libs-ui-KisInputManagerTest
+243/321 Test #244: libs-ui-KisInputManagerTest .........................................   Passed    1.67 sec
+        Start 245: libs-ui-kis_node_model_test
+244/321 Test #245: libs-ui-kis_node_model_test .........................................   Passed    1.77 sec
+        Start 246: libs-ui-kis_shape_controller_test
+245/321 Test #246: libs-ui-kis_shape_controller_test ...................................   Passed    6.03 sec
+        Start 247: libs-ui-kis_dummies_facade_test
+246/321 Test #247: libs-ui-kis_dummies_facade_test .....................................   Passed    5.40 sec
+        Start 248: libs-ui-kis_view_signals_test
+247/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.29 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisViewSignalsTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+
+=== Received signal at function time: 33ms, total time: 33ms, dumping stack ===
+=== End of stack trace ===
+QFATAL : KisViewSignalsTest::initTestCase() Received signal 11
+         Function time: 33ms Total time: 33ms
+FAIL!  : KisViewSignalsTest::initTestCase() Received a fatal error.
+   Loc: [Unknown file(0)]
+Totals: 0 passed, 1 failed, 0 skipped, 0 blacklisted, 34ms
+********* Finished testing of KisViewSignalsTest *********
+
+        Start 249: libs-libkis-TestChannel
+248/321 Test #249: libs-libkis-TestChannel .............................................   Passed    0.99 sec
+        Start 250: libs-libkis-TestDocument
+249/321 Test #250: libs-libkis-TestDocument ............................................   Passed    2.93 sec
+        Start 251: libs-libkis-TestNode
+250/321 Test #251: libs-libkis-TestNode ................................................   Passed    1.88 sec
+        Start 252: libs-libkis-TestVectorLayer
+251/321 Test #252: libs-libkis-TestVectorLayer .........................................   Passed    1.50 sec
+        Start 253: libs-libkis-TestShape
+252/321 Test #253: libs-libkis-TestShape ...............................................   Passed    1.40 sec
+        Start 254: libs-libkis-TestFilter
+253/321 Test #254: libs-libkis-TestFilter ..............................................   Passed    1.75 sec
+        Start 255: libs-libkis-TestManagedColor
+254/321 Test #255: libs-libkis-TestManagedColor ........................................   Passed    1.02 sec
+        Start 256: libs-libkis-TestNotifier
+255/321 Test #256: libs-libkis-TestNotifier ............................................   Passed    1.00 sec
+        Start 257: libs-resources-TestResourceCacheDb
+256/321 Test #257: libs-resources-TestResourceCacheDb ..................................   Passed    0.02 sec
+        Start 258: libs-resources-TestResourceLoaderRegistry
+257/321 Test #258: libs-resources-TestResourceLoaderRegistry ...........................   Passed    0.01 sec
+        Start 259: libs-resources-TestResourceLocator
+258/321 Test #259: libs-resources-TestResourceLocator ..................................   Passed    3.58 sec
+        Start 260: libs-resources-TestResourceStorage
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.03 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+********* Start testing of TestResourceStorage *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : TestResourceStorage::initTestCase()
+FAIL!  : TestResourceStorage::testStorage() 'storage.valid()' returned FALSE. ()
+   Loc: [/home/runner/work/krita/krita/libs/resources/tests/TestResourceStorage.cpp(49)]
+Fontconfig error: Cannot load default config file: No such file: (null)
+QWARN  : TestResourceStorage::testImportExportResource() 		Could not set current file 0 "patterns/testpattern.png"
+QWARN  : TestResourceStorage::testImportExportResource() Could not open file in bundle "patterns/testpattern.png"
+PASS   : TestResourceStorage::testImportExportResource()
+PASS   : TestResourceStorage::testAddResource()
+PASS   : TestResourceStorage::testStorageVersioningHelperCounting()
+PASS   : TestResourceStorage::cleanupTestCase()
+Totals: 5 passed, 1 failed, 0 skipped, 0 blacklisted, 16ms
+********* Finished testing of TestResourceStorage *********
+
+        Start 261: libs-resources-TestFolderStorage
+260/321 Test #261: libs-resources-TestFolderStorage ....................................   Passed    0.13 sec
+        Start 262: libs-resources-TestMemoryStorage
+261/321 Test #262: libs-resources-TestMemoryStorage ....................................   Passed    0.02 sec
+        Start 263: libs-resources-TestTag
+262/321 Test #263: libs-resources-TestTag ..............................................   Passed    0.01 sec
+        Start 264: libs-resources-TestBundleStorage
+263/321 Test #264: libs-resources-TestBundleStorage ....................................   Passed    0.41 sec
+        Start 265: libs-resources-TestResourceModel
+264/321 Test #265: libs-resources-TestResourceModel ....................................   Passed    0.21 sec
+        Start 266: libs-resources-TestTagFilterResourceProxyModel
+265/321 Test #266: libs-resources-TestTagFilterResourceProxyModel ......................   Passed    0.28 sec
+        Start 267: libs-resources-TestTagModel
+266/321 Test #267: libs-resources-TestTagModel .........................................   Passed    0.13 sec
+        Start 268: libs-resources-TestResourceTypeModel
+267/321 Test #268: libs-resources-TestResourceTypeModel ................................   Passed    0.25 sec
+        Start 269: libs-resources-TestStorageModel
+268/321 Test #269: libs-resources-TestStorageModel .....................................   Passed    0.11 sec
+        Start 270: libs-resources-TestResourceSearchBoxFilter
+269/321 Test #270: libs-resources-TestResourceSearchBoxFilter ..........................   Passed    0.01 sec
+        Start 271: libs-resources-TestStorageFilterProxyModel
+270/321 Test #271: libs-resources-TestStorageFilterProxyModel ..........................   Passed    0.11 sec
+        Start 272: libs-resources-TestTagResourceModel
+271/321 Test #272: libs-resources-TestTagResourceModel .................................   Passed    0.18 sec
+        Start 273: libs-metadata-kis_meta_data_test
+272/321 Test #273: libs-metadata-kis_meta_data_test ....................................   Passed    0.01 sec
+        Start 274: plugins-assistants-Assistants-TestPerspectiveBasedAssistantHelper
+273/321 Test #274: plugins-assistants-Assistants-TestPerspectiveBasedAssistantHelper ...   Passed    1.10 sec
+        Start 275: plugins-assistants-Assistants-TestAssistants
+274/321 Test #275: plugins-assistants-Assistants-TestAssistants ........................   Passed    0.96 sec
+        Start 276: plugins-color-lcms2engine-TestKoLcmsColorProfile
+275/321 Test #276: plugins-color-lcms2engine-TestKoLcmsColorProfile ....................   Passed    0.76 sec
+        Start 277: plugins-color-lcms2engine-TestColorSpaceRegistry
+276/321 Test #277: plugins-color-lcms2engine-TestColorSpaceRegistry ....................   Passed    0.70 sec
+        Start 278: plugins-color-lcms2engine-TestLcmsRGBP2020PQColorSpace
+277/321 Test #278: plugins-color-lcms2engine-TestLcmsRGBP2020PQColorSpace ..............   Passed    2.48 sec
+        Start 279: plugins-color-lcms2engine-TestProfileGeneration
+278/321 Test #279: plugins-color-lcms2engine-TestProfileGeneration .....................   Passed    1.27 sec
+        Start 280: plugins-dockers-layerdocker-TestNodeView
+279/321 Test #280: plugins-dockers-layerdocker-TestNodeView ............................   Passed    0.75 sec
+        Start 281: plugins-dockers-lut-KisOcioDisplayFilterTest
+280/321 Test #281: plugins-dockers-lut-KisOcioDisplayFilterTest ........................   Passed    0.75 sec
+        Start 282: plugins-dockers-animation-kis_animation_utils_test
+281/321 Test #282: plugins-dockers-animation-kis_animation_utils_test ..................   Passed    0.69 sec
+        Start 283: plugins-dockers-animation-timeline_model_test
+282/321 Test #283: plugins-dockers-animation-timeline_model_test .......................   Passed    1.54 sec
+        Start 284: plugins-dockers-storyboarddocker-StoryboardModelTest
+283/321 Test #284: plugins-dockers-storyboarddocker-StoryboardModelTest ................   Passed    0.03 sec
+        Start 285: plugins-dockers-storyboarddocker-StoryboardTimelineSyncTest
+284/321 Test #285: plugins-dockers-storyboarddocker-StoryboardTimelineSyncTest .........   Passed    0.69 sec
+        Start 286: plugins-extensions-qmic-kis_qmic_tests
+285/321 Test #286: plugins-extensions-qmic-kis_qmic_tests ..............................   Passed    5.70 sec
+        Start 287: plugins-filters-unsharp-kis_unsharp_mask_test
+286/321 Test #287: plugins-filters-unsharp-kis_unsharp_mask_test .......................   Passed    1.41 sec
+        Start 288: plugins-generators-screentone-KisScreentoneGeneratorTest
+287/321 Test #288: plugins-generators-screentone-KisScreentoneGeneratorTest ............   Passed    1.21 sec
+        Start 289: plugins-generators-seexpr-kis_seexpr_generator_test
+288/321 Test #289: plugins-generators-seexpr-kis_seexpr_generator_test .................   Passed    1.60 sec
+        Start 290: plugins-impex-libkra-kis_kra_loader_test
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    1.87 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisKraLoaderTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : KisKraLoaderTest::initTestCase()
+QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisKraLoaderTest::testLoading() krita.general: Failed to load a proofing profile!
+PASS   : KisKraLoaderTest::testLoading()
+PASS   : KisKraLoaderTest::testObligeSingleChild()
+PASS   : KisKraLoaderTest::testObligeSingleChildNonTranspPixel()
+PASS   : KisKraLoaderTest::testLoadAnimated()
+QDEBUG : KisKraLoaderTest::testImportFromWriteonly() import result =  Cannot read:  5   "Cannot open file for reading. Reason: The file could not be opened."
+PASS   : KisKraLoaderTest::testImportFromWriteonly()
+QDEBUG : KisKraLoaderTest::testImportIncorrectFormat() import result =  Error code =  4   "The file format cannot be parsed."
+PASS   : KisKraLoaderTest::testImportIncorrectFormat()
+PASS   : KisKraLoaderTest::testLoadingOldHdrProfileNoCicp()
+QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
+QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
+QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
+QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
+FAIL!  : KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() Compared values are not the same
+   Loc: [/home/runner/work/krita/krita/plugins/impex/libkra/tests/kis_kra_loader_test.cpp(194)]
+PASS   : KisKraLoaderTest::cleanupTestCase()
+Totals: 9 passed, 1 failed, 0 skipped, 0 blacklisted, 470ms
+********* Finished testing of KisKraLoaderTest *********
+
+        Start 291: plugins-impex-libkra-kis_kra_saver_test
+290/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.02 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisKraSaverTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : KisKraSaverTest::initTestCase()
+PASS   : KisKraSaverTest::testCrashyShapeLayer()
+QWARN  : KisKraSaverTest::testRoundTrip() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisKraSaverTest::testRoundTrip() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisKraSaverTest::testRoundTrip() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+PASS   : KisKraSaverTest::testRoundTrip()
+PASS   : KisKraSaverTest::testSaveEmpty()
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerColor() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerColor() --- External image not found. Skipping... "00_initial_layer_update"
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerColor() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerColor() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerColor() --- External image not found. Skipping... "01_fill_layer_round_trip"
+PASS   : KisKraSaverTest::testRoundTripFillLayerColor()
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() createLocalResourcesSnapshot: failed to load a linked resource: KoResourceSignature("patterns", "", "", "11_drawed_furry.png")
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerPattern() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerPattern() --- External image not found. Skipping... "00_initial_layer_update"
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() createLocalResourcesSnapshot: failed to load a linked resource: KoResourceSignature("patterns", "", "", "Grid01.pat")
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() createLocalResourcesSnapshot: failed to load a linked resource: KoResourceSignature("patterns", "", "", "11_drawed_furry.png")
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripFillLayerPattern() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerPattern() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripFillLayerPattern() --- External image not found. Skipping... "01_fill_layer_round_trip"
+PASS   : KisKraSaverTest::testRoundTripFillLayerPattern()
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripLayerStyles() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripLayerStyles() --- External image not found. Skipping... "00_initial_layers"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Nm  " 5QHashI7QStringSt8functionIFvRKS0_EEE "<paint1> (embedded)"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Idnt" 5QHashI7QStringSt8functionIFvRKS0_EEE "d7aa369d-9a84-443c-b015-bcaff56756e5"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/masterFXSwitch" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/enab" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/Clr " 5QHashI7QStringSt8functionIFvRK7KoColorEEE KoColor ("RGBA", "Blue":0, "Green":0, "Red":0, "Alpha":255)
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/uglg" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/AntA" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/layerConceals" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Nm  " 5QHashI7QStringSt8functionIFvRKS0_EEE "<paint2> (embedded)"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Idnt" 5QHashI7QStringSt8functionIFvRKS0_EEE "2d5271e6-65d9-482a-b154-3b4eac6796e1"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/masterFXSwitch" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/enab" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/Clr " 5QHashI7QStringSt8functionIFvRK7KoColorEEE KoColor ("RGBA", "Blue":0, "Green":0, "Red":0, "Alpha":255)
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/uglg" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/AntA" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/layerConceals" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Nm  " 5QHashI7QStringSt8functionIFvRKS0_EEE "<paint3> (embedded)"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/null/Idnt" 5QHashI7QStringSt8functionIFvRKS0_EEE "e6e780a5-e626-436c-9312-524c69550680"
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/masterFXSwitch" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/enab" 5QHashI7QStringSt8functionIFvbEEE true
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/Clr " 5QHashI7QStringSt8functionIFvRK7KoColorEEE KoColor ("RGBA", "Blue":0, "Green":0, "Red":0, "Alpha":255)
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/uglg" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/AntA" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Unhandled: "/Styl/Lefx/DrSh/layerConceals" 5QHashI7QStringSt8functionIFvbEEE false
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: convertAndSetBlendMode: Curve conversion is not implemented yet
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: convertAndSetBlendMode: Curve conversion is not implemented yet
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: convertAndSetBlendMode: Curve conversion is not implemented yet
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() Could not create loader for "layerstyles" "{d7aa369d-9a84-443c-b015-bcaff56756e5}" ""
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() Could not create loader for "layerstyles" "{e6e780a5-e626-436c-9312-524c69550680}" ""
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() Could not create loader for "layerstyles" "{2d5271e6-65d9-482a-b154-3b4eac6796e1}" ""
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripLayerStyles() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripLayerStyles() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripLayerStyles() --- External image not found. Skipping... "00_initial_layers"
+PASS   : KisKraSaverTest::testRoundTripLayerStyles()
+PASS   : KisKraSaverTest::testRoundTripAnimation()
+PASS   : KisKraSaverTest::testRoundTripColorizeMask()
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripShapeLayer() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripShapeLayer() --- External image not found. Skipping... "00_initial_layer_update"
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeLayer() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripShapeLayer() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripShapeLayer() --- External image not found. Skipping... "01_shape_layer_round_trip"
+PASS   : KisKraSaverTest::testRoundTripShapeLayer()
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripShapeSelection() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripShapeSelection() --- External image not found. Skipping... "00_initial_shape_selection"
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() krita.general: Environment variable "KRITA_UNITTESTS_DATA_DIR" is not set
+QWARN  : KisKraSaverTest::testRoundTripShapeSelection() QFSFileEngine::open: No file name specified
+QDEBUG : KisKraSaverTest::testRoundTripShapeSelection() Images have different sizes QSize(512, 512) QSize(0, 0)
+QDEBUG : KisKraSaverTest::testRoundTripShapeSelection() --- External image not found. Skipping... "00_initial_shape_selection"
+PASS   : KisKraSaverTest::testRoundTripShapeSelection()
+PASS   : KisKraSaverTest::testRoundTripStoryboard()
+QDEBUG : KisKraSaverTest::testExportToReadonly() Entering "TestUtil::testExportToReadonly()" QObject(0x0)
+QDEBUG : KisKraSaverTest::testExportToReadonly() export result =  Error code =  13   "Unknown error."
+PASS   : KisKraSaverTest::testExportToReadonly()
+PASS   : KisKraSaverTest::testRoundTripCicp(rec2020)
+
+=== Received signal at function time: 394ms, total time: 1552ms, dumping stack ===
+=== End of stack trace ===
+QFATAL : KisKraSaverTest::testRoundTripCicp(rec2100 PQ 80 nits) Received signal 11
+         Function time: 394ms Total time: 1552ms
+FAIL!  : KisKraSaverTest::testRoundTripCicp(rec2100 PQ 80 nits) Received a fatal error.
+   Loc: [Unknown file(0)]
+Totals: 14 passed, 1 failed, 0 skipped, 0 blacklisted, 1553ms
+********* Finished testing of KisKraSaverTest *********
+
+        Start 292: plugins-impex-jpeg-kis_jpeg_test
