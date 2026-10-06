@@ -1,0 +1,527 @@
+[
+    {
+        "classname": "QtQuick2Plugin",
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick.2",
+        "plugin": "qtquick2plugin",
+        "relativePath": "QtQuick.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickControls2Plugin",
+        "name": "QtQuick.Controls",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2",
+        "plugin": "qtquickcontrols2plugin",
+        "relativePath": "QtQuick/Controls.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickLayoutsPlugin",
+        "name": "QtQuick.Layouts",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Layouts",
+        "plugin": "qquicklayoutsplugin",
+        "relativePath": "QtQuick/Layouts",
+        "type": "module",
+        "version": "1.15"
+    },
+    {
+        "name": "org.krita.tools.text",
+        "type": "module",
+        "version": "1.0"
+    },
+    {
+        "classname": "KritaQmlComponentsPlugin",
+        "name": "org.krita.components",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components",
+        "plugin": "kritaqmlcomponents",
+        "relativePath": "org/krita/components",
+        "type": "module",
+        "version": "1.0"
+    },
+    {
+        "classname": "QtQmlPlugin",
+        "name": "QtQml",
+        "path": "/home/runner/wd/krita/_install/qml/QtQml",
+        "plugin": "qmlplugin",
+        "relativePath": "QtQml",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickTemplates2Plugin",
+        "name": "QtQuick.Templates",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Templates.2",
+        "plugin": "qtquicktemplates2plugin",
+        "relativePath": "QtQuick/Templates.2",
+        "type": "module",
+        "version": "2.5"
+    },
+    {
+        "classname": "QtQmlModelsPlugin",
+        "name": "QtQml.Models",
+        "path": "/home/runner/wd/krita/_install/qml/QtQml/Models.2",
+        "plugin": "modelsplugin",
+        "relativePath": "QtQml/Models.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQmlWorkerScriptPlugin",
+        "name": "QtQml.WorkerScript",
+        "path": "/home/runner/wd/krita/_install/qml/QtQml/WorkerScript.2",
+        "plugin": "workerscriptplugin",
+        "relativePath": "QtQml/WorkerScript.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuick2WindowPlugin",
+        "name": "QtQuick.Window",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Window.2",
+        "plugin": "windowplugin",
+        "relativePath": "QtQuick/Window.2",
+        "type": "module",
+        "version": "2.2"
+    },
+    {
+        "classname": "QtQuick2Plugin",
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick.2",
+        "plugin": "qtquick2plugin",
+        "relativePath": "QtQuick.2",
+        "type": "module",
+        "version": "2.9"
+    },
+    {
+        "classname": "QtQuickControls2Plugin",
+        "name": "QtQuick.Controls",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2",
+        "plugin": "qtquickcontrols2plugin",
+        "relativePath": "QtQuick/Controls.2",
+        "type": "module",
+        "version": "2.5"
+    },
+    {
+        "classname": "QtQuick2Plugin",
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick.2",
+        "plugin": "qtquick2plugin",
+        "relativePath": "QtQuick.2",
+        "type": "module",
+        "version": "2.0"
+    },
+    {
+        "classname": "QtQuickControls2Plugin",
+        "name": "QtQuick.Controls",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2",
+        "plugin": "qtquickcontrols2plugin",
+        "relativePath": "QtQuick/Controls.2",
+        "type": "module",
+        "version": "2.0"
+    },
+    {
+        "classname": "QtQuickLayoutsPlugin",
+        "name": "QtQuick.Layouts",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Layouts",
+        "plugin": "qquicklayoutsplugin",
+        "relativePath": "QtQuick/Layouts",
+        "type": "module",
+        "version": "1.12"
+    },
+    {
+        "name": "org.krita.flake.text",
+        "type": "module",
+        "version": "1.0"
+    },
+    {
+        "classname": "QtQuickLayoutsPlugin",
+        "name": "QtQuick.Layouts",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Layouts",
+        "plugin": "qquicklayoutsplugin",
+        "relativePath": "QtQuick/Layouts",
+        "type": "module",
+        "version": "1.3"
+    },
+    {
+        "classname": "QtQuick2WindowPlugin",
+        "name": "QtQuick.Window",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Window.2",
+        "plugin": "windowplugin",
+        "relativePath": "QtQuick/Window.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQmlModelsPlugin",
+        "name": "QtQml.Models",
+        "path": "/home/runner/wd/krita/_install/qml/QtQml/Models.2",
+        "plugin": "modelsplugin",
+        "relativePath": "QtQml/Models.2",
+        "type": "module",
+        "version": "2.1"
+    },
+    {
+        "name": "angleselector",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/AngleSelector.qml/angleselector",
+        "type": "directory"
+    },
+    {
+        "name": "tooltip",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/AngleSelector.qml/tooltip",
+        "type": "directory"
+    },
+    {
+        "name": "angleselector/AngleSelectorUtil.js",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/AngleSelector.qml/angleselector/AngleSelectorUtil.js",
+        "type": "javascript"
+    },
+    {
+        "name": "spinbox",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/DoubleParseSpinBox.qml/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "sliderspinbox",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/DoubleSliderSpinBox.qml/sliderspinbox",
+        "type": "directory"
+    },
+    {
+        "name": "overlays",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/InformingTextInput.qml/overlays",
+        "type": "directory"
+    },
+    {
+        "name": "spinbox",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/IntParseSpinBox.qml/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "sliderspinbox",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/IntSliderSpinBox.qml/sliderspinbox",
+        "type": "directory"
+    },
+    {
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick",
+        "relativePath": "QtQuick",
+        "type": "module",
+        "version": ""
+    },
+    {
+        "name": "../overlays",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/sliderspinbox/overlays",
+        "type": "directory"
+    },
+    {
+        "name": "../spinbox",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/sliderspinbox/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "../textinput",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/spinbox/textinput",
+        "type": "directory"
+    },
+    {
+        "name": "../overlays",
+        "path": "/home/runner/work/krita/krita/qmlmodules/components/qml/spinbox/overlays",
+        "type": "directory"
+    },
+    {
+        "classname": "QmlShapesPlugin",
+        "name": "QtQuick.Shapes",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Shapes",
+        "plugin": "qmlshapesplugin",
+        "relativePath": "QtQuick/Shapes",
+        "type": "module",
+        "version": "1.15"
+    },
+    {
+        "classname": "QtQuick2Plugin",
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick.2",
+        "plugin": "qtquick2plugin",
+        "relativePath": "QtQuick.2",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickTemplates2Plugin",
+        "name": "QtQuick.Templates",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Templates.2",
+        "plugin": "qtquicktemplates2plugin",
+        "relativePath": "QtQuick/Templates.2",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuick2WindowPlugin",
+        "name": "QtQuick.Window",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Window.2",
+        "plugin": "windowplugin",
+        "relativePath": "QtQuick/Window.2",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickControls2Plugin",
+        "name": "QtQuick.Controls",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2",
+        "plugin": "qtquickcontrols2plugin",
+        "relativePath": "QtQuick/Controls.2",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickTemplates2Plugin",
+        "name": "QtQuick.Templates",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Templates.2",
+        "plugin": "qtquicktemplates2plugin",
+        "relativePath": "QtQuick/Templates.2",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuick2Plugin",
+        "name": "QtQuick",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick.2",
+        "plugin": "qtquick2plugin",
+        "relativePath": "QtQuick.2",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickTemplates2Plugin",
+        "name": "QtQuick.Templates",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Templates.2",
+        "plugin": "qtquicktemplates2plugin",
+        "relativePath": "QtQuick/Templates.2",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickControls2Plugin",
+        "name": "QtQuick.Controls",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2",
+        "plugin": "qtquickcontrols2plugin",
+        "relativePath": "QtQuick/Controls.2",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickControls2ImagineStylePlugin",
+        "name": "QtQuick.Controls.Imagine",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Imagine",
+        "plugin": "qtquickcontrols2imaginestyleplugin",
+        "relativePath": "QtQuick/Controls.2/Imagine",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtGraphicalEffectsPlugin",
+        "name": "QtGraphicalEffects",
+        "path": "/home/runner/wd/krita/_install/qml/QtGraphicalEffects",
+        "plugin": "qtgraphicaleffectsplugin",
+        "relativePath": "QtGraphicalEffects",
+        "type": "module",
+        "version": "1.0"
+    },
+    {
+        "classname": "QtGraphicalEffectsPrivatePlugin",
+        "name": "QtGraphicalEffects/private",
+        "path": "/home/runner/wd/krita/_install/qml/QtGraphicalEffects/private",
+        "plugin": "qtgraphicaleffectsprivate",
+        "relativePath": "QtGraphicalEffects/private",
+        "type": "module",
+        "version": "1.0"
+    },
+    {
+        "classname": "QtQuick2WindowPlugin",
+        "name": "QtQuick.Window",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Window.2",
+        "plugin": "windowplugin",
+        "relativePath": "QtQuick/Window.2",
+        "type": "module",
+        "version": "2.1"
+    },
+    {
+        "classname": "QtQuickControls2ImagineStylePlugin",
+        "name": "QtQuick.Controls.Imagine",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Imagine",
+        "plugin": "qtquickcontrols2imaginestyleplugin",
+        "relativePath": "QtQuick/Controls.2/Imagine",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtGraphicalEffectsPlugin",
+        "name": "QtGraphicalEffects",
+        "path": "/home/runner/wd/krita/_install/qml/QtGraphicalEffects",
+        "plugin": "qtgraphicaleffectsplugin",
+        "relativePath": "QtGraphicalEffects",
+        "type": "module",
+        "version": "1.12"
+    },
+    {
+        "classname": "QtQuickControls2ImagineStylePlugin",
+        "name": "QtQuick.Controls.Imagine",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Imagine",
+        "plugin": "qtquickcontrols2imaginestyleplugin",
+        "relativePath": "QtQuick/Controls.2/Imagine",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickControls2MaterialStylePlugin",
+        "name": "QtQuick.Controls.Material",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Material",
+        "plugin": "qqc2materialstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Material",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickControls2MaterialStylePlugin",
+        "name": "QtQuick.Controls.Material",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Material",
+        "plugin": "qqc2materialstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Material",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickControls2MaterialStylePlugin",
+        "name": "QtQuick.Controls.Material",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Material",
+        "plugin": "qqc2materialstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Material",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickControls2UniversalStylePlugin",
+        "name": "QtQuick.Controls.Universal",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Universal",
+        "plugin": "qtquickcontrols2universalstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Universal",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickControls2UniversalStylePlugin",
+        "name": "QtQuick.Controls.Universal",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Universal",
+        "plugin": "qtquickcontrols2universalstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Universal",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickControls2UniversalStylePlugin",
+        "name": "QtQuick.Controls.Universal",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Universal",
+        "plugin": "qtquickcontrols2universalstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Universal",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtQuickControls2FusionStylePlugin",
+        "name": "QtQuick.Controls.Fusion",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Fusion",
+        "plugin": "qtquickcontrols2fusionstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Fusion",
+        "type": "module",
+        "version": "2.12"
+    },
+    {
+        "classname": "QtQuickControls2FusionStylePlugin",
+        "name": "QtQuick.Controls.Fusion",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Fusion",
+        "plugin": "qtquickcontrols2fusionstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Fusion",
+        "type": "module",
+        "version": "2.15"
+    },
+    {
+        "classname": "QtQuickControls2FusionStylePlugin",
+        "name": "QtQuick.Controls.Fusion",
+        "path": "/home/runner/wd/krita/_install/qml/QtQuick/Controls.2/Fusion",
+        "plugin": "qtquickcontrols2fusionstyleplugin",
+        "relativePath": "QtQuick/Controls.2/Fusion",
+        "type": "module",
+        "version": "2.13"
+    },
+    {
+        "classname": "QtGraphicalEffectsPrivatePlugin",
+        "name": "QtGraphicalEffects.private",
+        "path": "/home/runner/wd/krita/_install/qml/QtGraphicalEffects/private",
+        "plugin": "qtgraphicaleffectsprivate",
+        "relativePath": "QtGraphicalEffects/private",
+        "type": "module",
+        "version": "1.12"
+    },
+    {
+        "name": "angleselector",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/AngleSelector.qml/angleselector",
+        "type": "directory"
+    },
+    {
+        "name": "tooltip",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/AngleSelector.qml/tooltip",
+        "type": "directory"
+    },
+    {
+        "name": "angleselector/AngleSelectorUtil.js",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/AngleSelector.qml/angleselector/AngleSelectorUtil.js",
+        "type": "javascript"
+    },
+    {
+        "name": "spinbox",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/DoubleParseSpinBox.qml/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "sliderspinbox",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/DoubleSliderSpinBox.qml/sliderspinbox",
+        "type": "directory"
+    },
+    {
+        "name": "overlays",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/InformingTextInput.qml/overlays",
+        "type": "directory"
+    },
+    {
+        "name": "spinbox",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/IntParseSpinBox.qml/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "sliderspinbox",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/IntSliderSpinBox.qml/sliderspinbox",
+        "type": "directory"
+    },
+    {
+        "name": "../overlays",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/sliderspinbox/overlays",
+        "type": "directory"
+    },
+    {
+        "name": "../spinbox",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/sliderspinbox/spinbox",
+        "type": "directory"
+    },
+    {
+        "name": "../textinput",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/spinbox/textinput",
+        "type": "directory"
+    },
+    {
+        "name": "../overlays",
+        "path": "/home/runner/wd/krita/_install/qml/org/krita/components/spinbox/overlays",
+        "type": "directory"
+    }
+]
+
