@@ -1,16 +1,17 @@
 == tests-partial (run 5): running
 status: running
 commit: e5fbe22ff8bbc09fe8e3bb5bef603c1247bfab2f
-Tue Oct  6 09:16:58 UTC 2026
+Tue Oct  6 09:19:01 UTC 2026
                total        used        free      shared  buff/cache   available
-Mem:           15988        1171        1010          56       14208       14817
+Mem:           15988        1140        1307          56       13941       14848
 Swap:           3071           0        3071
 /dev/root       145G   40G  106G  28% /
-95
+180
   2/321 Test   #1: appstreamtest .......................................................***Failed    3.07 sec
  53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.57 sec
  54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.41 sec
  55/321 Test  #56: libs-flake-TestSvgParserRoundTrip ...................................***Failed    1.49 sec
  60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.65 sec
  61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   19.14 sec
+175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   14.30 sec
 
