@@ -1,10 +1,10 @@
 interface: classic (smallest side 411 dp)
-perf classic-start: interface-ready-ms=29668 first-canvas-ms=-1 rss-kb=1118900 peak-kb=1120780 uptime-ms=35650
+perf classic-start: interface-ready-ms=101989 first-canvas-ms=-1 rss-kb=1353120 peak-kb=1353412 uptime-ms=107771
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-01-start.png ok
 OVERFLOW 01-start: KisWelcomePageWidget in QStackedWidget (474 > 409)
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-portrait-02-canvas.png ok
-perf classic-canvas: interface-ready-ms=29668 first-canvas-ms=45892 rss-kb=1278880 peak-kb=1279028 uptime-ms=53450
+perf classic-canvas: interface-ready-ms=101989 first-canvas-ms=117141 rss-kb=1481556 peak-kb=1483828 uptime-ms=121388
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-landscape-02-canvas.png ok
 screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/classic-desktop-02-canvas.png ok
-perf classic-end: interface-ready-ms=29668 first-canvas-ms=45892 rss-kb=1284996 peak-kb=1299916 uptime-ms=61133
+perf classic-end: interface-ready-ms=101989 first-canvas-ms=117141 rss-kb=1511012 peak-kb=1521980 uptime-ms=132687
 done
