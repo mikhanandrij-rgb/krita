@@ -1,0 +1,328 @@
+10-06 15:24:07.769   906   943 V WindowManagerShell: Transition requested: android.os.BinderProxy@1e73868 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=264933 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@b12e481} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{570c926 org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:24:07.769   548  2088 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 15:24:07.776   548   577 I ActivityManager: Start proc 6604:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 15:24:07.781   548   988 D CoreBackPreview: Window{fcc1b4 u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@cdd4c23, mPriority=0, mIsAnimationCallback=false}
+10-06 15:24:07.807  6604  6604 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 15:24:07.809  6604  6604 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 15:24:07.809  6604  6604 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 15:24:07.859   548   565 V WindowManager: Sent Transition #19 createdAt=10-06 15:24:07.765 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=264933 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7bb09e Task{792dd08 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{cae877f org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:24:07.859   548   565 V WindowManager:     info={id=19 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{7bb09e Task{792dd08 #10 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=10)/@0xd7e4520 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{dc413c7 Task{10a7f21 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x1c83131 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 15:24:07.992  6604  6604 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 15:24:08.065  6604  6604 D nativeloader: Configuring clns-6 for other apk /data/app/~~uE2cEVbmVfpZHn2BlDdlVw==/org.krita.mobilefork-HEJQSLmUI2RAHYCFkbpBPw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~uE2cEVbmVfpZHn2BlDdlVw==/org.krita.mobilefork-HEJQSLmUI2RAHYCFkbpBPw==/lib/arm64:/data/app/~~uE2cEVbmVfpZHn2BlDdlVw==/org.krita.mobilefork-HEJQSLmUI2RAHYCFkbpBPw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 15:24:08.079  6604  6604 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 15:24:08.079  6604  6604 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 15:24:08.083   548   989 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 6604
+10-06 15:24:08.157  6604  6604 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 15:24:08.152  6604  6604 W rita.mobilefork: type=1400 audit(0.0:255): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=488 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 15:24:08.657  6604  6604 I krita.MainActivity: TouchSlop: 21
+10-06 15:24:08.657  6604  6604 I krita.MainActivity: LibsLoaded
+10-06 15:24:08.673   548   989 D CoreBackPreview: Window{de17f68 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6cb9c67, mPriority=0, mIsAnimationCallback=false}
+10-06 15:24:08.852   548   565 W system_server: Failed to determine oat file name for dex location /data/app/~~uE2cEVbmVfpZHn2BlDdlVw==/org.krita.mobilefork-HEJQSLmUI2RAHYCFkbpBPw==/base.apk: Dalvik cache directory does not exist
+10-06 15:24:08.852   548   565 W ziparchive: Unable to open '/data/app/~~uE2cEVbmVfpZHn2BlDdlVw==/org.krita.mobilefork-HEJQSLmUI2RAHYCFkbpBPw==/base.dm': No such file or directory
+10-06 15:24:08.854   548   565 I ActivityTaskManager: Displayed org.krita.mobilefork/org.krita.android.MainActivity for user 0: +1s88ms
+10-06 15:24:08.873   548  2088 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 15:24:08.874   906   943 V WindowManagerShell: Transition requested: android.os.BinderProxy@af89fd2 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=266037 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@afa38a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{addf7a0 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:24:08.893   548   987 D CoreBackPreview: Window{fcc1b4 u0 Splash Screen org.krita.mobilefork EXITING}: Setting back callback null
+10-06 15:24:08.893   548  2018 W InputManager-JNI: Input channel object 'fcc1b4 Splash Screen org.krita.mobilefork (client)' was disposed without first being removed with the input manager!
+10-06 15:24:08.895   548  2018 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 15:24:08.904   548   987 I ImeTracker: org.krita.mobilefork:d21e6744: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 15:24:08.905   548   987 I ImeTracker: org.krita.mobilefork:d21e6744: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 15:24:08.912  1665  1665 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 15:24:09.094   548   565 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +228ms
+10-06 15:24:09.094   548   565 V WindowManager: Sent Transition #20 createdAt=10-06 15:24:08.863 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=266037 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7bb09e Task{792dd08 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{ad6c1c5 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:24:09.154   548  2639 I ImeTracker: org.krita.mobilefork:f4f9102f: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 15:24:09.154   548  2639 I ImeTracker: org.krita.mobilefork:f4f9102f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 15:24:09.163  1665  1665 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 15:24:10.871   548   989 D CoreBackPreview: Window{d812164 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@530f082, mPriority=0, mIsAnimationCallback=false}
+10-06 15:24:18.969  6604  6620 W rita.mobilefork: Cleared Reference was only reachable from finalizer (only reported once)
+10-06 15:24:18.970  6604  6620 I rita.mobilefork: Explicit concurrent copying GC freed 43499(2248KB) AllocSpace objects, 10(1484KB) LOS objects, 49% free, 2527KB/5055KB, paused 95us,4us total 5.910ms
+10-06 15:24:29.107  6604  6620 I rita.mobilefork: Explicit concurrent copying GC freed 4554(201KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2470KB/4941KB, paused 45us,6us total 7.027ms
+10-06 15:24:31.378  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 15:24:31.392  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 15:24:31.405  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 15:24:31.418  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 15:24:31.431  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 15:24:31.445  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 15:24:31.448  6604  6628 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 15:24:32.605  6604  6628 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface on
+10-06 15:24:32.606  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:32.618  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:32.623  6604  6628 I krita   : Krita Mobile: phone defaults written (effective after restart): memoryHardLimitPercent=35, frameRenderingClones=1, animationCacheFrameSizeLimit=1920
+10-06 15:24:34.771  6604  6628 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test test run requested
+10-06 15:24:34.773  6604  6628 I krita   : Krita Mobile test: interface: phone (smallest side 411 dp)
+10-06 15:24:35.359   548  2088 D CoreBackPreview: Window{d812164 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 15:24:35.360   548  2088 W InputManager-JNI: Input channel object 'd812164 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 15:24:35.486  6604  6628 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 15:24:35.487  6604  6628 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 15:24:39.242  6604  6619 I rita.mobilefork: Explicit concurrent copying GC freed 5596(285KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2473KB/4946KB, paused 50us,6us total 6.576ms
+10-06 15:24:40.865  6604  6628 I krita   : Krita Mobile test: perf start: interface-ready-ms=27170 first-canvas-ms=-1 rss-kb=1138108 peak-kb=1142432 uptime-ms=32816
+10-06 15:24:45.587  6604  6628 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
+10-06 15:24:47.192   155   155 I lowmemorykiller: lmkd data connection established
+10-06 15:24:47.236   155   155 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-06 15:24:47.236   155   155 I lowmemorykiller: Properties reinitilized
+10-06 15:24:47.237  6713  6713 I lowmemorykiller: lmkd updated properties successfully
+10-06 15:24:47.237   155   155 I lowmemorykiller: lmkd data connection dropped
+10-06 15:24:47.237   155   155 I lowmemorykiller: closing lmkd data connection
+10-06 15:24:47.521   548  2212 I ActivityTaskManager: Activity reported stop, but no longer stopping: ActivityRecord{2f60c17 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7} STOPPED
+10-06 15:24:49.389  6604  6619 I rita.mobilefork: Explicit concurrent copying GC freed 6815(326KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2306KB/4613KB, paused 54us,5us total 4.288ms
+10-06 15:24:49.578  6604  6628 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
+10-06 15:24:51.543  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:51.593  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:52.219  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:53.001  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:53.289  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:53.887  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:56.973  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#5(BLAST Consumer)5](id:19cc00000005,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:24:58.888  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:24:58.893  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:24:59.528  6604  6620 I rita.mobilefork: Explicit concurrent copying GC freed 4165(232KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2297KB/4595KB, paused 56us,5us total 4.312ms
+10-06 15:25:00.985  6604  6628 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 15:25:01.141  6604  6628 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
+10-06 15:25:01.147  6604  6628 I krita   : Krita Mobile test: probe 20,816: QToolBar 'mobileToolRailHolder' 0,779 411x56 tip='' parent=KisMainWindow inLayout=1
+10-06 15:25:01.147  6604  6628 I krita   : Krita Mobile test: probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,779 411x56 tip='' parent=QToolBar inLayout=1
+10-06 15:25:01.147  6604  6628 I krita   : Krita Mobile test: probe 20,816: mobileui::ChromeButton '' 4,783 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
+10-06 15:25:01.265  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:25:01.865  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:25:01.905  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:25:01.945  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:25:01.985  6604  6628 W krita   : T
+[...]
+Point size <= 0 (0.000000), must be greater than 0
+10-06 15:28:46.378  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "krita_filter_edge detection" Dropping...
+10-06 15:28:46.378  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "krita_filter_fastcoloroverlay" Dropping...
+10-06 15:28:46.379  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "krita_filter_resettransparent" Dropping...
+10-06 15:28:46.382  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "composite_actions" Dropping...
+10-06 15:28:46.382  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "paintops" Dropping...
+10-06 15:28:46.382  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "dockerBox" Dropping...
+10-06 15:28:46.383  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "mobileui_mode_auto" Dropping...
+10-06 15:28:46.383  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "mobileui_mode_phone" Dropping...
+10-06 15:28:46.383  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "mobileui_mode_classic" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "interpolation_constant" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "interpolation_linear" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "interpolation_bezier" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "tangents_sharp" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "tangents_smooth" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "zoom_to_fit_range" Dropping...
+10-06 15:28:46.386  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "zoom_to_fit_curve" Dropping...
+10-06 15:28:46.388  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "expanding_spacer_0" Dropping...
+10-06 15:28:46.388  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "expanding_spacer_1" Dropping...
+10-06 15:28:46.388  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "editToolBar" Dropping...
+10-06 15:28:46.388  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "customToolBar1" Dropping...
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: WARNING: Uncategorized action "customToolBar2" Dropping...
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: WARNING: The following shortcuts are not registered in the collection, they might have wrong shortcuts in the end:
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "file_import_video_animation"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "krita_filter_top edge detections"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "krita_filter_bottom edge detections"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "view_detached_canvas"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "view_newwindow"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "options_configure_keybinding"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "create_bundle"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "krita_filter_left edge detections"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "color_management_report"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "select_layout"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "delete_keyframe"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "show_tool_options"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "krita_filter_sobel"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "svg_settings"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "histogram"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: "krita_filter_right edge detections"
+10-06 15:28:46.389  6604  6628 W krita   : krita.general: === end ===
+10-06 15:28:46.589  6604  6628 W krita   : QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+10-06 15:28:46.589  6604  6628 W krita   : QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+10-06 15:28:49.462   548  2514 I ActivityManager: Process com.google.android.apps.wellbeing (pid 1684) has died: cch+15 CEM 
+10-06 15:28:51.648  6604  6628 I krita   : Krita Mobile test: dialog options_configure: KisDlgPreferences 866x411 min 288x190 saved
+10-06 15:28:51.937  6604  6628 I krita   : Krita Mobile test: dialog options_configure: closed
+10-06 15:28:51.939  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:28:51.943  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:28:51.947  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:28:52.290  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#29(BLAST Consumer)29](id:19cc0000001d,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:28:52.595  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:52.840  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:28:53.026  6604  6621 I rita.mobilefork: Explicit concurrent copying GC freed 11000(492KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2303KB/4606KB, paused 15us,6us total 3.927ms
+10-06 15:28:53.242  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.281  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.321  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.361  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.401  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.441  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.481  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.521  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.601  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.641  6604  6628 W krita   : This plugin does not support setting window opacity
+10-06 15:28:53.642  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#30(BLAST Consumer)30](id:19cc0000001e,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:28:55.837  6604  6628 I krita   : Krita Mobile test: dialog imagesize: triggering
+10-06 15:28:55.854  6604  6628 W krita   : QObject::connect: No such signal WdgImageSize::okClicked()
+10-06 15:28:57.019   548  2186 I ActivityManager: Process com.google.android.dialer (pid 3105) has died: cch+45 CEM 
+10-06 15:28:58.445  6604  6628 I krita   : Krita Mobile test: dialog imagesize: DlgImageSize 866x411 min 133x119 saved
+10-06 15:28:58.464  6604  6628 I krita   : Krita Mobile test: dialog imagesize: closed
+10-06 15:28:58.470  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#31(BLAST Consumer)31](id:19cc0000001f,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:02.138  6604  6628 I krita   : Krita Mobile test: dialog canvassize: triggering
+10-06 15:29:03.146  6604  6950 I rita.mobilefork: Explicit concurrent copying GC freed 4405(253KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2305KB/4610KB, paused 22us,5us total 3.824ms
+10-06 15:29:04.876  6604  6628 I krita   : Krita Mobile test: dialog canvassize: DlgCanvasSize 866x411 min 133x119 saved
+10-06 15:29:04.895  6604  6628 I krita   : Krita Mobile test: dialog canvassize: closed
+10-06 15:29:04.902  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#32(BLAST Consumer)32](id:19cc00000020,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:08.637  6604  6628 I krita   : Krita Mobile test: dialog image_properties: triggering
+10-06 15:29:11.373  6604  6628 I krita   : Krita Mobile test: dialog image_properties: KisDlgImageProperties 866x411 min 133x119 saved
+10-06 15:29:11.392  6604  6628 I krita   : Krita Mobile test: dialog image_properties: closed
+10-06 15:29:11.406  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#33(BLAST Consumer)33](id:19cc00000021,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:13.270  6604  6621 I rita.mobilefork: Explicit concurrent copying GC freed 4522(243KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2301KB/4603KB, paused 23us,7us total 3.855ms
+10-06 15:29:15.138  6604  6628 I krita   : Krita Mobile test: dialog layer_properties: triggering
+10-06 15:29:17.843  6604  6628 I krita   : Krita Mobile test: dialog layer_properties: KisDlgLayerProperties 622x345 min 603x344 saved
+10-06 15:29:17.848  6604  6628 I krita   : Krita Mobile test: dialog layer_properties: closed
+10-06 15:29:17.849  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#34(BLAST Consumer)34](id:19cc00000022,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:18.837  6604  6628 I krita   : Krita Mobile test: dialog layer_style: triggering
+10-06 15:29:21.692  6604  6628 I krita   : Krita Mobile test: dialog layer_style: KisDlgLayerStyle 866x411 min 133x119 saved
+10-06 15:29:22.114  6604  6628 I krita   : Krita Mobile test: dialog layer_style: closed
+10-06 15:29:22.343  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#35(BLAST Consumer)35](id:19cc00000023,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:23.332   548   636 D ActivityManager: Skipping freeze for process 3934 com.google.android.configupdater curAdj = 999(override)
+10-06 15:29:23.332   548   636 D ActivityManager: Skipping freeze for process 3885 com.google.android.apps.wallpaper curAdj = 999(override)
+10-06 15:29:23.332   548   636 D ActivityManager: Skipping freeze for process 2281 android.process.media curAdj = 999(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 3139 com.google.android.tts curAdj = 995(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 4045 com.google.android.gm curAdj = 995(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 4450 com.google.android.marvin.talkback curAdj = 985(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 1919 com.google.android.youtube curAdj = 985(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 5808 com.google.android.gms.ui curAdj = 975(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 2445 com.google.android.as.oss curAdj = 975(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 5221 com.google.android.settings.intelligence curAdj = 965(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 2298 com.google.android.contacts curAdj = 965(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 2133 com.google.process.gapps curAdj = 955(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 3287 com.google.android.documentsui curAdj = 955(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 3722 com.google.android.rkpdapp curAdj = 945(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 910 com.google.android.permissioncontroller curAdj = 945(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 4981 com.google.android.googlequicksearchbox curAdj = 935(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 1774 com.google.process.gservices curAdj = 935(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 1610 android.process.acore curAdj = 925(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 4006 com.google.android.projection.gearhead:shared curAdj = 925(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 2917 com.android.chrome curAdj = 915(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 1861 com.google.android.apps.youtube.music curAdj = 915(override)
+10-06 15:29:23.333   548   636 D ActivityManager: Skipping freeze for process 2975 com.google.android.gms.unstable curAdj = 905(override)
+10-06 15:29:23.384  6604  6621 I rita.mobilefork: Explicit concurrent copying GC freed 9014(431KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2301KB/4603KB, paused 23us,6us total 3.792ms
+10-06 15:29:26.037  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_gaussian blur: triggering
+10-06 15:29:28.469  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_gaussian blur: KisDlgFilter 560x205 min 520x184 saved
+10-06 15:29:28.474  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_gaussian blur: closed
+10-06 15:29:28.476  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#36(BLAST Consumer)36](id:19cc00000024,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:28.477  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:29:29.837  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_hsvadjustment: triggering
+10-06 15:29:32.413  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_hsvadjustment: KisDlgFilter 560x299 min 520x278 saved
+10-06 15:29:32.418  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_hsvadjustment: closed
+10-06 15:29:32.421  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#37(BLAST Consumer)37](id:19cc00000025,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:32.421  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:29:33.507  6604  6621 I rita.mobilefork: Explicit concurrent copying GC freed 4070(240KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2301KB/4603KB, paused 24us,7us total 4.115ms
+10-06 15:29:33.837  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_perchannel: triggering
+10-06 15:29:36.465  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_perchannel: KisDlgFilter 866x411 min 504x128 saved
+10-06 15:29:36.472  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_perchannel: closed
+10-06 15:29:36.475  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#38(BLAST Consumer)38](id:19cc00000026,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:36.475  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:29:37.837  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_levels: triggering
+10-06 15:29:40.463  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_levels: KisDlgFilter 866x411 min 504x128 saved
+10-06 15:29:40.470  6604  6628 I krita   : Krita Mobile test: dialog krita_filter_levels: closed
+10-06 15:29:40.472  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#39(BLAST Consumer)39](id:19cc00000027,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:41.837  6604  6628 I krita   : Krita Mobile test: dialog rotateimage: triggering
+10-06 15:29:43.629  6604  6621 I rita.mobilefork: Explicit concurrent copying GC freed 4584(252KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2305KB/4611KB, paused 29us,5us total 3.911ms
+10-06 15:29:44.434  6604  6628 I krita   : Krita Mobile test: dialog rotateimage: DlgRotateImage 866x411 min 339x361 saved
+10-06 15:29:44.453  6604  6628 I krita   : Krita Mobile test: dialog rotateimage: closed
+10-06 15:29:44.456  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#40(BLAST Consumer)40](id:19cc00000028,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:48.137  6604  6628 I krita   : Krita Mobile test: dialog offsetimage: triggering
+10-06 15:29:50.800  6604  6628 I krita   : Krita Mobile test: dialog offsetimage: DlgOffsetImage 360x244 min 189x243 saved
+10-06 15:29:50.818  6604  6628 I krita   : Krita Mobile test: dialog offsetimage: closed
+10-06 15:29:50.821  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#41(BLAST Consumer)41](id:19cc00000029,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:29:53.756  6604  6879 I rita.mobilefork: Explicit concurrent copying GC freed 3653(212KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2301KB/4603KB, paused 13us,5us total 3.604ms
+10-06 15:29:54.537  6604  6628 I krita   : Krita Mobile test: dialog imagesplit: triggering
+10-06 15:29:57.015  6604  6628 I krita   : Krita Mobile test: dialog imagesplit: DlgImagesplit 866x411 min 142x119 saved
+10-06 15:29:57.033  6604  6628 I krita   : Krita Mobile test: dialog imagesplit: closed
+10-06 15:29:57.037  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#42(BLAST Consumer)42](id:19cc0000002a,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:30:00.838  6604  6628 I krita   : Krita Mobile test: dialog layersplit: triggering
+10-06 15:30:00.868  6604  6628 W krita   : Dialog "krita/layer_split" has a widget without an object name: QWidget(0x7a3d9797ea50)
+10-06 15:30:03.435  6604  6628 I krita   : Krita Mobile test: dialog layersplit: DlgLayerSplit 866x411 min 149x119 saved
+10-06 15:30:03.453  6604  6628 I krita   : Krita Mobile test: dialog layersplit: closed
+10-06 15:30:03.462  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#43(BLAST Consumer)43](id:19cc0000002b,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:30:03.879  6604  6879 I rita.mobilefork: Explicit concurrent copying GC freed 1178(118KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 2301KB/4602KB, paused 29us,9us total 3.897ms
+10-06 15:30:07.137  6604  6628 I krita   : Krita Mobile test: dialog separate: triggering
+10-06 15:30:09.864  6604  6628 I krita   : Krita Mobile test: dialog separate: DlgSeparate 866x411 min 133x119 saved
+10-06 15:30:09.882  6604  6628 I krita   : Krita Mobile test: dialog separate: closed
+10-06 15:30:09.886  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#44(BLAST Consumer)44](id:19cc0000002c,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:30:13.637  6604  6628 I krita   : Krita Mobile test: dialog clones_array: triggering
+10-06 15:30:14.166  6604  6879 I rita.mobilefork: Explicit concurrent copying GC freed 3876(222KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2303KB/4606KB, paused 18us,9us total 8.972ms
+10-06 15:30:16.332  6604  6628 I krita   : Krita Mobile test: dialog clones_array: DlgClonesArray 662x247 min 661x246 saved
+10-06 15:30:16.351  6604  6628 I krita   : Krita Mobile test: dialog clones_array: closed
+10-06 15:30:16.356  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#45(BLAST Consumer)45](id:19cc0000002d,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:30:20.036  6604  6628 I krita   : Krita Mobile test: dialog render_animation: action disabled
+10-06 15:30:21.242  6604  6628 W krita   : QuaZip::getFileNameList/getFileInfoList(): ZIP is not open in mdUnzip mode
+10-06 15:30:21.242  6604  6628 W krita   : QuaZip::getFileNameList/getFileInfoList(): ZIP is not open in mdUnzip mode
+10-06 15:30:21.244  6604  6628 I krita   : Krita Mobile test: dialog autosave_recovery: showing
+10-06 15:30:21.305  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.309  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.309  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.309  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.309  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.309  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.310  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.310  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.311  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.311  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.365  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:21.366  6604  6628 W krita   : QImage::scaled: Image is a null image
+10-06 15:30:23.900  6604  6628 I krita   : Krita Mobile test: dialog autosave_recovery: KisAutoSaveRecoveryDialog 650x315 min 500x195 saved
+10-06 15:30:23.919  6604  6628 I krita   : Krita Mobile test: dialog autosave_recovery: closed
+10-06 15:30:23.919  6604  6604 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#46(BLAST Consumer)46](id:19cc0000002e,api:0,p:-1,c:6604) disconnect: not connected (req=2)
+10-06 15:30:24.314  6604  6879 I rita.mobilefork: Explicit concurrent copying GC freed 3498(209KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2301KB/4603KB, paused 22us,6us total 3.899ms
+10-06 15:30:24.856  6604  6628 I krita   : Krita Mobile test: inventory written
+10-06 15:30:25.251   548  2639 I ActivityManager: Process com.google.android.contacts (pid 2298) has died: cch+65 CEM 
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 4450:com.google.android.marvin.talkback/u0a138 (adj 985): empty #17
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 4045:com.google.android.gm/u0a140 (adj 985): empty #18
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 3139:com.google.android.tts/u0a147 (adj 995): empty #19
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 2281:android.process.media/u0a87 (adj 995): empty #20
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 3885:com.google.android.apps.wallpaper/u0a161 (adj 999): empty #21
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 3934:com.google.android.configupdater/u0a129 (adj 999): empty #22
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 2959:com.android.externalstorage/u0a85 (adj 999): empty #23
+10-06 15:30:25.252   548  2639 I ActivityManager: Killing 2253:com.google.android.partnersetup/u0a124 (adj 999): empty #24
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1138:com.android.settings/1000 (adj 999): empty #25
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 5155:com.google.android.webview/u0a133 (adj 999): empty #26
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 4440:com.android.emergency/u0a165 (adj 999): empty #27
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 4410:com.google.android.healthconnect.controller/u0a172 (adj 999): empty #28
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1301:com.google.android.cellbroadcastreceiver/u0a178 (adj 999): empty #29
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3421:com.android.traceur/u0a116 (adj 999): empty #30
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3963:com.google.android.packageinstaller/u0a94 (adj 999): empty #31
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 2559:com.android.providers.calendar/u0a90 (adj 999): empty #32
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1854:com.google.android.devicelockcontroller/u0a187 (adj 999): empty #33
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3844:com.android.shell/2000 (adj 999): empty #34
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3713:com.android.dynsystem:dynsystem/1000 (adj 999): empty #35
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 2317:com.android.imsserviceentitlement/u0a117 (adj 999): empty #36
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1979:com.android.managedprovisioning/u0a98 (adj 999): empty #37
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3667:com.android.dynsystem/1000 (adj 999): empty #38
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3630:com.android.camera2/u0a145 (adj 999): empty #39
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3352:com.google.android.webview:webview_service/u0a133 (adj 999): empty #40
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 3542:com.google.android.onetimeinitializer/u0a125 (adj 999): empty #41
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1698:com.android.carrierdefaultapp/u0a106 (adj 999): empty #42
+10-06 15:30:25.253   548  2639 I ActivityManager: Killing 1989:com.android.printspooler/u0a102 (adj 999): empty #43
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 1938:com.google.android.googlesdksetup/u0a158 (adj 999): empty #44
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 2504:com.android.localtransport/1000 (adj 999): empty #45
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 1389:com.android.cellbroadcastreceiver/u0a91 (adj 999): empty #46
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 1973:com.android.keychain/1000 (adj 999): empty #47
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 1239:com.android.bluetooth/1002 (adj 999): empty #48
+10-06 15:30:25.254   548  2639 I ActivityManager: Killing 1553:com.android.carrierconfig/u0a163 (adj 999): empty #49
+10-06 15:30:25.319   548   568 W ActivityManager: setHasOverlayUi called on unknown pid: 1138
+10-06 15:30:26.058  6604  6628 I krita   : Krita Mobile test: perf end: interface-ready-ms=27170 first-canvas-ms=47574 rss-kb=1383352 peak-kb=1439068 uptime-ms=378009
+10-06 15:30:26.058  6604  6628 I krita   : Krita Mobile test: done
+10-06 15:30:26.060  6604  6628 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:30:26.119  6604  6628 W krita   : exit app 0
+10-06 15:30:26.121   906   943 V WindowManagerShell: Transition requested: android.os.BinderProxy@1627ab3 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=266298 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@1c2f870} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:30:26.123   548  2639 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:1; bindFromPackage:null: isBindService:false]
+10-06 15:30:26.138  6604  7163 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 15:30:26.467   548   565 V WindowManager: Sent Transition #23 createdAt=10-06 15:30:26.121 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=266298 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7bb09e Task{792dd08 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 15:30:26.467   548   565 V WindowManager:     info={id=23 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{dc413c7 Task{10a7f21 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x1c83131 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0 endFixedRotation=0},{WCT{RemoteToken{7bb09e Task{792dd08 #10 type=standard A=10192:org.krita.mobilefork}}} m=CLOSE f=NONE leash=Surface(name=Task=10)/@0xd7e4520 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=Surface(name=WallpaperWindowToken{fc70426 token=android.os.Binder@a412b81})/@0x1652056 - rotation-leash)/@0xf31e7b7 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1}]}
+10-06 15:30:26.480   548  2639 W system_server: Long monitor contention with owner binder:548_B (1948) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=2 in int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, android.view.WindowManager$LayoutParams, int, int, int, int, int, int, android.window.ClientWindowFrames, android.util.MergedConfiguration, android.view.SurfaceControl, android.view.InsetsState, android.view.InsetsSourceControl$Array, android.os.Bundle) for 114ms
+10-06 15:30:26.552   548  2639 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.549 fontWeightAdjustment=0}
+10-06 15:30:26.559   548  2639 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.3 s.549 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-06 15:30:26.565   548  2639 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.581 fontWeightAdjustment=0}
+10-06 15:30:27.269  6604  6604 I krita.MainActivity: [onDestroy]
+10-06 15:30:27.279   548  2520 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: SVC ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:2; bindFromPackage:null: isBindService:false]
+10-06 15:30:27.334   548  2520 D CoreBackPreview: Window{de17f68 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 15:30:27.339   548  1948 W InputManager-JNI: Input channel object 'de17f68 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 15:30:27.351   548  2639 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{4be4e6f u0 org.krita.mobilefork/org.krita.android.DocumentSaverService}
+10-06 15:30:27.356  6604  6604 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@45be1d8 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 15:30:27.356  6604  6604 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@45be1d8 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 15:30:27.373   548  1948 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{51732ab u0 org.krita.mobilefork/org.krita.android.MainActivity t10} (client)' was disposed without first being removed with the input manager!
+10-06 15:30:27.770   548  2533 I ActivityManager: Process org.krita.mobilefork (pid 6604) has died: fg  SVC 
+10-06 15:30:27.774   548   568 W ActivityManager: setHasOverlayUi called on unknown pid: 6604
+10-06 15:30:30.692   548  2088 I ActivityManager: Process com.google.android.gms.unstable (pid 2975) has died: cch+5 CEM 

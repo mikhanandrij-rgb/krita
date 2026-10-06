@@ -118,3 +118,30 @@ ERROR        | Failed to find ColorBuffer: 322
 ERROR        | Failed to bind to texture: invalid color buffer.
 ERROR        | Failed to find ColorBuffer: 459
 ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 533
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 551
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 553
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 559
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 573
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 636
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 648
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 650
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 652
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 654
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 656
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 658
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 679
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | bad color buffer handle 696
