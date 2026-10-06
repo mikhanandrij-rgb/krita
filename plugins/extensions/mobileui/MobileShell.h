@@ -80,6 +80,10 @@ private:
         QDockWidget::DockWidgetFeatures features;
         Qt::DockWidgetArea area = Qt::RightDockWidgetArea;
         bool titleBarWasVisible = true;
+        // Wide utility title bars (the timeline's) get wrapped into a
+        // horizontally scrollable strip while hosted.
+        QPointer<QWidget> titleWrapper;
+        QPointer<QWidget> originalTitle;
     };
 
     struct ParkedToolBar {
@@ -101,6 +105,8 @@ private:
     void destroyChrome();
     void adoptDocks();
     void releaseDocks();
+    static void wrapTitleBar(HostedDock &hd);
+    static void unwrapTitleBar(HostedDock &hd);
     void adoptPopups();
     void releasePopups();
     void adoptStatusBar();

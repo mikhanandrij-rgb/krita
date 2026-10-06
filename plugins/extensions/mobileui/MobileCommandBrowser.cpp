@@ -53,6 +53,14 @@ QString menuIconFor(QMenu *menu)
     return QStringLiteral("info");
 }
 
+// Krita's actions are QWidgetActions (KisAction derives from it), but only
+// the ones with a default widget embed something that can't be a row.
+bool isEmbeddedWidget(QAction *action)
+{
+    QWidgetAction *widgetAction = qobject_cast<QWidgetAction *>(action);
+    return widgetAction && widgetAction->defaultWidget();
+}
+
 // One row in the command list.
 class CommandRow final : public QAbstractButton {
 public:
@@ -290,7 +298,7 @@ QMap<QString, QList<QAction *>> CommandBrowser::actionsByCategory() const
     QSet<QAction *> seen;
     for(QAction *action : m_actionSource()) {
         if(!action || seen.contains(action) || action->isSeparator() || !isListed(action) ||
-           stripMnemonic(action->text()).isEmpty() || qobject_cast<QWidgetAction *>(action)) {
+           stripMnemonic(action->text()).isEmpty()) {
             continue;
         }
         seen.insert(action);
@@ -562,7 +570,7 @@ void CommandBrowser::addMenuRows(QVBoxLayout *layout, QMenu *menu)
         }
         if(QMenu *submenu = action->menu()) {
             layout->addWidget(makeSubmenuRow(submenu, false));
-        } else if(qobject_cast<QWidgetAction *>(action)) {
+        } else if(isEmbeddedWidget(action)) {
             // Embedded widgets can't be shown as rows, offer the classic
             // popup menu for these instead.
             CommandRow *row = new CommandRow(
@@ -720,7 +728,7 @@ void CommandBrowser::collectEntries(
                 QStringLiteral("%1 › %2").arg(
                     path, stripMnemonic(submenu->title())),
                 out);
-        } else if(!qobject_cast<QWidgetAction *>(action)) {
+        } else if(!isEmbeddedWidget(action)) {
             out.append({action, path, true});
         }
     }

@@ -15,6 +15,7 @@
 #include "MobileWidgets.h"
 
 #include <KisDocument.h>
+#include <KoDocumentInfo.h>
 #include <KisMainWindow.h>
 #include <KisView.h>
 #include <KisViewManager.h>
@@ -35,6 +36,10 @@
 #include <klocalizedstring.h>
 
 #include <QAbstractItemView>
+#include <QCoreApplication>
+#include <QFileInfo>
+#include <QResizeEvent>
+#include <QScrollArea>
 #include <QAction>
 #include <QApplication>
 #include <QGuiApplication>
@@ -72,29 +77,29 @@ constexpr DockPlacement DOCK_PLACEMENTS[] = {
     {"sharedtooldocker", "brush", "tool", "sliders"},
     {"PresetHistory", "brush", "history", "recover"},
     {"PatternDocker", "brush", "patterns", "square"},
-    {"ColorSelectorNg", "color", "advanced", "krita:advanced_color_selector"},
-    {"WideGamutColorSelector", "color", "widegamut", "krita:wheel-sectors"},
+    {"ColorSelectorNg", "color", "advanced", "triangle-wheel"},
+    {"WideGamutColorSelector", "color", "widegamut", "wheel"},
     {"PaletteDocker", "color", "palette", "palette"},
     {"SpecificColorSelector", "color", "specific", "sliders"},
-    {"ArtisticColorSelector", "color", "artistic", "krita:wheel-rings"},
-    {"DigitalMixer", "color", "mixer", "krita:digital-mixer"},
-    {"SmallColorSelector", "color", "small", "krita:wheel-light"},
-    {"GamutMask", "color", "gamut", "krita:gamut-mask-on"},
+    {"ArtisticColorSelector", "color", "artistic", "rings"},
+    {"DigitalMixer", "color", "mixer", "mixer"},
+    {"SmallColorSelector", "color", "small", "light"},
+    {"GamutMask", "color", "gamut", "gamut"},
     {"KisLayerBox", "layers", "layers", "layers"},
-    {"ChannelDocker", "layers", "channels", "krita:channel-docker"},
-    {"CompositionDocker", "layers", "compositions", "krita:composition-docker"},
+    {"ChannelDocker", "layers", "channels", "channels"},
+    {"CompositionDocker", "layers", "compositions", "compositions"},
     {"TimelineDocker", "animation", "timeline", "timeline"},
-    {"OnionSkinsDocker", "animation", "onion", "krita:onion_skin_options"},
-    {"AnimationCurvesDocker", "animation", "curves", "krita:curve-preset-arch"},
+    {"OnionSkinsDocker", "animation", "onion", "onion"},
+    {"AnimationCurvesDocker", "animation", "curves", "curves"},
     {"StoryboardDocker", "animation", "storyboard", "film"},
     {"OverviewDocker", "view", "overview", "navigator"},
     {"History", "view", "history", "undo"},
-    {"Snapshot", "view", "snapshots", "krita:snapshot"},
-    {"GridDocker", "view", "grid", "krita:grid-docker"},
-    {"HistogramDocker", "view", "histogram", "krita:histogram-docker"},
-    {"TextProperties", "text", "text", "krita:draw-text"},
-    {"SvgSymbolCollectionDocker", "text", "symbols", "krita:symbols"},
-    {"ArrangeDocker", "text", "arrange", "krita:object-align-horizontal-center-calligra"},
+    {"Snapshot", "view", "snapshots", "snapshot"},
+    {"GridDocker", "view", "grid", "grid"},
+    {"HistogramDocker", "view", "histogram", "histogram"},
+    {"TextProperties", "text", "text", "text"},
+    {"SvgSymbolCollectionDocker", "text", "symbols", "symbols"},
+    {"ArrangeDocker", "text", "arrange", "align"},
 };
 
 // Which panel wins when Krita shows several dockers at once.
@@ -137,6 +142,16 @@ bool usesOpacity(const QString &toolId)
 }
 
 const QString SAMPLER_TOOL = QStringLiteral("KritaSelected/KisToolColorSampler");
+
+// QToolBar shows an overflow button when its content is squeezed; the phone
+// bars lay themselves out to fit, so it would only show up as a glitch.
+void hideToolBarExtension(QToolBar *toolBar)
+{
+    for (QToolButton *button : toolBar->findChildren<QToolButton *>(QStringLiteral("qt_toolbar_ext_button"))) {
+        button->setFixedSize(0, 0);
+        button->hide();
+    }
+}
 
 } // namespace
 
@@ -546,6 +561,7 @@ void Shell::createChrome()
     m_topHolder->layout()->setContentsMargins(0, 0, 0, 0);
     m_topHolder->layout()->setSpacing(0);
     m_topHolder->addWidget(m_topBar);
+    hideToolBarExtension(m_topHolder);
     mw->addToolBar(Qt::TopToolBarArea, m_topHolder);
 
     m_rail = new ToolRail(m_tools);
@@ -559,6 +575,7 @@ void Shell::createChrome()
     m_railHolder->layout()->setContentsMargins(0, 0, 0, 0);
     m_railHolder->layout()->setSpacing(0);
     m_railHolder->addWidget(m_rail);
+    hideToolBarExtension(m_railHolder);
     m_railArea = Qt::BottomToolBarArea;
     mw->addToolBar(m_railArea, m_railHolder);
 
@@ -729,7 +746,8 @@ void Shell::adoptDocks()
     const QList<QDockWidget *> dockList = mw->dockWidgets();
 
     auto host = [this, mw](QDockWidget *dock, const QString &panelId, const QString &tabId, const QIcon &tabIcon) {
-        HostedDock hd;
+        m_docks.append(HostedDock());
+        HostedDock &hd = m_docks.last();
         hd.dock = dock;
         hd.panelId = panelId;
         hd.tabId = tabId;
@@ -738,9 +756,15 @@ void Shell::adoptDocks()
         hd.titleBarWasVisible = dock->titleBarWidget() ? dock->titleBarWidget()->isVisibleTo(dock) : true;
         mw->removeDockWidget(dock);
         dock->setFeatures(QDockWidget::NoDockWidgetFeatures);
-        if (dock->titleBarWidget()) {
-            // The sheet shows the title; keep the docker's own buttons out.
-            dock->titleBarWidget()->hide();
+        if (QWidget *title = dock->titleBarWidget()) {
+            if (title->inherits("KisUtilityTitleBar")) {
+                // Timeline, curves and similar dockers keep their controls
+                // in the title bar. Keep it, scrollable when it's too wide.
+                wrapTitleBar(hd);
+            } else {
+                // Plain title bar: the sheet shows the title already.
+                title->hide();
+            }
         }
         if (!m_sheet->hasPanel(panelId)) {
             m_sheet->addPanel(panelId, dock->windowTitle());
@@ -748,7 +772,6 @@ void Shell::adoptDocks()
         m_sheet->addTab(panelId, tabId, stripMnemonic(dock->windowTitle()), tabIcon, dock, true);
         dock->show();
         dock->installEventFilter(this);
-        m_docks.append(hd);
     };
 
     for (const DockPlacement &placement : DOCK_PLACEMENTS) {
@@ -800,6 +823,46 @@ void Shell::adoptDocks()
     }
 }
 
+void Shell::wrapTitleBar(HostedDock &hd)
+{
+    QDockWidget *dock = hd.dock;
+    QWidget *title = dock ? dock->titleBarWidget() : nullptr;
+    if (!title || hd.titleWrapper) {
+        return;
+    }
+    QScrollArea *scroll = new QScrollArea;
+    scroll->setObjectName(QStringLiteral("mobileTitleScroll"));
+    scroll->setFrameShape(QFrame::NoFrame);
+    scroll->setWidgetResizable(true);
+    scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    scroll->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Fixed);
+    scroll->setFixedHeight(qMax(title->sizeHint().height(), title->minimumSizeHint().height()));
+    enableKineticScrolling(scroll);
+    // Replacing the title bar widget hides the old one without deleting it.
+    dock->setTitleBarWidget(scroll);
+    scroll->setWidget(title);
+    title->show();
+    hd.titleWrapper = scroll;
+    hd.originalTitle = title;
+}
+
+void Shell::unwrapTitleBar(HostedDock &hd)
+{
+    QDockWidget *dock = hd.dock;
+    QScrollArea *scroll = qobject_cast<QScrollArea *>(hd.titleWrapper.data());
+    if (dock && scroll && dock->titleBarWidget() == scroll) {
+        QWidget *title = scroll->takeWidget();
+        dock->setTitleBarWidget(title);
+        if (title) {
+            title->show();
+        }
+        scroll->deleteLater();
+    }
+    hd.titleWrapper = nullptr;
+    hd.originalTitle = nullptr;
+}
+
 void Shell::releaseDocks()
 {
     KisMainWindow *mw = m_mainWindow;
@@ -817,6 +880,7 @@ void Shell::releaseDocks()
             if (m_sheet) {
                 m_sheet->takeTabContent(hd.panelId, hd.tabId);
             }
+            unwrapTitleBar(hd);
             if (dock->titleBarWidget()) {
                 dock->titleBarWidget()->setVisible(hd.titleBarWasVisible);
             }
@@ -949,7 +1013,7 @@ void Shell::buildMorePanel()
     addPanelCard(QStringLiteral("sliders"), i18n("Tool options"), QStringLiteral("brush"), QStringLiteral("tool"));
     addPanelCard(QStringLiteral("settings"), i18n("Brush editor"), QStringLiteral("brush"), QStringLiteral("editor"));
     addPanelCard(QStringLiteral("navigator"), i18n("Navigation and history"), QStringLiteral("view"), QString());
-    addPanelCard(QStringLiteral("krita:draw-text"), i18n("Text and vector"), QStringLiteral("text"), QString());
+    addPanelCard(QStringLiteral("text"), i18n("Text and vector"), QStringLiteral("text"), QString());
     for (const HostedDock &hd : qAsConst(m_docks)) {
         if (hd.panelId.startsWith(QLatin1String("other:")) && hd.dock) {
             ActionCard *card = addPanelCard(QString(), stripMnemonic(hd.dock->windowTitle()), hd.panelId, hd.tabId);
@@ -1118,6 +1182,17 @@ void Shell::connectKrita()
     m_kritaConnections << connect(mw, &KisMainWindow::activeViewChanged, this, [this] {
         updateTitle();
         updateViewChrome();
+        // The tool is switched while the view is being set up; refresh the
+        // quick sliders once everything is in place.
+        m_activeTool = KoToolManager::instance()->activeToolId();
+        updateQuickSliderTargets();
+        QTimer::singleShot(300, this, [this] {
+            m_activeTool = KoToolManager::instance()->activeToolId();
+            if (m_rail) {
+                m_rail->setActiveTool(m_activeTool);
+            }
+            updateQuickSliderTargets();
+        });
         if (m_mainWindow && m_mainWindow->activeView() && m_hub && m_hub->isVisible()) {
             hideHub();
         } else if (m_mainWindow && !m_mainWindow->activeView()) {
@@ -1206,8 +1281,22 @@ void Shell::updateViewChrome()
     // documents is in the Window menu.
     if (QMdiArea *mdi = m_mainWindow->findChild<QMdiArea *>()) {
         for (QTabBar *tabBar : mdi->findChildren<QTabBar *>(QString(), Qt::FindDirectChildrenOnly)) {
-            tabBar->setVisible(!m_active);
+            if (m_active) {
+                if (!tabBar->property("mobileOriginalStyleSheet").isValid()) {
+                    tabBar->setProperty("mobileOriginalStyleSheet", tabBar->styleSheet());
+                }
+                tabBar->setStyleSheet(QStringLiteral("QTabBar { max-height: 0px; } QTabBar::tab { height: 0px; max-height: 0px;"
+                                                     " min-height: 0px; padding: 0px; margin: 0px; border: none; }"));
+                tabBar->setVisible(false);
+            } else if (tabBar->property("mobileOriginalStyleSheet").isValid()) {
+                tabBar->setStyleSheet(tabBar->property("mobileOriginalStyleSheet").toString());
+                tabBar->setProperty("mobileOriginalStyleSheet", QVariant());
+                tabBar->setVisible(true);
+            }
         }
+        // Make QMdiArea recompute its viewport margins.
+        QResizeEvent resize(mdi->size(), mdi->size());
+        QCoreApplication::sendEvent(mdi, &resize);
     }
     // Gesture scrolling instead of tiny desktop scroll bars.
     if (KisView *view = m_mainWindow->activeView()) {
@@ -1341,7 +1430,13 @@ void Shell::updateTitle()
         m_topBar->setTitle(QStringLiteral("Krita"), false);
         return;
     }
-    QString title = doc->caption();
+    QString title;
+    if (!doc->path().isEmpty()) {
+        title = QFileInfo(doc->path()).completeBaseName();
+    }
+    if (title.isEmpty() && doc->documentInfo()) {
+        title = doc->documentInfo()->aboutInfo(QStringLiteral("title"));
+    }
     if (title.isEmpty()) {
         title = i18n("Untitled");
     }
