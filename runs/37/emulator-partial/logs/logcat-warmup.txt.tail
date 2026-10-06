@@ -1,0 +1,479 @@
+l object '8614dbb org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:01:29.298   545  2800 W WindowManager: Failed looking up window session=Session{4c9ac29 4713:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:944 android.view.IWindowSession$Stub.onTransact:1145 
+10-06 23:01:29.298   545  2800 I WindowManager: setOnBackInvokedCallback(): No window state for package:org.krita.mobilefork
+10-06 23:01:29.298   545  2049 W WindowManager: Failed looking up window session=Session{4c9ac29 4713:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.WindowManagerService.removeWindow:1974 com.android.server.wm.Session.remove:231 
+10-06 23:01:29.298  4713  4713 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@f5c193a that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:01:29.298  4713  4713 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@f5c193a that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:1839)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:1601)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1840)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1792)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1780)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:755)
+10-06 23:01:29.298  4713  4713 E ActivityThread: 	at org.qtproject.qt5.android.bearer.QtNetworkReceiver.registerReceiver(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:25)
+10-06 23:01:29.298  4713  4713 I DocumentSaverService: Destroying: Kill Process = true
+10-06 23:01:29.298  4713  4713 I DocumentSaverService: [waitForSaving]: mStartedInForeground: false
+10-06 23:01:29.298  4713  4713 I Process : Sending signal. PID: 4713 SIG: 9
+10-06 23:01:29.302   545  1783 I ImeTracker: com.google.android.apps.nexuslauncher:95271a2f: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 23:01:29.303   545  1783 I ImeTracker: com.google.android.apps.nexuslauncher:95271a2f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:01:29.307  1688  1688 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227 
+10-06 23:01:29.310  1688  1688 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-06 23:01:29.310  1688  1688 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=0 fieldName=null extras=null}, false)
+10-06 23:01:29.310  1688  1688 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-06 23:01:29.310  1688  1688 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-06 23:01:29.319   545   563 W Looper  : Drained
+10-06 23:01:29.346   545  1783 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-06 23:01:29.346   545  1783 D PackageManager: Clear ephemeral installer activity
+10-06 23:01:29.356   545   819 W JobScheduler: Job didn't exist in JobStore: e166e6d #u0a154/100007 com.google.android.contacts/androidx.work.impl.background.systemjob.SystemJobService
+10-06 23:01:29.472   545  2165 I WindowManager: finishDrawing of orientation change: Window{ffebe18 u0 ScreenDecorOverlayBottom} 514ms
+10-06 23:01:29.478   545   819 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-06 23:01:29.478   545   819 D PackageManager: Clear ephemeral installer activity
+10-06 23:01:29.608   545  2165 I WindowManager: finishDrawing of orientation change: Window{971a7b1 u0 NavigationBar0} 651ms
+10-06 23:01:29.627   545  2165 I WindowManager: finishDrawing of orientation change: Window{74efafc u0 ScreenDecorOverlay} 670ms
+10-06 23:01:29.669   545  1783 I ActivityManager: Process org.krita.mobilefork (pid 4713) has died: fg  SVC 
+10-06 23:01:29.671   545   563 D DisplayManagerService: Drop pending events for gone uid 10192
+10-06 23:01:29.675   545   565 W ActivityManager: setHasOverlayUi called on unknown pid: 4713
+10-06 23:01:29.676   358   358 I Zygote  : Process 4713 exited due to signal 9 (Killed)
+10-06 23:01:29.704   545   576 I libprocessgroup: Successfully killed process cgroup uid 10192 pid 4713 in 0ms
+10-06 23:01:29.751   902  1005 I OpenGLRenderer: Davey! duration=738ms; Flags=0, FrameTimelineVsyncId=8304, IntendedVsync=145195730078, Vsync=145312396740, InputEventId=0, HandleInputStart=145318826321, AnimationStart=145318826692, PerformTraversalsStart=145318854453, DrawStart=145880621245, FrameDeadline=145212396744, FrameInterval=145315885351, FrameStartTime=16666666, SyncQueued=145881037191, SyncStart=145881260461, IssueDrawCommandsStart=145881348051, SwapBuffers=145885261009, FrameCompleted=145933992379, DequeueBufferDuration=4749401, QueueBufferDuration=294857, GpuCompleted=145929200255, SwapBuffersCompleted=145933992379, DisplayPresentTime=0, CommandSubmissionCompleted=145885261009, 
+10-06 23:01:29.757   545  2603 I WindowManager: finishDrawing of orientation change: Window{14193d8 u0 StatusBar} 799ms
+10-06 23:01:29.757   902   902 I Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+10-06 23:01:30.033   902  1005 I OpenGLRenderer: Davey! duration=822ms; Flags=0, FrameTimelineVsyncId=8427, IntendedVsync=145329063406, Vsync=145979063380, InputEventId=0, HandleInputStart=145989653700, AnimationStart=145989654521, PerformTraversalsStart=145989694660, DrawStart=145992586808, FrameDeadline=145862396718, FrameInterval=145983021359, FrameStartTime=16666666, SyncQueued=145992621790, SyncStart=146028852884, IssueDrawCommandsStart=146031471077, SwapBuffers=146095843889, FrameCompleted=146188015432, DequeueBufferDuration=88113460, QueueBufferDuration=246855, GpuCompleted=146099853410, SwapBuffersCompleted=146188015432, DisplayPresentTime=0, CommandSubmissionCompleted=146095843889, 
+10-06 23:01:30.034   902  1005 I OpenGLRenderer: Davey! duration=711ms; Flags=0, FrameTimelineVsyncId=8427, IntendedVsync=145329063406, Vsync=145979063380, InputEventId=0, HandleInputStart=145989653700, AnimationStart=145989654521, PerformTraversalsStart=145989694660, DrawStart=146031349317, FrameDeadline=145962396714, FrameInterval=145983021359, FrameStartTime=16666666, SyncQueued=146031380503, SyncStart=146188177582, IssueDrawCommandsStart=146189702157, SwapBuffers=146192479846, FrameCompleted=146197307798, DequeueBufferDuration=336758, QueueBufferDuration=151044, GpuCompleted=146196942958, SwapBuffersCompleted=146197307798, DisplayPresentTime=0, CommandSubmissionCompleted=146192479846, 
+10-06 23:01:30.204  1688  2104 I SP      : Syncing emoticon_content_description (2022081613) with slices: [7a635888cb828dfa2fc744b7b9b50f04], metadata: false
+10-06 23:01:30.352  1135  1135 D CarrierSvcBindHelper: onPackageModified: com.google.android.contacts
+10-06 23:01:30.358  1107  1107 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 23:01:30.358  1107  1107 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-06 23:01:30.361  1135  1135 D CarrierSvcBindHelper: No carrier app for: 0
+10-06 23:01:30.362   545   647 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-06 23:01:30.371   902   984 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+10-06 23:01:30.372   902   984 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+10-06 23:01:30.372   902   984 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+10-06 23:01:30.372   902   984 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+10-06 23:01:30.373   902   902 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-06 23:01:30.374   902   984 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+10-06 23:01:30.374   902   984 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+10-06 23:01:30.376   902   984 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+10-06 23:01:30.376   902   984 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+10-06 23:01:30.382   902   984 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+10-06 23:01:30.383   902   984 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+10-06 23:01:30.383   902   984 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+10-06 23:01:30.391  1135  1409 D ImsResolver: maybeAddedImsService, packageName: com.google.android.contacts
+10-06 23:01:30.392   545   573 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-06 23:01:30.393   545   573 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-06 23:01:30.394   905  4654 I PermissionControllerServiceImpl: Updating user sensitive for uid 10154
+10-06 23:01:30.398  1871  1871 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.contacts.
+10-06 23:01:30.401  1871  2985 I AiAiEcho: AppIndexer Package:[com.google.android.contacts] UserProfile:[0] Enabled:[true].
+10-06 23:01:30.401  1871  2985 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.contacts], userId:[0], reason:[package is updated.].
+10-06 23:01:30.464  1688  2104 I SP      : Sync for content_cache succeeded in 1417 ms: no changes
+10-06 23:01:30.465  1688  2104 I SP      : GC for 'content_cache' (10) with ttl of 0 ms took 1 ms (0/1/0)
+10-06 23:01:30.481  1688  2104 I SP      : Sync for emoticon_content_description succeeded in 278 ms: no changes
+10-06 23:01:30.481  1688  2104 I SP      : GC for 'emoticon_content_description' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-06 23:01:30.494  1178  2109 D EGL_emulation: app_time_stats: avg=251.91ms min=43.62ms max=1026.21ms count=8
+10-06 23:01:30.850  4499  4617 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@6c21d58
+10-06 23:01:30.857  5507  6326 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-06 23:01:30.861  5612  5684 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+10-06 23:01:30.864  5507  5596 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 23:01:30.865  5507  5596 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-06 23:01:30.865  5507  6323 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-06 23:01:30.867  5612  5684 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-06 23:01:30.868  5612  5685 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-06 23:01:30.873  5612  5685 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-06 23:01:30.873  5612  5685 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-06 23:01:30.875  5612  5685 I Icing   : Indexing done com.google.android.gms-apps
+10-06 23:01:31.978  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.cryptauth.cryptauthservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-06 23:01:32.271   902   902 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 23:01:32.298   545  3466 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-06 23:01:32.316  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-06 23:01:32.316  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-06 23:01:32.380  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-06 23:01:32.448  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-06 23:01:32.514  5507  5507 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-06 23:01:32.678  2884  2884 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents/
+10-06 23:01:32.710  5507  5507 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-06 23:01:32.887  5507  5507 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-06 23:01:33.335   545   573 D OomAdjuster: Not killing cached processes
+10-06 23:01:35.302  1966  2664 W A       : Batch timed out; batchId=1 taskId=-1000006
+10-06 23:01:35.304   545  2049 W JobScheduler: Job didn't exist in JobStore: 724b25e #u0a132/-1000006 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+10-06 23:01:35.321  1966  6119 D t       : Starting download: https://www.gstatic.com/federated_assistant/policy_config_federated_hotword-v610555528.binarypb
+10-06 23:01:35.321  1966  6119 V t       : Is http uri, downloading (uri: https://www.gstatic.com/federated_assistant/policy_config_federated_hotword-v610555528.binarypb)
+10-06 23:01:35.321  1966  6138 D t       : Starting download: https://www.gstatic.com/assistant/appintegration/models/1/662c5aa4617258c027708e2bb9323ead.binarypb
+10-06 23:01:35.321  1966  6138 V t       : Is http uri, downloading (uri: https://www.gstatic.com/assistant/appintegration/models/1/662c5aa4617258c027708e2bb9323ead.binarypb)
+10-06 23:01:35.322  1966  2656 I A       : NGA Sync: MDD Task: MDD.CHARGING.PERIODIC.TASK done.
+10-06 23:01:35.323  1966  2656 I A       : NGA Sync: isNgaSyncEnabled: false; enableFileGroupPopulator: false; requiresMddAssets: false
+10-06 23:01:35.323  1966  2377 I A       : Refresh account policy.
+10-06 23:01:35.326  1966  1966 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-06 23:01:35.327  1966  6137 I NetworkRecognitionRnr: Using pair HTTP connection
+10-06 23:01:35.327  1966  3593 W LocationOracle: getBestLocation(): no location is available
+10-06 23:01:35.328  1966  3578 I A       : [Upload] Connected
+10-06 23:01:35.329  1966  2377 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-06 23:01:35.332  1966  2381 W LocationOracle: No location returned by GMS core getLastLocation()
+10-06 23:01:35.333  1966  1966 E A       : onError
+10-06 23:01:35.333  1966  1966 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-06 23:01:35.333  1966  1966 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-06 23:01:35.333  1966  1966 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:01:35.333  1966  1966 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:01:35.333  1966  1966 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:01:35.333  1966  1966 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-06 23:01:35.333  1966  1966 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-06 23:01:35.333  1966  1966 E A       : 	... 15 more
+10-06 23:01:35.333  1966  1966 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-06 23:01:35.333  1966  1966 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-06 23:01:35.333  1966  1966 E A       : 	... 12 more
+10-06 23:01:35.334  1966  3578 I NetworkRecognitionRnr: Using pair HTTP connection
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: Exception in upload method
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.r.d: Error code: 262182
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.ab.bk.d(PG:5)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.ar.d(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.bo.b(PG:5)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.e.a(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.a.run(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bu.cancel(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:17)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.bk.b.h.run(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:01:35.334  1966  2656 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-06 23:01:35.335  1966  3593 I A       : [Upload] Connected
+10-06 23:01:35.336  1966  1966 W A       : Failed to sync device settings.
+10-06 23:01:35.336  1966  1966 I A       : Retrying to sync device settings.
+10-06 23:01:35.338  1966  6119 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600512
+10-06 23:01:35.338  1966  6138 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600510
+10-06 23:01:35.340   545  2049 W JobScheduler: Job didn't exist in JobStore: d1f8b5b #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+10-06 23:01:35.341  1966  6130 D t       : Starting download: https://www.gstatic.com/assistant/appintegration/models/1/05a8f7c516a3ad6c26cc4161a3dd6ac6.binarypb
+10-06 23:01:35.341  1966  6130 V t       : Is http uri, downloading (uri: https://www.gstatic.com/assistant/appintegration/models/1/05a8f7c516a3ad6c26cc4161a3dd6ac6.binarypb)
+10-06 23:01:35.342  1966  6138 D t       : Starting download: https://dl.google.com/assistant/nga/1/4bce3720332aff95260f75ee29bbe97bd379e868.mddz
+10-06 23:01:35.342  1966  6138 V t       : Is http uri, downloading (uri: https://dl.google.com/assistant/nga/1/4bce3720332aff95260f75ee29bbe97bd379e868.mddz)
+10-06 23:01:35.358  1966  2904 E SingleDataFileGroupPop: Failed to add file group 
+10-06 23:01:35.358  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.358  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.358  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.358  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.359  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.359  1966  2904 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@33ceb66} with executor MoreExecutors.directExecutor()
+10-06 23:01:35.359  1966  2904 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 23:01:35.359  1966  2904 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:01:35.359  1966  2904 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-06 23:01:35.359  1966  2904 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 23:01:35.359  1966  2904 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:01:35.359  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.359  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.359  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.360  1966  6114 I A       : Starting new batch; batchId=2 corpus=1014
+10-06 23:01:35.360  1966  6130 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600511
+10-06 23:01:35.360  1966  2904 I A       : Download file group for language pack: en-US
+10-06 23:01:35.360  1966  2904 W A       : Locale en-US is not compatible, please check manifest exists
+10-06 23:01:35.361  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.361  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.361  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.361  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.361  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.361  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.362  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.362  1966  6114 D t       : Starting download: https://dl.google.com/assistant/nga/1/17d453d07f334b7d810f8e6e05dbd6001dc45eea.mddz
+10-06 23:01:35.362  1966  6114 V t       : Is http uri, downloading (uri: https://dl.google.com/assistant/nga/1/17d453d07f334b7d810f8e6e05dbd6001dc45eea.mddz)
+10-06 23:01:35.363  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.364  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.365  1966  6119 I A       : Joining existing batch; batchId=2 corpus=1015
+10-06 23:01:35.365  1966  6137 I A       : Joining existing batch; batchId=2 corpus=1008
+10-06 23:01:35.365  1966  2896 I A       : Joining existing batch; batchId=2 corpus=1004
+10-06 23:01:35.365  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.365  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.366  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.366  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.366  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.366  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.366  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.366  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.366  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.366  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.367  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.367  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.367  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.367  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.367  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.367  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.367  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.367  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.372  1966  2904 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-06 23:01:35.374  1966  2904 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-06 23:01:35.374  1966  2904 D PhFileGroupPop: Added file groups tapas_cortex
+10-06 23:01:35.379  1966  2381 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.379  1966  2374 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.380  1966  2380 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.380  1966  2380 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:35.388  1966  2381 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:35.388  1966  2374 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:35.449  1966  6138 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600513_1d48ae4b292cd15bc945ae5ddedb9565d268f7e2
+10-06 23:01:35.530   545   639 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+10-06 23:01:35.544  1966  6114 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600514_a64a3f98d26fa7e7180cd6d29bf44fced216fc32
+10-06 23:01:35.546  1966  2896 D t       : Starting download: https://dl.google.com/assistant/nga/1/c11ffd9ddd4f0c6433a5cb07a437812b735fa547.mddz
+10-06 23:01:35.546  1966  2896 V t       : Is http uri, downloading (uri: https://dl.google.com/assistant/nga/1/c11ffd9ddd4f0c6433a5cb07a437812b735fa547.mddz)
+10-06 23:01:35.552  1966  6114 D t       : Starting download: https://dl.google.com/assistant/nga/1/1658155c551c182a9c9cbdff0bc6cd4293920bc3.mddz
+10-06 23:01:35.553  1966  6114 V t       : Is http uri, downloading (uri: https://dl.google.com/assistant/nga/1/1658155c551c182a9c9cbdff0bc6cd4293920bc3.mddz)
+10-06 23:01:35.605  1966  2896 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600515_5e9da2701f510020f2592c1e5b468922569445d7
+10-06 23:01:35.662  1966  6114 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600516_b56351a773b9354cf1ebcacf86f309b6489173ac
+10-06 23:01:35.705  1966  2904 E SingleDataFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@5688603} with executor MoreExecutors.directExecutor()
+10-06 23:01:35.705  1966  2904 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 23:01:35.705  1966  2904 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:01:35.705  1966  2904 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-06 23:01:35.705  1966  2904 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 23:01:35.705  1966  2904 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.705  1966  2904 E PhFileGroupPop: Failed to add file group 
+10-06 23:01:35.706  1966  6114 I A       : Joining existing batch; batchId=2 corpus=1004
+10-06 23:01:35.706  1966  2896 I A       : Joining existing batch; batchId=2 corpus=1008
+10-06 23:01:35.706  1966  2904 I A       : Download file group for language pack: en-US
+10-06 23:01:35.706  1966  2904 W A       : Locale en-US is not compatible, please check manifest exists
+10-06 23:01:35.706  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.706  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.706  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.707  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.707  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.707  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.707  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.707  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.707  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.708  1966  6138 I A       : Joining existing batch; batchId=2 corpus=1014
+10-06 23:01:35.708  1966  6137 I A       : Joining existing batch; batchId=2 corpus=1015
+10-06 23:01:35.708  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.708  1966  2904 I A       : Using proto config with mendel
+10-06 23:01:35.708  1966  2904 I A       : Merging legacy hotword config map with new proto.
+10-06 23:01:35.708  1966  2904 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.708  1966  2904 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 23:01:35.708  1966  2904 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 23:01:35.708  1966  2904 I A       : Skipping. Expected model: 2 Found: 1
+10-06 23:01:35.708  1966  2904 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 23:01:35.708  1966  2904 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 23:01:35.709  1966  2904 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-06 23:01:35.709  1966  2904 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-06 23:01:35.709  1966  2904 D PhFileGroupPop: Added file groups tapas_cortex
+10-06 23:01:35.710  1966  2377 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.710  1966  2380 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.711  1966  2381 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791327600509]
+10-06 23:01:35.711  1966  2377 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:35.711  1966  2380 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:35.711  1966  2381 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-06 23:01:36.025   545   635 D ActivityManager: freezing 6294 com.android.externalstorage
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 2186 com.android.keychain
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 1565 com.android.carrierconfig
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 1418 com.android.cellbroadcastreceiver
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 1934 com.android.printspooler
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 2738 com.android.localtransport
+10-06 23:01:36.116   545   635 D ActivityManager: freezing 1942 com.google.android.googlesdksetup
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 1251 com.android.bluetooth
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 1896 com.android.carrierdefaultapp
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 3496 com.android.traceur
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 3225 com.google.android.webview:webview_service
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 3590 com.google.android.onetimeinitializer
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 3647 com.android.camera2
+10-06 23:01:36.117   545   635 D ActivityManager: freezing 3713 com.android.dynsystem
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 1300 com.google.android.cellbroadcastreceiver
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 2562 com.android.imsserviceentitlement
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 3768 com.android.dynsystem:dynsystem
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 2231 com.android.providers.calendar
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 4486 com.android.emergency
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 4542 com.google.android.healthconnect.controller
+10-06 23:01:36.118   545   635 D ActivityManager: freezing 5222 com.google.android.webview
+10-06 23:01:36.118  2884  2884 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 1141 com.android.settings
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 2282 com.google.android.partnersetup
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 3112 com.google.android.tts
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 4938 com.google.android.googlequicksearchbox
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 4525 com.google.android.marvin.talkback
+10-06 23:01:36.119   545   635 D ActivityManager: freezing 4087 com.google.android.gm
+10-06 23:01:36.120   545   635 D ActivityManager: freezing 4051 com.google.android.projection.gearhead:shared
+10-06 23:01:36.120   545   635 D ActivityManager: freezing 2005 com.google.android.youtube
+10-06 23:01:36.120   545   635 D ActivityManager: freezing 5725 com.google.android.gms.ui
+10-06 23:01:36.121   545   635 D ActivityManager: freezing 2894 com.google.android.apps.wallpaper
+10-06 23:01:36.121   545   635 D ActivityManager: freezing 2496 com.google.android.as.oss
+10-06 23:01:36.121   545   635 D ActivityManager: freezing 5291 com.google.android.settings.intelligence
+10-06 23:01:36.121   545   635 D ActivityManager: freezing 2884 com.google.android.documentsui
+10-06 23:01:36.122   545   635 D ActivityManager: Reschedule freeze for process 2884 com.google.android.documentsui (outstanding txns), timeout=2705
+10-06 23:01:36.123   545   635 D ActivityManager: freezing 3030 com.android.chrome
+10-06 23:01:36.123   545   635 D ActivityManager: freezing 1919 com.google.android.apps.youtube.music
+10-06 23:01:36.125  2884  6335 E IPCThreadState: Binder transaction failure: 581134/29202/0
+10-06 23:01:36.125  2884  6335 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 332)
+10-06 23:01:36.126  2884  6335 I ActivityThread: Removing dead content provider:android.content.ContentProviderProxy@794bf62
+10-06 23:01:36.128   545  2603 E IPCThreadState: Binder transaction failure: 581138/29202/0
+10-06 23:01:36.128   545  2603 I ActivityManager: Process com.android.externalstorage (pid 6294) early provider death
+10-06 23:01:36.129   545  2603 I ActivityManager: Process com.android.externalstorage (pid 6294) has died: cch+5 CEM 
+10-06 23:01:36.129   545   563 D DisplayManagerService: Drop pending events for gone uid 10085
+10-06 23:01:36.130  2884  6335 W ProvidersCache: Failed to load some roots from com.android.externalstorage.documents
+10-06 23:01:36.130  2884  6335 W ProvidersCache: android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died, but this could also be caused by running out of binder buffer space
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.os.BinderProxy.transactNative(Native Method)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:493)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:196)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:178)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:168)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache.loadRootsForAuthority(ProvidersCache.java:365)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache.-$$Nest$mloadRootsForAuthority(ProvidersCache.java:0)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.handleDocumentsProvider(ProvidersCache.java:644)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.startSingleProviderUpdateTask(ProvidersCache.java:620)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.lambda$doInBackground$0(ProvidersCache.java:566)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask.$r8$lambda$JoZYG_i4kbsZkEOv7jFikTYLS9c(ProvidersCache.java:0)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at com.android.documentsui.roots.ProvidersCache$MultiProviderUpdateTask$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:01:36.130  2884  6335 W ProvidersCache: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:01:36.134   545  2800 V ActivityManager: Got obituary of 6294:com.android.externalstorage
+10-06 23:01:36.135   358   358 I Zygote  : Process 6294 exited due to signal 9 (Killed)
+10-06 23:01:36.135   545   576 I libprocessgroup: Successfully killed process cgroup uid 10085 pid 6294 in 5ms
+10-06 23:01:36.165   545  2800 D ActivityManager: freezer override set to true
+10-06 23:01:36.165   545  2800 D ActivityManager: sync unfroze 2186 com.android.keychain for 19
+10-06 23:01:36.165   545  2800 D ActivityManager: sync unfroze 1565 com.android.carrierconfig for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1418 com.android.cellbroadcastreceiver for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1934 com.android.printspooler for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 2738 com.android.localtransport for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1942 com.google.android.googlesdksetup for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1251 com.android.bluetooth for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1896 com.android.carrierdefaultapp for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 3496 com.android.traceur for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 3225 com.google.android.webview:webview_service for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 3590 com.google.android.onetimeinitializer for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 3647 com.android.camera2 for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 3713 com.android.dynsystem for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 1300 com.google.android.cellbroadcastreceiver for 19
+10-06 23:01:36.166   545  2800 D ActivityManager: sync unfroze 2562 com.android.imsserviceentitlement for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 3768 com.android.dynsystem:dynsystem for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 2231 com.android.providers.calendar for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 4486 com.android.emergency for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 4542 com.google.android.healthconnect.controller for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 5222 com.google.android.webview for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 1141 com.android.settings for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 2282 com.google.android.partnersetup for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 3112 com.google.android.tts for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 4938 com.google.android.googlequicksearchbox for 19
+10-06 23:01:36.167   545  2800 D ActivityManager: sync unfroze 4525 com.google.android.marvin.talkback for 19
+10-06 23:01:36.168   545  2800 D ActivityManager: sync unfroze 4087 com.google.android.gm for 19
+10-06 23:01:36.168   545  2800 D ActivityManager: sync unfroze 4051 com.google.android.projection.gearhead:shared for 19
+10-06 23:01:36.168   545  2800 D ActivityManager: sync unfroze 2005 com.google.android.youtube for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 5725 com.google.android.gms.ui for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 2894 com.google.android.apps.wallpaper for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 2496 com.google.android.as.oss for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 5291 com.google.android.settings.intelligence for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 3816 com.google.android.rkpdapp for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 3133 com.google.android.gms.unstable for 19
+10-06 23:01:36.169   545  2800 D ActivityManager: sync unfroze 3030 com.android.chrome for 19
+10-06 23:01:36.170   545  2800 D ActivityManager: sync unfroze 1919 com.google.android.apps.youtube.music for 19
+10-06 23:01:36.176   545  2800 D ActivityManager: freezer override set to false
