@@ -589,11 +589,22 @@ jobs:
         timeout-minutes: 100
         run: |
           mkdir -p emu logs
+          partial() { # publishes what is there so far (the walk takes long)
+            { echo "status: running ($1 done)"; echo "commit: ${GITHUB_SHA}"; for r in warmup classic phone; do
+                [ -f "emu/$r/result.txt" ] && { cat "emu/$r/result.txt"; grep -h '^interface\|^perf' "emu/$r/testdriver.log" 2>/dev/null; }; done; } > partial-summary.txt
+            mkdir -p partial-shots; cp emu/*/*.png emu/*/testdriver.log partial-shots/ 2>/dev/null
+            GITHUB_TOKEN="${{ github.token }}" bash mobilefork/ci/publish-status.sh emulator-partial running partial-summary.txt partial-shots latest/emulator-partial > /dev/null 2>&1 || true
+          }
           bash mobilefork/ci/emulator-run.sh classic emu/warmup 600
           bash mobilefork/ci/emulator-run.sh classic emu/classic 600
-          bash mobilefork/ci/emulator-run.sh auto emu/phone 4800 walk
+          partial classic
+          # The phone run first without the walk (screens and dialogs), then
+          # the walk, so a hang in the walk can't hide the screenshots.
+          bash mobilefork/ci/emulator-run.sh auto emu/phone 1800
+          partial phone
+          bash mobilefork/ci/emulator-run.sh auto emu/walk 4200 walk
           {
-            for r in warmup classic phone; do
+            for r in warmup classic phone walk; do
               echo "== $r"; cat "emu/$r/result.txt" 2>/dev/null
               grep -E 'TotalTime|WaitTime' "emu/$r/am-start.txt" 2>/dev/null
               grep -m1 -E 'TOTAL( PSS)?:' "emu/$r/meminfo-final.txt" 2>/dev/null
@@ -602,9 +613,11 @@ jobs:
           } | tee logs/emulator-perf.txt
           mkdir -p shots
           cp emu/phone/*.png emu/phone/*.csv emu/phone/testdriver.log shots/ 2>/dev/null
+          cp emu/walk/walk.csv emu/walk/runtime-inventory.csv shots/ 2>/dev/null
+          cp emu/walk/testdriver.log shots/testdriver-walk.log 2>/dev/null
           for f in emu/classic/*.png; do [ -f "$f" ] && cp "$f" "shots/$(basename "$f")"; done
           cp emu/classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
-          for r in warmup classic phone; do
+          for r in warmup classic phone walk; do
             cp "emu/$r/logcat-crash.txt" "logs/logcat-crash-$r.txt" 2>/dev/null
             tail -c 300000 "emu/$r/logcat.txt" > "logs/logcat-$r.txt" 2>/dev/null
           done
