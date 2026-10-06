@@ -21,6 +21,8 @@
 
 #include <QAction>
 #include <QApplication>
+#include <QClipboard>
+#include <QImage>
 #include <QDialog>
 #include <QDir>
 #include <QElapsedTimer>
@@ -509,12 +511,6 @@ private:
             {QStringLiteral("render_animation_again"), QStringLiteral("renders files with the last settings")},
             {QStringLiteral("help_contents"), QStringLiteral("opens a web browser")},
             {QStringLiteral("help_report_bug"), QStringLiteral("opens a web browser")},
-#ifndef Q_OS_ANDROID
-            // Hangs in the CI's X11 session after copying a whole layer: the
-            // pasted area is enormous (tile coordinates past 0x7FFF); see the
-            // bug log. Checked separately in Krita's own interface.
-            {QStringLiteral("paste_new"), QStringLiteral("upstream hang in CI, bug log #15")},
-#endif
         };
 #ifdef Q_OS_ANDROID
         // The Android file picker is a separate app the test can't close.
@@ -655,6 +651,16 @@ private:
             return;
         }
         log(QStringLiteral("walk %1/%2: %3").arg(m_walkIndex).arg(m_walk.size()).arg(item.id));
+        if (item.id.contains(QLatin1String("paste"))) {
+            // Copying a whole layer whose default pixel isn't transparent
+            // (the white background) puts an unbounded area on the clipboard
+            // and Krita's own "Paste into New Image" then hangs (bug log
+            // #15, reproduced without the phone interface). Paste commands
+            // get a small known image instead.
+            QImage image(64, 64, QImage::Format_ARGB32);
+            image.fill(QColor(200, 60, 60));
+            QApplication::clipboard()->setImage(image);
+        }
         m_walkTimer.start();
         const bool checkable = item.action->isCheckable();
         m_shell->commandBrowser()->activateForTest(item.action);
