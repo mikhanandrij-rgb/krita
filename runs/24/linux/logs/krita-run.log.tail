@@ -1,0 +1,743 @@
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffef8a06c0 (LWP 32039)]
+[New Thread 0x7fffdc9ff6c0 (LWP 32040)]
+[New Thread 0x7fffdb9fe6c0 (LWP 32041)]
+[New Thread 0x7fffda9fd6c0 (LWP 32042)]
+[New Thread 0x7fffd99fc6c0 (LWP 32043)]
+[New Thread 0x7fffcbfff6c0 (LWP 32044)]
+[New Thread 0x7fffcaffe6c0 (LWP 32045)]
+[New Thread 0x7fffc9ffd6c0 (LWP 32046)]
+[New Thread 0x7fffb7fff6c0 (LWP 32047)]
+[New Thread 0x7fffb6ffe6c0 (LWP 32048)]
+[Thread 0x7fffef8a06c0 (LWP 32039) exited]
+[Thread 0x7fffb7fff6c0 (LWP 32047) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 32046) exited]
+[Thread 0x7fffcaffe6c0 (LWP 32045) exited]
+[Thread 0x7fffcbfff6c0 (LWP 32044) exited]
+[Thread 0x7fffda9fd6c0 (LWP 32042) exited]
+[Thread 0x7fffd99fc6c0 (LWP 32043) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 32041) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 32040) exited]
+[Thread 0x7fffb6ffe6c0 (LWP 32048) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb6ffe6c0 (LWP 32051)]
+[New Thread 0x7fffd99fc6c0 (LWP 32052)]
+[New Thread 0x7fffef8a06c0 (LWP 32053)]
+[New Thread 0x7fffdc9ff6c0 (LWP 32054)]
+[New Thread 0x7fffdb9fe6c0 (LWP 32055)]
+[New Thread 0x7fffda9fd6c0 (LWP 32056)]
+[New Thread 0x7fffcbfff6c0 (LWP 32057)]
+[New Thread 0x7fffcaffe6c0 (LWP 32058)]
+[New Thread 0x7fffc9ffd6c0 (LWP 32059)]
+[New Thread 0x7fffb7fff6c0 (LWP 32060)]
+[Thread 0x7fffb6ffe6c0 (LWP 32051) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 32059) exited]
+[Thread 0x7fffcaffe6c0 (LWP 32058) exited]
+[Thread 0x7fffcbfff6c0 (LWP 32057) exited]
+[Thread 0x7fffda9fd6c0 (LWP 32056) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 32055) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 32054) exited]
+[Thread 0x7fffef8a06c0 (LWP 32053) exited]
+[Thread 0x7fffd99fc6c0 (LWP 32052) exited]
+[Thread 0x7fffb7fff6c0 (LWP 32060) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb7fff6c0 (LWP 32063)]
+[New Thread 0x7fffdb9fe6c0 (LWP 32064)]
+[New Thread 0x7fffef8a06c0 (LWP 32065)]
+[New Thread 0x7fffdc9ff6c0 (LWP 32066)]
+[New Thread 0x7fffda9fd6c0 (LWP 32067)]
+[New Thread 0x7fffd99fc6c0 (LWP 32068)]
+[New Thread 0x7fffcbfff6c0 (LWP 32069)]
+[New Thread 0x7fffcaffe6c0 (LWP 32070)]
+[New Thread 0x7fffc9ffd6c0 (LWP 32071)]
+[New Thread 0x7fffb6ffe6c0 (LWP 32072)]
+[Thread 0x7fffb7fff6c0 (LWP 32063) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 32071) exited]
+[Thread 0x7fffcaffe6c0 (LWP 32070) exited]
+[Thread 0x7fffcbfff6c0 (LWP 32069) exited]
+[Thread 0x7fffd99fc6c0 (LWP 32068) exited]
+[Thread 0x7fffef8a06c0 (LWP 32065) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 32064) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 32066) exited]
+[Thread 0x7fffda9fd6c0 (LWP 32067) exited]
+[Thread 0x7fffb6ffe6c0 (LWP 32072) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffb6ffe6c0 (LWP 32073)]
+[New Thread 0x7fffda9fd6c0 (LWP 32076)]
+[New Thread 0x7fffef8a06c0 (LWP 32077)]
+[New Thread 0x7fffdc9ff6c0 (LWP 32078)]
+[New Thread 0x7fffdb9fe6c0 (LWP 32079)]
+[New Thread 0x7fffd99fc6c0 (LWP 32080)]
+[New Thread 0x7fffcbfff6c0 (LWP 32081)]
+[New Thread 0x7fffcaffe6c0 (LWP 32082)]
+[New Thread 0x7fffc9ffd6c0 (LWP 32083)]
+[New Thread 0x7fffb7fff6c0 (LWP 32084)]
+[New Thread 0x7fffb5ffd6c0 (LWP 32085)]
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritapalettize.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffa56e76c0 (LWP 32086)]
+QObject::startTimer: Timers cannot have negative intervals
+[New Thread 0x7fff9ffff6c0 (LWP 32087)]
+[New Thread 0x7fff9effe6c0 (LWP 32088)]
+[Thread 0x7fff9ffff6c0 (LWP 32087) exited]
+[New Thread 0x7fff9ffff6c0 (LWP 32089)]
+[New Thread 0x7fff9dffd6c0 (LWP 32090)]
+[New Thread 0x7fff8ffff6c0 (LWP 32091)]
+[New Thread 0x7fff8effe6c0 (LWP 32092)]
+/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/krita-python-libs/krita added to PYTHONPATH
+[New Thread 0x7fff8c88b6c0 (LWP 32093)]
+[New Thread 0x7fff7f3da6c0 (LWP 32094)]
+[New Thread 0x7fff7e17a6c0 (LWP 32095)]
+[New Thread 0x7fff7cdb96c0 (LWP 32096)]
+[New Thread 0x7fff6f5ff6c0 (LWP 32097)]
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+Krita Mobile: interface mode 0, smallest screen side 1024 dp (Android: -1), phone interface on
+[New Thread 0x7fff6df046c0 (LWP 32098)]
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+[New Thread 0x7fff67fff6c0 (LWP 32101)]
+[New Thread 0x7fff5edff6c0 (LWP 32102)]
+[New Thread 0x7fff66ffe6c0 (LWP 32103)]
+[New Thread 0x7fff65ffd6c0 (LWP 32104)]
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[New Thread 0x7fff5ddfe6c0 (LWP 32107)]
+[New Thread 0x7fff4ffff6c0 (LWP 32108)]
+[New Thread 0x7fff4effe6c0 (LWP 32109)]
+[New Thread 0x7fff4dffd6c0 (LWP 32110)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[Thread 0x7fff5edff6c0 (LWP 32102) exited]
+[Thread 0x7fff67fff6c0 (LWP 32101) exited]
+[New Thread 0x7fff67fff6c0 (LWP 32115)]
+[New Thread 0x7fff5edff6c0 (LWP 32116)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[Thread 0x7fff8effe6c0 (LWP 32092) exited]
+[Thread 0x7fff8ffff6c0 (LWP 32091) exited]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+Krita Mobile UI: missing icon ''
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[Thread 0x7fff9dffd6c0 (LWP 32090) exited]
+[Thread 0x7fff9ffff6c0 (LWP 32089) exited]
+[Thread 0x7fff4effe6c0 (LWP 32109) exited]
+[Thread 0x7fff4ffff6c0 (LWP 32108) exited]
+[Thread 0x7fff5ddfe6c0 (LWP 32107) exited]
+[Thread 0x7fff4dffd6c0 (LWP 32110) exited]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.general: WARNING: Uncategorized action "krita_filter_edge detection" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_fastcoloroverlay" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_resettransparent" Dropping...
+krita.general: WARNING: Uncategorized action "composite_actions" Dropping...
+krita.general: WARNING: Uncategorized action "paintops" Dropping...
+krita.general: WARNING: Uncategorized action "dockerBox" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_auto" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_phone" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_classic" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_constant" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_linear" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_bezier" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_sharp" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_smooth" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_range" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_curve" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_0" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_1" Dropping...
+krita.general: WARNING: Uncategorized action "color_space" Dropping...
+krita.general: WARNING: Uncategorized action "document_tools" Dropping...
+krita.general: WARNING: Uncategorized action "export_layers" Dropping...
+krita.general: WARNING: Uncategorized action "filter_manager" Dropping...
+krita.general: WARNING: Uncategorized action "python_scripter" Dropping...
+krita.general: WARNING: Uncategorized action "editToolBar" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar1" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar2" Dropping...
+krita.general: WARNING: The following shortcuts are not registered in the collection, they might have wrong shortcuts in the end:
+krita.general: "svg_settings"
+krita.general: "select_layout"
+krita.general: "delete_keyframe"
+krita.general: "krita_filter_bottom edge detections"
+krita.general: "options_configure_keybinding"
+krita.general: "crashlog"
+krita.general: "krita_filter_top edge detections"
+krita.general: "krita_filter_right edge detections"
+krita.general: "krita_filter_left edge detections"
+krita.general: "krita_filter_sobel"
+krita.general: "show_tool_options"
+krita.general: "create_bundle"
+krita.general: "color_management_report"
+krita.general: "histogram"
+krita.general: "logcatdump"
+krita.general: === end ===
+Failed to fetch display info: "current platform doesn't support fetching display information"
+QObject::connect: No such signal WdgImageSize::okClicked()
+[Thread 0x7fff65ffd6c0 (LWP 32104) exited]
+[Thread 0x7fff66ffe6c0 (LWP 32103) exited]
+[Thread 0x7fff67fff6c0 (LWP 32115) exited]
+[Thread 0x7fff5edff6c0 (LWP 32116) exited]
+[New Thread 0x7fff5edff6c0 (LWP 32121)]
+[New Thread 0x7fff67fff6c0 (LWP 32122)]
+[New Thread 0x7fff9ffff6c0 (LWP 32123)]
+[New Thread 0x7fff9dffd6c0 (LWP 32124)]
+Dialog "krita/layer_split" has a widget without an object name: QWidget(0x5555687799f0)
+[Thread 0x7fff9dffd6c0 (LWP 32124) exited]
+[Thread 0x7fff9ffff6c0 (LWP 32123) exited]
+[Thread 0x7fff67fff6c0 (LWP 32122) exited]
+[Thread 0x7fff5edff6c0 (LWP 32121) exited]
+[New Thread 0x7fff5edff6c0 (LWP 32130)]
+[New Thread 0x7fff9ffff6c0 (LWP 32131)]
+[New Thread 0x7fff9dffd6c0 (LWP 32132)]
+[New Thread 0x7fff67fff6c0 (LWP 32133)]
+[New Thread 0x7fff65ffd6c0 (LWP 32134)]
+[New Thread 0x7fff5ddfe6c0 (LWP 32135)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[New Thread 0x7fff4ffff6c0 (LWP 32139)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[New Thread 0x7fff4effe6c0 (LWP 32141)]
+[New Thread 0x7fff4dffd6c0 (LWP 32142)]
+[New Thread 0x7fff3bfff6c0 (LWP 32143)]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[Thread 0x7fff9ffff6c0 (LWP 32131) exited]
+[Thread 0x7fff5edff6c0 (LWP 32130) exited]
+[Thread 0x7fff65ffd6c0 (LWP 32134) exited]
+[Thread 0x7fff9dffd6c0 (LWP 32132) exited]
+[Thread 0x7fff67fff6c0 (LWP 32133) exited]
+[Thread 0x7fff5ddfe6c0 (LWP 32135) exited]
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.general: WARNING: Uncategorized action "krita_filter_edge detection" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_fastcoloroverlay" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_resettransparent" Dropping...
+krita.general: WARNING: Uncategorized action "composite_actions" Dropping...
+krita.general: WARNING: Uncategorized action "paintops" Dropping...
+krita.general: WARNING: Uncategorized action "dockerBox" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_auto" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_phone" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_classic" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_constant" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_linear" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_bezier" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_sharp" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_smooth" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_range" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_curve" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_0" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_1" Dropping...
+krita.general: WARNING: Uncategorized action "color_space" Dropping...
+krita.general: WARNING: Uncategorized action "document_tools" Dropping...
+krita.general: WARNING: Uncategorized action "export_layers" Dropping...
+krita.general: WARNING: Uncategorized action "filter_manager" Dropping...
+krita.general: WARNING: Uncategorized action "python_scripter" Dropping...
+krita.general: WARNING: Uncategorized action "editToolBar" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar1" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar2" Dropping...
+krita.general: WARNING: The following shortcuts are not registered in the collection, they might have wrong shortcuts in the end:
+krita.general: "svg_settings"
+krita.general: "select_layout"
+krita.general: "delete_keyframe"
+krita.general: "krita_filter_bottom edge detections"
+krita.general: "options_configure_keybinding"
+krita.general: "crashlog"
+krita.general: "krita_filter_top edge detections"
+krita.general: "krita_filter_right edge detections"
+krita.general: "krita_filter_left edge detections"
+krita.general: "krita_filter_sobel"
+krita.general: "show_tool_options"
+krita.general: "create_bundle"
+krita.general: "color_management_report"
+krita.general: "histogram"
+krita.general: "logcatdump"
+krita.general: === end ===
+Failed to fetch display info: "current platform doesn't support fetching display information"
+QObject::connect: No such signal WdgImageSize::okClicked()
+[Thread 0x7fff3bfff6c0 (LWP 32143) exited]
+[Thread 0x7fff4effe6c0 (LWP 32141) exited]
+[Thread 0x7fff4ffff6c0 (LWP 32139) exited]
+[Thread 0x7fff4dffd6c0 (LWP 32142) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32182)]
+[New Thread 0x7fff4ffff6c0 (LWP 32183)]
+[New Thread 0x7fff9ffff6c0 (LWP 32184)]
+[New Thread 0x7fff9dffd6c0 (LWP 32185)]
+Dialog "krita/layer_split" has a widget without an object name: QWidget(0x5555592acc90)
+[Thread 0x7fff9ffff6c0 (LWP 32184) exited]
+[Thread 0x7fff4ffff6c0 (LWP 32183) exited]
+[Thread 0x7fff9dffd6c0 (LWP 32185) exited]
+[Thread 0x7fff4dffd6c0 (LWP 32182) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32191)]
+[Thread 0x7fff4dffd6c0 (LWP 32191) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32193)]
+[Thread 0x7fff4dffd6c0 (LWP 32193) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32194)]
+[Thread 0x7fff4dffd6c0 (LWP 32194) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32195)]
+[Thread 0x7fff4dffd6c0 (LWP 32195) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32196)]
+[Thread 0x7fff4dffd6c0 (LWP 32196) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32197)]
+[Thread 0x7fff4dffd6c0 (LWP 32197) exited]
+[Detaching after fork from child process 32199]
+[Detaching after fork from child process 32200]
+[Detaching after fork from child process 32201]
+[New Thread 0x7fff4dffd6c0 (LWP 32202)]
+[Thread 0x7fff4dffd6c0 (LWP 32202) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32203)]
+[Thread 0x7fff4dffd6c0 (LWP 32203) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32204)]
+krita.general: Unhandled: "/null/Nm  " 5QHashI7QStringSt8functionIFvRKS0_EEE "<Paint Layer 1> (embedded)"
+krita.general: Unhandled: "/null/Idnt" 5QHashI7QStringSt8functionIFvRKS0_EEE "7e2287c6-cab3-4e27-a9b9-9bc07c94d5b8"
+krita.general: Unhandled: "/Styl/Lefx/masterFXSwitch" 5QHashI7QStringSt8functionIFvbEEE true
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+[New Thread 0x7fff9dffd6c0 (LWP 32205)]
+    corrected offset: QPointF(103,311)
+    corrected offset: QPointF(0,311)
+[New Thread 0x7fff67fff6c0 (LWP 32208)]
+[New Thread 0x7fff65ffd6c0 (LWP 32209)]
+[New Thread 0x7fff5f7fe6c0 (LWP 32210)]
+[Thread 0x7fff4dffd6c0 (LWP 32204) exited]
+QObject::connect: No such signal WdgImageSize::okClicked()
+[New Thread 0x7fff4dffd6c0 (LWP 32218)]
+[Thread 0x7fff4dffd6c0 (LWP 32218) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32219)]
+[Thread 0x7fff4dffd6c0 (LWP 32219) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32220)]
+[Thread 0x7fff4dffd6c0 (LWP 32220) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32221)]
+[Thread 0x7fff4dffd6c0 (LWP 32221) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32222)]
+[Thread 0x7fff4dffd6c0 (LWP 32222) exited]
+[New Thread 0x7fff4dffd6c0 (LWP 32223)]
+[Thread 0x7fff4dffd6c0 (LWP 32223) exited]
+KUndo2QStack::undo(): cannot undo in the middle of a macro
+KisStorageModel data query did not return anything
+Dialog "krita/layer_split" has a widget without an object name: QWidget(0x5555735dd5a0)
+krita.metadata: Missing name attribute for tag  "date"
+Krita Mobile: page without a supported layout: QTableView
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+[New Thread 0x7fff4dffd6c0 (LWP 32227)]
+krita.lib.widgetutils: KoFileDialog::onFilterSelected: Cannot find suffix for filter "Zip Archives"
+[New Thread 0x7fff8fff46c0 (LWP 32228)]
+[New Thread 0x7fff4ffff6c0 (LWP 32229)]
+[New Thread 0x7fff4effe6c0 (LWP 32230)]
+[New Thread 0x7fff37ffe6c0 (LWP 32231)]
+QLayout: Attempting to add QLayout "" to TenBrushesDialog "", which already has a layout
+KisStorageModel data query did not return anything
+krita.general: WARNING: Uncategorized action "krita_filter_edge detection" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_fastcoloroverlay" Dropping...
+krita.general: WARNING: Uncategorized action "krita_filter_resettransparent" Dropping...
+krita.general: WARNING: Uncategorized action "composite_actions" Dropping...
+krita.general: WARNING: Uncategorized action "paintops" Dropping...
+krita.general: WARNING: Uncategorized action "dockerBox" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_auto" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_phone" Dropping...
+krita.general: WARNING: Uncategorized action "mobileui_mode_classic" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_constant" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_linear" Dropping...
+krita.general: WARNING: Uncategorized action "interpolation_bezier" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_sharp" Dropping...
+krita.general: WARNING: Uncategorized action "tangents_smooth" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_range" Dropping...
+krita.general: WARNING: Uncategorized action "zoom_to_fit_curve" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_0" Dropping...
+krita.general: WARNING: Uncategorized action "expanding_spacer_1" Dropping...
+krita.general: WARNING: Uncategorized action "color_space" Dropping...
+krita.general: WARNING: Uncategorized action "document_tools" Dropping...
+krita.general: WARNING: Uncategorized action "export_layers" Dropping...
+krita.general: WARNING: Uncategorized action "filter_manager" Dropping...
+krita.general: WARNING: Uncategorized action "python_scripter" Dropping...
+krita.general: WARNING: Uncategorized action "editToolBar" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar1" Dropping...
+krita.general: WARNING: Uncategorized action "customToolBar2" Dropping...
+krita.general: WARNING: The following shortcuts are not registered in the collection, they might have wrong shortcuts in the end:
+krita.general: "svg_settings"
+krita.general: "select_layout"
+krita.general: "delete_keyframe"
+krita.general: "krita_filter_bottom edge detections"
+krita.general: "options_configure_keybinding"
+krita.general: "crashlog"
+krita.general: "krita_filter_top edge detections"
+krita.general: "krita_filter_right edge detections"
+krita.general: "krita_filter_left edge detections"
+krita.general: "krita_filter_sobel"
+krita.general: "show_tool_options"
+krita.general: "create_bundle"
+krita.general: "color_management_report"
+krita.general: "histogram"
+krita.general: "logcatdump"
+krita.general: === end ===
+Failed to fetch display info: "current platform doesn't support fetching display information"
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+KisStorageModel data query did not return anything
+initFromFactory
+[Thread 0x7fff4effe6c0 (LWP 32230) exited]
+[Thread 0x7fff4ffff6c0 (LWP 32229) exited]
+[Thread 0x7fff37ffe6c0 (LWP 32231) exited]
+[Thread 0x7fff8fff46c0 (LWP 32228) exited]
+[Thread 0x7fff5f7fe6c0 (LWP 32210) exited]
+[Thread 0x7fff67fff6c0 (LWP 32208) exited]
+[Thread 0x7fff9dffd6c0 (LWP 32205) exited]
+    corrected offset: QPointF(-230,0)
+    corrected offset: QPointF(-230,1)
+    corrected offset: QPointF(-218,1)
+[New Thread 0x7fff9dffd6c0 (LWP 32238)]
+[New Thread 0x7fff5f7fe6c0 (LWP 32239)]
+[New Thread 0x7fff8fff46c0 (LWP 32240)]
+[Detaching after fork from child process 32241]
+/usr/bin/xdg-open: 882: x-www-browser: not found
+[New Thread 0x7fff67fff6c0 (LWP 32421)]
+[New Thread 0x7fff4ffff6c0 (LWP 32422)]
+[New Thread 0x7fff4effe6c0 (LWP 32423)]
+[New Thread 0x7fff37ffe6c0 (LWP 32424)]
+[New Thread 0x7fff32ffb6c0 (LWP 32425)]
+[New Thread 0x7fff31ffa6c0 (LWP 32426)]
+[New Thread 0x7fff30ff96c0 (LWP 32427)]
+[New Thread 0x7fff2fff86c0 (LWP 32428)]
+krita.tabletlog: vvvvvvvvvvvvvvvvvvvvvvv START TABLET EVENT LOG vvvvvvvvvvvvvvvvvvvvvvv
+krita.tabletlog: "[               ]  Enter            "
+krita.tabletlog: "[               ]  Enter            "
+krita.tabletlog: "[               ]  Leave            "
+[Thread 0x7fff31ffa6c0 (LWP 32426) exited]
+[Thread 0x7fff32ffb6c0 (LWP 32425) exited]
+[Thread 0x7fff4effe6c0 (LWP 32423) exited]
+[Thread 0x7fff37ffe6c0 (LWP 32424) exited]
+[Thread 0x7fff30ff96c0 (LWP 32427) exited]
+[Thread 0x7fff67fff6c0 (LWP 32421) exited]
+[Thread 0x7fff2fff86c0 (LWP 32428) exited]
+[Thread 0x7fff4ffff6c0 (LWP 32422) exited]
+[Thread 0x7fff5f7fe6c0 (LWP 32239) exited]
+[Thread 0x7fff9dffd6c0 (LWP 32238) exited]
+[New Thread 0x7fff9dffd6c0 (LWP 32885)]
+[New Thread 0x7fff5f7fe6c0 (LWP 32886)]
+[Thread 0x7fff8fff46c0 (LWP 32240) exited]
+[Detaching after fork from child process 32888]
+[Detaching after fork from child process 32889]
+[New Thread 0x7fff8fff46c0 (LWP 32890)]
+[Thread 0x7fff8fff46c0 (LWP 32890) exited]
+[New Thread 0x7fff8fff46c0 (LWP 32891)]
+[New Thread 0x7fff67fff6c0 (LWP 32892)]
+number of tags in  "brushes"  tag model:  2
+[Thread 0x7fff5f7fe6c0 (LWP 32886) exited]
+[Thread 0x7fff9dffd6c0 (LWP 32885) exited]
+[Thread 0x7fff65ffd6c0 (LWP 32209) exited]
+KisStorageModel data query did not return anything
+[New Thread 0x7fff65ffd6c0 (LWP 32913)]
+[Thread 0x7fffa56e76c0 (LWP 32086) exited]
+[Thread 0x7fffda9fd6c0 (LWP 32076) exited]
+[Thread 0x7fffb7fff6c0 (LWP 32084) exited]
+[Thread 0x7fffc9ffd6c0 (LWP 32083) exited]
+[Thread 0x7fffcaffe6c0 (LWP 32082) exited]
+[Thread 0x7fffcbfff6c0 (LWP 32081) exited]
+[Thread 0x7fffd99fc6c0 (LWP 32080) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 32079) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 32078) exited]
+[Thread 0x7fffef8a06c0 (LWP 32077) exited]
+[Thread 0x7fffb5ffd6c0 (LWP 32085) exited]
+QBasicTimer::start: QBasicTimer can only be used with threads started with QThread
+krita.general: Warning: some tiles have leaked:
+krita.general: 	Tiles in memory: 9322 
+ 	Total tiles: 9322
+[Thread 0x7fff9effe6c0 (LWP 32088) exited]
+
+Thread 1 "krita" received signal SIGSEGV, Segmentation fault.
+0x00007ffff5507024 in QObject::thread() const () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+
+=== crash backtrace ===
+#0  0x00007ffff5507024 in QObject::thread() const () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#1  0x00007ffff6d8151f in KisBusyWaitBroker::notifyWaitOnImageStarted(KisImage*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#2  0x00007ffff6e296bd in KisImage::waitForDone() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#3  0x00007ffff7b78be4 in KisDocument::~KisDocument() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#4  0x00007ffff7b791ed in KisDocument::~KisDocument() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#5  0x00007ffff7bc3951 in KisPart::~KisPart() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#6  0x00007ffff7bc581d in (anonymous namespace)::Q_QGS_s_instance::innerFunction()::Holder::~Holder() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#7  0x00007ffff4a47a76 in __run_exit_handlers (status=0, listp=<optimized out>, run_list_atexit=run_list_atexit@entry=true, run_dtors=run_dtors@entry=true) at ./stdlib/exit.c:108
+#8  0x00007ffff4a47bbe in __GI_exit (status=<optimized out>) at ./stdlib/exit.c:138
+#9  0x00007ffff4a2a1d1 in __libc_start_call_main (main=main@entry=0x55555555b4e0 <main>, argc=argc@entry=2, argv=argv@entry=0x7fffffffcf78) at ../sysdeps/nptl/libc_start_call_main.h:74
+#10 0x00007ffff4a2a28b in __libc_start_main_impl (main=0x55555555b4e0 <main>, argc=2, argv=0x7fffffffcf78, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffcf68) at ../csu/libc-start.c:360
+#11 0x000055555555f9a5 in _start ()
+
+=== GUI thread ===
+[Switching to thread 1 (Thread 0x7ffff4384540 (LWP 32035))]
+#0  0x00007ffff5507024 in QObject::thread() const () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#0  0x00007ffff5507024 in QObject::thread() const () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+#1  0x00007ffff6d8151f in KisBusyWaitBroker::notifyWaitOnImageStarted(KisImage*) () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#2  0x00007ffff6e296bd in KisImage::waitForDone() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20
+#3  0x00007ffff7b78be4 in KisDocument::~KisDocument() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#4  0x00007ffff7b791ed in KisDocument::~KisDocument() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#5  0x00007ffff7bc3951 in KisPart::~KisPart() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#6  0x00007ffff7bc581d in (anonymous namespace)::Q_QGS_s_instance::innerFunction()::Holder::~Holder() () from /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaui.so.20
+#7  0x00007ffff4a47a76 in __run_exit_handlers (status=0, listp=<optimized out>, run_list_atexit=run_list_atexit@entry=true, run_dtors=run_dtors@entry=true) at ./stdlib/exit.c:108
+#8  0x00007ffff4a47bbe in __GI_exit (status=<optimized out>) at ./stdlib/exit.c:138
+#9  0x00007ffff4a2a1d1 in __libc_start_call_main (main=main@entry=0x55555555b4e0 <main>, argc=argc@entry=2, argv=argv@entry=0x7fffffffcf78) at ../sysdeps/nptl/libc_start_call_main.h:74
+#10 0x00007ffff4a2a28b in __libc_start_main_impl (main=0x55555555b4e0 <main>, argc=2, argv=0x7fffffffcf78, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffcf68) at ../csu/libc-start.c:360
+#11 0x000055555555f9a5 in _start ()
+  Id   Target Id                                           Frame 
+* 1    Thread 0x7ffff4384540 (LWP 32035) "krita"           0x00007ffff5507024 in QObject::thread() const () from /home/runner/wd/krita/_install/lib/libQt5Core.so.5
+  32   Thread 0x7fffb6ffe6c0 (LWP 32073) "QDBusConnection" 0x00007ffff4b1b79d in __GI___poll (fds=0x7fffa8003020, nfds=3, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  50   Thread 0x7fff8c88b6c0 (LWP 32093) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff84001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  51   Thread 0x7fff7f3da6c0 (LWP 32094) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff78001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  52   Thread 0x7fff7e17a6c0 (LWP 32095) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff70001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  53   Thread 0x7fff7cdb96c0 (LWP 32096) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff74001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  54   Thread 0x7fff6f5ff6c0 (LWP 32097) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff68001390, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  55   Thread 0x7fff6df046c0 (LWP 32098) "krita"           0x00007ffff4aecbdf in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=0x7fff6df03d20, rem=0x7fff6df03d20) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  103  Thread 0x7fff4dffd6c0 (LWP 32227) "QFileInfoGather" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=753866233, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x555559d46390) at ./nptl/futex-internal.c:57
+  122  Thread 0x7fff8fff46c0 (LWP 32891) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff3c050a70, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  123  Thread 0x7fff67fff6c0 (LWP 32892) "QQmlThread"      0x00007ffff4b1b79d in __GI___poll (fds=0x7fff5800dad0, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+  124  Thread 0x7fff65ffd6c0 (LWP 32913) "Thread (pooled)" 0x00007ffff4a98e51 in __futex_abstimed_wait_common64 (private=32767, cancel=true, abstime=0x7fff65ffcc40, op=137, expected=0, futex_word=0x7fff94002664) at ./nptl/futex-internal.c:57
+krita (phone) exit code: 255
+total 2640
+drwxr-xr-x  2 runner runner  4096 Oct  6 08:54 .
+drwxr-xr-x 29 runner runner  4096 Oct  6 08:49 ..
+-rw-r--r--  1 runner runner 19590 Oct  6 08:53 dialog-landscape-canvassize.png
+-rw-r--r--  1 runner runner 16924 Oct  6 08:54 dialog-landscape-clones_array.png
+-rw-r--r--  1 runner runner 38736 Oct  6 08:52 dialog-landscape-file_new.png
+-rw-r--r--  1 runner runner 22041 Oct  6 08:53 dialog-landscape-image_properties.png
+-rw-r--r--  1 runner runner 23311 Oct  6 08:53 dialog-landscape-imagesize.png
+-rw-r--r--  1 runner runner 23770 Oct  6 08:54 dialog-landscape-imagesplit.png
+-rw-r--r--  1 runner runner 19586 Oct  6 08:53 dialog-landscape-krita_filter_gaussian_blur.png
+-rw-r--r--  1 runner runner 26628 Oct  6 08:53 dialog-landscape-krita_filter_hsvadjustment.png
+-rw-r--r--  1 runner runner 20942 Oct  6 08:53 dialog-landscape-krita_filter_levels.png
+-rw-r--r--  1 runner runner 23338 Oct  6 08:53 dialog-landscape-krita_filter_perchannel.png
+-rw-r--r--  1 runner runner 31555 Oct  6 08:53 dialog-landscape-layer_properties.png
+-rw-r--r--  1 runner runner 36878 Oct  6 08:53 dialog-landscape-layer_style.png
+-rw-r--r--  1 runner runner 32665 Oct  6 08:54 dialog-landscape-layersplit.png
+-rw-r--r--  1 runner runner 10584 Oct  6 08:53 dialog-landscape-offsetimage.png
+-rw-r--r--  1 runner runner 29309 Oct  6 08:53 dialog-landscape-options_configure.png
+-rw-r--r--  1 runner runner 20444 Oct  6 08:53 dialog-landscape-rotateimage.png
+-rw-r--r--  1 runner runner 23777 Oct  6 08:54 dialog-landscape-separate.png
+-rw-r--r--  1 runner runner 24549 Oct  6 08:50 dialog-portrait-canvassize.png
+-rw-r--r--  1 runner runner 15205 Oct  6 08:51 dialog-portrait-clones_array.png
+-rw-r--r--  1 runner runner 41605 Oct  6 08:50 dialog-portrait-file_new.png
+-rw-r--r--  1 runner runner 20169 Oct  6 08:50 dialog-portrait-image_properties.png
+-rw-r--r--  1 runner runner 29474 Oct  6 08:50 dialog-portrait-imagesize.png
+-rw-r--r--  1 runner runner 26063 Oct  6 08:51 dialog-portrait-imagesplit.png
+-rw-r--r--  1 runner runner 20817 Oct  6 08:51 dialog-portrait-krita_filter_gaussian_blur.png
+-rw-r--r--  1 runner runner 25764 Oct  6 08:51 dialog-portrait-krita_filter_hsvadjustment.png
+-rw-r--r--  1 runner runner 24427 Oct  6 08:51 dialog-portrait-krita_filter_levels.png
+-rw-r--r--  1 runner runner 29848 Oct  6 08:51 dialog-portrait-krita_filter_perchannel.png
+-rw-r--r--  1 runner runner 23126 Oct  6 08:50 dialog-portrait-layer_properties.png
+-rw-r--r--  1 runner runner 36878 Oct  6 08:51 dialog-portrait-layer_style.png
+-rw-r--r--  1 runner runner 32665 Oct  6 08:51 dialog-portrait-layersplit.png
+-rw-r--r--  1 runner runner 10584 Oct  6 08:51 dialog-portrait-offsetimage.png
+-rw-r--r--  1 runner runner 25244 Oct  6 08:50 dialog-portrait-options_configure.png
+-rw-r--r--  1 runner runner 21256 Oct  6 08:51 dialog-portrait-rotateimage.png
+-rw-r--r--  1 runner runner 29564 Oct  6 08:51 dialog-portrait-separate.png
+-rw-r--r--  1 runner runner 42243 Oct  6 08:52 landscape-01-hub.png
+-rw-r--r--  1 runner runner 38084 Oct  6 08:52 landscape-02-new-canvas.png
+-rw-r--r--  1 runner runner 17226 Oct  6 08:52 landscape-03-editor.png
+-rw-r--r--  1 runner runner 40050 Oct  6 08:52 landscape-04-tools.png
+-rw-r--r--  1 runner runner 70407 Oct  6 08:52 landscape-05-brush-presets.png
+-rw-r--r--  1 runner runner 31655 Oct  6 08:52 landscape-06-tool-options.png
+-rw-r--r--  1 runner runner 48729 Oct  6 08:52 landscape-07-brush-editor.png
+-rw-r--r--  1 runner runner 38433 Oct  6 08:52 landscape-08-color-advanced.png
+-rw-r--r--  1 runner runner 30451 Oct  6 08:52 landscape-09-color-widegamut.png
+-rw-r--r--  1 runner runner 30199 Oct  6 08:52 landscape-10-color-palette.png
+-rw-r--r--  1 runner runner 35136 Oct  6 08:52 landscape-11-layers.png
+-rw-r--r--  1 runner runner 33557 Oct  6 08:52 landscape-12-timeline.png
+-rw-r--r--  1 runner runner 38020 Oct  6 08:52 landscape-13-onion-skins.png
+-rw-r--r--  1 runner runner 29402 Oct  6 08:52 landscape-14-curves.png
+-rw-r--r--  1 runner runner 30673 Oct  6 08:52 landscape-15-overview.png
+-rw-r--r--  1 runner runner 27698 Oct  6 08:52 landscape-16-history.png
+-rw-r--r--  1 runner runner 24392 Oct  6 08:52 landscape-17-text.png
+-rw-r--r--  1 runner runner 38696 Oct  6 08:52 landscape-18-menu.png
+-rw-r--r--  1 runner runner 42658 Oct  6 08:52 landscape-18b-all-commands.png
+-rw-r--r--  1 runner runner 47440 Oct  6 08:52 landscape-19-more.png
+-rw-r--r--  1 runner runner 35867 Oct  6 08:49 portrait-01-hub.png
+-rw-r--r--  1 runner runner 56479 Oct  6 08:49 portrait-02-new-canvas.png
+-rw-r--r--  1 runner runner 16133 Oct  6 08:49 portrait-03-editor.png
+-rw-r--r--  1 runner runner 42223 Oct  6 08:49 portrait-04-tools.png
+-rw-r--r--  1 runner runner 82760 Oct  6 08:49 portrait-05-brush-presets.png
+-rw-r--r--  1 runner runner 30075 Oct  6 08:49 portrait-06-tool-options.png
+-rw-r--r--  1 runner runner 54107 Oct  6 08:49 portrait-07-brush-editor.png
+-rw-r--r--  1 runner runner 39464 Oct  6 08:49 portrait-08-color-advanced.png
+-rw-r--r--  1 runner runner 30716 Oct  6 08:49 portrait-09-color-widegamut.png
+-rw-r--r--  1 runner runner 28676 Oct  6 08:49 portrait-10-color-palette.png
+-rw-r--r--  1 runner runner 32916 Oct  6 08:49 portrait-11-layers.png
+-rw-r--r--  1 runner runner 31122 Oct  6 08:50 portrait-12-timeline.png
+-rw-r--r--  1 runner runner 35478 Oct  6 08:50 portrait-13-onion-skins.png
+-rw-r--r--  1 runner runner 28313 Oct  6 08:50 portrait-14-curves.png
+-rw-r--r--  1 runner runner 28935 Oct  6 08:50 portrait-15-overview.png
+-rw-r--r--  1 runner runner 26501 Oct  6 08:50 portrait-16-history.png
+-rw-r--r--  1 runner runner 75107 Oct  6 08:50 portrait-17-text.png
+-rw-r--r--  1 runner runner 38457 Oct  6 08:50 portrait-18-menu.png
+-rw-r--r--  1 runner runner 42210 Oct  6 08:50 portrait-18b-all-commands.png
+-rw-r--r--  1 runner runner 45580 Oct  6 08:50 portrait-19-more.png
+-rw-r--r--  1 runner runner 72743 Oct  6 08:54 runtime-inventory.csv
+-rw-r--r--  1 runner runner 25761 Oct  6 08:59 testdriver.log
+-rw-r--r--  1 runner runner 31285 Oct  6 08:59 walk.csv
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+/usr/bin/xdg-open: 882: iceweasel: not found
+/usr/bin/xdg-open: 882: seamonkey: not found
+/usr/bin/xdg-open: 882: mozilla: not found
+/usr/bin/xdg-open: 882: epiphany: not found
+/usr/bin/xdg-open: 882: konqueror: not found
+[32949:32949:1006/085915.451856:FATAL:content/browser/zygote_host/zygote_host_impl_linux.cc:129] No usable sandbox! If you are running on Ubuntu 23.10+ or another Linux distro that has disabled unprivileged user namespaces with AppArmor, see https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md. Otherwise see https://chromium.googlesource.com/chromium/src/+/main/docs/linux/suid_sandbox_development.md for more information on developing with the (older) SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55556184d262 base::debug::CollectStackTrace()
+#1 0x555561837a0e base::debug::StackTrace::StackTrace()
+#2 0x55556176aa2c logging::LogMessage::Flush()
+#3 0x55556176b5b9 logging::LogMessageFatal::~LogMessageFatal()
+#4 0x55555e638be3 content::ZygoteHostImpl::Init()
+#5 0x55556040a3fb content::ContentMainRunnerImpl::Initialize()
+#6 0x555560407b07 content::RunContentProcess()
+#7 0x555560407f37 content::ContentMain()
+#8 0x55555a86337d ChromeMain
+#9 0x7ffff702a1ca (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+#10 0x7ffff702a28b __libc_start_main
+#11 0x55555a86302a _start
+Crash keys:
+  "switch-1" = "file:///home/runner/work/krita/krita/home/.local/share/krita/"
+  "num-switches" = "1"
+  "osarch" = "x86_64"
+  "pid" = "32949"
+  "ptype" = "browser"
+
+[1006/085917.094316:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[1006/085917.094363:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+Received signal 6
+#0 0x55556184d262 base::debug::CollectStackTrace()
+#1 0x555561837a0e base::debug::StackTrace::StackTrace()
+#2 0x55556184ccd8 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#3 0x7ffff7045330 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4532f)
+#4 0x7ffff709ec0c pthread_kill
+#5 0x7ffff704527e gsignal
+#6 0x7ffff70288ff abort
+#7 0x55556176b4ba logging::LogMessage::HandleFatal()
+#8 0x55556176b027 logging::LogMessage::Flush()
+#9 0x55556176b5b9 logging::LogMessageFatal::~LogMessageFatal()
+#10 0x55555e638be3 content::ZygoteHostImpl::Init()
+#11 0x55556040a3fb content::ContentMainRunnerImpl::Initialize()
+#12 0x555560407b07 content::RunContentProcess()
+#13 0x555560407f37 content::ContentMain()
+#14 0x55555a86337d ChromeMain
+#15 0x7ffff702a1ca (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+#16 0x7ffff702a28b __libc_start_main
+#17 0x55555a86302a _start
+  r8: 0000357000112400  r9: 0000000000000000 r10: 0000000000000008 r11: 0000000000000246
+ r12: 0000000000000006 r13: 0000000000000555 r14: 0000000000000016 r15: 00007fffffffc3d8
+  di: 00000000000080b5  si: 00000000000080b5  bp: 00007fffffffae00  bx: 00000000000080b5
+  dx: 0000000000000006  ax: 0000000000000000  cx: 00007ffff709ec0c  sp: 00007fffffffadc0
+  ip: 00007ffff709ec0c efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000001 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Aborted (core dumped)
+[33040:33040:1006/085921.250142:FATAL:content/browser/zygote_host/zygote_host_impl_linux.cc:129] No usable sandbox! If you are running on Ubuntu 23.10+ or another Linux distro that has disabled unprivileged user namespaces with AppArmor, see https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md. Otherwise see https://chromium.googlesource.com/chromium/src/+/main/docs/linux/suid_sandbox_development.md for more information on developing with the (older) SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55556184d262 base::debug::CollectStackTrace()
+#1 0x555561837a0e base::debug::StackTrace::StackTrace()
+#2 0x55556176aa2c logging::LogMessage::Flush()
+#3 0x55556176b5b9 logging::LogMessageFatal::~LogMessageFatal()
+#4 0x55555e638be3 content::ZygoteHostImpl::Init()
+#5 0x55556040a3fb content::ContentMainRunnerImpl::Initialize()
+#6 0x555560407b07 content::RunContentProcess()
+#7 0x555560407f37 content::ContentMain()
+#8 0x55555a86337d ChromeMain
+#9 0x7ffff702a1ca (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+#10 0x7ffff702a28b __libc_start_main
+#11 0x55555a86302a _start
+Crash keys:
+  "switch-1" = "file:///home/runner/work/krita/krita/home/.local/share/krita/"
+  "num-switches" = "1"
+  "osarch" = "x86_64"
+  "pid" = "33040"
+  "ptype" = "browser"
+
+[1006/085921.348513:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[1006/085921.348559:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+Received signal 6
+#0 0x55556184d262 base::debug::CollectStackTrace()
+#1 0x555561837a0e base::debug::StackTrace::StackTrace()
+#2 0x55556184ccd8 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#3 0x7ffff7045330 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4532f)
+#4 0x7ffff709ec0c pthread_kill
+#5 0x7ffff704527e gsignal
+#6 0x7ffff70288ff abort
+#7 0x55556176b4ba logging::LogMessage::HandleFatal()
+#8 0x55556176b027 logging::LogMessage::Flush()
+#9 0x55556176b5b9 logging::LogMessageFatal::~LogMessageFatal()
+#10 0x55555e638be3 content::ZygoteHostImpl::Init()
+#11 0x55556040a3fb content::ContentMainRunnerImpl::Initialize()
+#12 0x555560407b07 content::RunContentProcess()
+#13 0x555560407f37 content::ContentMain()
+#14 0x55555a86337d ChromeMain
+#15 0x7ffff702a1ca (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+#16 0x7ffff702a28b __libc_start_main
+#17 0x55555a86302a _start
+  r8: 0000080800112400  r9: 0000000000000000 r10: 0000000000000008 r11: 0000000000000246
+ r12: 0000000000000006 r13: 0000000000000555 r14: 0000000000000016 r15: 00007fffffffc3c8
+  di: 0000000000008110  si: 0000000000008110  bp: 00007fffffffadf0  bx: 0000000000008110
+  dx: 0000000000000006  ax: 0000000000000000  cx: 00007ffff709ec0c  sp: 00007fffffffadb0
+  ip: 00007ffff709ec0c efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000001 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Aborted (core dumped)
+/usr/bin/xdg-open: 882: google-chrome: not found
+/usr/bin/xdg-open: 882: www-browser: not found
+/usr/bin/xdg-open: 882: links2: not found
+/usr/bin/xdg-open: 882: elinks: not found
+/usr/bin/xdg-open: 882: links: not found
+/usr/bin/xdg-open: 882: lynx: not found
+/usr/bin/xdg-open: 882: w3m: not found
+xdg-open: no method available for opening 'file:///home/runner/work/krita/krita/home/.local/share/krita/'
