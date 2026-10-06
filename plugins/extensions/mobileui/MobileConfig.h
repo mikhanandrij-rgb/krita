@@ -71,6 +71,9 @@ void setFirstRunDone(bool done);
 // adjustable in Settings > Configure Krita > Performance. Returns the keys
 // that were written now (empty when nothing changed).
 QStringList applyPhoneDefaults();
+// Android: Krita's "interface scale" question at every start is turned off
+// while the phone interface is used; the setting stays in More.
+void moveScaleQuestionToSettings();
 // The settings written by applyPhoneDefaults() over all runs, "key=value".
 QStringList appliedPhoneDefaults();
 

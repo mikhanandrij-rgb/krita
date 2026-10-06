@@ -303,6 +303,50 @@ QString panelStyleSheet()
         .arg(css(t.accentSoft));
 }
 
+QString dialogStyleSheet()
+{
+    const Theme &t = Theme::current();
+    // Krita's dialogs keep every control, but get the phone interface's
+    // colors, rounded finger-sized buttons and fields, and tabs that are easy
+    // to hit. Custom-painted Krita widgets (sliders, color selectors) are not
+    // affected by these rules.
+    return QStringLiteral(
+               "QDialog { background: %1; }"
+               "QPushButton { background: %2; color: %4; border: 1px solid %3; border-radius: %8px;"
+               "  min-height: %9px; padding: 0 %10px; }"
+               "QPushButton:pressed { background: %5; }"
+               "QPushButton:default { background: %6; color: %7; border-color: %6; }"
+               "QPushButton:disabled { color: %11; }"
+               "QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox { background: %2; color: %4; border: 1px solid %3;"
+               "  border-radius: %12px; min-height: %13px; padding: 0 %12px; }"
+               "QComboBox QAbstractItemView { background: %2; color: %4; }"
+               "QTabBar::tab { min-height: %13px; padding: 0 %10px; background: transparent; color: %11;"
+               "  border: none; border-bottom: 2px solid transparent; }"
+               "QTabBar::tab:selected { color: %4; border-bottom: 2px solid %6; }"
+               "QGroupBox { border: 1px solid %3; border-radius: %8px; margin-top: %14px; padding-top: %12px; }"
+               "QGroupBox::title { subcontrol-origin: margin; left: %12px; padding: 0 %15px; color: %11; }"
+               "QAbstractItemView { background: %2; border: 1px solid %3; border-radius: %12px;"
+               "  selection-background-color: %16; }"
+               "QAbstractItemView::item { min-height: %9px; }"
+               "QCheckBox, QRadioButton { min-height: %13px; spacing: %12px; }")
+        .arg(css(t.surface))      // 1
+        .arg(css(t.surface2))     // 2
+        .arg(css(t.outline))      // 3
+        .arg(css(t.text))         // 4
+        .arg(css(t.surface3))     // 5
+        .arg(css(t.accent))       // 6
+        .arg(css(t.accentText))   // 7
+        .arg(dp(12))              // 8
+        .arg(dp(44))              // 9
+        .arg(dp(16))              // 10
+        .arg(css(t.textDim))      // 11
+        .arg(dp(8))               // 12
+        .arg(dp(40))              // 13
+        .arg(dp(18))              // 14
+        .arg(dp(4))               // 15
+        .arg(css(t.accentSoft)) + panelStyleSheet(); // 16
+}
+
 QIcon icon(const QString &name)
 {
     return icon(name, Theme::current().text);

@@ -276,22 +276,6 @@ QStringList applyPhoneDefaults()
     if (previous >= version) {
         return written;
     }
-#ifdef Q_OS_ANDROID
-    {
-        // Krita asks for the interface scale on every start until a scale
-        // was chosen once. The phone interface follows Android's density,
-        // so take that as the chosen scale; "Change Interface Scale" in the
-        // command list still changes it and can turn the question back on.
-        KisConfig cfg(false);
-        QScreen *screen = QGuiApplication::primaryScreen();
-        if (screen && cfg.androidScalingLastInitialScale() < 1.0 && screen->devicePixelRatio() >= 1.0) {
-            cfg.setAndroidScalingLastInitialScale(screen->devicePixelRatio());
-            cfg.setAndroidScalingTargetScale(screen->devicePixelRatio());
-            cfg.setAndroidScalingAskOnStartup(false);
-            written.append(QStringLiteral("androidScalingAskOnStartup=false"));
-        }
-    }
-#endif
     if (previous >= 1) {
         own.writeEntry("PhoneDefaultsVersion", version);
         own.sync();
@@ -329,6 +313,45 @@ QStringList applyPhoneDefaults()
     own.sync();
     krita.sync();
     return written;
+}
+
+void moveScaleQuestionToSettings()
+{
+#ifdef Q_OS_ANDROID
+    // Krita asks for the interface scale on every start until a scale was
+    // saved once; its check compares the saved "initial scale" with
+    // Android's display density. The phone interface saves the current
+    // scale against that density, so the question no longer comes up at
+    // start. "Interface size" in More (Krita's "Change Interface Scale")
+    // still changes it.
+    QAndroidJniObject context = QtAndroid::androidContext();
+    double density = 0.0;
+    if (context.isValid()) {
+        QAndroidJniObject resources = context.callObjectMethod("getResources", "()Landroid/content/res/Resources;");
+        if (resources.isValid()) {
+            QAndroidJniObject metrics = resources.callObjectMethod("getDisplayMetrics", "()Landroid/util/DisplayMetrics;");
+            if (metrics.isValid()) {
+                density = metrics.getField<jfloat>("density");
+            }
+        }
+    }
+    QAndroidJniEnvironment env;
+    if (env->ExceptionCheck()) {
+        env->ExceptionClear();
+        density = 0.0;
+    }
+    KisConfig cfg(false);
+    if (density < 1.0 || !cfg.androidScalingAskOnStartup()) {
+        return;
+    }
+    QScreen *screen = QGuiApplication::primaryScreen();
+    const qreal current = screen ? screen->devicePixelRatio() : density;
+    cfg.setAndroidScalingLastInitialScale(density);
+    if (cfg.androidScalingTargetScale() < 1.0) {
+        cfg.setAndroidScalingTargetScale(qMax<qreal>(1.0, current));
+    }
+    cfg.setAndroidScalingAskOnStartup(false);
+#endif
 }
 
 QStringList appliedPhoneDefaults()

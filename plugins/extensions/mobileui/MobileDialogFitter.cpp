@@ -629,6 +629,8 @@ void DialogFitter::fit(QDialog *dialog)
     const QRect screen = availableGeometry(dialog);
     if (!m_adapted.contains(dialog)) {
         m_adapted.insert(dialog);
+        // The phone look; appended so a dialog's own rules still win.
+        dialog->setStyleSheet(dialogStyleSheet() + dialog->styleSheet());
         connect(dialog, &QObject::destroyed, this, [this, dialog] {
             m_adapted.remove(dialog);
             m_wrapped.remove(dialog);

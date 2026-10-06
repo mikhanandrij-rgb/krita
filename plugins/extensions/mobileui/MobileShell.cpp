@@ -374,6 +374,31 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
         return false;
     }
 
+    // Krita restores the main window's saved layout (toolbar visibility)
+    // after start-up and on some actions; on Android that hid the top bar
+    // and the tool rail. They always come back while the phone interface is
+    // active and the user hasn't hidden the interface.
+    if ((watched == m_topHolder.data() || watched == m_railHolder.data()) && type == QEvent::Hide && !m_internalChange) {
+        QTimer::singleShot(0, this, [this] {
+            if (m_active && !m_interfaceHidden) {
+                QScopedValueRollback<bool> rollback(m_internalChange, true);
+                if (m_topHolder && m_mainWindow->toolBarArea(m_topHolder) != Qt::TopToolBarArea) {
+                    m_mainWindow->addToolBar(Qt::TopToolBarArea, m_topHolder);
+                }
+                if (m_railHolder && m_mainWindow->toolBarArea(m_railHolder) != m_railArea) {
+                    m_mainWindow->addToolBar(m_railArea, m_railHolder);
+                }
+                for (QToolBar *holder : {m_topHolder.data(), m_railHolder.data()}) {
+                    if (holder && holder->isHidden()) {
+                        holder->show();
+                    }
+                }
+                updateLayout();
+            }
+        });
+        return false;
+    }
+
     // Krita shows the menu bar and the status bar again in various places
     // (welcome page, canvas-only mode, configuration changes). Keep them
     // hidden while the phone interface is active.
@@ -1136,6 +1161,11 @@ void Shell::buildMorePanel()
         config::setLeftHanded(checked);
         updateLayout();
     });
+    // Android: Krita's own interface scale (its start-up question lives
+    // here in the phone interface).
+    if (QAction *scale = action(QStringLiteral("change_interface_scale"))) {
+        ui->addActionCard(scale, QStringLiteral("resize"));
+    }
     ActionCard *smaller = ui->addCard(QStringLiteral("resize"), i18n("Smaller interface"));
     connect(smaller, &ActionCard::clicked, this, [this] {
         config::setUiScale(config::uiScale() - 0.1);
@@ -1543,6 +1573,9 @@ void Shell::updateQuickSliderTargets()
     }
     KisDoubleSliderSpinBox *size = nullptr;
     KisDoubleSliderSpinBox *opacity = nullptr;
+    // While the eyedropper is picking for another tool, the sliders keep
+    // showing that tool's size and opacity.
+    const QString tool = (m_activeTool == SAMPLER_TOOL && !m_toolBeforeEyedropper.isEmpty()) ? m_toolBeforeEyedropper : m_activeTool;
     // The paintop box's slider choosers are the default widgets of the
     // "brushslider" actions; they are not children of the box itself. Every
     // chooser holds its own synchronized copy of all brush sliders.
@@ -1562,10 +1595,10 @@ void Shell::updateQuickSliderTargets()
         }
     }
     if (chooser) {
-        if (usesBrushSize(m_activeTool)) {
+        if (usesBrushSize(tool)) {
             size = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("size"));
         }
-        if (usesOpacity(m_activeTool)) {
+        if (usesOpacity(tool)) {
             opacity = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("opacity"));
         }
     }

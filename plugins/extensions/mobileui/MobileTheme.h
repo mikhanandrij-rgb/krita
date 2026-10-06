@@ -60,6 +60,8 @@ QString chromeStyleSheet();
 // Style sheet for containers that host Krita's own panels inside sheets. It
 // only enlarges touch targets (scroll bars, check boxes, combo boxes, buttons).
 QString panelStyleSheet();
+// Look of Krita's dialogs while the phone interface is active.
+QString dialogStyleSheet();
 
 // Icons. Plain names are the fork's own SVG icons (":/mobileui/icons/<name>.svg",
 // tinted with the given color); names starting with "krita:" load Krita's

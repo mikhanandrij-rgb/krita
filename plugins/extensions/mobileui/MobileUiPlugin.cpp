@@ -104,6 +104,7 @@ void MobileUiPlugin::applyMode()
                              .arg(config::androidSmallestScreenWidthDp())
                              .arg(phone ? QStringLiteral("on") : QStringLiteral("off"));
     if (phone) {
+        config::moveScaleQuestionToSettings();
         const QStringList written = config::applyPhoneDefaults();
         if (!written.isEmpty()) {
             qInfo().noquote() << "Krita Mobile: phone defaults written (effective after restart):" << written.join(QStringLiteral(", "));
