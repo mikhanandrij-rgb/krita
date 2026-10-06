@@ -312,6 +312,9 @@ void ToolRail::rebuild()
         delete m_layout->takeAt(0);
     }
     for (ChromeButton *button : m_slotButtons) {
+        // Hidden right away: a removed button would otherwise keep covering
+        // the rail until it is deleted.
+        button->hide();
         button->deleteLater();
     }
     m_slotButtons.clear();
@@ -325,7 +328,7 @@ void ToolRail::rebuild()
         if (!tool) {
             continue;
         }
-        ChromeButton *button = new ChromeButton;
+        ChromeButton *button = new ChromeButton(this);
         button->setThemeIcon(tool->icon);
         button->setToolTip(tool->name);
         button->setAccessibleName(tool->name);

@@ -54,6 +54,7 @@ private:
     struct StackedView {
         QPointer<QWidget> view;
         int minimumWidth = 0;
+        int minimumHeight = 0;
         int maximumHeight = 0;
     };
     struct StackedLayout {
@@ -63,6 +64,7 @@ private:
     QList<StackedLayout> m_stackedLayouts;
     QSet<QDialog *> m_wrapped;
     QSet<QDialog *> m_adapted;
+    QSet<QDialog *> m_fullScreen;
 };
 
 } // namespace mobileui

@@ -58,6 +58,7 @@
 #include <QScopedValueRollback>
 #include <QStatusBar>
 #include <QTabBar>
+#include <QGridLayout>
 #include <QTimer>
 #include <QWidgetAction>
 #include <QToolBar>
@@ -978,6 +979,7 @@ void Shell::adoptPopups()
                 m_popups.append(hp);
                 if (content->inherits("KisPaintOpPresetsEditor")) {
                     m_sheet->setTabPrefersFullHeight(panelId, tabId);
+                    stackBrushEditor(content, true);
                     // The editor's preset strip and scratchpad sit side by
                     // side with the settings; on a phone the presets are in
                     // their own tab, so collapse both. They remain one tap
@@ -994,6 +996,34 @@ void Shell::adoptPopups()
     }
 }
 
+void Shell::stackBrushEditor(QWidget *editor, bool stacked)
+{
+    // Krita's brush editor has the preset list, the settings and the
+    // scratchpad side by side. On a phone they go below each other: the
+    // settings first, then the (collapsible) presets and scratchpad.
+    QGridLayout *grid = qobject_cast<QGridLayout *>(editor->layout());
+    QWidget *presets = editor->findChild<QWidget *>(QStringLiteral("presetsContainer"));
+    QWidget *settings = editor->findChild<QWidget *>(QStringLiteral("brushEditorSettingsControls"));
+    QWidget *scratchpad = editor->findChild<QWidget *>(QStringLiteral("scratchpadControls"));
+    if (!grid || !presets || !settings || !scratchpad) {
+        return;
+    }
+    for (QWidget *w : {presets, settings, scratchpad}) {
+        grid->removeWidget(w);
+    }
+    if (stacked) {
+        grid->addWidget(settings, 1, 0, 1, 3);
+        grid->addWidget(presets, 2, 0, 1, 3);
+        grid->addWidget(scratchpad, 3, 0, 1, 3);
+        grid->setRowStretch(1, 1);
+    } else {
+        grid->setRowStretch(1, 0);
+        grid->addWidget(presets, 1, 0);
+        grid->addWidget(settings, 1, 1);
+        grid->addWidget(scratchpad, 1, 2);
+    }
+}
+
 void Shell::releasePopups()
 {
     QScopedValueRollback<bool> rollback(m_internalChange, true);
@@ -1002,6 +1032,9 @@ void Shell::releasePopups()
             hp.frame->removeEventFilter(this);
         }
         QWidget *content = m_sheet ? m_sheet->takeTabContent(hp.panelId, hp.tabId) : hp.widget.data();
+        if (content && content->inherits("KisPaintOpPresetsEditor")) {
+            stackBrushEditor(content, false);
+        }
         if (content && hp.frame && hp.frame->layout()) {
             content->setPalette(QPalette());
             content->setParent(hp.frame);

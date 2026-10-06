@@ -14,6 +14,7 @@
 #include <QApplication>
 #include <QBoxLayout>
 #include <QDialog>
+#include <QDebug>
 #include <QDialogButtonBox>
 #include <QEvent>
 #include <QFileDialog>
@@ -125,6 +126,17 @@ QScrollArea *createScroll(QWidget *content)
     return scroll;
 }
 
+// The scroll area is a new child of the host and would be destroyed after
+// the host's older children, for example the popup frames of Krita's popup
+// buttons. Some Krita widgets rely on being destroyed before those (the
+// gradient chooser saves its popup's settings in its destructor), so the
+// scroll area takes the place of the moved widgets at the front of the
+// child list. lower() does exactly that.
+void keepDestructionOrder(QWidget *scroll)
+{
+    scroll->lower();
+}
+
 // ---- box layouts --------------------------------------------------------
 
 bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
@@ -165,7 +177,9 @@ bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
     }
 
     outer->setContentsMargins(0, 0, 0, 0);
-    outer->addWidget(createScroll(content), 1);
+    QScrollArea *scroll = createScroll(content);
+    outer->addWidget(scroll, 1);
+    keepDestructionOrder(scroll);
     for (Entry e : keep) {
         if (QWidget *w = unwrapWidget(e.item)) {
             outer->addWidget(w);
@@ -231,7 +245,9 @@ bool wrapGrid(QWidget *host, QGridLayout *outer, bool keepButtons)
         outer->setColumnMinimumWidth(c, 0);
     }
     outer->setContentsMargins(0, 0, 0, 0);
-    outer->addWidget(createScroll(content), 0, 0, 1, qMax(1, columns));
+    QScrollArea *scroll = createScroll(content);
+    outer->addWidget(scroll, 0, 0, 1, qMax(1, columns));
+    keepDestructionOrder(scroll);
     outer->setRowStretch(0, 1);
 
     for (Entry e : entries) {
@@ -301,7 +317,9 @@ bool wrapForm(QWidget *host, QFormLayout *outer)
         ++row;
     }
     outer->setContentsMargins(0, 0, 0, 0);
-    outer->addRow(createScroll(content));
+    QScrollArea *scroll = createScroll(content);
+    outer->addRow(scroll);
+    keepDestructionOrder(scroll);
     return true;
 }
 
@@ -379,9 +397,11 @@ bool DialogFitter::adaptPageDialog(QDialog *dialog, const QRect &screen)
     }
     QList<QWidget *> pages;
     collectPages(view->model(), QModelIndex(), pages);
+    // Every page scrolls: the dialog itself is fitted to the screen and
+    // pages are not wrapped twice.
     for (QWidget *page : pages) {
-        if (page->minimumSizeHint().width() > screen.width() || page->minimumSizeHint().height() > screen.height() * 0.6) {
-            wrapContents(page, false);
+        if (!wrapContents(page, false)) {
+            qDebug() << "Krita Mobile: page without a supported layout:" << page->metaObject()->className();
         }
     }
     return true;
@@ -488,8 +508,9 @@ void DialogFitter::stackSideLists(QWidget *root)
         StackedLayout stacked;
         stacked.layout = box;
         for (QAbstractItemView *view : views) {
-            stacked.views.append({view, view->minimumWidth(), view->maximumHeight()});
+            stacked.views.append({view, view->minimumWidth(), view->minimumHeight(), view->maximumHeight()});
             view->setMinimumWidth(0);
+            view->setMinimumHeight(qMin(dp(140), view->sizeHint().height()));
             view->setMaximumHeight(dp(200));
         }
         m_stackedLayouts.append(stacked);
@@ -506,6 +527,7 @@ void DialogFitter::restoreWidgets()
         for (const StackedView &v : stacked.views) {
             if (v.view) {
                 v.view->setMinimumWidth(v.minimumWidth);
+                v.view->setMinimumHeight(v.minimumHeight);
                 v.view->setMaximumHeight(v.maximumHeight);
             }
         }
@@ -521,13 +543,19 @@ void DialogFitter::fit(QDialog *dialog)
         connect(dialog, &QObject::destroyed, this, [this, dialog] {
             m_adapted.remove(dialog);
             m_wrapped.remove(dialog);
+            m_fullScreen.remove(dialog);
         });
-        if (!adaptPageDialog(dialog, screen) && !adaptOpenPane(dialog, screen)) {
+        if (adaptPageDialog(dialog, screen) || adaptOpenPane(dialog, screen)) {
+            // Their pages scroll on their own; the dialog only takes the
+            // whole screen.
+            m_fullScreen.insert(dialog);
+        } else {
             stackSideLists(dialog);
         }
     }
     const QSize needed = dialog->minimumSizeHint().expandedTo(dialog->minimumSize());
-    if (!m_wrapped.contains(dialog) && (needed.width() > screen.width() || needed.height() > screen.height())) {
+    if (!m_wrapped.contains(dialog) && !m_fullScreen.contains(dialog)
+        && (needed.width() > screen.width() || needed.height() > screen.height())) {
         if (wrapContents(dialog, true)) {
             m_wrapped.insert(dialog);
         }
@@ -535,7 +563,7 @@ void DialogFitter::fit(QDialog *dialog)
     // Phones: dialogs that are close to the screen size use all of it, the
     // rest are kept on screen and centered.
     QSize size = dialog->size().expandedTo(dialog->minimumSizeHint());
-    if (m_wrapped.contains(dialog) || size.width() > screen.width() * 0.85 || size.height() > screen.height() * 0.85) {
+    if (m_wrapped.contains(dialog) || m_fullScreen.contains(dialog) || size.width() > screen.width() * 0.85 || size.height() > screen.height() * 0.85) {
         dialog->setMinimumSize(0, 0);
         dialog->setGeometry(screen);
     } else {

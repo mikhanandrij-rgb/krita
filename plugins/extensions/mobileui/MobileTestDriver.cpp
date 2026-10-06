@@ -22,6 +22,7 @@
 #include <QDir>
 #include <QElapsedTimer>
 #include <QFile>
+#include <QLayout>
 #include <QPixmap>
 #include <QPointer>
 #include <QSet>
@@ -137,14 +138,18 @@ private:
                 for (QWidget *w : mw()->findChildren<QWidget *>()) {
                     if (w->isVisible() && QRect(w->mapTo(mw(), QPoint(0, 0)), w->size()).contains(probe)) {
                         const QRect g(w->mapTo(mw(), QPoint(0, 0)), w->size());
-                        log(QStringLiteral("probe %1,%2: %3 '%4' %5,%6 %7x%8")
+                        QWidget *parent = w->parentWidget();
+                        const bool inLayout = parent && parent->layout() && parent->layout()->indexOf(w) >= 0;
+                        log(QStringLiteral("probe %1,%2: %3 '%4' %5,%6 %7x%8 tip='%9' parent=%10 inLayout=%11")
                                 .arg(probe.x())
                                 .arg(probe.y())
                                 .arg(QString::fromLatin1(w->metaObject()->className()), w->objectName())
                                 .arg(g.x())
                                 .arg(g.y())
                                 .arg(g.width())
-                                .arg(g.height()));
+                                .arg(g.height())
+                                .arg(w->toolTip(), parent ? QString::fromLatin1(parent->metaObject()->className()) : QString())
+                                .arg(inLayout));
                     }
                 }
             }
@@ -223,8 +228,9 @@ private:
         }
         if (!found) {
             for (QWidget *w : QApplication::topLevelWidgets()) {
-                if (w->isVisible() && !before.contains(w) && w != mw() && !(w->windowFlags() & Qt::ToolTip)
-                    && (w->windowType() == Qt::Dialog || w->windowType() == Qt::Window || qobject_cast<QDialog *>(w))) {
+                const Qt::WindowType type = w->windowType();
+                if (w->isVisible() && !before.contains(w) && w != mw() && type != Qt::ToolTip && type != Qt::Popup
+                    && (type == Qt::Dialog || type == Qt::Window || type == Qt::Tool || qobject_cast<QDialog *>(w))) {
                     found = w;
                     if (qobject_cast<QDialog *>(w)) {
                         break;
