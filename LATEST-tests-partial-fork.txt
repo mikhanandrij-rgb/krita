@@ -1,12 +1,12 @@
 == tests-partial-fork (run 6): running
 status: running
 commit: 77b2cbc4c2eec1430f9d8008f5e540557c74be05
-Tue Oct  6 09:44:37 UTC 2026
+Tue Oct  6 09:46:40 UTC 2026
                total        used        free      shared  buff/cache   available
-Mem:           15988        1171        1006          55       14212       14816
+Mem:           15988        1157        1287          55       13945       14831
 Swap:           3071           0        3071
 /dev/root       145G   40G  106G  28% /
-93
+173
   2/321 Test   #1: appstreamtest .......................................................***Failed    3.30 sec
  53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.90 sec
  54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.84 sec
