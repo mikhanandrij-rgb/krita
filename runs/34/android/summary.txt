@@ -1,4 +1,3 @@
-== android (run 34): cancelled
 status: cancelled
 branch: mobile
 commit: 9cac15c1faafe260c580e4f09977b85bc94ecf3b
@@ -9,4 +8,3 @@ release: https://github.com/mikhanandrij-rgb/krita/releases/tag/mobile-build-34
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   35G  110G  24% /
-
