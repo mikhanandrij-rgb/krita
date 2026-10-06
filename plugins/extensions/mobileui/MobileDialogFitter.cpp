@@ -388,7 +388,7 @@ bool DialogFitter::adaptPageDialog(QDialog *dialog, const QRect &screen)
     }
     // A page list beside the pages leaves no room on a phone; tabs above
     // the pages keep every page one tap away.
-    if (screen.width() < dp(600)) {
+    if (screen.width() < dp(600) || screen.height() < dp(600)) {
         pageView->setProperty("faceType", int(KPageView::Tabbed));
     }
     QAbstractItemView *view = pageView->findChild<QAbstractItemView *>(QString(), Qt::FindDirectChildrenOnly);

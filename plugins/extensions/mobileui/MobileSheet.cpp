@@ -392,9 +392,23 @@ void Sheet::setTabPrefersFullHeight(const QString &panelId, const QString &tabId
     m_fullHeightTabs.insert(panelId + QLatin1Char('/') + tabId);
 }
 
+bool Sheet::isFullTabCurrent() const
+{
+    const Panel *p = const_cast<Sheet *>(this)->panel(m_currentPanel);
+    return p && m_fullHeightTabs.contains(p->id + QLatin1Char('/') + p->currentTab);
+}
+
 void Sheet::expandForTab(const QString &panelId, const QString &tabId)
 {
-    if(m_placement != Placement::Bottom || m_fraction >= FULL_FRACTION ||
+    if(m_placement == Placement::Side) {
+        // The side sheet's width follows the current tab.
+        if(m_open && !m_dragging) {
+            setGeometry(openGeometry());
+            Q_EMIT coveredRectChanged();
+        }
+        return;
+    }
+    if(m_fraction >= FULL_FRACTION ||
        !m_fullHeightTabs.contains(panelId + QLatin1Char('/') + tabId)) {
         return;
     }
@@ -583,6 +597,10 @@ QRect Sheet::openGeometry() const
     } else {
         int margin = dp(8);
         int w = qBound(dp(300), qRound(a.width() * 0.4), dp(440));
+        // Big editors (the brush editor) get a wider side sheet.
+        if(isFullTabCurrent()) {
+            w = qMax(w, qMin(qRound(a.width() * 0.7), dp(720)));
+        }
         w = qMin(w, a.width() - dp(64));
         int h = a.height() - margin * 2;
         int x = m_leftSide ? a.x() + margin : a.x() + a.width() - margin - w;

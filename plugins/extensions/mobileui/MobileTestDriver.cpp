@@ -492,7 +492,9 @@ private:
 
     void writeWalkRow(const QString &id, const QString &result, const QString &detail, qint64 ms)
     {
-        auto field = [](QString v) {
+        // Explicit QString return type: with QStringBuilder an auto return
+        // type would keep a reference to the destroyed local copy.
+        auto field = [](QString v) -> QString {
             v.replace(QLatin1Char('"'), QLatin1String("\"\""));
             return QLatin1Char('"') + v + QLatin1Char('"');
         };

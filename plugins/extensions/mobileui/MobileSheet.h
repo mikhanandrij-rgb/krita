@@ -121,6 +121,7 @@ private:
     QRect closedGeometry() const;
     void animateTo(const QRect &target, bool hideAfter);
     void expandForTab(const QString &panelId, const QString &tabId);
+    bool isFullTabCurrent() const;
     void relayout();
 
     // Dragging the header resizes (bottom) or dismisses (both) the sheet.
