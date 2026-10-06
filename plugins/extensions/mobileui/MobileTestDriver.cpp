@@ -610,6 +610,26 @@ private:
             // Phones are mostly held upright: every window the walk opens
             // is checked (and saved) in portrait.
             m_steps.append([this] { setSize(411, 891, QStringLiteral("walk")); });
+#ifdef Q_OS_ANDROID
+            // The emulator runs Krita's ARM code through a translator: on a
+            // phone-sized image every filter of the walk takes minutes. A
+            // small image keeps the walk to the interface.
+            m_steps.append([this] {
+                if (!mw()) {
+                    return;
+                }
+                const KoColorSpace *cs = KoColorSpaceRegistry::instance()->rgb8();
+                KisDocument *doc = KisPart::instance()->createDocument();
+                if (doc->newImage(QStringLiteral("Walk"), 256, 256, cs, KoColor(Qt::white, cs), KisConfig::RASTER_LAYER, 2, QString(), 1.0)) {
+                    doc->setModified(false);
+                    KisPart::instance()->addDocument(doc);
+                    mw()->addViewAndNotifyLoadingCompleted(doc);
+                    log(QStringLiteral("walk: small image 256x256"));
+                } else {
+                    delete doc;
+                }
+            });
+#endif
             addActionWalk();
         }
         m_steps.append([this] {
