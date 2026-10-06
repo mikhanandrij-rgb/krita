@@ -1,0 +1,221 @@
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /home/runner/wd/krita/_install/lib/x86_64-linux-gnu/libkritaimage.so.20.0.0
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/runner/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffef8a06c0 (LWP 31722)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31723)]
+[New Thread 0x7fffd3fff6c0 (LWP 31724)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31725)]
+[New Thread 0x7fffda9fd6c0 (LWP 31726)]
+[New Thread 0x7fffd99fc6c0 (LWP 31727)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31728)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31729)]
+[New Thread 0x7fffbbfff6c0 (LWP 31730)]
+[New Thread 0x7fffbaffe6c0 (LWP 31731)]
+[Thread 0x7fffef8a06c0 (LWP 31722) exited]
+[Thread 0x7fffbbfff6c0 (LWP 31730) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31729) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31728) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31727) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31726) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31725) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31724) exited]
+[Thread 0x7fffbaffe6c0 (LWP 31731) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31723) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffbaffe6c0 (LWP 31734)]
+[New Thread 0x7fffda9fd6c0 (LWP 31735)]
+[New Thread 0x7fffef8a06c0 (LWP 31736)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31737)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31738)]
+[New Thread 0x7fffd99fc6c0 (LWP 31739)]
+[New Thread 0x7fffd3fff6c0 (LWP 31740)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31741)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31742)]
+[New Thread 0x7fffbbfff6c0 (LWP 31743)]
+[Thread 0x7fffbaffe6c0 (LWP 31734) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31742) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31741) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31740) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31739) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31737) exited]
+[Thread 0x7fffef8a06c0 (LWP 31736) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31735) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31738) exited]
+[Thread 0x7fffbbfff6c0 (LWP 31743) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffbbfff6c0 (LWP 31746)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31747)]
+[New Thread 0x7fffef8a06c0 (LWP 31748)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31749)]
+[New Thread 0x7fffda9fd6c0 (LWP 31750)]
+[New Thread 0x7fffd99fc6c0 (LWP 31751)]
+[New Thread 0x7fffd3fff6c0 (LWP 31752)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31753)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31754)]
+[New Thread 0x7fffbaffe6c0 (LWP 31755)]
+[Thread 0x7fffbbfff6c0 (LWP 31746) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31754) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31753) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31752) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31751) exited]
+[Thread 0x7fffef8a06c0 (LWP 31748) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31747) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31750) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31749) exited]
+[Thread 0x7fffbaffe6c0 (LWP 31755) exited]
+Fontconfig error: Cannot load default config file: No such file: (null)
+[New Thread 0x7fffbaffe6c0 (LWP 31756)]
+[New Thread 0x7fffda9fd6c0 (LWP 31760)]
+[New Thread 0x7fffef8a06c0 (LWP 31761)]
+[New Thread 0x7fffdc9ff6c0 (LWP 31762)]
+[New Thread 0x7fffdb9fe6c0 (LWP 31763)]
+[New Thread 0x7fffd99fc6c0 (LWP 31764)]
+[New Thread 0x7fffd3fff6c0 (LWP 31765)]
+[New Thread 0x7fffd2ffe6c0 (LWP 31766)]
+[New Thread 0x7fffd1ffd6c0 (LWP 31767)]
+[New Thread 0x7fffbbfff6c0 (LWP 31768)]
+[New Thread 0x7fffb9ffd6c0 (LWP 31769)]
+warning: File "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/kritaplugins/kritapalettize.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+Fontconfig error: Cannot load default config file: No such file: (null)
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: css_styles"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+[New Thread 0x7fffa56e76c0 (LWP 31770)]
+[New Thread 0x7fffa46e66c0 (LWP 31771)]
+[New Thread 0x7fffa36e56c0 (LWP 31772)]
+[New Thread 0x7fffa26e46c0 (LWP 31773)]
+[New Thread 0x7fff933ff6c0 (LWP 31777)]
+[New Thread 0x7fff923fe6c0 (LWP 31778)]
+[New Thread 0x7fff913fd6c0 (LWP 31779)]
+[Thread 0x7fff923fe6c0 (LWP 31778) exited]
+/home/runner/wd/krita/_install/lib/x86_64-linux-gnu/krita-python-libs/krita added to PYTHONPATH
+[New Thread 0x7fff923fe6c0 (LWP 31780)]
+[New Thread 0x7fff84ead6c0 (LWP 31781)]
+[New Thread 0x7fff7bbff6c0 (LWP 31782)]
+[New Thread 0x7fff7a9466c0 (LWP 31783)]
+[New Thread 0x7fff792c26c0 (LWP 31784)]
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+Krita Mobile: interface mode 0, smallest screen side 1024 dp (Android: -1), phone interface off
+[New Thread 0x7fff67a8b6c0 (LWP 31785)]
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+[New Thread 0x7fff65ddd6c0 (LWP 31787)]
+[New Thread 0x7fff5ffff6c0 (LWP 31788)]
+[New Thread 0x7fff57fff6c0 (LWP 31789)]
+[New Thread 0x7fff5effe6c0 (LWP 31790)]
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+[Thread 0x7fff923fe6c0 (LWP 31780) exited]
+[Thread 0x7fff67a8b6c0 (LWP 31785) exited]
+[Thread 0x7fff933ff6c0 (LWP 31777) exited]
+[Thread 0x7fffa26e46c0 (LWP 31773) exited]
+[Thread 0x7fffa46e66c0 (LWP 31771) exited]
+[Thread 0x7fffa56e76c0 (LWP 31770) exited]
+[Thread 0x7fffa36e56c0 (LWP 31772) exited]
+[Thread 0x7fffda9fd6c0 (LWP 31760) exited]
+[Thread 0x7fffbbfff6c0 (LWP 31768) exited]
+[Thread 0x7fffd1ffd6c0 (LWP 31767) exited]
+[Thread 0x7fffd2ffe6c0 (LWP 31766) exited]
+[Thread 0x7fffd3fff6c0 (LWP 31765) exited]
+[Thread 0x7fffdb9fe6c0 (LWP 31763) exited]
+[Thread 0x7fffdc9ff6c0 (LWP 31762) exited]
+[Thread 0x7fffef8a06c0 (LWP 31761) exited]
+[Thread 0x7fffd99fc6c0 (LWP 31764) exited]
+[Thread 0x7fffb9ffd6c0 (LWP 31769) exited]
+krita.general: Warning: some tiles have leaked:
+[Thread 0x7fff913fd6c0 (LWP 31779) exited]
+krita.general: 	Tiles in memory: 513 
+ 	Total tiles: 513
+[Thread 0x7fffbaffe6c0 (LWP 31756) exited]
+[Thread 0x7fff5effe6c0 (LWP 31790) exited]
+[Thread 0x7fff57fff6c0 (LWP 31789) exited]
+[Thread 0x7fff5ffff6c0 (LWP 31788) exited]
+[Thread 0x7fff65ddd6c0 (LWP 31787) exited]
+[Thread 0x7fff7a9466c0 (LWP 31783) exited]
+[Thread 0x7fff7bbff6c0 (LWP 31782) exited]
+[Thread 0x7fff84ead6c0 (LWP 31781) exited]
+[Thread 0x7ffff4384540 (LWP 31717) exited]
+[Thread 0x7fff792c26c0 (LWP 31784) exited]
+[New process 31717]
+[Inferior 1 (process 31717) exited normally]
+
+=== crash backtrace ===
+No stack.
+
+=== GUI thread ===
+Unknown thread 1.
+No stack.
+No threads.
+krita (classic) exit code: 0
+total 304
+drwxr-xr-x  2 runner runner  4096 Oct  6 22:58 .
+drwxr-xr-x 27 runner runner  4096 Oct  6 22:57 ..
+-rw-r--r--  1 runner runner 94267 Oct  6 22:58 classic-desktop-02-canvas.png
+-rw-r--r--  1 runner runner 53444 Oct  6 22:58 classic-landscape-02-canvas.png
+-rw-r--r--  1 runner runner 46766 Oct  6 22:58 classic-portrait-01-start.png
+-rw-r--r--  1 runner runner 93761 Oct  6 22:58 classic-portrait-02-canvas.png
+-rw-r--r--  1 runner runner   801 Oct  6 22:58 testdriver.log
