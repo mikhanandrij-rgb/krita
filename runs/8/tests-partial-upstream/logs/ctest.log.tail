@@ -1,595 +1,385 @@
-TD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="30pt"
-    height="30pt"
-    viewBox="0 0 30 30">
-<defs>
-  <marker id="lineMarker0" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_78b858be" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_41ea0141" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker1" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_78b858be" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_41ea0141" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker2" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_78b858be" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_41ea0141" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
- </defs>
-<path id="testRect" transform="translate(5, 7.5)" paint-order="stroke markers fill" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" marker-start="url(#lineMarker0)" marker-mid="url(#lineMarker1)" marker-end="url(#lineMarker2)" d="M0 7.5C0 -2.5 20 -2.5 20 7.5L10 17.5" sodipodi:nodetypes="ccc"/>
-</svg>
+ed from consideration QPointF(0,152)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
+QWARN  : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
+PASS   : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage()
+RESULT : KisCageTransformWorkerTest::testCageClockwisePixelPrecision8QImage():
+     10 msecs per iteration (total: 10, iterations: 1)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwise() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
+PASS   : KisCageTransformWorkerTest::testCageCounterclockwise()
+RESULT : KisCageTransformWorkerTest::testCageCounterclockwise():
+     25 msecs per iteration (total: 25, iterations: 1)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
+QWARN  : KisCageTransformWorkerTest::testCageClockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
+QDEBUG : KisCageTransformWorkerTest::testCageClockwiseUnity()  Different at QPoint(299,151) source 0 0 0 0 dest 255 255 255 255 fuzzy 1 fuzzyAlpha 1 ( 1 of 0 allowed )
+QDEBUG : KisCageTransformWorkerTest::testCageClockwiseUnity() --- Wrong image: "clk_unity"
+FAIL!  : KisCageTransformWorkerTest::testCageClockwiseUnity() 'TestUtil::checkQImage(result, "cage_transform_test", "cage", testName, 1, 1)' returned FALSE. ()
+   Loc: [/home/runner/work/krita/krita/libs/image/tests/kis_cage_transform_worker_test.cpp(114)]
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(8,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(16,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(24,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(32,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(40,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(48,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(56,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(64,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(72,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(80,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(88,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(96,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(104,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(112,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(120,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(128,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(136,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(144,0)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,8)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,16)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,24)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,32)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,40)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,48)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,56)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,64)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,72)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,80)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,88)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,96)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,104)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,112)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,120)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,128)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,136)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,144)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,152)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,160)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,168)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,176)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,184)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,192)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,200)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,208)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,216)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,224)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,232)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,240)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,248)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,256)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,264)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,272)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,280)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,288)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,296)
+QWARN  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() krita.general: WARNING: One grid point has been removed from consideration QPointF(0,299)
+QDEBUG : KisCageTransformWorkerTest::testCageCounterclockwiseUnity()  Different at QPoint(299,152) source 0 0 0 0 dest 255 255 255 255 fuzzy 1 fuzzyAlpha 1 ( 1 of 0 allowed )
+QDEBUG : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() --- Wrong image: "cclk_unity"
+FAIL!  : KisCageTransformWorkerTest::testCageCounterclockwiseUnity() 'TestUtil::checkQImage(result, "cage_transform_test", "cage", testName, 1, 1)' returned FALSE. ()
+   Loc: [/home/runner/work/krita/krita/libs/image/tests/kis_cage_transform_worker_test.cpp(114)]
+PASS   : KisCageTransformWorkerTest::stressTestRandomCages()
+PASS   : KisCageTransformWorkerTest::testUnityGreenCoordinates()
+PASS   : KisCageTransformWorkerTest::testTransformAsBase()
+PASS   : KisCageTransformWorkerTest::testAngleBetweenVectors()
+PASS   : KisCageTransformWorkerTest::cleanupTestCase()
+Totals: 11 passed, 2 failed, 0 skipped, 0 blacklisted, 20550ms
+********* Finished testing of KisCageTransformWorkerTest *********
 
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(stroke-markers-fill)
-PASS   : TestSvgParser::testRenderPaintOrderProperty(stroke-markers-fill)
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(fill-markers-stroke)
-
-=== Original: ===
-
-<svg height="30px" xmlns="http://www.w3.org/2000/svg" width="30px" version="1.1">
-    <marker refY="12.5" orient="auto" refX="12.5" id="SimpleRectMarker">
-        <rect height="5" x="10" stroke="none" width="5" fill="red" id="markerRect" y="10"/>
-        <rect height="1" x="14" stroke="none" width="1" fill="yellow" id="markerRect" y="12"/>
-        <rect height="1" x="12" stroke="none" width="1" fill="white" id="markerRect" y="12"/>
-    </marker>
-    <path style="fill:#ffffff;stroke:#000000;stroke-width:2px;marker-start:url(#SimpleRectMarker);marker-end:url(#SimpleRectMarker);marker-mid:url(#SimpleRectMarker)" d="M5,15 C5,5 25,5 25,15 L15,25" paint-order="fill markers" id="testRect"/>
-</svg>
-
-
-=== Saved: ===
-
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="30pt"
-    height="30pt"
-    viewBox="0 0 30 30">
-<defs>
-  <marker id="lineMarker0" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7756dc1e" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_5a8f5231" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker1" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7756dc1e" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_5a8f5231" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker2" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7756dc1e" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_5a8f5231" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
- </defs>
-<path id="testRect" transform="translate(5, 7.5)" paint-order="fill markers stroke" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" marker-start="url(#lineMarker0)" marker-mid="url(#lineMarker1)" marker-end="url(#lineMarker2)" d="M0 7.5C0 -2.5 20 -2.5 20 7.5L10 17.5" sodipodi:nodetypes="ccc"/>
-</svg>
-
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(fill-markers-stroke)
-PASS   : TestSvgParser::testRenderPaintOrderProperty(fill-markers-stroke)
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(markers-fill-stroke)
-
-=== Original: ===
-
-<svg height="30px" xmlns="http://www.w3.org/2000/svg" width="30px" version="1.1">
-    <marker refY="12.5" orient="auto" refX="12.5" id="SimpleRectMarker">
-        <rect height="5" x="10" stroke="none" width="5" fill="red" id="markerRect" y="10"/>
-        <rect height="1" x="14" stroke="none" width="1" fill="yellow" id="markerRect" y="12"/>
-        <rect height="1" x="12" stroke="none" width="1" fill="white" id="markerRect" y="12"/>
-    </marker>
-    <path style="fill:#ffffff;stroke:#000000;stroke-width:2px;marker-start:url(#SimpleRectMarker);marker-end:url(#SimpleRectMarker);marker-mid:url(#SimpleRectMarker)" d="M5,15 C5,5 25,5 25,15 L15,25" paint-order="markers" id="testRect"/>
-</svg>
-
-
-=== Saved: ===
-
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="30pt"
-    height="30pt"
-    viewBox="0 0 30 30">
-<defs>
-  <marker id="lineMarker0" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7f1cddbe" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_3f02ba98" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker1" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7f1cddbe" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_3f02ba98" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker2" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_7f1cddbe" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_3f02ba98" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
- </defs>
-<path id="testRect" transform="translate(5, 7.5)" paint-order="markers fill stroke" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" marker-start="url(#lineMarker0)" marker-mid="url(#lineMarker1)" marker-end="url(#lineMarker2)" d="M0 7.5C0 -2.5 20 -2.5 20 7.5L10 17.5" sodipodi:nodetypes="ccc"/>
-</svg>
-
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(markers-fill-stroke)
-PASS   : TestSvgParser::testRenderPaintOrderProperty(markers-fill-stroke)
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(markers-stroke-fill)
-
-=== Original: ===
-
-<svg height="30px" xmlns="http://www.w3.org/2000/svg" width="30px" version="1.1">
-    <marker refY="12.5" orient="auto" refX="12.5" id="SimpleRectMarker">
-        <rect height="5" x="10" stroke="none" width="5" fill="red" id="markerRect" y="10"/>
-        <rect height="1" x="14" stroke="none" width="1" fill="yellow" id="markerRect" y="12"/>
-        <rect height="1" x="12" stroke="none" width="1" fill="white" id="markerRect" y="12"/>
-    </marker>
-    <path style="fill:#ffffff;stroke:#000000;stroke-width:2px;marker-start:url(#SimpleRectMarker);marker-end:url(#SimpleRectMarker);marker-mid:url(#SimpleRectMarker)" d="M5,15 C5,5 25,5 25,15 L15,25" paint-order="markers stroke" id="testRect"/>
-</svg>
-
-
-=== Saved: ===
-
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="30pt"
-    height="30pt"
-    viewBox="0 0 30 30">
-<defs>
-  <marker id="lineMarker0" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_4a58ac12" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_1f046283" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker1" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_4a58ac12" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_1f046283" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
-  <marker id="lineMarker2" markerUnits="strokeWidth" refX="12.5" refY="12.5" markerWidth="3" markerHeight="3" orient="auto">
-      <defs/>
-   <g id="SimpleRectMarker" fill="none">
-     <rect id="markerRect" transform="translate(10, 10)" fill="#ff0000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="5" height="5"/>
-     <rect id="markerRect_4a58ac12" transform="translate(14, 12)" fill="#ffff00" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-     <rect id="markerRect_1f046283" transform="translate(12, 12)" fill="#ffffff" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" width="1" height="1"/>
-    </g>
-  </marker>
- </defs>
-<path id="testRect" transform="translate(5, 7.5)" paint-order="markers stroke fill" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" marker-start="url(#lineMarker0)" marker-mid="url(#lineMarker1)" marker-end="url(#lineMarker2)" d="M0 7.5C0 -2.5 20 -2.5 20 7.5L10 17.5" sodipodi:nodetypes="ccc"/>
-</svg>
-
-QDEBUG : TestSvgParser::testRenderPaintOrderProperty(markers-stroke-fill)
-PASS   : TestSvgParser::testRenderPaintOrderProperty(markers-stroke-fill)
-PASS   : TestSvgParser::testDescAndTitleParsing()
-PASS   : TestSvgParser::cleanupTestCase()
-Totals: 133 passed, 1 failed, 2 skipped, 0 blacklisted, 651ms
-********* Finished testing of TestSvgParser *********
-
-        Start  57: libs-flake-TestPointMergeCommand
- 56/321 Test  #57: libs-flake-TestPointMergeCommand ....................................   Passed    1.17 sec
-        Start  58: libs-flake-resources-KoGamutMaskTest
- 57/321 Test  #58: libs-flake-resources-KoGamutMaskTest ................................   Passed    0.88 sec
-        Start  59: libs-pigment-TestKoColorSet
- 58/321 Test  #59: libs-pigment-TestKoColorSet .........................................   Passed    0.96 sec
-        Start  60: libs-pigment-TestKoColorSpaceRegistry
- 59/321 Test  #60: libs-pigment-TestKoColorSpaceRegistry ...............................   Passed    0.84 sec
-        Start  61: libs-pigment-TestKoColorSpaceAbstract
- 60/321 Test  #61: libs-pigment-TestKoColorSpaceAbstract ...............................***Failed    0.99 sec
+        Start 177: libs-image-KisRandomGenerator2DTest
+176/321 Test #177: libs-image-KisRandomGenerator2DTest .................................   Passed    0.27 sec
+        Start 178: libs-image-kis_keyframing_test
+177/321 Test #178: libs-image-kis_keyframing_test ......................................   Passed    1.55 sec
+        Start 179: libs-image-kis_time_span_test
+178/321 Test #179: libs-image-kis_time_span_test .......................................   Passed    0.01 sec
+        Start 180: libs-image-kis_filter_mask_test
+179/321 Test #180: libs-image-kis_filter_mask_test .....................................   Passed    1.60 sec
+        Start 181: libs-image-kis_asl_layer_style_serializer_test
+180/321 Test #181: libs-image-kis_asl_layer_style_serializer_test ......................   Passed    1.29 sec
+        Start 182: libs-image-TestAslStorage
+181/321 Test #182: libs-image-TestAslStorage ...........................................   Passed    0.99 sec
+        Start 183: libs-image-kis_async_merger_test
+182/321 Test #183: libs-image-kis_async_merger_test ....................................   Passed    1.59 sec
+        Start 184: libs-image-kis_selection_test
+183/321 Test #184: libs-image-kis_selection_test .......................................   Passed    1.22 sec
+        Start 185: libs-image-kis_update_scheduler_test
+184/321 Test #185: libs-image-kis_update_scheduler_test ................................   Passed    3.69 sec
+        Start 186: libs-image-kis_colorize_mask_test
+185/321 Test #186: libs-image-kis_colorize_mask_test ...................................   Passed    1.54 sec
+        Start 187: libs-image-kis_processings_test
+186/321 Test #187: libs-image-kis_processings_test .....................................   Passed    2.30 sec
+        Start 188: libs-image-kis_paint_device_test
+187/321 Test #188: libs-image-kis_paint_device_test ....................................   Passed    6.10 sec
+        Start 189: libs-image-kis_layer_styles_test
+188/321 Test #189: libs-image-kis_layer_styles_test ....................................   Passed    1.43 sec
+        Start 190: libs-image-kis_mesh_transform_worker_test
+189/321 Test #190: libs-image-kis_mesh_transform_worker_test ...........................   Passed    1.72 sec
+        Start 191: libs-image-KisKeyframeAnimationInterfaceSignalTest
+190/321 Test #191: libs-image-KisKeyframeAnimationInterfaceSignalTest ..................   Passed    0.83 sec
+        Start 192: libs-image-KisOverlayPaintDeviceWrapperTest
+191/321 Test #192: libs-image-KisOverlayPaintDeviceWrapperTest .........................   Passed    1.34 sec
+        Start 193: libs-image-KisPaintOpPresetTest
+192/321 Test #193: libs-image-KisPaintOpPresetTest .....................................   Passed    1.24 sec
+        Start 194: libs-image-KisFourPointInterpolatorTest
+193/321 Test #194: libs-image-KisFourPointInterpolatorTest .............................   Passed    0.01 sec
+        Start 195: libs-image-KisSpatialContainerTest
+194/321 Test #195: libs-image-KisSpatialContainerTest ..................................   Passed    0.60 sec
+        Start 196: libs-image-KisGridInterpolationToolsTest
+195/321 Test #196: libs-image-KisGridInterpolationToolsTest ............................   Passed    0.02 sec
+        Start 197: libs-image-KisContentLightLevelProcessingVisitorTest
+196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.93 sec
 QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-********* Start testing of TestKoColorSpaceAbstract *********
+********* Start testing of KisContentLightLevelProcessingVisitorTest *********
 Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-PASS   : TestKoColorSpaceAbstract::initTestCase()
-PASS   : TestKoColorSpaceAbstract::testMixColorsOpU8()
-PASS   : TestKoColorSpaceAbstract::testMixColorsOpF32()
-PASS   : TestKoColorSpaceAbstract::testMixColorsOpU8NoAlpha()
-PASS   : TestKoColorSpaceAbstract::testMixColorsOpU8NoAlphaLinear()
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (full))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (full, explicit))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (blue))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (green))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (red))
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (full)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (full, explicit)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (cyan)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (magenta)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (yellow)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (black)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-FAIL!  : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(cmyk->rgb (black, no-alpha)) Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestKoColorSpaceAbstract.cpp(597)]
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->cmyk (blue, no-alpha))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->alpha (full))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->alpha (full, explicit))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->alpha (transp source))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->alpha (alpha locked))
-PASS   : TestKoColorSpaceAbstract::testBitBltCrossColorSpaceWithChannelFlags(rgb->alpha (colors locked))
-PASS   : TestKoColorSpaceAbstract::cleanupTestCase()
-Totals: 17 passed, 7 failed, 0 skipped, 0 blacklisted, 972ms
-********* Finished testing of TestKoColorSpaceAbstract *********
+PASS   : KisContentLightLevelProcessingVisitorTest::initTestCase()
+PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(XYZ Luminance)
+PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(Rec2020 Component)
+PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(RGB Component)
+FAIL!  : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(XYZ Luminance) 'info.maxContentLightLevel - expectedMaxCLL < 0.00001' returned FALSE. ()
+   Loc: [/home/runner/work/krita/krita/libs/image/tests/KisContentLightLevelProcessingVisitorTest.cpp(117)]
+PASS   : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(Rec2020 Component)
+FAIL!  : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(RGB Component) 'info.maxContentLightLevel - expectedMaxCLL < 0.00001' returned FALSE. ()
+   Loc: [/home/runner/work/krita/krita/libs/image/tests/KisContentLightLevelProcessingVisitorTest.cpp(117)]
+PASS   : KisContentLightLevelProcessingVisitorTest::testEmptyDocument()
+PASS   : KisContentLightLevelProcessingVisitorTest::cleanupTestCase()
+Totals: 7 passed, 2 failed, 0 skipped, 0 blacklisted, 904ms
+********* Finished testing of KisContentLightLevelProcessingVisitorTest *********
 Fontconfig error: Cannot load default config file: No such file: (null)
 
-        Start  62: libs-pigment-TestColorConversionSystem
- 61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   24.36 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-krita.db.migration: Completed DB update step: "Create table version_information"
-krita.db.migration: Completed DB update step: "Create table storage_types"
-krita.db.migration: Completed DB update step: "Create table resource_types"
-krita.db.migration: Completed DB update step: "Create table storages"
-krita.db.migration: Completed DB update step: "Create table tags"
-krita.db.migration: Completed DB update step: "Create table resources"
-krita.db.migration: Completed DB update step: "Create table versioned_resources"
-krita.db.migration: Completed DB update step: "Create table resource_tags"
-krita.db.migration: Completed DB update step: "Create table metadata"
-krita.db.migration: Completed DB update step: "Create table tags_storages"
-krita.db.migration: Completed DB update step: "Create table tag_translations"
-krita.db.migration: Completed DB update step: "Update metadata table constraints"
-krita.db.migration: Completed DB update step: "Create index for storages"
-krita.db.migration: Completed DB update step: "Create index for versioned_resources"
-krita.db.migration: Completed DB update step: "Create index for tags"
-krita.db.migration: Completed DB update step: "Create index for resources"
-krita.db.migration: Completed DB update step: "Create index for tag_translations"
-krita.db.migration: Completed DB update step: "Create index for resource_tags"
-krita.db.migration: Completed DB update step: "Create index for resources_signature"
-krita.db.migration: Completed DB update step: "Create index for metadata_key"
-krita.db.migration: Completed DB update step: "Register storage type: Unknown"
-krita.db.migration: Completed DB update step: "Register storage type: Folder"
-krita.db.migration: Completed DB update step: "Register storage type: Bundle"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
-krita.db.migration: Completed DB update step: "Register storage type: Memory"
-krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
-krita.db.migration: Completed DB update step: "Register resource type: gradients"
-krita.db.migration: Completed DB update step: "Register resource type: palettes"
-krita.db.migration: Completed DB update step: "Register resource type: patterns"
-krita.db.migration: Filled version table
-********* Start testing of TestColorConversionSystem *********
-Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-PASS   : TestColorConversionSystem::initTestCase()
-PASS   : TestColorConversionSystem::testConnections()
-PASS   : TestColorConversionSystem::testGoodConnections()
-PASS   : TestColorConversionSystem::testAlphaConnectionPaths()
-PASS   : TestColorConversionSystem::testAlphaConversions()
-PASS   : TestColorConversionSystem::testAlphaU16Conversions()
-PASS   : TestColorConversionSystem::testGrayAConnectionPaths()
-PASS   : TestColorConversionSystem::testGrayAConversions()
-PASS   : TestColorConversionSystem::benchmarkAlphaToRgbConversion()
-RESULT : TestColorConversionSystem::benchmarkAlphaToRgbConversion():
-     95 msecs per iteration (total: 95, iterations: 1)
-PASS   : TestColorConversionSystem::benchmarkRgbToAlphaConversion()
-RESULT : TestColorConversionSystem::benchmarkRgbToAlphaConversion():
-     112 msecs per iteration (total: 112, iterations: 1)
-PASS   : TestColorConversionSystem::testCmykBitnessConversion()
-QSYSTEM: TestColorConversionSystem::testRec2020PQConnectionPaths(f16-pq-f16-linear) krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-QSYSTEM: TestColorConversionSystem::testRec2020PQConnectionPaths(f16-pq-f16-linear) krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-pq-f16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-f16-pq)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-pq-f32-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-linear-f32-pq)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-u16-pq)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq-f16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq-u16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq-u8-srgb)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u8-pq-u8-srgb)
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-pq_180nit-f16-linear) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "F16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "F16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-f16-pq_180nit) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ,  NodeKey("RGBA", "F16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "F16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-pq_180nit-f32-linear) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "F32", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "F32", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-linear-f32-pq_180nit) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ,  NodeKey("RGBA", "F32", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "F32", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-u16-pq_180nit) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ,  NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_180nit-f16-linear) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "F16", "Rec2020-elle-V4-g10.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_180nit-u16-linear) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U16", "Rec2020-elle-V4-g10.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U16", "Rec2020-elle-V4-g10.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_180nit-u8-srgb) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U8", "sRGB-elle-V2-srgbtrc.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "U16", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U8", "sRGB-elle-V2-srgbtrc.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-FAIL!  : TestColorConversionSystem::testRec2020PQConnectionPaths(u8-pq_180nit-u8-srgb) Compared paths are not the same:
- Expected: expectedPath: std::vector(NodeKey("RGBA", "U8", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("RGBA", "F32", "Rec2020-elle-V4-g10.icc") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U8", "sRGB-elle-V2-srgbtrc.icc") ) 
- Actual: calcPath(expectedPath, false): std::vector(NodeKey("RGBA", "U8", "Krita Rec. 2100 Perceptual Quantizer 180nits") ,  NodeKey("icc", "icc", "icc") ,  NodeKey("RGBA", "U8", "sRGB-elle-V2-srgbtrc.icc") ) 
-   Loc: [/home/runner/work/krita/krita/libs/pigment/tests/TestColorConversionSystem.cpp(542)]
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-pq_legacy-f16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-f16-pq_legacy)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-pq_legacy-f32-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f32-linear-f32-pq_legacy)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(f16-linear-u16-pq_legacy)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_legacy-f16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_legacy-u16-linear)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u16-pq_legacy-u8-srgb)
-PASS   : TestColorConversionSystem::testRec2020PQConnectionPaths(u8-pq_legacy-u8-srgb)
-PASS   : TestColorConversionSystem::cleanupTestCase()
-Totals: 30 passed, 9 failed, 0 skipped, 0 blacklisted, 23531ms
-********* Finished testing of TestColorConversionSystem *********
-Fontconfig error: Cannot load default config file: No such file: (null)
-
-        Start  63: libs-pigment-TestKoColor
- 62/321 Test  #63: libs-pigment-TestKoColor ............................................   Passed    1.35 sec
-        Start  64: libs-pigment-TestKoIntegerMaths
- 63/321 Test  #64: libs-pigment-TestKoIntegerMaths .....................................   Passed    0.00 sec
-        Start  65: libs-pigment-TestConvolutionOpImpl
- 64/321 Test  #65: libs-pigment-TestConvolutionOpImpl ..................................   Passed    0.01 sec
-        Start  66: libs-pigment-KoRgbU8ColorSpaceTester
- 65/321 Test  #66: libs-pigment-KoRgbU8ColorSpaceTester ................................   Passed    0.83 sec
-        Start  67: libs-pigment-TestKoColorSpaceSanity
- 66/321 Test  #67: libs-pigment-TestKoColorSpaceSanity .................................   Passed    1.12 sec
-        Start  68: libs-pigment-TestFallBackColorTransformation
- 67/321 Test  #68: libs-pigment-TestFallBackColorTransformation ........................   Passed    0.01 sec
-        Start  69: libs-pigment-TestKoChannelInfo
- 68/321 Test  #69: libs-pigment-TestKoChannelInfo ......................................   Passed    0.00 sec
-        Start  70: libs-pigment-TestCompositeOpInversion
- 69/321 Test   #3: libs-global-KisSignalCompressorTest .................................   Passed   92.65 sec
-        Start  71: libs-pigment-TestColorConversion
- 70/321 Test  #71: libs-pigment-TestColorConversion ....................................   Passed    0.01 sec
-        Start  72: libs-pigment-TestKoColorSpaceMaths
- 71/321 Test  #72: libs-pigment-TestKoColorSpaceMaths ..................................   Passed    0.01 sec
-        Start  73: libs-pigment-TestKisSwatchGroup
- 72/321 Test  #73: libs-pigment-TestKisSwatchGroup .....................................   Passed    0.01 sec
-        Start  74: libs-pigment-TestKoStopGradient
- 73/321 Test  #74: libs-pigment-TestKoStopGradient .....................................   Passed    1.05 sec
-        Start  75: libs-command-TestKUndo2Stack
- 74/321 Test  #75: libs-command-TestKUndo2Stack ........................................   Passed    0.02 sec
-        Start  76: libs-brush-kis_auto_brush_test
- 75/321 Test  #76: libs-brush-kis_auto_brush_test ......................................   Passed    0.87 sec
-        Start  77: libs-brush-kis_auto_brush_factory_test
- 76/321 Test  #77: libs-brush-kis_auto_brush_factory_test ..............................   Passed    0.83 sec
-        Start  78: libs-brush-kis_gbr_brush_test
- 77/321 Test  #78: libs-brush-kis_gbr_brush_test .......................................   Passed    3.14 sec
-        Start  79: libs-brush-kis_png_brush_test
- 78/321 Test  #79: libs-brush-kis_png_brush_test .......................................   Passed    0.03 sec
-        Start  80: libs-brush-kis_boundary_test
- 79/321 Test  #80: libs-brush-kis_boundary_test ........................................   Passed    0.83 sec
-        Start  81: libs-brush-kis_imagepipe_brush_test
- 80/321 Test  #81: libs-brush-kis_imagepipe_brush_test .................................   Passed    1.43 sec
-        Start  82: libs-brush-TestAbrStorage
- 81/321 Test  #82: libs-brush-TestAbrStorage ...........................................   Passed    2.09 sec
-        Start  83: libs-brush-KisBrushModelTest
- 82/321 Test  #83: libs-brush-KisBrushModelTest ........................................   Passed    1.31 sec
-        Start  84: libs-psdutils-psd_utils_test
- 83/321 Test  #84: libs-psdutils-psd_utils_test ........................................   Passed    0.01 sec
-        Start  85: libs-psdutils-compression_test
- 84/321 Test  #85: libs-psdutils-compression_test ......................................   Passed    0.02 sec
-        Start  86: libs-psdutils-psd_cos_parser_test
- 85/321 Test  #86: libs-psdutils-psd_cos_parser_test ...................................   Passed    0.02 sec
-        Start  87: libs-image-kis_base_node_test
- 86/321 Test  #87: libs-image-kis_base_node_test .......................................   Passed    0.85 sec
-        Start  88: libs-image-kis_fast_math_test
- 87/321 Test  #88: libs-image-kis_fast_math_test .......................................   Passed    0.06 sec
-        Start  89: libs-image-kis_node_test
- 88/321 Test  #89: libs-image-kis_node_test ............................................   Passed    1.22 sec
-        Start  90: libs-image-kis_node_facade_test
- 89/321 Test  #90: libs-image-kis_node_facade_test .....................................   Passed    0.02 sec
-        Start  91: libs-image-kis_fixed_paint_device_test
- 90/321 Test  #91: libs-image-kis_fixed_paint_device_test ..............................   Passed    0.93 sec
-        Start  92: libs-image-kis_layer_test
- 91/321 Test  #92: libs-image-kis_layer_test ...........................................   Passed    3.81 sec
-        Start  93: libs-image-kis_effect_mask_test
- 92/321 Test  #93: libs-image-kis_effect_mask_test .....................................   Passed    0.01 sec
-        Start  94: libs-image-kis_iterator_test
- 93/321 Test  #94: libs-image-kis_iterator_test ........................................   Passed    1.55 sec
-        Start  95: libs-image-kis_painter_test
- 94/321 Test  #95: libs-image-kis_painter_test .........................................   Passed    2.38 sec
-        Start  96: libs-image-kis_count_visitor_test
- 95/321 Test  #96: libs-image-kis_count_visitor_test ...................................   Passed    0.02 sec
-        Start  97: libs-image-kis_projection_test
- 96/321 Test  #97: libs-image-kis_projection_test ......................................   Passed    3.19 sec
-        Start  98: libs-image-kis_properties_configuration_test
- 97/321 Test  #98: libs-image-kis_properties_configuration_test ........................   Passed    0.84 sec
-        Start  99: libs-image-kis_transaction_test
- 98/321 Test  #99: libs-image-kis_transaction_test .....................................   Passed    1.54 sec
-        Start 100: libs-image-kis_pixel_selection_test
- 99/321 Test #100: libs-image-kis_pixel_selection_test .................................   Passed    1.98 sec
-        Start 101: libs-image-kis_group_layer_test
-100/321 Test #101: libs-image-kis_group_layer_test .....................................   Passed    0.85 sec
-        Start 102: libs-image-kis_paint_layer_test
-101/321 Test #102: libs-image-kis_paint_layer_test .....................................   Passed    1.06 sec
-        Start 103: libs-image-kis_adjustment_layer_test
-102/321 Test #103: libs-image-kis_adjustment_layer_test ................................   Passed    0.89 sec
-        Start 104: libs-image-kis_annotation_test
-103/321 Test #104: libs-image-kis_annotation_test ......................................   Passed    0.01 sec
-        Start 105: libs-image-kis_convolution_painter_test
-104/321 Test #105: libs-image-kis_convolution_painter_test .............................   Passed   10.66 sec
-        Start 106: libs-image-kis_crop_processing_visitor_test
-105/321 Test #106: libs-image-kis_crop_processing_visitor_test .........................   Passed    1.54 sec
-        Start 107: libs-image-kis_processing_applicator_test
-106/321 Test #107: libs-image-kis_processing_applicator_test ...........................   Passed    1.56 sec
-        Start 108: libs-image-kis_datamanager_test
-107/321 Test #108: libs-image-kis_datamanager_test .....................................   Passed    0.02 sec
-        Start 109: libs-image-kis_fill_painter_test
-108/321 Test #109: libs-image-kis_fill_painter_test ....................................   Passed   12.30 sec
-        Start 110: libs-image-kis_filter_configuration_test
-109/321 Test #110: libs-image-kis_filter_configuration_test ............................   Passed    0.02 sec
-        Start 111: libs-image-kis_filter_test
-110/321 Test #111: libs-image-kis_filter_test ..........................................   Passed    1.61 sec
-        Start 112: libs-image-kis_filter_processing_information_test
-111/321 Test #112: libs-image-kis_filter_processing_information_test ...................   Passed    0.84 sec
-        Start 113: libs-image-kis_filter_registry_test
-112/321 Test #113: libs-image-kis_filter_registry_test .................................   Passed    0.06 sec
-        Start 114: libs-image-kis_filter_strategy_test
-113/321 Test #114: libs-image-kis_filter_strategy_test .................................   Passed    0.02 sec
-        Start 115: libs-image-kis_gradient_painter_test
-114/321 Test #115: libs-image-kis_gradient_painter_test ................................   Passed    0.97 sec
-        Start 116: libs-image-kis_image_commands_test
-115/321 Test #116: libs-image-kis_image_commands_test ..................................   Passed    0.01 sec
-        Start 117: libs-image-kis_image_test
-116/321 Test #117: libs-image-kis_image_test ...........................................   Passed    3.85 sec
-        Start 118: libs-image-kis_image_signal_router_test
-117/321 Test #118: libs-image-kis_image_signal_router_test .............................   Passed    0.86 sec
-        Start 119: libs-image-kis_iterators_ng_test
-118/321 Test #119: libs-image-kis_iterators_ng_test ....................................   Passed    1.79 sec
-        Start 120: libs-image-kis_iterator_benchmark
-119/321 Test #120: libs-image-kis_iterator_benchmark ...................................   Passed    2.44 sec
-        Start 121: libs-image-kis_updater_context_test
-120/321 Test #121: libs-image-kis_updater_context_test .................................   Passed    1.02 sec
-        Start 122: libs-image-kis_simple_update_queue_test
-121/321 Test #122: libs-image-kis_simple_update_queue_test .............................   Passed    0.86 sec
-        Start 123: libs-image-kis_stroke_test
-122/321 Test #123: libs-image-kis_stroke_test ..........................................   Passed    0.02 sec
-        Start 124: libs-image-kis_simple_stroke_strategy_test
-123/321 Test #124: libs-image-kis_simple_stroke_strategy_test ..........................   Passed    1.34 sec
-        Start 125: libs-image-kis_stroke_strategy_undo_command_based_test
-124/321 Test #125: libs-image-kis_stroke_strategy_undo_command_based_test ..............   Passed   22.05 sec
-        Start 126: libs-image-kis_strokes_queue_test
-125/321 Test #126: libs-image-kis_strokes_queue_test ...................................   Passed    0.02 sec
-        Start 127: libs-image-kis_mask_test
-126/321 Test #127: libs-image-kis_mask_test ............................................   Passed    0.86 sec
-        Start 128: libs-image-kis_math_toolbox_test
-127/321 Test #128: libs-image-kis_math_toolbox_test ....................................   Passed    0.01 sec
-        Start 129: libs-image-kis_name_server_test
-128/321 Test #129: libs-image-kis_name_server_test .....................................   Passed    0.02 sec
-        Start 130: libs-image-kis_node_commands_test
-129/321 Test #130: libs-image-kis_node_commands_test ...................................   Passed    0.01 sec
-        Start 131: libs-image-kis_node_graph_listener_test
-130/321 Test #131: libs-image-kis_node_graph_listener_test .............................   Passed    0.02 sec
-        Start 132: libs-image-kis_node_visitor_test
-131/321 Test #132: libs-image-kis_node_visitor_test ....................................   Passed    0.01 sec
-        Start 133: libs-image-kis_paint_information_test
-132/321 Test #133: libs-image-kis_paint_information_test ...............................   Passed    0.40 sec
-        Start 134: libs-image-kis_distance_information_test
-133/321 Test #134: libs-image-kis_distance_information_test ............................   Passed    0.02 sec
-        Start 135: libs-image-kis_paintop_test
-134/321 Test #135: libs-image-kis_paintop_test .........................................   Passed    0.81 sec
-        Start 136: libs-image-kis_pattern_test
-135/321 Test #136: libs-image-kis_pattern_test .........................................   Passed    0.04 sec
-        Start 137: libs-image-kis_selection_mask_test
-136/321 Test #137: libs-image-kis_selection_mask_test ..................................   Passed    0.84 sec
-        Start 138: libs-image-kis_shared_ptr_test
-137/321 Test #138: libs-image-kis_shared_ptr_test ......................................   Passed    0.01 sec
-        Start 139: libs-image-kis_bsplines_test
-138/321 Test #139: libs-image-kis_bsplines_test ........................................   Passed    0.19 sec
-        Start 140: libs-image-kis_warp_transform_worker_test
-139/321 Test #140: libs-image-kis_warp_transform_worker_test ...........................   Passed    1.45 sec
-        Start 141: libs-image-kis_transparency_mask_test
-140/321 Test #141: libs-image-kis_transparency_mask_test ...............................   Passed    0.88 sec
-        Start 142: libs-image-kis_types_test
-141/321 Test #142: libs-image-kis_types_test ...........................................   Passed    0.01 sec
-        Start 143: libs-image-kis_vec_test
-142/321 Test #143: libs-image-kis_vec_test .............................................   Passed    0.01 sec
-        Start 144: libs-image-kis_filter_config_widget_test
-143/321 Test #144: libs-image-kis_filter_config_widget_test ............................   Passed    0.02 sec
-        Start 145: libs-image-kis_mask_generator_test
-144/321 Test #145: libs-image-kis_mask_generator_test ..................................   Passed    0.03 sec
-        Start 146: libs-image-kis_cubic_curve_test
-145/321 Test #146: libs-image-kis_cubic_curve_test .....................................   Passed    0.02 sec
-        Start 147: libs-image-kis_cubic_spline_test
-146/321 Test #147: libs-image-kis_cubic_spline_test ....................................   Passed    0.02 sec
-        Start 148: libs-image-kis_fixed_point_maths_test
-147/321 Test #148: libs-image-kis_fixed_point_maths_test ...............................   Passed    0.01 sec
-        Start 149: libs-image-kis_node_query_path_test
-148/321 Test #149: libs-image-kis_node_query_path_test .................................   Passed    0.84 sec
-        Start 150: libs-image-kis_filter_weights_buffer_test
-149/321 Test #150: libs-image-kis_filter_weights_buffer_test ...........................   Passed    0.02 sec
-        Start 151: libs-image-kis_filter_weights_applicator_test
-150/321 Test #151: libs-image-kis_filter_weights_applicator_test .......................   Passed    2.07 sec
-        Start 152: libs-image-kis_fill_interval_test
-151/321 Test #152: libs-image-kis_fill_interval_test ...................................   Passed    0.01 sec
-        Start 153: libs-image-kis_fill_interval_map_test
-152/321 Test #153: libs-image-kis_fill_interval_map_test ...............................   Passed    0.02 sec
-        Start 154: libs-image-kis_scanline_fill_test
-153/321 Test #154: libs-image-kis_scanline_fill_test ...................................   Passed    1.00 sec
-        Start 155: libs-image-kis_psd_layer_style_test
-154/321 Test #155: libs-image-kis_psd_layer_style_test .................................   Passed    0.83 sec
-        Start 156: libs-image-kis_layer_style_projection_plane_test
-155/321 Test #156: libs-image-kis_layer_style_projection_plane_test ....................   Passed    3.33 sec
-        Start 157: libs-image-kis_lod_capable_layer_offset_test
-156/321 Test #157: libs-image-kis_lod_capable_layer_offset_test ........................   Passed    0.02 sec
-        Start 158: libs-image-kis_algebra_2d_test
-157/321 Test #158: libs-image-kis_algebra_2d_test ......................................   Passed    0.38 sec
-        Start 159: libs-image-kis_marker_painter_test
-158/321 Test #159: libs-image-kis_marker_painter_test ..................................   Passed    0.85 sec
-        Start 160: libs-image-kis_lazy_brush_test
-159/321 Test #160: libs-image-kis_lazy_brush_test ......................................   Passed    6.06 sec
-        Start 161: libs-image-kis_mask_similarity_test
-160/321 Test #161: libs-image-kis_mask_similarity_test .................................   Passed    0.89 sec
-        Start 162: libs-image-KisMaskGeneratorBenchmark
-161/321 Test #162: libs-image-KisMaskGeneratorBenchmark ................................   Passed    4.38 sec
-        Start 163: libs-image-kis_layer_style_filter_environment_test
-162/321 Test #163: libs-image-kis_layer_style_filter_environment_test ..................   Passed    1.38 sec
-        Start 164: libs-image-kis_asl_parser_test
-163/321 Test #164: libs-image-kis_asl_parser_test ......................................   Passed    1.23 sec
-        Start 165: libs-image-KisPerStrokeRandomSourceTest
-164/321 Test #165: libs-image-KisPerStrokeRandomSourceTest .............................   Passed    0.02 sec
-        Start 166: libs-image-KisWatershedWorkerTest
-165/321 Test #166: libs-image-KisWatershedWorkerTest ...................................   Passed    0.86 sec
-        Start 167: libs-image-kis_dom_utils_test
-166/321 Test #167: libs-image-kis_dom_utils_test .......................................   Passed    0.02 sec
-        Start 168: libs-image-kis_transform_worker_test
-167/321 Test #168: libs-image-kis_transform_worker_test ................................   Passed   13.15 sec
-        Start 169: libs-image-kis_cs_conversion_test
-168/321 Test #169: libs-image-kis_cs_conversion_test ...................................   Passed    3.40 sec
-        Start 170: libs-image-kis_projection_leaf_test
-169/321 Test #170: libs-image-kis_projection_leaf_test .................................   Passed    0.94 sec
-        Start 171: libs-image-kis_histogram_test
-170/321 Test #171: libs-image-kis_histogram_test .......................................   Passed    1.37 sec
-        Start 172: libs-image-kis_onion_skin_compositor_test
+        Start 198: libs-image-kis_clone_layer_test
+197/321 Test #198: libs-image-kis_clone_layer_test .....................................   Passed    2.19 sec
+        Start 199: libs-image-kis_transform_mask_test
+198/321 Test #199: libs-image-kis_transform_mask_test ..................................   Passed    0.84 sec
+        Start 200: libs-image-kis_liquify_transform_worker_test
+199/321 Test #200: libs-image-kis_liquify_transform_worker_test ........................   Passed   13.29 sec
+        Start 201: libs-image-tiles3-kis_tiled_data_manager_test
+200/321 Test #201: libs-image-tiles3-kis_tiled_data_manager_test .......................   Passed   12.63 sec
+        Start 202: libs-image-tiles3-kis_low_memory_tests
+201/321 Test #202: libs-image-tiles3-kis_low_memory_tests ..............................   Passed    8.80 sec
+        Start 203: libs-image-tiles3-kis_lockless_stack_test
+202/321 Test #203: libs-image-tiles3-kis_lockless_stack_test ...........................   Passed    3.31 sec
+        Start 204: libs-image-tiles3-kis_chunk_allocator_test
+203/321 Test #204: libs-image-tiles3-kis_chunk_allocator_test ..........................   Passed    0.79 sec
+        Start 205: libs-image-tiles3-kis_memory_window_test
+204/321 Test #205: libs-image-tiles3-kis_memory_window_test ............................   Passed    0.02 sec
+        Start 206: libs-image-tiles3-kis_store_limits_test
+205/321 Test #206: libs-image-tiles3-kis_store_limits_test .............................   Passed    0.02 sec
+        Start 207: libs-image-tiles3-kis_swapped_data_store_test
+206/321 Test #207: libs-image-tiles3-kis_swapped_data_store_test .......................   Passed    1.17 sec
+        Start 208: libs-image-tiles3-kis_tile_data_store_test
+207/321 Test #208: libs-image-tiles3-kis_tile_data_store_test ..........................   Passed    0.03 sec
+        Start 209: libs-image-tiles3-kis_tile_data_pooler_test
+208/321 Test #209: libs-image-tiles3-kis_tile_data_pooler_test .........................   Passed    0.52 sec
+        Start 210: libs-ui-kis_image_view_converter_test
+209/321 Test #210: libs-ui-kis_image_view_converter_test ...............................   Passed    0.84 sec
+        Start 211: libs-ui-kis_shape_selection_test
+210/321 Test #211: libs-ui-kis_shape_selection_test ....................................   Passed    5.48 sec
+        Start 212: libs-ui-kis_coordinates_converter_test
+211/321 Test #212: libs-ui-kis_coordinates_converter_test ..............................   Passed    1.92 sec
+        Start 213: libs-ui-kis_grid_config_test
+212/321 Test #213: libs-ui-kis_grid_config_test ........................................   Passed    0.03 sec
+        Start 214: libs-ui-kis_temporary_paint_constraint_test
+213/321 Test #214: libs-ui-kis_temporary_paint_constraint_test .........................   Passed    0.03 sec
+        Start 215: libs-ui-kis_stabilized_events_sampler_test
+214/321 Test #215: libs-ui-kis_stabilized_events_sampler_test ..........................   Passed    0.15 sec
+        Start 216: libs-ui-kis_shape_commands_test
+215/321 Test #216: libs-ui-kis_shape_commands_test .....................................   Passed    1.26 sec
+        Start 217: libs-ui-kis_stop_gradient_editor_test
+216/321 Test #217: libs-ui-kis_stop_gradient_editor_test ...............................   Passed    0.85 sec
+        Start 218: libs-ui-kis_multinode_property_test
+217/321 Test #218: libs-ui-kis_multinode_property_test .................................   Passed    0.85 sec
+        Start 219: libs-ui-KisFrameSerializerTest
+218/321 Test #219: libs-ui-KisFrameSerializerTest ......................................   Passed    0.10 sec
+        Start 220: libs-ui-KisFrameCacheStoreTest
+219/321 Test #220: libs-ui-KisFrameCacheStoreTest ......................................   Passed    1.35 sec
+        Start 221: libs-ui-kis_animation_exporter_test
+220/321 Test #221: libs-ui-kis_animation_exporter_test .................................   Passed    2.32 sec
+        Start 222: libs-ui-kis_prescaled_projection_test
+221/321 Test #222: libs-ui-kis_prescaled_projection_test ...............................   Passed    1.90 sec
+        Start 223: libs-ui-kis_animation_importer_test
+222/321 Test #223: libs-ui-kis_animation_importer_test .................................   Passed    1.29 sec
+        Start 224: libs-ui-KisSpinBoxSplineUnitConverterTest
+223/321 Test #224: libs-ui-KisSpinBoxSplineUnitConverterTest ...........................   Passed    1.21 sec
+        Start 225: libs-ui-KisDocumentReplaceTest

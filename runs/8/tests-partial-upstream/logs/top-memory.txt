@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      2137  0.6  0.9 274628000 154664 ?    Sl   10:24   0:07 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        2080  0.3  0.8 1431384 140056 ?      Sl   10:23   0:03 /tmp/provjobd4099220226
-runner      2114  0.2  0.6 274345528 111596 ?    Sl   10:24   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+runner      2137  0.6  0.9 274628016 155952 ?    Sl   10:24   0:07 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        2080  0.3  0.8 1431384 141364 ?      Sl   10:23   0:04 /tmp/provjobd4099220226
+runner      2114  0.1  0.6 274345524 111756 ?    Sl   10:24   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
 root        1361  0.0  0.4 2045424 72996 ?       Ssl  10:23   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     54956 99.5  0.3 223572 63624 ?        Rl   10:39   2:54 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
-tester     55812  100  0.3 236980 60400 ?        Rl   10:42   0:00 /home/runner/wd/krita/_build/bin/kis_onion_skin_compositor_test
+tester     56368 94.1  0.4 189752 71952 ?        R    10:44   0:00 /home/runner/wd/krita/_build/bin/KisDocumentReplaceTest
+tester     54956 99.3  0.3 223572 63624 ?        Rl   10:39   4:55 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
 root        1012  0.0  0.3 295288 51636 ?        Ss   10:23   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
