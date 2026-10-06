@@ -1,0 +1,622 @@
+: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  189 |         if (key.type() == QMetaType::QString && parseValue(dev, val)) {
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[ 15%] Building CXX object libs/psdutils/CMakeFiles/kritapsdutils.dir/cos/kis_cos_writer.cpp.o
+[ 15%] Building CXX object libs/psdutils/CMakeFiles/kritapsdutils.dir/cos/kis_txt2_utls.cpp.o
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp: In function ‘void writeVariant(QIODevice&, QVariantHash, int, bool, bool)’:
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:78:24: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   78 |         if (val.type() == QMetaType::QVariantHash) {
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:82:31: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   82 |         } else if (val.type() == QMetaType::QVariantList) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:87:43: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   87 |             } else if (array.at(0).type() == QMetaType::Int) {
+      |                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:94:43: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   94 |             } else if (array.at(0).type() == QMetaType::Double) {
+      |                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:106:39: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  106 |                     if (arrVal.type() == QMetaType::QVariantHash) {
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:113:31: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  113 |         } else if (val.type() == QMetaType::QString) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:118:31: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  118 |         } else if (val.type() == QMetaType::Bool) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:123:28: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  123 |             if (val.type() == QMetaType::Double) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/psdutils/cos/kis_cos_writer.cpp:126:35: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  126 |             } else if (val.type() == QMetaType::Int) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[ 15%] Building CXX object libs/psdutils/CMakeFiles/kritapsdutils.dir/cos/psd_text_data_converter.cpp.o
+/home/runner/work/krita/krita/libs/psdutils/cos/psd_text_data_converter.cpp: In member function ‘QVariantHash PsdTextDataConverter::gatherParagraphStyle(QDomElement, QVariantHash, bool&, QString*, QTransform)’:
+/home/runner/work/krita/krita/libs/psdutils/cos/psd_text_data_converter.cpp:1465:45: warning: unused parameter ‘scaleToPx’ [-Wunused-parameter]
+ 1465 |                                  QTransform scaleToPx) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~
+[ 15%] Linking CXX shared library ../../bin/libkritapsdutils.so
+[ 15%] Built target kritapsdutils
+[ 15%] Built target kritawidgets_autogen
+[ 15%] Generating ui_KoConfigAuthorPage.h
+[ 15%] Generating ui_wdg_file_name_requester.h
+[ 15%] Generating ui_WdgDlgInternalColorSelector.h
+[ 15%] Generating ui_WdgPaletteListWidget.h
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kritawidgets_autogen/mocs_compilation.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoDialog.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoVBox.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoZoomWidget.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoAspectButton.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoSliderCombo.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoColorPopupButton.cpp.o
+[ 15%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoConfigAuthorPage.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoUnitDoubleSpinBox.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoZoomAction.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoZoomActionState.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoColorPatch.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoZoomInput.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoZoomHandler.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoColorPopupAction.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoColorSetWidget.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisHsvColorSlider.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoColorSlider.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoTriangleColorSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoResourcePopupAction.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoResourceServerProvider.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoRuler.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoLineStyleModel.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoLineStyleSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoLineStyleItemDelegate.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoDockWidgetTitleBar.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoDockWidgetTitleBarButton.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoTitledTabWidget.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoToolDocker.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoMarkerSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoMarkerModel.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoMarkerItemDelegate.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/WidgetsDebug.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_file_name_requester.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisColorSelectorInterface.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KoAnchorSelectionWidget.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisLevelsSlider.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_color_input.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_spinbox_color_selector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisSpinboxHSXSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualColorModel.cpp.o
+/home/runner/work/krita/krita/libs/widgets/kis_color_input.cpp: In constructor ‘KisHsvColorInput::KisHsvColorInput(QWidget*, KoColor*)’:
+/home/runner/work/krita/krita/libs/widgets/kis_color_input.cpp:466:22: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  466 |             m_hInput = input;
+      |             ~~~~~~~~~^~~~~~~
+/home/runner/work/krita/krita/libs/widgets/kis_color_input.cpp:467:9: note: here
+  467 |         case 1:
+      |         ^~~~
+/home/runner/work/krita/krita/libs/widgets/kis_color_input.cpp:469:22: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  469 |             m_sInput = input;
+      |             ~~~~~~~~~^~~~~~~
+/home/runner/work/krita/krita/libs/widgets/kis_color_input.cpp:470:9: note: here
+  470 |         case 2:
+      |         ^~~~
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualColorSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualColorSelectorShape.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualDiamondSelectorShape.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualEllipticalSelectorShape.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualRectangleSelectorShape.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisVisualTriangleSelectorShape.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisScreenColorSamplerBase.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisDlgInternalColorSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisPaletteModel.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisPaletteDelegate.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_palette_view.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisPaletteChooser.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisPaletteComboBox.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_color_button.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisAngleGauge.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisAngleSelector.cpp.o
+[ 16%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisTagSelectionWidget.cpp.o
+[ 18%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_warning_block.cpp.o
+[ 18%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisWidgetConnectionUtils.cpp.o
+[ 18%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_spacing_selection_widget.cpp.o
+[ 18%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/kis_stacked_widget.cpp.o
+[ 18%] Building CXX object libs/widgets/CMakeFiles/kritawidgets.dir/KisStretchedIconButton.cpp.o
+[ 18%] Linking CXX shared library ../../bin/libkritawidgets.so
+[ 18%] Built target kritawidgets
+[ 18%] Built target krita_shape_image_autogen_timestamp_deps
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_applicator_factories_AVX.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_applicator_factories_SSE2.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_applicator_factories_AVX2+FMA.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_applicator_factories_SSE4_1.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_applicator_factories_SSSE3.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_processor_factories_AVX.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_processor_factories_SSE2.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_processor_factories_AVX2+FMA.cpp
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_processor_factories_SSE4_1.cpp
+[ 18%] Automatic MOC for target krita_shape_image
+[ 18%] Copy to /home/runner/wd/krita/_build/libs/image/kis_brush_mask_processor_factories_SSSE3.cpp
+[ 18%] Built target kritaimage_autogen_timestamp_deps
+[ 18%] Automatic MOC for target kritaimage
+[ 18%] Built target krita_shape_image_autogen
+[ 18%] Building CXX object plugins/flake/imageshape/CMakeFiles/krita_shape_image.dir/krita_shape_image_autogen/mocs_compilation.cpp.o
+[ 18%] Building CXX object plugins/flake/imageshape/CMakeFiles/krita_shape_image.dir/ImageShapePlugin.cpp.o
+[ 18%] Building CXX object plugins/flake/imageshape/CMakeFiles/krita_shape_image.dir/ImageShape.cpp.o
+[ 18%] Building CXX object plugins/flake/imageshape/CMakeFiles/krita_shape_image.dir/ImageShapeFactory.cpp.o
+In file included from /home/runner/work/krita/krita/plugins/flake/imageshape/ImageShapeFactory.cpp:20:
+/home/runner/work/krita/krita/plugins/flake/imageshape/ImageShapeFactory.cpp: In member function ‘virtual KoShape* ImageShapeFactory::createShape(const KoProperties*, KoDocumentResourceManager*) const’:
+/home/runner/work/krita/krita/plugins/flake/imageshape/ImageShapeFactory.cpp:54:40: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   54 |     KIS_SAFE_ASSERT_RECOVER(var.type() == QMetaType::QImage);
+      |                             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/global/kis_assert.h:126:45: note: in definition of macro ‘KIS_SAFE_ASSERT_RECOVER’
+  126 | #define KIS_SAFE_ASSERT_RECOVER(cond) if (!(cond) && (kis_safe_assert_recoverable(#cond,__FILE__,__LINE__), true))
+      |                                             ^~~~
+/home/runner/work/krita/krita/plugins/flake/imageshape/ImageShapeFactory.cpp:54:61: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+   54 |     KIS_SAFE_ASSERT_RECOVER(var.type() == QMetaType::QImage);
+      |                                                             ^
+/home/runner/work/krita/krita/plugins/flake/imageshape/ImageShapeFactory.cpp:58:20: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+   58 |     if (var.type() == QMetaType::QTransform) {
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[ 18%] Linking CXX shared module ../../../bin/krita_shape_image.so
+[ 18%] Built target krita_shape_image
+[ 18%] Built target kritaimage_autogen
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kritaimage_autogen/mocs_compilation.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_tile.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_tile_data.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_tile_data_store.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_tile_data_pooler.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_tiled_data_manager.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_memento_manager.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/KisTiledExtentManager.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_hline_iterator.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_vline_iterator.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_abstract_compression.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/kis_random_accessor.cc.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_lzf_compression.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_abstract_tile_compressor.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_legacy_tile_compressor.cpp.o
+[ 18%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_tile_compressor_2.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_chunk_allocator.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_memory_window.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_swapped_data_store.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/tiles3/swap/kis_tile_data_swapper.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_distance_information.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_painter.cc.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_painter_blt_multi_fixed.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_marker_painter.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisOverlayPaintDeviceWrapper.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_progress_updater.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisAnimatedOpacityProperty.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paint_information.cc.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_stroke_random_source.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/KisPerStrokeRandomSource.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop.cc.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_factory.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_registry.cc.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_preset.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_settings.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/KisPaintOpPresetUpdateProxy.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_utils.cpp.o
+/home/runner/work/krita/krita/libs/image/brushengine/kis_paintop_settings.cpp: In member function ‘virtual bool KisPaintOpSettings::mousePressEvent(const KisPaintInformation&, Qt::KeyboardModifiers, KisNodeWSP)’:
+/home/runner/work/krita/krita/libs/image/brushengine/kis_paintop_settings.cpp:124:69: warning: unused parameter ‘paintInformation’ [-Wunused-parameter]
+  124 | bool KisPaintOpSettings::mousePressEvent(const KisPaintInformation &paintInformation, Qt::KeyboardModifiers modifiers, KisNodeWSP currentNode)
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_no_size_paintop_settings.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_locked_properties.cc.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_locked_properties_proxy.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_locked_properties_server.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_config_widget.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_uniform_paintop_property.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_combo_based_paintop_property.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_slider_based_paintop_property.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_standard_uniform_properties_factory.cpp.o
+/home/runner/work/krita/krita/libs/image/brushengine/kis_uniform_paintop_property.cpp:133:5: warning: type attributes ignored after type is already defined [-Wattributes]
+  133 |     KisCallbackBasedPaintopProperty<KisUniformPaintOpProperty>;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/brushengine/kis_combo_based_paintop_property.cpp:65:5: warning: type attributes ignored after type is already defined [-Wattributes]
+   65 |     KisCallbackBasedPaintopProperty<KisComboBasedPaintOpProperty>;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/brushengine/kis_slider_based_paintop_property.cpp:140:43: warning: type attributes ignored after type is already defined [-Wattributes]
+  140 | template class KRITAIMAGE_EXPORT_INSTANCE KisSliderBasedPaintOpProperty<int>;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/brushengine/kis_slider_based_paintop_property.cpp:141:43: warning: type attributes ignored after type is already defined [-Wattributes]
+  141 | template class KRITAIMAGE_EXPORT_INSTANCE KisSliderBasedPaintOpProperty<qreal>;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/brushengine/kis_slider_based_paintop_property.cpp:144:5: warning: type attributes ignored after type is already defined [-Wattributes]
+  144 |     KisCallbackBasedPaintopProperty<KisSliderBasedPaintOpProperty<int>>;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/brushengine/kis_slider_based_paintop_property.cpp:146:5: warning: type attributes ignored after type is already defined [-Wattributes]
+  146 |     KisCallbackBasedPaintopProperty<KisSliderBasedPaintOpProperty<qreal>>;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/KisStrokeSpeedMeasurer.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/KisPaintopSettingsIds.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/KisOptimizedBrushOutline.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/brushengine/kis_paintop_lod_limitations.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_deselect_global_selection_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisDeselectActiveSelectionCommand.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_change_layers_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_change_visibility_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_layer_add_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_layer_move_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_layer_remove_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_node_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_image_layer_remove_command_impl.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_node_compositeop_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_node_property_list_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_node_opacity_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_reselect_global_selection_command.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisReselectActiveSelectionCommand.cpp.o
+[ 19%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/kis_set_global_selection_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisNodeRenameCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisChangeDeselectedMaskCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisNotifySelectionChangedCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands/KisBatchUpdateLayerModificationCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_saved_commands.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_processing_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_image_resize_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_image_set_resolution_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_set_layer_style_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_node_move_command2.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_selection_move_command2.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_update_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_switch_current_time_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_change_projection_color_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_activate_selection_mask_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/kis_transaction_based_command.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisHoldUIUpdatesCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisChangeChannelFlagsCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisImageAnimSettingCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisChangeChannelLockFlagsCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisMergeLabeledLayersCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisAsynchronouslyMergeableCommandInterface.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisSimpleModifyTransformMaskCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisUpdateCommandEx.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisResetGroupLayerCacheCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisDisableDirtyRequestsCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisChangeCloneLayersCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisLazyCreateTransformMaskKeyframesCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisLayerCollapseCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/commands_new/KisChangeImageHdrMetadataCommand.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_simple_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_do_nothing_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_assign_profile_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_convert_color_space_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_crop_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_crop_selections_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_transform_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/kis_mirror_processing_visitor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/KisSelectionBasedProcessingHelper.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/processing/KisContentLightLevelProcessingVistor.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_filter.cc.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_filter_category_ids.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_filter_configuration.cc.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_color_transformation_configuration.cc.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_filter_registry.cc.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/filter/kis_color_transformation_filter.cc.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/generator/kis_generator.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/generator/kis_generator_layer.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/generator/kis_generator_registry.cpp.o
+[ 21%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/generator/kis_generator_stroke_strategy.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/floodfill/kis_fill_interval_map.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/floodfill/kis_scanline_fill.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/floodfill/kis_gap_map.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/kis_min_cut_worker.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/kis_lazy_fill_tools.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/kis_multiway_cut.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/KisWatershedWorker.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/kis_colorize_mask.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/lazybrush/kis_colorize_stroke_strategy.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisFrameChangeUpdateRecipe.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisAnimAutoKey.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisDelayedUpdateNodeInterface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisCroppedOriginalLayerInterface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisDecoratedNodeInterface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_adjustment_layer.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_selection_based_layer.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_filter_interface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_base_accessor.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_base_node.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_base_processor.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisBusyWaitBroker.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_bookmarked_configuration_manager.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisBatchNodeUpdate.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisSafeBlockingQueueConnectionProxy.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_uuid_info.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_clone_layer.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_config_widget.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_convolution_kernel.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_convolution_painter.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_edge_detection_kernel.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_gaussian_kernel.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_cubic_curve.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisLevelsCurve.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisAutoLevels.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_default_bounds.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_default_bounds_node_wrapper.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_default_bounds_base.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_effect_mask.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_fast_math.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_fill_painter.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_filter_mask.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_filter_strategy.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transform_mask.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transform_mask_params_interface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_recalculate_transform_mask_job.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transform_mask_params_factory_registry.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_safe_transform.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisTransformMaskTestingInterface.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_cached_gradient_shape_strategy.cpp.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_gradient_painter.cc.o
+[ 22%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_gradient_shape_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_polygonal_gradient_shape_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_iterator_ng.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_base_rects_walker.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_async_merger.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_merge_walker.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_updater_context.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_update_job_item.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_stroke_strategy_undo_command_based.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRunnableBasedStrokeStrategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_simple_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRunnableStrokeJobDataBase.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRunnableStrokeJobsInterface.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRunnableStrokeJobData.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisFakeRunnableStrokeJobsExecutor.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_stroke_job_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_stroke.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_strokes_queue.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisStrokesQueueMutatedJobInterface.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_update_scheduler.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_simple_update_queue.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_queues_progress_updater.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_sync_lod_cache_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_composite_progress_proxy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_lod_capable_layer_offset.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_update_time_monitor.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisImageConfigNotifier.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_group_layer.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_external_layer_iface.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_count_visitor.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_image_interfaces.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_histogram.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_image_animation_interface.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_time_span.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_graph_listener.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_image.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_image_signal_router.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisImageSignals.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_image_config.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisImageResolutionProxy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_projection_updates_filter.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_suspend_projection_updates_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_regenerate_frame_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_crop_saved_extra_data.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_switch_time_stroke_strategy.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_timed_signal_threshold.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_layer.cc.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_indirect_painting_support.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_abstract_projection_plane.cpp.o
+[ 23%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_layer_projection_plane.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_layer_utils.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_mask_projection_plane.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_projection_leaf.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisSafeNodeProjectionStore.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_mask.cc.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_base_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_rect_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_circle_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_gauss_circle_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_gauss_rect_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_SSE2.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_SSSE3.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_SSE4_1.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_AVX.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_AVX2+FMA.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_processor_factories_SSE2.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_processor_factories_SSSE3.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_processor_factories_SSE4_1.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_processor_factories_AVX.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_processor_factories_AVX2+FMA.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_brush_mask_applicator_factories_Scalar.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_curve_circle_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_curve_rect_mask_generator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_memory_statistics_server.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_math_toolbox.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_name_server.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_facade.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_busy_progress_indicator.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_progress_proxy.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_visitor.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_paint_device.cc.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_paint_device_debug_utils.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_fixed_paint_device.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisOptimizedByteArray.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_paint_layer.cc.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_perspective_math.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_pixel_selection.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_processing_information.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_properties_configuration.cc.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRandomGenerator2D.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_random_accessor_ng.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_random_sub_accessor.cpp.o
+/home/runner/work/krita/krita/libs/image/kis_properties_configuration.cc: In member function ‘virtual void KisPropertiesConfiguration::toXML(QDomDocument&, QDomElement&) const’:
+/home/runner/work/krita/krita/libs/image/kis_properties_configuration.cc:111:28: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  111 |         } else if(v.type() == QMetaType::QString ) {
+      |                   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/kis_properties_configuration.cc:114:28: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  114 |         } else if(v.type() == QMetaType::QByteArray ) {
+      |                   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/kis_properties_configuration.cc: In member function ‘virtual void KisPropertiesConfiguration::dump() const’:
+/home/runner/work/krita/krita/libs/image/kis_properties_configuration.cc:286:24: warning: comparison between ‘enum QVariant::Type’ and ‘enum QMetaType::Type’ [-Wenum-compare]
+  286 |         if (it->type() == QMetaType::QByteArray) {
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_selection.cc.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_wrapped_random_accessor.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisSelectionUpdateCompressor.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_selection_mask.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_update_outline_job.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_update_selection_job.cpp.o
+[ 25%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_serializable_configuration.cc.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transaction_data.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisTransactionWrapperFactory.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisInterstrokeDataTransactionWrapperFactory.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisInterstrokeData.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisInterstrokeDataFactory.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transform_worker.cc.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_perspectivetransform_worker.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/bsplines/kis_bspline_1d.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/bsplines/kis_bspline_2d.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/bsplines/kis_nu_bspline_2d.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_cage_transform_worker.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_warptransform_worker.cc.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_liquify_transform_worker.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_green_coordinates_math.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_transparency_mask.cc.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_undo_adapter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_macro_based_undo_store.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_legacy_undo_adapter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_surrogate_undo_adapter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_post_execution_undo_adapter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_processing_visitor.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_processing_applicator.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/krita_utils.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_outline_generator.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_layer_composition.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_selection_filters.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_selection_component.cc.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisRecycleProjectionsJob.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_keyframe.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_keyframe_commands.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_keyframe_channel.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_scalar_keyframe_channel.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_raster_keyframe_channel.cpp.o
+/home/runner/work/krita/krita/libs/image/kis_scalar_keyframe_channel.cpp: In member function ‘virtual QPair<int, QSharedPointer<KisKeyframe> > KisScalarKeyframeChannel::loadKeyframe(const QDomElement&)’:
+/home/runner/work/krita/krita/libs/image/kis_scalar_keyframe_channel.cpp:486:33: warning: ‘void KisKeyframeChannel::workaroundBrokenFrameTimeBug(int*)’ is deprecated [-Wdeprecated-declarations]
+  486 |     workaroundBrokenFrameTimeBug(&time);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /home/runner/work/krita/krita/libs/image/kis_scalar_keyframe_channel.h:9,
+                 from /home/runner/work/krita/krita/libs/image/kis_scalar_keyframe_channel.cpp:7:
+/home/runner/work/krita/krita/libs/image/kis_keyframe_channel.h:191:28: note: declared here
+  191 |     Q_DECL_DEPRECATED void workaroundBrokenFrameTimeBug(int *time);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/krita/krita/libs/image/kis_raster_keyframe_channel.cpp: In member function ‘virtual QPair<int, QSharedPointer<KisKeyframe> > KisRasterKeyframeChannel::loadKeyframe(const QDomElement&)’:
+/home/runner/work/krita/krita/libs/image/kis_raster_keyframe_channel.cpp:372:33: warning: ‘void KisKeyframeChannel::workaroundBrokenFrameTimeBug(int*)’ is deprecated [-Wdeprecated-declarations]
+  372 |     workaroundBrokenFrameTimeBug(&time);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /home/runner/work/krita/krita/libs/image/kis_raster_keyframe_channel.h:12,
+                 from /home/runner/work/krita/krita/libs/image/kis_raster_keyframe_channel.cpp:8:
+/home/runner/work/krita/krita/libs/image/kis_keyframe_channel.h:191:28: note: declared here
+  191 |     Q_DECL_DEPRECATED void workaroundBrokenFrameTimeBug(int *time);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_onion_skin_compositor.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_onion_skin_cache.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_idle_watcher.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_layer_properties_icons.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_multiple_projection.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_layer_style_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_layer_style_filter_environment.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_layer_style_filter_projection_plane.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/KisStrokeLayerStyleFilterProjectionPlane.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_layer_style_projection_plane.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_drop_shadow_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_satin_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_stroke_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_bevel_emboss_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_overlay_filter.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/kis_ls_utils.cpp.o
+[ 26%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/gimp_bump_map.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/layerstyles/KisLayerStyleKnockoutBlower.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisProofingConfiguration.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_node_query_path.cc.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisTranslateLayerNamesVisitor.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_asl_layer_style_serializer.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisAslStorage.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_psd_layer_style.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisBezierGradientMesh.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisBezierTransformMesh.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisEncloseAndFillPainter.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisBlockBackgroundFrameGenerationLock.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisLockFrameGenerationLock.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_convex_hull.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/KisSpatialContainer.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_hdr_metadata.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/kis_hdr_metadata_models.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/bspline_create.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/bspline_data.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/multi_bspline_create.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/nubasis.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/nubspline_create.cpp.o
+[ 28%] Building CXX object libs/image/CMakeFiles/kritaimage.dir/3rdparty/einspline/nugrid.cpp.o
+[ 28%] Linking CXX shared library ../../bin/libkritaimage.so
+[ 28%] Built target kritaimage
+[ 28%] Built target kritalibbrush_autogen_timestamp_deps
+[ 28%] Built target kritatransformmaskstubs_autogen_timestamp_deps
+[ 28%] Built target kritaimpex_autogen_timestamp_deps
+[ 28%] Built target kritargbeimportutils_autogen_timestamp_deps
+[ 28%] Automatic MOC for target kritargbeimportutils
+[ 28%] Automatic MOC for target kritatransformmaskstubs
+[ 28%] Automatic MOC for target kritalibbrush
+[ 28%] Automatic MOC for target kritaimpex
+[ 28%] Built target kritargbeimportutils_autogen
+[ 28%] Built target kritatransformmaskstubs_autogen
+[ 28%] Building CXX object plugins/impex/rgbe/CMakeFiles/kritargbeimportutils.dir/kritargbeimportutils_autogen/mocs_compilation.cpp.o
+[ 28%] Built target kritaimpex_autogen
+[ 28%] Building CXX object sdk/tests/CMakeFiles/kritatransformmaskstubs.dir/kritatransformmaskstubs_autogen/mocs_compilation.cpp.o
+[ 28%] Building CXX object plugins/impex/rgbe/CMakeFiles/kritargbeimportutils.dir/RGBEImportUtils.cpp.o
+[ 28%] Building CXX object libs/impex/CMakeFiles/kritaimpex.dir/kritaimpex_autogen/mocs_compilation.cpp.o
+[ 28%] Building CXX object sdk/tests/CMakeFiles/kritatransformmaskstubs.dir/KisDumbTransformMaskParams.cpp.o
+[ 28%] Building CXX object libs/impex/CMakeFiles/kritaimpex.dir/KisExportCheckBase.cpp.o
+[ 28%] Linking CXX static library ../../../lib/libkritargbeimportutils.a
+[ 28%] Building CXX object libs/impex/CMakeFiles/kritaimpex.dir/KisPreExportChecker.cpp.o
+[ 28%] Building CXX object sdk/tests/CMakeFiles/kritatransformmaskstubs.dir/KisDumbAnimatedTransformMaskParamsHolder.cpp.o
+[ 29%] Building CXX object libs/impex/CMakeFiles/kritaimpex.dir/KisExportCheckRegistry.cpp.o
+[ 29%] Building CXX object sdk/tests/CMakeFiles/kritatransformmaskstubs.dir/KritaTransformMaskStubs.cpp.o
+[ 29%] Linking CXX static library ../../lib/libkritatransformmaskstubs.a
+[ 29%] Linking CXX shared library ../../bin/libkritaimpex.so
+[ 29%] Built target kritargbeimportutils
+[ 29%] Built target kritatransformmaskstubs
+[ 29%] Built target kritaimpex
+[ 29%] Built target kritalibbrush_autogen
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_predefined_brush_factory.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_auto_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kritalibbrush_autogen/mocs_compilation.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_boundary.cc.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_scaling_size_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_brush_registry.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/KisBrushServerProvider.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_gbr_brush.cpp.o
+/home/runner/work/krita/krita/libs/brush/kis_brush.cpp: In member function ‘virtual void KisBrush::generateMaskAndApplyMaskOrCreateDab(KisFixedPaintDeviceSP, ColoringInformation*, const KisDabShape&, const KisPaintInformation&, double, double, qreal, qreal) const’:
+/home/runner/work/krita/krita/libs/brush/kis_brush.cpp:678:72: warning: argument 1 range [18446744071562067968, 18446744073709551615] exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  678 |             QScopedArrayPointer<quint8> alphaArray(new quint8[maskWidth]);
+      |                                                                        ^
+In file included from /usr/include/c++/13/bits/stl_tempbuf.h:59,
+                 from /usr/include/c++/13/bits/stl_algo.h:69,
+                 from /usr/include/c++/13/algorithm:61,
+                 from /home/runner/wd/krita/_install/include/QtCore/qglobal.h:142,
+                 from /home/runner/wd/krita/_install/include/QtGui/qtguiglobal.h:43,
+                 from /home/runner/wd/krita/_install/include/QtGui/qimage.h:43,
+                 from /home/runner/wd/krita/_install/include/QtGui/QImage:1,
+                 from /home/runner/work/krita/krita/libs/brush/kis_brush.h:11,
+                 from /home/runner/work/krita/krita/libs/brush/kis_brush.cpp:12:
+/usr/include/c++/13/new:128:26: note: in a call to allocation function ‘void* operator new [](std::size_t)’ declared here
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^~~~~~~~
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_abr_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_abr_brush_collection.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_imagepipe_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_pipebrush_parasite.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_png_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_svg_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_qimage_pyramid.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_text_brush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_auto_brush_factory.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/kis_text_brush_factory.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/KisAbrStorage.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/KisColorfulBrush.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/KisBrushTypeMetaDataFixup.cpp.o
+[ 29%] Building CXX object libs/brush/CMakeFiles/kritalibbrush.dir/KisBrushModel.cpp.o
+[ 29%] Linking CXX shared library ../../bin/libkritalibbrush.so
+[ 29%] Built target kritalibbrush
+[ 29%] Built target kritaui_autogen_timestamp_deps
+[ 29%] Automatic MOC for target kritaui
