@@ -78,6 +78,58 @@ bool isButtonRow(QLayoutItem *item)
     return false;
 }
 
+// A trailing row with the dialog buttons next to other controls (the
+// filter dialog: preview, multi-frame, "create filter mask", OK, Cancel).
+bool isTrailingControlRow(QLayoutItem *item)
+{
+    QLayout *l = item->layout();
+    if (!l) {
+        return false;
+    }
+    for (int i = 0; i < l->count(); ++i) {
+        if (qobject_cast<QDialogButtonBox *>(l->itemAt(i)->widget())) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Splits a too wide trailing row into the other controls above and the
+// dialog buttons below, so OK and Cancel stay on screen.
+QLayout *splitWideRow(QLayout *row, int maxWidth)
+{
+    QHBoxLayout *h = qobject_cast<QHBoxLayout *>(row);
+    if (!h || h->minimumSize().width() <= maxWidth) {
+        return row;
+    }
+    QVBoxLayout *v = new QVBoxLayout;
+    v->setContentsMargins(h->contentsMargins());
+    QHBoxLayout *controls = new QHBoxLayout;
+    QHBoxLayout *buttons = new QHBoxLayout;
+    buttons->addStretch(1);
+    while (h->count() > 0) {
+        QLayoutItem *item = h->takeAt(0);
+        QWidget *w = item->widget();
+        if (w && (qobject_cast<QDialogButtonBox *>(w))) {
+            delete item;
+            buttons->addWidget(w);
+        } else if (w) {
+            delete item;
+            controls->addWidget(w);
+        } else if (QLayout *sub = item->layout()) {
+            sub->setParent(nullptr);
+            controls->addLayout(sub);
+        } else {
+            delete item; // spacers: the rows get their own stretch
+        }
+    }
+    controls->addStretch(1);
+    v->addLayout(controls);
+    v->addLayout(buttons);
+    delete h;
+    return v;
+}
+
 // Widgets of a layout moved into another widget's layout keep their old
 // parent; move them along, keeping their visibility.
 void reparentLayoutWidgets(QLayout *layout, QWidget *parent)
@@ -159,7 +211,8 @@ bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
     // The trailing button row stays visible below the scroll area.
     QList<Entry> keep;
     const bool vertical = outer->direction() == QBoxLayout::TopToBottom;
-    while (keepButtons && vertical && !move.isEmpty() && (isButtonRow(move.last().item) || move.last().item->spacerItem())) {
+    while (keepButtons && vertical && !move.isEmpty()
+           && (isButtonRow(move.last().item) || isTrailingControlRow(move.last().item) || move.last().item->spacerItem())) {
         keep.prepend(move.takeLast());
     }
     for (Entry e : move) {
@@ -185,6 +238,7 @@ bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
             outer->addWidget(w);
         } else if (QLayout *l = e.item->layout()) {
             l->setParent(nullptr);
+            l = splitWideRow(l, availableGeometry(host).width());
             outer->addLayout(l);
             reparentLayoutWidgets(l, host);
         } else {
@@ -349,6 +403,14 @@ bool DialogFitter::eventFilter(QObject *watched, QEvent *event)
         // Message boxes and native file dialogs size themselves well.
         if (dialog && dialog->isWindow() && !qobject_cast<QMessageBox *>(dialog) && !qobject_cast<QFileDialog *>(dialog)) {
             fit(dialog);
+            // Some dialogs restore their saved desktop size after being
+            // shown; fit them again once that happened.
+            QPointer<QDialog> guard(dialog);
+            QTimer::singleShot(0, this, [this, guard] {
+                if (guard && guard->isVisible()) {
+                    fit(guard);
+                }
+            });
         } else if (!dialog && watched->inherits("KisPaintOpSettingsWidget")) {
             stackSideLists(static_cast<QWidget *>(watched));
         }
