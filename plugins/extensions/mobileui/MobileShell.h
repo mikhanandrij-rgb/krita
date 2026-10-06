@@ -11,6 +11,8 @@
 
 #include "MobileChrome.h"
 
+#include <QAction>
+
 #include <QDockWidget>
 #include <QEvent>
 #include <QHash>

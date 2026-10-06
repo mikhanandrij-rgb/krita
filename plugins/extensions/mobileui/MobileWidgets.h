@@ -8,6 +8,7 @@
 #ifndef MOBILE_WIDGETS_H
 #define MOBILE_WIDGETS_H
 #include <QAbstractButton>
+#include <QAction>
 #include <QLayout>
 #include <QList>
 #include <QColor>

@@ -45,6 +45,10 @@ env:
   ANDROID_PLATFORM_VERSION: android-36
   DEPS_BRANCH: master
   WD: /home/runner/wd
+  # KDE's CI tooling and the Python venv live outside the source tree:
+  # androiddeployqt runs qmlimportscanner over the whole source directory,
+  # and it crashes on the venv's symlinks.
+  CI_TOOLS: /home/runner/ci
 
 jobs:
   android-arm64:
@@ -101,18 +105,17 @@ jobs:
 
       - name: Fetch KDE CI tooling
         run: |
-          mkdir -p "$WD" logs
-          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git
-          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git krita-deps-management/ci-utilities
-          git clone --depth=1 https://invent.kde.org/sysadmin/ci-utilities.git upstream-ci-utilities
-          python3 -m venv venv --upgrade-deps
-          . venv/bin/activate
-          pip install -q -r krita-deps-management/requirements.txt
+          mkdir -p "$WD" "$CI_TOOLS" logs
+          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git "$CI_TOOLS/krita-deps-management"
+          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git "$CI_TOOLS/krita-deps-management/ci-utilities"
+          python3 -m venv "$CI_TOOLS/venv" --upgrade-deps
+          . "$CI_TOOLS/venv/bin/activate"
+          pip install -q -r "$CI_TOOLS/krita-deps-management/requirements.txt"
           # Toolchain file name changed upstream over time; accept both.
-          tc=krita-deps-management/tools/android-toolchain-krita.cmake
-          [ -f "$tc" ] || tc=krita-deps-management/tools/android-toolchain.cmake
-          echo "CMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/$tc" >> "$GITHUB_ENV"
-          echo "venv=$GITHUB_WORKSPACE/venv" >> "$GITHUB_ENV"
+          tc="$CI_TOOLS/krita-deps-management/tools/android-toolchain-krita.cmake"
+          [ -f "$tc" ] || tc="$CI_TOOLS/krita-deps-management/tools/android-toolchain.cmake"
+          echo "CMAKE_TOOLCHAIN_FILE=$tc" >> "$GITHUB_ENV"
+          echo "venv=$CI_TOOLS/venv" >> "$GITHUB_ENV"
 
       - name: Probe KDE package registry (prebuilt dependencies)
         run: |
@@ -161,16 +164,16 @@ jobs:
           KDECI_EXTRA_CMAKE_ARGS: -DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF
         run: |
           . "$venv/bin/activate"
-          export KDECI_REPO_METADATA_PATH="$GITHUB_WORKSPACE/krita-deps-management/repo-metadata"
+          export KDECI_REPO_METADATA_PATH="$CI_TOOLS/krita-deps-management/repo-metadata"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           # Keep ccache within the Actions cache budget (10 GB per repository).
           sed -i 's/ccache-large-cache: True/ccache-large-cache: False/' .kde-ci.yml
-          python3 -u krita-deps-management/tools/replace-branch-in-seed-file.py \
-            krita-deps-management/latest/krita-deps.yml -p -o branch-corrected-deps.yml -d "$DEPS_BRANCH"
-          python3 -u krita-deps-management/tools/generate-deps-file.py -s branch-corrected-deps.yml -o .kde-ci.yml
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/replace-branch-in-seed-file.py" \
+            "$CI_TOOLS/krita-deps-management/latest/krita-deps.yml" -p -o "$CI_TOOLS/branch-corrected-deps.yml" -d "$DEPS_BRANCH"
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/generate-deps-file.py" -s "$CI_TOOLS/branch-corrected-deps.yml" -o .kde-ci.yml
           sed -i 's/ccache-large-cache: True/ccache-large-cache: False/' .kde-ci.yml
           set -o pipefail
-          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master \
+          python3 -u "$CI_TOOLS/krita-deps-management/ci-utilities/run-ci-build.py" --project krita --branch master \
             --platform Android/$KDECI_ANDROID_ABI/Qt5/Shared --only-build --skip-publishing 2>&1 | tee logs/build-krita.log
           ccache -s -d /home/runner/ccache/krita || true
           df -h /
@@ -342,13 +345,13 @@ jobs:
 
       - name: Fetch KDE CI tooling
         run: |
-          mkdir -p "$WD" logs
-          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git
-          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git krita-deps-management/ci-utilities
-          python3 -m venv venv --upgrade-deps
-          . venv/bin/activate
-          pip install -q -r krita-deps-management/requirements.txt
-          echo "venv=$GITHUB_WORKSPACE/venv" >> "$GITHUB_ENV"
+          mkdir -p "$WD" "$CI_TOOLS" logs
+          git clone --depth=1 -b "$DEPS_BRANCH" https://invent.kde.org/packaging/krita-deps-management.git "$CI_TOOLS/krita-deps-management"
+          git clone --depth=1 https://invent.kde.org/packaging/krita-ci-utilities.git "$CI_TOOLS/krita-deps-management/ci-utilities"
+          python3 -m venv "$CI_TOOLS/venv" --upgrade-deps
+          . "$CI_TOOLS/venv/bin/activate"
+          pip install -q -r "$CI_TOOLS/krita-deps-management/requirements.txt"
+          echo "venv=$CI_TOOLS/venv" >> "$GITHUB_ENV"
 
       - name: Restore ccache
         uses: actions/cache/restore@v4
@@ -377,14 +380,14 @@ jobs:
           KDECI_EXTRA_CMAKE_ARGS: -DHIDE_SAFE_ASSERTS=ON -DBUILD_TESTING=OFF
         run: |
           . "$venv/bin/activate"
-          export KDECI_REPO_METADATA_PATH="$GITHUB_WORKSPACE/krita-deps-management/repo-metadata"
+          export KDECI_REPO_METADATA_PATH="$CI_TOOLS/krita-deps-management/repo-metadata"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          python3 -u krita-deps-management/tools/replace-branch-in-seed-file.py \
-            krita-deps-management/latest/krita-deps.yml -p -o branch-corrected-deps.yml -d "$DEPS_BRANCH"
-          python3 -u krita-deps-management/tools/generate-deps-file.py -s branch-corrected-deps.yml -o .kde-ci.yml
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/replace-branch-in-seed-file.py" \
+            "$CI_TOOLS/krita-deps-management/latest/krita-deps.yml" -p -o "$CI_TOOLS/branch-corrected-deps.yml" -d "$DEPS_BRANCH"
+          python3 -u "$CI_TOOLS/krita-deps-management/tools/generate-deps-file.py" -s "$CI_TOOLS/branch-corrected-deps.yml" -o .kde-ci.yml
           sed -i 's/ccache-large-cache: True/ccache-large-cache: False/; s/run-tests: True/run-tests: False/' .kde-ci.yml
           set -o pipefail
-          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master \
+          python3 -u "$CI_TOOLS/krita-deps-management/ci-utilities/run-ci-build.py" --project krita --branch master \
             --platform Linux/Qt5/Shared --only-build --skip-publishing 2>&1 | tee logs/build-krita.log
           df -h /
 

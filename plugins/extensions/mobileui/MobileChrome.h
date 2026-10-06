@@ -7,6 +7,7 @@
 #define MOBILE_CHROME_H
 
 #include <QIcon>
+#include <QAction>
 #include <QPointer>
 #include <QStringList>
 #include <QVector>

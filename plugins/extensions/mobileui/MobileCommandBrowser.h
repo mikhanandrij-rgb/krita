@@ -9,6 +9,7 @@
 #ifndef MOBILE_COMMAND_BROWSER_H
 #define MOBILE_COMMAND_BROWSER_H
 #include <QPointer>
+#include <QAction>
 #include <QStringList>
 #include <functional>
 #include <QVector>
