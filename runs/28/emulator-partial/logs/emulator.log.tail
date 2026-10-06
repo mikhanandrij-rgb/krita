@@ -119,3 +119,5 @@ ERROR        | Failed to bind to texture: invalid color buffer.
 ERROR        | bad color buffer handle 338
 ERROR        | DisplaySurfaceGlContextHelper context was preempted by others, current=0x3, needed=0x3, thread=0x563bceb9ba48
 ERROR        | Failed to restore previous context: 12297
+ERROR        | Failed to find ColorBuffer: 462
+ERROR        | Failed to bind to texture: invalid color buffer.
