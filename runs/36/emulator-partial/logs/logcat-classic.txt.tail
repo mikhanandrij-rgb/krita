@@ -1,0 +1,362 @@
+T f=IS_WALLPAPER leash=Surface(name=Surface(name=WallpaperWindowToken{f3c325f token=android.os.Binder@a1bbafe})/@0x3b798ff - rotation-leash)/@0xda4364f sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1}]}
+10-06 21:06:45.619  5612  5612 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-06 21:06:45.619  5612  5612 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-06 21:06:45.631   544   616 W system_server: Long monitor contention with owner android.anim (565) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=0 in void com.android.server.wm.WindowManagerService.reportSystemGestureExclusionChanged(com.android.server.wm.Session, android.view.IWindow, java.util.List) for 227ms
+10-06 21:06:45.635   544  1006 W system_server: Long monitor contention with owner android.anim (565) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=1 in void com.android.server.wm.ActivityClientController.activityIdle(android.os.IBinder, android.content.res.Configuration, boolean) for 227ms
+10-06 21:06:45.637   544   564 W system_server: Long monitor contention with owner android.anim (565) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:1133) waiters=2 in void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) for 208ms
+10-06 21:06:45.639  1873  1873 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 21:06:45.640  1873  1873 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=128, right=0, bottom=0
+10-06 21:06:45.640  1873  1873 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 21:06:45.650   905   947 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@b42b5fb
+10-06 21:06:45.650   905   947 W Looper  : Slow dispatch took 51ms wmshell.main h=android.os.Handler c=com.android.wm.shell.transition.Transitions$TransitionPlayerImpl$$ExternalSyntheticLambda0@ced17fa m=0
+10-06 21:06:45.663   544   557 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10192; state: DISABLED
+10-06 21:06:45.664  5612  5668 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-06 21:06:45.671   905   947 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#18)android.os.BinderProxy@75a5284@0
+10-06 21:06:45.678  5612  5810 I Icing   : Usage reports ok 2, Failed Usage reports 0, indexed 0, rejected 0
+10-06 21:06:45.682   544   561 V WindowManager: Finish Transition #18: created at 10-06 21:06:45.000 collect-started=0.026ms request-sent=0.088ms started=2.663ms ready=26.684ms sent=595.291ms finished=678.328ms
+10-06 21:06:45.691   544   564 D DisplayManagerService: Ignore redundant display event 0/2 to 10191/906
+10-06 21:06:45.691   544   564 D DisplayManagerService: Ignore redundant display event 0/2 to 10157/1871
+10-06 21:06:45.692   544  1010 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.411 fontWeightAdjustment=0}
+10-06 21:06:45.697   544  1010 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.3 s.411 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-06 21:06:45.698   544  1010 I WindowManager: Override config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.411 fontWeightAdjustment=0} for displayId=0
+10-06 21:06:45.709   544  1010 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.479 fontWeightAdjustment=0}
+10-06 21:06:45.711  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.722   905   905 I NoBackGesture: NavbarController: newConfig={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.477 fontWeightAdjustment=0} mTaskbarDelegate initialized=false willApplyConfigToNavbars=false navBarCount=1
+10-06 21:06:45.732   544   564 I InputManager-JNI: Viewport [0] to add: local:4619827259835644672, isActive: true
+10-06 21:06:45.734   905   947 V WindowManagerShell: Track 0 became idle
+10-06 21:06:45.734   905   947 V WindowManagerShell: All active transition animations finished
+10-06 21:06:45.734   905   947 W Looper  : Slow dispatch took 63ms wmshell.main h=android.os.Handler c=com.android.wm.shell.transition.RemoteTransitionHandler$1$$ExternalSyntheticLambda0@336b67f m=0
+10-06 21:06:45.734   905   947 V WindowManagerShell: Transition requested: android.os.BinderProxy@f20964c TransitionRequestInfo { type = CHANGE, triggerTask = null, remoteTransition = null, displayChange = DisplayChange { displayId = 0, startAbsBounds = null, endAbsBounds = null, startRotation = 1, endRotation = 0, physicalDisplayChanged = false } }
+10-06 21:06:45.734   905   947 D WindowManagerShell: PipTaskOrganizer: Skip onMovementBoundsChanged on rotation change InSwipePipToHomeTransition=false mWaitForFixedRotation=true getTransitionState=0
+10-06 21:06:45.744  1873  1873 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 21:06:45.745  1873  1873 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=128, right=0, bottom=0
+10-06 21:06:45.745  1873  1873 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 21:06:45.745   905   947 W Looper  : Slow delivery took 48ms wmshell.main h=android.os.Handler c=com.android.wm.shell.transition.Transitions$TransitionPlayerImpl$$ExternalSyntheticLambda1@9735695 m=0
+10-06 21:06:45.745   905   947 D WindowManagerShell: onFixedRotationFinished: null, state=PipTransitionState(mState=undefined, mInSwipePipToHomeTransition=false)
+10-06 21:06:45.749   544   648 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO
+10-06 21:06:45.750   544   648 I InputReader: Touch device 'virtio_input_multi_touch_11' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.750   544   648 I InputReader: Touch device 'virtio_input_multi_touch_10' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.750   544   648 I InputReader: Touch device 'virtio_input_multi_touch_9' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.750   544   648 I InputReader: Touch device 'virtio_input_multi_touch_8' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.750   544   648 I InputReader: Touch device 'virtio_input_multi_touch_7' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.751   544   648 I InputReader: Touch device 'virtio_input_multi_touch_6' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.751   544   648 I InputReader: Touch device 'virtio_input_multi_touch_5' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.751   544   648 I InputReader: Touch device 'virtio_input_multi_touch_4' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.751   544   648 I InputReader: Touch device 'virtio_input_multi_touch_3' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.751   544   648 I InputReader: Touch device 'virtio_input_multi_touch_2' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+10-06 21:06:45.761   544   562 W Looper  : Slow dispatch took 134ms android.ui h=com.android.server.wm.ImmersiveModeConfirmation$H c=null m=2
+10-06 21:06:45.770  1656  1656 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1557 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.411 fontWeightAdjustment=0}
+10-06 21:06:45.770  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1575 changedMask : 20000480
+10-06 21:06:45.770  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.770  1656  1656 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+10-06 21:06:45.770  1656  1656 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-06 21:06:45.770  1656  1656 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=landscape_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+10-06 21:06:45.771  1656  1656 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-06 21:06:45.772  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.772  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.772  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.772  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.772  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.773  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_bottom4dp_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_400_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-06 21:06:45.774   416   416 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-06 21:06:45.793   544   562 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@1eaf70a
+10-06 21:06:45.793   544   562 D CoreBackPreview: Window{1689a68 u0 ImmersiveModeConfirmation}: Setting back callback null
+10-06 21:06:45.793   544   562 W InputManager-JNI: Input channel object '1689a68 ImmersiveModeConfirmation (client)' was disposed without first being removed with the input manager!
+10-06 21:06:45.811  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.811  1656  1656 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-06 21:06:45.812  1656  1656 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-06 21:06:45.812  1656  1656 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: No service published for: ethernet
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:294)
+10-06 21:06:45.827  1085  1109 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-06 21:06:45.829  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.830  1656  1656 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-06 21:06:45.837   905   947 W Looper  : Slow dispatch took 92ms wmshell.main h=android.os.Handler c=android.window.DisplayAreaOrganizer$1$$ExternalSyntheticLambda1@a8a3b9b m=0
+10-06 21:06:45.838   905   947 V WindowManagerShell: Display changed: 0
+10-06 21:06:45.839   905   947 W Looper  : Drained
+10-06 21:06:45.839   905   905 I NoBackGesture: Config changed: newConfig={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.477 fontWeightAdjustment=0} lastReportedConfig={1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.4 s.405 fontWeightAdjustment=0}
+10-06 21:06:45.849   905   981 D EGL_emulation: app_time_stats: avg=2919.41ms min=78.99ms max=8446.08ms count=3
+10-06 21:06:45.850   905   905 D CentralSurfaces: Received new disable state: enaihbcrso.qingr (unchanged)
+10-06 21:06:45.872   905   981 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-06 21:06:45.875   416   640 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-06 21:06:45.882  1182  1182 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.411 fontWeightAdjustment=0}
+10-06 21:06:45.882  1182  1182 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 21:06:45.882  1182  1182 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_ORIENTATION, CONFIG_SCREEN_SIZE, CONFIG_WINDOW_CONFIGURATION}
+10-06 21:06:45.882  1182  1182 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 21:06:45.882  1182  1182 D b/254119092: destroyExistingTaskbar: null
+10-06 21:06:45.882  1182  1182 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 21:06:45.882  1182  1182 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+10-06 21:06:45.882  1182  1182 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 21:06:45.882  1182  1182 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.411 fontWeightAdjustment=0}
+10-06 21:06:45.884  1656  1656 W StyleResolver: StyleResolver.resolveValue():233 Invalid variable: color_silk_surface_background
+10-06 21:06:45.886  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=android fieldId=0 fieldName=null extras=null}, true)
+10-06 21:06:45.886  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-06 21:06:45.890  5612  5810 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-06 21:06:45.935  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-06 21:06:45.935  1656  1656 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-06 21:06:45.935  1656  1656 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-06 21:06:45.946  1182  1182 D b/254119092: DisplayInfoChangeListener#CHANGE_ROTATION
+10-06 21:06:45.946  1182  1182 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 21:06:45.961  1656  2022 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: 2022081613
+10-06 21:06:45.964  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.965  1656  1656 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-06 21:06:45.966  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.966  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.966  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.966  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.966  1656  1656 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 21:06:45.966  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_bottom4dp_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_400_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-06 21:06:45.970  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1155 update screenHeightWithoutNaviBar to: 2400
+10-06 21:06:45.974  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1161 update max height when insets changes
+10-06 21:06:45.976  1656  2022 I SP      : Syncing emoticon_content_description (2022081613) with slices: [7a635888cb828dfa2fc744b7b9b50f04], metadata: false
+10-06 21:06:45.980  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1155 update screenHeightWithoutNaviBar to: 2274
+10-06 21:06:45.980  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1161 update max height when insets changes
+10-06 21:06:45.980  1656  1656 I DictionarySuperpacksManager: DictionarySuperpacksManager$1.onEnabledInputMethodEntriesChanged():61 onEnabledInputMethodEntriesChanged
+10-06 21:06:46.020   544   561 V WindowManager: Sent Transition #19 createdAt=10-06 21:06:45.686 via request=TransitionRequestInfo { type = CHANGE, triggerTask = null, remoteTransition = null, displayChange = DisplayChange { displayId = 0, startAbsBounds = null, endAbsBounds = null, startRotation = 1, endRotation = 0, physicalDisplayChanged = false } }
+10-06 21:06:46.020   544   561 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-06 21:06:46.020   544   561 V WindowManager:     info={id=19 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{89ea614 Task{e7b9920 #1 type=home}}} m=CHANGE f=SHOW_WALLPAPER p=WCT{RemoteToken{181a9ac DefaultTaskDisplayArea@54591649}} leash=Surface(name=Task=1)/@0x4258ecc sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{RemoteToken{181a9ac DefaultTaskDisplayArea@54591649}} m=CHANGE f=SHOW_WALLPAPER p=WCT{RemoteToken{2ec8073 Display{#0 state=ON size=1080x2400 ROTATION_0}}} leash=Surface(name=DefaultTaskDisplayArea)/@0x2ca40ff sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{RemoteToken{2ec8073 Display{#0 state=ON size=1080x2400 ROTATION_0}}} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x20e32bc sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 21:06:46.021   905   947 V WindowManagerShell: onTransitionReady android.os.BinderProxy@f20964c: {id=19 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@4fce4e0} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2a9e399} leash=Surface(name=Task=1)/@0xc3ce574 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@704b65e} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@7467a3f} leash=Surface(name=DefaultTaskDisplayArea)/@0xf8f3a9d sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@dfb6f0c} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x645fb12 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 21:06:46.021   905   947 V WindowManagerShell: Playing animation for (#19)android.os.BinderProxy@f20964c@0
+10-06 21:06:46.021   905   947 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@4e2db39
+10-06 21:06:46.021   905   947 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@a78e57e
+10-06 21:06:46.021   905   947 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@8da4adf
+10-06 21:06:46.021   905   947 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@f3c032c
+10-06 21:06:46.021   905   947 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-06 21:06:46.021   905   947 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@58cf1f5
+10-06 21:06:46.022   905   947 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@739db8a
+10-06 21:06:46.022   905   947 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b42b5fb
+10-06 21:06:46.022   905   947 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@b998bc4
+10-06 21:06:46.022   905   947 V WindowManagerShell: start default transition animation, info = {id=19 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@4fce4e0} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@2a9e399} leash=Surface(name=Task=1)/@0xc3ce574 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@704b65e} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@7467a3f} leash=Surface(name=DefaultTaskDisplayArea)/@0xf8f3a9d sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@dfb6f0c} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x645fb12 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 21:06:46.022   905   947 V WindowManagerShell: Display is changing, resolve the animation hint.
+10-06 21:06:46.022   905   947 V WindowManagerShell:   display requests explicit seamless
+10-06 21:06:46.023   905   947 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#19)android.os.BinderProxy@f20964c@0
+10-06 21:06:46.024   905   947 V WindowManagerShell: Track 0 became idle
+10-06 21:06:46.024   905   947 V WindowManagerShell: All active transition animations finished
+10-06 21:06:46.024   905   947 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@b998bc4
+10-06 21:06:46.024   905   947 V WindowManagerShell: Track 0 became idle
+10-06 21:06:46.024   905   947 V WindowManagerShell: All active transition animations finished
+10-06 21:06:46.026   544   561 V WindowManager: Finish Transition #19: created at 10-06 21:06:45.686 collect-started=0.033ms request-sent=0.055ms started=51.958ms ready=52.275ms sent=329.056ms finished=337.418ms
+10-06 21:06:46.026   544   615 I ImeTracker: com.google.android.apps.nexuslauncher:10b6e85e: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 21:06:46.026   544   615 I ImeTracker: com.google.android.apps.nexuslauncher:10b6e85e: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 21:06:46.029  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227 
+10-06 21:06:46.030  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-06 21:06:46.030  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=0 fieldName=null extras=null}, false)
+10-06 21:06:46.030  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-06 21:06:46.033  1656  1656 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-06 21:06:46.050  1656  2022 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2022112214
+10-06 21:06:46.067   905   905 I NoBackGesture: Config changed: newConfig={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.477 fontWeightAdjustment=0} lastReportedConfig={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.4 s.477 fontWeightAdjustment=0}
+10-06 21:06:46.068   416   433 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-06 21:06:46.111  6501  6501 I krita.MainActivity: [onDestroy]
+10-06 21:06:46.119   544   558 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: SVC ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:2; bindFromPackage:null: isBindService:false]
+10-06 21:06:46.121  6501  6501 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@e2cea1d
+10-06 21:06:46.122   544  2418 D CoreBackPreview: Window{3700592 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 21:06:46.182   544  2418 W InputManager-JNI: Input channel object '3700592 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 21:06:46.193  6501  6501 E WindowManager: android.view.WindowLeaked: Activity org.krita.android.MainActivity has leaked window DecorView@14e6501[MainActivity] that was originally added here
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:1009)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:997)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:397)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:150)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.app.Dialog.show(Dialog.java:352)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at org.krita.android.MainActivity.lambda$showDonationDialogInternal$4(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:31)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at org.krita.android.MainActivity.$r8$lambda$EG29KSQwsLaLeGAisgWSFpnCOzc(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:1)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at org.krita.android.MainActivity$$ExternalSyntheticLambda6.run(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:11)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.os.Looper.loop(Looper.java:294)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-06 21:06:46.193  6501  6501 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-06 21:06:46.206  6501  6501 I DocumentSaverService: [onStartCommand]
+10-06 21:06:46.206  6501  6501 I DocumentSaverService: kill process command received
+10-06 21:06:46.206  6501  6501 I DocumentSaverService: [waitForSaving]: mStartedInForeground: false
+10-06 21:06:46.210   544   558 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{b06c5e1 u0 org.krita.mobilefork/org.krita.android.DocumentSaverService}
+10-06 21:06:46.216  6501  6501 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@e06c26c
+10-06 21:06:46.217   544  2418 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{18b7e3d u0 org.krita.mobilefork/org.krita.android.MainActivity t9} (client)' was disposed without first being removed with the input manager!
+10-06 21:06:46.220   544  2418 W InputManager-JNI: Input channel object 'ca16cc8 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 21:06:46.222   544   615 W WindowManager: Failed looking up window session=Session{70e99c7 6501:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:944 android.view.IWindowSession$Stub.onTransact:1145 
+10-06 21:06:46.222   544   615 I WindowManager: setOnBackInvokedCallback(): No window state for package:org.krita.mobilefork
+10-06 21:06:46.227   544  1084 W WindowManager: Failed looking up window session=Session{70e99c7 6501:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.WindowManagerService.removeWindow:1974 com.android.server.wm.Session.remove:231 
+10-06 21:06:46.229  6501  6501 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@c3bfc7a that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 21:06:46.229  6501  6501 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@c3bfc7a that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:1839)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:1601)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1840)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1792)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1780)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:755)
+10-06 21:06:46.229  6501  6501 E ActivityThread: 	at org.qtproject.qt5.android.bearer.QtNetworkReceiver.registerReceiver(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:25)
+10-06 21:06:46.236  1656  2022 I SP      : Sync for emoticon_content_description succeeded in 262 ms: no changes
+10-06 21:06:46.237  1656  2022 I SP      : GC for 'emoticon_content_description' (10) with ttl of 0 ms took 1 ms (0/1/0)
+10-06 21:06:46.238  6501  6501 I DocumentSaverService: Destroying: Kill Process = true
+10-06 21:06:46.238  6501  6501 I DocumentSaverService: [waitForSaving]: mStartedInForeground: false
+10-06 21:06:46.238  6501  6501 I Process : Sending signal. PID: 6501 SIG: 9
+10-06 21:06:46.242  1656  2022 I SP      : Syncing content_cache (2022112214) with slices: [e9a5a2de48a4f8b9a658b411bcfb375d, 8722425f4121ffdea802b1066df73991, fa1da98da1212aad6fb9a8efaff48148], metadata: true
+10-06 21:06:46.306   544   615 I WindowManager: finishDrawing of orientation change: Window{9d45a7e u0 ScreenDecorOverlay} 584ms
+10-06 21:06:46.306   544   615 I WindowManager: finishDrawing of orientation change: Window{14f8d52 u0 NavigationBar0} 584ms
+10-06 21:06:46.309  1656  2022 I SP      : Sync for content_cache succeeded in 73 ms: no changes
+10-06 21:06:46.309  1656  2022 I SP      : GC for 'content_cache' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-06 21:06:46.378   544   615 I WindowManager: finishDrawing of orientation change: Window{d0a5f2e u0 ScreenDecorOverlayBottom} 657ms
+10-06 21:06:46.509   544   615 I ActivityManager: Process org.krita.mobilefork (pid 6501) has died: fg  SVC 
+10-06 21:06:46.509   544   575 I libprocessgroup: Successfully killed process cgroup uid 10192 pid 6501 in 0ms
+10-06 21:06:46.510   544   562 D DisplayManagerService: Drop pending events for gone uid 10192
+10-06 21:06:46.517   544   564 W ActivityManager: setHasOverlayUi called on unknown pid: 6501
+10-06 21:06:46.522   357   357 I Zygote  : Process 6501 exited due to signal 9 (Killed)
+10-06 21:06:46.556   544  2418 I WindowManager: finishDrawing of orientation change: Window{80d2445 u0 StatusBar} 836ms
+10-06 21:06:46.556   905   931 I OpenGLRenderer: Davey! duration=742ms; Flags=0, FrameTimelineVsyncId=12532, IntendedVsync=257929725799, Vsync=258146392457, InputEventId=0, HandleInputStart=258161645834, AnimationStart=258161646144, PerformTraversalsStart=258161712368, DrawStart=258639805423, FrameDeadline=257946392465, FrameInterval=258161587705, FrameStartTime=16666666, SyncQueued=258639930776, SyncStart=258677435500, IssueDrawCommandsStart=258677636104, SwapBuffers=258678299181, FrameCompleted=258709983488, DequeueBufferDuration=28185959, QueueBufferDuration=303567, GpuCompleted=258682277777, SwapBuffersCompleted=258709983488, DisplayPresentTime=0, CommandSubmissionCompleted=258678299181, 
+10-06 21:06:46.558   905   905 I Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
+10-06 21:06:46.814   905   905 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 21:06:46.846   905   931 I OpenGLRenderer: Davey! duration=804ms; Flags=0, FrameTimelineVsyncId=12670, IntendedVsync=258163059123, Vsync=258763059099, InputEventId=0, HandleInputStart=258767087505, AnimationStart=258767087815, PerformTraversalsStart=258767120636, DrawStart=258874652894, FrameDeadline=258729725767, FrameInterval=258766946682, FrameStartTime=16666666, SyncQueued=258874689672, SyncStart=258939360787, IssueDrawCommandsStart=258939528391, SwapBuffers=258943747231, FrameCompleted=259032242146, DequeueBufferDuration=7981844, QueueBufferDuration=269853, GpuCompleted=259032242146, SwapBuffersCompleted=259022114635, DisplayPresentTime=0, CommandSubmissionCompleted=258943747231, 
+10-06 21:06:48.921   544  2100 D ConnectivityService: requestNetwork for uid/pid:10129/2820 activeRequest: null callbackRequest: 152 [NetworkRequest [ REQUEST id=153, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 10129 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 21:06:48.923   544   829 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=153, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 10129 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 21:06:48.923   544   829 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=153, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 10129 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 21:06:48.923   544   829 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=153, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 10129 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 21:06:48.923   544   829 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=153, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 10129 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+10-06 21:06:48.923   544   836 D ConnectivityService: NetReassign [153 : null → 100] [c 1] [a 0] [i 1]
+10-06 21:06:48.925  2820  2820 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+10-06 21:06:48.926  2820  3088 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+10-06 21:06:48.926  2820  3088 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+10-06 21:06:48.930  5612  5612 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-06 21:06:48.930  5612  5612 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-06 21:06:48.939  5612  5612 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-06 21:06:48.939  5612  5612 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-06 21:06:48.940  5612  5612 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-06 21:06:48.941  5612  5810 E constellation: [api_verify_phone_operation] Failed to generate Client Signature
+10-06 21:06:48.941  5612  5810 E constellation: acwp: Stored private key deleted
+10-06 21:06:48.941  5612  5810 E constellation: 	at acos.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-06 21:06:48.941  5612  5810 E constellation: 	at acos.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-06 21:06:48.941  5612  5810 E constellation: 	at acoa.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-06 21:06:48.941  5612  5810 E constellation: 	at acoa.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+10-06 21:06:48.941  5612  5810 E constellation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-06 21:06:48.941  5612  5810 E constellation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-06 21:06:48.941  5612  5810 E constellation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 21:06:48.941  5612  5810 E constellation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 21:06:48.941  5612  5810 E constellation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-06 21:06:48.941  5612  5810 E constellation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 21:06:48.941  5612  5810 E constellation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 21:06:48.941  5612  5810 E constellation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 21:06:48.941  5612  5810 E constellation: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: nkq: 5004: 
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+10-06 21:06:48.941  2820  3088 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1275)
+10-06 21:06:48.943  2820  3124 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5004
+10-06 21:06:48.943  2820  3089 I WM-WorkerWrapper: Worker result RETRY for Work [ id=28fbf0e8-bbc4-4c4d-853e-7b441f1288c0, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
+10-06 21:06:49.223   544  3389 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-06 21:06:50.843   544  1010 D OomAdjuster: Not killing cached processes
+10-06 21:06:51.373   544   634 D ActivityManager: freezing 1235 com.android.bluetooth
+10-06 21:06:51.373   544   634 D ActivityManager: freezing 1393 com.android.cellbroadcastreceiver
+10-06 21:06:51.373   544   634 D ActivityManager: freezing 1538 com.android.carrierconfig
+10-06 21:06:51.373   544   634 D ActivityManager: freezing 2018 com.android.keychain
+10-06 21:06:51.374   544   634 D ActivityManager: freezing 2442 com.android.localtransport
+10-06 21:06:51.374   544   634 D ActivityManager: freezing 1871 com.google.android.googlesdksetup
+10-06 21:06:51.374   544   634 D ActivityManager: freezing 1961 com.android.printspooler
+10-06 21:06:51.375   544   634 D ActivityManager: freezing 3426 com.android.traceur
+10-06 21:06:51.375   544   634 D ActivityManager: freezing 3238 com.google.android.webview:webview_service
+10-06 21:06:51.375   544   634 D ActivityManager: freezing 3494 com.google.android.onetimeinitializer
+10-06 21:06:51.376   544   634 D ActivityManager: freezing 1934 com.android.carrierdefaultapp
+10-06 21:06:51.376   544   634 D ActivityManager: freezing 3642 com.android.camera2
+10-06 21:06:51.376   544   634 D ActivityManager: freezing 3695 com.android.dynsystem
+10-06 21:06:51.376   544   634 D ActivityManager: freezing 3789 com.android.dynsystem:dynsystem
+10-06 21:06:51.376   544   634 D ActivityManager: freezing 2699 com.android.imsserviceentitlement
+10-06 21:06:51.377   544   634 D ActivityManager: freezing 1354 com.google.android.cellbroadcastreceiver
+10-06 21:06:51.377   544   634 D ActivityManager: freezing 2136 com.android.providers.calendar
+10-06 21:06:51.377   544   634 D ActivityManager: freezing 4525 com.android.emergency
+10-06 21:06:51.377   544   634 D ActivityManager: freezing 4532 com.google.android.healthconnect.controller
+10-06 21:06:51.378   544   634 D ActivityManager: freezing 5255 com.google.android.webview
+10-06 21:06:51.378   544   634 D ActivityManager: freezing 1159 com.android.settings
+10-06 21:06:51.378   544   634 D ActivityManager: freezing 2202 com.google.android.partnersetup
+10-06 21:06:51.379   544   634 D ActivityManager: freezing 2550 com.android.externalstorage
+10-06 21:06:51.379   544   634 D ActivityManager: freezing 3979 com.google.android.configupdater
+10-06 21:06:51.379   544   634 D ActivityManager: freezing 4541 com.google.android.marvin.talkback
+10-06 21:06:51.379   544   634 D ActivityManager: freezing 2724 com.google.android.apps.wallpaper
+10-06 21:06:51.380   544   634 D ActivityManager: freezing 3058 com.google.android.tts
+10-06 21:06:51.380   544   634 D ActivityManager: freezing 4129 com.google.android.gm
+10-06 21:06:51.381   544   634 D ActivityManager: freezing 4089 com.google.android.projection.gearhead:shared
+10-06 21:06:51.381   544   634 D ActivityManager: freezing 1925 com.google.android.youtube
+10-06 21:06:51.382   544   634 D ActivityManager: freezing 2337 android.process.media
+10-06 21:06:51.382   544   634 D ActivityManager: freezing 5785 com.google.android.gms.ui
+10-06 21:06:51.382   544   634 D ActivityManager: freezing 2278 com.google.android.as.oss
+10-06 21:06:51.382   544   634 D ActivityManager: freezing 2375 com.google.android.contacts
+10-06 21:06:51.383   544   634 D ActivityManager: freezing 2407 com.google.android.documentsui
+10-06 21:06:51.383   544   634 D ActivityManager: freezing 2114 com.google.process.gapps
+10-06 21:06:51.383   544   634 D ActivityManager: freezing 5341 com.google.android.settings.intelligence
+10-06 21:06:51.384   544   634 D ActivityManager: freezing 5046 com.google.android.googlequicksearchbox
+10-06 21:06:51.384   544   634 D ActivityManager: freezing 906 com.google.android.permissioncontroller
+10-06 21:06:51.384   544   634 D ActivityManager: freezing 3875 com.google.android.rkpdapp
+10-06 21:06:51.385   544   634 D ActivityManager: freezing 2983 com.android.chrome
+10-06 21:06:51.385   544   634 D ActivityManager: freezing 1872 com.google.android.apps.youtube.music
+10-06 21:06:51.386   544   634 D ActivityManager: freezing 1689 com.google.android.apps.wellbeing
+10-06 21:06:51.386   544   634 D ActivityManager: freezing 3474 com.google.android.gms.unstable
+10-06 21:06:51.392   544  1010 D ActivityManager: freezer override set to true
+10-06 21:06:51.392   544  1010 D ActivityManager: sync unfroze 1235 com.android.bluetooth for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 1393 com.android.cellbroadcastreceiver for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 1538 com.android.carrierconfig for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 2018 com.android.keychain for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 2442 com.android.localtransport for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 1871 com.google.android.googlesdksetup for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 1961 com.android.printspooler for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 3426 com.android.traceur for 19
+10-06 21:06:51.393   544  1010 D ActivityManager: sync unfroze 3238 com.google.android.webview:webview_service for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 3494 com.google.android.onetimeinitializer for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 1934 com.android.carrierdefaultapp for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 3642 com.android.camera2 for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 3695 com.android.dynsystem for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 3789 com.android.dynsystem:dynsystem for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 2699 com.android.imsserviceentitlement for 19
+10-06 21:06:51.394   544  1010 D ActivityManager: sync unfroze 1354 com.google.android.cellbroadcastreceiver for 19
+10-06 21:06:51.395   544  1010 D ActivityManager: sync unfroze 2136 com.android.providers.calendar for 19
+10-06 21:06:51.395   544  1010 D ActivityManager: sync unfroze 4525 com.android.emergency for 19
+10-06 21:06:51.395   544  1010 D ActivityManager: sync unfroze 4532 com.google.android.healthconnect.controller for 19
+10-06 21:06:51.395   544  1010 D ActivityManager: sync unfroze 5255 com.google.android.webview for 19
+10-06 21:06:51.396   544  1010 D ActivityManager: sync unfroze 1159 com.android.settings for 19
+10-06 21:06:51.396   544  1010 D ActivityManager: sync unfroze 2202 com.google.android.partnersetup for 19
+10-06 21:06:51.396   544  1010 D ActivityManager: sync unfroze 2550 com.android.externalstorage for 19
+10-06 21:06:51.396   544  1010 D ActivityManager: sync unfroze 3979 com.google.android.configupdater for 19
+10-06 21:06:51.396   544  1010 D ActivityManager: sync unfroze 4541 com.google.android.marvin.talkback for 19
+10-06 21:06:51.397   544  1010 D ActivityManager: sync unfroze 2724 com.google.android.apps.wallpaper for 19
+10-06 21:06:51.397   544  1010 D ActivityManager: sync unfroze 3058 com.google.android.tts for 19
+10-06 21:06:51.397   544  1010 D ActivityManager: sync unfroze 4129 com.google.android.gm for 19
+10-06 21:06:51.397   544  1010 D ActivityManager: sync unfroze 4089 com.google.android.projection.gearhead:shared for 19
+10-06 21:06:51.398   544  1010 D ActivityManager: sync unfroze 1925 com.google.android.youtube for 19
+10-06 21:06:51.398   544  1010 D ActivityManager: sync unfroze 2337 android.process.media for 19
+10-06 21:06:51.398   544  1010 D ActivityManager: sync unfroze 5785 com.google.android.gms.ui for 19
+10-06 21:06:51.398   544  1010 D ActivityManager: sync unfroze 2278 com.google.android.as.oss for 19
+10-06 21:06:51.399   544  1010 D ActivityManager: sync unfroze 2375 com.google.android.contacts for 19
+10-06 21:06:51.399   544  1010 D ActivityManager: sync unfroze 2407 com.google.android.documentsui for 19
+10-06 21:06:51.399   544  1010 D ActivityManager: sync unfroze 2114 com.google.process.gapps for 19
+10-06 21:06:51.399   544  1010 D ActivityManager: sync unfroze 5341 com.google.android.settings.intelligence for 19
+10-06 21:06:51.400   544  1010 D ActivityManager: sync unfroze 5046 com.google.android.googlequicksearchbox for 19
+10-06 21:06:51.400   544  1010 D ActivityManager: sync unfroze 906 com.google.android.permissioncontroller for 19
+10-06 21:06:51.400   544  1010 D ActivityManager: sync unfroze 1779 com.google.process.gservices for 19
+10-06 21:06:51.400   544  1010 D ActivityManager: sync unfroze 3875 com.google.android.rkpdapp for 19
+10-06 21:06:51.401   544  1010 D ActivityManager: sync unfroze 2983 com.android.chrome for 19
+10-06 21:06:51.401   544  1010 D ActivityManager: sync unfroze 1872 com.google.android.apps.youtube.music for 19
+10-06 21:06:51.401   544  1010 D ActivityManager: sync unfroze 1689 com.google.android.apps.wellbeing for 19
+10-06 21:06:51.401   544  1010 D ActivityManager: sync unfroze 3474 com.google.android.gms.unstable for 19
+10-06 21:06:51.407   544  1010 D ActivityManager: freezer override set to false
