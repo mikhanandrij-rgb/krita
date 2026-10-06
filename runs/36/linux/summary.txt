@@ -1,4 +1,3 @@
-== linux (run 36): success
 status: success
 branch: mobile
 commit: 47811441659ac06338c9595a664127d9257b3087
@@ -35,4 +34,3 @@ perf:
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   36G  109G  25% /
-
