@@ -1,0 +1,500 @@
+0008; state: ENABLED
+10-06 10:25:42.151  8355  8355 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90008; state: ENABLED
+10-06 10:25:42.154  8355  8355 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:42.155  8355  8355 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:8 isIsolated=true
+10-06 10:25:42.156  8355  8355 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:42.157   550  2450 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90008. pid: 8355
+10-06 10:25:42.157  8355  8355 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:42.157  8355  8355 I cr_ChildProcessService: Creating new ChildProcessService pid=8355
+10-06 10:25:42.161  8355  8369 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:42.161  8355  8369 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:42.163  8355  8355 W ThreadPoolForeg: type=1400 audit(0.0:282): avc:  denied  { setattr } for  name="crl-set" dev="dm-40" ino=172252 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.176  8355  8369 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:42.177   550  2450 I ActivityManager: Killing 8355:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:8/u0a150i-8992 (adj 0): isolated not needed
+10-06 10:25:42.178   550   581 I libprocessgroup: Successfully killed process cgroup uid 90008 pid 8355 in 0ms
+10-06 10:25:42.184   550   568 D DisplayManagerService: Drop pending events for gone uid 90008
+10-06 10:25:42.185  8000  8000 I Zygote  : Process 8355 exited cleanly (0)
+10-06 10:25:42.257   550  2450 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90009; state: DISABLED
+10-06 10:25:42.258   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:42.262  8000  8000 D Zygote  : Forked child process 8376
+10-06 10:25:42.263  8376  8376 I ocessService0:9: Using CollectorTypeCC GC.
+10-06 10:25:42.264  8376  8376 W ocessService0:9: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:42.264  8376  8376 W ocessService0:9: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:42.266  8376  8376 E ocessService0:9: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:42.283   550   580 I ActivityManager: Start proc 8376:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:9/u0ai9 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:9}
+10-06 10:25:42.287  8376  8376 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90009; state: ENABLED
+10-06 10:25:42.287  8376  8376 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90009; state: ENABLED
+10-06 10:25:42.290  8376  8376 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:42.291  8376  8376 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:9 isIsolated=true
+10-06 10:25:42.292  8376  8376 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:42.292   550  2450 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90009. pid: 8376
+10-06 10:25:42.293  8376  8376 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:42.293  8376  8376 I cr_ChildProcessService: Creating new ChildProcessService pid=8376
+10-06 10:25:42.296  8376  8390 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:42.297  8376  8390 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:42.308  8376  8390 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:42.308   550  1536 I ActivityManager: Killing 8376:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:9/u0a150i-8991 (adj 0): isolated not needed
+10-06 10:25:42.314  8000  8000 I Zygote  : Process 8376 exited cleanly (0)
+10-06 10:25:42.314   550   568 D DisplayManagerService: Drop pending events for gone uid 90009
+10-06 10:25:42.314   550   581 I libprocessgroup: Successfully killed process cgroup uid 90009 pid 8376 in 5ms
+10-06 10:25:42.468   550  1536 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90010; state: DISABLED
+10-06 10:25:42.469   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:42.472  8000  8000 D Zygote  : Forked child process 8397
+10-06 10:25:42.474  8397  8397 I cessService0:10: Using CollectorTypeCC GC.
+10-06 10:25:42.475  8397  8397 W cessService0:10: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:42.475  8397  8397 W cessService0:10: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:42.477  8397  8397 E cessService0:10: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:42.487   550   580 I ActivityManager: Start proc 8397:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:10/u0ai10 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:10}
+10-06 10:25:42.503  8397  8397 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90010; state: ENABLED
+10-06 10:25:42.503  8397  8397 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90010; state: ENABLED
+10-06 10:25:42.506  8397  8397 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:42.507  8397  8397 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:10 isIsolated=true
+10-06 10:25:42.508  8397  8397 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:42.509   550  1536 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90010. pid: 8397
+10-06 10:25:42.509  8397  8397 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:42.509  8397  8397 I cr_ChildProcessService: Creating new ChildProcessService pid=8397
+10-06 10:25:42.513  8397  8411 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:42.513  8397  8411 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:42.525  8397  8411 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:42.519  8397  8397 W ThreadPoolForeg: type=1400 audit(0.0:292): avc:  denied  { setattr } for  name="safety_tips.pb" dev="dm-40" ino=172268 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.527   550  2684 I ActivityManager: Killing 8397:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:10/u0a150i-8990 (adj 0): isolated not needed
+10-06 10:25:42.530   550   581 I libprocessgroup: Successfully killed process cgroup uid 90010 pid 8397 in 0ms
+10-06 10:25:42.530  8000  8000 I Zygote  : Process 8397 exited cleanly (0)
+10-06 10:25:42.519  8397  8397 W ThreadPoolForeg: type=1400 audit(0.0:293): avc:  denied  { setattr } for  name="safety_tips.pb" dev="dm-40" ino=172268 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.531   550   568 D DisplayManagerService: Drop pending events for gone uid 90010
+10-06 10:25:42.519  8397  8397 W ThreadPoolForeg: type=1400 audit(0.0:294): avc:  denied  { setattr } for  name="manifest.json" dev="dm-40" ino=172269 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.519  8397  8397 W ThreadPoolForeg: type=1400 audit(0.0:295): avc:  denied  { setattr } for  name="verified_contents.json" dev="dm-40" ino=172271 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.752   550  2450 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90011; state: DISABLED
+10-06 10:25:42.752   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:42.756  8000  8000 D Zygote  : Forked child process 8418
+10-06 10:25:42.757  8418  8418 I cessService0:11: Using CollectorTypeCC GC.
+10-06 10:25:42.758  8418  8418 W cessService0:11: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:42.758  8418  8418 W cessService0:11: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:42.760  8418  8418 E cessService0:11: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:42.779   550   580 I ActivityManager: Start proc 8418:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:11/u0ai11 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:11}
+10-06 10:25:42.792  8418  8418 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90011; state: ENABLED
+10-06 10:25:42.792  8418  8418 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90011; state: ENABLED
+10-06 10:25:42.795  8418  8418 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:42.796  8418  8418 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:11 isIsolated=true
+10-06 10:25:42.797  8418  8418 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:42.798   550  2450 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90011. pid: 8418
+10-06 10:25:42.798  8418  8418 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:42.799  8418  8418 I cr_ChildProcessService: Creating new ChildProcessService pid=8418
+10-06 10:25:42.802  8418  8432 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:42.802  8418  8432 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:42.810  8418  8432 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:42.812   550  1536 I ActivityManager: Killing 8418:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:11/u0a150i-8989 (adj 0): isolated not needed
+10-06 10:25:42.807  8418  8418 W ThreadPoolForeg: type=1400 audit(0.0:296): avc:  denied  { setattr } for  name="download_file_types.pb" dev="dm-40" ino=172274 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:42.815   550   581 I libprocessgroup: Successfully killed process cgroup uid 90011 pid 8418 in 0ms
+10-06 10:25:42.816  8000  8000 I Zygote  : Process 8418 exited cleanly (0)
+10-06 10:25:42.817   550   568 D DisplayManagerService: Drop pending events for gone uid 90011
+10-06 10:25:43.137   550  2450 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90012; state: DISABLED
+10-06 10:25:43.137   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:43.141  8000  8000 D Zygote  : Forked child process 8439
+10-06 10:25:43.143  8439  8439 I cessService0:12: Using CollectorTypeCC GC.
+10-06 10:25:43.143  8439  8439 W cessService0:12: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:43.143  8439  8439 W cessService0:12: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:43.145  8439  8439 E cessService0:12: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:43.159   550   580 I ActivityManager: Start proc 8439:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:12/u0ai12 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:12}
+10-06 10:25:43.179  8439  8439 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90012; state: ENABLED
+10-06 10:25:43.179  8439  8439 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90012; state: ENABLED
+10-06 10:25:43.182  8439  8439 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:43.183  8439  8439 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:12 isIsolated=true
+10-06 10:25:43.184  8439  8439 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:43.185   550  1536 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90012. pid: 8439
+10-06 10:25:43.186  8439  8439 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:43.186  8439  8439 I cr_ChildProcessService: Creating new ChildProcessService pid=8439
+10-06 10:25:43.189  8439  8453 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:43.189  8439  8453 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:43.200  8439  8453 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:43.200   550  2450 I ActivityManager: Killing 8439:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:12/u0a150i-8988 (adj 0): isolated not needed
+10-06 10:25:43.207   550   581 I libprocessgroup: Successfully killed process cgroup uid 90012 pid 8439 in 0ms
+10-06 10:25:43.211  8000  8000 I Zygote  : Process 8439 exited cleanly (0)
+10-06 10:25:43.211   550   568 D DisplayManagerService: Drop pending events for gone uid 90012
+10-06 10:25:43.612   550  1536 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90013; state: DISABLED
+10-06 10:25:43.613   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:43.616  8000  8000 D Zygote  : Forked child process 8460
+10-06 10:25:43.618  8460  8460 I cessService0:13: Using CollectorTypeCC GC.
+10-06 10:25:43.619  8460  8460 W cessService0:13: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:43.619  8460  8460 W cessService0:13: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:43.621  8460  8460 E cessService0:13: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:43.639   550   580 I ActivityManager: Start proc 8460:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:13/u0ai13 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:13}
+10-06 10:25:43.643  8460  8460 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90013; state: ENABLED
+10-06 10:25:43.644  8460  8460 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90013; state: ENABLED
+10-06 10:25:43.647  8460  8460 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:43.647  8460  8460 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:13 isIsolated=true
+10-06 10:25:43.648  8460  8460 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:43.649   550  2450 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90013. pid: 8460
+10-06 10:25:43.649  8460  8460 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:43.650  8460  8460 I cr_ChildProcessService: Creating new ChildProcessService pid=8460
+10-06 10:25:43.653  8460  8474 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:43.653  8460  8474 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:43.661   550  2450 I ActivityManager: Killing 8460:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:13/u0a150i-8987 (adj 0): isolated not needed
+10-06 10:25:43.655  8460  8460 W ThreadPoolForeg: type=1400 audit(0.0:303): avc:  denied  { setattr } for  name="real_time_url_checks_allowlist.pb" dev="dm-40" ino=172286 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:43.667   550   581 I libprocessgroup: Successfully killed process cgroup uid 90013 pid 8460 in 5ms
+10-06 10:25:43.655  8460  8460 W ThreadPoolForeg: type=1400 audit(0.0:304): avc:  denied  { setattr } for  name="real_time_url_checks_allowlist.pb" dev="dm-40" ino=172286 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:43.671  8000  8000 I Zygote  : Process 8460 exited due to signal 9 (Killed)
+10-06 10:25:43.672   550   568 D DisplayManagerService: Drop pending events for gone uid 90013
+10-06 10:25:43.655  8460  8460 W ThreadPoolForeg: type=1400 audit(0.0:305): avc:  denied  { setattr } for  name="manifest.json" dev="dm-40" ino=172287 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:43.655  8460  8460 W ThreadPoolForeg: type=1400 audit(0.0:306): avc:  denied  { setattr } for  name="verified_contents.json" dev="dm-40" ino=172289 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:43.845  8254  8254 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 0
+10-06 10:25:43.845  8254  8254 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-06 10:25:43.848  8254  8254 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-06 10:25:44.151   550  1536 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90014; state: DISABLED
+10-06 10:25:44.151   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:44.155  8000  8000 D Zygote  : Forked child process 8481
+10-06 10:25:44.156  8481  8481 I cessService0:14: Using CollectorTypeCC GC.
+10-06 10:25:44.157  8481  8481 W cessService0:14: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:44.157  8481  8481 W cessService0:14: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:44.159  8481  8481 E cessService0:14: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:44.179   550   580 I ActivityManager: Start proc 8481:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:14/u0ai14 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:14}
+10-06 10:25:44.191  8481  8481 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90014; state: ENABLED
+10-06 10:25:44.191  8481  8481 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90014; state: ENABLED
+10-06 10:25:44.194  8481  8481 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:44.195  8481  8481 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:14 isIsolated=true
+10-06 10:25:44.196  8481  8481 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:44.197   550  1536 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90014. pid: 8481
+10-06 10:25:44.197  8481  8481 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:44.197  8481  8481 I cr_ChildProcessService: Creating new ChildProcessService pid=8481
+10-06 10:25:44.201  8481  8495 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:44.201  8481  8495 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:44.203  8481  8481 W ThreadPoolForeg: type=1400 audit(0.0:307): avc:  denied  { setattr } for  name="AD" dev="dm-40" ino=172292 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:44.285  8481  8495 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:44.286   550  2450 I ActivityManager: Killing 8481:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:14/u0a150i-8986 (adj 0): isolated not needed
+10-06 10:25:44.286   550   581 I libprocessgroup: Successfully killed process cgroup uid 90014 pid 8481 in 0ms
+10-06 10:25:44.290  8000  8000 I Zygote  : Process 8481 exited cleanly (0)
+10-06 10:25:44.291   550   568 D DisplayManagerService: Drop pending events for gone uid 90014
+10-06 10:25:44.882   360   405 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+10-06 10:25:44.882   360   405 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.14ms>
+10-06 10:25:44.883   360   405 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+10-06 10:25:44.883   360   405 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.01ms>
+10-06 10:25:44.919   550  2450 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 90015; state: DISABLED
+10-06 10:25:44.920   550   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10150; state: ENABLED
+10-06 10:25:44.924  8000  8000 D Zygote  : Forked child process 8502
+10-06 10:25:44.925  8502  8502 I cessService0:15: Using CollectorTypeCC GC.
+10-06 10:25:44.926  8502  8502 W cessService0:15: Unexpected CPU variant for x86: x86_64.
+10-06 10:25:44.926  8502  8502 W cessService0:15: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 10:25:44.928  8502  8502 E cessService0:15: Not starting debugger since process cannot load the jdwp agent.
+10-06 10:25:44.943   550   580 I ActivityManager: Start proc 8502:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:15/u0ai15 for  {com.android.chrome/org.chromium.content.app.SandboxedProcessService0:15}
+10-06 10:25:44.947  8502  8502 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 90015; state: ENABLED
+10-06 10:25:44.947  8502  8502 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 90015; state: ENABLED
+10-06 10:25:44.950  8502  8502 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-06 10:25:44.951  8502  8502 I cr_SplitCompatApp: Launched version=113.0.5672.136 minSdkVersion=29 isBundle=true processName=com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:15 isIsolated=true
+10-06 10:25:44.952  8502  8502 W SystemServiceRegistry: No service published for: uimode
+10-06 10:25:44.953   550  1536 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 90015. pid: 8502
+10-06 10:25:44.953  8502  8502 W SystemServiceRegistry: No service published for: virtualdevice
+10-06 10:25:44.954  8502  8502 I cr_ChildProcessService: Creating new ChildProcessService pid=8502
+10-06 10:25:44.957  8502  8516 I cr_LibraryLoader: Successfully loaded native library
+10-06 10:25:44.957  8502  8516 I cr_CachingUmaRecorder: Flushed 10 samples from 10 histograms.
+10-06 10:25:44.963  8502  8502 W ThreadPoolForeg: type=1400 audit(0.0:534): avc:  denied  { setattr } for  name="sets.json" dev="dm-40" ino=172522 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:44.970  8502  8516 I chromium: [INFO:child_process_service.cc(69)] ChildProcessService: Exiting child process.
+10-06 10:25:44.972   550  2450 I ActivityManager: Killing 8502:com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:15/u0a150i-8985 (adj 0): isolated not needed
+10-06 10:25:44.972   550   581 I libprocessgroup: Successfully killed process cgroup uid 90015 pid 8502 in 0ms
+10-06 10:25:44.967  8502  8502 W ThreadPoolForeg: type=1400 audit(0.0:535): avc:  denied  { setattr } for  name="manifest.json" dev="dm-40" ino=172523 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:44.967  8502  8502 W ThreadPoolForeg: type=1400 audit(0.0:536): avc:  denied  { setattr } for  name="LICENSE" dev="dm-40" ino=172524 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:44.967  8502  8502 W ThreadPoolForeg: type=1400 audit(0.0:537): avc:  denied  { setattr } for  name="verified_contents.json" dev="dm-40" ino=172526 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c150,c256,c512,c768 tclass=file permissive=0
+10-06 10:25:44.983  8000  8000 I Zygote  : Process 8502 exited cleanly (0)
+10-06 10:25:44.986   550   568 D DisplayManagerService: Drop pending events for gone uid 90015
+10-06 10:25:45.970   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:25:50.006   550   640 D ActivityManager: freezing 1736 com.google.process.gservices
+10-06 10:25:50.956   906   906 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-06 10:25:51.638   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:25:51.639   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:25:51.639   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:25:51.639   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:25:51.640   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:25:51.640   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:25:51.640   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:25:51.640   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:25:51.640   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:25:51.641   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:25:51.641   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:25:51.641   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:25:51.641   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:25:51.641   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:25:51.684   550  1536 D ActivityManager: freezer override set to true
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:25:51.685   550  1536 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 1736 com.google.process.gservices for 19
+10-06 10:25:51.686   550  1536 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:25:51.687   550  1536 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:25:51.687   550  1536 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:25:51.743  7263  7280 I rita.mobilefork: Explicit concurrent copying GC freed 2969(130KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2676KB/5353KB, paused 29us,5us total 4.935ms
+10-06 10:25:51.753   550  1536 D ActivityManager: freezer override set to false
+10-06 10:25:55.970   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:00.025  1816  2118 I AiAiEcho: Predicting[0]: 
+10-06 10:26:00.025  1816  2118 I AiAiEcho: EchoTargets: 
+10-06 10:26:00.025  1816  2118 I AiAiEcho: Filtered by AiAi flag check: 
+10-06 10:26:00.025  1816  2118 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+10-06 10:26:00.026  1816  2118 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-06 10:26:00.027   906   989 D EGL_emulation: app_time_stats: avg=34054.35ms min=34054.35ms max=34054.35ms count=1
+10-06 10:26:00.038   906   906 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-06 10:26:01.799   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:01.800   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:01.800   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:01.800   550  1536 D ActivityManager: freezer override set to true
+10-06 10:26:01.800   550  1536 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:01.800   550  1536 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:01.801   550  1536 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 5259 com.google.android.settings.intelligence curAdj = 955(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 4016 com.google.android.rkpdapp curAdj = 955(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 2248 com.google.process.gapps curAdj = 945(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 4009 com.google.android.projection.gearhead:shared curAdj = 945(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 5190 com.google.android.googlequicksearchbox curAdj = 935(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 7372 com.google.android.gms.unstable curAdj = 935(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 7928 com.google.android.dialer curAdj = 925(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 1888 com.google.android.apps.youtube.music curAdj = 925(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 1736 com.google.process.gservices curAdj = 915(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 3133 com.google.android.documentsui curAdj = 915(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 1791 android.process.acore curAdj = 905(override)
+10-06 10:26:01.801   550   640 D ActivityManager: Skipping freeze for process 909 com.google.android.permissioncontroller curAdj = 905(override)
+10-06 10:26:01.856  7263  7280 I rita.mobilefork: Explicit concurrent copying GC freed 2945(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2676KB/5353KB, paused 14us,5us total 4.871ms
+10-06 10:26:01.865   550  1536 D ActivityManager: freezer override set to false
+10-06 10:26:05.970   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:11.881   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:11.882   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:11.882   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:11.882   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:26:11.883   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:26:11.883   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:26:11.883   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:26:11.884   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:26:11.884   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:26:11.884   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:26:11.885   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:26:11.885   550   640 D ActivityManager: freezing 1736 com.google.process.gservices
+10-06 10:26:11.885   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:26:11.886   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:26:11.886   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:26:11.913   550  1536 D ActivityManager: freezer override set to true
+10-06 10:26:11.913   550  1536 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:26:11.914   550  1536 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 1736 com.google.process.gservices for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:26:11.915   550  1536 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:26:11.971  7263  7280 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2676KB/5353KB, paused 25us,5us total 5.029ms
+10-06 10:26:11.980   550  1536 D ActivityManager: freezer override set to false
+10-06 10:26:15.970   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:22.023   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:22.023   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:22.024   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:22.024   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:26:22.024   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:26:22.025   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:26:22.025   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:26:22.025   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:26:22.025   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:26:22.026   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:26:22.026   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:26:22.027   550   640 D ActivityManager: freezing 1736 com.google.process.gservices
+10-06 10:26:22.027   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:26:22.027   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:26:22.028   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:26:22.028   550  1536 D ActivityManager: freezer override set to true
+10-06 10:26:22.028   550  1536 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:22.028   550  1536 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:26:22.029   550  1536 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 1736 com.google.process.gservices for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:26:22.030   550  1536 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:26:22.085  7263  7280 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2676KB/5353KB, paused 21us,5us total 4.588ms
+10-06 10:26:22.094   550  1536 D ActivityManager: freezer override set to false
+10-06 10:26:25.969   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:30.552   550   578 I UsageStatsService: User[0] Flushing usage stats to disk
+10-06 10:26:32.139   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:32.140   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:32.140   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:32.140   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:26:32.140   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:26:32.141   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:26:32.141   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:26:32.141   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:26:32.141   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:26:32.142   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:26:32.142   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:26:32.143   550   640 D ActivityManager: freezing 1736 com.google.process.gservices
+10-06 10:26:32.143   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:26:32.144   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:26:32.144   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:26:32.147   550  1536 D ActivityManager: freezer override set to true
+10-06 10:26:32.147   550  1536 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:32.148   550  1536 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:32.148   550  1536 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:32.148   550  1536 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:26:32.148   550  1536 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:26:32.148   550  1536 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:26:32.149   550  1536 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:26:32.149   550  1536 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:26:32.149   550  1536 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:26:32.149   550  1536 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:26:32.150   550  1536 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:26:32.150   550  1536 D ActivityManager: sync unfroze 1736 com.google.process.gservices for 19
+10-06 10:26:32.150   550  1536 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:26:32.150   550  1536 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:26:32.151   550  1536 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:26:32.210  7263  7280 I rita.mobilefork: Explicit concurrent copying GC freed 2941(128KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2676KB/5353KB, paused 24us,5us total 4.843ms
+10-06 10:26:32.220   550  1536 D ActivityManager: freezer override set to false
+10-06 10:26:35.010  5586  5629 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 1287227]
+10-06 10:26:35.010   550  2484 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10128; state: ENABLED
+10-06 10:26:35.011   550  2484 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10128; state: ENABLED
+10-06 10:26:35.011  5586  5629 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+10-06 10:26:35.970   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:36.018   906   906 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+--------- beginning of crash
+10-06 10:26:38.322  7263  7338 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 7338 (qtMainLoopThrea), pid 7263 (rita.mobilefork)
+10-06 10:26:38.430  8571  8571 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+10-06 10:26:38.430   219   219 I tombstoned: received crash request for pid 7338
+10-06 10:26:38.432  8571  8571 I crash_dump64: performing dump of process 7263 (target tid = 7338)
+10-06 10:26:38.661  8571  8571 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-06 10:26:38.661  8571  8571 F DEBUG   : Build fingerprint: 'google/sdk_gphone64_x86_64/emu64xa:14/UE1A.230829.050/12077443:userdebug/dev-keys'
+10-06 10:26:38.661  8571  8571 F DEBUG   : Revision: '0'
+10-06 10:26:38.661  8571  8571 F DEBUG   : ABI: 'x86_64'
+10-06 10:26:38.661  8571  8571 F DEBUG   : Timestamp: 2026-10-06 10:26:38.442997665+0000
+10-06 10:26:38.661  8571  8571 F DEBUG   : Process uptime: 597s
+10-06 10:26:38.661  8571  8571 F DEBUG   : Cmdline: org.krita.mobilefork
+10-06 10:26:38.661  8571  8571 F DEBUG   : pid: 7263, tid: 7338, name: qtMainLoopThrea  >>> org.krita.mobilefork <<<
+10-06 10:26:38.661  8571  8571 F DEBUG   : uid: 10192
+10-06 10:26:38.661  8571  8571 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+10-06 10:26:38.661  8571  8571 F DEBUG   :     rax 0000000000000000  rbx 000072a112a71000  rcx 000072a74ce76b98  rdx 0000000000000006
+10-06 10:26:38.661  8571  8571 F DEBUG   :     r8  6f6e203a474e4148  r9  6f6e203a474e4148  r10 000072a10a7ffec0  r11 0000000000000206
+10-06 10:26:38.662  8571  8571 F DEBUG   :     r12 0000000000000000  r13 000000000008c310  r14 000072a112a71050  r15 000072a0f829dff0
+10-06 10:26:38.662  8571  8571 F DEBUG   :     rdi 0000000000001c5f  rsi 0000000000001caa
+10-06 10:26:38.662  8571  8571 F DEBUG   :     rbp 000000004008c301  rsp 000072a0f829d9c8  rip 000072a74ce76b98
+10-06 10:26:38.662  8571  8571 F DEBUG   : 3 total frames
+10-06 10:26:38.662  8571  8571 F DEBUG   : backtrace:
+10-06 10:26:38.662  8571  8571 F DEBUG   :       #00 pc 000000000005db98  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+24) (BuildId: fa337969c798946280caa45e2d71a2e7)
+10-06 10:26:38.662  8571  8571 F DEBUG   :       #01 pc 00000000001fdeae  /system/lib64/libndk_translation.so (ndk_translation::RunKernelSyscall(ndk_translation::ProcessState*)+78) (BuildId: 553ba82b76bb5a11fd1d67b2c7e01b75)
+10-06 10:26:38.662  8571  8571 F DEBUG   :       #02 pc 00000000000db2a4  <anonymous:72a0ba4a2000>
+10-06 10:26:38.685   219   219 E tombstoned: Tombstone written to: tombstone_00
+10-06 10:26:38.685   550  8577 I DropBoxManagerService: add tag=data_app_native_crash isTagEnabled=true flags=0x2
+10-06 10:26:38.686   550  8576 W ActivityTaskManager:   Force finishing activity org.krita.mobilefork/org.krita.android.MainActivity
+10-06 10:26:38.686   906   947 V WindowManagerShell: Transition requested: android.os.BinderProxy@e7c7276 TransitionRequestInfo { type = CLOSE, triggerTask = null, remoteTransition = null, displayChange = null }
+10-06 10:26:38.687  7263  7263 I krita.MainActivity: [onDestroy]
+10-06 10:26:38.688   420   420 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-06 10:26:38.689   550   567 V WindowManager: Sent Transition #30 createdAt=10-06 10:26:38.686 via request=TransitionRequestInfo { type = CLOSE, triggerTask = null, remoteTransition = null, displayChange = null }
+10-06 10:26:38.689   550   567 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-06 10:26:38.689   550   567 V WindowManager:     info={id=30 t=CLOSE f=0x10 trk=0 r=[] c=[]}
+10-06 10:26:38.689   906   947 V WindowManagerShell: onTransitionReady android.os.BinderProxy@e7c7276: {id=30 t=CLOSE f=0x10 trk=0 r=[] c=[]}
+10-06 10:26:38.689   906   947 V WindowManagerShell: No transition roots in (#30)android.os.BinderProxy@e7c7276@0 so abort
+10-06 10:26:38.690   906   947 V WindowManagerShell: Transition animation finished (aborted=true), notifying core (#30)android.os.BinderProxy@e7c7276@0
+10-06 10:26:38.690   550  1536 W ActivityManager: Background started FGS: Disallowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: CRE ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:DENIED; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 10:26:38.690   550  1536 W ActivityManager: startForegroundService() not allowed due to mAllowStartForeground false: service org.krita.mobilefork/org.krita.android.DocumentSaverService
+10-06 10:26:38.690   550  1536 D CompatibilityChangeReporter: Compat change id reported: 174041399; UID 10192; state: ENABLED
+10-06 10:26:38.690   550   567 V WindowManager: Finish Transition #30: created at 10-06 10:26:38.686 collect-started=0.027ms request-sent=0.081ms started=0.701ms ready=0.692ms sent=2.154ms finished=3.768ms
+10-06 10:26:38.690   906   947 V WindowManagerShell: Track 0 became idle
+10-06 10:26:38.690   906   947 V WindowManagerShell: All active transition animations finished
+10-06 10:26:38.691  7263  7263 W krita.MainActivity: ForegroundServiceStartNotAllowedException: android.app.ForegroundServiceStartNotAllowedException: startForegroundService() not allowed due to mAllowStartForeground false: service org.krita.mobilefork/org.krita.android.DocumentSaverService
+10-06 10:26:38.691   550  1536 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10150; state: ENABLED
+10-06 10:26:38.691   550  2450 W ActivityManager: Background start not allowed: service Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) } to org.krita.mobilefork/org.krita.android.DocumentSaverService from pid=7263 uid=10192 pkg=org.krita.mobilefork startFg?=false
+10-06 10:26:38.691  7263  7263 W krita.MainActivity: ServiceStartNotAllowedException: android.app.BackgroundServiceStartNotAllowedException: Not allowed to start service Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }: app is in background uid UidRecord{11985e7 u0a192 CRE  bg:+1m58s130ms idle change:procstate procs:0 seq(41256,40725)} caps=------
+10-06 10:26:38.692  7263  7263 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@3978c3
+10-06 10:26:38.692   550  1536 D CoreBackPreview: Window{dc02317 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 10:26:38.692   550   635 I BootReceiver: Copying /data/tombstones/tombstone_00 to DropBox (SYSTEM_TOMBSTONE)
+10-06 10:26:38.692   550   635 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+10-06 10:26:38.694   550  1536 W InputManager-JNI: Input channel object 'dc02317 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 10:26:38.697   361   361 I Zygote  : Process 7263 exited due to signal 6 (Aborted)
+10-06 10:26:38.702   550   635 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+10-06 10:26:38.870   550  1835 I WindowManager: WIN DEATH: Window{1c60dd9 u0 org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 10:26:38.870   550  1835 W InputManager-JNI: Input channel object '1c60dd9 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 10:26:38.870   550  2450 I ActivityManager: Process org.krita.mobilefork (pid 7263) has died: cch CRE 
+10-06 10:26:38.872   420   420 E BpTransactionCompletedListener: Failed to transact (-32)
+10-06 10:26:38.872   550   581 I libprocessgroup: Successfully killed process cgroup uid 10192 pid 7263 in 1ms
+10-06 10:26:38.872   550  2450 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{1a5016a u0 org.krita.mobilefork/org.krita.android.MainActivity t11} (client)' was disposed without first being removed with the input manager!
+10-06 10:26:38.878   550   568 D DisplayManagerService: Drop pending events for gone uid 10192
+10-06 10:26:38.881   550   578 W UsageStatsService: Unexpected activity event reported! (org.krita.mobilefork/org.krita.android.MainActivity event : 23 instanceId : 209153784)
+10-06 10:26:41.874   550  3372 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-06 10:26:42.263   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:42.263   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:42.264   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:42.264   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:26:42.264   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:26:42.265   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:26:42.265   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:26:42.265   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:26:42.265   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:26:42.266   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:26:42.266   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:26:42.266   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:26:42.267   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:26:42.267   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:26:42.271   550  1835 D ActivityManager: freezer override set to true
+10-06 10:26:42.271   550  1835 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:42.271   550  1835 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:42.271   550  1835 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:26:42.272   550  1835 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:26:42.273   550  1835 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:26:42.273   550  1835 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:26:42.273   550  1835 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:26:42.273   550  1835 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:26:42.273   550  1835 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:26:42.278   550  1835 D ActivityManager: freezer override set to false
+10-06 10:26:45.029   906   906 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-06 10:26:45.969   906   906 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 10:26:49.267  1631  2854 I PhenotypeProcessReaper: Memory state is: 200
+10-06 10:26:51.690  7928  7928 I DialerTimeKeeperDbRefreshingWorker: com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker.startWork:64 enter
+10-06 10:26:51.690  7928  7965 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=64441192-c2b7-4bd1-a9aa-e7ebe408e28b, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker } ]
+10-06 10:26:51.858   906   983 D ControlsListingControllerImpl: Subscribing callback, service count: 0
+10-06 10:26:51.861   906   983 D ControlsListingControllerImpl: Unsubscribing callback
+10-06 10:26:52.323   550   640 D ActivityManager: freezing 4061 com.google.android.gm
+10-06 10:26:52.324   550   640 D ActivityManager: freezing 5831 com.google.android.gms.ui
+10-06 10:26:52.324   550   640 D ActivityManager: freezing 2320 com.google.android.as.oss
+10-06 10:26:52.324   550   640 D ActivityManager: freezing 5259 com.google.android.settings.intelligence
+10-06 10:26:52.324   550   640 D ActivityManager: freezing 4016 com.google.android.rkpdapp
+10-06 10:26:52.325   550   640 D ActivityManager: freezing 2248 com.google.process.gapps
+10-06 10:26:52.325   550   640 D ActivityManager: freezing 4009 com.google.android.projection.gearhead:shared
+10-06 10:26:52.325   550   640 D ActivityManager: freezing 5190 com.google.android.googlequicksearchbox
+10-06 10:26:52.326   550   640 D ActivityManager: freezing 7372 com.google.android.gms.unstable
+10-06 10:26:52.326   550   640 D ActivityManager: freezing 7928 com.google.android.dialer
+10-06 10:26:52.326   550   640 D ActivityManager: freezing 1888 com.google.android.apps.youtube.music
+10-06 10:26:52.327   550   640 D ActivityManager: freezing 3133 com.google.android.documentsui
+10-06 10:26:52.327   550   640 D ActivityManager: freezing 1791 android.process.acore
+10-06 10:26:52.328   550   640 D ActivityManager: freezing 909 com.google.android.permissioncontroller
+10-06 10:26:52.351   550   622 D ActivityManager: freezer override set to true
+10-06 10:26:52.351   550   622 D ActivityManager: sync unfroze 4061 com.google.android.gm for 19
+10-06 10:26:52.352   550   622 D ActivityManager: sync unfroze 5831 com.google.android.gms.ui for 19
+10-06 10:26:52.352   550   622 D ActivityManager: sync unfroze 2320 com.google.android.as.oss for 19
+10-06 10:26:52.353   550   622 D ActivityManager: sync unfroze 5259 com.google.android.settings.intelligence for 19
+10-06 10:26:52.353   550   622 D ActivityManager: sync unfroze 4016 com.google.android.rkpdapp for 19
+10-06 10:26:52.353   550   622 D ActivityManager: sync unfroze 2248 com.google.process.gapps for 19
+10-06 10:26:52.353   550   622 D ActivityManager: sync unfroze 4009 com.google.android.projection.gearhead:shared for 19
+10-06 10:26:52.354   550   622 D ActivityManager: sync unfroze 5190 com.google.android.googlequicksearchbox for 19
+10-06 10:26:52.354   550   622 D ActivityManager: sync unfroze 7372 com.google.android.gms.unstable for 19
+10-06 10:26:52.354   550   622 D ActivityManager: sync unfroze 7928 com.google.android.dialer for 19
+10-06 10:26:52.355   550   622 D ActivityManager: sync unfroze 1888 com.google.android.apps.youtube.music for 19
+10-06 10:26:52.356   550   622 D ActivityManager: sync unfroze 3133 com.google.android.documentsui for 19
+10-06 10:26:52.356   550   622 D ActivityManager: sync unfroze 1791 android.process.acore for 19
+10-06 10:26:52.356   550   622 D ActivityManager: sync unfroze 909 com.google.android.permissioncontroller for 19
+10-06 10:26:52.360   550   622 D ActivityManager: freezer override set to false
