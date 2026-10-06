@@ -89,7 +89,10 @@ Sheet::Sheet(QWidget *parent)
 
     m_panelStack = new QStackedWidget;
     m_panelStack->setObjectName(QStringLiteral("mobileSheetContent"));
-    m_panelStack->setStyleSheet(panelStyleSheet());
+    // Krita's dockers in the sheet get the phone look and phone-friendly
+    // controls (see DialogFitter::adaptControls).
+    m_panelStack->setStyleSheet(dialogStyleSheet());
+    m_panelStack->setProperty("mobilePhoneRoot", true);
     layout->addWidget(m_panelStack, 1);
 
     m_animation->setDuration(ANIMATION_MS);
@@ -111,7 +114,7 @@ Sheet::Sheet(QWidget *parent)
 void Sheet::refreshTheme()
 {
     m_closeButton->setIcon(mobileui::icon(QStringLiteral("close")));
-    m_panelStack->setStyleSheet(panelStyleSheet());
+    m_panelStack->setStyleSheet(dialogStyleSheet());
     update();
 }
 

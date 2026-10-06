@@ -621,6 +621,7 @@ jobs:
           mkdir -p shots
           cp emu/phone/*.png emu/phone/*.csv emu/phone/testdriver.log shots/ 2>/dev/null
           cp emu/walk/walk.csv emu/walk/runtime-inventory.csv shots/ 2>/dev/null
+          mkdir -p shots/walk; cp emu/walk/walk/*.png shots/walk/ 2>/dev/null
           cp emu/walk/testdriver.log shots/testdriver-walk.log 2>/dev/null
           for f in emu/classic/*.png; do [ -f "$f" ] && cp "$f" "shots/$(basename "$f")"; done
           cp emu/classic/testdriver.log shots/testdriver-classic.log 2>/dev/null

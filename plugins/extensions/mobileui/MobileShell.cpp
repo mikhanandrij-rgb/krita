@@ -490,6 +490,9 @@ void Shell::activate()
         m_dialogFitter = new DialogFitter(this);
     }
     qApp->installEventFilter(m_dialogFitter);
+    if (m_sheet) {
+        m_dialogFitter->adaptControls(m_sheet->findChild<QWidget *>(QStringLiteral("mobileSheetContent")));
+    }
 
     updateLayout();
     updateTitle();
@@ -522,6 +525,7 @@ void Shell::deactivate()
     if (m_dialogFitter) {
         qApp->removeEventFilter(m_dialogFitter);
         m_dialogFitter->restoreWidgets();
+        m_dialogFitter->restoreControls(m_mainWindow);
     }
     mw->removeEventFilter(this);
     if (mw->centralWidget()) {

@@ -15,6 +15,15 @@
 #include <QBoxLayout>
 #include <QDialog>
 #include <QDebug>
+#include <QScopedValueRollback>
+#include <QFontMetrics>
+#include <QStyle>
+#include <QTreeView>
+#include <QRadioButton>
+#include <QListView>
+#include <QLabel>
+#include <QComboBox>
+#include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QEvent>
 #include <QFileDialog>
@@ -423,8 +432,189 @@ DialogFitter::DialogFitter(QObject *parent)
 {
 }
 
+namespace {
+const char *const PHONE_ROOT = "mobilePhoneRoot";
+const char *const ADAPTED = "mobileAdapted";
+
+bool insidePhoneRoot(const QWidget *widget)
+{
+    for (const QWidget *w = widget; w; w = w->parentWidget()) {
+        if (w->property(PHONE_ROOT).toBool()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool isAdaptable(const QObject *o)
+{
+    return qobject_cast<const QCheckBox *>(o) || qobject_cast<const QRadioButton *>(o) || qobject_cast<const QLabel *>(o)
+        || qobject_cast<const QComboBox *>(o) || qobject_cast<const QListView *>(o) || qobject_cast<const QTreeView *>(o);
+}
+} // namespace
+
+void DialogFitter::markPhoneRoot(QWidget *root)
+{
+    if (root) {
+        root->setProperty(PHONE_ROOT, true);
+    }
+}
+
+void DialogFitter::adaptControls(QWidget *root)
+{
+    if (!root) {
+        return;
+    }
+    markPhoneRoot(root);
+    for (QWidget *w : root->findChildren<QWidget *>()) {
+        if (isAdaptable(w)) {
+            adaptControl(w);
+        }
+    }
+}
+
+void DialogFitter::adaptControl(QWidget *w)
+{
+    if (w->property(ADAPTED).toBool()) {
+        return;
+    }
+    // Krita's own sheet chrome and the phone interface's widgets are left alone.
+    if (w->property("mobileChrome").toBool()) {
+        return;
+    }
+    w->setProperty(ADAPTED, true);
+    if (QAbstractButton *button = qobject_cast<QAbstractButton *>(w)) {
+        if (button->text().size() < 16) {
+            return;
+        }
+        button->setProperty("mobileOrigText", button->text());
+        button->setProperty("mobileOrigMinWidth", button->minimumWidth());
+        button->setMinimumWidth(qMin(button->minimumSizeHint().width(), dp(96)));
+        button->installEventFilter(this);
+        rewrapButton(button);
+    } else if (QLabel *label = qobject_cast<QLabel *>(w)) {
+        if (label->wordWrap() || label->text().size() < 24 || label->text().contains(QLatin1Char('\n'))) {
+            return;
+        }
+        label->setProperty("mobileOrigWordWrap", false);
+        label->setWordWrap(true);
+    } else if (QComboBox *combo = qobject_cast<QComboBox *>(w)) {
+        combo->setProperty("mobileOrigSizeAdjust", int(combo->sizeAdjustPolicy()));
+        combo->setProperty("mobileOrigMinContents", combo->minimumContentsLength());
+        combo->setSizeAdjustPolicy(QComboBox::AdjustToMinimumContentsLengthWithIcon);
+        combo->setMinimumContentsLength(8);
+    } else if (QListView *list = qobject_cast<QListView *>(w)) {
+        list->setProperty("mobileOrigWordWrap", list->wordWrap());
+        list->setProperty("mobileOrigElide", int(list->textElideMode()));
+        list->setWordWrap(true);
+        list->setTextElideMode(Qt::ElideMiddle);
+    } else if (QTreeView *tree = qobject_cast<QTreeView *>(w)) {
+        tree->setProperty("mobileOrigElide", int(tree->textElideMode()));
+        tree->setTextElideMode(Qt::ElideMiddle);
+    }
+}
+
+void DialogFitter::rewrapButton(QWidget *w)
+{
+    QAbstractButton *button = qobject_cast<QAbstractButton *>(w);
+    if (!button || m_rewrapping) {
+        return;
+    }
+    const QString original = button->property("mobileOrigText").toString();
+    if (original.isEmpty()) {
+        return;
+    }
+    QStyle *style = button->style();
+    const bool radio = qobject_cast<QRadioButton *>(button) != nullptr;
+    const int indicator = style->pixelMetric(radio ? QStyle::PM_ExclusiveIndicatorWidth : QStyle::PM_IndicatorWidth, nullptr, button)
+        + style->pixelMetric(radio ? QStyle::PM_RadioButtonLabelSpacing : QStyle::PM_CheckBoxLabelSpacing, nullptr, button);
+    // The space the text gets: the button's own width, or what its parent
+    // can offer when the layout hasn't narrowed it yet.
+    int width = button->width();
+    if (QWidget *parent = button->parentWidget()) {
+        width = qMin(width, parent->width() - button->x());
+    }
+    const int available = width - indicator - dp(8);
+    if (available < dp(48)) {
+        return;
+    }
+    QString plain = original;
+    plain.remove(QLatin1Char('&'));
+    QFontMetrics fm(button->font());
+    QString result;
+    if (fm.horizontalAdvance(plain) <= available) {
+        result = original;
+    } else {
+        // Greedy word wrap on the original text (mnemonics kept).
+        const QStringList words = original.split(QLatin1Char(' '), Qt::SkipEmptyParts);
+        QString line;
+        for (const QString &word : words) {
+            const QString candidate = line.isEmpty() ? word : line + QLatin1Char(' ') + word;
+            QString measured = candidate;
+            measured.remove(QLatin1Char('&'));
+            if (!line.isEmpty() && fm.horizontalAdvance(measured) > available) {
+                result += (result.isEmpty() ? QString() : QStringLiteral("\n")) + line;
+                line = word;
+            } else {
+                line = candidate;
+            }
+        }
+        if (!line.isEmpty()) {
+            result += (result.isEmpty() ? QString() : QStringLiteral("\n")) + line;
+        }
+    }
+    if (result != button->text()) {
+        QScopedValueRollback<bool> guard(m_rewrapping, true);
+        button->setText(result);
+    }
+}
+
+void DialogFitter::restoreControls(QWidget *root)
+{
+    if (!root) {
+        return;
+    }
+    QList<QWidget *> widgets = root->findChildren<QWidget *>();
+    widgets.prepend(root);
+    for (QWidget *w : widgets) {
+        if (!w->property(ADAPTED).toBool()) {
+            continue;
+        }
+        w->setProperty(ADAPTED, QVariant());
+        if (QAbstractButton *button = qobject_cast<QAbstractButton *>(w)) {
+            if (button->property("mobileOrigText").isValid()) {
+                button->removeEventFilter(this);
+                button->setText(button->property("mobileOrigText").toString());
+                button->setMinimumWidth(button->property("mobileOrigMinWidth").toInt());
+                button->setProperty("mobileOrigText", QVariant());
+            }
+        } else if (QLabel *label = qobject_cast<QLabel *>(w)) {
+            if (label->property("mobileOrigWordWrap").isValid()) {
+                label->setWordWrap(label->property("mobileOrigWordWrap").toBool());
+            }
+        } else if (QComboBox *combo = qobject_cast<QComboBox *>(w)) {
+            combo->setSizeAdjustPolicy(QComboBox::SizeAdjustPolicy(combo->property("mobileOrigSizeAdjust").toInt()));
+            combo->setMinimumContentsLength(combo->property("mobileOrigMinContents").toInt());
+        } else if (QAbstractItemView *view = qobject_cast<QAbstractItemView *>(w)) {
+            if (QListView *list = qobject_cast<QListView *>(view)) {
+                list->setWordWrap(list->property("mobileOrigWordWrap").toBool());
+            }
+            view->setTextElideMode(Qt::TextElideMode(view->property("mobileOrigElide").toInt()));
+        }
+    }
+    root->setProperty(PHONE_ROOT, QVariant());
+}
+
 bool DialogFitter::eventFilter(QObject *watched, QEvent *event)
 {
+    if (event->type() == QEvent::Resize && watched->property("mobileOrigText").isValid()) {
+        rewrapButton(static_cast<QWidget *>(watched));
+        return QObject::eventFilter(watched, event);
+    }
+    if (event->type() == QEvent::Show && watched->isWidgetType() && isAdaptable(watched)
+        && !watched->property(ADAPTED).toBool() && insidePhoneRoot(static_cast<QWidget *>(watched))) {
+        adaptControl(static_cast<QWidget *>(watched));
+    }
     if (event->type() == QEvent::Show && watched->isWidgetType()) {
         QDialog *dialog = qobject_cast<QDialog *>(watched);
         // Message boxes and native file dialogs size themselves well.
@@ -631,6 +821,7 @@ void DialogFitter::fit(QDialog *dialog)
         m_adapted.insert(dialog);
         // The phone look; appended so a dialog's own rules still win.
         dialog->setStyleSheet(dialogStyleSheet() + dialog->styleSheet());
+        adaptControls(dialog);
         connect(dialog, &QObject::destroyed, this, [this, dialog] {
             m_adapted.remove(dialog);
             m_wrapped.remove(dialog);

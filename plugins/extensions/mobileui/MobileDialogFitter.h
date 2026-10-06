@@ -35,6 +35,16 @@ public:
     // phone interface is switched off. Dialogs are recreated by Krita.
     void restoreWidgets();
 
+    // Phone-friendly controls inside a dialog or a sheet: long check box,
+    // radio button and label texts wrap instead of running off the screen,
+    // combo boxes shrink to the screen width, lists wrap their items. Every
+    // widget shown later inside a "phone root" (a fitted dialog, the sheet)
+    // is adapted too. restoreControls() undoes it for widgets that outlive
+    // the phone interface (Krita's dockers).
+    static void markPhoneRoot(QWidget *root);
+    void adaptControls(QWidget *root);
+    void restoreControls(QWidget *root);
+
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 
@@ -50,6 +60,9 @@ private:
     bool adaptOpenPane(QDialog *dialog, const QRect &screen);
 
     void stackSideLists(QWidget *root);
+    void adaptControl(QWidget *widget);
+    void rewrapButton(QWidget *button);
+    bool m_rewrapping = false;
 
     struct StackedView {
         QPointer<QWidget> view;

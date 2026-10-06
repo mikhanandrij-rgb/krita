@@ -32,6 +32,7 @@
 #include <QLayout>
 #include <QPixmap>
 #include <QPointer>
+#include <QRegularExpression>
 #include <QScopedPointer>
 #include <QSet>
 #include <QTextStream>
@@ -582,7 +583,23 @@ private:
         });
     }
 
-    QStringList closeStrayWindows()
+    // Every window a command opens is saved before it is closed, so each
+    // dialog can be looked at in the phone interface.
+    void grabWalkWindow(QWidget *w, const QString &name, int n)
+    {
+        if (name.isEmpty() || !w || w->width() < 10 || w->height() < 10) {
+            return;
+        }
+        QDir().mkpath(QDir(m_dir).filePath(QStringLiteral("walk")));
+        QString safe = name;
+        safe.replace(QRegularExpression(QStringLiteral("[^A-Za-z0-9_.-]")), QStringLiteral("_"));
+        const QString path = QDir(m_dir).filePath(QStringLiteral("walk/%1-%2%3.png")
+                                                      .arg(m_walkIndex, 3, 10, QLatin1Char('0'))
+                                                      .arg(safe, n > 0 ? QStringLiteral("-%1").arg(n) : QString()));
+        saveGrab(w, path);
+    }
+
+    QStringList closeStrayWindows(const QString &grabName = QString())
     {
         QStringList closed;
         for (int pass = 0; pass < 4; ++pass) {
@@ -590,6 +607,7 @@ private:
             if (!modal || modal == mw()) {
                 break;
             }
+            grabWalkWindow(modal, grabName, closed.size());
             closed << QString::fromLatin1(modal->metaObject()->className());
             if (QDialog *dialog = qobject_cast<QDialog *>(modal)) {
                 dialog->reject();
@@ -605,6 +623,7 @@ private:
             if (!w->isVisible() || w == mw() || m_walkBaseline.contains(w) || type == Qt::ToolTip) {
                 continue;
             }
+            grabWalkWindow(w, grabName, closed.size());
             closed << QString::fromLatin1(w->metaObject()->className());
             if (QDialog *dialog = qobject_cast<QDialog *>(w)) {
                 dialog->reject();
@@ -681,7 +700,7 @@ private:
         QPointer<QAction> action = item.action;
         QTimer::singleShot(checkable ? 80 : 600, this, [this, item, action] {
             const qint64 ms = m_walkTimer.elapsed();
-            const QStringList closed = closeStrayWindows();
+            const QStringList closed = closeStrayWindows(item.id);
             if (m_shell) {
                 m_shell->closePanel();
             }
