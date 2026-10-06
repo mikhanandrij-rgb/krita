@@ -1,9 +1,14 @@
 == emulator-partial (run 29): running
-status: running (warmup done)
+status: running (classic done)
 commit: a7303deea17471f02c13b9f2edf9971b064755d8
 run classic: done after 112 s
 interface: classic (smallest side 411 dp)
 perf classic-start: interface-ready-ms=76938 first-canvas-ms=-1 rss-kb=1351492 peak-kb=1352264 uptime-ms=82722
 perf classic-canvas: interface-ready-ms=76938 first-canvas-ms=90495 rss-kb=1490600 peak-kb=1490600 uptime-ms=96208
 perf classic-end: interface-ready-ms=76938 first-canvas-ms=90495 rss-kb=1516352 peak-kb=1527552 uptime-ms=106161
+run classic: done after 51 s
+interface: classic (smallest side 411 dp)
+perf classic-start: interface-ready-ms=22061 first-canvas-ms=-1 rss-kb=1122800 peak-kb=1122800 uptime-ms=27966
+perf classic-canvas: interface-ready-ms=22061 first-canvas-ms=36124 rss-kb=1271632 peak-kb=1271632 uptime-ms=41587
+perf classic-end: interface-ready-ms=22061 first-canvas-ms=36124 rss-kb=1290312 peak-kb=1301820 uptime-ms=49986
 

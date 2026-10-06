@@ -116,3 +116,7 @@ INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 WARNING      | adb command '/usr/local/lib/android/sdk/platform-tools/adb -s emulator-5554 shell cmd overlay list ' failed: 'adb: device 'emulator-5554' not found'
 ERROR        | Failed to find ColorBuffer: 314
 ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 451
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | DisplaySurfaceGlContextHelper context was preempted by others, current=0x3, needed=0x3, thread=0x55cd5697fa48
+ERROR        | Failed to restore previous context: 12297
