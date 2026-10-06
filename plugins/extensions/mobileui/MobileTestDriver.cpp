@@ -21,7 +21,9 @@
 #include <KoColorSpaceRegistry.h>
 #include <kis_config.h>
 
+#include <QAbstractButton>
 #include <QAction>
+#include <QLabel>
 #include <QApplication>
 #include <QClipboard>
 #include <QImage>
@@ -35,6 +37,7 @@
 #include <QPixmap>
 #include <QPointer>
 #include <QRegularExpression>
+#include <QScrollArea>
 #include <QScopedPointer>
 #include <QSet>
 #include <QTextStream>
@@ -60,6 +63,13 @@ namespace {
 // timeout. The test driver beats on every step of the run.
 class HangDetector
 {
+#ifdef Q_OS_ANDROID
+    // The emulator runs Krita's ARM code through a translator; image
+    // operations of the walk can legitimately take minutes there.
+    static constexpr int HANG_SECONDS = 300;
+#else
+    static constexpr int HANG_SECONDS = 120;
+#endif
 public:
     explicit HangDetector(const QString &logPath)
         : m_logPath(logPath.toLocal8Bit())
@@ -75,9 +85,9 @@ public:
                     quietSeconds = 0;
                     continue;
                 }
-                if (++quietSeconds >= 120 && !m_stop) {
+                if (++quietSeconds >= HANG_SECONDS && !m_stop) {
                     if (FILE *f = fopen(m_logPath.constData(), "a")) {
-                        fprintf(f, "HANG: no progress for 120 s, aborting for a backtrace\n");
+                        fprintf(f, "HANG: no progress for %d s, aborting for a backtrace\n", HANG_SECONDS);
                         fclose(f);
                     }
                     std::abort();
@@ -166,6 +176,17 @@ private:
         }
         const QString path = QDir(m_dir).filePath(QStringLiteral("%1-%2.png").arg(m_orientation, name));
         log(QStringLiteral("screenshot %1 %2").arg(path, saveGrab(mw(), path) ? QStringLiteral("ok") : QStringLiteral("FAILED")));
+        const QStringList overflows = horizontalOverflows(mw());
+        for (const QString &overflow : overflows) {
+            log(QStringLiteral("OVERFLOW %1: %2").arg(name, overflow));
+        }
+        if (!overflows.isEmpty() && !config::testSetting("KRITA_MOBILE_DUMP").isEmpty()) {
+            QFile dump(QString(path).replace(QStringLiteral(".png"), QStringLiteral(".txt")));
+            if (dump.open(QIODevice::WriteOnly | QIODevice::Text)) {
+                QTextStream out(&dump);
+                dumpWidget(out, mw(), 0);
+            }
+        }
     }
 
     void setSize(int w, int h, const QString &orientation)
@@ -345,6 +366,16 @@ private:
         safe.replace(QLatin1Char(' '), QLatin1Char('_'));
         const QString path = QDir(m_dir).filePath(QStringLiteral("dialog-%1-%2.png").arg(m_orientation, safe));
         const bool ok = saveGrab(found, path);
+        for (const QString &overflow : horizontalOverflows(found)) {
+            log(QStringLiteral("OVERFLOW dialog %1: %2").arg(actionName, overflow));
+        }
+        if (!config::testSetting("KRITA_MOBILE_DUMP").isEmpty()) {
+            QFile dump(QDir(m_dir).filePath(QStringLiteral("dump-%1-%2.txt").arg(m_orientation, safe)));
+            if (dump.open(QIODevice::WriteOnly | QIODevice::Text)) {
+                QTextStream out(&dump);
+                dumpWidget(out, found, 0);
+            }
+        }
         log(QStringLiteral("dialog %1: %2 %3x%4 min %5x%6 %7")
                 .arg(actionName, QString::fromLatin1(found->metaObject()->className()))
                 .arg(found->width())
@@ -366,6 +397,75 @@ private:
             }
             log(QStringLiteral("dialog %1: closed").arg(actionName));
         });
+    }
+
+    // Visible scroll areas whose contents are wider than they are: the
+    // places a user would have to scroll sideways. Item views (lists,
+    // tables, the timeline) scroll on purpose and are not counted.
+    static QStringList horizontalOverflows(QWidget *root)
+    {
+        QStringList found;
+        for (QScrollArea *area : root->findChildren<QScrollArea *>()) {
+            QWidget *content = area->widget();
+            if (!content || !area->isVisible() || !area->widgetResizable()) {
+                continue;
+            }
+            if (area->objectName() == QLatin1String("mobileTitleScroll")) {
+                continue; // the docker title bars scroll on purpose
+            }
+            const int need = content->minimumSizeHint().width();
+            const int have = area->viewport()->width();
+            if (need > have + 2) {
+                found << QStringLiteral("%1 in %2 (%3 > %4)")
+                             .arg(QString::fromLatin1(content->metaObject()->className()),
+                                  QString::fromLatin1(area->parentWidget() ? area->parentWidget()->metaObject()->className() : "-"))
+                             .arg(need)
+                             .arg(have);
+            }
+        }
+        return found;
+    }
+
+    // Widget and layout tree with sizes, for finding what makes a window
+    // too wide (KRITA_MOBILE_DUMP).
+    static void dumpLayout(QTextStream &out, QLayout *layout, int depth)
+    {
+        const QString indent(depth * 2, QLatin1Char(' '));
+        out << indent << "[" << layout->metaObject()->className() << " min " << layout->minimumSize().width() << " margins "
+            << layout->contentsMargins().left() << "+" << layout->contentsMargins().right() << "]\n";
+        for (int i = 0; i < layout->count(); ++i) {
+            QLayoutItem *item = layout->itemAt(i);
+            if (item->widget()) {
+                out << indent << "  item widget " << item->widget()->metaObject()->className() << " '" << item->widget()->objectName()
+                    << "' min " << item->minimumSize().width() << (item->isEmpty() ? " (empty)" : "") << "\n";
+            } else if (item->layout()) {
+                dumpLayout(out, item->layout(), depth + 1);
+            } else if (item->spacerItem()) {
+                out << indent << "  spacer min " << item->minimumSize().width() << " hint " << item->sizeHint().width() << "\n";
+            }
+        }
+    }
+
+    static void dumpWidget(QTextStream &out, QWidget *w, int depth)
+    {
+        const QString indent(depth * 2, QLatin1Char(' '));
+        out << indent << w->metaObject()->className() << " '" << w->objectName() << "' geom " << w->x() << "," << w->y() << " "
+            << w->width() << "x" << w->height() << " min " << w->minimumWidth() << " minHint " << w->minimumSizeHint().width()
+            << " hint " << w->sizeHint().width() << (w->isHidden() ? " HIDDEN" : "");
+        if (QAbstractButton *b = qobject_cast<QAbstractButton *>(w)) {
+            out << " text '" << b->text().left(40) << "'";
+        } else if (QLabel *l = qobject_cast<QLabel *>(w)) {
+            out << " text '" << l->text().left(40) << "' wrap " << l->wordWrap();
+        }
+        out << "\n";
+        if (w->layout()) {
+            dumpLayout(out, w->layout(), depth + 1);
+        }
+        for (QWidget *c : w->findChildren<QWidget *>(QString(), Qt::FindDirectChildrenOnly)) {
+            if (!c->isWindow()) {
+                dumpWidget(out, c, depth + 1);
+            }
+        }
     }
 
     void addDialogs()
@@ -494,9 +594,12 @@ private:
         addDialogs();
         addPanelTimings();
         m_steps.append([this] { logPerf(QStringLiteral("after-portrait")); });
-        m_steps.append([this] { setSize(891, 411, QStringLiteral("landscape")); });
-        addScreens();
-        addDialogs();
+        // KRITA_MOBILE_QUICK: portrait only (for checking layouts locally).
+        if (config::testSetting("KRITA_MOBILE_QUICK").isEmpty()) {
+            m_steps.append([this] { setSize(891, 411, QStringLiteral("landscape")); });
+            addScreens();
+            addDialogs();
+        }
         m_steps.append([this] {
             if (m_shell) {
                 m_shell->dumpInventory(QDir(m_dir).filePath(QStringLiteral("runtime-inventory.csv")));
@@ -579,7 +682,14 @@ private:
             m_shell->closePanel();
             m_shell->hideHub();
             QSet<QString> seen;
+            // KRITA_MOBILE_WALK_ONLY: a regular expression of command names
+            // (for checking a few windows locally).
+            const QString only = config::testSetting("KRITA_MOBILE_WALK_ONLY");
+            const QRegularExpression onlyRe(only);
             for (const CommandBrowser::Entry &entry : m_shell->commandBrowser()->allEntries()) {
+                if (entry.action && !only.isEmpty() && !onlyRe.match(entry.action->objectName()).hasMatch()) {
+                    continue;
+                }
                 if (entry.action && !entry.action->objectName().isEmpty() && !seen.contains(entry.action->objectName())) {
                     seen.insert(entry.action->objectName());
                     m_walk.append({entry.action, entry.action->objectName(), entry.path});
@@ -622,6 +732,16 @@ private:
                                                       .arg(m_walkIndex, 3, 10, QLatin1Char('0'))
                                                       .arg(safe, n > 0 ? QStringLiteral("-%1").arg(n) : QString()));
         saveGrab(w, path);
+        if (!config::testSetting("KRITA_MOBILE_DUMP").isEmpty()) {
+            QFile dump(QString(path).replace(QStringLiteral(".png"), QStringLiteral(".txt")));
+            if (dump.open(QIODevice::WriteOnly | QIODevice::Text)) {
+                QTextStream out(&dump);
+                dumpWidget(out, w, 0);
+            }
+        }
+        for (const QString &overflow : horizontalOverflows(w)) {
+            log(QStringLiteral("OVERFLOW walk %1: %2").arg(name, overflow));
+        }
     }
 
     QStringList closeStrayWindows(const QString &grabName = QString())

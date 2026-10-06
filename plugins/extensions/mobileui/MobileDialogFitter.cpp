@@ -22,6 +22,9 @@
 #include <QRadioButton>
 #include <QListView>
 #include <QLabel>
+#include <QLineEdit>
+#include <QAbstractSlider>
+#include <QAbstractSpinBox>
 #include <QComboBox>
 #include <QCheckBox>
 #include <QDialogButtonBox>
@@ -29,6 +32,7 @@
 #include <QFileDialog>
 #include <QFormLayout>
 #include <QGridLayout>
+#include <QGroupBox>
 #include <QHash>
 #include <QMenu>
 #include <QMessageBox>
@@ -522,6 +526,18 @@ void DialogFitter::gridToColumn(QGridLayout *grid)
     for (const Entry &e : entries) {
         // Labels were right-aligned next to their fields.
         const Qt::Alignment alignment = e.alignment & ~Qt::AlignHorizontal_Mask;
+        if (QLabel *label = qobject_cast<QLabel *>(e.item->widget())) {
+            const Qt::Alignment text = label->alignment();
+            if (text & (Qt::AlignRight | Qt::AlignHCenter)) {
+                QPointer<QLabel> guard(label);
+                m_undo.append([guard, text] {
+                    if (guard) {
+                        guard->setAlignment(text);
+                    }
+                });
+                label->setAlignment((text & ~Qt::AlignHorizontal_Mask) | Qt::AlignLeft);
+            }
+        }
         grid->addItem(e.item, row++, 0, 1, 1, alignment);
     }
     grid->setColumnStretch(0, 1);
@@ -575,20 +591,186 @@ void DialogFitter::setMinimumWidthUndoable(QWidget *w, int minimum, int maximum)
     w->setMaximumWidth(maximum);
 }
 
-int DialogFitter::reflowPass(QWidget *root, int limit)
+namespace {
+
+int horizontalMargins(const QLayout *l)
+{
+    const QMargins m = l->contentsMargins();
+    return m.left() + m.right();
+}
+
+// Sum of the margins of the layouts (top layout down to the innermost one)
+// that hold `w`; -1 when `w` is not in this layout.
+int marginsTo(QLayout *layout, QWidget *w)
+{
+    for (int i = 0; i < layout->count(); ++i) {
+        QLayoutItem *item = layout->itemAt(i);
+        if (item->widget() == w) {
+            return horizontalMargins(layout);
+        }
+        if (QLayout *sub = item->layout()) {
+            const int inner = marginsTo(sub, w);
+            if (inner >= 0) {
+                return horizontalMargins(layout) + inner;
+            }
+        }
+    }
+    return -1;
+}
+
+// How wide a widget can be inside `root` when `root` is `rootWidth` wide:
+// the root's width minus the frames, scroll bars and layout margins of
+// everything around it.
+class WidthBudget
+{
+public:
+    WidthBudget(QWidget *root, int rootWidth)
+        : m_root(root)
+        , m_rootWidth(rootWidth)
+    {
+    }
+
+    int forWidget(QWidget *w)
+    {
+        if (w == m_root || !w->parentWidget()) {
+            return m_rootWidth;
+        }
+        auto it = m_cache.constFind(w);
+        if (it != m_cache.constEnd()) {
+            return it.value();
+        }
+        QWidget *p = w->parentWidget();
+        int width = forWidget(p) - overhead(p);
+        if (p->layout()) {
+            const int margins = marginsTo(p->layout(), w);
+            if (margins > 0) {
+                width -= margins;
+            }
+        }
+        m_cache.insert(w, width);
+        return width;
+    }
+
+    // The space a layout gets from its widget (its own margins included).
+    int forLayout(QLayout *l)
+    {
+        QWidget *owner = l->parentWidget();
+        if (!owner) {
+            return m_rootWidth;
+        }
+        int width = forWidget(owner) - overhead(owner);
+        for (QObject *o = l->parent(); o && qobject_cast<QLayout *>(o); o = o->parent()) {
+            width -= horizontalMargins(static_cast<QLayout *>(o));
+        }
+        return width;
+    }
+
+private:
+    static int overhead(QWidget *p)
+    {
+        int extra = 0;
+        if (QAbstractScrollArea *area = qobject_cast<QAbstractScrollArea *>(p)) {
+            extra += 2 * area->frameWidth();
+            if (area->verticalScrollBarPolicy() != Qt::ScrollBarAlwaysOff) {
+                extra += area->style()->pixelMetric(QStyle::PM_ScrollBarExtent, nullptr, area);
+            }
+        } else if (QFrame *frame = qobject_cast<QFrame *>(p)) {
+            extra += 2 * frame->frameWidth();
+        }
+        if (qobject_cast<QGroupBox *>(p) || qobject_cast<QTabWidget *>(p)) {
+            extra += dp(8);
+        }
+        const QMargins m = p->contentsMargins();
+        return extra + m.left() + m.right();
+    }
+
+    QWidget *m_root;
+    int m_rootWidth;
+    QHash<QWidget *, int> m_cache;
+};
+
+} // namespace
+
+// A widget that now sits in a column of its own fills the column, the way
+// phone forms look, instead of keeping its fixed desktop width.
+void DialogFitter::fillColumn(QWidget *w)
+{
+    if (!w || w->property("mobileChrome").toBool()) {
+        return;
+    }
+    const QSizePolicy policy = w->sizePolicy();
+    const QSizePolicy::Policy h = policy.horizontalPolicy();
+    if (h != QSizePolicy::Fixed && h != QSizePolicy::Maximum) {
+        return;
+    }
+    const bool input = qobject_cast<QAbstractSpinBox *>(w) || qobject_cast<QComboBox *>(w) || qobject_cast<QLineEdit *>(w)
+        || qobject_cast<QAbstractSlider *>(w) || qobject_cast<QGroupBox *>(w) || w->layout();
+    if (!input) {
+        return;
+    }
+    QPointer<QWidget> guard(w);
+    const int maximum = w->maximumWidth();
+    m_undo.append([guard, policy, maximum] {
+        if (guard) {
+            guard->setSizePolicy(policy);
+            guard->setMaximumWidth(maximum);
+        }
+    });
+    QSizePolicy wide = policy;
+    wide.setHorizontalPolicy(QSizePolicy::Preferred);
+    w->setSizePolicy(wide);
+    if (maximum < QWIDGETSIZE_MAX && !w->layout()) {
+        w->setMaximumWidth(QWIDGETSIZE_MAX);
+    }
+}
+
+void DialogFitter::fillColumnItems(QLayout *layout)
+{
+    if (layout->parentWidget() && layout->parentWidget()->layout() == layout) {
+        fillColumn(layout->parentWidget());
+    }
+    for (int i = 0; i < layout->count(); ++i) {
+        QLayoutItem *item = layout->itemAt(i);
+        if (QWidget *w = item->widget()) {
+            fillColumn(w);
+            if (item->alignment() & Qt::AlignHorizontal_Mask) {
+                const Qt::Alignment old = item->alignment();
+                item->setAlignment(old & ~Qt::AlignHorizontal_Mask);
+                QPointer<QLayout> guard(layout);
+                m_undo.append([guard, w, old] {
+                    // Only if the widget is still in that layout.
+                    if (guard && guard->indexOf(w) >= 0) {
+                        guard->itemAt(guard->indexOf(w))->setAlignment(old);
+                    }
+                });
+            }
+        }
+    }
+}
+
+int DialogFitter::reflowStructure(QWidget *root, int width, QWidget *budgetRoot)
 {
     int changed = 0;
+    WidthBudget budget(budgetRoot ? budgetRoot : root, width);
     QList<QLayout *> layouts = root->findChildren<QLayout *>();
     if (root->layout() && !layouts.contains(root->layout())) {
         layouts.prepend(root->layout());
     }
-    for (QLayout *l : layouts) {
-        l->invalidate();
-    }
-    // Single controls that are wider than the screen on their own.
     for (QWidget *w : root->findChildren<QWidget *>()) {
-        if (w->isWindow() || !inLayout(w) || w->property("mobileChrome").toBool()) {
+        if (w->isWindow() || w->property("mobileChrome").toBool()) {
             continue;
+        }
+        const int limit = budget.forWidget(w);
+        // Column-shaped panels with a fixed desktop width (canvas size)
+        // use the width of the phone.
+        if (QLayout *own = w->layout()) {
+            QBoxLayout *box = qobject_cast<QBoxLayout *>(own);
+            const bool column = (box && box->direction() == QBoxLayout::TopToBottom) || qobject_cast<QFormLayout *>(own)
+                || (qobject_cast<QGridLayout *>(own) && static_cast<QGridLayout *>(own)->columnCount() == 1);
+            if (column && w->sizePolicy().horizontalPolicy() == QSizePolicy::Fixed && inLayout(w)) {
+                fillColumn(w);
+                ++changed;
+            }
         }
         if (QDialogButtonBox *box = qobject_cast<QDialogButtonBox *>(w)) {
             if (box->orientation() == Qt::Horizontal && box->minimumSizeHint().width() > limit) {
@@ -601,74 +783,56 @@ int DialogFitter::reflowPass(QWidget *root, int limit)
                 box->setOrientation(Qt::Vertical);
                 ++changed;
             }
-            continue;
-        }
-        if (QSplitter *splitter = qobject_cast<QSplitter *>(w)) {
-            if (splitter->orientation() == Qt::Horizontal && splitter->minimumSizeHint().width() > limit) {
-                bool fits = true;
+        } else if (QSplitter *splitter = qobject_cast<QSplitter *>(w)) {
+            // Panels side by side (brush editor: presets, settings, scratch
+            // pad) go below each other as soon as they want more room than
+            // the screen has, not only when they can't be squeezed any more.
+            if (splitter->orientation() == Qt::Horizontal && splitter->count() > 1
+                && splitter->sizeHint().width() > limit) {
+                QPointer<QSplitter> guard(splitter);
+                const QList<int> sizes = splitter->sizes();
+                m_undo.append([guard, sizes] {
+                    if (guard) {
+                        guard->setOrientation(Qt::Horizontal);
+                        guard->setSizes(sizes);
+                    }
+                });
+                splitter->setOrientation(Qt::Vertical);
+                // The old widths would become heights; every panel gets the
+                // height it asks for instead (the sheet scrolls).
+                QList<int> heights;
                 for (int i = 0; i < splitter->count(); ++i) {
-                    fits = fits && splitter->widget(i)->minimumSizeHint().width() <= limit;
+                    QWidget *panel = splitter->widget(i);
+                    heights << (panel->isHidden() ? 0 : qMax(panel->sizeHint().height(), panel->minimumSizeHint().height()));
                 }
-                if (fits) {
-                    QPointer<QSplitter> guard(splitter);
-                    m_undo.append([guard] {
-                        if (guard) {
-                            guard->setOrientation(Qt::Horizontal);
-                        }
-                    });
-                    splitter->setOrientation(Qt::Vertical);
-                    ++changed;
-                }
-            }
-            continue;
-        }
-        if (w->layout() || qobject_cast<QTabWidget *>(w) || qobject_cast<QStackedWidget *>(w)
-            || qobject_cast<QAbstractScrollArea *>(w)) {
-            // Containers: their contents are reflowed; only a fixed desktop
-            // minimum width is lifted.
-            if (w->minimumWidth() > limit) {
-                setMinimumWidthUndoable(w, 0, QWIDGETSIZE_MAX);
+                splitter->setSizes(heights);
                 ++changed;
             }
-            continue;
-        }
-        const int minimum = w->minimumWidth() > 0 ? w->minimumWidth() : w->minimumSizeHint().width();
-        if (minimum <= limit) {
-            continue;
-        }
-        QLabel *label = qobject_cast<QLabel *>(w);
-        if (label && !label->wordWrap() && label->text().contains(QLatin1Char(' ')) && w->minimumWidth() <= limit) {
-            QPointer<QLabel> guard(label);
-            m_undo.append([guard] {
-                if (guard) {
-                    guard->setWordWrap(false);
+        } else if (QTabBar *bar = qobject_cast<QTabBar *>(w)) {
+            if (!bar->usesScrollButtons() || bar->expanding()) {
+                QPointer<QTabBar> guard(bar);
+                const bool scroll = bar->usesScrollButtons();
+                const bool expanding = bar->expanding();
+                m_undo.append([guard, scroll, expanding] {
+                    if (guard) {
+                        guard->setUsesScrollButtons(scroll);
+                        guard->setExpanding(expanding);
+                    }
+                });
+                bar->setUsesScrollButtons(true);
+                bar->setExpanding(false);
+                bar->updateGeometry();
+                if (bar->parentWidget()) {
+                    bar->parentWidget()->updateGeometry();
                 }
-            });
-            label->setWordWrap(true);
-        } else {
-            setMinimumWidthUndoable(w, qMin(limit, dp(120)), w->maximumWidth() < QWIDGETSIZE_MAX ? qMax(dp(120), qMin(w->maximumWidth(), limit)) : QWIDGETSIZE_MAX);
-        }
-        ++changed;
-    }
-    for (QTabBar *bar : root->findChildren<QTabBar *>()) {
-        if (!bar->usesScrollButtons() || bar->expanding()) {
-            QPointer<QTabBar> guard(bar);
-            const bool scroll = bar->usesScrollButtons();
-            const bool expanding = bar->expanding();
-            m_undo.append([guard, scroll, expanding] {
-                if (guard) {
-                    guard->setUsesScrollButtons(scroll);
-                    guard->setExpanding(expanding);
-                }
-            });
-            bar->setUsesScrollButtons(true);
-            bar->setExpanding(false);
-            ++changed;
+                ++changed;
+            }
         }
     }
     // Rows that only overflow because their items are side by side.
     for (QLayout *l : layouts) {
-        if (l->minimumSize().width() <= limit || widestItem(l) > limit) {
+        const int limit = budget.forLayout(l);
+        if (l->minimumSize().width() <= limit || widestItem(l) > limit - horizontalMargins(l)) {
             continue;
         }
         if (QBoxLayout *box = qobject_cast<QBoxLayout *>(l)) {
@@ -681,11 +845,13 @@ int DialogFitter::reflowPass(QWidget *root, int limit)
                     }
                 });
                 box->setDirection(QBoxLayout::TopToBottom);
+                fillColumnItems(box);
                 ++changed;
             }
         } else if (QGridLayout *grid = qobject_cast<QGridLayout *>(l)) {
             if (grid->columnCount() > 1) {
                 gridToColumn(grid);
+                fillColumnItems(grid);
                 ++changed;
             }
         } else if (QFormLayout *form = qobject_cast<QFormLayout *>(l)) {
@@ -705,39 +871,188 @@ int DialogFitter::reflowPass(QWidget *root, int limit)
     return changed;
 }
 
-int DialogFitter::reflow(QWidget *root, int width)
+int DialogFitter::reflowControls(QWidget *root, int width, QWidget *budgetRoot)
+{
+    int changed = 0;
+    WidthBudget budget(budgetRoot ? budgetRoot : root, width);
+    for (QWidget *w : root->findChildren<QWidget *>()) {
+        if (w->isWindow() || !inLayout(w) || w->property("mobileChrome").toBool()) {
+            continue;
+        }
+        if (qobject_cast<QDialogButtonBox *>(w) || qobject_cast<QSplitter *>(w)) {
+            continue;
+        }
+        const int limit = budget.forWidget(w);
+        if (limit < dp(48)) {
+            continue; // something around it is still too wide
+        }
+        // A size policy that makes the preferred width the minimum one
+        // (Fixed, Minimum) keeps a widget wider than the phone although it
+        // could shrink.
+        {
+            const QSizePolicy policy = w->sizePolicy();
+            const QSizePolicy::Policy h = policy.horizontalPolicy();
+            const bool hintIsMinimum = h == QSizePolicy::Fixed || h == QSizePolicy::Minimum || h == QSizePolicy::MinimumExpanding;
+            if (hintIsMinimum && w->minimumWidth() == 0 && w->sizeHint().width() > limit && w->minimumSizeHint().width() <= limit) {
+                QPointer<QWidget> guard(w);
+                m_undo.append([guard, policy] {
+                    if (guard) {
+                        guard->setSizePolicy(policy);
+                    }
+                });
+                QSizePolicy shrinkable = policy;
+                shrinkable.setHorizontalPolicy(h == QSizePolicy::MinimumExpanding ? QSizePolicy::Expanding : QSizePolicy::Preferred);
+                w->setSizePolicy(shrinkable);
+                ++changed;
+                continue;
+            }
+        }
+        if (w->layout() || qobject_cast<QTabWidget *>(w) || qobject_cast<QStackedWidget *>(w)
+            || qobject_cast<QAbstractScrollArea *>(w)) {
+            // Containers: their contents are reflowed. A fixed desktop
+            // minimum width is lifted, and a container that is only wider
+            // than its contents (a long group box title) gets their width.
+            if (w->minimumWidth() > limit) {
+                setMinimumWidthUndoable(w, 0, QWIDGETSIZE_MAX);
+                ++changed;
+            } else if (qobject_cast<QGroupBox *>(w) && w->minimumWidth() == 0 && w->layout() && w->minimumSizeHint().width() > limit) {
+                const int contents = w->layout()->minimumSize().width();
+                if (contents > 0 && contents <= limit) {
+                    setMinimumWidthUndoable(w, contents, w->maximumWidth());
+                    ++changed;
+                }
+            }
+            continue;
+        }
+        const int minimum = w->minimumWidth() > 0 ? w->minimumWidth() : w->minimumSizeHint().width();
+        if (minimum <= limit) {
+            continue;
+        }
+        QLabel *label = qobject_cast<QLabel *>(w);
+        if (label && !label->wordWrap() && label->text().contains(QLatin1Char(' ')) && w->minimumWidth() <= limit) {
+            QPointer<QLabel> guard(label);
+            m_undo.append([guard] {
+                if (guard) {
+                    guard->setWordWrap(false);
+                }
+            });
+            label->setWordWrap(true);
+        } else {
+            setMinimumWidthUndoable(w, qMin(limit, dp(120)),
+                                    w->maximumWidth() < QWIDGETSIZE_MAX ? qMax(dp(120), qMin(w->maximumWidth(), limit)) : QWIDGETSIZE_MAX);
+        }
+        ++changed;
+    }
+    return changed;
+}
+
+namespace {
+// The window fits, and no scroll area inside it scrolls sideways.
+bool fitsWidth(QWidget *root, int width)
+{
+    if (root->minimumSizeHint().width() > width) {
+        return false;
+    }
+    for (QScrollArea *area : root->findChildren<QScrollArea *>()) {
+        QWidget *content = area->widget();
+        if (area->isVisibleTo(root) && area->widgetResizable() && content
+            && content->minimumSizeHint().width() > qMax(area->viewport()->width(), width - dp(16))) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// The innermost widgets that are still too wide, with the chain of their
+// parents, for the log.
+void logTooWide(QWidget *root, int width)
+{
+    int logged = 0;
+    for (QWidget *w : root->findChildren<QWidget *>()) {
+        if (w->isWindow() || w->isHidden() || logged > 12) {
+            continue;
+        }
+        auto wide = [width](QWidget *x) {
+            const int min = x->minimumWidth() > 0 ? x->minimumWidth() : x->minimumSizeHint().width();
+            return min > width - dp(16);
+        };
+        if (!wide(w)) {
+            continue;
+        }
+        bool childWide = false;
+        for (QWidget *c : w->findChildren<QWidget *>(QString(), Qt::FindDirectChildrenOnly)) {
+            if (!c->isWindow() && !c->isHidden() && wide(c)) {
+                childWide = true;
+                break;
+            }
+        }
+        if (childWide) {
+            continue;
+        }
+        QStringList chain;
+        for (QWidget *p = w; p && p != root; p = p->parentWidget()) {
+            const QLayout *l = p->layout();
+            chain << QStringLiteral("%1'%2'[min %3 hint %4 layout %5 %6]")
+                         .arg(QString::fromLatin1(p->metaObject()->className()), p->objectName())
+                         .arg(p->minimumWidth())
+                         .arg(p->minimumSizeHint().width())
+                         .arg(l ? QString::fromLatin1(l->metaObject()->className()) : QStringLiteral("-"))
+                         .arg(l ? l->minimumSize().width() : -1);
+        }
+        qInfo().noquote() << "Krita Mobile: too wide in" << root->metaObject()->className() << chain.join(QStringLiteral(" < "));
+        ++logged;
+    }
+}
+} // namespace
+
+int DialogFitter::reflow(QWidget *root, int width, QWidget *budgetRoot)
 {
     if (!root || width < dp(200)) {
         return 0;
     }
     int changes = 0;
-    // Each round leaves more room for the margins of the layouts around an
-    // item, until the whole window fits.
-    for (int margin = dp(24); margin <= dp(72); margin += dp(24)) {
-        const int limit = width - margin;
-        for (int pass = 0; pass < 8; ++pass) {
-            const int changed = reflowPass(root, limit);
-            changes += changed;
-            if (!changed) {
-                break;
+    // Rows become columns first; only what is still too wide on its own is
+    // squeezed. A few pixels are kept for styles that draw outside.
+    const int budget = width - dp(4);
+    for (int pass = 0; pass < 16; ++pass) {
+        if (pass > 0) {
+            // Layouts cache the sizes of their items; after a change they
+            // must be measured again. (Only then: invalidating posts a
+            // layout request, which would start another reflow.)
+            // Layout items also cache their widget's sizes until the widget
+            // reports a change; containers like tab widgets don't always.
+            for (QWidget *w : root->findChildren<QWidget *>()) {
+                if (!w->isWindow()) {
+                    w->updateGeometry();
+                }
+            }
+            for (QLayout *l : root->findChildren<QLayout *>()) {
+                l->invalidate();
+            }
+            if (root->layout()) {
+                root->layout()->invalidate();
             }
         }
-        root->updateGeometry();
-        if (root->layout()) {
-            root->layout()->activate();
+        int changed = reflowStructure(root, budget, budgetRoot);
+        if (!changed) {
+            changed = reflowControls(root, budget, budgetRoot);
         }
-        if (root->minimumSizeHint().width() <= width) {
+        changes += changed;
+        if (!changed) {
             break;
         }
     }
-    if (root->minimumSizeHint().width() > width) {
-        // What still doesn't fit, for the next round of fixes.
-        for (QWidget *w : root->findChildren<QWidget *>()) {
-            if (!w->isWindow() && !w->isHidden() && w->minimumSizeHint().width() > width - dp(72)) {
-                qInfo() << "Krita Mobile: too wide in" << root->metaObject()->className() << w->metaObject()->className()
-                        << w->objectName() << w->minimumSizeHint() << "minimumWidth" << w->minimumWidth();
-            }
-        }
+    if (changes && root->layout()) {
+        root->layout()->activate();
+    }
+    if (qEnvironmentVariableIsSet("KRITA_MOBILE_DUMP")) {
+        qInfo() << "Krita Mobile: reflow" << root->metaObject()->className() << root->objectName() << "width" << width << "changes" << changes;
+    }
+    // A part of a window is checked against the room it has in it.
+    const int own = budgetRoot && budgetRoot != root ? WidthBudget(budgetRoot, width).forWidget(root) : width;
+    if (qEnvironmentVariableIsSet("KRITA_MOBILE_DUMP") && !fitsWidth(root, own) && !m_loggedTooWide.contains(root->metaObject()->className())) {
+        m_loggedTooWide.insert(root->metaObject()->className());
+        logTooWide(root, own);
     }
     return changes;
 }
@@ -804,7 +1119,13 @@ void DialogFitter::adaptControl(QWidget *w)
         }
         button->setProperty("mobileOrigText", button->text());
         button->setProperty("mobileOrigMinWidth", button->minimumWidth());
+        button->setProperty("mobileOrigPolicy", int(button->sizePolicy().horizontalPolicy()));
         button->setMinimumWidth(qMin(button->minimumSizeHint().width(), dp(96)));
+        // The wrapped text makes the button's own size hint narrow; it
+        // takes the row's width instead, and wraps again when that changes.
+        QSizePolicy policy = button->sizePolicy();
+        policy.setHorizontalPolicy(QSizePolicy::Expanding);
+        button->setSizePolicy(policy);
         button->installEventFilter(this);
         rewrapButton(button);
     } else if (QLabel *label = qobject_cast<QLabel *>(w)) {
@@ -901,6 +1222,9 @@ void DialogFitter::restoreControls(QWidget *root)
                 button->removeEventFilter(this);
                 button->setText(button->property("mobileOrigText").toString());
                 button->setMinimumWidth(button->property("mobileOrigMinWidth").toInt());
+                QSizePolicy policy = button->sizePolicy();
+                policy.setHorizontalPolicy(QSizePolicy::Policy(button->property("mobileOrigPolicy").toInt()));
+                button->setSizePolicy(policy);
                 button->setProperty("mobileOrigText", QVariant());
             }
         } else if (QLabel *label = qobject_cast<QLabel *>(w)) {
@@ -930,11 +1254,43 @@ bool DialogFitter::eventFilter(QObject *watched, QEvent *event)
         && !watched->property(ADAPTED).toBool() && insidePhoneRoot(static_cast<QWidget *>(watched))) {
         adaptControl(static_cast<QWidget *>(watched));
     }
+    if (event->type() == QEvent::Resize && watched->isWidgetType()) {
+        // A phone panel got a new width (rotation, the window was resized).
+        QWidget *w = static_cast<QWidget *>(watched);
+        if (!w->isWindow() && w->isVisible() && w->property(PHONE_ROOT).toBool()) {
+            QStackedWidget *stack = qobject_cast<QStackedWidget *>(w);
+            QWidget *page = stack ? stack->currentWidget() : w;
+            if (page) {
+                scheduleReflow(page, w);
+            }
+        }
+    }
+    if (event->type() == QEvent::LayoutRequest && watched->isWidgetType()) {
+        // Sizes change after a window was first shown (the phone style is
+        // applied to its controls, combo boxes are filled): reflow again.
+        QWidget *w = static_cast<QWidget *>(watched);
+        if (w->isVisible()) {
+            QDialog *dialog = qobject_cast<QDialog *>(w);
+            if (dialog && m_adapted.contains(dialog)) {
+                scheduleReflow(dialog, dialog);
+            } else if (m_popups.contains(w)) {
+                scheduleReflow(w, w);
+            } else if (!w->isWindow() && w->property(PHONE_ROOT).toBool()) {
+                QStackedWidget *stack = qobject_cast<QStackedWidget *>(w);
+                QWidget *page = stack ? stack->currentWidget() : w;
+                if (page) {
+                    scheduleReflow(page, w);
+                }
+            }
+        }
+    }
     if (event->type() == QEvent::Show && watched->isWidgetType()) {
         QWidget *w = static_cast<QWidget *>(watched);
         if (w->isWindow() && w->windowType() == Qt::Popup && !qobject_cast<QMenu *>(w) && !w->inherits("QComboBoxPrivateContainer")
             && !w->inherits("QCompleter") && !w->inherits("QCalendarWidget") && !w->property("mobileChrome").toBool()) {
             fitPopup(w);
+        } else if (QMenu *menu = qobject_cast<QMenu *>(w)) {
+            styleMenu(menu);
         } else if (!w->isWindow() && (w->layout() || qobject_cast<QAbstractScrollArea *>(w))) {
             // Pages and settings widgets shown later inside the sheet or a
             // fitted dialog (another brush engine, another tab) are reflowed
@@ -1166,12 +1522,102 @@ void DialogFitter::scheduleReflow(QWidget *shown, QWidget *root)
             if (nested) {
                 continue;
             }
-            const int width = root->isWindow() ? availableGeometry(root).width() : root->width();
-            if (width > dp(200)) {
-                reflow(w, width);
+            // The sheet may not be laid out yet (a new widget is 640 px wide
+            // until then); it is never wider than the window.
+            int width = availableGeometry(root).width();
+            if (!root->isWindow() && root->isVisible() && root->width() > dp(200)) {
+                width = qMin(width, root->width());
+            }
+            if (QDialog *dialog = qobject_cast<QDialog *>(w)) {
+                if (dialog == root && m_adapted.contains(dialog)) {
+                    fit(dialog);
+                    continue;
+                }
+            }
+            if (w == root && m_popups.contains(w)) {
+                fitPopup(w);
+                continue;
+            }
+            if (width > dp(200) && reflow(w, width, root) > 0 && w->isWindow()) {
+                // Keep the window inside the screen after it narrowed.
+                const QRect screen = availableGeometry(w);
+                if (w->width() > screen.width() || w->x() < screen.x()) {
+                    QRect g = w->geometry();
+                    g.setWidth(qMin(g.width(), screen.width()));
+                    g.moveLeft(qMax(screen.x(), qMin(g.x(), screen.right() - g.width() + 1)));
+                    w->setGeometry(g);
+                }
             }
         }
     });
+}
+
+void DialogFitter::adaptPanel(QWidget *root)
+{
+    if (!root) {
+        return;
+    }
+    adaptControls(root);
+    QStackedWidget *stack = qobject_cast<QStackedWidget *>(root);
+    QWidget *page = stack && stack->currentWidget() ? stack->currentWidget() : root;
+    scheduleReflow(page, root);
+}
+
+void DialogFitter::styleMenu(QMenu *menu)
+{
+    // Context menus (layers, canvas, tool options): finger-sized rows.
+    if (menu->property("mobileChrome").toBool()) {
+        return;
+    }
+    if (menu->inherits("KateCommandBar")) {
+        // Krita's command search: a search field and a list, sized for a
+        // desktop editor (40% of the window). On a phone it gets the
+        // window's width below the top bar.
+        if (!menu->property("mobileMenu").toBool()) {
+            menu->setProperty("mobileMenu", true);
+            const QString own = menu->styleSheet();
+            QPointer<QMenu> guard(menu);
+            m_undo.append([guard, own] {
+                if (guard) {
+                    guard->setStyleSheet(own);
+                    guard->setProperty("mobileMenu", QVariant());
+                }
+            });
+            menu->setStyleSheet(dialogStyleSheet() + menuStyleSheet() + own);
+        }
+        QPointer<QMenu> guard(menu);
+        QTimer::singleShot(0, this, [this, guard] {
+            if (!guard || !guard->isVisible()) {
+                return;
+            }
+            const QRect screen = availableGeometry(guard);
+            const int width = qMin(screen.width() - dp(16), dp(560));
+            if (guard->minimumWidth() != width) {
+                const int oldMinimum = guard->minimumWidth();
+                m_undo.append([guard, oldMinimum] {
+                    if (guard) {
+                        guard->setMinimumWidth(oldMinimum);
+                    }
+                });
+                guard->setMinimumWidth(width);
+            }
+            guard->setGeometry(screen.x() + (screen.width() - width) / 2, screen.y() + dp(56), width, screen.height() / 2);
+        });
+        return;
+    }
+    if (menu->property("mobileMenu").toBool()) {
+        return;
+    }
+    menu->setProperty("mobileMenu", true);
+    const QString own = menu->styleSheet();
+    QPointer<QMenu> guard(menu);
+    m_undo.append([guard, own] {
+        if (guard) {
+            guard->setStyleSheet(own);
+            guard->setProperty("mobileMenu", QVariant());
+        }
+    });
+    menu->setStyleSheet(menuStyleSheet() + own);
 }
 
 void DialogFitter::fitPopup(QWidget *popup)
@@ -1284,14 +1730,18 @@ void DialogFitter::fit(QDialog *dialog)
     }
     // Phones: dialogs that are close to the screen size use all of it, the
     // rest are kept on screen and centered.
-    QSize size = dialog->size().expandedTo(dialog->minimumSizeHint());
-    if (m_wrapped.contains(dialog) || m_fullScreen.contains(dialog) || size.width() > screen.width() * 0.85 || size.height() > screen.height() * 0.85) {
+    // Small dialogs are cards: the phone's width (with a margin), their own
+    // height. Tall ones and page dialogs take the whole screen.
+    const QSize hint = dialog->sizeHint().expandedTo(dialog->minimumSizeHint());
+    // Upright phone: every card has the same width.
+    const int cardWidth = screen.width() < dp(600) ? screen.width() - dp(32) : qMin(screen.width() - dp(32), qMax(hint.width(), dp(360)));
+    const bool card = !m_wrapped.contains(dialog) && !m_fullScreen.contains(dialog)
+        && dialog->minimumSizeHint().width() <= cardWidth && hint.height() <= screen.height() * 0.85;
+    if (!card) {
         dialog->setMinimumSize(0, 0);
         dialog->setGeometry(screen);
     } else {
-        // Small dialogs are cards of a comfortable width, not tiny boxes.
-        size.setWidth(qMax(size.width(), qMin(screen.width() - dp(32), dp(360))));
-        size = size.boundedTo(screen.size());
+        QSize size(cardWidth, qMin(hint.height(), screen.height()));
         dialog->resize(size);
         dialog->move(screen.x() + (screen.width() - size.width()) / 2, screen.y() + (screen.height() - size.height()) / 2);
     }

@@ -491,7 +491,15 @@ void Shell::activate()
     }
     qApp->installEventFilter(m_dialogFitter);
     if (m_sheet) {
-        m_dialogFitter->adaptControls(m_sheet->findChild<QWidget *>(QStringLiteral("mobileSheetContent")));
+        m_dialogFitter->adaptPanel(m_sheet->findChild<QWidget *>(QStringLiteral("mobileSheetContent")));
+    }
+    // Krita's own start page (shown when no image is open and the hub is
+    // closed) follows the phone rules too.
+    for (QWidget *welcome : mw->findChildren<QWidget *>()) {
+        if (welcome->inherits("KisWelcomePageWidget")) {
+            m_dialogFitter->adaptPanel(welcome);
+            break;
+        }
     }
 
     updateLayout();

@@ -330,6 +330,9 @@ QString dialogStyleSheet()
                "QAbstractItemView::item { min-height: %9px; }"
                "QCheckBox, QRadioButton { min-height: %13px; spacing: %12px; }"
                "QSpinBox, QDoubleSpinBox { padding: 0 %15px; }"
+               // The text field inside spin and combo boxes is part of them.
+               "QAbstractSpinBox QLineEdit, QComboBox QLineEdit { background: transparent; border: none;"
+               "  min-height: 0px; padding: 0px; border-radius: 0px; }"
                // The angle selector sizes its spin box itself.
                "KisAngleSelectorSpinBox { min-height: 0px; padding: 0px; }")
         .arg(css(t.surface))      // 1
@@ -360,6 +363,29 @@ QString popupStyleSheet()
         .arg(css(t.text))
         .arg(css(t.outline))
         .arg(dp(12));
+}
+
+QString menuStyleSheet()
+{
+    const Theme &t = Theme::current();
+    return QStringLiteral(
+               "QMenu { background: %1; color: %2; border: 1px solid %3; border-radius: %4px; padding: %5px 0; }"
+               "QMenu::item { padding: %6px %7px %6px %8px; min-height: %9px; background: transparent; }"
+               "QMenu::item:selected { background: %10; }"
+               "QMenu::item:disabled { color: %11; }"
+               "QMenu::separator { height: 1px; background: %3; margin: %5px %8px; }"
+               "QMenu::icon { padding-left: %5px; }")
+        .arg(css(t.surface2))  // 1
+        .arg(css(t.text))      // 2
+        .arg(css(t.outline))   // 3
+        .arg(dp(12))           // 4
+        .arg(dp(6))            // 5
+        .arg(dp(10))           // 6
+        .arg(dp(28))           // 7
+        .arg(dp(16))           // 8
+        .arg(dp(24))           // 9
+        .arg(css(t.accentSoft)) // 10
+        .arg(css(t.textDim));  // 11
 }
 
 QIcon icon(const QString &name)

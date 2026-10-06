@@ -13,6 +13,7 @@
 
 #include <QObject>
 #include <QBoxLayout>
+#include <QByteArray>
 #include <QHash>
 #include <QList>
 #include <QPointer>
@@ -22,6 +23,7 @@
 
 class QDialog;
 class QGridLayout;
+class QMenu;
 class QRect;
 class QWidget;
 
@@ -48,14 +50,18 @@ public:
     static void markPhoneRoot(QWidget *root);
     void adaptControls(QWidget *root);
     void restoreControls(QWidget *root);
+    // A long-lived part of the window (the sheet, Krita's welcome page)
+    // that should follow the phone rules: adapted controls, reflowed rows.
+    void adaptPanel(QWidget *root);
 
     // Turns rows that are too wide for `width` into columns (box, grid and
     // form layouts, splitters, button boxes) and lifts desktop minimum widths,
     // so nothing scrolls sideways. Undone by restoreWidgets().
-    int reflow(QWidget *root, int width);
+    int reflow(QWidget *root, int width, QWidget *budgetRoot = nullptr);
     // Popups (Krita's popup buttons: gradients, patterns, workspaces...) get
     // the phone look and are kept on screen.
     void fitPopup(QWidget *popup);
+    void styleMenu(QMenu *menu);
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
@@ -72,13 +78,17 @@ private:
     bool adaptOpenPane(QDialog *dialog, const QRect &screen);
 
     void stackSideLists(QWidget *root);
-    int reflowPass(QWidget *root, int limit);
+    int reflowStructure(QWidget *root, int width, QWidget *budgetRoot);
+    int reflowControls(QWidget *root, int width, QWidget *budgetRoot);
     void gridToColumn(QGridLayout *grid);
+    void fillColumn(QWidget *w);
+    void fillColumnItems(QLayout *layout);
     void setMinimumWidthUndoable(QWidget *w, int minimum, int maximum);
     void scheduleReflow(QWidget *shown, QWidget *root);
     QList<std::function<void()>> m_undo;
     QHash<QWidget *, QPair<QPointer<QWidget>, QPointer<QWidget>>> m_pendingReflow;
     QSet<QWidget *> m_popups;
+    QSet<QByteArray> m_loggedTooWide;
     void adaptControl(QWidget *widget);
     void rewrapButton(QWidget *button);
     bool m_rewrapping = false;

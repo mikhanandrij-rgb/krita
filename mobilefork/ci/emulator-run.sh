@@ -67,6 +67,9 @@ cp "$out/result.txt" "logs/result-$name.txt" 2>/dev/null
 cp "$out/test-dir.txt" "logs/test-dir-$name.txt" 2>/dev/null
 cp "$out/logcat-crash.txt" "logs/logcat-crash-$name.txt" 2>/dev/null
 grep -v 'Access denied finding property' "$out/logcat.txt" 2>/dev/null | tail -c 400000 > "logs/logcat-$name.txt"
+# Without the system's noise (clipboard denials, app freezer); the start and
+# the end of the run are kept.
 grep -E 'krita|Krita|mobilefork|ActivityManager|ActivityTaskManager|AndroidRuntime| F DEBUG|lowmemorykiller|libc .*Fatal|Process .*died' \
-    "$out/logcat.txt" 2>/dev/null | grep -v 'Access denied' | head -c 55000 > "logs/logcat-krita-$name.txt"
+    "$out/logcat.txt" 2>/dev/null | grep -v -E 'Access denied|ClipboardService|freezing|unfroze|freezer' > "$out/logcat-krita.txt"
+{ head -c 20000 "$out/logcat-krita.txt"; echo; echo '[...]'; tail -c 35000 "$out/logcat-krita.txt"; } > "logs/logcat-krita-$name.txt"
 ls -la "$out"

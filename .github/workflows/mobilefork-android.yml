@@ -437,6 +437,7 @@ jobs:
           export XDG_DATA_DIRS="$P/share:/usr/share"
           export KRITA_NO_STYLE_OVERRIDE=1
           export LIBGL_ALWAYS_SOFTWARE=1
+          export QT_EXCLUDE_GENERIC_BEARER=1
           export HOME="$GITHUB_WORKSPACE/home"
           mkdir -p "$HOME"
           set +e
@@ -467,6 +468,9 @@ jobs:
           cp shots-classic/*.png shots/ 2>/dev/null
           cp shots-classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
           grep -h '^perf' shots/testdriver.log shots/testdriver-classic.log 2>/dev/null | tee logs/perf.txt
+          # Windows that would scroll sideways on the phone (should be none).
+          grep -h 'OVERFLOW' shots/testdriver.log 2>/dev/null | tee logs/overflow.txt
+          echo "windows with sideways scrolling: $(wc -l < logs/overflow.txt)"
           exit 0
 
       - name: Compare runtime inventory with the source inventory
