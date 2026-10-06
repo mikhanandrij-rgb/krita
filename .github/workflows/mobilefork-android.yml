@@ -433,33 +433,30 @@ jobs:
           export QT_PLUGIN_PATH="$P/plugins:$P/lib/plugins:$P/lib/x86_64-linux-gnu/plugins:$P/lib/qt5/plugins"
           export QML2_IMPORT_PATH="$P/qml:$P/lib/qml:$P/lib/x86_64-linux-gnu/qml:$P/lib/qt5/qml"
           export XDG_DATA_DIRS="$P/share:/usr/share"
-          export KRITA_MOBILE_UI=phone
-          export KRITA_MOBILE_ACTION_WALK=1
-          export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots"
           export KRITA_NO_STYLE_OVERRIDE=1
           export LIBGL_ALWAYS_SOFTWARE=1
           export HOME="$GITHUB_WORKSPACE/home"
-          mkdir -p "$HOME" "$KRITA_MOBILE_SCREENSHOTS"
+          mkdir -p "$HOME"
           set +e
-          # Run under gdb so a crash leaves a backtrace in the log.
+          # Krita runs under gdb so a crash leaves a backtrace in the log.
           command -v gdb >/dev/null || sudo apt-get install -y -qq gdb > /dev/null
-          timeout 2100 xvfb-run -a -s "-screen 0 1280x1024x24" \
-            gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
-              -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" -ex "info threads" \
-              --args "$P/bin/krita" --nosplash > logs/krita-run.log 2>&1
-          echo "krita exit code: $?" | tee -a logs/krita-run.log
-          ls -la "$KRITA_MOBILE_SCREENSHOTS" | tee -a logs/krita-run.log
-          # Baseline: Krita's own interface at phone size (screenshots,
-          # startup time and memory for the before/after comparison).
-          export KRITA_MOBILE_UI=classic
-          unset KRITA_MOBILE_ACTION_WALK
-          export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots-classic"
-          mkdir -p "$KRITA_MOBILE_SCREENSHOTS"
-          timeout 600 xvfb-run -a -s "-screen 0 1280x1024x24" \
-            gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
-              -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" \
-              --args "$P/bin/krita" --nosplash > logs/krita-classic-run.log 2>&1
-          echo "krita (classic) exit code: $?" | tee -a logs/krita-classic-run.log
+          run_krita() { # mode, output dir, log name, timeout in seconds
+            mkdir -p "$2"
+            KRITA_MOBILE_UI="$1" KRITA_MOBILE_SCREENSHOTS="$2" timeout "$4" xvfb-run -a -s "-screen 0 1280x1024x24" \
+              gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
+                -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" -ex "info threads" \
+                --args "$P/bin/krita" --nosplash > "logs/$3" 2>&1
+            echo "krita ($1) exit code: $?" | tee -a "logs/$3"
+            ls -la "$2" | tee -a "logs/$3"
+          }
+          # 1. Warm-up start (first-start caches), not measured.
+          run_krita classic "$GITHUB_WORKSPACE/shots-warmup" krita-warmup-run.log 600
+          # 2. Baseline: Krita's own interface at phone size (screenshots,
+          #    startup time and memory for the before/after comparison).
+          run_krita classic "$GITHUB_WORKSPACE/shots-classic" krita-classic-run.log 600
+          # 3. Phone interface: screenshots, dialogs, inventory, action walk.
+          KRITA_MOBILE_ACTION_WALK=1 run_krita phone "$GITHUB_WORKSPACE/shots" krita-run.log 2100
+          mkdir -p shots
           cp shots-classic/*.png shots/ 2>/dev/null
           cp shots-classic/testdriver.log shots/testdriver-classic.log 2>/dev/null
           grep -h '^perf' shots/testdriver.log shots/testdriver-classic.log 2>/dev/null | tee logs/perf.txt

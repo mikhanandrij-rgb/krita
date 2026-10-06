@@ -70,6 +70,14 @@ void MobileUiPlugin::attach()
     }
     if (!Shell::of(mw)) {
         new Shell(mw);
+        // Startup measurement for both interfaces (More > Performance info).
+        connect(mw, &KisMainWindow::activeViewChanged, this, [mw] {
+            if (mw->activeView()) {
+                QTimer::singleShot(0, mw, [] {
+                    perf::markFirstCanvas();
+                });
+            }
+        });
     }
     plugSettingsMenu();
     applyMode();

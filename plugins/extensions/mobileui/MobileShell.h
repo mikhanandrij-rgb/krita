@@ -111,7 +111,6 @@ private:
     static void unwrapTitleBar(HostedDock &hd);
     void adoptPopups();
     void releasePopups();
-    static void stackBrushEditor(QWidget *editor, bool stacked);
     void adoptStatusBar();
     void releaseStatusBar();
     void parkToolBars();
