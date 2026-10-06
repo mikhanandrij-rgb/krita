@@ -489,7 +489,7 @@ int widestItem(QLayout *layout)
 // Puts every item of a grid into one column, in reading order. Labels end up
 // above their fields, like in phone forms. The old positions are kept so the
 // grid can be put back (Krita's dockers outlive the phone interface).
-void DialogFitter::gridToColumn(QGridLayout *grid)
+void DialogFitter::gridToColumn(QGridLayout *grid, int transposeWidth)
 {
     struct Entry {
         QLayoutItem *item;
@@ -522,8 +522,29 @@ void DialogFitter::gridToColumn(QGridLayout *grid)
         grid->setRowStretch(r, 0);
         grid->setRowMinimumHeight(r, 0);
     }
+    // A small table of fields (a header row of names, a few rows: Clones
+    // Array's columns and rows) reads best turned on its side: the names go
+    // down the left, each former row becomes a column. Only when that fits.
+    bool transpose = false;
+    if (rows >= 2 && rows <= 4 && columns >= 3 && columns > rows && transposeWidth >= 0) {
+        QVector<int> rowWidth(rows, 0);
+        for (const Entry &e : entries) {
+            if (e.row < rows && e.rowSpan == 1 && !e.item->isEmpty()) {
+                rowWidth[e.row] = qMax(rowWidth[e.row], e.item->minimumSize().width());
+            }
+        }
+        int width = grid->contentsMargins().left() + grid->contentsMargins().right();
+        for (int w : rowWidth) {
+            width += w + qMax(0, grid->horizontalSpacing());
+        }
+        transpose = width <= transposeWidth;
+    }
     int row = 0;
     for (const Entry &e : entries) {
+        if (transpose) {
+            grid->addItem(e.item, e.column, e.row, e.columnSpan, e.rowSpan, e.alignment & ~Qt::AlignHorizontal_Mask);
+            continue;
+        }
         // Labels were right-aligned next to their fields.
         const Qt::Alignment alignment = e.alignment & ~Qt::AlignHorizontal_Mask;
         if (QLabel *label = qobject_cast<QLabel *>(e.item->widget())) {
@@ -540,7 +561,9 @@ void DialogFitter::gridToColumn(QGridLayout *grid)
         }
         grid->addItem(e.item, row++, 0, 1, 1, alignment);
     }
-    grid->setColumnStretch(0, 1);
+    if (!transpose) {
+        grid->setColumnStretch(0, 1);
+    }
 
     QPointer<QGridLayout> guard(grid);
     m_undo.append([guard, entries, columnStretch, columnMinimum, rowStretch, rowMinimum] {
@@ -850,7 +873,7 @@ int DialogFitter::reflowStructure(QWidget *root, int width, QWidget *budgetRoot)
             }
         } else if (QGridLayout *grid = qobject_cast<QGridLayout *>(l)) {
             if (grid->columnCount() > 1) {
-                gridToColumn(grid);
+                gridToColumn(grid, limit);
                 fillColumnItems(grid);
                 ++changed;
             }

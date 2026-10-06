@@ -80,7 +80,7 @@ private:
     void stackSideLists(QWidget *root);
     int reflowStructure(QWidget *root, int width, QWidget *budgetRoot);
     int reflowControls(QWidget *root, int width, QWidget *budgetRoot);
-    void gridToColumn(QGridLayout *grid);
+    void gridToColumn(QGridLayout *grid, int transposeWidth = -1);
     void fillColumn(QWidget *w);
     void fillColumnItems(QLayout *layout);
     void setMinimumWidthUndoable(QWidget *w, int minimum, int maximum);
