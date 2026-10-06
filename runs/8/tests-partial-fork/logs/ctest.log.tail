@@ -1,431 +1,4 @@
-ityGreenCoordinates()
-PASS   : KisCageTransformWorkerTest::testTransformAsBase()
-PASS   : KisCageTransformWorkerTest::testAngleBetweenVectors()
-PASS   : KisCageTransformWorkerTest::cleanupTestCase()
-Totals: 11 passed, 2 failed, 0 skipped, 0 blacklisted, 19855ms
-********* Finished testing of KisCageTransformWorkerTest *********
-
-        Start 177: libs-image-KisRandomGenerator2DTest
-176/321 Test #177: libs-image-KisRandomGenerator2DTest .................................   Passed    0.24 sec
-        Start 178: libs-image-kis_keyframing_test
-177/321 Test #178: libs-image-kis_keyframing_test ......................................   Passed    1.39 sec
-        Start 179: libs-image-kis_time_span_test
-178/321 Test #179: libs-image-kis_time_span_test .......................................   Passed    0.01 sec
-        Start 180: libs-image-kis_filter_mask_test
-179/321 Test #180: libs-image-kis_filter_mask_test .....................................   Passed    1.44 sec
-        Start 181: libs-image-kis_asl_layer_style_serializer_test
-180/321 Test #181: libs-image-kis_asl_layer_style_serializer_test ......................   Passed    1.53 sec
-        Start 182: libs-image-TestAslStorage
-181/321 Test #182: libs-image-TestAslStorage ...........................................   Passed    0.81 sec
-        Start 183: libs-image-kis_async_merger_test
-182/321 Test #183: libs-image-kis_async_merger_test ....................................   Passed    1.43 sec
-        Start 184: libs-image-kis_selection_test
-183/321 Test #184: libs-image-kis_selection_test .......................................   Passed    1.12 sec
-        Start 185: libs-image-kis_update_scheduler_test
-184/321 Test #185: libs-image-kis_update_scheduler_test ................................   Passed    3.53 sec
-        Start 186: libs-image-kis_colorize_mask_test
-185/321 Test #186: libs-image-kis_colorize_mask_test ...................................   Passed    1.39 sec
-        Start 187: libs-image-kis_processings_test
-186/321 Test #187: libs-image-kis_processings_test .....................................   Passed    2.14 sec
-        Start 188: libs-image-kis_paint_device_test
-187/321 Test #188: libs-image-kis_paint_device_test ....................................   Passed    5.43 sec
-        Start 189: libs-image-kis_layer_styles_test
-188/321 Test #189: libs-image-kis_layer_styles_test ....................................   Passed    1.16 sec
-        Start 190: libs-image-kis_mesh_transform_worker_test
-189/321 Test #190: libs-image-kis_mesh_transform_worker_test ...........................   Passed    1.59 sec
-        Start 191: libs-image-KisKeyframeAnimationInterfaceSignalTest
-190/321 Test #191: libs-image-KisKeyframeAnimationInterfaceSignalTest ..................   Passed    0.68 sec
-        Start 192: libs-image-KisOverlayPaintDeviceWrapperTest
-191/321 Test #192: libs-image-KisOverlayPaintDeviceWrapperTest .........................   Passed    1.12 sec
-        Start 193: libs-image-KisPaintOpPresetTest
-192/321 Test #193: libs-image-KisPaintOpPresetTest .....................................   Passed    1.29 sec
-        Start 194: libs-image-KisFourPointInterpolatorTest
-193/321 Test #194: libs-image-KisFourPointInterpolatorTest .............................   Passed    0.01 sec
-        Start 195: libs-image-KisSpatialContainerTest
-194/321 Test #195: libs-image-KisSpatialContainerTest ..................................   Passed    0.44 sec
-        Start 196: libs-image-KisGridInterpolationToolsTest
-195/321 Test #196: libs-image-KisGridInterpolationToolsTest ............................   Passed    0.02 sec
-        Start 197: libs-image-KisContentLightLevelProcessingVisitorTest
-196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.77 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-********* Start testing of KisContentLightLevelProcessingVisitorTest *********
-Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-PASS   : KisContentLightLevelProcessingVisitorTest::initTestCase()
-PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(XYZ Luminance)
-PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(Rec2020 Component)
-PASS   : KisContentLightLevelProcessingVisitorTest::testRgbColorSpace(RGB Component)
-FAIL!  : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(XYZ Luminance) 'info.maxContentLightLevel - expectedMaxCLL < 0.00001' returned FALSE. ()
-   Loc: [/home/runner/work/krita/krita/libs/image/tests/KisContentLightLevelProcessingVisitorTest.cpp(117)]
-PASS   : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(Rec2020 Component)
-FAIL!  : KisContentLightLevelProcessingVisitorTest::testCmykColorSpace(RGB Component) 'info.maxContentLightLevel - expectedMaxCLL < 0.00001' returned FALSE. ()
-   Loc: [/home/runner/work/krita/krita/libs/image/tests/KisContentLightLevelProcessingVisitorTest.cpp(117)]
-PASS   : KisContentLightLevelProcessingVisitorTest::testEmptyDocument()
-PASS   : KisContentLightLevelProcessingVisitorTest::cleanupTestCase()
-Totals: 7 passed, 2 failed, 0 skipped, 0 blacklisted, 747ms
-********* Finished testing of KisContentLightLevelProcessingVisitorTest *********
-Fontconfig error: Cannot load default config file: No such file: (null)
-
-        Start 198: libs-image-kis_clone_layer_test
-197/321 Test #198: libs-image-kis_clone_layer_test .....................................   Passed    2.01 sec
-        Start 199: libs-image-kis_transform_mask_test
-198/321 Test #199: libs-image-kis_transform_mask_test ..................................   Passed    0.69 sec
-        Start 200: libs-image-kis_liquify_transform_worker_test
-199/321 Test #200: libs-image-kis_liquify_transform_worker_test ........................   Passed   10.03 sec
-        Start 201: libs-image-tiles3-kis_tiled_data_manager_test
-200/321 Test #201: libs-image-tiles3-kis_tiled_data_manager_test .......................   Passed   10.52 sec
-        Start 202: libs-image-tiles3-kis_low_memory_tests
-201/321 Test #202: libs-image-tiles3-kis_low_memory_tests ..............................   Passed    8.73 sec
-        Start 203: libs-image-tiles3-kis_lockless_stack_test
-202/321 Test #203: libs-image-tiles3-kis_lockless_stack_test ...........................   Passed    2.60 sec
-        Start 204: libs-image-tiles3-kis_chunk_allocator_test
-203/321 Test #204: libs-image-tiles3-kis_chunk_allocator_test ..........................   Passed    0.61 sec
-        Start 205: libs-image-tiles3-kis_memory_window_test
-204/321 Test #205: libs-image-tiles3-kis_memory_window_test ............................   Passed    0.02 sec
-        Start 206: libs-image-tiles3-kis_store_limits_test
-205/321 Test #206: libs-image-tiles3-kis_store_limits_test .............................   Passed    0.02 sec
-        Start 207: libs-image-tiles3-kis_swapped_data_store_test
-206/321 Test #207: libs-image-tiles3-kis_swapped_data_store_test .......................   Passed    0.95 sec
-        Start 208: libs-image-tiles3-kis_tile_data_store_test
-207/321 Test #208: libs-image-tiles3-kis_tile_data_store_test ..........................   Passed    0.03 sec
-        Start 209: libs-image-tiles3-kis_tile_data_pooler_test
-208/321 Test #209: libs-image-tiles3-kis_tile_data_pooler_test .........................   Passed    0.52 sec
-        Start 210: libs-ui-kis_image_view_converter_test
-209/321 Test #210: libs-ui-kis_image_view_converter_test ...............................   Passed    0.69 sec
-        Start 211: libs-ui-kis_shape_selection_test
-210/321 Test #211: libs-ui-kis_shape_selection_test ....................................   Passed    5.24 sec
-        Start 212: libs-ui-kis_coordinates_converter_test
-211/321 Test #212: libs-ui-kis_coordinates_converter_test ..............................   Passed    1.74 sec
-        Start 213: libs-ui-kis_grid_config_test
-212/321 Test #213: libs-ui-kis_grid_config_test ........................................   Passed    0.03 sec
-        Start 214: libs-ui-kis_temporary_paint_constraint_test
-213/321 Test #214: libs-ui-kis_temporary_paint_constraint_test .........................   Passed    0.03 sec
-        Start 215: libs-ui-kis_stabilized_events_sampler_test
-214/321 Test #215: libs-ui-kis_stabilized_events_sampler_test ..........................   Passed    0.15 sec
-        Start 216: libs-ui-kis_shape_commands_test
-215/321 Test #216: libs-ui-kis_shape_commands_test .....................................   Passed    1.05 sec
-        Start 217: libs-ui-kis_stop_gradient_editor_test
-216/321 Test #217: libs-ui-kis_stop_gradient_editor_test ...............................   Passed    0.69 sec
-        Start 218: libs-ui-kis_multinode_property_test
-217/321 Test #218: libs-ui-kis_multinode_property_test .................................   Passed    0.69 sec
-        Start 219: libs-ui-KisFrameSerializerTest
-218/321 Test #219: libs-ui-KisFrameSerializerTest ......................................   Passed    0.08 sec
-        Start 220: libs-ui-KisFrameCacheStoreTest
-219/321 Test #220: libs-ui-KisFrameCacheStoreTest ......................................   Passed    1.20 sec
-        Start 221: libs-ui-kis_animation_exporter_test
-220/321 Test #221: libs-ui-kis_animation_exporter_test .................................   Passed    2.27 sec
-        Start 222: libs-ui-kis_prescaled_projection_test
-221/321 Test #222: libs-ui-kis_prescaled_projection_test ...............................   Passed    1.74 sec
-        Start 223: libs-ui-kis_animation_importer_test
-222/321 Test #223: libs-ui-kis_animation_importer_test .................................   Passed    1.13 sec
-        Start 224: libs-ui-KisSpinBoxSplineUnitConverterTest
-223/321 Test #224: libs-ui-KisSpinBoxSplineUnitConverterTest ...........................   Passed    1.01 sec
-        Start 225: libs-ui-KisDocumentReplaceTest
-224/321 Test #225: libs-ui-KisDocumentReplaceTest ......................................   Passed    1.05 sec
-        Start 226: libs-ui-KisRssReaderTest
-225/321 Test #226: libs-ui-KisRssReaderTest ............................................   Passed    0.03 sec
-        Start 227: libs-ui-kis_derived_resources_test
-226/321 Test #227: libs-ui-kis_derived_resources_test ..................................   Passed    1.34 sec
-        Start 228: libs-ui-kis_animation_frame_cache_test
-227/321 Test #228: libs-ui-kis_animation_frame_cache_test ..............................   Passed    0.70 sec
-        Start 229: libs-ui-kis_shape_layer_test
-228/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................   Passed  291.95 sec
-        Start 230: libs-ui-KisSafeDocumentLoaderTest
-229/321 Test #230: libs-ui-KisSafeDocumentLoaderTest ...................................   Passed   19.50 sec
-        Start 231: libs-ui-KisSurfaceColorSpaceWrapperTest
-230/321 Test #231: libs-ui-KisSurfaceColorSpaceWrapperTest .............................   Passed    0.01 sec
-        Start 232: libs-ui-KisInputProfileManagerTest
-231/321 Test #232: libs-ui-KisInputProfileManagerTest ..................................   Passed    0.09 sec
-        Start 233: libs-ui-kis_doc2_test
-232/321 Test #233: libs-ui-kis_doc2_test ...............................................   Passed    2.00 sec
-        Start 234: libs-ui-kis_file_layer_test
-233/321 Test #234: libs-ui-kis_file_layer_test .........................................   Passed    2.55 sec
-        Start 235: libs-ui-KisAppimageUpdaterTest
-234/321 Test #235: libs-ui-KisAppimageUpdaterTest ......................................   Passed    7.04 sec
-        Start 236: libs-ui-KisManualUpdaterTest
-235/321 Test #236: libs-ui-KisManualUpdaterTest ........................................   Passed    2.99 sec
-        Start 237: libs-ui-KisMultiFeedRssModelTest
-236/321 Test #237: libs-ui-KisMultiFeedRssModelTest ....................................   Passed    0.03 sec
-        Start 238: libs-ui-KisSelectionDecorationTest
-237/321 Test #238: libs-ui-KisSelectionDecorationTest ..................................   Passed    4.02 sec
-        Start 239: libs-ui-KisNodeDummiesGraphTest
-238/321 Test #239: libs-ui-KisNodeDummiesGraphTest .....................................   Passed    0.03 sec
-        Start 240: libs-ui-KisNodeShapesGraphTest
-239/321 Test #240: libs-ui-KisNodeShapesGraphTest ......................................   Passed    0.03 sec
-        Start 241: libs-ui-KisModelIndexConverterTest
-240/321 Test #241: libs-ui-KisModelIndexConverterTest ..................................   Passed    0.74 sec
-        Start 242: libs-ui-KisCategorizedListModelTest
-241/321 Test #242: libs-ui-KisCategorizedListModelTest .................................   Passed    0.03 sec
-        Start 243: libs-ui-KisNodeJugglerCompressedTest
-242/321 Test #243: libs-ui-KisNodeJugglerCompressedTest ................................   Passed    5.14 sec
-        Start 244: libs-ui-KisInputManagerTest
-243/321 Test #244: libs-ui-KisInputManagerTest .........................................   Passed    1.67 sec
-        Start 245: libs-ui-kis_node_model_test
-244/321 Test #245: libs-ui-kis_node_model_test .........................................   Passed    1.77 sec
-        Start 246: libs-ui-kis_shape_controller_test
-245/321 Test #246: libs-ui-kis_shape_controller_test ...................................   Passed    6.03 sec
-        Start 247: libs-ui-kis_dummies_facade_test
-246/321 Test #247: libs-ui-kis_dummies_facade_test .....................................   Passed    5.40 sec
-        Start 248: libs-ui-kis_view_signals_test
-247/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.29 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-krita.db.migration: Completed DB update step: "Create table version_information"
-krita.db.migration: Completed DB update step: "Create table storage_types"
-krita.db.migration: Completed DB update step: "Create table resource_types"
-krita.db.migration: Completed DB update step: "Create table storages"
-krita.db.migration: Completed DB update step: "Create table tags"
-krita.db.migration: Completed DB update step: "Create table resources"
-krita.db.migration: Completed DB update step: "Create table versioned_resources"
-krita.db.migration: Completed DB update step: "Create table resource_tags"
-krita.db.migration: Completed DB update step: "Create table metadata"
-krita.db.migration: Completed DB update step: "Create table tags_storages"
-krita.db.migration: Completed DB update step: "Create table tag_translations"
-krita.db.migration: Completed DB update step: "Update metadata table constraints"
-krita.db.migration: Completed DB update step: "Create index for storages"
-krita.db.migration: Completed DB update step: "Create index for versioned_resources"
-krita.db.migration: Completed DB update step: "Create index for tags"
-krita.db.migration: Completed DB update step: "Create index for resources"
-krita.db.migration: Completed DB update step: "Create index for tag_translations"
-krita.db.migration: Completed DB update step: "Create index for resource_tags"
-krita.db.migration: Completed DB update step: "Create index for resources_signature"
-krita.db.migration: Completed DB update step: "Create index for metadata_key"
-krita.db.migration: Completed DB update step: "Register storage type: Unknown"
-krita.db.migration: Completed DB update step: "Register storage type: Folder"
-krita.db.migration: Completed DB update step: "Register storage type: Bundle"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
-krita.db.migration: Completed DB update step: "Register storage type: Memory"
-krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
-krita.db.migration: Completed DB update step: "Register resource type: brushes"
-krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
-krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
-krita.db.migration: Completed DB update step: "Register resource type: gradients"
-krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
-krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
-krita.db.migration: Completed DB update step: "Register resource type: palettes"
-krita.db.migration: Completed DB update step: "Register resource type: patterns"
-krita.db.migration: Completed DB update step: "Register resource type: sessions"
-krita.db.migration: Completed DB update step: "Register resource type: symbols"
-krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
-krita.db.migration: Completed DB update step: "Register resource type: workspaces"
-krita.db.migration: Filled version table
-********* Start testing of KisViewSignalsTest *********
-Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
-QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
-QWARN  : KisViewSignalsTest::initTestCase() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
-
-=== Received signal at function time: 33ms, total time: 33ms, dumping stack ===
-=== End of stack trace ===
-QFATAL : KisViewSignalsTest::initTestCase() Received signal 11
-         Function time: 33ms Total time: 33ms
-FAIL!  : KisViewSignalsTest::initTestCase() Received a fatal error.
-   Loc: [Unknown file(0)]
-Totals: 0 passed, 1 failed, 0 skipped, 0 blacklisted, 34ms
-********* Finished testing of KisViewSignalsTest *********
-
-        Start 249: libs-libkis-TestChannel
-248/321 Test #249: libs-libkis-TestChannel .............................................   Passed    0.99 sec
-        Start 250: libs-libkis-TestDocument
-249/321 Test #250: libs-libkis-TestDocument ............................................   Passed    2.93 sec
-        Start 251: libs-libkis-TestNode
-250/321 Test #251: libs-libkis-TestNode ................................................   Passed    1.88 sec
-        Start 252: libs-libkis-TestVectorLayer
-251/321 Test #252: libs-libkis-TestVectorLayer .........................................   Passed    1.50 sec
-        Start 253: libs-libkis-TestShape
-252/321 Test #253: libs-libkis-TestShape ...............................................   Passed    1.40 sec
-        Start 254: libs-libkis-TestFilter
-253/321 Test #254: libs-libkis-TestFilter ..............................................   Passed    1.75 sec
-        Start 255: libs-libkis-TestManagedColor
-254/321 Test #255: libs-libkis-TestManagedColor ........................................   Passed    1.02 sec
-        Start 256: libs-libkis-TestNotifier
-255/321 Test #256: libs-libkis-TestNotifier ............................................   Passed    1.00 sec
-        Start 257: libs-resources-TestResourceCacheDb
-256/321 Test #257: libs-resources-TestResourceCacheDb ..................................   Passed    0.02 sec
-        Start 258: libs-resources-TestResourceLoaderRegistry
-257/321 Test #258: libs-resources-TestResourceLoaderRegistry ...........................   Passed    0.01 sec
-        Start 259: libs-resources-TestResourceLocator
-258/321 Test #259: libs-resources-TestResourceLocator ..................................   Passed    3.58 sec
-        Start 260: libs-resources-TestResourceStorage
-259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.03 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-********* Start testing of TestResourceStorage *********
-Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-PASS   : TestResourceStorage::initTestCase()
-FAIL!  : TestResourceStorage::testStorage() 'storage.valid()' returned FALSE. ()
-   Loc: [/home/runner/work/krita/krita/libs/resources/tests/TestResourceStorage.cpp(49)]
-Fontconfig error: Cannot load default config file: No such file: (null)
-QWARN  : TestResourceStorage::testImportExportResource() 		Could not set current file 0 "patterns/testpattern.png"
-QWARN  : TestResourceStorage::testImportExportResource() Could not open file in bundle "patterns/testpattern.png"
-PASS   : TestResourceStorage::testImportExportResource()
-PASS   : TestResourceStorage::testAddResource()
-PASS   : TestResourceStorage::testStorageVersioningHelperCounting()
-PASS   : TestResourceStorage::cleanupTestCase()
-Totals: 5 passed, 1 failed, 0 skipped, 0 blacklisted, 16ms
-********* Finished testing of TestResourceStorage *********
-
-        Start 261: libs-resources-TestFolderStorage
-260/321 Test #261: libs-resources-TestFolderStorage ....................................   Passed    0.13 sec
-        Start 262: libs-resources-TestMemoryStorage
-261/321 Test #262: libs-resources-TestMemoryStorage ....................................   Passed    0.02 sec
-        Start 263: libs-resources-TestTag
-262/321 Test #263: libs-resources-TestTag ..............................................   Passed    0.01 sec
-        Start 264: libs-resources-TestBundleStorage
-263/321 Test #264: libs-resources-TestBundleStorage ....................................   Passed    0.41 sec
-        Start 265: libs-resources-TestResourceModel
-264/321 Test #265: libs-resources-TestResourceModel ....................................   Passed    0.21 sec
-        Start 266: libs-resources-TestTagFilterResourceProxyModel
-265/321 Test #266: libs-resources-TestTagFilterResourceProxyModel ......................   Passed    0.28 sec
-        Start 267: libs-resources-TestTagModel
-266/321 Test #267: libs-resources-TestTagModel .........................................   Passed    0.13 sec
-        Start 268: libs-resources-TestResourceTypeModel
-267/321 Test #268: libs-resources-TestResourceTypeModel ................................   Passed    0.25 sec
-        Start 269: libs-resources-TestStorageModel
-268/321 Test #269: libs-resources-TestStorageModel .....................................   Passed    0.11 sec
-        Start 270: libs-resources-TestResourceSearchBoxFilter
-269/321 Test #270: libs-resources-TestResourceSearchBoxFilter ..........................   Passed    0.01 sec
-        Start 271: libs-resources-TestStorageFilterProxyModel
-270/321 Test #271: libs-resources-TestStorageFilterProxyModel ..........................   Passed    0.11 sec
-        Start 272: libs-resources-TestTagResourceModel
-271/321 Test #272: libs-resources-TestTagResourceModel .................................   Passed    0.18 sec
-        Start 273: libs-metadata-kis_meta_data_test
-272/321 Test #273: libs-metadata-kis_meta_data_test ....................................   Passed    0.01 sec
-        Start 274: plugins-assistants-Assistants-TestPerspectiveBasedAssistantHelper
-273/321 Test #274: plugins-assistants-Assistants-TestPerspectiveBasedAssistantHelper ...   Passed    1.10 sec
-        Start 275: plugins-assistants-Assistants-TestAssistants
-274/321 Test #275: plugins-assistants-Assistants-TestAssistants ........................   Passed    0.96 sec
-        Start 276: plugins-color-lcms2engine-TestKoLcmsColorProfile
-275/321 Test #276: plugins-color-lcms2engine-TestKoLcmsColorProfile ....................   Passed    0.76 sec
-        Start 277: plugins-color-lcms2engine-TestColorSpaceRegistry
-276/321 Test #277: plugins-color-lcms2engine-TestColorSpaceRegistry ....................   Passed    0.70 sec
-        Start 278: plugins-color-lcms2engine-TestLcmsRGBP2020PQColorSpace
-277/321 Test #278: plugins-color-lcms2engine-TestLcmsRGBP2020PQColorSpace ..............   Passed    2.48 sec
-        Start 279: plugins-color-lcms2engine-TestProfileGeneration
-278/321 Test #279: plugins-color-lcms2engine-TestProfileGeneration .....................   Passed    1.27 sec
-        Start 280: plugins-dockers-layerdocker-TestNodeView
-279/321 Test #280: plugins-dockers-layerdocker-TestNodeView ............................   Passed    0.75 sec
-        Start 281: plugins-dockers-lut-KisOcioDisplayFilterTest
-280/321 Test #281: plugins-dockers-lut-KisOcioDisplayFilterTest ........................   Passed    0.75 sec
-        Start 282: plugins-dockers-animation-kis_animation_utils_test
-281/321 Test #282: plugins-dockers-animation-kis_animation_utils_test ..................   Passed    0.69 sec
-        Start 283: plugins-dockers-animation-timeline_model_test
-282/321 Test #283: plugins-dockers-animation-timeline_model_test .......................   Passed    1.54 sec
-        Start 284: plugins-dockers-storyboarddocker-StoryboardModelTest
-283/321 Test #284: plugins-dockers-storyboarddocker-StoryboardModelTest ................   Passed    0.03 sec
-        Start 285: plugins-dockers-storyboarddocker-StoryboardTimelineSyncTest
-284/321 Test #285: plugins-dockers-storyboarddocker-StoryboardTimelineSyncTest .........   Passed    0.69 sec
-        Start 286: plugins-extensions-qmic-kis_qmic_tests
-285/321 Test #286: plugins-extensions-qmic-kis_qmic_tests ..............................   Passed    5.70 sec
-        Start 287: plugins-filters-unsharp-kis_unsharp_mask_test
-286/321 Test #287: plugins-filters-unsharp-kis_unsharp_mask_test .......................   Passed    1.41 sec
-        Start 288: plugins-generators-screentone-KisScreentoneGeneratorTest
-287/321 Test #288: plugins-generators-screentone-KisScreentoneGeneratorTest ............   Passed    1.21 sec
-        Start 289: plugins-generators-seexpr-kis_seexpr_generator_test
-288/321 Test #289: plugins-generators-seexpr-kis_seexpr_generator_test .................   Passed    1.60 sec
-        Start 290: plugins-impex-libkra-kis_kra_loader_test
-289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    1.87 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-krita.db.migration: Completed DB update step: "Create table version_information"
-krita.db.migration: Completed DB update step: "Create table storage_types"
-krita.db.migration: Completed DB update step: "Create table resource_types"
-krita.db.migration: Completed DB update step: "Create table storages"
-krita.db.migration: Completed DB update step: "Create table tags"
-krita.db.migration: Completed DB update step: "Create table resources"
-krita.db.migration: Completed DB update step: "Create table versioned_resources"
-krita.db.migration: Completed DB update step: "Create table resource_tags"
-krita.db.migration: Completed DB update step: "Create table metadata"
-krita.db.migration: Completed DB update step: "Create table tags_storages"
-krita.db.migration: Completed DB update step: "Create table tag_translations"
-krita.db.migration: Completed DB update step: "Update metadata table constraints"
-krita.db.migration: Completed DB update step: "Create index for storages"
-krita.db.migration: Completed DB update step: "Create index for versioned_resources"
-krita.db.migration: Completed DB update step: "Create index for tags"
-krita.db.migration: Completed DB update step: "Create index for resources"
-krita.db.migration: Completed DB update step: "Create index for tag_translations"
-krita.db.migration: Completed DB update step: "Create index for resource_tags"
-krita.db.migration: Completed DB update step: "Create index for resources_signature"
-krita.db.migration: Completed DB update step: "Create index for metadata_key"
-krita.db.migration: Completed DB update step: "Register storage type: Unknown"
-krita.db.migration: Completed DB update step: "Register storage type: Folder"
-krita.db.migration: Completed DB update step: "Register storage type: Bundle"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
-krita.db.migration: Completed DB update step: "Register storage type: Memory"
-krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
-krita.db.migration: Completed DB update step: "Register resource type: brushes"
-krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
-krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
-krita.db.migration: Completed DB update step: "Register resource type: gradients"
-krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
-krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
-krita.db.migration: Completed DB update step: "Register resource type: palettes"
-krita.db.migration: Completed DB update step: "Register resource type: patterns"
-krita.db.migration: Completed DB update step: "Register resource type: sessions"
-krita.db.migration: Completed DB update step: "Register resource type: symbols"
-krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
-krita.db.migration: Completed DB update step: "Register resource type: workspaces"
-krita.db.migration: Filled version table
-********* Start testing of KisKraLoaderTest *********
-Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
-PASS   : KisKraLoaderTest::initTestCase()
-QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
-QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
-QWARN  : KisKraLoaderTest::testLoading() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
-QWARN  : KisKraLoaderTest::testLoading() krita.general: Failed to load a proofing profile!
-PASS   : KisKraLoaderTest::testLoading()
-PASS   : KisKraLoaderTest::testObligeSingleChild()
-PASS   : KisKraLoaderTest::testObligeSingleChildNonTranspPixel()
-PASS   : KisKraLoaderTest::testLoadAnimated()
-QDEBUG : KisKraLoaderTest::testImportFromWriteonly() import result =  Cannot read:  5   "Cannot open file for reading. Reason: The file could not be opened."
-PASS   : KisKraLoaderTest::testImportFromWriteonly()
-QDEBUG : KisKraLoaderTest::testImportIncorrectFormat() import result =  Error code =  4   "The file format cannot be parsed."
-PASS   : KisKraLoaderTest::testImportIncorrectFormat()
-PASS   : KisKraLoaderTest::testLoadingOldHdrProfileNoCicp()
-QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-QSYSTEM: KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() krita.lib.pigment: Lcms2 error:  12 Corrupted tag 'cicp'
-FAIL!  : KisKraLoaderTest::testLoadingUncommonHdrProfileWithCicp() Compared values are not the same
-   Loc: [/home/runner/work/krita/krita/plugins/impex/libkra/tests/kis_kra_loader_test.cpp(194)]
-PASS   : KisKraLoaderTest::cleanupTestCase()
-Totals: 9 passed, 1 failed, 0 skipped, 0 blacklisted, 470ms
-********* Finished testing of KisKraLoaderTest *********
-
-        Start 291: plugins-impex-libkra-kis_kra_saver_test
-290/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.02 sec
-QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
-krita.db.migration: Completed DB update step: "Create table version_information"
-krita.db.migration: Completed DB update step: "Create table storage_types"
-krita.db.migration: Completed DB update step: "Create table resource_types"
-krita.db.migration: Completed DB update step: "Create table storages"
-krita.db.migration: Completed DB update step: "Create table tags"
-krita.db.migration: Completed DB update step: "Create table resources"
-krita.db.migration: Completed DB update step: "Create table versioned_resources"
-krita.db.migration: Completed DB update step: "Create table resource_tags"
-krita.db.migration: Completed DB update step: "Create table metadata"
-krita.db.migration: Completed DB update step: "Create table tags_storages"
-krita.db.migration: Completed DB update step: "Create table tag_translations"
-krita.db.migration: Completed DB update step: "Update metadata table constraints"
-krita.db.migration: Completed DB update step: "Create index for storages"
-krita.db.migration: Completed DB update step: "Create index for versioned_resources"
-krita.db.migration: Completed DB update step: "Create index for tags"
-krita.db.migration: Completed DB update step: "Create index for resources"
-krita.db.migration: Completed DB update step: "Create index for tag_translations"
-krita.db.migration: Completed DB update step: "Create index for resource_tags"
-krita.db.migration: Completed DB update step: "Create index for resources_signature"
-krita.db.migration: Completed DB update step: "Create index for metadata_key"
-krita.db.migration: Completed DB update step: "Register storage type: Unknown"
-krita.db.migration: Completed DB update step: "Register storage type: Folder"
-krita.db.migration: Completed DB update step: "Register storage type: Bundle"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
-krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
-krita.db.migration: Completed DB update step: "Register storage type: Memory"
-krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
-krita.db.migration: Completed DB update step: "Register resource type: brushes"
-krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
-krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
-krita.db.migration: Completed DB update step: "Register resource type: gradients"
-krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
-krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+ration: Completed DB update step: "Register resource type: paintoppresets"
 krita.db.migration: Completed DB update step: "Register resource type: palettes"
 krita.db.migration: Completed DB update step: "Register resource type: patterns"
 krita.db.migration: Completed DB update step: "Register resource type: sessions"
@@ -558,3 +131,458 @@ Totals: 14 passed, 1 failed, 0 skipped, 0 blacklisted, 1553ms
 ********* Finished testing of KisKraSaverTest *********
 
         Start 292: plugins-impex-jpeg-kis_jpeg_test
+291/321 Test #292: plugins-impex-jpeg-kis_jpeg_test ....................................Subprocess aborted***Exception:  70.26 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisJpegTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : KisJpegTest::initTestCase()
+QDEBUG : KisJpegTest::testFiles() "."
+QDEBUG : KisJpegTest::testFiles() ".."
+QDEBUG : KisJpegTest::testFiles() "HPIM0760.JPG"
+QWARN  : KisJpegTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisJpegTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisJpegTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QSYSTEM: KisJpegTest::testFiles() krita.metadata: Missing name attribute for tag  "date"
+FAIL!  : KisJpegTest::testFiles() Caught unhandled exception
+   Loc: [/builds/packaging/krita-deps-management/ext_qt/_build/ext_qt-prefix/src/ext_qt/qtbase/src/testlib/qtestcase.cpp(1939)]
+Totals: 1 passed, 1 failed, 0 skipped, 0 blacklisted, 10341ms
+********* Finished testing of KisJpegTest *********
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+        Start 293: plugins-impex-tiff-kis_tiff_test
+292/321 Test #293: plugins-impex-tiff-kis_tiff_test ....................................Subprocess aborted***Exception:   1.30 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisTiffTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : KisTiffTest::initTestCase()
+QDEBUG : KisTiffTest::testFiles() "."
+QDEBUG : KisTiffTest::testFiles() ".."
+QDEBUG : KisTiffTest::testFiles() "fax2d.tif"
+QWARN  : KisTiffTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisTiffTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisTiffTest::testFiles() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+
+=== Received signal at function time: 82ms, total time: 82ms, dumping stack ===
+=== End of stack trace ===
+QFATAL : KisTiffTest::testFiles() Received signal 11
+         Function time: 82ms Total time: 82ms
+FAIL!  : KisTiffTest::testFiles() Received a fatal error.
+   Loc: [Unknown file(0)]
+Totals: 1 passed, 1 failed, 0 skipped, 0 blacklisted, 83ms
+********* Finished testing of KisTiffTest *********
+
+        Start 294: plugins-impex-exr-kis_exr_test
+293/321 Test #294: plugins-impex-exr-kis_exr_test ......................................   Passed    2.08 sec
+        Start 295: plugins-impex-pdf-KisPdfTest
+294/321 Test #295: plugins-impex-pdf-KisPdfTest ........................................   Passed    1.19 sec
+        Start 296: plugins-impex-jp2-KisJP2Test
+295/321 Test #296: plugins-impex-jp2-KisJP2Test ........................................   Passed    1.06 sec
+        Start 297: plugins-impex-raw-KisRawTest
+296/321 Test #297: plugins-impex-raw-KisRawTest ........................................   Passed    1.44 sec
+        Start 298: plugins-impex-qimageio-KisQImageIOTest
+297/321 Test #298: plugins-impex-qimageio-KisQImageIOTest ..............................   Passed    1.70 sec
+        Start 299: plugins-impex-ora-KisOraTest
+298/321 Test #299: plugins-impex-ora-KisOraTest ........................................   Passed    1.08 sec
+        Start 300: plugins-impex-psd-psd_header_test
+299/321 Test #300: plugins-impex-psd-psd_header_test ...................................   Passed    0.03 sec
+        Start 301: plugins-impex-psd-psd_colormode_block_test
+300/321 Test #301: plugins-impex-psd-psd_colormode_block_test ..........................   Passed    0.03 sec
+        Start 302: plugins-impex-psd-kis_psd_test
+301/321 Test #302: plugins-impex-psd-kis_psd_test ......................................   Passed    5.78 sec
+        Start 303: plugins-impex-qml-KisQmlTest
+302/321 Test #303: plugins-impex-qml-KisQmlTest ........................................   Passed    1.48 sec
+        Start 304: plugins-impex-tga-KisTgaTest
+303/321 Test #304: plugins-impex-tga-KisTgaTest ........................................   Passed    1.45 sec
+        Start 305: plugins-impex-heightmap-kis_heightmap_test
+304/321 Test #305: plugins-impex-heightmap-kis_heightmap_test ..........................   Passed    1.40 sec
+        Start 306: plugins-impex-brush-KisBrushTest
+305/321 Test #306: plugins-impex-brush-KisBrushTest ....................................   Passed    1.06 sec
+        Start 307: plugins-impex-gif-KisGifTest
+306/321 Test #307: plugins-impex-gif-KisGifTest ........................................   Passed    1.93 sec
+        Start 308: plugins-impex-heif-KisHeifTest
+307/321 Test #308: plugins-impex-heif-KisHeifTest ......................................***Failed    5.82 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+********* Start testing of KisHeifTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : KisHeifTest::initTestCase()
+QWARN  : KisHeifTest::testImportFromWriteonly() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Interaction Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisHeifTest::testImportFromWriteonly() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QWARN  : KisHeifTest::testImportFromWriteonly() kf.i18n: KLocalizedString: Using an empty domain, fix the code. msgid: "Path Tool" msgid_plural: "" msgctxt: "action"
+QDEBUG : KisHeifTest::testImportFromWriteonly() import result =  Cannot read:  5   "Cannot open file for reading. Reason: The file could not be opened."
+QDEBUG : KisHeifTest::testImportFromWriteonly() Entering "TestUtil::prepareFile()" QFlags(0x2|0x4|0x20|0x40|0x200|0x400|0x2000|0x4000)
+QDEBUG : KisHeifTest::testImportFromWriteonly() import result =  Cannot read:  5   "Cannot open file for reading. Reason: The file could not be opened."
+PASS   : KisHeifTest::testImportFromWriteonly()
+QDEBUG : KisHeifTest::testExportToReadonly() Entering "TestUtil::testExportToReadonly()" QObject(0x0)
+QDEBUG : KisHeifTest::testExportToReadonly() export result =  Error code =  13   "Unknown error."
+QDEBUG : KisHeifTest::testExportToReadonly() Entering "TestUtil::prepareFile()" QFlags(0x2|0x4|0x20|0x40|0x200|0x400|0x2000|0x4000)
+QDEBUG : KisHeifTest::testExportToReadonly() Entering "TestUtil::testExportToReadonly()" QObject(0x0)
+QDEBUG : KisHeifTest::testExportToReadonly() export result =  Error code =  13   "Unknown error."
+PASS   : KisHeifTest::testExportToReadonly()
+QDEBUG : KisHeifTest::testImportIncorrectFormat() import result =  Error code =  4   "The file format cannot be parsed."
+QDEBUG : KisHeifTest::testImportIncorrectFormat() Entering "TestUtil::prepareFile()" QFlags(0x4|0x20|0x40|0x200|0x400|0x2000|0x4000)
+QDEBUG : KisHeifTest::testImportIncorrectFormat() import result =  Error code =  4   "The file format cannot be parsed."
+PASS   : KisHeifTest::testImportIncorrectFormat()
+QDEBUG : KisHeifTest::testSaveHDR() Saving HDR PNG
+QDEBUG : KisHeifTest::testSaveHDR() Saving HDR heif and avif for PQ
+QDEBUG : KisHeifTest::testSaveHDR() Saving HDR heif and avif for HLG
+QDEBUG : KisHeifTest::testSaveHDR() Saving HDR heif and avif for SMPTE 428
+PASS   : KisHeifTest::testSaveHDR()
+QDEBUG : KisHeifTest::testLoadHDR() Loading test for PQ files
+QDEBUG : KisHeifTest::testLoadHDR() Loading test for HLG files
+QDEBUG : KisHeifTest::testLoadHDR() Loading test for smpte428 files
+FAIL!  : KisHeifTest::testLoadHDR() 'cs->differenceA(pngColor.data(), avifColor.data()) <1' returned FALSE. (Avif PQ color doesn't match PNG color, (0, 0) <!DOCTYPE color>
+<color channeldepth="F32">
+ <RGB g="1" space="Rec2020-elle-V4-g10.icc" r="0" b="1"/>
+</color>
+ <!DOCTYPE color>
+<color channeldepth="F32">
+ <RGB g="49.2610855102539" space="Rec2020-elle-V4-g10.icc" r="0" b="49.2610855102539"/>
+</color>
+)
+   Loc: [/home/runner/work/krita/krita/plugins/impex/heif/tests/KisHeifTest.cpp(355)]
+QDEBUG : KisHeifTest::testImages() Testing saving monochrome for 8
+QDEBUG : KisHeifTest::testImages() Testing saving monochrome for 12
+QDEBUG : KisHeifTest::testImages() Testing saving RGBA for 8
+QDEBUG : KisHeifTest::testImages() Testing saving RGBA for 12
+QDEBUG : KisHeifTest::testImages() Loading test for "test_rgba_8."
+QDEBUG : KisHeifTest::testImages() Loading test for "/home/runner/work/krita/krita/plugins/impex/heif/tests/data/test_rgba_10."
+QDEBUG : KisHeifTest::testImages() Loading test for "test_rgba_12."
+QDEBUG : KisHeifTest::testImages() Loading test for "test_monochrome_8."
+FAIL!  : KisHeifTest::testImages() 'pngColor.colorSpace()->differenceA(pngColor.data(), heifColor.data()) < error' returned FALSE. (Heif 8 gray color doesn't match PNG color, (0, 0) Gray 0 Alpha 65535 Gray 0 Alpha 255)
+   Loc: [/home/runner/work/krita/krita/plugins/impex/heif/tests/KisHeifTest.cpp(92)]
+QDEBUG : KisHeifTest::testImages() Loading test for "/home/runner/work/krita/krita/plugins/impex/heif/tests/data/test_monochrome_10."
+QDEBUG : KisHeifTest::testImages() Loading test for "test_monochrome_12."
+PASS   : KisHeifTest::cleanupTestCase()
+Totals: 6 passed, 2 failed, 0 skipped, 0 blacklisted, 2955ms
+********* Finished testing of KisHeifTest *********
+
+        Start 309: plugins-impex-webp-kis_webp_test
+308/321 Test #309: plugins-impex-webp-kis_webp_test ....................................   Passed    1.96 sec
+        Start 310: plugins-impex-jxl-kis_jpegxl_test
+309/321 Test #310: plugins-impex-jxl-kis_jpegxl_test ...................................   Passed    8.01 sec
+        Start 311: plugins-impex-rgbe-kis_rgbe_test
+310/321 Test #311: plugins-impex-rgbe-kis_rgbe_test ....................................   Passed    1.93 sec
+        Start 312: plugins-paintops-libpaintop-KisCurveOptionDataTest
+311/321 Test #312: plugins-paintops-libpaintop-KisCurveOptionDataTest ..................   Passed    0.03 sec
+        Start 313: plugins-paintops-libpaintop-KisCurveOptionModelTest
+312/321 Test #313: plugins-paintops-libpaintop-KisCurveOptionModelTest .................   Passed    0.01 sec
+        Start 314: plugins-paintops-libpaintop-kis_linked_pattern_manager_test
+313/321 Test #314: plugins-paintops-libpaintop-kis_linked_pattern_manager_test .........   Passed    1.37 sec
+        Start 315: plugins-paintops-defaultpaintops-brush-KisDabRenderingQueueTest
+314/321 Test #315: plugins-paintops-defaultpaintops-brush-KisDabRenderingQueueTest .....   Passed    0.69 sec
+        Start 316: plugins-paintops-colorsmudge-KisColorsmudgeOpTest
+315/321 Test #316: plugins-paintops-colorsmudge-KisColorsmudgeOpTest ...................   Passed    1.01 sec
+        Start 317: plugins-paintops-mypaint-KisMyPaintOpTest
+316/321 Test #317: plugins-paintops-mypaint-KisMyPaintOpTest ...........................   Passed    0.72 sec
+        Start 318: plugins-tools-basictools-MoveSelectionStrokeTest
+317/321 Test #318: plugins-tools-basictools-MoveSelectionStrokeTest ....................   Passed    1.93 sec
+        Start 319: plugins-tools-tool_transform2-test_animated_transform_parameters
+318/321 Test #319: plugins-tools-tool_transform2-test_animated_transform_parameters ....   Passed    1.08 sec
+        Start 320: plugins-tools-svgtexttool-SvgTextCursorTest
+319/321 Test #320: plugins-tools-svgtexttool-SvgTextCursorTest .........................***Failed    1.05 sec
+QStandardPaths: runtime directory '/run/user/1001' is not owned by UID 1002, but a directory permissions 0700 owned by UID 1001 GID 1001
+********* Start testing of SvgTextCursorTest *********
+Config: Using QtTest library 5.15.7, Qt 5.15.7 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.4.0), ubuntu 24.04
+PASS   : SvgTextCursorTest::initTestCase()
+PASS   : SvgTextCursorTest::test_ltr(down)
+PASS   : SvgTextCursorTest::test_ltr(up  )
+PASS   : SvgTextCursorTest::test_ltr(left)
+PASS   : SvgTextCursorTest::test_ltr(right)
+PASS   : SvgTextCursorTest::test_ltr(word left)
+PASS   : SvgTextCursorTest::test_ltr(word right)
+PASS   : SvgTextCursorTest::test_ltr(line end)
+PASS   : SvgTextCursorTest::test_ltr(line start)
+PASS   : SvgTextCursorTest::test_ltr(paragraph end)
+PASS   : SvgTextCursorTest::test_ltr(paragraph start)
+PASS   : SvgTextCursorTest::test_ltr(visual - down)
+PASS   : SvgTextCursorTest::test_ltr(visual - up  )
+PASS   : SvgTextCursorTest::test_ltr(visual - left)
+PASS   : SvgTextCursorTest::test_ltr(visual - right)
+PASS   : SvgTextCursorTest::test_ltr(visual - word left)
+PASS   : SvgTextCursorTest::test_ltr(visual - word right)
+PASS   : SvgTextCursorTest::test_ltr(visual - line end)
+PASS   : SvgTextCursorTest::test_ltr(visual - line start)
+PASS   : SvgTextCursorTest::test_ltr(visual - paragraph end)
+PASS   : SvgTextCursorTest::test_ltr(visual - paragraph start)
+PASS   : SvgTextCursorTest::test_rtl(down)
+PASS   : SvgTextCursorTest::test_rtl(up  )
+PASS   : SvgTextCursorTest::test_rtl(left)
+PASS   : SvgTextCursorTest::test_rtl(right)
+PASS   : SvgTextCursorTest::test_rtl(word left)
+FAIL!  : SvgTextCursorTest::test_rtl(word right) Compared values are not the same
+   Actual   (cursor.getPos()): 7
+   Expected (result)         : 8
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(129)]
+PASS   : SvgTextCursorTest::test_rtl(line end)
+PASS   : SvgTextCursorTest::test_rtl(line start)
+PASS   : SvgTextCursorTest::test_rtl(paragraph end)
+PASS   : SvgTextCursorTest::test_rtl(paragraph start)
+PASS   : SvgTextCursorTest::test_rtl(visual -down)
+PASS   : SvgTextCursorTest::test_rtl(visual - up  )
+PASS   : SvgTextCursorTest::test_rtl(visual - left)
+PASS   : SvgTextCursorTest::test_rtl(visual - right)
+PASS   : SvgTextCursorTest::test_rtl(visual - word left)
+FAIL!  : SvgTextCursorTest::test_rtl(visual - word right) Compared values are not the same
+   Actual   (cursor.getPos()): 7
+   Expected (result)         : 8
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(129)]
+PASS   : SvgTextCursorTest::test_rtl(visual - line end)
+PASS   : SvgTextCursorTest::test_rtl(visual - line start)
+PASS   : SvgTextCursorTest::test_rtl(visual - paragraph end)
+PASS   : SvgTextCursorTest::test_rtl(visual - paragraph start)
+PASS   : SvgTextCursorTest::test_ttb_rl(down)
+PASS   : SvgTextCursorTest::test_ttb_rl(up  )
+PASS   : SvgTextCursorTest::test_ttb_rl(left)
+PASS   : SvgTextCursorTest::test_ttb_rl(right)
+FAIL!  : SvgTextCursorTest::test_ttb_rl(word left) Compared values are not the same
+   Actual   (cursor.getPos()): 4
+   Expected (result)         : 12
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(180)]
+FAIL!  : SvgTextCursorTest::test_ttb_rl(word right) Compared values are not the same
+   Actual   (cursor.getPos()): 1
+   Expected (result)         : 0
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(180)]
+PASS   : SvgTextCursorTest::test_ttb_rl(line end)
+PASS   : SvgTextCursorTest::test_ttb_rl(line start)
+PASS   : SvgTextCursorTest::test_ttb_rl(paragraph end)
+PASS   : SvgTextCursorTest::test_ttb_rl(paragraph start)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - down)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - up  )
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - left)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - right)
+FAIL!  : SvgTextCursorTest::test_ttb_rl(visual - word left) Compared values are not the same
+   Actual   (cursor.getPos()): 4
+   Expected (result)         : 12
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(180)]
+FAIL!  : SvgTextCursorTest::test_ttb_rl(visual - word right) Compared values are not the same
+   Actual   (cursor.getPos()): 1
+   Expected (result)         : 0
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(180)]
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - line end)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - line start)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - paragraph end)
+PASS   : SvgTextCursorTest::test_ttb_rl(visual - paragraph start)
+PASS   : SvgTextCursorTest::test_ttb_lr(down)
+PASS   : SvgTextCursorTest::test_ttb_lr(up  )
+PASS   : SvgTextCursorTest::test_ttb_lr(left)
+PASS   : SvgTextCursorTest::test_ttb_lr(right)
+FAIL!  : SvgTextCursorTest::test_ttb_lr(word left) Compared values are not the same
+   Actual   (cursor.getPos()): 4
+   Expected (result)         : 0
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(231)]
+PASS   : SvgTextCursorTest::test_ttb_lr(word right)
+PASS   : SvgTextCursorTest::test_ttb_lr(line end)
+PASS   : SvgTextCursorTest::test_ttb_lr(line start)
+PASS   : SvgTextCursorTest::test_ttb_lr(paragraph end)
+PASS   : SvgTextCursorTest::test_ttb_lr(paragraph start)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - down)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - up  )
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - left)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - right)
+FAIL!  : SvgTextCursorTest::test_ttb_lr(visual - word left) Compared values are not the same
+   Actual   (cursor.getPos()): 4
+   Expected (result)         : 0
+   Loc: [/home/runner/work/krita/krita/plugins/tools/svgtexttool/tests/SvgTextCursorTest.cpp(231)]
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - word right)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - line end)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - line start)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - paragraph end)
+PASS   : SvgTextCursorTest::test_ttb_lr(visual - paragraph start)
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(cr)
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(crlf)
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(Unicode Paragraph Separator (U+2029))
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(Unicode Line Separator (U+2028))
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(Unicode Vertical Tab (U+000B))
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(Whitespace is preserved)
+PASS   : SvgTextCursorTest::test_filter_control_chars_in_command(Multiwhitespace is preserved)
+PASS   : SvgTextCursorTest::test_text_insert_command()
+PASS   : SvgTextCursorTest::test_text_remove_command()
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(backspace)
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(delete)
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(start-of-word)
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(end-of-word)
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(end-of-line)
+PASS   : SvgTextCursorTest::test_text_remove_dedicated(delete-line)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-offset-all-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-offset-all-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-scale-and-rotate-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-scale-and-rotate-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-scale-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-scale-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-rotate-only-absolute-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ttb-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-absolute-pos-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-mixed-pos-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(ltr-relative-pos-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::test_set_transforms_on_text_command(rtl-unicode-bidi-rotate-only-delta-pos)
+PASS   : SvgTextCursorTest::cleanupTestCase()
+Totals: 145 passed, 8 failed, 0 skipped, 0 blacklisted, 971ms
+********* Finished testing of SvgTextCursorTest *********
+
+        Start 321: plugins-tools-tool_knife-CutThroughShapeStrategyTest
+320/321 Test #321: plugins-tools-tool_knife-CutThroughShapeStrategyTest ................   Passed    0.76 sec
