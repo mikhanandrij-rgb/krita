@@ -479,8 +479,8 @@
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 08:33:35 2026
-Stats zeroed:                             Tue Oct  6 08:29:53 2026
+Stats updated:                            Tue Oct  6 23:33:55 2026
+Stats zeroed:                             Tue Oct  6 23:29:26 2026
 Cacheable calls:                           2829 / 2835 (99.79%)
   Hits:                                    2755 / 2829 (97.38%)
     Direct:                                2752 / 2755 (99.89%)
@@ -520,8 +520,8 @@ Successful lookups:
   Direct:                                  2752 / 2835 (97.07%)
   Preprocessed:                               3 /   82 ( 3.66%)
 Local storage:
-  Cache size (GB):                          0.4 / 20.0 ( 1.90%)
-  Files:                                  11729
+  Cache size (GB):                          0.5 / 20.0 ( 2.31%)
+  Files:                                  13910
   Cleanups:                                   0
   Hits:                                    2755 / 2829 (97.38%)
   Misses:                                    74 / 2829 ( 2.62%)
