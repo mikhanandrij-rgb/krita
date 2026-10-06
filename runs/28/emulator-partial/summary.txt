@@ -1,4 +1,4 @@
-status: running (classic done)
+status: running (phone done)
 commit: c30d88d783ee86573b4d48dc9d0bd0f1470fb127
 run classic: done after 133 s
 interface: classic (smallest side 411 dp)
@@ -10,3 +10,23 @@ interface: classic (smallest side 411 dp)
 perf classic-start: interface-ready-ms=25372 first-canvas-ms=-1 rss-kb=1122364 peak-kb=1122364 uptime-ms=31492
 perf classic-canvas: interface-ready-ms=25372 first-canvas-ms=40058 rss-kb=1264088 peak-kb=1269908 uptime-ms=45056
 perf classic-end: interface-ready-ms=25372 first-canvas-ms=40058 rss-kb=1286096 peak-kb=1303152 uptime-ms=54395
+run auto: done after 366 s
+interface: phone (smallest side 411 dp)
+perf start: interface-ready-ms=26974 first-canvas-ms=-1 rss-kb=1138264 peak-kb=1142656 uptime-ms=32452
+perf panel tools: 66 ms
+perf panel menu: 119 ms
+perf panel more: 93 ms
+perf panel brush: 175 ms
+perf panel color: 99 ms
+perf panel layers: 85 ms
+perf panel animation: 83 ms
+perf panel view: 98 ms
+perf panel text: 89 ms
+perf panel other:BrushHudDocker: 124 ms
+perf panel other:LogDocker: 100 ms
+perf panel other:RecorderDocker: 88 ms
+perf panel other:TasksetDocker: 99 ms
+perf panel other:ToolBox: 87 ms
+perf panel other:TouchDocker: 120 ms
+perf after-portrait: interface-ready-ms=26974 first-canvas-ms=47717 rss-kb=1383116 peak-kb=1419288 uptime-ms=205258
+perf end: interface-ready-ms=26974 first-canvas-ms=47717 rss-kb=1385972 peak-kb=1439196 uptime-ms=365575
