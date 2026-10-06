@@ -1,11 +1,11 @@
 status: running
 commit: 77b2cbc4c2eec1430f9d8008f5e540557c74be05
-Tue Oct  6 09:48:42 UTC 2026
+Tue Oct  6 09:50:44 UTC 2026
                total        used        free      shared  buff/cache   available
-Mem:           15988        1185        1512          56       13693       14803
+Mem:           15988       10275         211          56        5905        5713
 Swap:           3071           0        3071
 /dev/root       145G   40G  106G  28% /
-227
+290
   2/321 Test   #1: appstreamtest .......................................................***Failed    3.30 sec
  53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.90 sec
  54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.84 sec
@@ -14,3 +14,9 @@ Swap:           3071           0        3071
  61/321 Test  #62: libs-pigment-TestColorConversionSystem ..............................***Failed   26.71 sec
 175/321 Test #176: libs-image-kis_cage_transform_worker_test ...........................***Failed   19.05 sec
 196/321 Test #197: libs-image-KisContentLightLevelProcessingVisitorTest ................***Failed    0.79 sec
+228/321 Test  #70: libs-pigment-TestCompositeOpInversion ...............................***Timeout 300.00 sec
+247/321 Test #248: libs-ui-kis_view_signals_test .......................................Subprocess aborted***Exception:   1.44 sec
+259/321 Test #260: libs-resources-TestResourceStorage ..................................***Failed    0.03 sec
+289/321 Test #290: plugins-impex-libkra-kis_kra_loader_test ............................***Failed    1.84 sec
+QWARN  : KisKraLoaderTest::testLoading() krita.general: Failed to load a proofing profile!
+290/321 Test #291: plugins-impex-libkra-kis_kra_saver_test .............................Subprocess aborted***Exception:   3.19 sec

@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      1948  0.5  1.2 274560720 210108 ?    Sl   09:30   0:05 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        1889  0.1  0.9 1431128 149756 ?      Sl   09:28   0:02 /tmp/provjobd1243373394
-tester     56236 13.1  0.7 694944 121164 ?       Sl   09:48   0:01 /home/runner/wd/krita/_build/bin/kis_shape_layer_test
-runner      1928  0.1  0.6 274346428 102080 ?    Sl   09:30   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+tester     56706 99.0 57.7 9929144 9454124 ?     Rl   09:50   0:15 /home/runner/wd/krita/_build/bin/kis_jpeg_test
+runner      1948  0.5  1.1 274560700 182460 ?    Sl   09:30   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        1889  0.1  0.9 1431128 148808 ?      Sl   09:28   0:02 /tmp/provjobd1243373394
+tester     56236  0.8  0.7 694944 121288 ?       Sl   09:48   0:01 /home/runner/wd/krita/_build/bin/kis_shape_layer_test
+runner      1928  0.1  0.5 274346424 83776 ?     Sl   09:30   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
 root        1030  0.0  0.4 2045424 71972 ?       Ssl  09:28   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     54815 99.2  0.3 223576 63960 ?        Rl   09:43   4:55 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
 root         815  0.0  0.3 295288 51824 ?        Ss   09:28   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
