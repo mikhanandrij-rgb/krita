@@ -444,7 +444,8 @@ jobs:
             mkdir -p "$2"
             KRITA_MOBILE_UI="$1" KRITA_MOBILE_SCREENSHOTS="$2" timeout "$4" xvfb-run -a -s "-screen 0 1280x1024x24" \
               gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
-                -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" -ex "info threads" \
+                -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" \
+                -ex "echo \\n=== GUI thread ===\\n" -ex "thread 1" -ex "bt 80" -ex "info threads" \
                 --args "$P/bin/krita" --nosplash > "logs/$3" 2>&1
             echo "krita ($1) exit code: $?" | tee -a "logs/$3"
             ls -la "$2" | tee -a "logs/$3"

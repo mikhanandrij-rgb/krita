@@ -27,11 +27,17 @@
 #include <QLayout>
 #include <QPixmap>
 #include <QPointer>
+#include <QScopedPointer>
 #include <QSet>
 #include <QTextStream>
 #include <QTimer>
 
+#include <atomic>
+#include <chrono>
+#include <cstdio>
+#include <cstdlib>
 #include <functional>
+#include <thread>
 
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>
@@ -40,6 +46,50 @@
 namespace mobileui {
 
 namespace {
+
+// Aborts the process when the GUI thread stops making progress, so a hang
+// produces a backtrace (Krita runs under gdb in CI) instead of a silent
+// timeout. The test driver beats on every step of the run.
+class HangDetector
+{
+public:
+    explicit HangDetector(const QString &logPath)
+        : m_logPath(logPath.toLocal8Bit())
+    {
+        m_thread = std::thread([this] {
+            int lastBeat = -1;
+            int quietSeconds = 0;
+            while (!m_stop) {
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+                const int beat = m_beat.load();
+                if (beat != lastBeat) {
+                    lastBeat = beat;
+                    quietSeconds = 0;
+                    continue;
+                }
+                if (++quietSeconds >= 120 && !m_stop) {
+                    if (FILE *f = fopen(m_logPath.constData(), "a")) {
+                        fprintf(f, "HANG: no progress for 120 s, aborting for a backtrace\n");
+                        fclose(f);
+                    }
+                    std::abort();
+                }
+            }
+        });
+    }
+    ~HangDetector()
+    {
+        m_stop = true;
+        m_thread.join();
+    }
+    void beat() { ++m_beat; }
+
+private:
+    QByteArray m_logPath;
+    std::atomic<int> m_beat{0};
+    std::atomic<bool> m_stop{false};
+    std::thread m_thread;
+};
 
 class TestDriver final : public QObject
 {
@@ -52,6 +102,14 @@ public:
         QDir().mkpath(m_dir);
         m_log.setFileName(QDir(m_dir).filePath(QStringLiteral("testdriver.log")));
         m_log.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text);
+        m_hang.reset(new HangDetector(m_log.fileName()));
+        // Beats from the event loop: a nested dialog loop still counts as
+        // progress, a blocked GUI thread does not.
+        QTimer *heartbeat = new QTimer(this);
+        connect(heartbeat, &QTimer::timeout, this, [this] {
+            m_hang->beat();
+        });
+        heartbeat->start(1000);
         if (shell->isActive()) {
             buildSteps();
         } else {
@@ -616,6 +674,7 @@ private:
     QVector<Step> m_steps;
     int m_index = 0;
     int m_extraDelay = 0;
+    QScopedPointer<HangDetector> m_hang;
 
     struct WalkItem {
         QPointer<QAction> action;
