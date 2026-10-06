@@ -1,8 +1,6 @@
-== emulator (run 29): cancelled
 status: cancelled
 branch: mobile
 commit: a7303deea17471f02c13b9f2edf9971b064755d8
 date: 2026-10-06T11:33:26Z
 screenshots: 0
 perf:
-
