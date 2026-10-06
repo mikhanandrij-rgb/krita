@@ -16,7 +16,14 @@ def main():
     ap.add_argument('source')
     ap.add_argument('runtime')
     ap.add_argument('--out')
+    ap.add_argument('--walk', help='walk.csv written by the automated action walk')
     a = ap.parse_args()
+    walk = {}
+    if a.walk:
+        try:
+            walk = {r['id']: r for r in csv.DictReader(open(a.walk, encoding='utf-8'))}
+        except FileNotFoundError:
+            print('walk.csv missing: the action walk did not run or did not finish')
 
     try:
         runtime = list(csv.DictReader(open(a.runtime, encoding='utf-8')))
@@ -46,9 +53,13 @@ def main():
         else:
             status = 'present but not listed'
             unreachable.append(row)
+        w = walk.get(name)
+        tested = ''
+        if w:
+            tested = w['result'] + (f" ({w['detail']})" if w['detail'] else '')
         merged.append({'name': name, 'text': row['text'], 'category': row['category'],
                        'desktop_menu': row['menu'], 'phone_location': r['location'] if r else '',
-                       'status': status})
+                       'status': status, 'tested': tested})
 
     print(f'source actions: {len(merged)}')
     print(f'runtime actions: {len(rt_actions)}, listed in the phone interface: {len(reachable)}')
@@ -60,6 +71,15 @@ def main():
     print(f'not created at runtime (plugin not built on this platform, created lazily, or test fixture): {len(missing)}')
     for row in missing[:300]:
         print('  MISSING', row['name'], '|', row['text'], '|', row['source'])
+
+    if walk:
+        from collections import Counter
+        c = Counter(w['result'] for w in walk.values())
+        print('action walk: ' + ', '.join(f'{k} {v}' for k, v in sorted(c.items())))
+        listed_not_walked = [m['name'] for m in merged if m['status'] == 'reachable' and m['name'] not in walk]
+        print(f'listed but not reached by the walk (walk stopped early?): {len(listed_not_walked)}')
+        for n in listed_not_walked[:50]:
+            print('  NOT-WALKED', n)
 
     if a.out:
         with open(a.out, 'w', newline='', encoding='utf-8') as f:

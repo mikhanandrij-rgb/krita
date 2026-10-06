@@ -22,6 +22,7 @@
 #include <QDir>
 #include <QElapsedTimer>
 #include <QFile>
+#include <QHash>
 #include <QLayout>
 #include <QPixmap>
 #include <QPointer>
@@ -363,11 +364,190 @@ private:
                 log(QStringLiteral("inventory written"));
             }
         });
+        if (qEnvironmentVariableIsSet("KRITA_MOBILE_ACTION_WALK")) {
+            addActionWalk();
+        }
         m_steps.append([this] {
+            // The walk modified the documents; nothing must ask to save them.
+            for (QPointer<KisDocument> doc : KisPart::instance()->documents()) {
+                if (doc) {
+                    doc->setModified(false);
+                }
+            }
             logPerf(QStringLiteral("end"));
             log(QStringLiteral("done"));
             m_log.close();
             QApplication::exit(0);
+        });
+    }
+
+    // ---- action walk -------------------------------------------------
+    // Triggers every command listed in the phone interface's command list,
+    // the same way tapping its row does, closes whatever window it opens,
+    // and records the result in walk.csv. Checkable commands are triggered
+    // twice so their state is restored. A crash names the last command in
+    // testdriver.log.
+
+    static bool skippedInWalk(const QString &name, QString *reason)
+    {
+        static const QHash<QString, QString> skipped = {
+            {QStringLiteral("file_quit"), QStringLiteral("quits Krita")},
+            {QStringLiteral("file_close"), QStringLiteral("closes the test document")},
+            {QStringLiteral("file_close_all"), QStringLiteral("closes the test document")},
+            {QStringLiteral("view_newwindow"), QStringLiteral("opens a second main window")},
+            {QStringLiteral("view_detached_canvas"), QStringLiteral("moves the canvas to its own window")},
+            {QStringLiteral("reset_configurations"), QStringLiteral("resets all settings")},
+            {QStringLiteral("render_animation_again"), QStringLiteral("renders files with the last settings")},
+            {QStringLiteral("help_contents"), QStringLiteral("opens a web browser")},
+            {QStringLiteral("help_report_bug"), QStringLiteral("opens a web browser")},
+        };
+        if (name.startsWith(QLatin1String("mobileui_mode_"))) {
+            *reason = QStringLiteral("switches the interface");
+            return true;
+        }
+        const auto it = skipped.constFind(name);
+        if (it != skipped.constEnd()) {
+            *reason = it.value();
+            return true;
+        }
+        return false;
+    }
+
+    void addActionWalk()
+    {
+        m_steps.append([this] {
+            if (!m_shell || !m_shell->commandBrowser()) {
+                return;
+            }
+            m_shell->closePanel();
+            m_shell->hideHub();
+            QSet<QString> seen;
+            for (const CommandBrowser::Entry &entry : m_shell->commandBrowser()->allEntries()) {
+                if (entry.action && !entry.action->objectName().isEmpty() && !seen.contains(entry.action->objectName())) {
+                    seen.insert(entry.action->objectName());
+                    m_walk.append({entry.action, entry.action->objectName(), entry.path});
+                }
+            }
+            m_walkFile.setFileName(QDir(m_dir).filePath(QStringLiteral("walk.csv")));
+            m_walkFile.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text);
+            QTextStream(&m_walkFile) << "id,result,detail,ms\n";
+            m_walkBaseline.clear();
+            for (QWidget *w : QApplication::topLevelWidgets()) {
+                if (w->isVisible()) {
+                    m_walkBaseline.insert(w);
+                }
+            }
+            log(QStringLiteral("walk: %1 commands").arg(m_walk.size()));
+            m_walkWatchdog = new QTimer(this);
+            m_walkWatchdog->setInterval(1000);
+            connect(m_walkWatchdog, &QTimer::timeout, this, [this] {
+                closeStrayWindows();
+            });
+            m_walkWatchdog->start();
+            m_extraDelay = -1;
+            QTimer::singleShot(0, this, [this] {
+                walkNext();
+            });
+        });
+    }
+
+    QStringList closeStrayWindows()
+    {
+        QStringList closed;
+        for (int pass = 0; pass < 4; ++pass) {
+            QWidget *modal = QApplication::activeModalWidget();
+            if (!modal || modal == mw()) {
+                break;
+            }
+            closed << QString::fromLatin1(modal->metaObject()->className());
+            if (QDialog *dialog = qobject_cast<QDialog *>(modal)) {
+                dialog->reject();
+            } else {
+                modal->close();
+            }
+            if (QApplication::activeModalWidget() == modal) {
+                modal->hide();
+            }
+        }
+        for (QWidget *w : QApplication::topLevelWidgets()) {
+            const Qt::WindowType type = w->windowType();
+            if (!w->isVisible() || w == mw() || m_walkBaseline.contains(w) || type == Qt::ToolTip) {
+                continue;
+            }
+            closed << QString::fromLatin1(w->metaObject()->className());
+            if (QDialog *dialog = qobject_cast<QDialog *>(w)) {
+                dialog->reject();
+            } else {
+                w->close();
+            }
+            if (w->isVisible()) {
+                w->hide();
+            }
+        }
+        return closed;
+    }
+
+    void writeWalkRow(const QString &id, const QString &result, const QString &detail, qint64 ms)
+    {
+        auto field = [](QString v) {
+            v.replace(QLatin1Char('"'), QLatin1String("\"\""));
+            return QLatin1Char('"') + v + QLatin1Char('"');
+        };
+        QTextStream(&m_walkFile) << field(id) << ',' << field(result) << ',' << field(detail) << ',' << ms << '\n';
+        m_walkFile.flush();
+    }
+
+    void walkNext()
+    {
+        if (m_walkIndex >= m_walk.size()) {
+            if (m_walkWatchdog) {
+                m_walkWatchdog->stop();
+            }
+            closeStrayWindows();
+            m_walkFile.close();
+            log(QStringLiteral("walk: done"));
+            QTimer::singleShot(1500, this, [this] {
+                next();
+            });
+            return;
+        }
+        const WalkItem item = m_walk.at(m_walkIndex++);
+        QString reason;
+        if (!item.action) {
+            writeWalkRow(item.id, QStringLiteral("gone"), QString(), 0);
+            walkNext();
+            return;
+        }
+        if (skippedInWalk(item.id, &reason)) {
+            writeWalkRow(item.id, QStringLiteral("skipped"), reason, 0);
+            walkNext();
+            return;
+        }
+        if (!item.action->isEnabled()) {
+            writeWalkRow(item.id, QStringLiteral("disabled"), QStringLiteral("not available in this state"), 0);
+            walkNext();
+            return;
+        }
+        log(QStringLiteral("walk %1/%2: %3").arg(m_walkIndex).arg(m_walk.size()).arg(item.id));
+        m_walkTimer.start();
+        const bool checkable = item.action->isCheckable();
+        m_shell->commandBrowser()->activateForTest(item.action);
+        if (checkable && item.action) {
+            m_shell->commandBrowser()->activateForTest(item.action);
+        }
+        QPointer<QAction> action = item.action;
+        QTimer::singleShot(checkable ? 80 : 600, this, [this, item, action] {
+            const qint64 ms = m_walkTimer.elapsed();
+            const QStringList closed = closeStrayWindows();
+            if (m_shell) {
+                m_shell->closePanel();
+            }
+            writeWalkRow(item.id, QStringLiteral("ok"),
+                         closed.isEmpty() ? QString() : QStringLiteral("opened ") + closed.join(QLatin1Char(' ')), ms);
+            // Let deferred work (and dialogs being torn down) finish.
+            QTimer::singleShot(60, this, [this] {
+                walkNext();
+            });
         });
     }
 
@@ -379,6 +559,10 @@ private:
         const int index = m_index++;
         m_extraDelay = 0;
         m_steps[index]();
+        if (m_extraDelay < 0) {
+            // The step continues on its own and calls next() when done.
+            return;
+        }
         // Give layouts, animations and the canvas time to settle; steps that
         // open a window wait for it to be grabbed and closed.
         QTimer::singleShot(1200 + m_extraDelay, this, [this] {
@@ -393,6 +577,18 @@ private:
     QVector<Step> m_steps;
     int m_index = 0;
     int m_extraDelay = 0;
+
+    struct WalkItem {
+        QPointer<QAction> action;
+        QString id;
+        QString path;
+    };
+    QVector<WalkItem> m_walk;
+    int m_walkIndex = 0;
+    QFile m_walkFile;
+    QSet<QWidget *> m_walkBaseline;
+    QPointer<QTimer> m_walkWatchdog;
+    QElapsedTimer m_walkTimer;
 };
 
 } // namespace

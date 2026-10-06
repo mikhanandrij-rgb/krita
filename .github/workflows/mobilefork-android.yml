@@ -424,7 +424,7 @@ jobs:
           key: kdeci-deps-linux-v1-${{ github.run_id }}
 
       - name: Phone-mode screenshots and inventory
-        timeout-minutes: 25
+        timeout-minutes: 50
         run: |
           P="$WD/krita/_install"
           ls "$P/bin" | head -20
@@ -434,6 +434,7 @@ jobs:
           export QML2_IMPORT_PATH="$P/qml:$P/lib/qml:$P/lib/x86_64-linux-gnu/qml:$P/lib/qt5/qml"
           export XDG_DATA_DIRS="$P/share:/usr/share"
           export KRITA_MOBILE_UI=phone
+          export KRITA_MOBILE_ACTION_WALK=1
           export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots"
           export KRITA_NO_STYLE_OVERRIDE=1
           export LIBGL_ALWAYS_SOFTWARE=1
@@ -442,7 +443,7 @@ jobs:
           set +e
           # Run under gdb so a crash leaves a backtrace in the log.
           command -v gdb >/dev/null || sudo apt-get install -y -qq gdb > /dev/null
-          timeout 1200 xvfb-run -a -s "-screen 0 1280x1024x24" \
+          timeout 2100 xvfb-run -a -s "-screen 0 1280x1024x24" \
             gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
               -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" -ex "info threads" \
               --args "$P/bin/krita" --nosplash > logs/krita-run.log 2>&1
@@ -451,6 +452,7 @@ jobs:
           # Baseline: Krita's own interface at phone size (screenshots,
           # startup time and memory for the before/after comparison).
           export KRITA_MOBILE_UI=classic
+          unset KRITA_MOBILE_ACTION_WALK
           export KRITA_MOBILE_SCREENSHOTS="$GITHUB_WORKSPACE/shots-classic"
           mkdir -p "$KRITA_MOBILE_SCREENSHOTS"
           timeout 600 xvfb-run -a -s "-screen 0 1280x1024x24" \
@@ -466,7 +468,8 @@ jobs:
       - name: Compare runtime inventory with the source inventory
         run: |
           python3 mobilefork/tools/compare_inventory.py mobilefork/inventory/actions.csv \
-            shots/runtime-inventory.csv > logs/inventory-compare.txt 2>&1 || true
+            shots/runtime-inventory.csv --walk shots/walk.csv --out shots/action-inventory.csv \
+            > logs/inventory-compare.txt 2>&1 || true
           cat logs/inventory-compare.txt | head -80
 
       - name: Upload screenshots and logs
