@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      1948  0.5  1.2 274560720 209288 ?    Sl   09:30   0:05 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        1889  0.1  0.9 1431128 147856 ?      Sl   09:28   0:02 /tmp/provjobd1243373394
-runner      1928  0.2  0.6 274346428 101600 ?    Sl   09:30   0:01 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
-root        1030  0.0  0.4 2045424 72072 ?       Ssl  09:28   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     55698 98.5  0.4 172976 71784 ?        R    09:46   0:00 /home/runner/wd/krita/_build/bin/kis_walkers_test
-tester     54815 99.2  0.3 223576 63960 ?        Rl   09:43   2:54 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
+runner      1948  0.5  1.2 274560720 210108 ?    Sl   09:30   0:05 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        1889  0.1  0.9 1431128 149756 ?      Sl   09:28   0:02 /tmp/provjobd1243373394
+tester     56236 13.1  0.7 694944 121164 ?       Sl   09:48   0:01 /home/runner/wd/krita/_build/bin/kis_shape_layer_test
+runner      1928  0.1  0.6 274346428 102080 ?    Sl   09:30   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+root        1030  0.0  0.4 2045424 71972 ?       Ssl  09:28   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+tester     54815 99.2  0.3 223576 63960 ?        Rl   09:43   4:55 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
 root         815  0.0  0.3 295288 51824 ?        Ss   09:28   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
