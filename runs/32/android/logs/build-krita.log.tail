@@ -481,13 +481,13 @@ home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspac
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 04:49:36 2026
-Stats zeroed:                             Tue Oct  6 04:44:54 2026
+Stats updated:                            Tue Oct  6 15:14:23 2026
+Stats zeroed:                             Tue Oct  6 15:08:33 2026
 Cacheable calls:                           2761 / 2764 (99.89%)
-  Hits:                                    2690 / 2761 (97.43%)
-    Direct:                                2687 / 2690 (99.89%)
-    Preprocessed:                             3 / 2690 ( 0.11%)
-  Misses:                                    71 / 2761 ( 2.57%)
+  Hits:                                    2683 / 2761 (97.17%)
+    Direct:                                2680 / 2683 (99.89%)
+    Preprocessed:                             3 / 2683 ( 0.11%)
+  Misses:                                    78 / 2761 ( 2.83%)
 Uncacheable calls:                            3 / 2764 ( 0.11%)
   Autoconf compile/link:                      0 /    3 ( 0.00%)
   Bad compiler arguments:                     0 /    3 ( 0.00%)
@@ -519,16 +519,16 @@ Errors:                                       0 / 2764 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                  2687 / 2764 (97.21%)
-  Preprocessed:                               3 /   76 ( 3.95%)
+  Direct:                                  2680 / 2764 (96.96%)
+  Preprocessed:                               3 /   83 ( 3.61%)
 Local storage:
-  Cache size (GB):                          1.2 /  2.0 (59.36%)
-  Files:                                  11733
+  Cache size (GB):                          1.3 /  2.0 (63.33%)
+  Files:                                  13669
   Cleanups:                                   0
-  Hits:                                    2690 / 2761 (97.43%)
-  Misses:                                    71 / 2761 ( 2.57%)
+  Hits:                                    2683 / 2761 (97.17%)
+  Misses:                                    78 / 2761 ( 2.83%)
   Reads:                                   5527
-  Writes:                                   145
+  Writes:                                   159
 Remote storage:
   Hits:                                       0
   Misses:                                     0

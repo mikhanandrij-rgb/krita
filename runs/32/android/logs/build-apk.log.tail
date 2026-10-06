@@ -1,4 +1,4 @@
-l.so in /home/runner/wd/krita/_build/lib /home/runner/wd/krita/_install/lib/ 
+.so in /home/runner/wd/krita/_build/lib /home/runner/wd/krita/_install/lib/ 
 -- could not find libc++_shared.so in /home/runner/wd/krita/_build/lib /home/runner/wd/krita/_install/lib/ 
 -- could not find libc.so in /home/runner/wd/krita/_build/lib /home/runner/wd/krita/_install/lib/ 
 -- could not find libm.so in /home/runner/wd/krita/_build/lib /home/runner/wd/krita/_install/lib/ 
@@ -542,9 +542,9 @@ Recommendation: remove package="org.krita" from the source AndroidManifest.xml: 
 > Task :processDebugJavaRes
 > Task :processDebugResources
 > Task :mergeDebugJavaResource
-
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
+
 > Task :compileDebugJavaWithJavac
 
 > Task :checkDebugDuplicateClasses
@@ -553,10 +553,10 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :mergeProjectDexDebug
 > Task :desugarDebugFileDependencies
 > Task :mergeDebugJniLibFolders
+> Task :mergeExtDexDebug
 > Task :validateSigningDebug
 > Task :writeDebugAppMetadata
 > Task :writeDebugSigningConfigVersions
-> Task :mergeExtDexDebug
 > Task :mergeDebugNativeLibs
 
 > Task :stripDebugDebugSymbols
@@ -574,9 +574,9 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 1m 25s
+BUILD SUCCESSFUL in 1m 38s
 46 actionable tasks: 46 executed
-Android package built successfully in 98.160 ms.
+Android package built successfully in 105.547 ms.
   -- File: /home/runner/wd/krita/_build/krita_build_apk//build/outputs/apk/debug/krita_build_apk-debug.apk
 [100%] Built target create-apk-krita
 [100%] Built target create-apk
@@ -617,12 +617,12 @@ RenderScript APIs are deprecated starting in Android 12. RenderScript support wi
 > Task :generateReleaseResValues
 > Task :mapReleaseSourceSetPaths
 > Task :generateReleaseResources
+> Task :mergeReleaseResources
 > Task :compileReleaseAidl
 > Task :packageReleaseResources
-> Task :parseReleaseLocalResources
 > Task :createReleaseCompatibleScreenManifests
 > Task :extractDeepLinksRelease
-> Task :mergeReleaseResources
+> Task :parseReleaseLocalResources
 
 > Task :processReleaseMainManifest
 package="org.krita" found in source AndroidManifest.xml: /home/runner/wd/krita/_build/krita_build_apk/AndroidManifest.xml.
@@ -635,12 +635,12 @@ Recommendation: remove package="org.krita" from the source AndroidManifest.xml: 
 > Task :extractProguardFiles
 > Task :processReleaseJavaRes
 > Task :processReleaseResources
+> Task :mergeReleaseJavaResource
 
 > Task :compileReleaseJavaWithJavac
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
-> Task :mergeReleaseJavaResource
 > Task :mergeReleaseGeneratedProguardFiles
 > Task :mergeReleaseStartupProfile
 > Task :mergeReleaseShaders
@@ -681,6 +681,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 51s
+BUILD SUCCESSFUL in 57s
 58 actionable tasks: 50 executed, 8 up-to-date
 ## Found a package file: /home/runner/wd/krita/_build/krita_build_apk/build/outputs/apk/release/kritamobile-arm64-v8a-5.4.0-prealpha-release.apk
