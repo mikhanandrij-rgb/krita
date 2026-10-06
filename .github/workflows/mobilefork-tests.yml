@@ -122,13 +122,31 @@ jobs:
           export HOME=/home/tester
           cd "$WD/krita/_build"
           "$CTEST" -N | tail -1
-          timeout 6600 "$CTEST" -j 4 --timeout 300 --output-on-failure --no-compress-output < /dev/null
+          timeout 6600 "$CTEST" -j 2 --timeout 300 --output-on-failure --no-compress-output < /dev/null
           echo "ctest exit: \$?"
           SCRIPT
           chmod a+rx run-tests.sh
           set +e
-          sudo -u tester -H bash run-tests.sh > logs/ctest.log 2>&1
+          # Progress is published every 2 minutes: in earlier runs the whole
+          # runner went away about 5 minutes into the tests (memory or disk),
+          # taking the logs with it.
+          export GITHUB_TOKEN="${{ github.token }}"
+          (
+            while sleep 120; do
+              { echo "status: running"; echo "commit: ${GITHUB_SHA}"; date -u; free -m; df -h / | tail -1;
+                grep -c 'Test *#' logs/ctest.log; grep -E 'Failed|Timeout|Exception' logs/ctest.log | tail -20; } > tests-partial.txt 2>&1
+              mkdir -p tests-partial; tail -c 50000 logs/ctest.log > tests-partial/ctest.log.tail
+              ps aux --sort=-rss | head -8 > tests-partial/top-memory.txt
+              bash mobilefork/ci/publish-status.sh tests-partial running tests-partial.txt tests-partial logs > /dev/null 2>&1
+            done
+          ) &
+          monitor=$!
+          # Tests run as their own user in a memory-limited scope, so a test
+          # that runs away is killed instead of the runner.
+          sudo systemd-run --scope --quiet -p MemoryMax=10G -p MemorySwapMax=0 --uid=tester --gid=tester \
+            env HOME=/home/tester bash "$PWD/run-tests.sh" > logs/ctest.log 2>&1
           echo "runner: ctest finished with $?" | tee -a logs/ctest.log
+          kill $monitor 2>/dev/null
           grep -m1 'tests' logs/ctest.log > logs/ctest-count.txt
           tail -80 logs/ctest.log
           exit 0
