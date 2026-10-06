@@ -1,8 +1,6 @@
-== tests-fork (run 8): success
 status: success
 branch: mobile-tests
 commit: 9cff990a44873789205b37fb7142253bcc3258b3
 date: 2026-10-06T10:46:47Z
 95% tests passed, 17 tests failed out of 321
    Loc: [/home/runner/work/krita/krita/libs/flake/tests/TestSvgParser.cpp(1121)]
-
