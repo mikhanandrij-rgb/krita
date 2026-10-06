@@ -1193,7 +1193,11 @@ void DialogFitter::rewrapButton(QWidget *w)
     if (QWidget *parent = button->parentWidget()) {
         width = qMin(width, parent->width() - button->x());
     }
-    const int available = width - indicator - dp(8);
+    // Never narrower than a readable column: a button measured while its
+    // layout was still settling would otherwise keep a one-word-per-line
+    // text (and a size hint to match) for good.
+    const int parentRoom = button->parentWidget() ? button->parentWidget()->width() - indicator - dp(16) : width;
+    const int available = qMin(qMax(width - indicator - dp(8), dp(180)), qMax(parentRoom, dp(120)));
     if (available < dp(48)) {
         return;
     }
