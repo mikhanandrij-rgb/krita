@@ -323,7 +323,9 @@ void Sheet::setArea(const QRect &area, Placement placement, bool leftSide)
 
 QRect Sheet::coveredRect() const
 {
-    return m_open ? geometry() : QRect();
+    // The target geometry: while the sheet animates open, geometry() is
+    // still the closed position.
+    return m_open ? openGeometry() : QRect();
 }
 
 void Sheet::open(const QString &panelId, const QString &tabId)
