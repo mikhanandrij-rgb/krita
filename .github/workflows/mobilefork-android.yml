@@ -592,6 +592,7 @@ jobs:
         timeout-minutes: 100
         run: |
           mkdir -p emu logs
+          set +e
           partial() { # publishes what is there so far (the walk takes long)
             { echo "status: running ($1 done)"; echo "commit: ${GITHUB_SHA}"; for r in warmup classic phone; do
                 [ -f "emu/$r/result.txt" ] && { cat "emu/$r/result.txt"; grep -h '^interface\|^perf' "emu/$r/testdriver.log" 2>/dev/null; }; done; } > partial-summary.txt
