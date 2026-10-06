@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      2162  0.6  0.8 274822760 144148 ?    Sl   09:54   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        2105  0.4  0.8 1431768 140228 ?      Sl   09:54   0:04 /tmp/provjobd3831205030
-runner      2142  0.2  0.6 274345464 105160 ?    Sl   09:54   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+runner      2162  0.6  0.8 274822776 144148 ?    Sl   09:54   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        2105  0.4  0.8 1431768 140424 ?      Sl   09:54   0:04 /tmp/provjobd3831205030
+runner      2142  0.1  0.6 274345468 105624 ?    Sl   09:54   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
 root        1281  0.0  0.4 2045424 73976 ?       Ssl  09:54   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     54941 99.6  0.3 223576 63700 ?        Rl   10:08   2:54 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
+tester     54941 99.4  0.3 223576 63700 ?        Rl   10:08   4:56 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
 root        1038  0.0  0.3 295288 52024 ?        Ss   09:54   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
 root        1145  0.0  0.2 1961048 47848 ?       Ssl  09:54   0:00 /usr/bin/containerd
