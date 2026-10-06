@@ -1,12 +1,12 @@
 == tests-partial-upstream (run 6): running
 status: running
 commit: 77b2cbc4c2eec1430f9d8008f5e540557c74be05
-Tue Oct  6 09:45:39 UTC 2026
+Tue Oct  6 09:47:42 UTC 2026
                total        used        free      shared  buff/cache   available
-Mem:           15988        1196        1015          55       14178       14792
+Mem:           15988        1176        1301          56       13912       14812
 Swap:           3071           0        3071
 /dev/root       145G   40G  106G  28% /
-93
+172
   2/321 Test   #1: appstreamtest .......................................................***Failed    3.86 sec
  53/321 Test  #54: libs-flake-TestSvgParser ............................................***Failed    1.90 sec
  54/321 Test  #55: libs-flake-TestSvgParserCloned ......................................***Failed    1.91 sec

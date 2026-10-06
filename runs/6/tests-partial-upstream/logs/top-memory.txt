@@ -1,8 +1,8 @@
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-runner      2093  0.6  1.2 274495156 198528 ?    Sl   09:30   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
-root        1896  0.1  0.8 1431384 145860 ?      Sl   09:30   0:01 /tmp/provjobd3112929702
-tester     55074 96.4  0.8 478280 139344 ?       Rl   09:45   0:01 /home/runner/wd/krita/_build/bin/kis_painter_test
-runner      1956  0.2  0.6 274346416 107292 ?    Sl   09:30   0:01 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
-root        1164  0.0  0.4 2127348 71668 ?       Ssl  09:30   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-tester     54914 97.2  0.3 223348 62248 ?        Rl   09:44   0:50 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
-root         953  0.0  0.3 295288 51620 ?        Ss   09:30   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
+runner      2093  0.6  1.2 274495144 199396 ?    Sl   09:30   0:06 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Worker spawnclient 142 145
+root        1896  0.1  0.8 1431384 145468 ?      Sl   09:30   0:01 /tmp/provjobd3112929702
+runner      1956  0.2  0.6 274346396 111912 ?    Sl   09:30   0:02 /home/runner/actions-runner/cached/2.337.0/bin/Runner.Listener run
+tester     55784 31.1  0.4 542180 76704 ?        Sl   09:47   0:00 /home/runner/wd/krita/_build/bin/kis_image_animation_interface_test
+root        1164  0.0  0.4 2127348 71396 ?       Ssl  09:30   0:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+tester     54914 99.1  0.3 223612 63944 ?        Rl   09:44   2:52 /home/runner/wd/krita/_build/bin/TestCompositeOpInversion
+root         953  0.0  0.3 295288 51556 ?        Ss   09:30   0:00 php-fpm: master process (/etc/php/8.3/fpm/php-fpm.conf)
