@@ -1,5 +1,5 @@
 == emulator-partial (run 38): running
-status: running (classic done)
+status: running (phone done)
 commit: c7801f8022cf2a98eabeee4d9783e765854da2e7
 run classic: done after 101 s
 interface: classic (smallest side 411 dp)
@@ -11,4 +11,24 @@ interface: classic (smallest side 411 dp)
 perf classic-start: interface-ready-ms=20419 first-canvas-ms=-1 rss-kb=1119764 peak-kb=1119976 uptime-ms=26006
 perf classic-canvas: interface-ready-ms=20419 first-canvas-ms=33223 rss-kb=1259840 peak-kb=1260944 uptime-ms=37307
 perf classic-end: interface-ready-ms=20419 first-canvas-ms=33223 rss-kb=1289928 peak-kb=1304268 uptime-ms=46366
+run auto: done after 364 s
+interface: phone (smallest side 411 dp)
+perf start: interface-ready-ms=21313 first-canvas-ms=-1 rss-kb=1140640 peak-kb=1141648 uptime-ms=26810
+perf panel tools: 229 ms
+perf panel menu: 82 ms
+perf panel more: 77 ms
+perf panel brush: 216 ms
+perf panel color: 122 ms
+perf panel layers: 73 ms
+perf panel animation: 91 ms
+perf panel view: 80 ms
+perf panel text: 72 ms
+perf panel other:BrushHudDocker: 95 ms
+perf panel other:LogDocker: 78 ms
+perf panel other:RecorderDocker: 74 ms
+perf panel other:TasksetDocker: 69 ms
+perf panel other:ToolBox: 73 ms
+perf panel other:TouchDocker: 104 ms
+perf after-portrait: interface-ready-ms=21313 first-canvas-ms=38738 rss-kb=1390632 peak-kb=1425400 uptime-ms=198757
+perf end: interface-ready-ms=21313 first-canvas-ms=38738 rss-kb=1395416 peak-kb=1448492 uptime-ms=359028
 

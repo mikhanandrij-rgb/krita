@@ -1,0 +1,312 @@
+10-06 23:41:55.246   914   953 V WindowManagerShell: Transition requested: android.os.BinderProxy@5852646 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=214971 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@b7ed007} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{4cae534 org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:41:55.247   552  1850 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 23:41:55.261   552   623 D CoreBackPreview: Window{40a972d u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f9f29f3, mPriority=0, mIsAnimationCallback=false}
+10-06 23:41:55.267   552   582 I ActivityManager: Start proc 6614:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 23:41:55.295  6614  6614 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 23:41:55.296  6614  6614 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 23:41:55.296  6614  6614 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 23:41:55.299   552   569 V WindowManager: Sent Transition #20 createdAt=10-06 23:41:55.242 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=214971 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1047ee5 Task{d821cf1 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{7b1fdba org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:41:55.299   552   569 V WindowManager:     info={id=20 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{1047ee5 Task{d821cf1 #10 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=10)/@0xd267929 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{d6eb9ff Task{f23e9a3 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x124db0a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 23:41:55.442  6614  6614 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 23:41:55.483  6614  6614 D nativeloader: Configuring clns-6 for other apk /data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/lib/arm64:/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 23:41:55.503  6614  6614 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 23:41:55.503  6614  6614 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 23:41:55.511   552   623 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 6614
+10-06 23:41:55.582  6614  6614 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 23:41:55.580  6614  6614 W rita.mobilefork: type=1400 audit(0.0:251): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=485 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 23:41:56.004  6614  6614 I krita.MainActivity: TouchSlop: 21
+10-06 23:41:56.004  6614  6614 I krita.MainActivity: LibsLoaded
+10-06 23:41:56.018   552  1357 D CoreBackPreview: Window{b4ce7d1 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@fae8aa4, mPriority=0, mIsAnimationCallback=false}
+10-06 23:41:56.178   552   569 W system_server: Failed to determine oat file name for dex location /data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk: Dalvik cache directory does not exist
+10-06 23:41:56.178   552   569 W ziparchive: Unable to open '/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.dm': No such file or directory
+10-06 23:41:56.186   552  2117 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 23:41:56.188   914   953 V WindowManagerShell: Transition requested: android.os.BinderProxy@ed87339 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=215910 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@c5a9d7e} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{c05a2df com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:41:56.189   552   569 I ActivityTaskManager: Displayed org.krita.mobilefork/org.krita.android.MainActivity for user 0: +935ms
+10-06 23:41:56.201   552  1011 W InputManager-JNI: Input channel object '40a972d Splash Screen org.krita.mobilefork (client)' was disposed without first being removed with the input manager!
+10-06 23:41:56.206   552   623 D CoreBackPreview: Window{40a972d u0 Splash Screen org.krita.mobilefork EXITING}: Setting back callback null
+10-06 23:41:56.213   552  2117 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 23:41:56.228   552  2117 I ImeTracker: org.krita.mobilefork:36a03d1c: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 23:41:56.228   552  2117 I ImeTracker: org.krita.mobilefork:36a03d1c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:41:56.238  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 23:41:56.435   552   569 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +239ms
+10-06 23:41:56.435   552   569 V WindowManager: Sent Transition #21 createdAt=10-06 23:41:56.182 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=215910 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1047ee5 Task{d821cf1 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{fb01ecc com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:41:56.563   552  2117 I ImeTracker: org.krita.mobilefork:dc43e721: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+10-06 23:41:56.563   552  2117 I ImeTracker: org.krita.mobilefork:dc43e721: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:41:56.570  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 23:41:58.075   552  2117 D CoreBackPreview: Window{d724106 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4a25df4, mPriority=0, mIsAnimationCallback=false}
+10-06 23:42:06.367  6614  6640 W rita.mobilefork: Cleared Reference was only reachable from finalizer (only reported once)
+10-06 23:42:06.368  6614  6640 I rita.mobilefork: Explicit concurrent copying GC freed 42117(2183KB) AllocSpace objects, 10(1484KB) LOS objects, 49% free, 2508KB/5016KB, paused 89us,6us total 7.647ms
+10-06 23:42:14.081  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 23:42:14.089  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 23:42:14.096  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 23:42:14.104  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 23:42:14.111  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 23:42:14.119  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 23:42:14.121  6614  6637 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 23:42:14.936  6614  6637 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface on
+10-06 23:42:14.937  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:14.948  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:14.955  6614  6637 I krita   : Krita Mobile: phone defaults written (effective after restart): memoryHardLimitPercent=35, frameRenderingClones=1, animationCacheFrameSizeLimit=1920
+10-06 23:42:16.384  6614  6637 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test test run requested
+10-06 23:42:16.385  6614  6637 I krita   : Krita Mobile test: interface: phone (smallest side 411 dp)
+10-06 23:42:16.594  6614  6630 I rita.mobilefork: Explicit concurrent copying GC freed 6743(337KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2474KB/4949KB, paused 18us,9us total 23.913ms
+10-06 23:42:16.907   552  2117 D CoreBackPreview: Window{d724106 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 23:42:16.908   552  2117 W InputManager-JNI: Input channel object 'd724106 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:42:17.010  6614  6637 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 23:42:17.010  6614  6637 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 23:42:22.276  6614  6637 I krita   : Krita Mobile test: perf start: interface-ready-ms=21313 first-canvas-ms=-1 rss-kb=1140640 peak-kb=1141648 uptime-ms=26810
+10-06 23:42:26.586  6614  6637 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
+10-06 23:42:26.727  6614  6630 I rita.mobilefork: Explicit concurrent copying GC freed 4588(228KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2454KB/4909KB, paused 44us,5us total 4.054ms
+10-06 23:42:29.164  6614  6637 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
+10-06 23:42:30.987  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:31.029  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:31.489  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:32.032  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:32.249  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:32.746  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:34.861  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#5(BLAST Consumer)5](id:19d600000005,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:42:36.318  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:36.857  6614  6630 I rita.mobilefork: Explicit concurrent copying GC freed 7261(402KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2292KB/4585KB, paused 11us,7us total 3.519ms
+10-06 23:42:36.859  6614  6637 W krita   : This plugin does not support setting window opacity
+10-06 23:42:39.684  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:42:39.753  6614  6637 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 23:42:39.904  6614  6637 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-03-editor.png ok
+10-06 23:42:39.912  6614  6637 I krita   : Krita Mobile test: probe 20,816: QToolBar 'mobileToolRailHolder' 0,810 411x56 tip='' parent=KisMainWindow inLayout=1
+10-06 23:42:39.912  6614  6637 I krita   : Krita Mobile test: probe 20,816: mobileui::ToolRail 'mobileToolRail' 0,810 411x56 tip='' parent=QToolBar inLayout=1
+10-06 23:42:39.913  6614  6637 I krita   : Krita Mobile test: probe 20,816: mobileui::ChromeButton '' 4,814 48x48 tip='Freehand Brush Tool' parent=mobileui::ToolRail inLayout=1
+10-06 23:42:42.537  6614  6637 W krita   : This plugin does not support setting window opacity
+10-06 23:42:42.581  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#7(BLAST Consumer)7](id:19d600000007,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:42:42.941  6614  6637 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 23:42:43.079  6614  6637 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-04-tools.png ok
+10-06 23:42:45.522  6614  6637 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 23:42:45.680  6614  6637 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-05-brush-presets.png ok
+10-06 23:42:46.920   552   642 D ActivityManager: Skipping freeze for process 2112 com.google.process.gapps curAdj = 975(override)
+10-06 23:42:46.920   552   642 D ActivityManager: Skipping freeze for p
+[...]
+rita Mobile test: dialog krita_filter_hsvadjustment: closed
+10-06 23:47:01.344  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#37(BLAST Consumer)37](id:19d600000025,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:01.344  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:02.576  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_perchannel: triggering
+10-06 23:47:05.308  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_perchannel: KisDlgFilter 866x411 min 504x128 saved
+10-06 23:47:05.314  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_perchannel: closed
+10-06 23:47:05.316  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:05.317  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#38(BLAST Consumer)38](id:19d600000026,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:06.277  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_levels: triggering
+10-06 23:47:08.878  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_levels: KisDlgFilter 866x411 min 504x128 saved
+10-06 23:47:08.884  6614  6637 I krita   : Krita Mobile test: dialog krita_filter_levels: closed
+10-06 23:47:08.886  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#39(BLAST Consumer)39](id:19d600000027,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1243 com.android.bluetooth curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1436 com.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 2052 com.android.keychain curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1926 com.android.printspooler curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1546 com.android.carrierconfig curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 2489 com.android.localtransport curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1849 com.google.android.googlesdksetup curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 2133 com.android.carrierdefaultapp curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3389 com.android.traceur curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3496 com.google.android.onetimeinitializer curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3285 com.google.android.webview:webview_service curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3674 com.android.camera2 curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3748 com.android.dynsystem curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 2774 com.android.imsserviceentitlement curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 1388 com.google.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 3773 com.android.dynsystem:dynsystem curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 2193 com.android.providers.calendar curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 4462 com.android.emergency curAdj = 999(override)
+10-06 23:47:10.029   552   642 D ActivityManager: Skipping freeze for process 4512 com.google.android.healthconnect.controller curAdj = 999(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 5210 com.google.android.webview curAdj = 999(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2348 com.google.android.partnersetup curAdj = 999(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 3918 com.google.android.configupdater curAdj = 999(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2754 com.google.android.apps.wallpaper curAdj = 985(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2318 android.process.media curAdj = 975(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 6165 com.android.externalstorage curAdj = 975(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2270 com.google.android.as.oss curAdj = 965(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2112 com.google.process.gapps curAdj = 965(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2479 com.google.android.documentsui curAdj = 945(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 1138 com.android.settings curAdj = 945(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 3971 com.google.android.rkpdapp curAdj = 935(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 905(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2829 com.google.android.tts curAdj = 945(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 5256 com.google.android.settings.intelligence curAdj = 925(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2373 com.google.android.contacts curAdj = 915(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 4136 com.google.android.gm curAdj = 925(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 4943 com.google.android.googlequicksearchbox curAdj = 935(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 4532 com.google.android.marvin.talkback curAdj = 925(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 1915 com.google.android.youtube curAdj = 915(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2569 com.google.android.dialer curAdj = 905(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 985(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 925(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 915(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 2783 com.google.android.gms.unstable curAdj = 905(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 905(override)
+10-06 23:47:10.030   552   642 D ActivityManager: Skipping freeze for process 5583 com.google.android.gms curAdj = 905(override)
+10-06 23:47:10.073  6614  6640 I rita.mobilefork: Explicit concurrent copying GC freed 4261(252KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2286KB/4573KB, paused 18us,8us total 3.535ms
+10-06 23:47:10.276  6614  6637 I krita   : Krita Mobile test: dialog rotateimage: triggering
+10-06 23:47:12.858  6614  6637 I krita   : Krita Mobile test: dialog rotateimage: DlgRotateImage 866x411 min 339x361 saved
+10-06 23:47:12.874  6614  6637 I krita   : Krita Mobile test: dialog rotateimage: closed
+10-06 23:47:12.877  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#40(BLAST Consumer)40](id:19d600000028,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:16.577  6614  6637 I krita   : Krita Mobile test: dialog offsetimage: triggering
+10-06 23:47:19.233  6614  6637 I krita   : Krita Mobile test: dialog offsetimage: DlgOffsetImage 360x244 min 189x243 saved
+10-06 23:47:19.247  6614  6637 I krita   : Krita Mobile test: dialog offsetimage: closed
+10-06 23:47:19.249  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#41(BLAST Consumer)41](id:19d600000029,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:20.128   552   642 D ActivityManager: Skipping freeze for process 1243 com.android.bluetooth curAdj = 999(override)
+10-06 23:47:20.128   552   642 D ActivityManager: Skipping freeze for process 1436 com.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:20.128   552   642 D ActivityManager: Skipping freeze for process 2052 com.android.keychain curAdj = 999(override)
+10-06 23:47:20.128   552   642 D ActivityManager: Skipping freeze for process 1926 com.android.printspooler curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1546 com.android.carrierconfig curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2489 com.android.localtransport curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1849 com.google.android.googlesdksetup curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2133 com.android.carrierdefaultapp curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3389 com.android.traceur curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3496 com.google.android.onetimeinitializer curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3285 com.google.android.webview:webview_service curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3674 com.android.camera2 curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3748 com.android.dynsystem curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2774 com.android.imsserviceentitlement curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1388 com.google.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3773 com.android.dynsystem:dynsystem curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2193 com.android.providers.calendar curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4462 com.android.emergency curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4512 com.google.android.healthconnect.controller curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 5210 com.google.android.webview curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2348 com.google.android.partnersetup curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3918 com.google.android.configupdater curAdj = 999(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2754 com.google.android.apps.wallpaper curAdj = 985(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2318 android.process.media curAdj = 975(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 6165 com.android.externalstorage curAdj = 975(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2270 com.google.android.as.oss curAdj = 965(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2112 com.google.process.gapps curAdj = 965(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2479 com.google.android.documentsui curAdj = 945(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1138 com.android.settings curAdj = 945(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3971 com.google.android.rkpdapp curAdj = 935(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 905(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2829 com.google.android.tts curAdj = 945(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 5256 com.google.android.settings.intelligence curAdj = 925(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2373 com.google.android.contacts curAdj = 915(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4136 com.google.android.gm curAdj = 925(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4943 com.google.android.googlequicksearchbox curAdj = 935(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4532 com.google.android.marvin.talkback curAdj = 925(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1915 com.google.android.youtube curAdj = 915(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2569 com.google.android.dialer curAdj = 905(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 985(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 925(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 915(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 2783 com.google.android.gms.unstable curAdj = 905(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 905(override)
+10-06 23:47:20.129   552   642 D ActivityManager: Skipping freeze for process 5583 com.google.android.gms curAdj = 905(override)
+10-06 23:47:20.172  6614  7087 I rita.mobilefork: Explicit concurrent copying GC freed 4034(241KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2284KB/4569KB, paused 17us,5us total 3.331ms
+10-06 23:47:20.878   552   623 I ActivityManager: Process com.google.android.apps.wellbeing (pid 1688) has died: prev LAST
+10-06 23:47:22.976  6614  6637 I krita   : Krita Mobile test: dialog imagesplit: triggering
+10-06 23:47:24.444   552   623 I ActivityManager: Process com.google.android.dialer (pid 2569) has died: cch+35 CEM 
+10-06 23:47:25.439  6614  6637 I krita   : Krita Mobile test: dialog imagesplit: DlgImagesplit 866x411 min 142x119 saved
+10-06 23:47:25.454  6614  6637 I krita   : Krita Mobile test: dialog imagesplit: closed
+10-06 23:47:25.457  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#42(BLAST Consumer)42](id:19d60000002a,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:29.277  6614  6637 I krita   : Krita Mobile test: dialog layersplit: triggering
+10-06 23:47:29.299  6614  6637 W krita   : Dialog "krita/layer_split" has a widget without an object name: QWidget(0x793ed619be10)
+10-06 23:47:30.285  6614  6640 I rita.mobilefork: Explicit concurrent copying GC freed 1125(117KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 2285KB/4571KB, paused 17us,3us total 3.243ms
+10-06 23:47:31.862  6614  6637 I krita   : Krita Mobile test: dialog layersplit: DlgLayerSplit 866x411 min 149x119 saved
+10-06 23:47:31.877  6614  6637 I krita   : Krita Mobile test: dialog layersplit: closed
+10-06 23:47:31.884  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#43(BLAST Consumer)43](id:19d60000002b,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:35.578  6614  6637 I krita   : Krita Mobile test: dialog separate: triggering
+10-06 23:47:38.289  6614  6637 I krita   : Krita Mobile test: dialog separate: DlgSeparate 866x411 min 133x119 saved
+10-06 23:47:38.303  6614  6637 I krita   : Krita Mobile test: dialog separate: closed
+10-06 23:47:38.307  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#44(BLAST Consumer)44](id:19d60000002c,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:40.350   552   642 D ActivityManager: Skipping freeze for process 2783 com.google.android.gms.unstable curAdj = 915(override)
+10-06 23:47:40.350   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 905(override)
+10-06 23:47:40.350   552   642 D ActivityManager: Skipping freeze for process 5583 com.google.android.gms curAdj = 905(override)
+10-06 23:47:40.396  6614  6630 I rita.mobilefork: Explicit concurrent copying GC freed 3652(209KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2284KB/4568KB, paused 17us,6us total 3.334ms
+10-06 23:47:41.976  6614  6637 I krita   : Krita Mobile test: dialog clones_array: triggering
+10-06 23:47:44.407  6614  6637 I krita   : Krita Mobile test: dialog clones_array: DlgClonesArray 662x247 min 661x246 saved
+10-06 23:47:44.421  6614  6637 I krita   : Krita Mobile test: dialog clones_array: closed
+10-06 23:47:44.425  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#45(BLAST Consumer)45](id:19d60000002d,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:48.275  6614  6637 I krita   : Krita Mobile test: dialog render_animation: action disabled
+10-06 23:47:49.481  6614  6637 W krita   : QuaZip::getFileNameList/getFileInfoList(): ZIP is not open in mdUnzip mode
+10-06 23:47:49.481  6614  6637 W krita   : QuaZip::getFileNameList/getFileInfoList(): ZIP is not open in mdUnzip mode
+10-06 23:47:49.483  6614  6637 I krita   : Krita Mobile test: dialog autosave_recovery: showing
+10-06 23:47:49.527  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.529  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.529  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.530  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.530  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.530  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.530  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.530  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.531  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.531  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.566  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:49.567  6614  6637 W krita   : QImage::scaled: Image is a null image
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 1243 com.android.bluetooth curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 1436 com.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 2052 com.android.keychain curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 1926 com.android.printspooler curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 1546 com.android.carrierconfig curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 2489 com.android.localtransport curAdj = 999(override)
+10-06 23:47:50.448   552   642 D ActivityManager: Skipping freeze for process 1849 com.google.android.googlesdksetup curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2133 com.android.carrierdefaultapp curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3389 com.android.traceur curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3496 com.google.android.onetimeinitializer curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3285 com.google.android.webview:webview_service curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3674 com.android.camera2 curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3748 com.android.dynsystem curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2774 com.android.imsserviceentitlement curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 1388 com.google.android.cellbroadcastreceiver curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3773 com.android.dynsystem:dynsystem curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2193 com.android.providers.calendar curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 4462 com.android.emergency curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 4512 com.google.android.healthconnect.controller curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 5210 com.google.android.webview curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2348 com.google.android.partnersetup curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 3918 com.google.android.configupdater curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2754 com.google.android.apps.wallpaper curAdj = 999(override)
+10-06 23:47:50.449   552   642 D ActivityManager: Skipping freeze for process 2318 android.process.media curAdj = 999(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 6165 com.android.externalstorage curAdj = 999(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2270 com.google.android.as.oss curAdj = 999(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2112 com.google.process.gapps curAdj = 995(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2479 com.google.android.documentsui curAdj = 995(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 1138 com.android.settings curAdj = 985(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 3971 com.google.android.rkpdapp curAdj = 985(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 975(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2829 com.google.android.tts curAdj = 975(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 5256 com.google.android.settings.intelligence curAdj = 965(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2373 com.google.android.contacts curAdj = 965(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 955(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 4136 com.google.android.gm curAdj = 955(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 4943 com.google.android.googlequicksearchbox curAdj = 945(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 4532 com.google.android.marvin.talkback curAdj = 945(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 1915 com.google.android.youtube curAdj = 935(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 935(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 925(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 925(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 915(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 2783 com.google.android.gms.unstable curAdj = 905(override)
+10-06 23:47:50.450   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 905(override)
+10-06 23:47:50.492  6614  6630 I rita.mobilefork: Explicit concurrent copying GC freed 3805(222KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2286KB/4572KB, paused 17us,4us total 3.157ms
+10-06 23:47:51.911  6614  6637 I krita   : Krita Mobile test: dialog autosave_recovery: KisAutoSaveRecoveryDialog 650x315 min 500x195 saved
+10-06 23:47:51.925  6614  6637 I krita   : Krita Mobile test: dialog autosave_recovery: closed
+10-06 23:47:51.926  6614  6614 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#46(BLAST Consumer)46](id:19d60000002e,api:0,p:-1,c:6614) disconnect: not connected (req=2)
+10-06 23:47:53.291  6614  6637 I krita   : Krita Mobile test: inventory written
+10-06 23:47:54.493  6614  6637 I krita   : Krita Mobile test: perf end: interface-ready-ms=21313 first-canvas-ms=38738 rss-kb=1395416 peak-kb=1448492 uptime-ms=359028
+10-06 23:47:54.494  6614  6637 I krita   : Krita Mobile test: done
+10-06 23:47:54.514  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:54.521  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:54.622  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:55.821  6614  6637 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:55.925  6614  6637 W krita   : exit app 0
+10-06 23:47:55.927   914   953 V WindowManagerShell: Transition requested: android.os.BinderProxy@e00e49f TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=216203 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@e03f9ec} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:47:55.929   552  2140 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:1; bindFromPackage:null: isBindService:false]
+10-06 23:47:55.948  6614  7198 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:47:56.450   552   569 V WindowManager: Sent Transition #24 createdAt=10-06 23:47:55.926 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=0 lastActiveTime=216203 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1047ee5 Task{d821cf1 #10 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(128, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:47:56.450   552   569 V WindowManager:     info={id=24 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{d6eb9ff Task{f23e9a3 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x124db0a sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0 endFixedRotation=0},{WCT{RemoteToken{1047ee5 Task{d821cf1 #10 type=standard A=10192:org.krita.mobilefork}}} m=CLOSE f=NONE leash=Surface(name=Task=10)/@0xd267929 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 2400, 1080) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=Surface(name=WallpaperWindowToken{9dcffa4 token=android.os.Binder@2a6a66a})/@0xade02ac - rotation-leash)/@0xe4de6d8 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1}]}
+10-06 23:47:56.642   552   623 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.558 fontWeightAdjustment=0}
+10-06 23:47:56.653   552   623 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w866dp h363dp 420dpi nrml long land finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 2400, 1080) mAppBounds=Rect(128, 0 - 2400, 1017) mMaxBounds=Rect(0, 0 - 2400, 1080) mDisplayRotation=ROTATION_90 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} as.3 s.558 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-06 23:47:56.655   552   623 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.624 fontWeightAdjustment=0}
+10-06 23:47:57.131  6614  6614 I krita.MainActivity: [onDestroy]
+10-06 23:47:57.135   552   623 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: SVC ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:2; bindFromPackage:null: isBindService:false]
+10-06 23:47:57.137   552   623 D CoreBackPreview: Window{b4ce7d1 u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 23:47:57.143   552  2297 W InputManager-JNI: Input channel object 'b4ce7d1 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:47:57.175   552   565 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{7f860c u0 org.krita.mobilefork/org.krita.android.DocumentSaverService}
+10-06 23:47:57.203  6614  6614 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@5459031 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:47:57.203  6614  6614 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@5459031 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:47:57.207   552   623 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{9874c98 u0 org.krita.mobilefork/org.krita.android.MainActivity t10} (client)' was disposed without first being removed with the input manager!
+10-06 23:47:57.589   552  2299 I ActivityManager: Process org.krita.mobilefork (pid 6614) has died: fg  SVC 
+10-06 23:47:57.605   552   572 W ActivityManager: setHasOverlayUi called on unknown pid: 6614
