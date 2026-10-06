@@ -1,8 +1,0 @@
-status: success
-branch: mobile-phase2
-commit: f093cc2a5372c241f7ca4382620a1c3c8aeca8e9
-date: 2026-10-06T02:19:44Z
-screenshots: 38
-disk:
-  Filesystem      Size  Used Avail Use% Mounted on
-  /dev/root       145G   35G  110G  24% /

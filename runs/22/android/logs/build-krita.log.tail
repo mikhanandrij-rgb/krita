@@ -1,4 +1,5 @@
-/workspaces/Minimal.kws
+home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/VFX_Paint.kws
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/workspaces/Minimal.kws
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeDark.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeHighContrast.colors
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/color-schemes/BreezeLight.colors
@@ -216,8 +217,11 @@
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Shifted_Triad.kgm
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/gamutmasks/Split_Complementary.kgm
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/seexpr_scripts/Disney_noisecolor2.kse
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/windowlayouts/Cockpit (laptop mode).kwl
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/windowlayouts/Dual screen editing.kwl
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/donation/banner.png
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/donation/welcomebanner1.jpg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/donation/welcomebanner2.jpg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/donation/welcomebanner3.jpg
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/donation/welcomebanner4.jpg
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/1024x1024/apps/krita.png
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/128x128/apps/krita.png
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/16x16/apps/krita.png
@@ -237,13 +241,11 @@
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/256x256/mimetypes/application-x-krita.png
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/512x512/mimetypes/application-x-krita.png
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/icons/hicolor/1024x1024/mimetypes/application-x-krita.png
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita_version
--- Set non-toolchain portion of runtime path of "/home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita_version" to "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu:/home/runner/wd/krita/_install/lib"
--- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita
--- Set non-toolchain portion of runtime path of "/home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin/krita" to "/home/runner/wd/krita/_install/lib/x86_64-linux-gnu:/home/runner/wd/krita/_install/lib"
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib/libkrita_arm64-v8a.so
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/applications/org.kde.krita.desktop
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/actions/krita.action
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/actions/kritamenu.action
+-- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/actions/kritamenu_android.action
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/metainfo/org.kde.krita.appdata.xml
 -- Up-to-date: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/krita/shortcuts
 -- Installing: /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share/locale
@@ -479,35 +481,35 @@
 Cache directory:                          /home/runner/ccache/krita
 Config file:                              /home/runner/ccache/krita/ccache.conf
 System config file:                       /etc/ccache.conf
-Stats updated:                            Tue Oct  6 02:17:01 2026
-Stats zeroed:                             Tue Oct  6 01:28:41 2026
-Cacheable calls:                           2827 / 2833 (99.79%)
-  Hits:                                      39 / 2827 ( 1.38%)
-    Direct:                                   0 /   39 ( 0.00%)
-    Preprocessed:                            39 /   39 (100.0%)
-  Misses:                                  2788 / 2827 (98.62%)
-Uncacheable calls:                            6 / 2833 ( 0.21%)
-  Autoconf compile/link:                      0 /    6 ( 0.00%)
-  Bad compiler arguments:                     0 /    6 ( 0.00%)
-  Called for linking:                         0 /    6 ( 0.00%)
-  Called for preprocessing:                   0 /    6 ( 0.00%)
-  Ccache disabled:                            0 /    6 ( 0.00%)
-  Compilation failed:                         5 /    6 (83.33%)
-  Compiler output file missing:               0 /    6 ( 0.00%)
-  Compiler produced empty output:             0 /    6 ( 0.00%)
-  Compiler produced stdout:                   0 /    6 ( 0.00%)
-  Could not use modules:                      0 /    6 ( 0.00%)
-  Could not use precompiled header:           0 /    6 ( 0.00%)
-  Forced recache:                             0 /    6 ( 0.00%)
-  Multiple source files:                      0 /    6 ( 0.00%)
-  No input file:                              0 /    6 ( 0.00%)
-  Output to stdout:                           0 /    6 ( 0.00%)
-  Preprocessing failed:                       1 /    6 (16.67%)
-  Unsupported code directive:                 0 /    6 ( 0.00%)
-  Unsupported compiler option:                0 /    6 ( 0.00%)
-  Unsupported environment variable:           0 /    6 ( 0.00%)
-  Unsupported source language:                0 /    6 ( 0.00%)
-Errors:                                       0 / 2833 ( 0.00%)
+Stats updated:                            Tue Oct  6 08:32:56 2026
+Stats zeroed:                             Tue Oct  6 08:27:11 2026
+Cacheable calls:                           2761 / 2764 (99.89%)
+  Hits:                                    2694 / 2761 (97.57%)
+    Direct:                                2691 / 2694 (99.89%)
+    Preprocessed:                             3 / 2694 ( 0.11%)
+  Misses:                                    67 / 2761 ( 2.43%)
+Uncacheable calls:                            3 / 2764 ( 0.11%)
+  Autoconf compile/link:                      0 /    3 ( 0.00%)
+  Bad compiler arguments:                     0 /    3 ( 0.00%)
+  Called for linking:                         0 /    3 ( 0.00%)
+  Called for preprocessing:                   0 /    3 ( 0.00%)
+  Ccache disabled:                            0 /    3 ( 0.00%)
+  Compilation failed:                         2 /    3 (66.67%)
+  Compiler output file missing:               0 /    3 ( 0.00%)
+  Compiler produced empty output:             0 /    3 ( 0.00%)
+  Compiler produced stdout:                   0 /    3 ( 0.00%)
+  Could not use modules:                      0 /    3 ( 0.00%)
+  Could not use precompiled header:           0 /    3 ( 0.00%)
+  Forced recache:                             0 /    3 ( 0.00%)
+  Multiple source files:                      0 /    3 ( 0.00%)
+  No input file:                              0 /    3 ( 0.00%)
+  Output to stdout:                           0 /    3 ( 0.00%)
+  Preprocessing failed:                       1 /    3 (33.33%)
+  Unsupported code directive:                 0 /    3 ( 0.00%)
+  Unsupported compiler option:                0 /    3 ( 0.00%)
+  Unsupported environment variable:           0 /    3 ( 0.00%)
+  Unsupported source language:                0 /    3 ( 0.00%)
+Errors:                                       0 / 2764 ( 0.00%)
   Compiler check failed:                      0
   Could not find compiler:                    0
   Could not read or parse input file:         0
@@ -517,16 +519,16 @@ Errors:                                       0 / 2833 ( 0.00%)
   Internal error:                             0
   Missing cache file:                         0
 Successful lookups:
-  Direct:                                     0 / 2833 ( 0.00%)
-  Preprocessed:                              39 / 2832 ( 1.38%)
+  Direct:                                  2691 / 2764 (97.36%)
+  Preprocessed:                               3 /   72 ( 4.17%)
 Local storage:
-  Cache size (GB):                          0.3 / 20.0 ( 1.68%)
-  Files:                                  10497
+  Cache size (GB):                          1.2 /  2.0 (60.68%)
+  Files:                                  12420
   Cleanups:                                   0
-  Hits:                                      39 / 2827 ( 1.38%)
-  Misses:                                  2788 / 2827 (98.62%)
-  Reads:                                   5665
-  Writes:                                  5615
+  Hits:                                    2694 / 2761 (97.57%)
+  Misses:                                    67 / 2761 ( 2.43%)
+  Reads:                                   5527
+  Writes:                                   137
 Remote storage:
   Hits:                                       0
   Misses:                                     0
@@ -538,4 +540,3 @@ Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/share -> /h
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/lib -> /home/runner/wd/krita/_install/lib
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/include -> /home/runner/wd/krita/_install/include
 Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/qml -> /home/runner/wd/krita/_install/qml
-Copying /home/runner/wd/krita/_staging/home/runner/wd/krita/_install/bin -> /home/runner/wd/krita/_install/bin
