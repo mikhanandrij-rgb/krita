@@ -120,3 +120,35 @@ ERROR        | Failed to bind to texture: invalid color buffer.
 ERROR        | bad color buffer handle 420
 ERROR        | Failed to find ColorBuffer: 459
 ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 555
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 558
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 562
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 564
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 567
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 578
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 591
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 598
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 638
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 641
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 649
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 656
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 664
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 677
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 680
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 685
+ERROR        | Failed to bind to texture: invalid color buffer.
