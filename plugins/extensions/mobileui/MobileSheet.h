@@ -12,6 +12,7 @@
 #include <QIcon>
 #include <QPointer>
 #include <QVector>
+#include <QSet>
 #include <QWidget>
 
 class QButtonGroup;
@@ -55,6 +56,8 @@ public:
     void setTabVisible(
         const QString &panelId, const QString &tabId, bool visible);
     void setPanelTitle(const QString &panelId, const QString &title);
+    // Big editors (the brush editor) open the bottom sheet at full height.
+    void setTabPrefersFullHeight(const QString &panelId, const QString &tabId);
 
     bool hasPanel(const QString &panelId) const;
     bool isOpen() const { return m_open; }
@@ -117,6 +120,7 @@ private:
     QRect openGeometry() const;
     QRect closedGeometry() const;
     void animateTo(const QRect &target, bool hideAfter);
+    void expandForTab(const QString &panelId, const QString &tabId);
     void relayout();
 
     // Dragging the header resizes (bottom) or dismisses (both) the sheet.
@@ -138,6 +142,7 @@ private:
     bool m_open = false;
     bool m_animationsEnabled = true;
     qreal m_fraction = 0.5;
+    QSet<QString> m_fullHeightTabs;
     QVariantAnimation *m_animation;
 
     bool m_dragging = false;

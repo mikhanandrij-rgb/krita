@@ -48,6 +48,7 @@ Sheet::Sheet(QWidget *parent)
 {
     setObjectName(QStringLiteral("mobileSheet"));
     setProperty("mobileChrome", true);
+    connect(this, &Sheet::tabChanged, this, &Sheet::expandForTab);
     setAttribute(Qt::WA_NoSystemBackground, false);
     hide();
 
@@ -382,6 +383,28 @@ void Sheet::close()
     }
     Q_EMIT closed(panelId);
     Q_EMIT coveredRectChanged();
+}
+
+void Sheet::setTabPrefersFullHeight(const QString &panelId, const QString &tabId)
+{
+    m_fullHeightTabs.insert(panelId + QLatin1Char('/') + tabId);
+}
+
+void Sheet::expandForTab(const QString &panelId, const QString &tabId)
+{
+    if(m_placement != Placement::Bottom || m_fraction >= FULL_FRACTION ||
+       !m_fullHeightTabs.contains(panelId + QLatin1Char('/') + tabId)) {
+        return;
+    }
+    m_fraction = FULL_FRACTION;
+    if(m_open) {
+        if(m_animationsEnabled) {
+            animateTo(openGeometry(), false);
+        } else {
+            setGeometry(openGeometry());
+        }
+        Q_EMIT coveredRectChanged();
+    }
 }
 
 void Sheet::selectTab(const QString &tabId)

@@ -17,6 +17,7 @@
 #include <QFile>
 #include <QPixmap>
 #include <QPointer>
+#include <QSet>
 #include <QTextStream>
 #include <QTimer>
 
@@ -117,7 +118,26 @@ private:
                 m_shell->closePanel();
             }
         });
-        m_steps.append([this] { shot(QStringLiteral("03-editor")); });
+        m_steps.append([this] {
+            shot(QStringLiteral("03-editor"));
+            // Which widgets cover the bottom-left corner above the rail.
+            if (mw()) {
+                const QPoint probe(mw()->width() > mw()->height() ? 70 : 20, mw()->height() - 50);
+                for (QWidget *w : mw()->findChildren<QWidget *>()) {
+                    if (w->isVisible() && QRect(w->mapTo(mw(), QPoint(0, 0)), w->size()).contains(probe)) {
+                        const QRect g(w->mapTo(mw(), QPoint(0, 0)), w->size());
+                        log(QStringLiteral("probe %1,%2: %3 '%4' %5,%6 %7x%8")
+                                .arg(probe.x())
+                                .arg(probe.y())
+                                .arg(QString::fromLatin1(w->metaObject()->className()), w->objectName())
+                                .arg(g.x())
+                                .arg(g.y())
+                                .arg(g.width())
+                                .arg(g.height()));
+                    }
+                }
+            }
+        });
         openPanelAndShoot(QStringLiteral("tools"), QString(), QStringLiteral("04-tools"));
         openPanelAndShoot(QStringLiteral("brush"), QStringLiteral("presets"), QStringLiteral("05-brush-presets"));
         openPanelAndShoot(QStringLiteral("brush"), QStringLiteral("tool"), QStringLiteral("06-tool-options"));
@@ -150,7 +170,8 @@ private:
 
     // Opens one of Krita's dialogs through its action, screenshots it and
     // closes it again. Modal dialogs run a nested event loop, so the grab is
-    // scheduled before triggering.
+    // scheduled before triggering; the window that appeared after the trigger
+    // is the one grabbed, and the next step waits until it is closed.
     void addDialog(const QString &actionName)
     {
         m_steps.append([this, actionName] {
@@ -163,49 +184,93 @@ private:
                 log(QStringLiteral("dialog %1: action not found").arg(actionName));
                 return;
             }
-            QTimer::singleShot(3000, this, [this, actionName] {
-                QWidget *w = QApplication::activeModalWidget();
-                if (!w) {
-                    QWidget *active = QApplication::activeWindow();
-                    if (active && active != mw()) {
-                        w = active;
-                    }
+            if (!action->isEnabled()) {
+                log(QStringLiteral("dialog %1: action disabled").arg(actionName));
+                return;
+            }
+            QSet<QWidget *> before;
+            for (QWidget *w : QApplication::topLevelWidgets()) {
+                if (w->isVisible()) {
+                    before.insert(w);
                 }
-                if (!w) {
-                    log(QStringLiteral("dialog %1: no window appeared").arg(actionName));
-                    return;
-                }
-                QString safe = actionName;
-                safe.replace(QLatin1Char(' '), QLatin1Char('_'));
-                const QString path = QDir(m_dir).filePath(QStringLiteral("dialog-%1.png").arg(safe));
-                const bool ok = w->grab().save(path);
-                log(QStringLiteral("dialog %1: %2 %3x%4 min %5x%6 %7")
-                        .arg(actionName, QString::fromLatin1(w->metaObject()->className()))
-                        .arg(w->width())
-                        .arg(w->height())
-                        .arg(w->minimumSizeHint().width())
-                        .arg(w->minimumSizeHint().height())
-                        .arg(ok ? QStringLiteral("saved") : QStringLiteral("FAILED")));
-                if (QDialog *dialog = qobject_cast<QDialog *>(w)) {
-                    dialog->reject();
-                } else {
-                    w->close();
-                }
+            }
+            m_extraDelay = 2500;
+            QTimer::singleShot(2500, this, [this, actionName, before] {
+                grabDialog(actionName, before);
             });
+            log(QStringLiteral("dialog %1: triggering").arg(actionName));
             action->trigger();
         });
+    }
+
+    void grabDialog(const QString &actionName, const QSet<QWidget *> &before)
+    {
+        QWidget *found = nullptr;
+        QWidget *modal = QApplication::activeModalWidget();
+        if (modal && !before.contains(modal)) {
+            found = modal;
+        }
+        if (!found) {
+            for (QWidget *w : QApplication::topLevelWidgets()) {
+                if (w->isVisible() && !before.contains(w) && w != mw() && !(w->windowFlags() & Qt::ToolTip)
+                    && (w->windowType() == Qt::Dialog || w->windowType() == Qt::Window || qobject_cast<QDialog *>(w))) {
+                    found = w;
+                    if (qobject_cast<QDialog *>(w)) {
+                        break;
+                    }
+                }
+            }
+        }
+        if (!found) {
+            log(QStringLiteral("dialog %1: no window appeared").arg(actionName));
+            return;
+        }
+        QString safe = actionName;
+        safe.replace(QLatin1Char(' '), QLatin1Char('_'));
+        const QString path = QDir(m_dir).filePath(QStringLiteral("dialog-%1-%2.png").arg(m_orientation, safe));
+        const bool ok = found->grab().save(path);
+        log(QStringLiteral("dialog %1: %2 %3x%4 min %5x%6 %7")
+                .arg(actionName, QString::fromLatin1(found->metaObject()->className()))
+                .arg(found->width())
+                .arg(found->height())
+                .arg(found->minimumSizeHint().width())
+                .arg(found->minimumSizeHint().height())
+                .arg(ok ? QStringLiteral("saved") : QStringLiteral("FAILED")));
+        QPointer<QWidget> guard(found);
+        // Close from a fresh event loop iteration, not from inside whatever
+        // the dialog is currently doing.
+        QTimer::singleShot(0, this, [this, guard, actionName] {
+            if (!guard) {
+                return;
+            }
+            if (QDialog *dialog = qobject_cast<QDialog *>(guard.data())) {
+                dialog->reject();
+            } else {
+                guard->close();
+            }
+            log(QStringLiteral("dialog %1: closed").arg(actionName));
+        });
+    }
+
+    void addDialogs()
+    {
+        for (const char *name : {"file_new", "options_configure", "imagesize", "canvassize", "image_properties",
+                                 "layer_properties", "layer_style", "krita_filter_gaussian blur",
+                                 "krita_filter_hsvadjustment", "krita_filter_perchannel", "krita_filter_levels",
+                                 "rotateimage", "offsetimage", "imagesplit", "layersplit", "separate",
+                                 "clones_array", "render_animation"}) {
+            addDialog(QString::fromLatin1(name));
+        }
     }
 
     void buildSteps()
     {
         m_steps.append([this] { setSize(411, 891, QStringLiteral("portrait")); });
         addScreens();
-        for (const char *name : {"file_new", "options_configure", "imagesize", "canvassize", "image_properties",
-                                 "layer_properties", "layer_style", "krita_filter_gaussian blur", "render_animation"}) {
-            addDialog(QString::fromLatin1(name));
-        }
+        addDialogs();
         m_steps.append([this] { setSize(891, 411, QStringLiteral("landscape")); });
         addScreens();
+        addDialogs();
         m_steps.append([this] {
             if (m_shell) {
                 m_shell->dumpInventory(QDir(m_dir).filePath(QStringLiteral("runtime-inventory.csv")));
@@ -225,9 +290,11 @@ private:
             return;
         }
         const int index = m_index++;
+        m_extraDelay = 0;
         m_steps[index]();
-        // Give layouts, animations and the canvas time to settle.
-        QTimer::singleShot(1200, this, [this] {
+        // Give layouts, animations and the canvas time to settle; steps that
+        // open a window wait for it to be grabbed and closed.
+        QTimer::singleShot(1200 + m_extraDelay, this, [this] {
             next();
         });
     }
@@ -238,6 +305,7 @@ private:
     QFile m_log;
     QVector<Step> m_steps;
     int m_index = 0;
+    int m_extraDelay = 0;
 };
 
 } // namespace

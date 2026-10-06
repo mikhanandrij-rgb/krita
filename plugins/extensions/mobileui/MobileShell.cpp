@@ -58,6 +58,7 @@
 #include <QStatusBar>
 #include <QTabBar>
 #include <QTimer>
+#include <QWidgetAction>
 #include <QToolBar>
 #include <QToolButton>
 
@@ -500,6 +501,7 @@ void Shell::deactivate()
     qApp->removeEventFilter(this);
     if (m_dialogFitter) {
         qApp->removeEventFilter(m_dialogFitter);
+        m_dialogFitter->restoreWidgets();
     }
     mw->removeEventFilter(this);
     if (mw->centralWidget()) {
@@ -970,6 +972,7 @@ void Shell::adoptPopups()
                 frame->installEventFilter(this);
                 m_popups.append(hp);
                 if (content->inherits("KisPaintOpPresetsEditor")) {
+                    m_sheet->setTabPrefersFullHeight(panelId, tabId);
                     // The editor's preset strip and scratchpad sit side by
                     // side with the settings; on a phone the presets are in
                     // their own tab, so collapse both. They remain one tap
@@ -1524,16 +1527,30 @@ void Shell::updateQuickSliderTargets()
     }
     KisDoubleSliderSpinBox *size = nullptr;
     KisDoubleSliderSpinBox *opacity = nullptr;
-    if (KisPaintopBox *box = m_mainWindow->viewManager()->paintOpBox()) {
-        const QList<KisWidgetChooser *> choosers = box->findChildren<KisWidgetChooser *>();
-        if (!choosers.isEmpty()) {
-            KisWidgetChooser *chooser = choosers.first();
-            if (usesBrushSize(m_activeTool)) {
-                size = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("size"));
+    // The paintop box's slider choosers are the default widgets of the
+    // "brushslider" actions; they are not children of the box itself. Every
+    // chooser holds its own synchronized copy of all brush sliders.
+    KisWidgetChooser *chooser = nullptr;
+    for (const char *name : {"brushslider1", "brushslider2", "brushslider3"}) {
+        if (QWidgetAction *widgetAction = qobject_cast<QWidgetAction *>(action(QString::fromLatin1(name)))) {
+            chooser = qobject_cast<KisWidgetChooser *>(widgetAction->defaultWidget());
+            if (chooser) {
+                break;
             }
-            if (usesOpacity(m_activeTool)) {
-                opacity = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("opacity"));
-            }
+        }
+    }
+    if (!chooser) {
+        if (KisPaintopBox *box = m_mainWindow->viewManager()->paintOpBox()) {
+            const QList<KisWidgetChooser *> choosers = box->findChildren<KisWidgetChooser *>();
+            chooser = choosers.isEmpty() ? nullptr : choosers.first();
+        }
+    }
+    if (chooser) {
+        if (usesBrushSize(m_activeTool)) {
+            size = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("size"));
+        }
+        if (usesOpacity(m_activeTool)) {
+            opacity = chooser->getWidget<KisDoubleSliderSpinBox>(QStringLiteral("opacity"));
         }
     }
     m_sliders->setTargets(size, opacity);

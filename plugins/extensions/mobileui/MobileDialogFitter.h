@@ -12,10 +12,13 @@
 #define MOBILE_DIALOG_FITTER_H
 
 #include <QObject>
+#include <QBoxLayout>
+#include <QList>
 #include <QPointer>
 #include <QSet>
 
 class QDialog;
+class QRect;
 class QWidget;
 
 namespace mobileui {
@@ -28,13 +31,38 @@ public:
 
     // Fits one dialog; also used by the screenshot run.
     void fit(QDialog *dialog);
+    // Undoes the changes to long-lived widgets (brush settings) when the
+    // phone interface is switched off. Dialogs are recreated by Krita.
+    void restoreWidgets();
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 
 private:
-    bool wrapInScrollArea(QDialog *dialog);
+    // Moves the contents of a widget's layout (box, grid or form) into a
+    // scroll area inside the same widget; a trailing button row can stay
+    // outside of it.
+    bool wrapContents(QWidget *host, bool keepButtons);
+    // Page dialogs (Configure Krita, document information) get tabs instead
+    // of a side list and scrollable pages.
+    bool adaptPageDialog(QDialog *dialog, const QRect &screen);
+    // The new-document dialog gets its section list above the pages.
+    bool adaptOpenPane(QDialog *dialog, const QRect &screen);
+
+    void stackSideLists(QWidget *root);
+
+    struct StackedView {
+        QPointer<QWidget> view;
+        int minimumWidth = 0;
+        int maximumHeight = 0;
+    };
+    struct StackedLayout {
+        QPointer<QBoxLayout> layout;
+        QList<StackedView> views;
+    };
+    QList<StackedLayout> m_stackedLayouts;
     QSet<QDialog *> m_wrapped;
+    QSet<QDialog *> m_adapted;
 };
 
 } // namespace mobileui

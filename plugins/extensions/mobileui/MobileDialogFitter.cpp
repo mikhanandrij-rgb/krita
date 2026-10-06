@@ -7,21 +7,31 @@
 
 #include <KisKineticScroller.h>
 
+#include <kpagemodel.h>
+#include <kpageview.h>
+
+#include <QAbstractItemView>
 #include <QApplication>
 #include <QBoxLayout>
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QEvent>
 #include <QFileDialog>
+#include <QFormLayout>
+#include <QGridLayout>
 #include <QMessageBox>
 #include <QPointer>
+#include <QPushButton>
 #include <QScreen>
 #include <QScrollArea>
+#include <QStackedWidget>
 #include <QTimer>
 
 namespace mobileui {
 
 namespace {
+
+const char *const SCROLL_NAME = "mobileDialogScroll";
 
 QRect availableGeometry(const QWidget *widget)
 {
@@ -47,19 +57,20 @@ bool isButtonRow(QLayoutItem *item)
     if (QWidget *w = item->widget()) {
         return qobject_cast<QDialogButtonBox *>(w) != nullptr;
     }
-    // KoDialog puts its buttons into a QHBoxLayout of push buttons.
+    // KoDialog and many Krita forms put their buttons into a box layout of
+    // push buttons.
     if (QLayout *l = item->layout()) {
-        bool onlyButtons = l->count() > 0;
+        bool onlyButtons = false;
         for (int i = 0; i < l->count(); ++i) {
             QLayoutItem *child = l->itemAt(i);
             if (child->spacerItem()) {
                 continue;
             }
             QWidget *w = child->widget();
-            if (!w || !(w->inherits("QPushButton") || qobject_cast<QDialogButtonBox *>(w))) {
-                onlyButtons = false;
-                break;
+            if (!w || !(qobject_cast<QPushButton *>(w) || qobject_cast<QDialogButtonBox *>(w))) {
+                return false;
             }
+            onlyButtons = true;
         }
         return onlyButtons;
     }
@@ -84,6 +95,228 @@ void reparentLayoutWidgets(QLayout *layout, QWidget *parent)
     }
 }
 
+// Takes the widget or layout out of a layout item that was removed from its
+// layout. Returns the widget (the item is deleted) or keeps the item.
+QWidget *unwrapWidget(QLayoutItem *&item)
+{
+    QWidget *w = item->widget();
+    if (w) {
+        delete item;
+        item = nullptr;
+    }
+    return w;
+}
+
+void moveWidget(QWidget *w, QWidget *parent)
+{
+    const bool hidden = w->isHidden();
+    w->setParent(parent);
+    w->setHidden(hidden);
+}
+
+QScrollArea *createScroll(QWidget *content)
+{
+    QScrollArea *scroll = new QScrollArea;
+    scroll->setObjectName(QLatin1String(SCROLL_NAME));
+    scroll->setFrameShape(QFrame::NoFrame);
+    scroll->setWidgetResizable(true);
+    scroll->setWidget(content);
+    KisKineticScroller::createPreconfiguredScroller(scroll);
+    return scroll;
+}
+
+// ---- box layouts --------------------------------------------------------
+
+bool wrapBox(QWidget *host, QBoxLayout *outer, bool keepButtons)
+{
+    QWidget *content = new QWidget;
+    content->setObjectName(QStringLiteral("mobileDialogContent"));
+    QBoxLayout *inner = new QBoxLayout(outer->direction(), content);
+    inner->setContentsMargins(outer->contentsMargins());
+    inner->setSpacing(outer->spacing());
+
+    struct Entry {
+        QLayoutItem *item;
+        int stretch;
+    };
+    QList<Entry> move;
+    while (outer->count() > 0) {
+        const int stretch = outer->stretch(0);
+        move.append({outer->takeAt(0), stretch});
+    }
+    // The trailing button row stays visible below the scroll area.
+    QList<Entry> keep;
+    const bool vertical = outer->direction() == QBoxLayout::TopToBottom;
+    while (keepButtons && vertical && !move.isEmpty() && (isButtonRow(move.last().item) || move.last().item->spacerItem())) {
+        keep.prepend(move.takeLast());
+    }
+    for (Entry e : move) {
+        if (QWidget *w = unwrapWidget(e.item)) {
+            moveWidget(w, content);
+            inner->addWidget(w, e.stretch);
+        } else if (QLayout *l = e.item->layout()) {
+            l->setParent(nullptr);
+            inner->addLayout(l, e.stretch);
+            reparentLayoutWidgets(l, content);
+        } else {
+            inner->addItem(e.item);
+            inner->setStretch(inner->count() - 1, e.stretch);
+        }
+    }
+
+    outer->setContentsMargins(0, 0, 0, 0);
+    outer->addWidget(createScroll(content), 1);
+    for (Entry e : keep) {
+        if (QWidget *w = unwrapWidget(e.item)) {
+            outer->addWidget(w);
+        } else if (QLayout *l = e.item->layout()) {
+            l->setParent(nullptr);
+            outer->addLayout(l);
+            reparentLayoutWidgets(l, host);
+        } else {
+            outer->addItem(e.item);
+        }
+    }
+    return true;
+}
+
+// ---- grid layouts -------------------------------------------------------
+
+bool wrapGrid(QWidget *host, QGridLayout *outer, bool keepButtons)
+{
+    QWidget *content = new QWidget;
+    content->setObjectName(QStringLiteral("mobileDialogContent"));
+    QGridLayout *inner = new QGridLayout(content);
+    inner->setContentsMargins(outer->contentsMargins());
+    inner->setHorizontalSpacing(outer->horizontalSpacing());
+    inner->setVerticalSpacing(outer->verticalSpacing());
+    const int rows = outer->rowCount();
+    const int columns = outer->columnCount();
+    for (int r = 0; r < rows; ++r) {
+        inner->setRowStretch(r, outer->rowStretch(r));
+        inner->setRowMinimumHeight(r, outer->rowMinimumHeight(r));
+    }
+    for (int c = 0; c < columns; ++c) {
+        inner->setColumnStretch(c, outer->columnStretch(c));
+        inner->setColumnMinimumWidth(c, outer->columnMinimumWidth(c));
+    }
+
+    struct Entry {
+        QLayoutItem *item;
+        int row, column, rowSpan, columnSpan;
+    };
+    QList<Entry> entries;
+    int lastRow = -1;
+    for (int i = outer->count() - 1; i >= 0; --i) {
+        Entry e;
+        outer->getItemPosition(i, &e.row, &e.column, &e.rowSpan, &e.columnSpan);
+        e.item = outer->takeAt(i);
+        entries.prepend(e);
+        lastRow = qMax(lastRow, e.row);
+    }
+    // A last row with only buttons stays visible below the scroll area.
+    bool lastRowIsButtons = keepButtons && lastRow > 0;
+    for (const Entry &e : entries) {
+        if (e.row + e.rowSpan - 1 == lastRow && !(isButtonRow(e.item) || e.item->spacerItem())) {
+            lastRowIsButtons = false;
+        }
+    }
+
+    for (int r = 0; r < rows; ++r) {
+        outer->setRowStretch(r, 0);
+        outer->setRowMinimumHeight(r, 0);
+    }
+    for (int c = 0; c < columns; ++c) {
+        outer->setColumnStretch(c, 0);
+        outer->setColumnMinimumWidth(c, 0);
+    }
+    outer->setContentsMargins(0, 0, 0, 0);
+    outer->addWidget(createScroll(content), 0, 0, 1, qMax(1, columns));
+    outer->setRowStretch(0, 1);
+
+    for (Entry e : entries) {
+        const bool keep = lastRowIsButtons && e.row == lastRow;
+        QWidget *parent = keep ? host : content;
+        QGridLayout *target = keep ? outer : inner;
+        const int row = keep ? 1 : e.row;
+        const Qt::Alignment alignment = e.item->alignment();
+        if (QWidget *w = unwrapWidget(e.item)) {
+            moveWidget(w, parent);
+            target->addWidget(w, row, e.column, e.rowSpan, e.columnSpan, alignment);
+        } else if (QLayout *l = e.item->layout()) {
+            l->setParent(nullptr);
+            target->addLayout(l, row, e.column, e.rowSpan, e.columnSpan, alignment);
+            reparentLayoutWidgets(l, parent);
+        } else {
+            target->addItem(e.item, row, e.column, e.rowSpan, e.columnSpan, alignment);
+        }
+    }
+    return true;
+}
+
+// ---- form layouts -------------------------------------------------------
+
+bool wrapForm(QWidget *host, QFormLayout *outer)
+{
+    Q_UNUSED(host);
+    QWidget *content = new QWidget;
+    content->setObjectName(QStringLiteral("mobileDialogContent"));
+    QFormLayout *inner = new QFormLayout(content);
+    inner->setContentsMargins(outer->contentsMargins());
+    inner->setHorizontalSpacing(outer->horizontalSpacing());
+    inner->setVerticalSpacing(outer->verticalSpacing());
+    inner->setLabelAlignment(outer->labelAlignment());
+    inner->setFormAlignment(outer->formAlignment());
+    inner->setFieldGrowthPolicy(outer->fieldGrowthPolicy());
+    // Phones are narrow: long rows wrap the field below its label.
+    inner->setRowWrapPolicy(QFormLayout::WrapLongRows);
+
+    int row = 0;
+    while (outer->rowCount() > 0) {
+        const QFormLayout::TakeRowResult taken = outer->takeRow(0);
+        const QPair<QLayoutItem *, QFormLayout::ItemRole> parts[] = {
+            {taken.labelItem, QFormLayout::LabelRole},
+            {taken.fieldItem, QFormLayout::FieldRole},
+        };
+        for (auto part : parts) {
+            QLayoutItem *item = part.first;
+            if (!item) {
+                continue;
+            }
+            QFormLayout::ItemRole role = part.second;
+            if (taken.labelItem && !taken.fieldItem) {
+                role = QFormLayout::SpanningRole;
+            }
+            if (QWidget *w = unwrapWidget(item)) {
+                moveWidget(w, content);
+                inner->setWidget(row, role, w);
+            } else if (QLayout *l = item->layout()) {
+                l->setParent(nullptr);
+                inner->setLayout(row, role, l);
+                reparentLayoutWidgets(l, content);
+            } else {
+                inner->setItem(row, role, item);
+            }
+        }
+        ++row;
+    }
+    outer->setContentsMargins(0, 0, 0, 0);
+    outer->addRow(createScroll(content));
+    return true;
+}
+
+// Every top-level page widget of a page view model, including nested pages.
+void collectPages(const QAbstractItemModel *model, const QModelIndex &parent, QList<QWidget *> &pages)
+{
+    for (int row = 0; row < model->rowCount(parent); ++row) {
+        const QModelIndex index = model->index(row, 0, parent);
+        if (QWidget *page = qvariant_cast<QWidget *>(model->data(index, KPageModel::WidgetRole))) {
+            pages.append(page);
+        }
+        collectPages(model, index, pages);
+    }
+}
+
 } // namespace
 
 DialogFitter::DialogFitter(QObject *parent)
@@ -93,22 +326,209 @@ DialogFitter::DialogFitter(QObject *parent)
 
 bool DialogFitter::eventFilter(QObject *watched, QEvent *event)
 {
-    if (event->type() == QEvent::Show) {
+    if (event->type() == QEvent::Show && watched->isWidgetType()) {
         QDialog *dialog = qobject_cast<QDialog *>(watched);
         // Message boxes and native file dialogs size themselves well.
         if (dialog && dialog->isWindow() && !qobject_cast<QMessageBox *>(dialog) && !qobject_cast<QFileDialog *>(dialog)) {
             fit(dialog);
+        } else if (!dialog && watched->inherits("KisPaintOpSettingsWidget")) {
+            stackSideLists(static_cast<QWidget *>(watched));
         }
     }
     return QObject::eventFilter(watched, event);
 }
 
+bool DialogFitter::wrapContents(QWidget *host, bool keepButtons)
+{
+    QLayout *layout = host ? host->layout() : nullptr;
+    if (!layout || host->findChild<QScrollArea *>(QLatin1String(SCROLL_NAME), Qt::FindDirectChildrenOnly)) {
+        return false;
+    }
+    if (QBoxLayout *box = qobject_cast<QBoxLayout *>(layout)) {
+        return wrapBox(host, box, keepButtons);
+    }
+    if (QGridLayout *grid = qobject_cast<QGridLayout *>(layout)) {
+        return wrapGrid(host, grid, keepButtons);
+    }
+    if (QFormLayout *form = qobject_cast<QFormLayout *>(layout)) {
+        return wrapForm(host, form);
+    }
+    return false;
+}
+
+bool DialogFitter::adaptPageDialog(QDialog *dialog, const QRect &screen)
+{
+    QWidget *pageView = nullptr;
+    for (QWidget *w : dialog->findChildren<QWidget *>()) {
+        if (w->inherits("KPageView")) {
+            pageView = w;
+            break;
+        }
+    }
+    if (!pageView) {
+        return false;
+    }
+    // A page list beside the pages leaves no room on a phone; tabs above
+    // the pages keep every page one tap away.
+    if (screen.width() < dp(600)) {
+        pageView->setProperty("faceType", int(KPageView::Tabbed));
+    }
+    QAbstractItemView *view = pageView->findChild<QAbstractItemView *>(QString(), Qt::FindDirectChildrenOnly);
+    if (!view || !view->model()) {
+        return true;
+    }
+    QList<QWidget *> pages;
+    collectPages(view->model(), QModelIndex(), pages);
+    for (QWidget *page : pages) {
+        if (page->minimumSizeHint().width() > screen.width() || page->minimumSizeHint().height() > screen.height() * 0.6) {
+            wrapContents(page, false);
+        }
+    }
+    return true;
+}
+
+bool DialogFitter::adaptOpenPane(QDialog *dialog, const QRect &screen)
+{
+    // The new-document dialog has its section list beside the pages; on a
+    // narrow screen the list goes above them.
+    if (!dialog->inherits("KisOpenPane") || screen.width() >= dp(600)) {
+        return false;
+    }
+    QGridLayout *grid = qobject_cast<QGridLayout *>(dialog->layout());
+    QStackedWidget *stack = dialog->findChild<QStackedWidget *>(QStringLiteral("m_widgetStack"));
+    QWidget *list = dialog->findChild<QWidget *>(QStringLiteral("m_sectionList"));
+    if (!grid || !stack || !list || grid->rowCount() > 1) {
+        return false;
+    }
+    QList<QLayoutItem *> items;
+    while (grid->count() > 0) {
+        items.append(grid->takeAt(0));
+    }
+    for (QLayoutItem *item : items) {
+        if (item->widget() == stack) {
+            delete item;
+            grid->addWidget(stack, 1, 0);
+        } else if (QLayout *l = item->layout()) {
+            l->setParent(nullptr);
+            grid->addLayout(l, 0, 0);
+        } else if (QWidget *w = unwrapWidget(item)) {
+            grid->addWidget(w, 2, 0);
+        } else {
+            delete item;
+        }
+    }
+    for (int c = 0; c < grid->columnCount(); ++c) {
+        grid->setColumnStretch(c, 0);
+    }
+    grid->setRowStretch(0, 0);
+    grid->setRowStretch(1, 1);
+    list->setMinimumWidth(0);
+    list->setMaximumHeight(dp(150));
+    for (int i = 0; i < stack->count(); ++i) {
+        wrapContents(stack->widget(i), true);
+    }
+    // Pages added later (templates) are wrapped when they are shown.
+    connect(stack, &QStackedWidget::currentChanged, this, [this, stack](int index) {
+        if (QWidget *page = stack->widget(index)) {
+            wrapContents(page, true);
+        }
+    });
+    return true;
+}
+
+namespace {
+
+void collectItemViews(QLayoutItem *item, QList<QAbstractItemView *> &views, int depth = 0)
+{
+    if (QAbstractItemView *view = qobject_cast<QAbstractItemView *>(item->widget())) {
+        views.append(view);
+    } else if (QLayout *l = item->layout()) {
+        if (depth < 2) {
+            for (int i = 0; i < l->count(); ++i) {
+                collectItemViews(l->itemAt(i), views, depth + 1);
+            }
+        }
+    }
+}
+
+} // namespace
+
+void DialogFitter::stackSideLists(QWidget *root)
+{
+    // A list of sections beside a stack of pages (brush settings, layer
+    // styles and similar) leaves both unreadable on a phone; put the list
+    // above the pages instead. Every brush engine creates its own settings
+    // widget, so this also runs whenever one is shown.
+    if (!root || availableGeometry(root).width() >= dp(600)) {
+        return;
+    }
+    QList<QBoxLayout *> layouts = root->findChildren<QBoxLayout *>();
+    if (QBoxLayout *own = qobject_cast<QBoxLayout *>(root->layout())) {
+        if (!layouts.contains(own)) {
+            layouts.prepend(own);
+        }
+    }
+    for (QBoxLayout *box : layouts) {
+        if (box->direction() != QBoxLayout::LeftToRight) {
+            continue;
+        }
+        bool hasStack = false;
+        QList<QAbstractItemView *> views;
+        for (int i = 0; i < box->count(); ++i) {
+            QLayoutItem *item = box->itemAt(i);
+            if (qobject_cast<QStackedWidget *>(item->widget())) {
+                hasStack = true;
+            } else {
+                collectItemViews(item, views);
+            }
+        }
+        if (!hasStack || views.isEmpty()) {
+            continue;
+        }
+        StackedLayout stacked;
+        stacked.layout = box;
+        for (QAbstractItemView *view : views) {
+            stacked.views.append({view, view->minimumWidth(), view->maximumHeight()});
+            view->setMinimumWidth(0);
+            view->setMaximumHeight(dp(200));
+        }
+        m_stackedLayouts.append(stacked);
+        box->setDirection(QBoxLayout::TopToBottom);
+    }
+}
+
+void DialogFitter::restoreWidgets()
+{
+    for (const StackedLayout &stacked : qAsConst(m_stackedLayouts)) {
+        if (stacked.layout) {
+            stacked.layout->setDirection(QBoxLayout::LeftToRight);
+        }
+        for (const StackedView &v : stacked.views) {
+            if (v.view) {
+                v.view->setMinimumWidth(v.minimumWidth);
+                v.view->setMaximumHeight(v.maximumHeight);
+            }
+        }
+    }
+    m_stackedLayouts.clear();
+}
+
 void DialogFitter::fit(QDialog *dialog)
 {
     const QRect screen = availableGeometry(dialog);
+    if (!m_adapted.contains(dialog)) {
+        m_adapted.insert(dialog);
+        connect(dialog, &QObject::destroyed, this, [this, dialog] {
+            m_adapted.remove(dialog);
+            m_wrapped.remove(dialog);
+        });
+        if (!adaptPageDialog(dialog, screen) && !adaptOpenPane(dialog, screen)) {
+            stackSideLists(dialog);
+        }
+    }
     const QSize needed = dialog->minimumSizeHint().expandedTo(dialog->minimumSize());
     if (!m_wrapped.contains(dialog) && (needed.width() > screen.width() || needed.height() > screen.height())) {
-        if (wrapInScrollArea(dialog)) {
+        if (wrapContents(dialog, true)) {
             m_wrapped.insert(dialog);
         }
     }
@@ -123,73 +543,6 @@ void DialogFitter::fit(QDialog *dialog)
         dialog->resize(size);
         dialog->move(screen.x() + (screen.width() - size.width()) / 2, screen.y() + (screen.height() - size.height()) / 2);
     }
-}
-
-bool DialogFitter::wrapInScrollArea(QDialog *dialog)
-{
-    // Only box layouts can be moved item by item without losing structure;
-    // dialogs with other top-level layouts are just sized to the screen.
-    QBoxLayout *outer = qobject_cast<QBoxLayout *>(dialog->layout());
-    if (!outer || outer->direction() != QBoxLayout::TopToBottom || dialog->findChild<QScrollArea *>(QStringLiteral("mobileDialogScroll"), Qt::FindDirectChildrenOnly)) {
-        return false;
-    }
-
-    QWidget *content = new QWidget;
-    content->setObjectName(QStringLiteral("mobileDialogContent"));
-    QVBoxLayout *inner = new QVBoxLayout(content);
-    inner->setContentsMargins(outer->contentsMargins());
-    inner->setSpacing(outer->spacing());
-
-    // Move everything except the trailing button row into the scroll area.
-    QList<QLayoutItem *> keep;
-    QList<QLayoutItem *> move;
-    while (outer->count() > 0) {
-        QLayoutItem *item = outer->takeAt(0);
-        move.append(item);
-    }
-    while (!move.isEmpty() && (isButtonRow(move.last()) || move.last()->spacerItem())) {
-        keep.prepend(move.takeLast());
-    }
-    for (QLayoutItem *item : move) {
-        if (QWidget *w = item->widget()) {
-            const bool hidden = w->isHidden();
-            delete item;
-            inner->addWidget(w);
-            w->setHidden(hidden);
-        } else if (QLayout *l = item->layout()) {
-            l->setParent(nullptr);
-            inner->addLayout(l);
-            reparentLayoutWidgets(l, content);
-        } else {
-            inner->addItem(item);
-        }
-    }
-
-    QScrollArea *scroll = new QScrollArea;
-    scroll->setObjectName(QStringLiteral("mobileDialogScroll"));
-    scroll->setFrameShape(QFrame::NoFrame);
-    scroll->setWidgetResizable(true);
-    scroll->setWidget(content);
-    KisKineticScroller::createPreconfiguredScroller(scroll);
-    outer->setContentsMargins(0, 0, 0, 0);
-    outer->addWidget(scroll, 1);
-    for (QLayoutItem *item : keep) {
-        if (QWidget *w = item->widget()) {
-            const bool hidden = w->isHidden();
-            delete item;
-            outer->addWidget(w);
-            w->setHidden(hidden);
-        } else if (QLayout *l = item->layout()) {
-            l->setParent(nullptr);
-            outer->addLayout(l);
-        } else {
-            outer->addItem(item);
-        }
-    }
-    connect(dialog, &QObject::destroyed, this, [this, dialog] {
-        m_wrapped.remove(dialog);
-    });
-    return true;
 }
 
 } // namespace mobileui

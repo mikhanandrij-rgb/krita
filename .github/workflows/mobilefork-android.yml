@@ -424,7 +424,7 @@ jobs:
           key: kdeci-deps-linux-v1-${{ github.run_id }}
 
       - name: Phone-mode screenshots and inventory
-        timeout-minutes: 20
+        timeout-minutes: 25
         run: |
           P="$WD/krita/_install"
           ls "$P/bin" | head -20
@@ -440,7 +440,12 @@ jobs:
           export HOME="$GITHUB_WORKSPACE/home"
           mkdir -p "$HOME" "$KRITA_MOBILE_SCREENSHOTS"
           set +e
-          timeout 900 xvfb-run -a -s "-screen 0 1280x1024x24" krita --nosplash > logs/krita-run.log 2>&1
+          # Run under gdb so a crash leaves a backtrace in the log.
+          command -v gdb >/dev/null || sudo apt-get install -y -qq gdb > /dev/null
+          timeout 1200 xvfb-run -a -s "-screen 0 1280x1024x24" \
+            gdb -q -batch -return-child-result -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" \
+              -ex run -ex "echo \\n=== crash backtrace ===\\n" -ex "bt 60" -ex "info threads" \
+              --args "$P/bin/krita" --nosplash > logs/krita-run.log 2>&1
           echo "krita exit code: $?" | tee -a logs/krita-run.log
           ls -la "$KRITA_MOBILE_SCREENSHOTS" | tee -a logs/krita-run.log
           exit 0
