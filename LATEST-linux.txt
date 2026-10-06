@@ -1,21 +1,21 @@
-== linux (run 31): success
+== linux (run 32): success
 status: success
 branch: mobile
-commit: 83e66ff0b6c8257d470cf2cb483a1f509e8bdb3e
-date: 2026-10-06T12:28:32Z
+commit: 3bc91a07c7d4e33a49088e8008fc560108d255b7
+date: 2026-10-06T15:29:37Z
 screenshots: 80
 perf:
-  perf start: interface-ready-ms=3930 first-canvas-ms=-1 rss-kb=465916 peak-kb=465916 uptime-ms=9980
-  perf panel tools: 15 ms
+  perf start: interface-ready-ms=4200 first-canvas-ms=-1 rss-kb=465192 peak-kb=465192 uptime-ms=9879
+  perf panel tools: 22 ms
   perf panel menu: 6 ms
-  perf panel more: 5 ms
-  perf panel brush: 16 ms
-  perf panel color: 7 ms
+  perf panel more: 3 ms
+  perf panel brush: 18 ms
+  perf panel color: 8 ms
   perf panel layers: 4 ms
-  perf panel animation: 4 ms
+  perf panel animation: 5 ms
   perf panel view: 4 ms
   perf panel text: 6 ms
-  perf panel other:BrushHudDocker: 9 ms
+  perf panel other:BrushHudDocker: 8 ms
   perf panel other:LogDocker: 4 ms
   perf panel other:LutDocker: 4 ms
   perf panel other:RecorderDocker: 4 ms
@@ -23,14 +23,15 @@ perf:
   perf panel other:ToolBox: 4 ms
   perf panel other:TouchDocker: 8 ms
   perf panel other:comics_project_manager_docker: 4 ms
-  perf panel other:lastdocumentsdocker: 4 ms
+  perf panel other:lastdocumentsdocker: 3 ms
   perf panel other:mutatorDocker: 4 ms
   perf panel other:pykrita_workflow_buttons: 4 ms
   perf panel other:quick_settings_docker: 4 ms
-  perf after-portrait: interface-ready-ms=3930 first-canvas-ms=17940 rss-kb=686664 peak-kb=687336 uptime-ms=162980
-  perf classic-start: interface-ready-ms=3539 first-canvas-ms=-1 rss-kb=450396 peak-kb=450396 uptime-ms=9809
-  perf classic-canvas: interface-ready-ms=3539 first-canvas-ms=14089 rss-kb=632676 peak-kb=632676 uptime-ms=16489
-  perf classic-end: interface-ready-ms=3539 first-canvas-ms=14089 rss-kb=668492 peak-kb=668492 uptime-ms=22579
+  perf after-portrait: interface-ready-ms=4200 first-canvas-ms=17889 rss-kb=685364 peak-kb=686072 uptime-ms=162880
+  perf end: interface-ready-ms=4200 first-canvas-ms=17889 rss-kb=954332 peak-kb=960424 uptime-ms=601630
+  perf classic-start: interface-ready-ms=4080 first-canvas-ms=-1 rss-kb=449460 peak-kb=449460 uptime-ms=10330
+  perf classic-canvas: interface-ready-ms=4080 first-canvas-ms=14700 rss-kb=631072 peak-kb=631072 uptime-ms=17100
+  perf classic-end: interface-ready-ms=4080 first-canvas-ms=14700 rss-kb=666876 peak-kb=666876 uptime-ms=23190
 disk:
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/root       145G   36G  109G  25% /

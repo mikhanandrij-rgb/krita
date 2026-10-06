@@ -33,55 +33,5 @@ not created at runtime (plugin not built on this platform, created lazily, or te
   MISSING svg_settings | Settings... | plugins/tools/svgtexttool/SvgTextTool.action
   MISSING options_configure_keybinding | Configure Shortcuts... | krita/kritamenu.action
   MISSING format_italic |  | libs/ui/KisViewManager.cpp
-action walk: disabled 6, ok 22, skipped 3
-listed but not reached by the walk (walk stopped early?): 641
-  NOT-WALKED add_blank_frame
-  NOT-WALKED add_duplicate_frame
-  NOT-WALKED add_scalar_keyframes
-  NOT-WALKED auto_key
-  NOT-WALKED clear_animation_cache
-  NOT-WALKED copy_columns_to_clipboard
-  NOT-WALKED copy_frames
-  NOT-WALKED copy_frames_as_clones
-  NOT-WALKED cut_columns_to_clipboard
-  NOT-WALKED cut_frames
-  NOT-WALKED drop_frames
-  NOT-WALKED first_frame
-  NOT-WALKED insert_column_left
-  NOT-WALKED insert_column_right
-  NOT-WALKED insert_hold_column
-  NOT-WALKED insert_hold_frame
-  NOT-WALKED insert_keyframe_left
-  NOT-WALKED insert_keyframe_right
-  NOT-WALKED insert_multiple_columns
-  NOT-WALKED insert_multiple_hold_columns
-  NOT-WALKED insert_multiple_hold_frames
-  NOT-WALKED insert_multiple_keyframes
-  NOT-WALKED last_frame
-  NOT-WALKED make_clones_unique
-  NOT-WALKED mirror_columns
-  NOT-WALKED mirror_frames
-  NOT-WALKED next_frame
-  NOT-WALKED next_keyframe
-  NOT-WALKED next_matching_keyframe
-  NOT-WALKED next_unfiltered_keyframe
-  NOT-WALKED paste_columns_from_clipboard
-  NOT-WALKED paste_frames
-  NOT-WALKED pin_to_timeline
-  NOT-WALKED previous_frame
-  NOT-WALKED previous_keyframe
-  NOT-WALKED previous_matching_keyframe
-  NOT-WALKED previous_unfiltered_keyframe
-  NOT-WALKED remove_columns
-  NOT-WALKED remove_columns_and_pull
-  NOT-WALKED remove_frames
-  NOT-WALKED remove_frames_and_pull
-  NOT-WALKED remove_hold_column
-  NOT-WALKED remove_hold_frame
-  NOT-WALKED remove_multiple_hold_columns
-  NOT-WALKED remove_multiple_hold_frames
-  NOT-WALKED remove_scalar_keyframe
-  NOT-WALKED set_end_time
-  NOT-WALKED set_start_time
-  NOT-WALKED stop_playback
-  NOT-WALKED toggle_onion_skin
+action walk: disabled 200, ok 479, skipped 12
+listed but not reached by the walk (walk stopped early?): 0
