@@ -24,6 +24,7 @@
 #include <QClipboard>
 #include <QImage>
 #include <QDialog>
+#include <QDebug>
 #include <QDir>
 #include <QElapsedTimer>
 #include <QFile>
@@ -134,6 +135,10 @@ private:
     {
         QTextStream(&m_log) << message << '\n';
         m_log.flush();
+#ifdef Q_OS_ANDROID
+        // Also in logcat, for runs where the file can't be fetched.
+        qInfo().noquote() << "Krita Mobile test:" << message;
+#endif
     }
 
     KisMainWindow *mw() const { return m_shell ? m_shell->mainWindow() : nullptr; }
@@ -729,6 +734,10 @@ private:
 void startTestDriverIfRequested(Shell *shell)
 {
     QString dir = config::testSetting("KRITA_MOBILE_SCREENSHOTS");
+#ifdef Q_OS_ANDROID
+    qInfo().noquote() << "Krita Mobile test: control directory" << config::androidTestDirectory()
+                      << (dir.isEmpty() ? "no test run requested" : "test run requested");
+#endif
     // On Android the value of the file is ignored: the output goes next to
     // it, where "adb pull" can fetch it.
     if (!dir.isEmpty() && qgetenv("KRITA_MOBILE_SCREENSHOTS").isEmpty() && !config::androidTestDirectory().isEmpty()) {

@@ -593,16 +593,19 @@ jobs:
             { echo "status: running ($1 done)"; echo "commit: ${GITHUB_SHA}"; for r in warmup classic phone; do
                 [ -f "emu/$r/result.txt" ] && { cat "emu/$r/result.txt"; grep -h '^interface\|^perf' "emu/$r/testdriver.log" 2>/dev/null; }; done; } > partial-summary.txt
             mkdir -p partial-shots; cp emu/*/*.png emu/*/testdriver.log partial-shots/ 2>/dev/null
-            GITHUB_TOKEN="${{ github.token }}" bash mobilefork/ci/publish-status.sh emulator-partial running partial-summary.txt partial-shots latest/emulator-partial > /dev/null 2>&1 || true
+            mkdir -p partial-logs; for f in logs/*; do [ -f "$f" ] && tail -c 60000 "$f" > "partial-logs/$(basename "$f").tail"; done
+            GITHUB_TOKEN="${{ github.token }}" bash mobilefork/ci/publish-status.sh emulator-partial running partial-summary.txt \
+              partial-logs logs partial-shots latest/emulator-partial > /dev/null 2>&1 || true
           }
-          bash mobilefork/ci/emulator-run.sh classic emu/warmup 600
-          bash mobilefork/ci/emulator-run.sh classic emu/classic 600
+          bash mobilefork/ci/emulator-run.sh classic emu/warmup 300
+          partial warmup
+          bash mobilefork/ci/emulator-run.sh classic emu/classic 300
           partial classic
           # The phone run first without the walk (screens and dialogs), then
           # the walk, so a hang in the walk can't hide the screenshots.
-          bash mobilefork/ci/emulator-run.sh auto emu/phone 1800
+          bash mobilefork/ci/emulator-run.sh auto emu/phone 1500
           partial phone
-          bash mobilefork/ci/emulator-run.sh auto emu/walk 4200 walk
+          bash mobilefork/ci/emulator-run.sh auto emu/walk 3600 walk
           {
             for r in warmup classic phone walk; do
               echo "== $r"; cat "emu/$r/result.txt" 2>/dev/null

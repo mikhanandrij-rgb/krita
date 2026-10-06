@@ -45,9 +45,17 @@ while [ $(( $(date +%s) - start )) -lt "$limit" ]; do
 done
 echo "run $mode: $status after $(( $(date +%s) - start )) s" | tee "$out/result.txt"
 
+adb shell ls -la "$ctl" "$ctl/out" > "$out/test-dir.txt" 2>&1
 adb shell dumpsys meminfo "$pkg" > "$out/meminfo-final.txt" 2>&1
 adb pull "$ctl/out/." "$out/" > /dev/null 2>&1
 adb logcat -d -b main -b crash > "$out/logcat.txt" 2>&1
 adb logcat -d -b crash > "$out/logcat-crash.txt" 2>&1
 adb shell am force-stop "$pkg"
+# Logs right away, so a later timeout can't lose them.
+name="$(basename "$out")"
+mkdir -p logs
+cp "$out/result.txt" "logs/result-$name.txt" 2>/dev/null
+cp "$out/test-dir.txt" "logs/test-dir-$name.txt" 2>/dev/null
+cp "$out/logcat-crash.txt" "logs/logcat-crash-$name.txt" 2>/dev/null
+grep -i -E 'krita|qt|mobile|FATAL|DEBUG|AndroidRuntime|libc' "$out/logcat.txt" 2>/dev/null | tail -c 400000 > "logs/logcat-$name.txt"
 ls -la "$out"
