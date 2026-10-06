@@ -1,0 +1,8 @@
+/sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test:
+total 40
+drwxrwxrwx  3 shell   ext_data_rw 4096 2026-10-06 09:14 .
+drwxrws--- 26 u0_a192 ext_data_rw 4096 2026-10-06 09:15 ..
+-rwxrwxrwx  1 shell   ext_data_rw    2 2026-10-06 09:13 KRITA_MOBILE_SCREENSHOTS
+-rwxrwxrwx  1 shell   ext_data_rw    8 2026-10-06 09:13 KRITA_MOBILE_UI
+drwxrwx---  2 u0_a192 u0_a192     4096 2026-10-06 09:15 out
+ls: /sdcard/Android/data/org.krita.mobilefork/files/krita-mobile-test/out: Permission denied
