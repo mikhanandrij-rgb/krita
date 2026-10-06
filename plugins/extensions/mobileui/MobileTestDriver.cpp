@@ -339,6 +339,9 @@ private:
         m_steps.append([this] { logPerf(QStringLiteral("classic-canvas")); });
         m_steps.append([this] { setSize(891, 411, QStringLiteral("classic-landscape")); });
         m_steps.append([this] { shot(QStringLiteral("02-canvas")); });
+        // The desktop interface must stay exactly as upstream.
+        m_steps.append([this] { setSize(1280, 960, QStringLiteral("classic-desktop")); });
+        m_steps.append([this] { shot(QStringLiteral("02-canvas")); });
         m_steps.append([this] {
             logPerf(QStringLiteral("classic-end"));
             log(QStringLiteral("done"));
