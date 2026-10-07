@@ -1,4 +1,3 @@
-== emulator (run 38): success
 status: success
 branch: mobile
 commit: c7801f8022cf2a98eabeee4d9783e765854da2e7
@@ -64,4 +63,3 @@ perf:
   perf panel other:ToolBox: 73 ms
   perf panel other:TouchDocker: 99 ms
   perf after-portrait: interface-ready-ms=20594 first-canvas-ms=37808 rss-kb=1392448 peak-kb=1426848 uptime-ms=196738
-

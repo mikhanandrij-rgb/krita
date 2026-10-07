@@ -1,0 +1,502 @@
+(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:09.600  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.370ms
+10-07 00:45:09.608   552  2299 D ActivityManager: freezer override set to false
+10-07 00:45:18.725   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:45:19.617   552   642 D ActivityManager: freezing 5713 com.google.android.gms.ui
+10-07 00:45:19.617   552   642 D ActivityManager: freezing 4054 com.google.android.projection.gearhead:shared
+10-07 00:45:19.617   552   642 D ActivityManager: freezing 917 com.google.android.permissioncontroller
+10-07 00:45:19.618   552   642 D ActivityManager: freezing 1577 android.process.acore
+10-07 00:45:19.618   552   642 D ActivityManager: freezing 8169 com.google.android.configupdater
+10-07 00:45:19.618   552   642 D ActivityManager: freezing 8176 com.google.android.dialer
+10-07 00:45:19.618   552   642 D ActivityManager: freezing 8298 com.android.settings
+10-07 00:45:19.618   552   642 D ActivityManager: freezing 8420 org.krita.mobilefork
+10-07 00:45:19.619   552   642 D ActivityManager: freezing 1840 com.google.android.apps.youtube.music
+10-07 00:45:19.619   552   642 D ActivityManager: freezing 7424 com.google.android.gms.unstable
+10-07 00:45:19.619   552   642 D ActivityManager: freezing 10857 com.google.android.partnersetup
+10-07 00:45:19.619   552   642 D ActivityManager: freezing 3099 com.android.chrome
+10-07 00:45:19.620   552   642 D ActivityManager: freezing 1812 com.google.process.gservices
+10-07 00:45:19.620   552   642 D ActivityManager: freezing 9869 com.google.android.gms
+10-07 00:45:19.650   552  2299 D ActivityManager: freezer override set to true
+10-07 00:45:19.650   552  2299 D ActivityManager: sync unfroze 5713 com.google.android.gms.ui for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 4054 com.google.android.projection.gearhead:shared for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 917 com.google.android.permissioncontroller for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 1577 android.process.acore for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 8169 com.google.android.configupdater for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 8176 com.google.android.dialer for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 8298 com.android.settings for 19
+10-07 00:45:19.651   552  2299 D ActivityManager: sync unfroze 8420 org.krita.mobilefork for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 1840 com.google.android.apps.youtube.music for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 7424 com.google.android.gms.unstable for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 10857 com.google.android.partnersetup for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 3099 com.android.chrome for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 1812 com.google.process.gservices for 19
+10-07 00:45:19.652   552  2299 D ActivityManager: sync unfroze 9869 com.google.android.gms for 19
+10-07 00:45:19.664  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 13us,2us total 2.244ms
+10-07 00:45:19.672   552  2299 D ActivityManager: freezer override set to false
+10-07 00:45:28.724   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:45:29.189   552  2299 D WifiNl80211Manager: Scan result ready event
+10-07 00:45:29.189   552  2299 D WifiNative: Scan result ready event
+10-07 00:45:29.710   552  2299 D ActivityManager: freezer override set to true
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:29.723  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 18us,2us total 2.256ms
+10-07 00:45:29.731   552  2299 D ActivityManager: freezer override set to false
+10-07 00:45:30.369  4468 10938 I BugleRcsEngine: [167] brfq.d: (PEv2-SM-Bugle-104270810): ConfiguredState: event Timeout [null]
+10-07 00:45:36.892  5492 10987 V NativeCrypto: Read error: ssl=0x793d35ae3558: I/O error during system call, Connection reset by peer
+10-07 00:45:36.895  5492  8175 V NativeCrypto: SSL shutdown failed: ssl=0x793d35ae3558: I/O error during system call, Broken pipe
+10-07 00:45:36.895  5492  8175 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+10-07 00:45:36.895  5492  8175 W WakeLock: GCM_HB_ALARM counter does not exist
+10-07 00:45:36.895   552   839 D ConnectivityService: reportNetworkConnectivity(100, false) by 10128
+10-07 00:45:36.896  1082  3095 D NetworkMonitor/100: Forcing reevaluation for UID 10128. Dns signal count: 0
+10-07 00:45:36.896  5492  8175 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 4045384]
+10-07 00:45:36.896  5492  8175 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+10-07 00:45:36.896  5492  8175 W WakeLock: GCM_CONN_ALARM counter does not exist
+10-07 00:45:36.897  1082 11267 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.897  1082 11268 D TrafficStats: tagSocket(75) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.897  1082 11268 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.897  1082 11267 D TrafficStats: tagSocket(75) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.898   362 11269 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-07 00:45:36.898   362 11270 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-07 00:45:36.900   362 11271 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-07 00:45:36.900   362 11272 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-07 00:45:36.902   362 11270 I resolv  : res_nsend: used send_dg 75 terrno: 0
+10-07 00:45:36.903   362 11271 I resolv  : res_nsend: used send_dg 160 terrno: 0
+10-07 00:45:36.903   362 11269 I resolv  : res_nsend: used send_dg 256 terrno: 0
+10-07 00:45:36.903   362 11272 I resolv  : res_nsend: used send_dg 63 terrno: 0
+10-07 00:45:36.903  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.904  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.904  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.905  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.905  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.905  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.906  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.906  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.907  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.907  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.907  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.907  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.908  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.908  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.908  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.909  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.909  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.909  1082 11267 D NetworkMonitor/100: PROBE_DNS www.google.com 12ms OK 142.251.156.119,142.251.154.119,142.251.155.119,142.251.157.119,142.251.153.119,142.251.151.119,142.251.152.119,142.251.150.119,2001:4860:4828:7700::,2001:4860:482b:7700::,2001:4860:482a:7700::,2001:4860:482d:7700::,2001:4860:4827:7700::,2001:4860:482c:7700::,2001:4860:4829:7700::,2001:4860:4826:7700::
+10-07 00:45:36.909  1082  1082 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-07 00:45:36.910  1082 11268 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 13ms OK 142.251.150.120,2607:f8b0:4023:80d::5e
+10-07 00:45:36.910   362 11273 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-07 00:45:36.910   362 11274 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-07 00:45:36.910   362 11275 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-07 00:45:36.910   362 11275 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7672d0e8b150
+10-07 00:45:36.910   362 11275 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+10-07 00:45:36.910   362 11274 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x767210e81690
+10-07 00:45:36.910   362 11274 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+10-07 00:45:36.911   362 11276 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-07 00:45:36.911   362 11278 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-07 00:45:36.911   362 11278 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x767280e7c8d0
+10-07 00:45:36.911   362 11278 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+10-07 00:45:36.911  1082 11267 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.911   362 11277 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-07 00:45:36.911   362 11277 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x767280e7d6d0
+10-07 00:45:36.911   362 11277 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+10-07 00:45:36.912  1082 11268 D TrafficStats: tagSocket(75) with statsTag=0xffffff81, statsUid=-1
+10-07 00:45:36.935  1082 11268 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=25ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 07 Oct 2026 00:45:37 GMT], X-Android-Received-Millis=[1791333936935], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1791333936924]}
+10-07 00:45:36.961  1082 11267 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 time=51ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 07 Oct 2026 00:45:37 GMT], X-Android-Received-Millis=[1791333936961], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1791333936948]}
+10-07 00:45:36.962  1082 11266 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=65ms
+10-07 00:45:36.962   552   839 D ConnectivityService: [100 WIFI] validation passed
+10-07 00:45:38.208   914   914 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-07 00:45:38.724   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:45:39.770   552  2117 D ActivityManager: freezer override set to true
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:39.782  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,2us total 2.331ms
+10-07 00:45:39.790   552  2117 D ActivityManager: freezer override set to false
+10-07 00:45:41.213   914   914 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-07 00:45:44.217   914   914 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-07 00:45:45.662   362 11288 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10128 0}
+10-07 00:45:45.662   362 11290 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-07 00:45:45.662   362 11289 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-07 00:45:45.662   362 11289 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x767280e7d970
+10-07 00:45:45.662   362 11289 I resolv  : doQuery: rcode=0, ancount=2, return value=91
+10-07 00:45:45.697   362 11290 I resolv  : res_nsend: used send_dg 107 terrno: 0
+10-07 00:45:45.697   362 11290 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-07 00:45:45.698  5492  6703 D TrafficStats: tagSocket(-1) with statsTag=0x30000407, statsUid=-1
+10-07 00:45:45.698  5492  6703 I TrafficStats: tagSocketFd(-1, 805307399, -1) failed with errno-9
+10-07 00:45:45.698  5492  6703 D TrafficStats: tagSocket(82) with statsTag=0x30000407, statsUid=-1
+10-07 00:45:46.231  5492  8175 D TrafficStats: tagSocket(83) with statsTag=0x30000407, statsUid=-1
+10-07 00:45:46.233  5492  8175 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 4605958]
+10-07 00:45:46.235  5492  5492 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-07 00:45:46.235  5492  5492 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-07 00:45:46.334  5492 11291 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 4606060]
+10-07 00:45:46.335  5492 11291 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+10-07 00:45:46.336  5492 11291 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 4606061]
+10-07 00:45:48.724   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:45:49.828   552  2117 D ActivityManager: freezer override set to true
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:49.841  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.275ms
+10-07 00:45:49.848   552  2117 D ActivityManager: freezer override set to false
+10-07 00:45:50.226   914   914 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+10-07 00:45:58.724   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:45:59.889   552  2117 D ActivityManager: freezer override set to true
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:59.901  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.307ms
+10-07 00:45:59.909   552  2117 D ActivityManager: freezer override set to false
+10-07 00:46:00.003  1783  1946 I AiAiEcho: Predicting[0]: 
+10-07 00:46:00.003  1783  1946 I AiAiEcho: EchoTargets: 
+10-07 00:46:00.003  1783  1946 I AiAiEcho: Filtered by AiAi flag check: 
+10-07 00:46:00.003  1783  1946 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+10-07 00:46:00.003  1783  1946 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-07 00:46:00.021   914   914 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-07 00:46:00.022   914   977 D EGL_emulation: app_time_stats: avg=51286.18ms min=51286.18ms max=51286.18ms count=1
+10-07 00:46:01.337  5492  5492 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-07 00:46:08.724   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:46:09.917   552   642 D ActivityManager: freezing 5713 com.google.android.gms.ui
+10-07 00:46:09.918   552   642 D ActivityManager: freezing 4054 com.google.android.projection.gearhead:shared
+10-07 00:46:09.918   552   642 D ActivityManager: freezing 917 com.google.android.permissioncontroller
+10-07 00:46:09.918   552   642 D ActivityManager: freezing 1577 android.process.acore
+10-07 00:46:09.918   552   642 D ActivityManager: freezing 8169 com.google.android.configupdater
+10-07 00:46:09.919   552   642 D ActivityManager: freezing 8176 com.google.android.dialer
+10-07 00:46:09.919   552   642 D ActivityManager: freezing 8298 com.android.settings
+10-07 00:46:09.919   552   642 D ActivityManager: freezing 8420 org.krita.mobilefork
+10-07 00:46:09.920   552   642 D ActivityManager: freezing 1840 com.google.android.apps.youtube.music
+10-07 00:46:09.920   552   642 D ActivityManager: freezing 7424 com.google.android.gms.unstable
+10-07 00:46:09.920   552   642 D ActivityManager: freezing 10857 com.google.android.partnersetup
+10-07 00:46:09.921   552   642 D ActivityManager: freezing 3099 com.android.chrome
+10-07 00:46:09.921   552   642 D ActivityManager: freezing 1812 com.google.process.gservices
+10-07 00:46:09.921   552   642 D ActivityManager: freezing 9869 com.google.android.gms
+10-07 00:46:09.951   552  2299 D ActivityManager: freezer override set to true
+10-07 00:46:09.951   552  2299 D ActivityManager: sync unfroze 5713 com.google.android.gms.ui for 19
+10-07 00:46:09.951   552  2299 D ActivityManager: sync unfroze 4054 com.google.android.projection.gearhead:shared for 19
+10-07 00:46:09.952   552  2299 D ActivityManager: sync unfroze 917 com.google.android.permissioncontroller for 19
+10-07 00:46:09.952   552  2299 D ActivityManager: sync unfroze 1577 android.process.acore for 19
+10-07 00:46:09.952   552  2299 D ActivityManager: sync unfroze 8169 com.google.android.configupdater for 19
+10-07 00:46:09.952   552  2299 D ActivityManager: sync unfroze 8176 com.google.android.dialer for 19
+10-07 00:46:09.952   552  2299 D ActivityManager: sync unfroze 8298 com.android.settings for 19
+10-07 00:46:09.953   552  2299 D ActivityManager: sync unfroze 8420 org.krita.mobilefork for 19
+10-07 00:46:09.953   552  2299 D ActivityManager: sync unfroze 1840 com.google.android.apps.youtube.music for 19
+10-07 00:46:09.953   552  2299 D ActivityManager: sync unfroze 7424 com.google.android.gms.unstable for 19
+10-07 00:46:09.953   552  2299 D ActivityManager: sync unfroze 10857 com.google.android.partnersetup for 19
+10-07 00:46:09.953   552  2299 D ActivityManager: sync unfroze 3099 com.android.chrome for 19
+10-07 00:46:09.954   552  2299 D ActivityManager: sync unfroze 1812 com.google.process.gservices for 19
+10-07 00:46:09.954   552  2299 D ActivityManager: sync unfroze 9869 com.google.android.gms for 19
+10-07 00:46:09.966  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,3us total 2.397ms
+10-07 00:46:09.974   552  2299 D ActivityManager: freezer override set to false
+10-07 00:46:18.723   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:46:20.012   552  2299 D ActivityManager: freezer override set to true
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 1001(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:20.024  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,2us total 2.271ms
+10-07 00:46:20.032   552  2299 D ActivityManager: freezer override set to false
+10-07 00:46:28.723   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:46:30.073   552  2299 D ActivityManager: freezer override set to true
+10-07 00:46:30.080   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 1001(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:30.085  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.284ms
+10-07 00:46:30.093   552  2299 D ActivityManager: freezer override set to false
+10-07 00:46:38.723   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:46:40.135   552  2299 D ActivityManager: freezer override set to true
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:40.148  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.336ms
+10-07 00:46:40.156   552  2299 D ActivityManager: freezer override set to false
+10-07 00:46:48.723   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:46:48.736   914   977 D EGL_emulation: app_time_stats: avg=48714.12ms min=48714.12ms max=48714.12ms count=1
+10-07 00:46:50.196   552  2299 D ActivityManager: freezer override set to true
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:50.209  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,2us total 2.385ms
+10-07 00:46:50.217   552  2299 D ActivityManager: freezer override set to false
+10-07 00:46:58.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:00.002  1783  1946 I AiAiEcho: Predicting[0]: 
+10-07 00:47:00.002  1783  1946 I AiAiEcho: EchoTargets: 
+10-07 00:47:00.002  1783  1946 I AiAiEcho: Filtered by AiAi flag check: 
+10-07 00:47:00.002  1783  1946 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+10-07 00:47:00.003  1783  1946 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-07 00:47:00.021   914   914 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-07 00:47:00.021   914   977 D EGL_emulation: app_time_stats: avg=11284.84ms min=11284.84ms max=11284.84ms count=1
+10-07 00:47:00.264   552   642 D ActivityManager: freezing 5713 com.google.android.gms.ui
+10-07 00:47:00.265   552   642 D ActivityManager: freezing 4054 com.google.android.projection.gearhead:shared
+10-07 00:47:00.265   552   642 D ActivityManager: freezing 917 com.google.android.permissioncontroller
+10-07 00:47:00.265   552   642 D ActivityManager: freezing 1577 android.process.acore
+10-07 00:47:00.265   552   642 D ActivityManager: freezing 8169 com.google.android.configupdater
+10-07 00:47:00.266   552   642 D ActivityManager: freezing 8176 com.google.android.dialer
+10-07 00:47:00.266   552   642 D ActivityManager: freezing 8298 com.android.settings
+10-07 00:47:00.266   552   642 D ActivityManager: freezing 8420 org.krita.mobilefork
+10-07 00:47:00.266   552   642 D ActivityManager: freezing 1840 com.google.android.apps.youtube.music
+10-07 00:47:00.266   552   642 D ActivityManager: freezing 7424 com.google.android.gms.unstable
+10-07 00:47:00.267   552   642 D ActivityManager: freezing 10857 com.google.android.partnersetup
+10-07 00:47:00.267   552   642 D ActivityManager: freezing 3099 com.android.chrome
+10-07 00:47:00.267   552   642 D ActivityManager: freezing 1812 com.google.process.gservices
+10-07 00:47:00.267   552   642 D ActivityManager: freezing 9869 com.google.android.gms
+10-07 00:47:00.267   552   988 D ActivityManager: freezer override set to true
+10-07 00:47:00.267   552   988 D ActivityManager: sync unfroze 5713 com.google.android.gms.ui for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 4054 com.google.android.projection.gearhead:shared for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 917 com.google.android.permissioncontroller for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 1577 android.process.acore for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 8169 com.google.android.configupdater for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 8176 com.google.android.dialer for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 8298 com.android.settings for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 8420 org.krita.mobilefork for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 1840 com.google.android.apps.youtube.music for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 7424 com.google.android.gms.unstable for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 10857 com.google.android.partnersetup for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 3099 com.android.chrome for 19
+10-07 00:47:00.268   552   988 D ActivityManager: sync unfroze 1812 com.google.process.gservices for 19
+10-07 00:47:00.269   552   988 D ActivityManager: sync unfroze 9869 com.google.android.gms for 19
+10-07 00:47:00.281  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,3us total 2.350ms
+10-07 00:47:00.289   552   988 D ActivityManager: freezer override set to false
+10-07 00:47:08.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:10.328   552   988 D ActivityManager: freezer override set to true
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:10.340  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.281ms
+10-07 00:47:10.348   552   988 D ActivityManager: freezer override set to false
+10-07 00:47:18.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:18.736   914   977 D EGL_emulation: app_time_stats: avg=18714.69ms min=18714.69ms max=18714.69ms count=1
+10-07 00:47:20.390   552  2299 D ActivityManager: freezer override set to true
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:20.403  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.274ms
+10-07 00:47:20.411   552  2299 D ActivityManager: freezer override set to false
+10-07 00:47:25.027  4468  4543 W TimedProcessReaper: Memory state is: 230
+10-07 00:47:28.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:30.417   552   642 D ActivityManager: freezing 5713 com.google.android.gms.ui
+10-07 00:47:30.417   552   642 D ActivityManager: freezing 4054 com.google.android.projection.gearhead:shared
+10-07 00:47:30.417   552   642 D ActivityManager: freezing 917 com.google.android.permissioncontroller
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 1577 android.process.acore
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 8169 com.google.android.configupdater
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 8176 com.google.android.dialer
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 8298 com.android.settings
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 8420 org.krita.mobilefork
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 1840 com.google.android.apps.youtube.music
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 7424 com.google.android.gms.unstable
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 10857 com.google.android.partnersetup
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 3099 com.android.chrome
+10-07 00:47:30.418   552   642 D ActivityManager: freezing 1812 com.google.process.gservices
+10-07 00:47:30.419   552   642 D ActivityManager: freezing 9869 com.google.android.gms
+10-07 00:47:30.452   552  2299 D ActivityManager: freezer override set to true
+10-07 00:47:30.452   552  2299 D ActivityManager: sync unfroze 5713 com.google.android.gms.ui for 19
+10-07 00:47:30.452   552  2299 D ActivityManager: sync unfroze 4054 com.google.android.projection.gearhead:shared for 19
+10-07 00:47:30.452   552  2299 D ActivityManager: sync unfroze 917 com.google.android.permissioncontroller for 19
+10-07 00:47:30.453   552  2299 D ActivityManager: sync unfroze 1577 android.process.acore for 19
+10-07 00:47:30.453   552  2299 D ActivityManager: sync unfroze 8169 com.google.android.configupdater for 19
+10-07 00:47:30.453   552  2299 D ActivityManager: sync unfroze 8176 com.google.android.dialer for 19
+10-07 00:47:30.453   552  2299 D ActivityManager: sync unfroze 8298 com.android.settings for 19
+10-07 00:47:30.453   552  2299 D ActivityManager: sync unfroze 8420 org.krita.mobilefork for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 1840 com.google.android.apps.youtube.music for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 7424 com.google.android.gms.unstable for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 10857 com.google.android.partnersetup for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 3099 com.android.chrome for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 1812 com.google.process.gservices for 19
+10-07 00:47:30.454   552  2299 D ActivityManager: sync unfroze 9869 com.google.android.gms for 19
+10-07 00:47:30.466  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 18us,2us total 2.326ms
+10-07 00:47:30.474   552  2299 D ActivityManager: freezer override set to false
+10-07 00:47:36.369  5090  5132 W TimedProcessReaper: Memory state is: 125
+10-07 00:47:38.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:40.513   552  2299 D ActivityManager: freezer override set to true
+10-07 00:47:40.516   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:40.526  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,5us total 2.398ms
+10-07 00:47:40.534   552  2299 D ActivityManager: freezer override set to false
+10-07 00:47:48.722   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:47:50.573   552  2299 D ActivityManager: freezer override set to true
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:50.585  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,2us total 2.521ms
+10-07 00:47:50.593   552  2299 D ActivityManager: freezer override set to false
+10-07 00:47:58.721   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:48:00.002  1783  1946 I AiAiEcho: Predicting[0]: 
+10-07 00:48:00.002  1783  1946 I AiAiEcho: EchoTargets: 
+10-07 00:48:00.002  1783  1946 I AiAiEcho: Filtered by AiAi flag check: 
+10-07 00:48:00.002  1783  1946 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata: 
+10-07 00:48:00.003  1783  1946 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-07 00:48:00.021   914   914 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-07 00:48:00.023   914   977 D EGL_emulation: app_time_stats: avg=41287.23ms min=41287.23ms max=41287.23ms count=1
+10-07 00:48:00.633   552   988 D ActivityManager: freezer override set to true
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:48:00.646  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,3us total 2.408ms
+10-07 00:48:00.655   552   988 D ActivityManager: freezer override set to false
+10-07 00:48:08.721   914   914 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-07 00:48:09.189   552   988 D WifiNl80211Manager: Scan result ready event
+10-07 00:48:09.189   552   988 D WifiNative: Scan result ready event
+10-07 00:48:10.694   552   988 D ActivityManager: freezer override set to true
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:48:10.706  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.681ms
+10-07 00:48:10.714   552   988 D ActivityManager: freezer override set to false
+10-07 00:48:10.747   552   988 D ActivityManager: freezer override set to true
+10-07 00:48:10.759  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,3us total 2.287ms
+10-07 00:48:10.767   552   988 D ActivityManager: freezer override set to false

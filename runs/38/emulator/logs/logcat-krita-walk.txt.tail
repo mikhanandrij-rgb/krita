@@ -1,0 +1,338 @@
+10-06 23:48:04.225   914   953 V WindowManagerShell: Transition requested: android.os.BinderProxy@ad92fb4 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=11 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=583950 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@43a57dd} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{58aef52 org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:48:04.225   552  2302 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-06 23:48:04.234   552   582 I ActivityManager: Start proc 7255:org.krita.mobilefork/u0a192 for next-top-activity {org.krita.mobilefork/org.krita.android.MainActivity}
+10-06 23:48:04.235   552   565 D CoreBackPreview: Window{cbec747 u0 Splash Screen org.krita.mobilefork}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1ea3112, mPriority=0, mIsAnimationCallback=false}
+10-06 23:48:04.267  7255  7255 I rita.mobilefork: Using CollectorTypeCC GC.
+10-06 23:48:04.270  7255  7255 W rita.mobilefork: Unexpected CPU variant for x86: x86_64.
+10-06 23:48:04.270  7255  7255 W rita.mobilefork: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-06 23:48:04.294   552   569 V WindowManager: Sent Transition #26 createdAt=10-06 23:48:04.222 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=11 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=1 lastActiveTime=583950 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{4e32e55 Task{3479f6b #11 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{796d06a org.krita.android.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:48:04.311   552   569 V WindowManager:     info={id=26 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4e32e55 Task{3479f6b #11 type=standard A=10192:org.krita.mobilefork}}} m=OPEN f=NONE leash=Surface(name=Task=11)/@0x19690e3 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{d6eb9ff Task{f23e9a3 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x124db0a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 23:48:04.427  7255  7255 E rita.mobilefork: Not starting debugger since process cannot load the jdwp agent.
+10-06 23:48:04.469  7255  7255 D nativeloader: Configuring clns-6 for other apk /data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/lib/arm64:/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/org.krita.mobilefork
+10-06 23:48:04.486  7255  7255 V GraphicsEnvironment: ANGLE GameManagerService for org.krita.mobilefork: false
+10-06 23:48:04.486  7255  7255 V GraphicsEnvironment: org.krita.mobilefork is not listed in per-application setting
+10-06 23:48:04.492   552   565 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10192. pid: 7255
+10-06 23:48:04.540  7255  7255 W System.err: 	at org.krita.android.MainActivity.onCreate(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:29)
+10-06 23:48:04.536  7255  7255 W rita.mobilefork: type=1400 audit(0.0:254): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=485 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=org.krita.mobilefork
+10-06 23:48:04.949  7255  7255 I krita.MainActivity: TouchSlop: 21
+10-06 23:48:04.949  7255  7255 I krita.MainActivity: LibsLoaded
+10-06 23:48:04.965   552  2299 D CoreBackPreview: Window{1f12f4b u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ce4abe6, mPriority=0, mIsAnimationCallback=false}
+10-06 23:48:05.098   552   569 W system_server: Failed to determine oat file name for dex location /data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.apk: Dalvik cache directory does not exist
+10-06 23:48:05.098   552   569 W ziparchive: Unable to open '/data/app/~~hrLVT_TEts3X58AAGKiQIw==/org.krita.mobilefork-zKPsBhqsYTMNv7PMpfWF-A==/base.dm': No such file or directory
+10-06 23:48:05.100   552   569 I ActivityTaskManager: Displayed org.krita.mobilefork/org.krita.android.MainActivity for user 0: +877ms
+10-06 23:48:05.113   552  2302 D CoreBackPreview: Window{cbec747 u0 Splash Screen org.krita.mobilefork EXITING}: Setting back callback null
+10-06 23:48:05.114   552  2302 W InputManager-JNI: Input channel object 'cbec747 Splash Screen org.krita.mobilefork (client)' was disposed without first being removed with the input manager!
+10-06 23:48:05.121   914   953 V WindowManagerShell: Transition requested: android.os.BinderProxy@84cd8f6 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=11 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=584845 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@71784f7} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{d910f64 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:48:05.122   552   565 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 23:48:05.137   552  2136 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+10-06 23:48:05.165   552   565 I ImeTracker: org.krita.mobilefork:fc9a5a78: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 23:48:05.166   552   565 I ImeTracker: org.krita.mobilefork:fc9a5a78: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:48:05.194  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 23:48:05.346   552   569 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +224ms
+10-06 23:48:05.346   552   569 V WindowManager: Sent Transition #27 createdAt=10-06 23:48:05.116 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=11 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.krita.mobilefork/org.krita.android.MainActivity } baseActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{org.krita.mobilefork/org.krita.android.MainActivity} numActivities=2 lastActiveTime=584845 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{4e32e55 Task{3479f6b #11 type=standard A=10192:org.krita.mobilefork}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{b35ca64 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 23:48:05.447   552  2136 I ImeTracker: org.krita.mobilefork:34e325e3: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 23:48:05.447   552  2136 I ImeTracker: org.krita.mobilefork:34e325e3: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:48:05.451  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=org.krita.mobilefork fieldId=0 fieldName=null extras=null}, false)
+10-06 23:48:06.852   552  1011 D CoreBackPreview: Window{cdf81de u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a23e68c, mPriority=0, mIsAnimationCallback=false}
+10-06 23:48:15.210  7255  7269 W rita.mobilefork: Cleared Reference was only reachable from finalizer (only reported once)
+10-06 23:48:15.211  7255  7269 I rita.mobilefork: Explicit concurrent copying GC freed 42162(2205KB) AllocSpace objects, 8(1380KB) LOS objects, 49% free, 2505KB/5011KB, paused 86us,6us total 7.029ms
+10-06 23:48:15.211  7255  7265 I rita.mobilefork: WaitForGcToComplete blocked NativeAlloc on Explicit for 7.180ms
+10-06 23:48:22.418  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+10-06 23:48:22.426  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+10-06 23:48:22.434  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+10-06 23:48:22.441  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+10-06 23:48:22.449  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+10-06 23:48:22.457  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+10-06 23:48:22.459  7255  7278 W krita   : krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+10-06 23:48:23.265  7255  7278 I krita   : Krita Mobile: interface mode 0, smallest screen side 411 dp (Android: 411), phone interface on
+10-06 23:48:24.716  7255  7278 I krita   : Krita Mobile test: control directory /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test test run requested
+10-06 23:48:24.717  7255  7278 I krita   : Krita Mobile test: interface: phone (smallest side 411 dp)
+10-06 23:48:25.171   552  1011 D CoreBackPreview: Window{cdf81de u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 23:48:25.172   552  1011 W InputManager-JNI: Input channel object 'cdf81de org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:48:25.262  7255  7278 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 23:48:25.262  7255  7278 W krita   : qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+10-06 23:48:25.424  7255  7293 I rita.mobilefork: Explicit concurrent copying GC freed 7305(354KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2454KB/4909KB, paused 35us,6us total 5.193ms
+10-06 23:48:30.423  7255  7278 I krita   : Krita Mobile test: perf start: interface-ready-ms=20594 first-canvas-ms=-1 rss-kb=1143120 peak-kb=1144528 uptime-ms=25960
+10-06 23:48:34.681  7255  7278 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-01-hub.png ok
+10-06 23:48:35.542  7255  7293 I rita.mobilefork: Explicit concurrent copying GC freed 7041(343KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2287KB/4575KB, paused 17us,5us total 3.462ms
+10-06 23:48:37.298  7255  7278 I krita   : Krita Mobile test: screenshot /storage/emulated/0/Android/data/org.krita.mobilefork/files/krita-mobile-test/out/portrait-02-new-canvas.png ok
+10-06 23:48:39.037  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:39.535  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:40.127  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:40.341  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:40.839  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:42.245  7255  7278 I krita   : Krita Mobile: restored the phone interface bars
+10-06 23:48:43.340  7255  7278 W krita   : This plugin does not support setting window opacity
+10-06 23:48:43.395  7255  7255 E BufferQueueProducer: [SurfaceView[org.krita.mobilefork/org.krita.android.MainActivity]#5(BLAST Consumer)5](id:1c5700000005,api:0,p:-1,c:7255) disconnect: not connected (req=2)
+10-06 23:48:44.443  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:44.834  7255  7278 I krita   : Krita Mobile: restored the phone interface bars
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 5256 com.google.android.settings.intelligence curAdj = 965(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 2373 com.google.android.contacts curAdj = 965(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 955(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 4136 com.google.android.gm curAdj = 955(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 4943 com.google.android.googlequicksearchbox curAdj = 945(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 4532 com.google.android.marvin.talkback curAdj = 945(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 1915 com.google.android.youtube curAdj = 935(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 935(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 925(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 925(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 915(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 915(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 2783 com.google.android.gms.unstable curAdj = 1001(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 905(override)
+10-06 23:48:45.604   552   642 D ActivityManager: Skipping freeze for process 5583 com.google.android.gms curAdj = 1001(override)
+10-06 23:48:45.657  7255  7293 I rita.mobilefork: Explicit concurrent copying GC freed 4963(277KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2282KB/4565KB, paused 42us,7us total 4.905ms
+10-06 23:48:46.704  7255  7278 W krita   : setNativeLocks failed: "Function not implemented"
+10-06 23:48:46.777  7255  7278 W krita   : krita.lib.flake: KoShapeManager::paint  Painting with a painter that has no clipping will lead to too much being painted!
+10-06 23:48:46.
+[...]
+le.android.partnersetup curAdj = 905(override)
+10-07 00:44:49.477   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:44:49.477   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:44:49.477   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:44:49.482  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,5us total 2.338ms
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:44:59.539   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:44:59.542  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 11us,2us total 3.068ms
+10-07 00:45:09.596   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:09.596   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:09.596   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:09.596   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:09.597   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:09.600  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.370ms
+10-07 00:45:19.664  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 13us,2us total 2.244ms
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:29.716   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:29.717   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:29.723  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 18us,2us total 2.256ms
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:39.776   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:39.777   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:39.782  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,2us total 2.331ms
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:49.836   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:49.837   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:49.841  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.275ms
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:45:59.896   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:45:59.897   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:45:59.901  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.307ms
+10-07 00:46:09.966  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,3us total 2.397ms
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 1001(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:20.019   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:20.024  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,2us total 2.271ms
+10-07 00:46:30.080   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 1001(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:30.081   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:30.085  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.284ms
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:46:40.140   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:40.141   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:40.148  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.336ms
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:46:50.204   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:46:50.205   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:46:50.209  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,2us total 2.385ms
+10-07 00:47:00.281  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,3us total 2.350ms
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:10.332   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:10.333   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:10.340  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 10us,2us total 2.281ms
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:20.398   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:20.399   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:20.403  8420  8435 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.274ms
+10-07 00:47:30.466  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 18us,2us total 2.326ms
+10-07 00:47:40.516   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:40.517   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:40.526  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,5us total 2.398ms
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:47:50.584   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:47:50.585   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:47:50.585  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,2us total 2.521ms
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:48:00.640   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:48:00.641   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:48:00.646  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 14us,3us total 2.408ms
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 5713 com.google.android.gms.ui curAdj = 975(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 4054 com.google.android.projection.gearhead:shared curAdj = 965(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 917 com.google.android.permissioncontroller curAdj = 965(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 1577 android.process.acore curAdj = 955(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8169 com.google.android.configupdater curAdj = 955(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8176 com.google.android.dialer curAdj = 905(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8298 com.android.settings curAdj = 945(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 8420 org.krita.mobilefork curAdj = 935(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 1840 com.google.android.apps.youtube.music curAdj = 935(override)
+10-07 00:48:10.704   552   642 D ActivityManager: Skipping freeze for process 7424 com.google.android.gms.unstable curAdj = 925(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 10857 com.google.android.partnersetup curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 3099 com.android.chrome curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 1812 com.google.process.gservices curAdj = 905(override)
+10-07 00:48:10.705   552   642 D ActivityManager: Skipping freeze for process 9869 com.google.android.gms curAdj = 905(override)
+10-07 00:48:10.706  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 15us,2us total 2.681ms
+10-07 00:48:10.759  8420  8434 I rita.mobilefork: Explicit concurrent copying GC freed 2605(128KB) AllocSpace objects, 1(20KB) LOS objects, 24% free, 2016KB/2688KB, paused 17us,3us total 2.287ms

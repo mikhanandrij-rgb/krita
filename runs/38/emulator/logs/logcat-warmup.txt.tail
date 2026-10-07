@@ -1,0 +1,418 @@
+140   552   566 D ActivityManager: sync unfroze 1436 com.android.cellbroadcastreceiver for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 2052 com.android.keychain for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 1926 com.android.printspooler for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 1546 com.android.carrierconfig for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 2489 com.android.localtransport for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 1849 com.google.android.googlesdksetup for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 2133 com.android.carrierdefaultapp for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3389 com.android.traceur for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3496 com.google.android.onetimeinitializer for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3285 com.google.android.webview:webview_service for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3674 com.android.camera2 for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3748 com.android.dynsystem for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 2774 com.android.imsserviceentitlement for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 1388 com.google.android.cellbroadcastreceiver for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 3773 com.android.dynsystem:dynsystem for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 2193 com.android.providers.calendar for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 4462 com.android.emergency for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 4512 com.google.android.healthconnect.controller for 19
+10-06 23:40:55.141   552   566 D ActivityManager: sync unfroze 5210 com.google.android.webview for 19
+10-06 23:40:55.142   552   566 D ActivityManager: sync unfroze 1138 com.android.settings for 19
+10-06 23:40:55.142   552   566 D ActivityManager: sync unfroze 2348 com.google.android.partnersetup for 19
+10-06 23:40:55.142   552   566 D ActivityManager: sync unfroze 2829 com.google.android.tts for 19
+10-06 23:40:55.142   552   566 D ActivityManager: sync unfroze 3099 com.android.chrome for 19
+10-06 23:40:55.163  1178  1178 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.274 fontWeightAdjustment=0}
+10-06 23:40:55.163  1178  1178 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 23:40:55.163  1178  1178 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_ORIENTATION, CONFIG_SCREEN_SIZE, CONFIG_WINDOW_CONFIGURATION}
+10-06 23:40:55.163  1178  1178 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 23:40:55.164  1178  1178 D b/254119092: destroyExistingTaskbar: null
+10-06 23:40:55.164  1178  1178 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 23:40:55.164  1178  1178 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+10-06 23:40:55.164  1178  1178 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 23:40:55.167  1178  1178 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.274 fontWeightAdjustment=0}
+10-06 23:40:55.186   552   566 D ActivityManager: sync unfroze 4943 com.google.android.googlequicksearchbox for 19
+10-06 23:40:55.187   552   566 D ActivityManager: sync unfroze 4532 com.google.android.marvin.talkback for 19
+10-06 23:40:55.187   552   566 D ActivityManager: sync unfroze 4054 com.google.android.projection.gearhead:shared for 19
+10-06 23:40:55.188   552   566 D ActivityManager: sync unfroze 1915 com.google.android.youtube for 19
+10-06 23:40:55.192  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.192  1907  1907 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=128, right=0, bottom=0
+10-06 23:40:55.192  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.197   552   566 D ActivityManager: sync unfroze 4136 com.google.android.gm for 19
+10-06 23:40:55.203   552   566 D ActivityManager: sync unfroze 1840 com.google.android.apps.youtube.music for 19
+10-06 23:40:55.219  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.219  1907  1907 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=128, right=0, bottom=0
+10-06 23:40:55.219  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.220   552   566 D ActivityManager: sync unfroze 5713 com.google.android.gms.ui for 19
+10-06 23:40:55.221   552   566 D ActivityManager: sync unfroze 2754 com.google.android.apps.wallpaper for 19
+10-06 23:40:55.221   552   566 D ActivityManager: sync unfroze 6165 com.android.externalstorage for 19
+10-06 23:40:55.221   552   566 D ActivityManager: sync unfroze 2270 com.google.android.as.oss for 19
+10-06 23:40:55.221   552   566 D ActivityManager: sync unfroze 3971 com.google.android.rkpdapp for 19
+10-06 23:40:55.222   552   566 D ActivityManager: sync unfroze 2783 com.google.android.gms.unstable for 19
+10-06 23:40:55.223   552   566 D ActivityManager: sync unfroze 2479 com.google.android.documentsui for 19
+10-06 23:40:55.230   914  1040 W ndroid.systemui: Long monitor contention with owner SysUiLng (1038) at void android.view.Surface.unlockCanvasAndPost(android.graphics.Canvas)(Surface.java:493) waiters=0 in boolean android.view.Surface.isValid() for 186ms
+10-06 23:40:55.231  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-06 23:40:55.231  1662  1662 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-06 23:40:55.233  1178  1178 D b/254119092: DisplayInfoChangeListener#CHANGE_ROTATION
+10-06 23:40:55.233  1178  1178 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-06 23:40:55.237   427   440 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-06 23:40:55.238  1662  1662 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-06 23:40:55.239  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.240  1662  1662 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-06 23:40:55.240  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.240  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.245  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.245  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.245  1662  1662 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-06 23:40:55.245  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_bottom4dp_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_400_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-06 23:40:55.246  1907  1940 I earchbox:search: JIT allocated 50KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.mw.a()
+10-06 23:40:55.257   914   953 W Looper  : Slow dispatch took 133ms wmshell.main h=android.os.Handler c=com.android.wm.shell.sysui.ShellController$ShellInterfaceImpl$$ExternalSyntheticLambda0@e49e0cc m=0
+10-06 23:40:55.261  1662  2043 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: 2022081613
+10-06 23:40:55.264   552  1357 I WindowManager: finishDrawing of orientation change: Window{2ade176 u0 ScreenDecorOverlay} 340ms
+10-06 23:40:55.298  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1155 update screenHeightWithoutNaviBar to: 2400
+10-06 23:40:55.299  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1161 update max height when insets changes
+10-06 23:40:55.361  1662  2043 I SP      : Syncing emoticon_content_description (2022081613) with slices: [7a635888cb828dfa2fc744b7b9b50f04], metadata: false
+10-06 23:40:55.376  1907  5320 I OpenGLRenderer: Davey! duration=883ms; Flags=0, FrameTimelineVsyncId=8226, IntendedVsync=154160561358, Vsync=154843894664, InputEventId=0, HandleInputStart=154917266010, AnimationStart=154917267041, PerformTraversalsStart=154917267352, DrawStart=154989940822, FrameDeadline=154227228022, FrameInterval=154851411620, FrameStartTime=16666666, SyncQueued=154990434233, SyncStart=155010990981, IssueDrawCommandsStart=155011122345, SwapBuffers=155011206089, FrameCompleted=155064931695, DequeueBufferDuration=2925, QueueBufferDuration=48163968, GpuCompleted=155064859478, SwapBuffersCompleted=155064931695, DisplayPresentTime=0, CommandSubmissionCompleted=155011206089, 
+10-06 23:40:55.382  1907  1907 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-06 23:40:55.393   552  2287 I WindowManager: finishDrawing of orientation change: Window{dbfbfdf u0 NavigationBar0} 469ms
+10-06 23:40:55.396  1907  1907 I A       : StreamFragmentPeer#onPending
+10-06 23:40:55.397  1907  1907 I A       : #fetchAndStoreData() on surface MinusOne.
+10-06 23:40:55.398  1907  2694 W A       : Fetch failed. Renderable stream failure reason: USER_SIGNED_OUT
+10-06 23:40:55.398  1907  2694 W A       : DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@4714154)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.d(PG:16)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invokeSuspend(PG:5)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invoke(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.c(PG:2)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:5)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invoke(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.apps.search.googleapp.discover.v.al.invokeSuspend(PG:4)
+10-06 23:40:55.398  1907  2694 W A       : 	at i.c.b.a.a.resumeWith(PG:4)
+10-06 23:40:55.398  1907  2694 W A       : 	at kotlinx.coroutines.bk.run(PG:14)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.apps.tiktok.coroutines.f.run(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 23:40:55.398  1907  2694 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:40:55.398  1907  2694 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.libraries.i.k.run(PG:2)
+10-06 23:40:55.398  1907  2694 W A       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 23:40:55.398  1907  2694 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:40:55.398   552  2287 I WindowManager: finishDrawing of orientation change: Window{c518102 u0 StatusBar} 475ms
+10-06 23:40:55.399   552  1809 I ImeTracker: com.google.android.apps.nexuslauncher:8b24eb63: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 23:40:55.399   552  1809 I ImeTracker: com.google.android.apps.nexuslauncher:8b24eb63: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 23:40:55.404   552   569 V WindowManager: Sent Transition #13 createdAt=10-06 23:40:54.909 via request=TransitionRequestInfo { type = CHANGE, triggerTask = null, remoteTransition = null, displayChange = DisplayChange { displayId = 0, startAbsBounds = null, endAbsBounds = null, startRotation = 1, endRotation = 0, physicalDisplayChanged = false } }
+10-06 23:40:55.404   552   569 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-06 23:40:55.404   552   569 V WindowManager:     info={id=13 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{d6eb9ff Task{f23e9a3 #1 type=home}}} m=CHANGE f=SHOW_WALLPAPER p=WCT{RemoteToken{89d4b32 DefaultTaskDisplayArea@66878600}} leash=Surface(name=Task=1)/@0x124db0a sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{RemoteToken{89d4b32 DefaultTaskDisplayArea@66878600}} m=CHANGE f=SHOW_WALLPAPER p=WCT{RemoteToken{c9e7285 Display{#0 state=ON size=1080x2400 ROTATION_0}}} leash=Surface(name=DefaultTaskDisplayArea)/@0xb4e3f75 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{RemoteToken{c9e7285 Display{#0 state=ON size=1080x2400 ROTATION_0}}} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0xc80b02f sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 23:40:55.406  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.406  1907  1907 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=128, right=0, bottom=0
+10-06 23:40:55.406  1907  1907 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=128, right=0, bottom=63}
+10-06 23:40:55.414   914   953 V WindowManagerShell: onTransitionReady android.os.BinderProxy@e26a875: {id=13 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@946e31d} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@1cfb992} leash=Surface(name=Task=1)/@0x55e6deb sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@8e8af63} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@a150760} leash=Surface(name=DefaultTaskDisplayArea)/@0xd749748 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@7739419} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0xa6c89e1 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 23:40:55.414   914   953 V WindowManagerShell: Playing animation for (#13)android.os.BinderProxy@e26a875@0
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@d13f9b6
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@5af6b7
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@670fe24
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@f635d8d
+10-06 23:40:55.414   914   953 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@bddfb42
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@71e4753
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@ed1d890
+10-06 23:40:55.414   914   953 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@d23b145
+10-06 23:40:55.414   914   953 V WindowManagerShell: start default transition animation, info = {id=13 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@946e31d} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@1cfb992} leash=Surface(name=Task=1)/@0x55e6deb sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:0},{WCT{android.window.IWindowContainerToken$Stub$Proxy@8e8af63} m=CHANGE f=SHOW_WALLPAPER p=WCT{android.window.IWindowContainerToken$Stub$Proxy@a150760} leash=Surface(name=DefaultTaskDisplayArea)/@0xd749748 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@7739419} m=CHANGE f=SHOW_WALLPAPER|IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0xa6c89e1 sb=Rect(0, 0 - 2400, 1080) eb=Rect(0, 0 - 1080, 2400) d=0 r=1->0:3}]}
+10-06 23:40:55.414   914   953 V WindowManagerShell: Display is changing, resolve the animation hint.
+10-06 23:40:55.414   914   953 V WindowManagerShell:   display requests explicit seamless
+10-06 23:40:55.436   914   953 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#13)android.os.BinderProxy@e26a875@0
+10-06 23:40:55.452  1907  1907 W A       : Failed RenderableStream callback; SubscriptionCallbacks#onError(Throwable) called.
+10-06 23:40:55.452  1907  1907 W A       : com.google.android.apps.search.googleapp.discover.v.i: DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@4714154)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.v.ak.a(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:17)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invoke(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.v.al.invokeSuspend(PG:4)
+10-06 23:40:55.452  1907  1907 W A       : 	at i.c.b.a.a.resumeWith(PG:4)
+10-06 23:40:55.452  1907  1907 W A       : 	at kotlinx.coroutines.bk.run(PG:14)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.apps.tiktok.coroutines.f.run(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:40:55.452  1907  1907 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.libraries.i.k.run(PG:2)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 23:40:55.452  1907  1907 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:40:55.452  1907  1907 W A       : Caused by: DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@4714154)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.d(PG:16)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invokeSuspend(PG:5)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invoke(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+10-06 23:40:55.452  1907  1907 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.c(PG:2)
+10-06 23:40:55.452  1907  1907 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:5)
+10-06 23:40:55.452  1907  1907 W A       : 	... 13 more
+10-06 23:40:55.457  1907  6112 I NetworkRecognitionRnr: Using pair HTTP connection
+10-06 23:40:55.462  1907  3518 I A       : [Upload] Connected
+10-06 23:40:55.462  1907  3503 W LocationOracle: getBestLocation(): no location is available
+10-06 23:40:55.468  1907  1907 W View    : requestLayout() improperly called by android.widget.FrameLayout{372fc86 V.E...... ......ID 0,0-1080,525 #7f0b0fee app:id/googleapp_discover_header_container} during layout: running second layout pass
+10-06 23:40:55.515  1662  1780 I KeyboardDefManager: KeyboardDefManager.lambda$loadKeyboardDef$2():382 parsing keyboard def from xml failed or task was canceled.
+10-06 23:40:55.516   552   569 V WindowManager: Finish Transition #13: created at 10-06 23:40:54.909 collect-started=0.027ms request-sent=0.058ms started=18.654ms ready=19.057ms sent=493.275ms finished=605.788ms
+10-06 23:40:55.525   914   953 V WindowManagerShell: Track 0 became idle
+10-06 23:40:55.525   914   953 V WindowManagerShell: All active transition animations finished
+10-06 23:40:55.525   914   953 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@d23b145
+10-06 23:40:55.525   914   953 V WindowManagerShell: Track 0 became idle
+10-06 23:40:55.525   914   953 V WindowManagerShell: All active transition animations finished
+10-06 23:40:55.525   914   953 W Looper  : Slow dispatch took 111ms wmshell.main h=android.os.Handler c=com.android.wm.shell.transition.Transitions$TransitionPlayerImpl$$ExternalSyntheticLambda0@c94e8ea m=0
+10-06 23:40:55.525   914   953 W Looper  : Slow delivery took 78ms wmshell.main h=android.os.Handler c=com.android.wm.shell.bubbles.BubbleController$BubblesImpl$$ExternalSyntheticLambda5@95aa7db m=0
+10-06 23:40:55.526  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1155 update screenHeightWithoutNaviBar to: 2274
+10-06 23:40:55.526  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.lambda$setDecorViewApplyWindowInsetsListener$10():1161 update max height when insets changes
+10-06 23:40:55.527  1662  1662 I DictionarySuperpacksManager: DictionarySuperpacksManager$1.onEnabledInputMethodEntriesChanged():61 onEnabledInputMethodEntriesChanged
+10-06 23:40:55.527   552  1801 I WindowManager: finishDrawing of orientation change: Window{56208e5 u0 ScreenDecorOverlayBottom} 604ms
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: KeyboardDefManager$LoadKeyboardDefTask$1.onFailure():188 Task to load keyboard def was canceled.
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: java.util.concurrent.CancellationException: Task was cancelled.
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at mrp.s(PG:3)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at mrp.get(PG:4)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at mgr.Q(PG:1)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at mfu.V(PG:2)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at mtg.run(PG:4)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at android.os.Looper.loop(Looper.java:294)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-06 23:40:55.527  1662  1662 I KeyboardDefManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-06 23:40:55.571  1907  2469 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-06 23:40:55.575  1907  2484 W LocationOracle: No location returned by GMS core getLastLocation()
+10-06 23:40:55.591  1907  3518 I NetworkRecognitionRnr: Using pair HTTP connection
+10-06 23:40:55.595  1907  3503 I A       : [Upload] Connected
+10-06 23:40:55.598  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227 
+10-06 23:40:55.602  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-06 23:40:55.602  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=0 fieldName=null extras=null}, false)
+10-06 23:40:55.602  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-06 23:40:55.632  1662  1662 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-06 23:40:55.633  1907  1907 E A       : onError
+10-06 23:40:55.633  1907  1907 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-06 23:40:55.633  1907  1907 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-06 23:40:55.633  1907  1907 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-06 23:40:55.633  1907  1907 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:40:55.633  1907  1907 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:40:55.633  1907  1907 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-06 23:40:55.633  1907  1907 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-06 23:40:55.633  1907  1907 E A       : 	... 15 more
+10-06 23:40:55.633  1907  1907 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-06 23:40:55.633  1907  1907 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-06 23:40:55.633  1907  1907 E A       : 	... 12 more
+10-06 23:40:55.646  5492  6243 W ctxmgr  : [NetworkStateProducer] No state change for network connection context [CONTEXT service_id=47 ]
+10-06 23:40:55.715  4675  4777 I rita.mobilefork: Explicit concurrent copying GC freed 6999(345KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 2811KB/5622KB, paused 27us,13us total 31.962ms
+10-06 23:40:55.717  1907  1907 W A       : Failed to sync device settings.
+10-06 23:40:55.717  1907  1907 I A       : Retrying to sync device settings.
+10-06 23:40:55.746  1907  2694 W A       : Failed to get connectivityLock in 4000 ms
+10-06 23:40:55.746  1907  2694 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-06 23:40:55.748  1662  2043 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2022112214
+10-06 23:40:55.752   552  1357 W JobScheduler: Job didn't exist in JobStore: abc182c #u0a132/-353 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+10-06 23:40:55.754  1907  2796 W SearchServiceCore: Abort, client detached.
+10-06 23:40:55.754  1907  2796 W SearchServiceCore: Abort, client detached.
+10-06 23:40:55.758  1662  2043 I SP      : Sync for emoticon_content_description succeeded in 407 ms: no changes
+10-06 23:40:55.758  1662  2043 I SP      : GC for 'emoticon_content_description' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-06 23:40:55.759  1662  2043 I SP      : Syncing content_cache (2022112214) with slices: [e9a5a2de48a4f8b9a658b411bcfb375d, 8722425f4121ffdea802b1066df73991, fa1da98da1212aad6fb9a8efaff48148], metadata: true
+10-06 23:40:55.824  1662  1671 I putmethod.latin: Background concurrent copying GC freed 454618(13MB) AllocSpace objects, 4(544KB) LOS objects, 49% free, 12MB/25MB, paused 151us,36us total 547.638ms
+10-06 23:40:55.824  4675  4675 I krita.MainActivity: [onDestroy]
+10-06 23:40:55.825   552  1357 I ActivityManager: Background started FGS: Allowed [callingPackage: org.krita.mobilefork; callingUid: 10192; uidState: SVC ; uidBFSL: n/a; intent: Intent { cmp=org.krita.mobilefork/org.krita.android.DocumentSaverService (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:2; bindFromPackage:null: isBindService:false]
+10-06 23:40:55.826  1907  2694 I A       : group apa_head_suggest not present without account in *
+10-06 23:40:55.827  1907  2694 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.027S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT2M5.726S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT47.079S (THIRTY_SECONDS_TO_ONE_MINUTE))
+10-06 23:40:55.827  1907  2694 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+10-06 23:40:55.828  4675  4675 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@1a6c873
+10-06 23:40:55.829  1662  1673 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[6]
+10-06 23:40:55.829  1662  1673 W SP      : File ref is being finalized but wasn't closed, file: main_en_840_2022102600_1[2]
+10-06 23:40:55.838   552  1357 D CoreBackPreview: Window{2e8308f u0 org.krita.mobilefork/org.krita.android.MainActivity}: Setting back callback null
+10-06 23:40:55.839  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837993
+10-06 23:40:55.839  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837988
+10-06 23:40:55.839  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837994
+10-06 23:40:55.839  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837905
+10-06 23:40:55.840  1178  2092 D EGL_emulation: app_time_stats: avg=169.48ms min=67.75ms max=273.16ms count=7
+10-06 23:40:55.841  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837916
+10-06 23:40:55.841   552   566 D ActivityManager: freezer override set to false
+10-06 23:40:55.841  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837985
+10-06 23:40:55.841  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838179
+10-06 23:40:55.841  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837907
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838300
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838299
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838322
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838089
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837972
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838186
+10-06 23:40:55.842  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837941
+10-06 23:40:55.846  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838032
+10-06 23:40:55.846  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838049
+10-06 23:40:55.847  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837940
+10-06 23:40:55.852   552  1357 W InputManager-JNI: Input channel object '2e8308f org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:40:55.863  1907  2796 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+10-06 23:40:55.863  1907  2796 I A       : Using proto config with mendel
+10-06 23:40:55.871  4675  4675 E WindowManager: android.view.WindowLeaked: Activity org.krita.android.MainActivity has leaked window DecorView@e836834[MainActivity] that was originally added here
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:1009)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:997)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:397)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:150)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.app.Dialog.show(Dialog.java:352)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at org.krita.android.ScalingDialog.show(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:3)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at org.krita.android.MainActivity.lambda$showScalingDialog$9(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:11)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at org.krita.android.MainActivity.$r8$lambda$h2wn4dJzwh-QkRksvLR40-ZpkS4(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:1)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at org.krita.android.MainActivity$$ExternalSyntheticLambda4.run(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:11)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.os.Looper.loop(Looper.java:294)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-06 23:40:55.871  4675  4675 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-06 23:40:55.928   552  1357 W InputManager-JNI: Input channel object 'Letterbox_fullWindow_ActivityRecord{274cf93 u0 org.krita.mobilefork/org.krita.android.MainActivity t8} (client)' was disposed without first being removed with the input manager!
+10-06 23:40:55.928   552  1357 W InputManager-JNI: Input channel object 'f766a00 org.krita.mobilefork/org.krita.android.MainActivity (client)' was disposed without first being removed with the input manager!
+10-06 23:40:55.935   914   953 W Looper  : Drained
+10-06 23:40:55.936  4675  4675 I DocumentSaverService: [onStartCommand]
+10-06 23:40:55.936  4675  4675 I DocumentSaverService: kill process command received
+10-06 23:40:55.936  4675  4675 I DocumentSaverService: [waitForSaving]: mStartedInForeground: false
+10-06 23:40:55.936   552  1357 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{a325931 u0 org.krita.mobilefork/org.krita.android.DocumentSaverService}
+10-06 23:40:55.937  4675  4675 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@b966127
+10-06 23:40:55.937   552  1357 W WindowManager: Failed looking up window session=Session{7909fa2 4675:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:944 android.view.IWindowSession$Stub.onTransact:1145 
+10-06 23:40:55.937   552  1357 I WindowManager: setOnBackInvokedCallback(): No window state for package:org.krita.mobilefork
+10-06 23:40:55.938   552  1357 W WindowManager: Failed looking up window session=Session{7909fa2 4675:u0a10192} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6034 com.android.server.wm.WindowManagerService.removeWindow:1974 com.android.server.wm.Session.remove:231 
+10-06 23:40:55.939  4675  4675 E ActivityThread: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@8e24fd1 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:40:55.939  4675  4675 E ActivityThread: android.app.IntentReceiverLeaked: Activity org.krita.android.MainActivity has leaked IntentReceiver org.qtproject.qt5.android.bearer.QtNetworkReceiver$BroadcastReceiverPrivate@8e24fd1 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:1839)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:1601)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1840)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1792)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1780)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:755)
+10-06 23:40:55.939  4675  4675 E ActivityThread: 	at org.qtproject.qt5.android.bearer.QtNetworkReceiver.registerReceiver(r8-map-id-910f1506815a38dcbb856abe3f74f7309eb3d8a10a8122e4f5342958358c5e6f:25)
+10-06 23:40:55.984  1907  2796 I A       : Using proto config with mendel
+10-06 23:40:56.004  4675  4675 I DocumentSaverService: Destroying: Kill Process = true
+10-06 23:40:56.004  4675  4675 I DocumentSaverService: [waitForSaving]: mStartedInForeground: false
+10-06 23:40:56.004  4675  4675 I Process : Sending signal. PID: 4675 SIG: 9
+10-06 23:40:56.008  5256  5890 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838115
+10-06 23:40:56.025  1138  1171 D SlicesIndexer: Slices already indexed - returning.
+10-06 23:40:56.050  1138  1171 D SettingsSliceProvider: Allowlisting 13 uris to 3 pkgs.
+10-06 23:40:56.060  1138  1171 D SlicesIndexer: Slices already indexed - returning.
+10-06 23:40:56.060  1138  1171 D SettingsSliceProvider: Allowlisting 5 uris to 3 pkgs.
+10-06 23:40:56.067  1138  1171 D SettingsSliceProvider: onSlicePinned: content://com.android.settings.slices/action/hardware_info_device_model
+10-06 23:40:56.068  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.074  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.074  1138  2450 D SettingsSliceProvider: content://com.android.settings.slices/action/hardware_info_device_model loaded from cache
+10-06 23:40:56.077  1138  4332 D SettingsSliceProvider: content://com.android.settings.slices/action/gesture_double_tap_power loaded from cache
+10-06 23:40:56.078  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.078  1138  4421 D SettingsSliceProvider: content://com.android.settings.slices/action/media_volume loaded from cache
+10-06 23:40:56.078  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.080  1138  4448 D SettingsSliceProvider: content://com.android.settings.slices/action/call_volume loaded from cache
+10-06 23:40:56.081  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.081  1138  2450 D SettingsSliceProvider: content://com.android.settings.slices/action/separate_ring_volume loaded from cache
+10-06 23:40:56.081  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.081  1138  4332 D SettingsSliceProvider: content://com.android.settings.slices/action/notification_volume loaded from cache
+10-06 23:40:56.082  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-06 23:40:56.082  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.083  1138  4421 D SettingsSliceProvider: content://com.android.settings.slices/action/alarm_volume loaded from cache
+10-06 23:40:56.085  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.085  1138  4448 D SettingsSliceProvider: content://com.android.settings.slices/action/os_firmware_version loaded from cache
+10-06 23:40:56.085  1138  6358 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-06 23:40:56.091  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.092  1138  2450 D SettingsSliceProvider: content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen loaded from cache
+10-06 23:40:56.092  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.092  1138  6358 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/mobile_data
+10-06 23:40:56.092   552   879 W BroadcastLoopers: Found previously unknown looper Thread[SliceManagerService,5,main]
+10-06 23:40:56.093  1138  1138 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/mobile_data
+10-06 23:40:56.093  1138  1138 D SliceBackgroundWorker: create instance: class com.android.settings.network.telephony.MobileDataSlice$MobileDataWorker
+10-06 23:40:56.093  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.094  1138  4332 D SlicesIndexer: Slices already indexed - returning.
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: Could not create slicedata for uri: content://com.android.settings.slices/intent/wifi_calling
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: java.lang.IllegalStateException: Invalid Slices key from path: wifi_calling
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getIndexedSliceData(SlicesDatabaseAccessor.java:132)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceDataFromUri(SlicesDatabaseAccessor.java:75)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.loadSlice(SettingsSliceProvider.java:404)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.lambda$loadSliceInBackground$5(SettingsSliceProvider.java:435)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.$r8$lambda$DuOQmiIacKr39-rTKxFwLhyIlOo(SettingsSliceProvider.java:0)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 23:40:56.094  1138  4332 D SettingsSliceProvider: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 23:40:56.094  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.095  1138  6358 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
+10-06 23:40:56.095  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+10-06 23:40:56.098  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.098  1138  4421 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
+10-06 23:40:56.099  1138  1171 D MediaVolumePreCtrl: The slice doesn't support end item
+10-06 23:40:56.099  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.100  1138  4448 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+10-06 23:40:56.108  1138  6358 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.108  1138  6358 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://android.settings.slices/action/bluetooth
+10-06 23:40:56.111  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+10-06 23:40:56.117  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.118  1138  1171 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-06 23:40:56.118  1138  1171 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+10-06 23:40:56.119  1138  1171 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
+10-06 23:40:56.119  1138  1138 D SettingsSliceProvider: Starting background worker for: content://android.settings.slices/action/wifi
+10-06 23:40:56.119  1138  1138 D SliceBackgroundWorker: create instance: class com.android.settings.wifi.slice.WifiScanWorker
+10-06 23:40:56.122  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-06 23:40:56.125  1138  6358 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-06 23:40:56.125  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-06 23:40:56.130  1138  6358 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-06 23:40:56.131  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-06 23:40:56.136  1138  6358 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-06 23:40:56.136  1138  6358 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-06 23:40:56.136  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-06 23:40:56.139  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.accessibility.MagnificationGesturesPreferenceController
+10-06 23:40:56.141  1138  1138 D WsuServiceClient: Binding to com.google.android.apps.carrier.carrierwifi
+10-06 23:40:56.144   552   839 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+10-06 23:40:56.145  1138  1138 D WsuServiceClient: the specified wsu service is not installed.
+10-06 23:40:56.145  1138  1138 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+10-06 23:40:56.148   552  1357 D ConnectivityService: requestNetwork for uid/pid:1000/1138 activeRequest: null callbackRequest: 146 [NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+10-06 23:40:56.148  1138  1171 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-16749196 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 23:40:56.151   552   839 D ConnectivityService: NetReassign [147 : null → 100] [c 0] [a 0] [i 1]
+10-06 23:40:56.151   552   832 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+10-06 23:40:56.151   552   832 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+10-06 23:40:56.152   552   832 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+10-06 23:40:56.152   552   832 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]
+10-06 23:40:56.157   552  1357 W ScanResultUtil: Empty or null ScanResult list
+10-06 23:40:56.157  1138  1171 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-16749196 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 23:40:56.157   552  1357 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+10-06 23:40:56.158  1138  1171 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-16749196 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 23:40:56.158  1138  1171 D SubscriptionUtil: getSelectableSubscriptionInfoList: [[SubscriptionInfo: id=1 iccId=89860318640220133897 simSlotIndex=0 portIndex=0 isEmbedded=false carrierId=1 displayName=T-Mobile carrierName=T-Mobile isOpportunistic=false groupUuid=null groupOwner= isGroupDisabled=false displayNameSource=CARRIER iconTint=-16749196 number=+15551234567 dataRoaming=0 mcc=310 mnc=260 ehplmns=[] hplmns=[] cardString=89860318640220133897 cardId=0 nativeAccessRules=null carrierConfigAccessRules=[cert: 92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920 pkg: null access: 0, cert: 3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562 pkg: null access: 0, cert: 6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93 pkg: null access: 0, cert: 7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC pkg: null access: 0] countryIso=us profileClass=-1 mType=LOCAL_SIM areUiccApplicationsEnabled=true usageSetting=DEFAULT]]
+10-06 23:40:56.161   552  1357 W ScanResultUtil: Empty or null ScanResult list
+10-06 23:40:56.161   552  1357 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+10-06 23:40:56.161   552  1357 W ScanResultUtil: Empty or null ScanResult list
+10-06 23:40:56.161   552  1357 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+10-06 23:40:56.161   552  1357 W ScanResultUtil: Empty or null ScanResult list
+10-06 23:40:56.161   552  1357 W WifiService: Attempt to retrieve OsuProviders with invalid scanResult List
+10-06 23:40:56.170  1138  6370 D CompatibilityChangeReporter: Compat change id reported: 186082280; UID 1000; state: ENABLED
+10-06 23:40:56.171  1138  6370 I WifiPickerTracker: Scanning started
+10-06 23:40:56.171  1138  6370 E WifiScanner: listener does not exist
+10-06 23:40:56.186  1138  6342 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/mobile_data
+10-06 23:40:56.187  1138  1138 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/mobile_data
+10-06 23:40:56.240  1138  1171 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
+10-06 23:40:56.250  1138  6342 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
+10-06 23:40:56.252   552  1824 I ActivityManager: Process org.krita.mobilefork (pid 4675) has died: fg  SVC 
+10-06 23:40:56.253   552   570 D DisplayManagerService: Drop pending events for gone uid 10192
+10-06 23:40:56.254   552   583 I libprocessgroup: Successfully killed process cgroup uid 10192 pid 4675 in 0ms
+10-06 23:40:56.258   552   572 W ActivityManager: setHasOverlayUi called on unknown pid: 4675
+10-06 23:40:56.261  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-06 23:40:56.264   363   363 I Zygote  : Process 4675 exited due to signal 9 (Killed)
+10-06 23:40:56.271  1138  1171 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-06 23:40:56.278  1138  1171 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://android.settings.slices/action/bluetooth
+10-06 23:40:56.279  1138  6342 D WifiSlice: calling uid name : com.google.android.settings.intelligence
+10-06 23:40:56.287  1662  2043 I SP      : Sync for content_cache succeeded in 528 ms: no changes
+10-06 23:40:56.287  1662  2043 I SP      : GC for 'content_cache' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-06 23:40:56.288  1138  1138 D SettingsSliceProvider: Stopping background worker for: content://android.settings.slices/action/wifi
+10-06 23:40:56.288  1138  6370 I WifiPickerTracker: Scanning stopped
